@@ -63,12 +63,6 @@ export const PHOTOS = {
   'ba-corvette-after': { alt: 'The same Corvette paint under an inspection light after correction and coating', caption: 'After' },
   'ba-seat-before': { alt: 'Stained cloth rear seat before an interior detail', caption: 'Before' },
   'ba-seat-after': { alt: 'The same rear seat after extraction and steam cleaning', caption: 'After' },
-  // tint shade preview (an illustration, not a customer car)
-  'tint-05': { alt: 'Illustration of a sedan with 5% window tint', caption: '5%' },
-  'tint-20': { alt: 'Illustration of a sedan with 20% window tint', caption: '20%' },
-  'tint-35': { alt: 'Illustration of a sedan with 35% window tint', caption: '35%' },
-  'tint-50': { alt: 'Illustration of a sedan with 50% window tint', caption: '50%' },
-  'tint-75': { alt: 'Illustration of a sedan with 75% window tint', caption: '75%' },
 } as const;
 
 export type PhotoId = keyof typeof PHOTOS;

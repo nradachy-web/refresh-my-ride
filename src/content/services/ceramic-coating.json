@@ -37,6 +37,13 @@
       "photo": "porsche-suv-blue"
     },
     {
+      "type": "water",
+      "plane": "ink",
+      "eyebrow": "On the panel",
+      "title": "Watch what water does.",
+      "intro": "On bare paint, water spreads out and sits. On coated paint it pulls into tight beads and rolls away, which is why a coated car stays cleaner between washes."
+    },
+    {
       "type": "compare",
       "plane": "white",
       "eyebrow": "Coating, sealant or wax",

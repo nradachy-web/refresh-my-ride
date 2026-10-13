@@ -8,6 +8,8 @@ import Faq from './Faq.astro';
 import Reviews from './Reviews.astro';
 import BeforeAfter from './BeforeAfter.astro';
 import Shades from './Shades.astro';
+import Swirl from './Swirl.astro';
+import Water from './Water.astro';
 import Ways from './Ways.astro';
 import AreaChips from './AreaChips.astro';
 import type { Block } from '../content.config';
@@ -232,10 +234,24 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
           )}
 
           {b.type === 'shades' && (
-            <div class="two shades">
-              <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <Shades shades={b.shades} note={b.note} />
-            </div>
+            </>
+          )}
+
+          {b.type === 'swirl' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Swirl />
+            </>
+          )}
+
+          {b.type === 'water' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Water />
+            </>
           )}
 
           {b.type === 'ways' && (
@@ -525,14 +541,6 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
   @media (min-width: 56rem) {
     .gal {
       grid-template-columns: repeat(4, minmax(0, 1fr));
-    }
-  }
-
-  /* shades */
-  @media (min-width: 60rem) {
-    .shades {
-      grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
-      align-items: start;
     }
   }
 

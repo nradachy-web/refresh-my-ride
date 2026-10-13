@@ -12,6 +12,8 @@ export async function getStaticPaths() {
   const services = await getCollection('services');
   const towns = await getCollection('towns');
   const summaryOf = (id: string) => services.find((s) => s.data.service === id)?.data.summary;
+  // The service's interactive panel (tint shades, paint under the light, water) also shows on its town pages.
+  const demoOf = (id: string) => services.find((s) => s.data.service === id)?.data.blocks.find((b) => b.type === 'shades' || b.type === 'swirl' || b.type === 'water');
 
   const servicePaths = services.map((entry) => {
     const svc = SERVICES.find((s) => s.id === entry.data.service)!;
@@ -22,7 +24,7 @@ export async function getStaticPaths() {
     const page = TOWN_PAGES.find((p) => p.service.id === entry.data.service && p.city.id === entry.data.city);
     const summary = summaryOf(entry.data.service);
     if (!page || !summary) return [];
-    return [{ params: { slug: page.slug }, props: { kind: 'town' as const, entry, summary } }];
+    return [{ params: { slug: page.slug }, props: { kind: 'town' as const, entry, summary, demo: demoOf(entry.data.service) } }];
   });
 
   return [...servicePaths, ...townPaths];
@@ -31,4 +33,4 @@ export async function getStaticPaths() {
 const props = Astro.props;
 ---
 
-{props.kind === 'service' ? <ServicePage entry={props.entry} /> : <TownPage entry={props.entry} summary={props.summary} />}
+{props.kind === 'service' ? <ServicePage entry={props.entry} /> : <TownPage entry={props.entry} summary={props.summary} demo={props.demo} />}

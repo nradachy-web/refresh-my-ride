@@ -126,7 +126,7 @@
       "plane": "ink",
       "eyebrow": "Pick your shade",
       "title": "See the shade before you book.",
-      "intro": "Tap a percentage to preview it. The number is how much light the film lets through, so the lower the number, the darker the tint.",
+      "intro": "Drag the slider or tap a percentage. The number is how much light the film lets through, so the lower the number, the darker the tint.",
       "shades": [
         {
           "pct": "05",

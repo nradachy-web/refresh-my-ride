@@ -61,6 +61,33 @@ arrows nudge, the menu and the accordions open. Nothing slides in on scroll.
 own compositor layer, which slowed the first paint.) A page with script off or
 motion reduced is complete.
 
+## Interactive panels
+
+Three panels let a visitor try the thing before they call. Each sits in an ink
+band on its service page and on that service's town pages.
+
+- **Tint shades** (`Shades.astro`): one studio picture of a violet sedan in
+  front of a light wall, and one transparent layer holding the same glass at
+  its darkest. The chosen shade sets how much of that layer shows, so every
+  step lines up to the pixel. Six choices (bare glass, then 75, 50, 35, 20 and
+  5 percent), a slider whose resting points sit over the six buttons, and two
+  small meters for privacy and seeing out. It is radio buttons underneath and
+  works with script off. The picture was made for this site (sources in
+  `src/assets/illustrations`); it is an illustration and the note says so.
+- **Paint under the light** (`Swirl.astro`): a canvas of dark paint and an
+  inspection lamp that follows the pointer or a finger. Three stages: before,
+  one-step polish (their pages say it removes roughly 60 to 70% of light
+  swirls) and multi-stage correction.
+- **Water on the panel** (`Water.astro`): a canvas showing water sheeting on
+  bare paint and beading on coated paint. It rinses once when it scrolls into
+  view, again on request, and a drag sprays it.
+
+Rules for all three: captioned as illustrations, never as a customer's car or
+a test of a product; nothing is drawn or computed until the panel is near the
+screen; reduced motion gets a still result; with script off the controls that
+need script are hidden. New content blocks: `swirl` and `water` (heading
+fields only) beside the existing `shades`.
+
 ## Photos
 
 Their own work only. Phone photos, so they are cropped tight and set on ink

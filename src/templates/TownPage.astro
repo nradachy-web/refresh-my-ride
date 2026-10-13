@@ -6,11 +6,13 @@
      1  hero       the service and the town in the h1, two actions, the rating
      2  paper      why this service matters here: local points, grounded in
                    docs/research/<city>.md
-     3  white      what it is and costs: the service's shared summary, so prices
+     3  ink        the service's interactive panel, when it has one: tint
+                   shades, paint under the light, water on a coating
+     4  white      what it is and costs: the service's shared summary, so prices
                    are written once and cannot drift between 32 pages
-     4  ink        how a customer from this town gets it done, and reviews
-     5  paper      the questions, then the same service in nearby towns
-     6  ink        the quote form beside the phone
+     5  ink        how a customer from this town gets it done, and reviews
+     6  paper      the questions, then the same service in nearby towns
+     7  ink        the quote form beside the phone
    Copy comes from src/content/towns/<service>--<city>.json.
    ========================================================================== */
 import type { CollectionEntry } from 'astro:content';
@@ -22,6 +24,10 @@ import Faq from '../components/Faq.astro';
 import Reviews from '../components/Reviews.astro';
 import QuoteBand from '../components/QuoteBand.astro';
 import AreaChips from '../components/AreaChips.astro';
+import Shades from '../components/Shades.astro';
+import Swirl from '../components/Swirl.astro';
+import Water from '../components/Water.astro';
+import type { Block } from '../content.config';
 import { BRAND } from '../data/site';
 import { service as getService, TOWN_SERVICES } from '../data/services';
 import { city as getCity, hubPath, townPath } from '../data/cities';
@@ -35,8 +41,9 @@ import { breadcrumbs, faqSchema, serviceSchema } from '../lib/schema';
 interface Props {
   entry: CollectionEntry<'towns'>;
   summary: CollectionEntry<'services'>['data']['summary'];
+  demo?: Block;
 }
-const { entry, summary } = Astro.props;
+const { entry, summary, demo } = Astro.props;
 const c = entry.data;
 const svc = getService(c.service as any);
 const town = getCity(c.city);
@@ -93,6 +100,19 @@ const schema = [
       </ul>
     </div>
   </section>
+
+  {
+    demo && (
+      <section class="band ink" aria-labelledby="demo-h">
+        <div class="wrap">
+          <Head id="demo-h" eyebrow={demo.eyebrow} title={demo.title} intro={demo.intro} />
+          {demo.type === 'shades' && <Shades shades={demo.shades} note={demo.note} />}
+          {demo.type === 'swirl' && <Swirl />}
+          {demo.type === 'water' && <Water />}
+        </div>
+      </section>
+    )
+  }
 
   <section class="band white" aria-labelledby="what-h">
     <div class="wrap two flip">

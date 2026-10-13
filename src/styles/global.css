@@ -695,6 +695,63 @@ a.chip:hover {
   background: var(--line-ink);
 }
 
+/* a segmented choice with a sliding thumb (the paint and water panels) */
+.seg {
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  padding: 4px;
+  border: 1px solid var(--line-ink);
+  border-radius: var(--r);
+  background: rgb(255 255 255 / 0.04);
+}
+
+.seg__thumb {
+  position: absolute;
+  top: 4px;
+  bottom: 4px;
+  left: 4px;
+  width: calc((100% - 8px) / var(--n));
+  border-radius: var(--r-sm);
+  background: var(--violet-btn);
+  transform: translateX(calc(var(--i) * 100%));
+  transition: transform 0.42s var(--ease);
+}
+
+.seg button {
+  position: relative;
+  z-index: 1;
+  min-height: 2.75rem;
+  padding: 0 0.5rem;
+  border: 0;
+  border-radius: var(--r-sm);
+  background: none;
+  color: var(--on-ink-muted);
+  font-family: var(--font-display);
+  font-size: 0.9375rem;
+  font-weight: 640;
+  font-stretch: 106%;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.25s var(--ease);
+}
+
+.seg button:hover {
+  color: var(--on-ink);
+}
+
+.seg button[aria-pressed='true'] {
+  color: #fff;
+}
+
+@media (forced-colors: active) {
+  .seg button[aria-pressed='true'] {
+    outline: 2px solid Highlight;
+    outline-offset: -2px;
+  }
+}
+
 /* ---------- motion ----------
    The page-load moment belongs to the hero (see Hero.astro). Below it, motion
    answers the visitor: hovers, the menu, the accordions. Nothing slides in on

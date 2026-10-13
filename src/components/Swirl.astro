@@ -1,0 +1,508 @@
+---
+/* Dark paint under an inspection light, at three stages of correction.
+
+   Swirl marks are thousands of fine curved scratches. Each one only shows
+   where it runs square to the line back to the light, which is why they appear
+   as rings around a lamp and follow it. The canvas draws exactly that, so
+   moving the pointer (or a finger) moves the light and the rings with it.
+
+   The stages match what the shop sells: a one-step polish, which their own
+   pages say removes roughly 60 to 70% of light swirls, and a multi-stage
+   correction. It is an illustration and the caption says so.
+
+   Nothing is drawn or computed until the panel is near the screen. */
+
+interface Props {
+  /** Where the button under the panel goes. */
+  cta?: { label: string; href: string };
+}
+const { cta = { label: 'Get my paint quoted', href: '#quote' } } = Astro.props;
+
+const STAGES = [
+  {
+    label: 'Before',
+    name: 'Before correction',
+    level: 0,
+    note: 'Years of washing leave fine scratches in the clear coat. Under a light they show as rings, and the reflection goes hazy.',
+  },
+  {
+    label: 'One-step',
+    name: 'After a one-step polish',
+    level: 0.66,
+    note: 'One polishing stage clears most of the light marks. The deeper ones are still there, and the reflection starts to tighten.',
+  },
+  {
+    label: 'Multi-stage',
+    name: 'After a multi-stage correction',
+    level: 1,
+    note: 'More stages go after the deeper marks. On paint that can take it, the light comes back as a clean point with nothing circling it.',
+  },
+];
+const label = (s: (typeof STAGES)[number]) => `Illustration of dark paint under an inspection light. Shown: ${s.name.toLowerCase()}. ${s.note}`;
+---
+
+<figure class="sw">
+  <div class="sw__paint">
+    <canvas role="img" aria-label={label(STAGES[0])}></canvas>
+    <p class="sw__hint fine" aria-hidden="true">Move the light</p>
+  </div>
+  <div class="sw__bar">
+    <div class="seg" role="group" aria-label="Stage of correction" style={`--n:${STAGES.length};--i:0`}>
+      <span class="seg__thumb" aria-hidden="true"></span>
+      {
+        STAGES.map((s, i) => (
+          <button type="button" aria-pressed={i === 0 ? 'true' : 'false'} data-level={s.level} data-note={s.note} data-label={label(s)}>
+            {s.label}
+          </button>
+        ))
+      }
+    </div>
+    <p class="sw__note small" aria-live="polite">{STAGES[0].note}</p>
+    <a class="btn primary small sw__cta" href={cta.href} data-cta="swirl-quote">{cta.label}</a>
+  </div>
+  <figcaption class="fine muted">
+    An illustration of how swirl marks show under an inspection light, not a photo of a customer's car and not a promise for your paint. We tell you what will and will not polish out when we inspect it. Move your pointer or finger across the panel to move the light.
+  </figcaption>
+</figure>
+
+<script is:inline>
+  (function () {
+    document.querySelectorAll('.sw:not([data-on])').forEach(function (root) {
+      root.setAttribute('data-on', '');
+      var canvas = root.querySelector('canvas');
+      var seg = root.querySelector('.seg');
+      var note = root.querySelector('.sw__note');
+      var buttons = [].slice.call(seg.querySelectorAll('button'));
+      var target = 0;
+      var wake = function () {};
+
+      function pick(i, focus) {
+        buttons.forEach(function (b, n) {
+          b.setAttribute('aria-pressed', n === i ? 'true' : 'false');
+        });
+        seg.style.setProperty('--i', i);
+        target = +buttons[i].getAttribute('data-level');
+        note.textContent = buttons[i].getAttribute('data-note');
+        canvas.setAttribute('aria-label', buttons[i].getAttribute('data-label'));
+        if (focus) buttons[i].focus();
+        wake();
+      }
+      buttons.forEach(function (b, i) {
+        b.addEventListener('click', function () {
+          pick(i);
+        });
+      });
+      seg.addEventListener('keydown', function (e) {
+        var step = e.key === 'ArrowRight' || e.key === 'ArrowDown' ? 1 : e.key === 'ArrowLeft' || e.key === 'ArrowUp' ? -1 : 0;
+        if (!step) return;
+        e.preventDefault();
+        var at = buttons.indexOf(document.activeElement);
+        pick((Math.max(0, at) + step + buttons.length) % buttons.length, true);
+      });
+
+      var ctx = canvas.getContext && canvas.getContext('2d', { alpha: false });
+      if (!ctx || !('IntersectionObserver' in window)) return;
+
+      // The same scratches on every visit.
+      function rng(seed) {
+        var a = seed >>> 0;
+        return function () {
+          a |= 0;
+          a = (a + 0x6d2b79f5) | 0;
+          var t = Math.imul(a ^ (a >>> 15), 1 | a);
+          t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+          return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+        };
+      }
+
+      var PER_ARC = 6;
+      var BUCKETS = 6;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)');
+      var W = 0;
+      var H = 0;
+      var dpr = 1;
+      var seg6 = new Float32Array(0); // x, y, dx, dy, half length, depth
+      var count = 0;
+      var flakes = null;
+      var mask = null;
+      var light = { x: 0, y: 0, tx: 0, ty: 0 };
+      var cur = 0;
+      var pointerOn = false;
+      var visible = false;
+      var built = false;
+      var raf = 0;
+      var t0 = performance.now();
+      var paths = [];
+
+      function build() {
+        var rect = canvas.getBoundingClientRect();
+        var w = Math.max(1, Math.round(rect.width));
+        var h = Math.max(1, Math.round(rect.height));
+        if (built && w === W && h === H) return;
+        W = w;
+        H = h;
+        dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = Math.round(W * dpr);
+        canvas.height = Math.round(H * dpr);
+
+        var rand = rng(5861);
+        var arcs = Math.round((W * H) / 105);
+        count = arcs * PER_ARC;
+        seg6 = new Float32Array(count * 6);
+        var k = 0;
+        for (var i = 0; i < arcs; i++) {
+          // Wash marks are loose circular strokes: random centre, random radius.
+          var r = 14 + Math.pow(rand(), 1.7) * Math.min(W, H) * 0.42;
+          var cx = -40 + rand() * (W + 80);
+          var cy = -40 + rand() * (H + 80);
+          var a0 = rand() * Math.PI * 2;
+          var sweep = 0.35 + rand() * 0.9;
+          // Most scratches are shallow. A few are deep and take the longest to remove.
+          var depth = Math.pow(rand(), 0.75);
+          var step = sweep / PER_ARC;
+          for (var s = 0; s < PER_ARC; s++) {
+            var a = a0 + step * (s + 0.5);
+            var ca = Math.cos(a);
+            var sa = Math.sin(a);
+            seg6[k++] = cx + r * ca;
+            seg6[k++] = cy + r * sa;
+            seg6[k++] = -sa;
+            seg6[k++] = ca;
+            seg6[k++] = (r * step) / 2 + 0.6;
+            seg6[k++] = depth;
+          }
+        }
+
+        // Metallic flake, drawn once and reused.
+        flakes = document.createElement('canvas');
+        flakes.width = canvas.width;
+        flakes.height = canvas.height;
+        var f = flakes.getContext('2d');
+        var n = Math.round((W * H) / 26);
+        for (var j = 0; j < n; j++) {
+          var v = rand();
+          f.fillStyle = 'rgba(' + (188 + Math.round(v * 60)) + ',' + (160 + Math.round(v * 70)) + ',255,' + (0.05 + rand() * 0.3) + ')';
+          var size = rand() < 0.08 ? 1.6 * dpr : dpr;
+          f.fillRect(rand() * canvas.width, rand() * canvas.height, size, size);
+        }
+
+        mask = document.createElement('canvas');
+        mask.width = mask.height = Math.ceil(Math.min(W, H) * 0.62 * 1.9 * dpr);
+
+        if (!built) {
+          light.x = light.tx = W * 0.6;
+          light.y = light.ty = H * 0.42;
+        }
+        built = true;
+      }
+
+      function draw() {
+        var lx = light.x;
+        var ly = light.y;
+        var clean = cur; // 0 swirled .. 1 corrected
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.globalAlpha = 1;
+
+        // Paint: black with a trace of violet, a touch lighter toward the top like a hood under sky.
+        var base = ctx.createLinearGradient(0, 0, 0, H);
+        base.addColorStop(0, '#130e20');
+        base.addColorStop(0.55, '#09070f');
+        base.addColorStop(1, '#040308');
+        ctx.fillStyle = base;
+        ctx.fillRect(0, 0, W, H);
+
+        var reach = Math.min(W, H) * 0.62;
+
+        // Glow of the lamp in the clear coat. Hazy on worn paint, tight on corrected.
+        var bloomR = reach * (1.15 - 0.45 * clean);
+        var bloom = ctx.createRadialGradient(lx, ly, 0, lx, ly, bloomR);
+        bloom.addColorStop(0, 'rgba(178,146,255,' + (0.3 - 0.12 * clean) + ')');
+        bloom.addColorStop(0.4, 'rgba(122,74,236,' + (0.12 - 0.05 * clean) + ')');
+        bloom.addColorStop(1, 'rgba(60,22,150,0)');
+        ctx.globalCompositeOperation = 'lighter';
+        ctx.fillStyle = bloom;
+        ctx.fillRect(0, 0, W, H);
+
+        // Corrected paint has depth: a wide, saturated pool of colour under the lamp
+        // that swirled paint scatters away.
+        if (clean > 0.02) {
+          var pool = ctx.createRadialGradient(lx, ly, 0, lx, ly, reach * 1.7);
+          pool.addColorStop(0, 'rgba(126,58,242,' + 0.34 * clean + ')');
+          pool.addColorStop(0.35, 'rgba(90,30,204,' + 0.2 * clean + ')');
+          pool.addColorStop(1, 'rgba(38,8,112,0)');
+          ctx.fillStyle = pool;
+          ctx.fillRect(0, 0, W, H);
+        }
+
+        // Flake sparkles near the light: the flake layer, masked to a soft disc.
+        var size = mask.width;
+        var sx = Math.round(lx * dpr - size / 2);
+        var sy = Math.round(ly * dpr - size / 2);
+        var m = mask.getContext('2d');
+        m.globalCompositeOperation = 'source-over';
+        m.clearRect(0, 0, size, size);
+        m.drawImage(flakes, -sx, -sy);
+        m.globalCompositeOperation = 'destination-in';
+        var g = m.createRadialGradient(size / 2, size / 2, 0, size / 2, size / 2, size / 2);
+        g.addColorStop(0, 'rgba(0,0,0,1)');
+        g.addColorStop(0.4, 'rgba(0,0,0,0.7)');
+        g.addColorStop(1, 'rgba(0,0,0,0)');
+        m.fillStyle = g;
+        m.fillRect(0, 0, size, size);
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+        ctx.globalAlpha = 0.55 + 0.4 * clean;
+        ctx.drawImage(mask, sx, sy);
+        ctx.globalAlpha = 1;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+        // Scratches. Sorted into brightness buckets so each is one stroke call.
+        for (var b = 0; b < BUCKETS; b++) paths[b] = new Path2D();
+        var cutoff = clean * 1.06;
+        var reach2 = reach * reach;
+        for (var i = 0; i < count; i++) {
+          var o = i * 6;
+          var depth = seg6[o + 5];
+          var left = depth - cutoff;
+          if (left <= 0) continue;
+          var vx = seg6[o] - lx;
+          var vy = seg6[o + 1] - ly;
+          var d2 = vx * vx + vy * vy;
+          if (d2 > reach2 || d2 < 16) continue;
+          var dist = Math.sqrt(d2);
+          // 1 when the scratch runs square to the line from the light.
+          var square = Math.abs(seg6[o + 2] * vy - seg6[o + 3] * vx) / dist;
+          var s2 = square * square;
+          var s8 = s2 * s2 * s2 * s2;
+          var fall = 1 - dist / reach;
+          var power = s8 * s8 * fall * fall * Math.min(1, left * 3.2) * (0.55 + depth * 0.6);
+          if (power < 0.035) continue;
+          var bk = Math.min(BUCKETS - 1, Math.floor(power * BUCKETS));
+          var hl = seg6[o + 4];
+          var p = paths[bk];
+          p.moveTo(seg6[o] - seg6[o + 2] * hl, seg6[o + 1] - seg6[o + 3] * hl);
+          p.lineTo(seg6[o] + seg6[o + 2] * hl, seg6[o + 1] + seg6[o + 3] * hl);
+        }
+        ctx.lineCap = 'round';
+        for (var q = 0; q < BUCKETS; q++) {
+          var al = (q + 0.6) / BUCKETS;
+          ctx.strokeStyle = 'rgba(234,226,255,' + (0.1 + al * 0.62) + ')';
+          ctx.lineWidth = 0.55 + al * 0.55;
+          ctx.stroke(paths[q]);
+        }
+
+        // The lamp itself, reflected: a soft blob on swirled paint, a hard point when clean.
+        // Sized to the panel, so a phone does not get a lamp a quarter of its height.
+        var k = Math.max(0.42, Math.min(1.15, Math.min(W, H) / 560));
+
+        if (clean > 0.02) {
+          // The lamp's long reflection: only clear paint holds a line this sharp.
+          ctx.save();
+          ctx.translate(lx, ly);
+          ctx.rotate(-0.2);
+          var len = reach * 1.5;
+          var streak = ctx.createLinearGradient(-len, 0, len, 0);
+          streak.addColorStop(0, 'rgba(206,186,255,0)');
+          streak.addColorStop(0.5, 'rgba(238,230,255,' + 0.55 * clean + ')');
+          streak.addColorStop(1, 'rgba(206,186,255,0)');
+          ctx.fillStyle = streak;
+          ctx.fillRect(-len, -1.1 * k, len * 2, 2.2 * k);
+          var soft = ctx.createLinearGradient(-len * 0.7, 0, len * 0.7, 0);
+          soft.addColorStop(0, 'rgba(160,100,255,0)');
+          soft.addColorStop(0.5, 'rgba(160,100,255,' + 0.16 * clean + ')');
+          soft.addColorStop(1, 'rgba(160,100,255,0)');
+          ctx.fillStyle = soft;
+          ctx.fillRect(-len * 0.7, -7 * k, len * 1.4, 14 * k);
+          ctx.restore();
+          // A fine halo ring around the lamp.
+          ctx.strokeStyle = 'rgba(218,200,255,' + 0.3 * clean + ')';
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.arc(lx, ly, (20 + 22 * clean) * k * 1.9, 0, Math.PI * 2);
+          ctx.stroke();
+        }
+
+        var coreR = (46 - 26 * clean) * k;
+        var core = ctx.createRadialGradient(lx, ly, 0, lx, ly, coreR);
+        core.addColorStop(0, 'rgba(255,255,255,1)');
+        core.addColorStop(0.18 + 0.52 * clean, 'rgba(244,238,255,' + (0.75 + 0.25 * clean) + ')');
+        core.addColorStop(1, 'rgba(200,172,255,0)');
+        ctx.fillStyle = core;
+        ctx.beginPath();
+        ctx.arc(lx, ly, coreR, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Edge falloff.
+        ctx.globalCompositeOperation = 'source-over';
+        var vig = ctx.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.75);
+        vig.addColorStop(0, 'rgba(0,0,0,0)');
+        vig.addColorStop(1, 'rgba(0,0,0,0.55)');
+        ctx.fillStyle = vig;
+        ctx.fillRect(0, 0, W, H);
+      }
+
+      function frame(now) {
+        raf = 0;
+        if (!pointerOn && !reduce.matches) {
+          // Idle: the lamp drifts in a slow figure of eight.
+          var t = (now - t0) / 1000;
+          light.tx = W * (0.5 + 0.27 * Math.sin(t * 0.42));
+          light.ty = H * (0.47 + 0.2 * Math.sin(t * 0.84 + 0.6));
+        }
+        var ease = reduce.matches ? 1 : 0.11;
+        light.x += (light.tx - light.x) * ease;
+        light.y += (light.ty - light.y) * ease;
+        cur += (target - cur) * (reduce.matches ? 1 : 0.07);
+        draw();
+        var settled = Math.abs(light.tx - light.x) < 0.3 && Math.abs(light.ty - light.y) < 0.3 && Math.abs(target - cur) < 0.002;
+        // Keep running while on screen, unless reduced motion has nothing left to settle.
+        if (visible && !(reduce.matches && settled)) raf = requestAnimationFrame(frame);
+      }
+      function start() {
+        if (!raf && visible && built) raf = requestAnimationFrame(frame);
+      }
+      wake = start;
+
+      function move(e) {
+        if (!built) return;
+        var rect = canvas.getBoundingClientRect();
+        pointerOn = true;
+        light.tx = Math.max(0, Math.min(W, e.clientX - rect.left));
+        light.ty = Math.max(0, Math.min(H, e.clientY - rect.top));
+        root.setAttribute('data-touched', '');
+        start();
+      }
+      function leave() {
+        pointerOn = false;
+        t0 = performance.now() - 2000;
+        start();
+      }
+      canvas.addEventListener('pointermove', move);
+      canvas.addEventListener('pointerdown', move);
+      canvas.addEventListener('pointerleave', leave);
+      canvas.addEventListener('pointercancel', leave);
+
+      new IntersectionObserver(
+        function (entries) {
+          visible = entries[0].isIntersecting;
+          if (!visible) return;
+          if (!built) {
+            build();
+            draw();
+            if ('ResizeObserver' in window) {
+              new ResizeObserver(function () {
+                build();
+                draw();
+              }).observe(canvas);
+            }
+          }
+          start();
+        },
+        { rootMargin: '200px 0px' },
+      ).observe(canvas);
+    });
+  })();
+</script>
+
+<style>
+  .sw {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .sw__paint {
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r);
+    /* what shows before the canvas draws, and when script is off */
+    background:
+      radial-gradient(60% 80% at 60% 42%, rgb(122 74 236 / 0.22), transparent 70%),
+      linear-gradient(#130e20, #09070f 55%, #040308);
+  }
+
+  @media (min-width: 48rem) {
+    .sw__paint {
+      aspect-ratio: 16 / 10;
+    }
+  }
+
+  /* on a laptop the panel and its controls share one screen */
+  @media (min-width: 64rem) {
+    .sw__paint {
+      width: 100%;
+      aspect-ratio: 2 / 1;
+      max-height: min(62svh, 38.75rem);
+    }
+  }
+
+  .sw__paint canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    touch-action: pan-y;
+    cursor: crosshair;
+  }
+
+  .sw__hint {
+    position: absolute;
+    left: 0.85rem;
+    bottom: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r-sm);
+    background: rgb(7 6 11 / 0.6);
+    color: var(--on-ink-muted);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: opacity 0.4s var(--ease);
+  }
+
+  .sw[data-touched] .sw__hint {
+    opacity: 0;
+  }
+
+  .sw__bar {
+    display: grid;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .sw__note {
+    min-height: 4.8em;
+    color: var(--on-ink-muted);
+  }
+
+  .sw__cta {
+    justify-self: start;
+  }
+
+  @media (min-width: 30rem) {
+    .sw__note {
+      min-height: 3.2em;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    .sw__bar {
+      grid-template-columns: minmax(0, 22rem) minmax(0, 1fr) auto;
+      gap: 1.5rem 2rem;
+    }
+
+    .sw__note {
+      min-height: 3.2em;
+    }
+
+    .sw__cta {
+      justify-self: end;
+    }
+  }
+
+  .sw figcaption {
+    max-width: 52rem;
+  }
+</style>

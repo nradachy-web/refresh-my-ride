@@ -1,9 +1,16 @@
 ---
-/* Tint shade preview: five radio buttons and five pictures of the same car.
-   Pure CSS, so it works with script off. The pictures are their illustration,
-   and the note under it says so. */
-import Photo from './Photo.astro';
-import type { PhotoId } from '../data/photos';
+/* Tint shade preview. One car, photographed in front of a light wall so the
+   glass reads clearly, and one transparent layer holding the same glass at its
+   darkest. The shade you pick sets how much of that layer shows, so every step
+   lines up to the pixel.
+
+   It works with script off: the six choices are radio buttons and the picture
+   follows them in CSS. Script adds the slider, which scrubs between shades.
+   The car is an illustration, and the note under it says so. */
+import type { ImageMetadata } from 'astro';
+import { getImage } from 'astro:assets';
+import clearSrc from '../assets/illustrations/tint-clear.jpg';
+import filmSrc from '../assets/illustrations/tint-film.png';
 
 interface Shade {
   pct: '05' | '20' | '35' | '50' | '75';
@@ -16,88 +23,300 @@ interface Shade {
 interface Props {
   shades: Shade[];
   note: string;
+  cta?: { label: string; href: string };
 }
-const { shades, note } = Astro.props;
-const start = shades.findIndex((s) => s.pct === '20');
+const { shades, note, cta = { label: 'Get this look', href: '#quote' } } = Astro.props;
+
+/* Lightest to darkest, starting from bare glass. `film` is how much of the dark
+   layer shows. The light in the picture passes through two panes, so a film
+   that passes half the light leaves about a quarter of it. */
+const FILM: Record<string, number> = { '75': 0.25, '50': 0.5, '35': 0.66, '20': 0.84, '05': 1 };
+const stops = [
+  { pct: '00', short: 'Clear', label: 'No film', name: 'Factory glass', body: 'Untinted glass. Start here, then step through the shades to see the difference.', privacy: 'None', seeingOut: 'Full', film: 0 },
+  ...[...shades].sort((a, b) => Number(b.pct) - Number(a.pct)).map((s) => ({ ...s, short: `${Number(s.pct)}%`, film: FILM[s.pct] })),
+];
+const start = Math.max(
+  0,
+  stops.findIndex((s) => s.pct === '20'),
+);
+
+const LEVEL: Record<string, number> = { none: 0, minimal: 1, low: 2, medium: 3, high: 4, max: 5, full: 5 };
+const level = (word: string) => LEVEL[word.toLowerCase()] ?? 3;
+
+const WIDTHS = [480, 720, 960, 1280, 1600, 2000];
+const ratio = clearSrc.width / clearSrc.height;
+const SIZES = '(min-width: 80rem) 76rem, 100vw';
+async function set(src: ImageMetadata, format: 'avif' | 'webp', quality: number) {
+  const list = await Promise.all(WIDTHS.map(async (w) => `${(await getImage({ src, width: w, height: Math.round(w / ratio), format, quality })).src} ${w}w`));
+  return list.join(', ');
+}
+const [clearAvif, clearWebp, filmAvif, filmWebp] = await Promise.all([set(clearSrc, 'avif', 54), set(clearSrc, 'webp', 70), set(filmSrc, 'avif', 54), set(filmSrc, 'webp', 70)]);
+const clearLast = await getImage({ src: clearSrc, width: 960, height: Math.round(960 / ratio), format: 'jpeg', quality: 72 });
+const filmLast = await getImage({ src: filmSrc, width: 960, height: Math.round(960 / ratio), format: 'webp', quality: 66 });
+const h960 = Math.round(960 / ratio);
 ---
 
-<div class="sh">
-  <fieldset class="sh__picker">
-    <legend class="sr">Choose a tint shade to preview</legend>
-    {
-      shades.map((s, i) => (
-        <label class="sh__opt">
-          <input type="radio" name="shade" value={s.pct} checked={i === (start < 0 ? 0 : start)} />
-          <span class="sh__pct">{Number(s.pct)}%</span>
-          <span class="sh__lab fine">{s.label}</span>
-        </label>
-      ))
-    }
-  </fieldset>
+<div class="tv" style={`--n:${stops.length}`}>
+  <div class="tv__panel">
+    <div class="tv__stage">
+      <picture>
+        <source type="image/avif" srcset={clearAvif} sizes={SIZES} />
+        <source type="image/webp" srcset={clearWebp} sizes={SIZES} />
+        <img src={clearLast.src} width="960" height={h960} alt="Illustration of a violet sedan in a studio, seen from the side, with the window glass shown at the shade you pick" loading="lazy" decoding="async" />
+      </picture>
+      <picture class="tv__film">
+        <source type="image/avif" srcset={filmAvif} sizes={SIZES} />
+        <source type="image/webp" srcset={filmWebp} sizes={SIZES} />
+        <img src={filmLast.src} width="960" height={h960} alt="" loading="lazy" decoding="async" />
+      </picture>
+      <p class="tv__read fine" aria-hidden="true">
+        <span class="tv__viewing">Viewing</span>
+        {stops.map((s) => <strong data-pct={s.pct}>{s.pct === '00' ? s.name : `${s.short} · ${s.name}`}</strong>)}
+      </p>
+    </div>
 
-  <div class="sh__stage frame">
-    {
-      shades.map((s) => (
-        <div class="sh__car" data-pct={s.pct}>
-          <Photo id={`tint-${s.pct}` as PhotoId} widths={[480, 800, 1200]} sizes="(min-width: 60rem) 60vw, 100vw" quality={66} />
-        </div>
-      ))
-    }
-  </div>
+    <div class="tv__controls">
+      <input class="tv__range" type="range" min="0" max={stops.length - 1} step="0.01" value={start} aria-hidden="true" tabindex="-1" hidden />
+      <fieldset class="tv__picker">
+        <legend class="sr">Choose a tint shade to preview</legend>
+        {
+          stops.map((s, i) => (
+            <label class="tv__opt">
+              <input type="radio" name="shade" value={s.pct} checked={i === start} data-film={s.film} />
+              <span class="tv__pct">{s.short}</span>
+              <span class="tv__lab fine">{s.label}</span>
+            </label>
+          ))
+        }
+      </fieldset>
+    </div>
 
-  <div class="sh__info">
-    {
-      shades.map((s) => (
-        <div class="sh__card" data-pct={s.pct}>
-          <h3 class="h3">{Number(s.pct)}%: {s.name}</h3>
-          <p class="small muted">{s.body}</p>
-          <dl class="sh__meta small">
-            <div><dt>Privacy</dt><dd>{s.privacy}</dd></div>
-            <div><dt>Seeing out</dt><dd>{s.seeingOut}</dd></div>
-          </dl>
-        </div>
-      ))
-    }
+    <div class="tv__foot">
+      <div class="tv__info">
+        {
+          stops.map((s) => (
+            <div class="tv__card" data-pct={s.pct}>
+              <h3 class="h3">{s.pct === '00' ? `Clear: ${s.name}` : `${s.short}: ${s.name}`}</h3>
+              <p class="small muted">{s.body}</p>
+              <dl class="tv__meta fine">
+                <div>
+                  <dt>Privacy</dt>
+                  <dd>
+                    <span class="tv__meter" style={`--v:${level(s.privacy)}`} aria-hidden="true" />
+                    {s.privacy}
+                  </dd>
+                </div>
+                <div>
+                  <dt>Seeing out</dt>
+                  <dd>
+                    <span class="tv__meter" style={`--v:${level(s.seeingOut)}`} aria-hidden="true" />
+                    {s.seeingOut}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          ))
+        }
+      </div>
+      <a class="btn primary tv__cta" href={cta.href} data-cta="tint-look">{cta.label}</a>
+    </div>
   </div>
-  <p class="fine muted sh__note">{note}</p>
+  <p class="fine muted tv__note">{note}</p>
 </div>
 
+<script is:inline>
+  (function () {
+    document.querySelectorAll('.tv:not([data-on])').forEach(function (root) {
+      root.setAttribute('data-on', '');
+      var range = root.querySelector('.tv__range');
+      var film = root.querySelector('.tv__film');
+      var radios = [].slice.call(root.querySelectorAll('input[type=radio]'));
+      var amounts = radios.map(function (r) {
+        return +r.getAttribute('data-film');
+      });
+      function at() {
+        for (var i = 0; i < radios.length; i++) if (radios[i].checked) return i;
+        return 0;
+      }
+      range.hidden = false;
+      range.value = at();
+
+      // Dragging scrubs smoothly between shades. Letting go settles on the nearest one.
+      range.addEventListener('input', function () {
+        var v = +range.value;
+        var i = Math.min(radios.length - 2, Math.floor(v));
+        film.style.transition = 'none';
+        film.style.opacity = amounts[i] + (amounts[i + 1] - amounts[i]) * (v - i);
+        radios[Math.round(v)].checked = true;
+      });
+      range.addEventListener('change', function () {
+        range.value = Math.round(+range.value);
+        film.style.transition = '';
+        film.style.opacity = '';
+      });
+      radios.forEach(function (r, i) {
+        r.addEventListener('change', function () {
+          range.value = i;
+          film.style.transition = '';
+          film.style.opacity = '';
+        });
+      });
+    });
+  })();
+</script>
+
 <style>
-  .sh {
+  .tv {
     display: grid;
-    gap: 1.25rem;
+    gap: 1.1rem;
   }
 
-  .sh__picker {
+  .tv__panel {
+    overflow: hidden;
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r);
+    background: var(--ink-2);
+  }
+
+  /* the picture */
+  .tv__stage {
+    position: relative;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template: minmax(0, 1fr) / minmax(0, 1fr);
+    aspect-ratio: 2000 / 1052;
+    background: #0b0a11;
+  }
+
+  .tv__stage picture {
+    grid-area: 1 / 1;
+    height: 100%;
+  }
+
+  .tv__stage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tv__film {
+    opacity: 0;
+    transition: opacity 0.45s var(--ease);
+  }
+
+  .tv__read {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
     gap: 0.5rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid rgb(255 255 255 / 0.16);
+    border-radius: var(--r-sm);
+    background: rgb(7 6 11 / 0.72);
+    color: var(--on-ink-muted);
+  }
+
+  .tv__read strong {
+    grid-area: 1 / 2;
+    color: var(--violet-soft);
+    font-family: var(--font-display);
+    font-weight: 660;
+    font-stretch: 106%;
+    white-space: nowrap;
+  }
+
+  /* slider and choices */
+  .tv__controls {
+    --gap: 0.35rem;
+    display: grid;
+    gap: 0.6rem;
+    padding: 1rem 0.75rem 0;
+  }
+
+  /* The slider's six resting points sit over the centres of the six choices. */
+  .tv__range {
+    --thumb: 1.75rem;
+    width: auto;
+    height: var(--thumb);
+    margin: 0 calc((100% - (var(--n) - 1) * var(--gap)) / (2 * var(--n)) - var(--thumb) / 2);
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: ew-resize;
+    touch-action: pan-y;
+  }
+
+  .tv__range[hidden] {
+    display: none;
+  }
+
+  /* the track runs from clear glass to the darkest film */
+  .tv__range::-webkit-slider-runnable-track {
+    height: 0.4rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #e9e2fb, #a044fc 38%, #3b1a73 72%, #0d0a17);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.16);
+  }
+
+  .tv__range::-moz-range-track {
+    height: 0.4rem;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #e9e2fb, #a044fc 38%, #3b1a73 72%, #0d0a17);
+    box-shadow: 0 0 0 1px rgb(255 255 255 / 0.16);
+  }
+
+  .tv__range::-webkit-slider-thumb {
+    width: var(--thumb);
+    height: var(--thumb);
+    margin-top: calc((0.4rem - var(--thumb)) / 2);
+    border: 3px solid var(--violet-btn);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgb(160 68 252 / 0.22);
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .tv__range::-moz-range-thumb {
+    box-sizing: border-box;
+    width: var(--thumb);
+    height: var(--thumb);
+    border: 3px solid var(--violet-btn);
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgb(160 68 252 / 0.22);
+  }
+
+  .tv__picker {
+    display: grid;
+    grid-template-columns: repeat(var(--n), minmax(0, 1fr));
+    gap: var(--gap);
     margin: 0;
     padding: 0;
     border: 0;
+    min-width: 0;
   }
 
-  .sh__opt {
+  .tv__opt {
     position: relative;
     display: grid;
     justify-items: center;
+    align-content: center;
     gap: 0.1rem;
-    padding: 0.7rem 0.25rem;
-    border: 1px solid var(--line);
+    min-height: 3.25rem;
+    padding: 0.5rem 0.15rem;
+    border: 1px solid var(--line-ink);
     border-radius: var(--r);
-    background: var(--white);
+    background: rgb(255 255 255 / 0.03);
     cursor: pointer;
     transition:
       border-color 0.18s var(--ease),
       background-color 0.18s var(--ease);
   }
 
-  :global(.ink) .sh__opt {
-    border-color: var(--line-ink);
-    background: var(--ink-2);
-  }
-
-  .sh__opt input {
+  .tv__opt input {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -107,113 +326,209 @@ const start = shades.findIndex((s) => s.pct === '20');
     cursor: pointer;
   }
 
-  .sh__pct {
+  .tv__pct {
     font-family: var(--font-display);
-    font-size: clamp(1.1rem, 2vw + 0.6rem, 1.6rem);
-    font-weight: 760;
-    font-stretch: 114%;
+    font-size: clamp(0.9375rem, 1.6vw + 0.5rem, 1.45rem);
+    font-weight: 740;
+    font-stretch: 110%;
     line-height: 1.1;
   }
 
-  .sh__lab {
-    color: var(--muted);
+  .tv__lab {
+    display: none;
+    color: var(--on-ink-muted);
     text-align: center;
   }
 
-  :global(.ink) .sh__lab {
-    color: var(--on-ink-muted);
+  .tv__opt:hover {
+    border-color: var(--violet-soft);
   }
 
-  .sh__opt:hover {
-    border-color: var(--violet-btn);
-  }
-
-  .sh__opt:has(input:checked) {
+  .tv__opt:has(input:checked) {
     border-color: var(--violet-btn);
     background: var(--violet-btn);
     color: #fff;
   }
 
-  .sh__opt:has(input:checked) .sh__lab {
+  .tv__opt:has(input:checked) .tv__lab {
     color: #fff;
   }
 
-  .sh__opt:has(input:focus-visible) {
+  .tv__opt:has(input:focus-visible) {
     outline: 2px solid var(--violet-soft);
     outline-offset: 3px;
   }
 
   @media (forced-colors: active) {
-    .sh__opt:has(input:checked) {
+    .tv__opt:has(input:checked) {
       outline: 3px solid Highlight;
       outline-offset: -3px;
     }
   }
 
-  .sh__stage {
+  /* what the shade is, and the way to ask for it */
+  .tv__foot {
     display: grid;
-    aspect-ratio: 1200 / 461;
-    background: var(--ink-3);
+    gap: 1.1rem;
+    margin-top: 1rem;
+    padding: 1.1rem 0.75rem 1rem;
+    border-top: 1px solid var(--line-ink);
   }
 
-  .sh__car,
-  .sh__card {
+  .tv__info {
+    display: grid;
+  }
+
+  .tv__card {
+    display: grid;
+    gap: 0.45rem;
+    align-content: start;
+  }
+
+  .tv__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.75rem;
+    margin-top: 0.2rem;
+  }
+
+  .tv__meta div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .tv__meta dt {
+    color: var(--on-ink-muted);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  .tv__meta dd {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 660;
+  }
+
+  /* five small bars, the first --v of them lit */
+  .tv__meter {
+    width: 3.4rem;
+    height: 0.5rem;
+    border-radius: 2px;
+    background:
+      repeating-linear-gradient(90deg, transparent 0 0.56rem, var(--ink-2) 0.56rem 0.71rem),
+      linear-gradient(90deg, var(--violet) calc(var(--v) * 20%), rgb(255 255 255 / 0.16) 0);
+  }
+
+  .tv__cta {
+    justify-self: stretch;
+  }
+
+  /* one choice shows at a time: its picture, its name and its description */
+  .tv__read strong,
+  .tv__card {
     grid-area: 1 / 1;
     opacity: 0;
     visibility: hidden;
     transition:
-      opacity 0.35s var(--ease),
-      visibility 0.35s;
+      opacity 0.3s var(--ease),
+      visibility 0.3s;
   }
 
-  .sh__info {
-    display: grid;
+  .tv__read strong {
+    grid-area: 1 / 2;
   }
 
-  .sh__card {
-    display: grid;
-    gap: 0.5rem;
-  }
-
-  .sh__meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem 2rem;
-  }
-
-  .sh__meta div {
-    display: flex;
-    gap: 0.5rem;
-  }
-
-  .sh__meta dt {
-    color: var(--muted);
-  }
-
-  :global(.ink) .sh__meta dt {
-    color: var(--on-ink-muted);
-  }
-
-  .sh__meta dd {
-    font-weight: 640;
-  }
-
-  .sh:has(input[value='05']:checked) [data-pct='05'],
-  .sh:has(input[value='20']:checked) [data-pct='20'],
-  .sh:has(input[value='35']:checked) [data-pct='35'],
-  .sh:has(input[value='50']:checked) [data-pct='50'],
-  .sh:has(input[value='75']:checked) [data-pct='75'] {
+  .tv:has(input[value='00']:checked) [data-pct='00'],
+  .tv:has(input[value='75']:checked) [data-pct='75'],
+  .tv:has(input[value='50']:checked) [data-pct='50'],
+  .tv:has(input[value='35']:checked) [data-pct='35'],
+  .tv:has(input[value='20']:checked) [data-pct='20'],
+  .tv:has(input[value='05']:checked) [data-pct='05'] {
     opacity: 1;
     visibility: visible;
   }
 
-  .sh__note {
-    max-width: 46rem;
+  .tv:has(input[value='75']:checked) .tv__film {
+    opacity: 0.25;
   }
 
+  .tv:has(input[value='50']:checked) .tv__film {
+    opacity: 0.5;
+  }
+
+  .tv:has(input[value='35']:checked) .tv__film {
+    opacity: 0.66;
+  }
+
+  .tv:has(input[value='20']:checked) .tv__film {
+    opacity: 0.84;
+  }
+
+  .tv:has(input[value='05']:checked) .tv__film {
+    opacity: 1;
+  }
+
+  .tv__note {
+    max-width: 52rem;
+  }
+
+  /* on a phone the picture runs edge to edge, so the car is as large as it can be */
   @media (max-width: 39.99rem) {
-    .sh__lab {
-      display: none;
+    .tv__panel {
+      margin-inline: calc(-1 * var(--gutter));
+      border-inline: 0;
+      border-radius: 0;
+    }
+
+    .tv__controls,
+    .tv__foot {
+      padding-inline: var(--gutter);
+    }
+  }
+
+  @media (min-width: 40rem) {
+    .tv__read {
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .tv__controls {
+      --gap: 0.5rem;
+      gap: 0.75rem;
+      padding: 1.25rem 1.25rem 0;
+    }
+
+    .tv__opt {
+      min-height: 4rem;
+    }
+
+    .tv__lab {
+      display: block;
+    }
+
+    .tv__foot {
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1.25rem;
+      padding: 1.25rem;
+    }
+
+    .tv__cta {
+      justify-self: end;
+    }
+  }
+
+  /* On a laptop the picture and its controls share one screen: the picture
+     gives up some wall and floor, never the car. */
+  @media (min-width: 64rem) {
+    .tv__stage {
+      --w: calc(min(100vw - 2 * var(--gutter), var(--wrap)) - 2px);
+      aspect-ratio: auto;
+      height: clamp(calc(var(--w) * 0.33), min(56svh, 39rem), calc(var(--w) * 1052 / 2000));
     }
   }
 </style>

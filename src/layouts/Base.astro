@@ -63,6 +63,8 @@ const fontCss = `
     <noscript>
       <style is:inline>
         .qf__wait, .lf__wait, .ba__range, .ba__line { display: none }
+        /* the paint and water panels are drawn by script: without it their bands step aside */
+        .band:has(.sw), .band:has(.wa) { display: none }
         .qf__frame, .lf { min-height: 0 !important }
       </style>
     </noscript>

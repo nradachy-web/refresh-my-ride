@@ -34,6 +34,13 @@
       "photo": "josh-polishing-corvette"
     },
     {
+      "type": "swirl",
+      "plane": "ink",
+      "eyebrow": "Under the light",
+      "title": "See what the inspection light sees.",
+      "intro": "Swirl marks hide in the shade and show up in the sun. Move the light across the paint, then step through a one-step polish and a multi-stage correction."
+    },
+    {
       "type": "cards",
       "plane": "white",
       "columns": 2,

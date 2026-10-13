@@ -151,13 +151,17 @@ export function makeSchemas(z, ids) {
       ...headFields,
       ids: z.array(reviewId).min(2).max(6),
     }),
-    /** Tint shade preview. */
+    /** Tint shade preview: the five films, lightest to darkest. Bare glass is added by the component. */
     z.object({
       type: z.literal('shades'),
       ...headFields,
       shades: z.array(z.object({ pct: z.enum(['05', '20', '35', '50', '75']), label: text(2, 20), name: text(3, 40), body: text(10, 200), privacy: text(2, 20), seeingOut: text(2, 20) })).length(5),
       note: text(20, 400),
     }),
+    /** Paint under an inspection light, at three stages of correction. Shared wording. */
+    z.object({ type: z.literal('swirl'), ...headFields }),
+    /** Water on bare paint against water on coated paint. Shared wording. */
+    z.object({ type: z.literal('water'), ...headFields }),
     /** Shop, mobile or valet. Shared wording, no fields beyond the heading. */
     z.object({ type: z.literal('ways'), ...headFields }),
     /** The towns, as links. */
