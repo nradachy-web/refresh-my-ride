@@ -86,6 +86,18 @@ Uber is covered for drop-off and pickup on ceramic coating jobs only.
 - Old tint removal: from $50 per area, 50% off when a full-vehicle tint is
   installed the same day. Defroster lines protected.
 - Shades shown: 5%, 20% (most popular), 35%, 50%, 75%.
+- Shade preview copy (use it exactly, minus any dash):
+
+  | Shade | Label | Name | Description | Privacy | Seeing out |
+  |---|---|---|---|---|---|
+  | 5% | Darkest | Limo | The darkest we offer. Maximum privacy and the sleekest look. From outside, the glass reads black. | Max | Minimal |
+  | 20% | Most popular | The Classic | Our most-requested shade. Dark, clean, and uniform without going full limo. | High | Low |
+  | 35% | Balanced | Balanced | Clearly tinted but easy to see out of, day or night. The all-rounder. | Medium | Medium |
+  | 50% | Subtle | Subtle | A light smoke that takes the edge off glare and heat while staying understated. | Low | High |
+  | 75% | Lightest | Near-clear | Almost invisible on the car. Heat and UV protection with a near-factory look. A popular pick for front windshields. | Minimal | Max |
+
+  The preview pictures are an illustration. The page must say on-screen shades
+  are an approximation and that real Geoshield samples are shown on glass in the shop.
 - Aftercare: leave windows up 3 to 4 days. Small water pockets or light haze in
   the first week are normal.
 - Michigan tint law: say only that Michigan's rules are specific to each set of
