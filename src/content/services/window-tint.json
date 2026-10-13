@@ -19,15 +19,15 @@
       "title": "Every tint job starts on our plotter, not on your glass.",
       "body": [
         "We cut each pattern by computer for your exact year, make and model, so **no blade ever touches your windows**. Then we install Geoshield C2 film inside our Clinton Township shop, away from the wind, dust and pollen that cause peeling and bubbling in parking lot installs.",
-        "The film does the rest: it blocks 99% of UV, cuts heat and glare, and adds privacy. Our certified technicians help you pick a shade that looks right and drives comfortably, and walk you through what is legal for your vehicle in Michigan."
+        "The film does the rest: it blocks 99% of UV, cuts heat and glare, and adds privacy. Our certified technicians help you pick a shade that looks right and drives comfortably."
       ],
       "checks": [
         "**Computer cut patterns.** Precise edges and zero blade marks on your glass.",
         "**Installed indoors.** A controlled shop install gives the film a clean, long-lasting bond.",
-        "**Shade guidance.** We show you real film samples on glass and walk you through what is legal for your vehicle.",
+        "**Shade guidance.** We show you real film samples on glass and walk you through what is legal for your vehicle in Michigan.",
         "**Old tint removal.** Purple, bubbling film stripped safely, with your defroster lines protected."
       ],
-      "photo": "tesla-model-y",
+      "photo": "shop-interior",
       "cta": { "label": "Get my free tint quote", "href": "#quote" }
     },
     {
@@ -35,7 +35,7 @@
       "plane": "white",
       "eyebrow": "Films and pricing",
       "title": "Carbon or ceramic. The difference comes down to heat.",
-      "intro": "We install Geoshield C2 Carbon and C2 Ceramic film. Both are non-metalized, so there is no signal interference. Both are computer cut for your exact vehicle, and both carry a **lifetime warranty**. Ceramic blocks far more infrared heat, for a noticeably cooler cabin in a Michigan summer.",
+      "intro": "Both are Geoshield C2 films. Both are non-metalized, so there is no signal interference, and both carry a **lifetime warranty**. Ceramic blocks far more infrared heat, for a noticeably cooler cabin in a Michigan summer.",
       "groups": [
         {
           "label": "Geoshield",
@@ -52,7 +52,7 @@
             { "name": "Front 2 windows", "price": "From $99.99", "time": "About 1.5 hours" },
             { "name": "Full sides", "price": "From $199.99", "time": "About 2.5 hours" },
             { "name": "Full sides + rear glass", "price": "From $299.99", "time": "About 3.5 hours" },
-            { "name": "Front windshield", "price": "Ceramic only", "time": "About 1.5 hours", "body": "Windshields are tinted in C2 Ceramic film only." }
+            { "name": "Front windshield", "price": "Ceramic only", "body": "Windshields are tinted in C2 Ceramic film only, from $175.00." }
           ]
         },
         {
@@ -94,23 +94,11 @@
       "note": "On-screen shades are an approximation, and every screen renders differently. The car shown is an illustration. You will see real Geoshield film samples on actual glass in our shop, and we will help you choose the right shade for each window during your consultation."
     },
     {
-      "type": "steps",
-      "plane": "paper",
-      "eyebrow": "What happens next",
-      "title": "Three steps from quote to tinted glass.",
-      "steps": [
-        { "title": "Get your quote", "body": "Call, book online or send the form. Tell us your vehicle and which windows. It takes about two minutes.", "note": "About two minutes" },
-        { "title": "Pick your film and shade", "body": "See real Geoshield samples on actual glass with a specialist who helps you choose the right shade for each window.", "note": "Real samples on glass" },
-        { "title": "Drop off, drive away tinted", "body": "Most installs take 1.5 to 3.5 hours. Leave the windows up for 3 to 4 days while the film cures, then enjoy the cooler cabin.", "note": "1.5 to 3.5 hours" }
-      ],
-      "footnote": "Tint is shop only. Film needs a clean indoor space to bond, so every install happens at 33115 Louise Ave in Clinton Township, by appointment."
-    },
-    {
       "type": "faq",
       "plane": "white",
-      "eyebrow": "Michigan tint law",
+      "eyebrow": "The legal side",
       "title": "Michigan tint law: what to know before you book.",
-      "intro": "Michigan's tint rules are different from most other states. We walk you through the details for your exact vehicle during your consultation.",
+      "intro": "Michigan's tint rules are different from most other states. We walk you through the details for your exact vehicle during your consultation. This is general information, not legal advice.",
       "items": [
         {
           "q": "Is window tint legal in Michigan?",
@@ -122,17 +110,29 @@
         },
         {
           "q": "Who decides how dark my tint goes?",
-          "a": "You do. We show you the shades on real glass, tell you what is legal for your vehicle and help you land on a setup that looks right. The final shade choice is always yours, and so is the responsibility for picking a shade that complies with state and local law.\n\nThis is general information, not legal advice. Tint laws can change and local enforcement varies, so we review current Michigan requirements with you during your consultation."
+          "a": "You do. We show you the shades on real glass, tell you what is legal for your vehicle and help you land on a setup that looks right. The final shade choice is always yours, and so is the responsibility for picking a shade that complies with state and local law.\n\nTint laws can change and local enforcement varies, so we review current Michigan requirements with you during your consultation."
         }
       ]
+    },
+    {
+      "type": "steps",
+      "plane": "paper",
+      "eyebrow": "What happens next",
+      "title": "Three steps from quote to tinted glass.",
+      "steps": [
+        { "title": "Get your quote", "body": "Call, book online or send the form. Tell us your vehicle and which windows.", "note": "About two minutes" },
+        { "title": "Pick your film and shade", "body": "See real Geoshield samples on actual glass with a specialist who helps you choose the right shade for each window.", "note": "In our shop" },
+        { "title": "Drop off, drive away tinted", "body": "Most installs take 1.5 to 3.5 hours. Leave the windows up for 3 to 4 days while the film cures, then enjoy the cooler cabin.", "note": "Most done the same day" }
+      ],
+      "footnote": "Tint is shop only. Film needs a clean indoor space to bond, so every install happens at 33115 Louise Ave in Clinton Township, by appointment."
     },
     {
       "type": "gallery",
       "plane": "ink",
       "eyebrow": "Our work",
       "title": "1,000+ vehicles serviced since 2023. Here are a few.",
-      "intro": "Vehicles from across our work: window tint, auto detailing and [ceramic coating](/ceramic-coating/). Not every one pictured came in for film. We are licensed and insured, with 5.0 from 270+ reviews on Google.",
-      "photos": ["bmw-7-series", "escalade-black", "cadillac-sedan-black", "cybertruck", "chevy-suv-black", "tesla-model-y", "interior-convertible", "corvette-gray"]
+      "intro": "Vehicles from across our work: window tint, auto detailing and [ceramic coating](/ceramic-coating/). Not every one pictured came in for film. We are licensed and insured, with [5.0 from 270+ reviews on Google](/reviews/).",
+      "photos": ["tesla-model-y", "bmw-7-series", "escalade-black", "cadillac-sedan-black", "cybertruck", "chevy-suv-black", "bmw-x6-blue", "jeep-grand-cherokee"]
     },
     {
       "type": "areas",
@@ -145,15 +145,15 @@
   "faq": [
     {
       "q": "How much does window tint cost?",
-      "a": "On a standard coupe or sedan, C2 Carbon is from $99.99 for the front 2 windows, from $199.99 for full sides and from $299.99 for full sides + rear glass. C2 Ceramic is from $149.99, from $299.99 and from $399.99 for the same windows. A front windshield is from $175.00 and is done in ceramic film only.\n\nSUVs and trucks are quoted by vehicle. Final pricing can vary with window count, glass condition and film selection, and every adjustment is approved before work begins. [Request a free quote](#quote) or call [(586) 400-1303](tel:+15864001303) for your exact price."
+      "a": "On a standard coupe or sedan, C2 Carbon is from $99.99 for the front 2 windows, from $199.99 for full sides and from $299.99 for full sides + rear glass. C2 Ceramic is from $149.99, from $299.99 and from $399.99 for the same windows. A front windshield is from $175.00 and is done in ceramic film only.\n\nSUVs and trucks are quoted by vehicle, and any adjustment is approved before work begins. [Request a free quote](#quote) for your exact price."
     },
     {
       "q": "What is the difference between carbon and ceramic tint?",
-      "a": "Both are Geoshield C2 films. Both are non-metalized, both block 99% of UV, both are computer cut for your vehicle and both carry the lifetime warranty. The difference comes down to heat: C2 Ceramic blocks far more infrared heat, so the cabin is noticeably cooler on a sunny day.\n\nC2 Carbon is the pick for drivers focused on style and value: a deep, sleek look, more privacy and less glare. C2 Ceramic is the pick for drivers who want privacy, comfort and performance. It costs more: the front 2 windows on a standard coupe or sedan are from $99.99 in carbon and from $149.99 in ceramic. Tell us how you drive and we will tell you straight which one fits."
+      "a": "Both are Geoshield C2 films, both are non-metalized, both block 99% of UV and both carry the lifetime warranty. The difference is heat: C2 Ceramic blocks far more infrared heat, so the cabin is noticeably cooler on a sunny day.\n\nC2 Carbon is the pick for drivers focused on style and value. C2 Ceramic is the pick for drivers who want privacy, comfort and performance, and it costs more: the front 2 windows on a standard coupe or sedan are from $99.99 in carbon and from $149.99 in ceramic. Tell us how you drive and we will tell you straight which one fits."
     },
     {
       "q": "How long does window tint installation take?",
-      "a": "Most installs are done the same day you drop off. The front 2 windows take about 1.5 hours, full sides about 2.5 hours, and full sides + rear glass about 3.5 hours. A front windshield is about 1.5 hours.\n\nThe shop is appointment only, so you have a set drop-off time before you arrive."
+      "a": "Most installs are done the same day you drop off. The front 2 windows take about 1.5 hours, full sides about 2.5 hours, and full sides + rear glass about 3.5 hours. A front windshield is about 1.5 hours.\n\nWe are appointment only, so book your drop-off before you come by."
     },
     {
       "q": "When can I roll my windows down after tinting?",
@@ -169,7 +169,7 @@
     },
     {
       "q": "Will window tint interfere with my phone, GPS or radio?",
-      "a": "No. C2 Carbon and C2 Ceramic are both non-metalized films, so they do not interfere with GPS, radio or phone signal. It is metal in a film that gets in the way of a signal, and neither film we install has any."
+      "a": "No. C2 Carbon and C2 Ceramic are both non-metalized films, so neither one interferes with GPS, radio or phone signal."
     },
     {
       "q": "Do you tint at my home or workplace?",
@@ -182,14 +182,14 @@
   },
   "summary": {
     "title": "Two Geoshield films. One lifetime warranty.",
-    "intro": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact year, make and model so no blade touches the glass. Both block 99% of UV and will not interfere with GPS, radio or phone signal. Prices are for a standard coupe or sedan. SUVs and trucks are quoted by vehicle.",
+    "intro": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle so no blade touches the glass. Both block 99% of UV. Prices are for a standard coupe or sedan. SUVs and trucks are quoted by vehicle.",
     "items": [
-      { "name": "C2 Carbon", "price": "From $99.99", "detail": "A deep, sleek look with more privacy and less glare. Front 2 windows from $99.99, full sides from $199.99, full sides + rear glass from $299.99." },
-      { "name": "C2 Ceramic", "price": "From $149.99", "detail": "Blocks far more infrared heat for a cooler cabin. Front 2 windows from $149.99, full sides from $299.99, full sides + rear glass from $399.99." },
+      { "name": "C2 Carbon", "price": "From $99.99", "detail": "For style and value. Front 2 windows from $99.99, full sides from $199.99, full sides + rear glass from $299.99." },
+      { "name": "C2 Ceramic", "price": "From $149.99", "detail": "Blocks far more infrared heat. Front 2 windows from $149.99, full sides from $299.99, full sides + rear glass from $399.99." },
       { "name": "Front windshield", "price": "From $175.00", "detail": "C2 Ceramic film only. About 1.5 hours." },
-      { "name": "Old tint removal", "price": "From $50", "detail": "Per area, with defroster lines protected. 50% off when a full-vehicle tint is installed the same day." },
-      { "name": "Shades", "detail": "5%, 20%, 35%, 50% and 75%. 20% is the most popular. You pick from real Geoshield samples on glass at the shop." }
+      { "name": "Old tint removal", "price": "From $50", "detail": "Per area. 50% off when a full-vehicle tint is installed the same day." },
+      { "name": "Shades", "detail": "5%, 20%, 35%, 50% and 75%, with 20% the most popular. You choose from real Geoshield samples on glass at the shop." }
     ],
-    "footnote": "Tint is installed indoors at our Clinton Township shop. Most installs take 1.5 to 3.5 hours and are done the same day. Every install carries the Geoshield lifetime warranty covering bubbling, peeling and fading."
+    "footnote": "Installed indoors at our Clinton Township shop. Most installs take 1.5 to 3.5 hours and are done the same day. Every film carries a lifetime warranty covering bubbling, peeling and fading."
   }
 }

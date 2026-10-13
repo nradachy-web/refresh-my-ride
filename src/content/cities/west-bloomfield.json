@@ -1,0 +1,76 @@
+{
+  "city": "west-bloomfield",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in West Bloomfield, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for West Bloomfield drivers. Indoor shop about 25 miles away, by appointment. Free quote."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in West Bloomfield, MI",
+    "title": "Lake township cars. **Done indoors.**",
+    "lede": "Residents call West Bloomfield the lake township of Oakland County. Salt, sap and lake days all end up on the car. Our indoor shop on Louise Ave is about 25 miles from central West Bloomfield, roughly 45 minutes without traffic. Coatings, tint and paint correction are done there, by appointment.",
+    "chips": ["Roughly 45 minutes away", "Appointment only", "Uber covered on coatings"],
+    "photo": "shop-interior"
+  },
+  "about": {
+    "title": "Lakes, woods and county salt: what a car picks up here.",
+    "body": [
+      "West Bloomfield sits between Bloomfield Township and Commerce Township, with Farmington Hills to the south and Cass Lake on the north side. Orchard Lake Road runs north to south through the middle, and it and West Maple Road are where the strip malls and shopping centers are. The township has no public works department of its own: the Road Commission for Oakland County looks after every public road, salt trucks included."
+    ],
+    "points": [
+      {
+        "title": "Salt on the main roads, slush on yours",
+        "body": "The county clears and salts by traffic, so Orchard Lake Road and Middlebelt come first and subdivision streets come last. Your car picks up brine on the main road, then parks in whatever is still sitting on your own street. It dries white on rocker panels and floor mats and stays until it is washed out."
+      },
+      {
+        "title": "Cass Lake, Pine Lake and Walnut Lake",
+        "body": "Cass Lake, the largest lake in the county, is partly in the township, and Pine Lake and Walnut Lake are inside it. Marshbank Park has a canoe and kayak launch and a fishing pier on Cass Lake. Wet gear and lake water soak into cargo areas and carpet, and getting them out is extraction work, not a vacuum."
+      },
+      {
+        "title": "Trees the township protects",
+        "body": "West Bloomfield regulates cutting in its designated woodlands, and the 162 acre West Bloomfield Woods Nature Preserve is mature oak and hickory. Good for the place, hard on a parked car: sap and bird droppings sit on the paint until they are properly washed off."
+      },
+      {
+        "title": "Gravel roads and what goes on them",
+        "body": "Some residents here still live on gravel. The county spreads sand on gravel roads in winter, because salt does not work on them, and sprays calcium chloride brine in summer on roads signed up for dust control. All of it ends up on the lower panels and in the carpet."
+      }
+    ],
+    "photo": "bmw-7-series"
+  },
+  "logistics": {
+    "title": "About 25 miles, roughly 45 minutes. Plan it as a drop-off.",
+    "body": [
+      "The shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile Road just east of Kelly Road. That is about 25 miles from central West Bloomfield, roughly 45 minutes without traffic, and it puts you at the far edge of the area we serve. We work by appointment, Monday to Friday, 9am to 5pm.",
+      "Coatings, window film and machine polishing all need the bays: steady light, no dust, no wind and time to cure. Detailing is the one service that can travel, but we do not promise a mobile visit this far out. Tell us where you are and we will confirm what can come to you."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 25 miles from central West Bloomfield" },
+      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Tell us where you are and we will confirm" },
+      { "label": "Shop hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to West Bloomfield for mobile detailing?",
+      "a": "We do not promise it. West Bloomfield is at the far edge of our service area, and a mobile detail also needs a driveway or parking spot with room to walk the full perimeter of the vehicle. Tell us where you are when you [request a free quote](#quote) and we will confirm what can come to you. If a mobile visit is not possible, the same packages are done at the shop. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "How far is your shop from West Bloomfield?",
+      "a": "About 25 miles from central West Bloomfield, roughly 45 minutes without traffic. The address is 33115 Louise Ave, Clinton Township, on the north side of 14 Mile Road just east of Kelly Road. We are appointment only, so please book before you set out."
+    },
+    {
+      "q": "I cannot give up a whole day. How do coating customers handle the distance?",
+      "a": "Two ways. Uber is covered for the drop-off and pickup on ceramic coating jobs, so you leave the vehicle and get on with your day. Or ask about our pick-up and drop-off valet when you request a quote. You are at the edge of our range, so we confirm valet by address before promising it. The details are on the [ceramic coating in West Bloomfield](/ceramic-coating-west-bloomfield-mi/) page."
+    },
+    {
+      "q": "Are you open on weekends?",
+      "a": "No. The shop is open Monday to Friday, 9am to 5pm, by appointment, and closed on weekends. Online booking is open 24/7, and you can call or text [(586) 400-1303](tel:+15864001303) during shop hours."
+    },
+    {
+      "q": "What does a detail cost for an SUV?",
+      "a": "Our listed prices start from $184.99 for an interior detail, from $139.99 for an exterior detail and from $249.99 for a full detail, on a coupe or sedan in average condition. SUVs and trucks are quoted for their size, and you get the number before any work starts. See [detailing in West Bloomfield](/car-detailing-west-bloomfield-mi/)."
+    }
+  ],
+  "reviews": ["norman-r", "jake-m", "caitlin-d"],
+  "neighbors": ["birmingham", "troy", "royal-oak"]
+}

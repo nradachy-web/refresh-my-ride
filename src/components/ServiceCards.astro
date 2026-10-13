@@ -100,8 +100,14 @@ const cols = services.length === 4 ? 'c4' : 'c3';
     }
 
     .svc__photo {
+      position: relative;
       aspect-ratio: auto;
       height: 100%;
+    }
+
+    .svc__photo :global(picture) {
+      position: absolute;
+      inset: 0;
     }
 
     .svc__body {

@@ -1,0 +1,72 @@
+{
+  "service": "paint-correction",
+  "city": "west-bloomfield",
+  "meta": {
+    "title": "Paint Correction in West Bloomfield, MI | Refresh My Ride",
+    "description": "Paint correction for West Bloomfield drivers. Swirls, light scratches and oxidation machine polished out at our shop. Polish & Protect from $344.99."
+  },
+  "hero": {
+    "kicker": "Paint correction in West Bloomfield, MI",
+    "title": "Winter wash marks. **Polished out.**",
+    "lede": "A salt season means a lot of washes, and brush washes leave swirls. Paint correction machine polishes swirl marks, light scratches, oxidation and water spots out of the clear coat. Polish & Protect starts from $344.99 for a coupe or sedan in average condition, done at our shop roughly 45 minutes away.",
+    "chips": ["Polish & Protect from $344.99", "Inspected under shop lighting", "Shop only"],
+    "photo": "josh-polishing-corvette"
+  },
+  "local": {
+    "eyebrow": "What marks the paint",
+    "title": "How West Bloomfield paint gets its swirls and scratches.",
+    "intro": "Most paint defects are put there by cleaning the car, not by driving it. Around here there is a lot to clean off: county salt all winter, dust from gravel roads, and whatever the trees drop. This is how each one turns into marks, and what polishing can and cannot do about it.",
+    "points": [
+      {
+        "title": "A winter of tunnel washes",
+        "body": "The Road Commission for Oakland County salts the paved roads and often brines the main ones before a storm, so a car here needs washing again and again until spring. Brush-style automatic washes put swirls in any finish. A one-step machine polish removes roughly 60 to 70% of light swirls and scratches. Touchless washes are fine."
+      },
+      {
+        "title": "Gravel dust wiped off dry",
+        "body": "Some residents here live on gravel roads, which get sand in winter and throw dust in summer. Wipe that off a dry panel with a towel and the grit drags across the clear coat, leaving fine scratches. Light ones polish out. Scratches that go through the clear coat do not."
+      },
+      {
+        "title": "Scrubbing at sap and droppings",
+        "body": "West Bloomfield regulates cutting in designated woodlands, and its 162 acre nature preserve is mature oak and hickory. Sap and bird droppings come with parking outside. The marks usually come from scrubbing them off. A decontamination wash takes the sap off first, and polishing removes the light marring left behind."
+      },
+      {
+        "title": "Freeway chips are a different job",
+        "body": "Northwestern Highway ends at Orchard Lake Road and M-5 passes just west of the township, so it is easy to put freeway miles on a front end from here. Correction is not repainting. It cannot fix rock chips, deep scratches or failed clear coat, and we will say so before you drive out."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction is shop work. Send photos before you make the drive.",
+    "body": [
+      "Paint is inspected and polished under shop lighting at 33115 Louise Ave in Clinton Township. Matt, our lead technician, handles the heaviest correction work. From central West Bloomfield the shop is about 25 miles, roughly 45 minutes without traffic, so it makes sense to know what the job is before you come.",
+      "[Text us photos](sms:+15864001303) of the paint in direct sun and tell us what you drive. We will give you a straight first read: a one-step polish, like Polish & Protect at about 4.5 to 5 hours, or a multi-stage correction, which is quoted per vehicle once we have seen the paint in person.",
+      "If you cannot bring the vehicle yourself, ask about pick-up and drop-off valet with your quote. West Bloomfield is at the edge of our range, so we check your address first."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
+      { "label": "Polish & Protect", "value": "From $344.99, about 4.5 to 5 hours" },
+      { "label": "Heavier correction", "value": "Multi-stage, quoted per vehicle" }
+    ]
+  },
+  "photo": "team-polishing-mercury",
+  "faq": [
+    {
+      "q": "Can paint correction be done at my home in West Bloomfield?",
+      "a": "No. Correction is done at the shop, in an enclosed bay under controlled lighting. We have to see the defects to remove them, and the panel has to stay free of dust while we polish. Detailing is the only work we do away from the shop."
+    },
+    {
+      "q": "How do I know if I need a one-step polish or more?",
+      "a": "A one-step machine polish removes roughly 60 to 70% of light swirls and scratches. It comes two ways: Polish & Protect, an exterior service from $344.99 with a 6 month sealant, and Luxury Refresh, a full detail with a one-step polish from $439.99. Both prices are for a coupe or sedan in average condition. Heavier defects need a multi-stage correction, quoted per vehicle after we see the paint. Two from our own files: a 1990 Mazda Miata that took a 2 step correction, and a 2021 Chevy Silverado 2500HD with heavy oxidation and water spots. More on the [paint correction page](/paint-correction/)."
+    },
+    {
+      "q": "Will paint correction fix rock chips or deep scratches?",
+      "a": "No. Correction removes defects in the clear coat. It is not repainting. Rock chips, scratches that go through the clear coat and failed clear coat are beyond what polishing can do, and we would rather tell you that from a photo than after a 45 minute drive."
+    },
+    {
+      "q": "Should I ceramic coat the car after correcting it?",
+      "a": "If you are thinking about a coating, do both in one visit. Paint correction is included in every ceramic coating package and is done right before the coating goes on, so the corrected finish is the one that gets protected. It also saves you a second trip to the shop. See [ceramic coating in West Bloomfield](/ceramic-coating-west-bloomfield-mi/), or [request a free quote](#quote)."
+    }
+  ],
+  "reviews": ["norman-r", "don-p", "karen-u"]
+}

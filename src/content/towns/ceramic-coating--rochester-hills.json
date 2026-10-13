@@ -1,0 +1,70 @@
+{
+  "service": "ceramic-coating",
+  "city": "rochester-hills",
+  "meta": {
+    "title": "Ceramic Coating in Rochester Hills, MI | Refresh My Ride",
+    "description": "Ceramic coating for Rochester Hills drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered. Free quote."
+  },
+  "hero": {
+    "kicker": "Ceramic coating in Rochester Hills, MI",
+    "title": "Salt on side streets too. **Coat it.**",
+    "lede": "Rochester Hills salts its local streets as well as its main roads, so winter follows the car all the way into the driveway. A ceramic coating keeps that salt off bare clear coat. 1, 3 and 5 year packages with paint correction included, applied at our shop about 30 minutes away. Valet pickup if you would rather not drive.",
+    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered or valet pickup"],
+    "photo": "bmw-x6-blue"
+  },
+  "local": {
+    "title": "What Rochester Hills roads and trees put on your paint.",
+    "intro": "Three things work on a finish here: salt that reaches every public subdivision street, brine mist off the freeway, and whatever falls out of the trees. A coating does not stop any of them from landing. It changes whether they stick.",
+    "points": [
+      {
+        "title": "Salt past the subdivision entrance",
+        "body": "The city plows and salts its 241 miles of local roads, not only the 53 miles of major ones. That puts salt on your own street from the first snow to the last. Coated paint lets it go with a rinse, because the film never gets to sit against bare clear coat."
+      },
+      {
+        "title": "Brine mist off M-59",
+        "body": "M-59 crosses the city as a freeway, with exits at Adams, Crooks and Rochester Road. County crews spray liquid brine ahead of storms, and at freeway speed it comes back up as a mist that dries on every panel. Glass can be coated in the same visit, so the windshield sheds water too."
+      },
+      {
+        "title": "Sap and droppings under the trees",
+        "body": "You need a city permit to remove a street tree in Rochester Hills, and a forestry unit looks after them. Park under one through spring and summer and the hood collects sap and bird droppings. On a coated car they wipe off before they etch the paint."
+      },
+      {
+        "title": "What a coating will not do",
+        "body": "A coating is not armor. It will not stop a rock chip on the freeway or a key scratch in a parking lot. It resists salt, sun and chemical etching, and it makes the car far easier to wash. If someone promises you more than that, they are overselling."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Coating is shop work. You do not have to make the drive.",
+    "body": [
+      "A coating goes on indoors at 33115 Louise Ave in Clinton Township, where we control the light, the dust and the cure. From central Rochester Hills that is about 19 miles, roughly 30 minutes without traffic. The shop is on the north side of 14 Mile Road, just east of Kelly Road.",
+      "The vehicle stays with us for at least a full day, and longer when the paint needs more correction first. You get an exact window with your quote. From Rochester Hills there are two ways to handle that. Drop it off and we cover your Uber home and back. Or book [pick-up and drop-off valet](/mobile-detailing/): we collect it from your driveway or your office and return it coated."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "About 19 miles, roughly 30 minutes without traffic" },
+      { "label": "How long", "value": "At least a full day" },
+      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+    ]
+  },
+  "photo": "bmw-7-series",
+  "faq": [
+    {
+      "q": "Do I have to drive to Clinton Township for a coating?",
+      "a": "The car has to get here. You do not. A coating needs an enclosed bay and time to cure before it goes back outside, so we do not apply one in a driveway. Valet pickup collects the vehicle in Rochester Hills and brings it back when it is done. If you would rather drop it off, Uber is covered both ways."
+    },
+    {
+      "q": "Will a coating protect my car from road salt?",
+      "a": "It keeps salt and brine from sitting against bare clear coat, and it makes the film rinse off instead of grip. It does not replace washing. Through a Rochester Hills winter, rinse the car regularly and stay out of brush-style automatic washes, which put swirls in any finish, coated or not. Touchless washes are fine."
+    },
+    {
+      "q": "My car lives outside under trees. Which package do I need?",
+      "a": "The package is about how long you are keeping the vehicle. The Refresh is 1 year, The Revival is 3 and The Renewal is 5. Where it is parked changes how hard the coating works, not which one fits. A car that sits outside needs proper washing more than a garaged one does, and your free follow-up wash and inspection is where we check how it is holding up. Tell us where it is parked when you ask for the quote."
+    },
+    {
+      "q": "What does a ceramic coating cost?",
+      "a": "It is quoted per vehicle. Size, the condition of the paint and how much [paint correction](/paint-correction-rochester-hills-mi/) it needs before coating decide the work, so a price list would be a guess. Send us the year, make and model and we will reply with a real number. Financing is available through Affirm and Klarna. [Request a free quote](#quote)."
+    }
+  ],
+  "reviews": ["john-b", "scott-w", "tom-k"]
+}

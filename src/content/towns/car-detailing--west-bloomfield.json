@@ -1,0 +1,72 @@
+{
+  "service": "car-detailing",
+  "city": "west-bloomfield",
+  "meta": {
+    "title": "Car Detailing in West Bloomfield, MI | Refresh My Ride",
+    "description": "Auto detailing for West Bloomfield drivers. Interior details from $184.99 and full details from $249.99. Lake gear, dog hair and road salt handled. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in West Bloomfield, MI",
+    "title": "Lake days end up **in the carpet.**",
+    "lede": "Wet gear from Cass Lake, dog hair from the park at Karner Farm, salt off Orchard Lake Road. Interior details start from $184.99 and full details from $249.99 for a coupe or sedan in average condition. West Bloomfield is at the edge of our area, so tell us where you are and we will confirm what can come to you.",
+    "chips": ["Interior from $184.99", "Full details from $249.99", "Steam and extraction"],
+    "photo": "jeep-grand-cherokee"
+  },
+  "local": {
+    "eyebrow": "What ends up in the car",
+    "title": "What West Bloomfield leaves inside a car, and on it.",
+    "intro": "Residents call this the lake township of Oakland County, and the parks system covers nearly 600 acres. In a vehicle that shows up as lake water, trail mud, dog hair and, all winter, salt. Each one needs a different kind of cleaning.",
+    "points": [
+      {
+        "title": "Cass Lake in the cargo area",
+        "body": "Marshbank Park sits on more than 80 acres of Cass Lake shoreline, with a canoe and kayak launch and a fishing pier. Wet gear soaks into carpet and leaves a smell behind when it dries. Hot water extraction and steam pull it out of the fibers, and odor removal handles what a vacuum cannot."
+      },
+      {
+        "title": "The dog park at Karner Farm",
+        "body": "The West Bloomfield Dog Park on Halsted Road is nearly 4 acres, fenced, and open daily all year. Dog hair weaves into carpet and seat fabric. We can treat it, and when it is heavy there may be an extra charge, which you approve before any work begins."
+      },
+      {
+        "title": "Mud from unpaved trails",
+        "body": "The trails in the 162 acre West Bloomfield Woods Nature Preserve are unpaved, and the West Bloomfield Trail runs 6.8 miles from Haggerty Road to Sylvan Manor Park. What comes back on boots and bike tires dries into the mats. The Premium Interior Detail includes a full vacuum with the trunk and washed floor mats."
+      },
+      {
+        "title": "Salt inside, sap outside",
+        "body": "The county salts Orchard Lake Road and Middlebelt first and reaches subdivision streets last, so boots carry brine into the carpet all winter. Outside, the township protects its woodlands, which means sap on the paint. A Wash & Seal, from $139.99, is a full decontamination wash that covers sap, tar and bugs, with a 6 month ceramic sealant."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Shop or mobile: from West Bloomfield, ask us first.",
+    "body": [
+      "Detailing is the one service we can do away from the shop. A mobile visit needs a driveway or parking spot with room to walk the full perimeter of the vehicle, and we bring our own power and water. West Bloomfield is at the far edge of the area we serve, so we do not promise it here. Tell us where you are and we will confirm what can come to you.",
+      "If mobile is not an option for your address, the same packages are done at the shop: 33115 Louise Ave in Clinton Township, about 25 miles from central West Bloomfield and roughly 45 minutes without traffic. A Premium Interior Detail takes about 2 hours and a Signature Refresh about 5, so check the time on your package before you plan the day.",
+      "Please take personal items and car seats out before we start. You can also ask about our pick-up and drop-off valet when you request a quote."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Tell us where you are and we will confirm" },
+      { "label": "Shop", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
+      { "label": "Hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+    ]
+  },
+  "photo": "interior-bmw",
+  "faq": [
+    {
+      "q": "Do you offer mobile detailing in West Bloomfield?",
+      "a": "We do not promise it. West Bloomfield is roughly 45 minutes from the shop, at the far edge of our service area. Send your address with your [free quote request](#quote) and we will tell you plainly whether we can come to you or whether it is a shop appointment. See [how mobile detailing works](/mobile-detailing/)."
+    },
+    {
+      "q": "How much does a detail cost for an SUV or truck?",
+      "a": "Listed prices are for a coupe or sedan in average condition: Premium Interior Detail from $184.99, Essential Refresh from $249.99, Signature Refresh from $319.99, and Wash & Seal from $139.99 for the exterior. SUVs and trucks are quoted for their size, and you get that number before work starts. Every package is laid out on the [detailing page](/car-detailing-services-clinton-township-mi/)."
+    },
+    {
+      "q": "Can you get out dog hair, lake smell and old stains?",
+      "a": "Pet hair, stains and odors can all be treated, using hot water extraction, steam and odor removal. Some stains are permanent, dye transfer and old bleach marks for example, and we tell you so at the walkaround before we start. Heavy pet hair, stains or biohazards may carry an extra charge, and it is always approved by you first."
+    },
+    {
+      "q": "How often should a car be detailed?",
+      "a": "Our usual advice is a full detail once or twice a year, at the end of winter and the end of summer, with a maintenance detail every one to three months if you have kids, pets or a long commute. Ask us about our maintenance plans, which lock in a lower per-visit price for regular service."
+    }
+  ],
+  "reviews": ["caitlin-d", "angie-l", "karen-u"]
+}

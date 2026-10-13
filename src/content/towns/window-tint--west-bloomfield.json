@@ -1,0 +1,72 @@
+{
+  "service": "window-tint",
+  "city": "west-bloomfield",
+  "meta": {
+    "title": "Window Tint in West Bloomfield, MI | Refresh My Ride",
+    "description": "Window tint for West Bloomfield drivers: Geoshield C2 carbon and ceramic film, computer cut, lifetime warranty. Front two windows from $99.99. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in West Bloomfield, MI",
+    "title": "Sun in the side glass. **Less of it.**",
+    "lede": "Orchard Lake Road runs north to south, so the low sun comes through the side windows morning and evening. Geoshield C2 film blocks 99% of UV, and the ceramic version rejects far more infrared heat. Front two windows from $99.99 on a standard coupe or sedan, installed indoors at our shop.",
+    "chips": ["From $99.99", "Lifetime warranty", "Computer cut film", "Blocks 99% of UV"],
+    "photo": "tesla-model-y"
+  },
+  "local": {
+    "eyebrow": "Why tint it here",
+    "title": "Where the sun gets into a West Bloomfield car.",
+    "intro": "Tint is about which way the vehicle points and where it sits. Here that means a north to south main road, an east to west drive on Maple, and long stretches parked outside a store or the hospital. Both Geoshield films are non-metalized, so GPS, radio and phone signal are not affected.",
+    "points": [
+      {
+        "title": "North and south on Orchard Lake Road",
+        "body": "Orchard Lake Road runs through the middle of the township. Heading up or down it, the morning and evening sun is at your shoulder, not in front of you, and a visor does nothing for a side window. Film on the side glass takes the edge off that glare and the heat that comes with it."
+      },
+      {
+        "title": "East and west on Maple",
+        "body": "West Maple Road is 15 Mile Road, and a mile road puts the sun low in the windshield one way each day. Windshield film is ceramic only, from $175.00, and the 75% shade is almost invisible on the car. Michigan has specific rules for each set of windows, so we go through what is legal for yours first."
+      },
+      {
+        "title": "Parked through a shift or a shopping run",
+        "body": "Orchard Lake Road and West Maple are lined with strip malls and shopping complexes, and Henry Ford West Bloomfield Hospital is on West Maple too. A vehicle left in the sun for hours takes in heat through the glass. C2 Ceramic rejects far more infrared heat than C2 Carbon, and both block 99% of UV."
+      },
+      {
+        "title": "Gear left at the trailhead",
+        "body": "The West Bloomfield Trail and the West Bloomfield Woods Nature Preserve share a trailhead and parking on Arrowhead Road, and Marshbank Park has a launch on Cass Lake. Tinted rear glass makes what you left in the cargo area harder to see. The shade is your choice, and we show real Geoshield samples on glass at the shop."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint is installed at the shop, and most installs are done the same day.",
+    "body": [
+      "Film is cut on a plotter to the exact year, make and model, so no blade touches the glass, and it goes on indoors where dust and wind cannot get under it. That happens at 33115 Louise Ave in Clinton Township, about 25 miles from central West Bloomfield and roughly 45 minutes without traffic.",
+      "Install time is about 1.5 hours for the front two windows, about 2.5 hours for full sides and about 3.5 hours for full sides plus rear glass. From this far out it helps to book early in the day, so the vehicle is finished well before we close at 5pm. Leave the windows up for 3 to 4 days afterward. Small water pockets or a light haze in the first week are normal.",
+      "If the drive does not work for you, ask about our pick-up and drop-off valet when you [request a free quote](#quote). West Bloomfield is at the edge of our range, so we confirm it by address before promising anything."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "Warranty", "value": "Lifetime: bubbling, peeling and fading" }
+    ]
+  },
+  "photo": "corvette-gray",
+  "faq": [
+    {
+      "q": "Can you tint my windows at my home in West Bloomfield?",
+      "a": "No. Tint is a shop job. Film has to go on indoors, on clean glass, with no wind carrying dust under it, and our patterns are cut on a plotter at the shop for your exact vehicle. Detailing is the only service we take on the road."
+    },
+    {
+      "q": "What does window tint cost?",
+      "a": "For a standard coupe or sedan: the front two windows are from $99.99 in C2 Carbon or from $149.99 in C2 Ceramic, full sides are from $199.99 or from $299.99, and full sides plus rear glass are from $299.99 or from $399.99. A front windshield is ceramic film only, from $175.00. SUVs and trucks are quoted by vehicle. Old tint removal is from $50 per area, and 50% off when a full-vehicle tint is installed the same day. See [window tint pricing and shades](/window-tint-clinton-township-mi/)."
+    },
+    {
+      "q": "How dark can I go in Michigan?",
+      "a": "Michigan's rules are specific to each set of windows and differ from most states. We walk you through what is legal for your vehicle, including darker rear windows and the medical exemption process, and the shade choice is yours. We offer 5%, 20%, 35%, 50% and 75%, and 20% is the most requested. Shades on a screen are an approximation, so we show you real Geoshield samples on glass in the shop. This is general information, not legal advice."
+    },
+    {
+      "q": "Should I pick carbon or ceramic film?",
+      "a": "Both are Geoshield C2. Both are non-metalized, block 99% of UV and carry a lifetime warranty covering bubbling, peeling and fading. The difference is heat: ceramic rejects far more infrared. If the vehicle sits outside for hours most days, ceramic is the one you will feel. If you mainly want the look and the UV protection, carbon does that for less. Ask us and we will tell you straight which one fits. More on both films is on the [West Bloomfield service page](/service-areas/west-bloomfield/)."
+    }
+  ],
+  "reviews": ["jake-m", "matt-h"]
+}

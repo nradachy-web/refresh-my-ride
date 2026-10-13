@@ -1,0 +1,76 @@
+{
+  "city": "rochester-hills",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Rochester Hills, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Rochester Hills. Mobile detailing at your home, valet pickup, or our shop about 30 minutes away."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Rochester Hills, MI",
+    "title": "Half an hour away. **Or we drive.**",
+    "lede": "Our Clinton Township shop is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic. Detailing can come to your driveway. Ceramic coating, window tint and paint correction are done at the shop, and valet pickup means you never have to make the trip yourself.",
+    "chips": ["Roughly 30 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "porsche-suv-blue"
+  },
+  "about": {
+    "title": "What a year in Rochester Hills leaves on a car.",
+    "body": [
+      "Rochester Hills was Avon Township until 1984, and the hills in the name are real: the ground climbs from the southeast corner of the city to the northwest. M-59 crosses it as a freeway, Rochester Road runs north from there toward downtown Rochester, and a car is how nearly everyone gets around. Four things about the place show up on a vehicle."
+    ],
+    "points": [
+      {
+        "title": "Salt on your own street",
+        "body": "The city plows and salts its 241 miles of local roads as well as its major ones. So the salt does not stop at the subdivision entrance. It rides home on the rocker panels, dries white in the carpet and stays there until it is extracted, not just vacuumed."
+      },
+      {
+        "title": "Brine mist on the freeway",
+        "body": "County road crews, who also plow the state highways here, spray liquid brine ahead of storms. At M-59 speed it comes back up as a fine mist that dries on the paint, the wheels and the glass."
+      },
+      {
+        "title": "Trees the city protects",
+        "body": "Rochester Hills requires a permit to take down a street tree and keeps a forestry unit to look after them. Park under one and the paint collects sap, leaves and bird droppings. Getting sap and tar off properly is the decontamination step in our Wash & Seal."
+      },
+      {
+        "title": "Trails, fields and dogs",
+        "body": "The Paint Creek Trail has a fine limestone surface, the Clinton River Trail runs 4.5 miles through the city, and Borden Park is soccer fields and ball diamonds. Bikes, cleats and leashed dogs carry all of it back into the cargo area."
+      },
+      {
+        "title": "Driveways that suit a mobile detail",
+        "body": "Single family homes are the largest land use in the city. A driveway with room to walk the full perimeter of the vehicle is all we need. In a condo or apartment lot, tell us about the parking and we will say straight whether it works."
+      }
+    ],
+    "photo": "mobile-bmw-driveway"
+  },
+  "logistics": {
+    "title": "About 30 minutes to the shop. Or skip the drive.",
+    "body": [
+      "The shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile Road, just east of Kelly Road. That is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic, across the county line in Macomb County. We are appointment only, Monday to Friday, 9am to 5pm.",
+      "Interior, exterior and full details can be done at your home or workplace in Rochester Hills, and we bring our own power and water. Coatings, tint and paint correction need the shop, where we control the light and the dust. If the trip is the problem, valet pickup collects the vehicle and brings it back. On ceramic coating jobs, Uber is covered if you drop it off yourself."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 19 miles from central Rochester Hills" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available for any service. Ask when you book." }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to Rochester Hills for mobile detailing?",
+      "a": "Yes. Mobile and valet reach about 30 to 40 minutes from our shop, and Rochester Hills is inside that. We bring our own power and water, so you do not run a hose or a cord. We need a driveway or parking spot with room to walk around the whole vehicle. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "How far is your shop from Rochester Hills?",
+      "a": "About 19 miles from central Rochester Hills, roughly 30 minutes without traffic. The address is 33115 Louise Ave, Clinton Township, on the north side of 14 Mile Road just east of Kelly Road. We are appointment only, so book before you head over. If half an hour each way does not fit your day, ask about valet pickup."
+    },
+    {
+      "q": "Can you ceramic coat or tint my vehicle in my driveway?",
+      "a": "No. A coating and window film both need a closed, controlled space: no wind, no dust, steady light. That work is done at the shop, and so is paint correction. Valet pickup gets the vehicle there and back without you. For [ceramic coating](/ceramic-coating-rochester-hills-mi/) we also cover your Uber if you bring it in yourself. [Window tint](/window-tint-rochester-hills-mi/) is usually finished the day you drop off."
+    },
+    {
+      "q": "What should I book after a winter on salted streets?",
+      "a": "For the inside, an Executive Interior Detail. Steam and hot water extraction lift what is in the carpet and mats, where a vacuum only takes the loose layer. It is from $239.99 for a coupe or sedan in average condition. For the outside, a Wash & Seal is a full decontamination wash with a 6 month ceramic sealant, from $139.99. SUVs and trucks are quoted for their size. See [detailing in Rochester Hills](/car-detailing-rochester-hills-mi/)."
+    }
+  ],
+  "reviews": ["sydney-k", "john-b", "jake-m"],
+  "neighbors": ["troy", "shelby-township", "sterling-heights"]
+}
