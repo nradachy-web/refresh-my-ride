@@ -141,10 +141,10 @@ rest are too small or the wrong shape for a hero):
   `porsche-suv-blue`, `cybertruck`, `cadillac-sedan-black`, `bmw-7-series`,
   `josh-polishing-corvette`
 - Window tint: `corvette-gray`, `tesla-model-y`, `bmw-7-series`,
-  `cadillac-sedan-black`, `chevy-suv-black`, `escalade-black`, `cybertruck`
-- Detailing: `interior-alfa-red`, `interior-shelby`, `interior-convertible`,
-  `interior-bmw`, `ford-super-duty-white`, `jeep-grand-cherokee`,
-  `escalade-black`, `chevy-suv-black`, `porsche-wheel`
+  `cadillac-sedan-black`, `chevy-suv-black`, `cybertruck`
+- Detailing: `interior-alfa-red`, `interior-shelby`, `interior-bmw`,
+  `ford-super-duty-white`, `jeep-grand-cherokee`, `chevy-suv-black`,
+  `porsche-wheel`
 - Paint correction: `team-polishing-mercury`, `josh-polishing-corvette`,
   `silverado-black`, `bmw-x6-blue`, `bentley-flying-spur`
 - Town hubs: any of the above, plus `shop-interior`

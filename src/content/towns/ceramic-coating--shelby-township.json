@@ -3,13 +3,18 @@
   "city": "shelby-township",
   "meta": {
     "title": "Ceramic Coating in Shelby Township, MI | Refresh My Ride",
-    "description": "Ceramic coating for Shelby Township drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered. Free quote."
+    "description": "Ceramic coating for Shelby Township drivers: 1, 3 and 5 year packages with paint correction and a written warranty. Shop about 25 minutes away."
   },
   "hero": {
     "kicker": "Ceramic coating in Shelby Township, MI",
     "title": "Salt rinses off. **Sap wipes off.**",
     "lede": "County road salt all winter, then sap and bird droppings under the trees Shelby Township protects by ordinance. A ceramic coating takes that instead of your clear coat. Our 1, 3 and 5 year packages include paint correction and a written warranty, applied at our shop about 13 miles from central Shelby Township.",
-    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered", "Valet pickup available"],
+    "chips": [
+      "1, 3 or 5 years",
+      "Paint correction included",
+      "Uber covered",
+      "Valet pickup available"
+    ],
     "photo": "cadillac-sedan-black"
   },
   "local": {
@@ -41,10 +46,22 @@
       "Plan on the vehicle being with us for at least a full day, longer when the paint needs more correction. Drive it in yourself and your Uber is covered for the drop-off and the pickup. Or book pick-up and drop-off valet: we collect the vehicle from your home or work in Shelby Township and bring it back coated. Most coating customers who cannot spare the day go that way."
     ],
     "facts": [
-      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "If you drop it off", "value": "Uber covered both ways" },
-      { "label": "If you cannot make the trip", "value": "Valet picks up and brings it back" }
+      {
+        "label": "Where",
+        "value": "33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "If you drop it off",
+        "value": "Uber covered both ways"
+      },
+      {
+        "label": "If you cannot make the trip",
+        "value": "Valet picks up and brings it back"
+      }
     ]
   },
   "photo": "bmw-x6-blue",
@@ -66,5 +83,9 @@
       "a": "We do not publish a price list for coatings, on purpose. The job is quoted per vehicle, because size, paint condition and how much correction it needs decide the work. Tell us what you drive and we will send a real number. Affirm and Klarna financing runs 3 to 24 months, as low as 0% interest, if you would rather spread it out. [Request a free quote](#quote) or compare [the three packages](/ceramic-coating/)."
     }
   ],
-  "reviews": ["john-b", "tom-k", "norman-r"]
+  "reviews": [
+    "john-b",
+    "tom-k",
+    "norman-r"
+  ]
 }

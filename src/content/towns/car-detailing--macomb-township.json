@@ -3,13 +3,17 @@
   "city": "macomb-township",
   "meta": {
     "title": "Car Detailing in Macomb Township, MI | Refresh My Ride",
-    "description": "Mobile car detailing in Macomb Township, MI. Interior details from $184.99, full details from $249.99, in your driveway, at our shop or by valet. Free quote."
+    "description": "Mobile car detailing in Macomb Township, MI. Interior details from $184.99, full details from $249.99, in your driveway, at our shop or by valet."
   },
   "hero": {
     "kicker": "Car detailing in Macomb Township, MI",
     "title": "Detailed in your **Macomb driveway.**",
     "lede": "Interior, exterior and full details at your home or workplace in Macomb Township. We bring our own power and water. Interior details are from $184.99 and full details from $249.99 for a coupe or sedan in average condition. If a driveway visit does not suit, valet pickup takes the vehicle to the shop and brings it back.",
-    "chips": ["Mobile, shop or valet", "Interior from $184.99", "We bring power and water"],
+    "chips": [
+      "Mobile, shop or valet",
+      "Interior from $184.99",
+      "We bring power and water"
+    ],
     "photo": "jeep-grand-cherokee"
   },
   "local": {
@@ -42,10 +46,22 @@
       "Before we arrive, please take out personal items and car seats. A Premium Interior Detail takes about 2 hours and a Signature Refresh about 5, and we confirm the timing when you book."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "What we need", "value": "Room to walk around the whole vehicle" },
-      { "label": "Shop", "value": "About 15 miles from central Macomb Township" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "What we need",
+        "value": "Room to walk around the whole vehicle"
+      },
+      {
+        "label": "Shop",
+        "value": "About 15 miles from central Macomb Township"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "photo": "mobile-bmw-driveway",
@@ -67,5 +83,9 @@
       "a": "A full detail once or twice a year suits most vehicles: one at the end of winter to get the salt out, and one at the end of summer. With kids, a dog or a long daily drive, a maintenance detail every one to three months keeps it from building up. If that sounds like your household, ask about a maintenance plan: it locks in a lower per-visit price for regular service."
     }
   ],
-  "reviews": ["alexis-p", "sydney-k", "caitlin-d"]
+  "reviews": [
+    "alexis-p",
+    "sydney-k",
+    "caitlin-d"
+  ]
 }

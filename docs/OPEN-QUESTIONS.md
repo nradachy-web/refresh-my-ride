@@ -16,8 +16,13 @@ made that is his to make.
 3. **How long a coating takes.** "Typically a full day" on one page, "most are
    a multi-day stay" on another, and a review says one day. The site says "at
    least a full day, longer when the paint needs more correction".
-4. **Polish & Protect regular price.** $344.99 on the detailing page, $399 on
-   the grand opening page. The site shows each where he had it.
+4. **Grand opening "regular" prices.** His event page struck through regular
+   prices that are higher than the ones his service pages publish: Polish &
+   Protect $399 (service page: from $344.99), ceramic tint on full sides and
+   rear glass $449 (tint page: from $399.99), and a "$349" Signature Refresh
+   prize (package: from $319.99). The new event page shows the special prices
+   only, with no struck figures and no dollar value on the prize, until he says
+   which numbers are right.
 5. **One review is credited to three names** on the old site (CRS Racing,
    Brenden B., Brenden M.), so it was left off. A review mentioning a "ten year"
    coating was left off because he sells 1, 3 and 5 year packages.
@@ -33,15 +38,20 @@ made that is his to make.
 8. **Mobile service in West Bloomfield.** It is about 45 minutes from the shop,
    past the "30 to 40 minutes" his site gives for mobile and valet. Those pages
    say to tell us where you are and we will confirm. Does he go that far?
-9. **Privacy policy.** Carried over word for word, with three edits: cookies
+9. **Privacy policy.** Carried over word for word, with these edits: cookies
    only WordPress set were removed, Calendly and GitHub were added to the list
-   of providers, and dashes became commas. He should read it once.
+   of providers, dashes became commas, and a dated line under "Changes to this
+   policy" records that. The effective date still reads September 19, 2026:
+   he should set it to the launch date. He should read it once.
 10. **New pages he did not have:** Paint correction, Mobile detailing and valet,
     Reviews and work, the town hubs, and a page per service per town. Paint
     correction says only what his other pages already said about it. He should
     read that one closely.
 11. **Photos.** All from his media library. A sharper hero photo of the new
-    shop, and a photo of each technician for About, would lift the site.
+    shop, and a photo of each technician for About, would lift the site. Who is
+    the technician polishing the black Corvette (the home page photo)? It is
+    captioned as "a technician" until he says. Vehicles are named only as far
+    as his own site named them.
 12. **The yard sign in two mobile photos** shows a different phone number
     ((586) 298-...). Those photos are cropped so the number is out of frame.
 

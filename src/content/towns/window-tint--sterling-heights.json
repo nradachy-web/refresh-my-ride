@@ -3,13 +3,18 @@
   "city": "sterling-heights",
   "meta": {
     "title": "Window Tint in Sterling Heights, MI | Refresh My Ride",
-    "description": "Window tint for Sterling Heights drivers. Geoshield carbon and ceramic film, lifetime warranty, front 2 windows from $99.99 on a coupe or sedan. Free quote."
+    "description": "Window tint for Sterling Heights drivers. Geoshield carbon and ceramic film, lifetime warranty, front 2 windows from $99.99 on a coupe or sedan."
   },
   "hero": {
     "kicker": "Window tint in Sterling Heights, MI",
     "title": "Every mile road **faces the sun.**",
     "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your vehicle and installed indoors at our shop, about 7 miles from central Sterling Heights. Front 2 windows are from $99.99 on a standard coupe or sedan, and every install carries a lifetime warranty covering bubbling, peeling and fading.",
-    "chips": ["Geoshield C2 film", "Lifetime warranty", "Blocks 99% of UV", "Valet pickup available"],
+    "chips": [
+      "Geoshield C2 film",
+      "Lifetime warranty",
+      "Blocks 99% of UV",
+      "Valet pickup available"
+    ],
     "photo": "corvette-gray"
   },
   "local": {
@@ -42,10 +47,22 @@
       "Afterward, leave the windows up for 3 to 4 days. Expect small water pockets or a light haze during the first week: both are normal, and both clear on their own as the film cures."
     ],
     "facts": [
-      { "label": "Where", "value": "Indoors at 33115 Louise Ave, Clinton Township" },
-      { "label": "From central Sterling Heights", "value": "About 7 miles, roughly 15 minutes without traffic" },
-      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
-      { "label": "Cannot make the drive", "value": "Ask about valet pickup when you book" }
+      {
+        "label": "Where",
+        "value": "Indoors at 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "From central Sterling Heights",
+        "value": "About 7 miles, roughly 15 minutes without traffic"
+      },
+      {
+        "label": "Install time",
+        "value": "About 1.5 to 3.5 hours"
+      },
+      {
+        "label": "Cannot make the drive",
+        "value": "Ask about valet pickup when you book"
+      }
     ]
   },
   "photo": "chevy-suv-black",
@@ -67,5 +84,8 @@
       "a": "Ceramic, if heat is what bothers you. Both Geoshield films block 99% of UV, both are non-metalized so they will not interfere with GPS, radio or phone signal, and both carry the lifetime warranty. The difference is infrared heat: C2 Ceramic rejects far more of it. If the look and the privacy are most of what you want, C2 Carbon gets you there for less. See [full window tint details](/window-tint-clinton-township-mi/)."
     }
   ],
-  "reviews": ["jake-m", "april-g"]
+  "reviews": [
+    "jake-m",
+    "april-g"
+  ]
 }

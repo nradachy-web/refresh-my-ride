@@ -10,7 +10,7 @@ import LazyFrame from '../components/LazyFrame.astro';
 import { BRAND } from '../data/site';
 import { href } from '../lib/paths';
 
-const CAL = 'https://calendly.com/refreshmyrideauto/15min?background_color=000000&text_color=ffffff&primary_color=9b30ff&hide_gdpr_banner=1';
+const CAL = 'https://calendly.com/refreshmyrideauto/15min?background_color=000000&text_color=ffffff&primary_color=9b30ff';
 
 const COVERS = [
   { title: 'Your vehicle', body: 'Year, make, size and the condition it is in right now. That is what drives the price.' },
@@ -34,7 +34,7 @@ const COVERS = [
     <div class="wrap">
       <div class="cal__head">
         <h2 class="h3" id="cal-h">Book your consultation</h2>
-        <p class="small muted">Takes about 10 minutes</p>
+        <p class="small muted">A short call</p>
       </div>
       <div class="cal__frame">
         <LazyFrame src={CAL} title="Book a consultation call" height={700} fallback="Open the booking calendar" />

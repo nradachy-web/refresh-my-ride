@@ -13,13 +13,13 @@ export function business() {
   return {
     '@type': ['AutomotiveBusiness', 'LocalBusiness'],
     '@id': BUSINESS_ID,
-    name: BRAND.legalName,
+    name: BRAND.name,
+    legalName: BRAND.legalName,
     url: `${ORIGIN}/`,
     telephone: '+15864001303',
     email: BRAND.email,
     image: `${ORIGIN}/og-image.jpg`,
     logo: `${ORIGIN}/icon-512.png`,
-    priceRange: '$$',
     address: {
       '@type': 'PostalAddress',
       streetAddress: BRAND.street,
@@ -42,25 +42,18 @@ export function business() {
   };
 }
 
-export function serviceSchema(opts: { name: string; description: string; url: string; area?: string; offers?: { name: string; price: string }[] }) {
+/* No offers: their prices are "from" prices for a coupe or sedan, and an Offer
+   would state them as the price. The description carries them in words. */
+export function serviceSchema(opts: { name: string; type: string; description: string; url: string; area?: string; areas?: string[] }) {
+  const areas = opts.areas ?? CITIES.map((c) => `${c.name}, MI`);
   return {
     '@type': 'Service',
     name: opts.name,
-    serviceType: opts.name,
+    serviceType: opts.type,
     description: plain(opts.description),
     url: opts.url,
     provider: { '@id': BUSINESS_ID },
-    areaServed: opts.area ? { '@type': 'City', name: opts.area } : CITIES.map((c) => ({ '@type': 'City', name: `${c.name}, MI` })),
-    ...(opts.offers?.length
-      ? {
-          offers: opts.offers.map((o) => ({
-            '@type': 'Offer',
-            name: o.name,
-            price: o.price,
-            priceCurrency: 'USD',
-          })),
-        }
-      : {}),
+    areaServed: opts.area ? { '@type': 'City', name: opts.area } : areas.map((name) => ({ '@type': 'City', name })),
   };
 }
 

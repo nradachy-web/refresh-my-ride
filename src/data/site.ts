@@ -89,6 +89,11 @@ export const TRACKING = {
   ads: 'AW-17086544723',
   // The one conversion action their site fires today: a tap on the phone number.
   phoneTapConversion: 'AW-17086544723/8kitCKryj_gcENP2v9M_',
+  // Empty until a "Quote form" conversion exists in the Ads account that runs the
+  // campaigns. Paste its send_to value ("AW-.../...") here and it fires on the
+  // thank-you page. See docs/LAUNCH.md: the Google tag above is linked to a
+  // second Ads account, so confirm which account first.
+  leadConversion: '',
 } as const;
 
 export const FINANCING = 'Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.';

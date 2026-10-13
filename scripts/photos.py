@@ -26,7 +26,7 @@ PHOTOS = {
     "josh-portrait": ("2026_10_f.jpg", None),
     # the shop
     "shop-interior": ("2026_09_IMG_8464-scaled.jpg", (0, 0.08, 1, 0.78)),
-    "shop-grand-opening": ("2026_10_75AF774C-8B56-4885-BD37-B8916D3D56AD.png", None),
+    "shop-grand-opening": ("2026_10_75AF774C-8B56-4885-BD37-B8916D3D56AD.png", (0, 0, 0.8, 1)),
     "corvette-purple-shop": ("2026_08_corvette-wide-website.png", None),
     # finished vehicles
     "bmw-x6-blue": ("2026_08_IMG_8026.jpg", None),
@@ -35,15 +35,15 @@ PHOTOS = {
     "ferrari-roma": ("2026_08_ferrari-roma-ceramic-coating.jpg", None),
     "porsche-suv-blue": ("2026_08_porsche-suv-ceramic-coating.jpg", None),
     "corvette-gray": ("2026_09_IMG_8518-scaled.jpg", (0, 0.1, 1, 0.9)),
-    "tesla-model-y": ("2026_09_IMG_8666-scaled.jpg", (0, 0.18, 1, 1)),
+    "tesla-model-y": ("2026_09_IMG_8666-scaled.jpg", (0, 0.18, 1, 0.9)),
     "gmc-truck-white": ("2026_09_IMG_8751-scaled.jpg", (0, 0.3, 1, 0.86)),
-    "cadillac-sedan-black": ("2026_08_IMG_7617-scaled.jpg", (0, 0.3, 1, 0.86)),
-    "chevy-suv-black": ("2026_08_IMG_7644-scaled.jpg", (0, 0.335, 1, 0.86)),
+    "cadillac-sedan-black": ("2026_08_IMG_7617-scaled.jpg", (0, 0.3, 1, 0.77)),
+    "chevy-suv-black": ("2026_08_IMG_7644-scaled.jpg", (0, 0.335, 1, 0.76)),
     "bmw-sedan-white": ("2026_08_IMG_7762-scaled.jpg", (0, 0.18, 1, 0.74)),
-    "bmw-7-series": ("2026_08_IMG_8050-scaled.jpg", (0, 0.36, 1, 0.92)),
+    "bmw-7-series": ("2026_08_IMG_8050-scaled.jpg", (0, 0.36, 1, 0.81)),
     "ram-truck-white": ("2026_08_IMG_8142-scaled.jpg", (0, 0.32, 1, 0.88)),
-    "escalade-black": ("2026_08_IMG_8252-scaled.jpg", (0, 0.405, 1, 0.92)),
-    "jeep-grand-cherokee": ("2026_08_IMG_8295-scaled.jpg", (0, 0.34, 1, 0.9)),
+    "escalade-black": ("2026_08_IMG_8252-scaled.jpg", (0, 0.405, 1, 0.765)),
+    "jeep-grand-cherokee": ("2026_08_IMG_8295-scaled.jpg", (0, 0.34, 1, 0.8)),
     "ford-super-duty-white": ("2026_08_IMG_6823-scaled.jpg", (0.09, 0.1, 1, 0.92)),
     "cybertruck": ("2026_08_IMG_4709-scaled.jpg", (0, 0.3, 1, 0.86)),
     "porsche-wheel": ("2026_08_IMG_4562-scaled.jpg", (0, 0.1, 1, 0.9)),
@@ -64,7 +64,7 @@ PHOTOS = {
 # (Crops above also keep other businesses' signs and a bystander's licence plate
 # out of frame: escalade-black, chevy-suv-black, ford-super-duty-white, interior-convertible.)
 BLUR = {
-    "interior-bmw": [(0.60, 0.215, 0.92, 0.335)],
+    "interior-bmw": [(0.615, 0.222, 0.905, 0.33)],
 }
 
 # before/after pairs, both cropped to the same 4:5 frame so the slider lines up
@@ -135,7 +135,9 @@ def main():
         for l, t, r, b in BLUR.get(pid, []):
             w, h = im.size
             region = (round(l * w), round(t * h), round(r * w), round(b * h))
-            im.paste(im.crop(region).filter(ImageFilter.GaussianBlur(radius=max(w, h) / 70)), region)
+            patch = im.crop(region).filter(ImageFilter.GaussianBlur(radius=max(w, h) / 40))
+            patch = Image.blend(patch, Image.new("RGB", patch.size, (10, 10, 12)), 0.86)
+            im.paste(patch, region)
         cap(im).save(OUT / f"{pid}.jpg", quality=90, optimize=True, progressive=True)
         print(f"{pid:28s} {im.size}")
     for pid, (before, after) in PAIRS.items():

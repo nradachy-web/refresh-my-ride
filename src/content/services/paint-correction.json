@@ -2,13 +2,18 @@
   "service": "paint-correction",
   "meta": {
     "title": "Paint Correction in Clinton Township, MI | Refresh My Ride",
-    "description": "Paint correction in Clinton Township, MI. Swirls, light scratches and oxidation polished out. One-step polish from $344.99 for a coupe or sedan. Free quote."
+    "description": "Paint correction in Clinton Township, MI. Swirls, light scratches and oxidation polished out. One-step polish from $344.99 for a coupe or sedan."
   },
   "hero": {
     "kicker": "Paint correction in Clinton Township, MI",
     "title": "Swirls out. **Gloss back.**",
     "lede": "Paint correction is machine polishing that removes swirl marks, light scratches, oxidation and water spots from your clear coat. We do it indoors at our Clinton Township shop, under controlled lighting. A one-step polish is from $344.99 for a coupe or sedan in average condition. Heavier paint is quoted after we see it.",
-    "chips": ["Swirls and oxidation polished out", "One-step or multi-stage", "Indoors, under shop lighting", "Valet pickup available"],
+    "chips": [
+      "Swirls and oxidation polished out",
+      "One-step or multi-stage",
+      "Indoors, under shop lighting",
+      "Valet pickup available"
+    ],
     "photo": "team-polishing-mercury"
   },
   "blocks": [
@@ -114,7 +119,10 @@
         }
       ],
       "footnote": "Polish & Protect and the Luxury Refresh are two of our [auto detailing packages](/car-detailing-services-clinton-township-mi/). If you are planning a ceramic coating, you do not need to book correction separately: it is included in every coating package.",
-      "cta": { "label": "See ceramic coating packages", "href": "/ceramic-coating/" }
+      "cta": {
+        "label": "See ceramic coating packages",
+        "href": "/ceramic-coating/"
+      }
     },
     {
       "type": "steps",
@@ -161,7 +169,11 @@
       "eyebrow": "Our work",
       "title": "Drag the slider. Same paint, corrected.",
       "intro": "Three real vehicles from our Clinton Township shop. Each one was corrected and then ceramic coated. The gloss you see in the after shot comes from correcting the paint first.",
-      "pairs": ["silverado", "miata", "corvette"],
+      "pairs": [
+        "silverado",
+        "miata",
+        "corvette"
+      ],
       "checks": [
         "[Text us a photo](sms:+15864001303) of your own paint and we will tell you straight what it needs."
       ]
@@ -170,8 +182,12 @@
       "type": "reviews",
       "plane": "white",
       "eyebrow": "What customers say",
-      "title": "5.0 from 270+ reviews on Google. These four are about paint.",
-      "ids": ["norman-r", "don-p", "karen-u", "jake-m"]
+      "title": "5.0 from 270+ reviews on Google. These three are about paint.",
+      "ids": [
+        "norman-r",
+        "don-p",
+        "jake-m"
+      ]
     },
     {
       "type": "areas",

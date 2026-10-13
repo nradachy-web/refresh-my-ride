@@ -2,13 +2,18 @@
   "service": "ceramic-coating",
   "meta": {
     "title": "Ceramic Coating in Clinton Township, MI | Refresh My Ride",
-    "description": "Ceramic coating in Clinton Township, MI. 1, 3 and 5 year packages with paint correction included, a written warranty and a free follow-up wash. Free quotes."
+    "description": "Ceramic coating in Clinton Township, MI. 1, 3 and 5 year packages with paint correction included, a written warranty and a free follow-up wash."
   },
   "hero": {
     "kicker": "Ceramic coating in Clinton Township, MI",
     "title": "Years of gloss. **Backed in writing.**",
     "lede": "The Refresh, The Revival and The Renewal: our 1, 3 and 5 year ceramic coating packages, applied by certified technicians with paint correction done right before the coating goes on. Written warranty, a free follow-up wash, and Uber covered while your car is with us.",
-    "chips": ["1 to 5 year protection", "Paint correction included", "Written warranty", "Free follow-up wash"],
+    "chips": [
+      "1 to 5 year protection",
+      "Paint correction included",
+      "Written warranty",
+      "Free follow-up wash"
+    ],
     "photo": "corvette-purple-shop"
   },
   "blocks": [
@@ -37,13 +42,45 @@
       "eyebrow": "Coating, sealant or wax",
       "title": "Three ways to protect paint. One of them lasts.",
       "intro": "Wax and sealant both wear away and need reapplying. A ceramic coating bonds to the clear coat and becomes the surface everything touches.",
-      "columns": ["Wax", "Paint sealant", "Ceramic coating"],
+      "columns": [
+        "Wax",
+        "Paint sealant",
+        "Ceramic coating"
+      ],
       "highlight": 2,
       "rows": [
-        { "label": "Lasts", "values": ["A few weeks to months", "Several months", "1, 3 or 5 years"] },
-        { "label": "Protection", "values": ["Light. A cosmetic shine.", "Moderate", "A hard, bonded layer over the clear coat"] },
-        { "label": "Chemical resistance", "values": ["Low", "Moderate", "High"] },
-        { "label": "Upkeep", "values": ["Reapply every wash or two", "Reapply a few times a year", "Wash properly. No reapplying."] }
+        {
+          "label": "Lasts",
+          "values": [
+            "A few weeks to months",
+            "Several months",
+            "1, 3 or 5 years"
+          ]
+        },
+        {
+          "label": "Protection",
+          "values": [
+            "Light. A cosmetic shine.",
+            "Moderate",
+            "A hard, bonded layer over the clear coat"
+          ]
+        },
+        {
+          "label": "Chemical resistance",
+          "values": [
+            "Low",
+            "Moderate",
+            "High"
+          ]
+        },
+        {
+          "label": "Upkeep",
+          "values": [
+            "Reapply every wash or two",
+            "Reapply a few times a year",
+            "Wash properly. No reapplying."
+          ]
+        }
       ]
     },
     {
@@ -94,10 +131,22 @@
         }
       ],
       "included": [
-        { "title": "Paint correction", "body": "Done before coating, not after" },
-        { "title": "Written warranty", "body": "In your hand at pickup" },
-        { "title": "Follow-up wash", "body": "Free, with an inspection" },
-        { "title": "Uber covered", "body": "While your car is with us" }
+        {
+          "title": "Paint correction",
+          "body": "Done before coating, not after"
+        },
+        {
+          "title": "Written warranty",
+          "body": "In your hand at pickup"
+        },
+        {
+          "title": "Follow-up wash",
+          "body": "Free, with an inspection"
+        },
+        {
+          "title": "Uber covered",
+          "body": "While your car is with us"
+        }
       ],
       "footnote": "Every quote is built for your specific vehicle. Size, paint condition and how much correction it needs all factor in. Tell us what you drive and we will give you **a real number**, not a guess off a price list."
     },
@@ -108,14 +157,38 @@
       "title": "Six steps from drop-off to a coated, cured, warrantied car.",
       "intro": "Most of the work happens before the coating touches your paint. Here is exactly what your vehicle goes through at our shop.",
       "steps": [
-        { "title": "Inspection and walk-through", "body": "We look over your paint under shop lighting, note existing damage, and confirm the package and any add-ons with you before touching the car.", "note": "At drop-off" },
-        { "title": "Wash and decontamination", "body": "Foam wash, then iron and tar removal and a clay treatment to pull out the embedded grit a normal wash leaves behind.", "note": "Chemical and mechanical" },
-        { "title": "Paint correction", "body": "Swirls, light scratches and oxidation are machine polished out. This is the step that makes the coating look right, because a coating locks in whatever is underneath it.", "note": "Included in every package" },
-        { "title": "Panel wipe and prep", "body": "Every panel is wiped down to strip polishing oils so the coating bonds directly to clean clear coat, not to residue.", "note": "Bare clear coat" },
-        { "title": "Coating application", "body": "Applied by hand, panel by panel, by a certified technician in a controlled shop environment. Flashed and leveled so there are no high spots or streaking.", "note": "Certified installers" },
-        { "title": "Cure, inspect and hand-off", "body": "The coating cures in the shop before pickup. You leave with a written warranty, an aftercare guide, and a free follow-up wash scheduled so the first maintenance wash is done right.", "note": "Warranty in hand" }
+        {
+          "title": "Inspection and walk-through",
+          "body": "We look over your paint under shop lighting, note existing damage, and confirm the package and any add-ons with you before touching the car.",
+          "note": "At drop-off"
+        },
+        {
+          "title": "Wash and decontamination",
+          "body": "Foam wash, then iron and tar removal and a clay treatment to pull out the embedded grit a normal wash leaves behind.",
+          "note": "Chemical and mechanical"
+        },
+        {
+          "title": "Paint correction",
+          "body": "Swirls, light scratches and oxidation are machine polished out. This is the step that makes the coating look right, because a coating locks in whatever is underneath it.",
+          "note": "Included in every package"
+        },
+        {
+          "title": "Panel wipe and prep",
+          "body": "Every panel is wiped down to strip polishing oils so the coating bonds directly to clean clear coat, not to residue.",
+          "note": "Bare clear coat"
+        },
+        {
+          "title": "Coating application",
+          "body": "Applied by hand, panel by panel, by a certified technician in a controlled shop environment. Flashed and leveled so there are no high spots or streaking.",
+          "note": "Certified installers"
+        },
+        {
+          "title": "Cure, inspect and hand-off",
+          "body": "The coating cures in the shop before pickup. You leave with a written warranty, an aftercare guide, and a free follow-up wash scheduled so the first maintenance wash is done right.",
+          "note": "Warranty in hand"
+        }
       ],
-      "footnote": "Need to be somewhere while we work? Uber is covered for the drop-off and pickup, or ask about our [pick-up and drop-off valet service](/mobile-detailing/)."
+      "footnote": "If you need to be somewhere while we work, Uber is covered for the drop-off and pickup. You can also ask about our [pick-up and drop-off valet service](/mobile-detailing/)."
     },
     {
       "type": "beforeAfter",
@@ -123,9 +196,13 @@
       "eyebrow": "Our work",
       "title": "Drag the slider. That is paint correction under the coating.",
       "intro": "The gloss you see in an after shot comes from correcting the paint first. These are real vehicles from our Clinton Township shop.",
-      "pairs": ["silverado", "miata", "corvette"],
+      "pairs": [
+        "silverado",
+        "miata",
+        "corvette"
+      ],
       "checks": [
-        "Want to know what your paint would look like corrected and coated? [Text us a photo](sms:+15864001303) and we will tell you straight."
+        "[Text us a photo](sms:+15864001303) and we will tell you straight what your paint would look like corrected and coated."
       ]
     },
     {
@@ -133,14 +210,28 @@
       "plane": "white",
       "eyebrow": "What customers say",
       "title": "1,000+ vehicles. Macomb and Oakland drivers keep coming back.",
-      "ids": ["tom-k", "judy-j", "scott-w", "norman-r"]
+      "ids": [
+        "tom-k",
+        "judy-j",
+        "scott-w",
+        "norman-r"
+      ]
     },
     {
       "type": "gallery",
       "plane": "ink",
       "eyebrow": "Recent work",
       "title": "Recently coated at our shop.",
-      "photos": ["bentley-flying-spur", "bmw-x6-blue", "silverado-black", "cybertruck", "cadillac-sedan-black", "porsche-suv-blue", "bmw-sedan-white", "ferrari-roma"]
+      "photos": [
+        "bentley-flying-spur",
+        "bmw-x6-blue",
+        "silverado-black",
+        "cybertruck",
+        "cadillac-sedan-black",
+        "porsche-suv-blue",
+        "bmw-sedan-white",
+        "ferrari-roma"
+      ]
     },
     {
       "type": "areas",
@@ -200,10 +291,25 @@
     "title": "Three coating packages. One standard of work.",
     "intro": "Every package includes paint correction before the coating, a written warranty, an aftercare guide and a free follow-up wash. The difference is how long the coating is built to last.",
     "items": [
-      { "name": "The Refresh", "price": "1 year", "detail": "For leased vehicles, cars you will trade in soon, or a first coating." },
-      { "name": "The Revival", "price": "3 years", "detail": "For the daily driver you plan to keep. The tier most Michigan owners land on." },
-      { "name": "The Renewal", "price": "5 years", "detail": "For a new vehicle, a weekend car, or anything you intend to own for years." },
-      { "name": "Glass, wheels and trim", "detail": "Windshield, exterior glass, wheels and trim can be coated in the same visit." }
+      {
+        "name": "The Refresh",
+        "price": "1 year",
+        "detail": "For leased vehicles, cars you will trade in soon, or a first coating."
+      },
+      {
+        "name": "The Revival",
+        "price": "3 years",
+        "detail": "For the daily driver you plan to keep. The tier most Michigan owners land on."
+      },
+      {
+        "name": "The Renewal",
+        "price": "5 years",
+        "detail": "For a new vehicle, a weekend car, or anything you intend to own for years."
+      },
+      {
+        "name": "Glass, wheels and trim",
+        "detail": "Windshield, exterior glass, wheels and trim can be coated in the same visit."
+      }
     ],
     "footnote": "Ceramic coating is quoted for your vehicle: its size, the condition of the paint and how much correction it needs all factor in."
   }

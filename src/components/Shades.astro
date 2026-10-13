@@ -139,6 +139,13 @@ const start = shades.findIndex((s) => s.pct === '20');
     outline-offset: 3px;
   }
 
+  @media (forced-colors: active) {
+    .sh__opt:has(input:checked) {
+      outline: 3px solid Highlight;
+      outline-offset: -3px;
+    }
+  }
+
   .sh__stage {
     display: grid;
     aspect-ratio: 1200 / 461;

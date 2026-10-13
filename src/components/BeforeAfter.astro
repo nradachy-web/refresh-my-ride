@@ -17,13 +17,13 @@ const widths = [360, 540, 720, 960];
 <figure class="ba">
   <div class="ba__stage frame">
     <Photo id={p.after} ratio={4 / 5} widths={widths} sizes={sizes} class="ba__img" />
-    <div class="ba__before" aria-hidden="true">
-      <Photo id={p.before} ratio={4 / 5} widths={widths} sizes={sizes} class="ba__img" alt="" />
+    <div class="ba__before">
+      <Photo id={p.before} ratio={4 / 5} widths={widths} sizes={sizes} class="ba__img" />
     </div>
     <span class="ba__tag ba__tag--b" aria-hidden="true">Before</span>
     <span class="ba__tag ba__tag--a" aria-hidden="true">After</span>
     <span class="ba__line" aria-hidden="true"><span class="ba__knob"></span></span>
-    <input class="ba__range" type="range" min="0" max="100" value="50" aria-label={`Before and after: ${p.title}. Drag to compare.`} />
+    <input class="ba__range" type="range" min="0" max="100" value="50" aria-label={`Before and after: ${p.title}. Use the arrow keys or drag to compare.`} aria-valuetext="50% before, 50% after" />
   </div>
   <figcaption class="ba__cap">
     <strong>{p.title}</strong>
@@ -38,6 +38,7 @@ const widths = [360, 540, 720, 960];
       var stage = r.parentElement;
       r.addEventListener('input', function () {
         stage.style.setProperty('--pos', r.value + '%');
+        r.setAttribute('aria-valuetext', r.value + '% before, ' + (100 - r.value) + '% after');
       });
     });
   })();

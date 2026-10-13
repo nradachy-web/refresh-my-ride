@@ -9,7 +9,11 @@
     "kicker": "Car detailing in Shelby Township, MI",
     "title": "Leave the beach **at Stony Creek.**",
     "lede": "Beach sand, trail mud, wet dog and a winter of road salt: we get it out of the carpet instead of vacuuming over it. Detailing in Shelby Township can happen in your driveway, at our shop or by valet. Interior details are from $184.99 for a coupe or sedan in average condition.",
-    "chips": ["Mobile, shop or valet", "Interior from $184.99", "We bring power and water"],
+    "chips": [
+      "Mobile, shop or valet",
+      "Interior from $184.99",
+      "We bring power and water"
+    ],
     "photo": "chevy-suv-black"
   },
   "local": {
@@ -41,10 +45,22 @@
       "Machine polishing is shop work, so Polish & Protect and the Luxury Refresh are done at the shop: see [paint correction in Shelby Township](/paint-correction-shelby-township-mi/). The shop is about 13 miles from central Shelby Township, roughly 25 minutes without traffic. Or use pick-up and drop-off valet and we handle both trips."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Yes, anywhere in Shelby Township" },
-      { "label": "What we need", "value": "Room to walk around the whole vehicle" },
-      { "label": "Shop", "value": "About 13 miles from central Shelby Township" },
-      { "label": "Valet", "value": "We pick up and bring it back" }
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, anywhere in Shelby Township"
+      },
+      {
+        "label": "What we need",
+        "value": "Room to walk around the whole vehicle"
+      },
+      {
+        "label": "Shop",
+        "value": "About 13 miles from central Shelby Township"
+      },
+      {
+        "label": "Valet",
+        "value": "We pick up and bring it back"
+      }
     ]
   },
   "photo": "mobile-van",
@@ -70,5 +86,9 @@
       "a": "A full detail once or twice a year covers most vehicles: one at the end of winter to get the salt out, one at the end of summer. With kids, pets or a long commute, a maintenance detail every one to three months keeps it from building up. Regular visits are what our maintenance plans are for: they lock in a lower per-visit price."
     }
   ],
-  "reviews": ["sabrina-k", "alexis-p", "caitlin-d"]
+  "reviews": [
+    "chris-d",
+    "alexis-p",
+    "caitlin-d"
+  ]
 }

@@ -3,13 +3,17 @@
   "city": "west-bloomfield",
   "meta": {
     "title": "Car Detailing in West Bloomfield, MI | Refresh My Ride",
-    "description": "Auto detailing for West Bloomfield drivers. Interior details from $184.99 and full details from $249.99. Lake gear, dog hair and road salt handled. Free quote."
+    "description": "Car detailing for West Bloomfield drivers. Interior details from $184.99 and full details from $249.99. Lake gear, dog hair and road salt handled."
   },
   "hero": {
     "kicker": "Car detailing in West Bloomfield, MI",
     "title": "Lake days end up **in the carpet.**",
     "lede": "Wet gear from Cass Lake, dog hair from the park at Karner Farm, salt off Orchard Lake Road. Interior details start from $184.99 and full details from $249.99 for a coupe or sedan in average condition. West Bloomfield is at the edge of our area, so tell us where you are and we will confirm what can come to you.",
-    "chips": ["Interior from $184.99", "Full details from $249.99", "Steam and extraction"],
+    "chips": [
+      "Interior from $184.99",
+      "Full details from $249.99",
+      "Steam and extraction"
+    ],
     "photo": "jeep-grand-cherokee"
   },
   "local": {
@@ -43,10 +47,22 @@
       "Please take personal items and car seats out before we start. You can also ask about our pick-up and drop-off valet when you request a quote. This far out we confirm that by address before promising it."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Tell us where you are and we will confirm" },
-      { "label": "Shop", "value": "33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
-      { "label": "Hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+      {
+        "label": "Mobile detailing",
+        "value": "Tell us where you are and we will confirm"
+      },
+      {
+        "label": "Shop",
+        "value": "33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 45 minutes without traffic"
+      },
+      {
+        "label": "Hours",
+        "value": "Monday to Friday, 9am to 5pm, by appointment"
+      }
     ]
   },
   "photo": "interior-bmw",
@@ -68,5 +84,9 @@
       "a": "Our usual advice is a full detail once or twice a year, at the end of winter and the end of summer, with a maintenance detail every one to three months if you have kids, pets or a long commute. If you want it on a schedule, ask about our maintenance plans: they lock in a lower per-visit price for regular service."
     }
   ],
-  "reviews": ["caitlin-d", "angie-l", "karen-u"]
+  "reviews": [
+    "caitlin-d",
+    "angie-l",
+    "karen-u"
+  ]
 }

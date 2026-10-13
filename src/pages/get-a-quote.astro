@@ -31,7 +31,7 @@ const NEXT = [
 const WHY = [
   { title: 'Written warranty', body: 'Every ceramic coating package comes with a written warranty and a free follow-up wash and inspection.' },
   { title: 'Lifetime tint warranty', body: 'We install Geoshield C2 Carbon and C2 Ceramic film, both backed by Geoshield’s lifetime warranty.' },
-  { title: 'Rides covered', body: 'Leaving your car with us for a coating? We cover your Uber while we work.' },
+  { title: 'Rides covered', body: 'When you leave your car with us for a coating, we cover your Uber while we work.' },
   { title: 'Dedicated shop', body: `Coatings cure properly in our indoor ${BRAND.city} facility, not in a driveway.` },
   { title: 'Mobile service', body: 'Select services come to your home or office in Macomb and Oakland counties.' },
   { title: 'Real people', body: 'Call or text the shop directly. You will talk to our team, not a call center.' },
@@ -48,12 +48,12 @@ const FAQ = [
 ---
 
 <Base title={TITLE} description={DESCRIPTION} path="/get-a-quote/" schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Get a quote', path: '/get-a-quote/' }])]}>
-  <section class="band ink top" id="quote" aria-labelledby="q-h">
+  <section class="band ink top" aria-labelledby="q-h">
     <div class="wrap two wide-left top__grid">
       <div class="stack" style="--gap:1.4rem">
         <h1 class="top__h">
           <span class="eyebrow">Free quote</span>
-          <span class="h1 h1--page">Get your quote <span class="accent">in minutes.</span></span>
+          <span class="h1 h1--page" id="q-h">Get your quote <span class="accent">in minutes.</span></span>
         </h1>
         <p class="lede">Tell us about your vehicle and what you want done. We put together an exact price for your car, with no guessing from a menu.</p>
         <ul class="checks">
@@ -65,13 +65,14 @@ const FAQ = [
           <a class="btn ghost" href={BRAND.phoneHref} data-loc="quote-page"><Icon name="phone" />Call {BRAND.phone}</a>
           <a class="btn ghost" href={BRAND.smsHref} data-loc="quote-page-text"><Icon name="text" />Text us</a>
         </div>
-        <ol class="next" aria-label="What happens next">
+        <h2 class="eyebrow next__h" id="next-h">What happens next</h2>
+        <ol class="next" aria-labelledby="next-h">
           {
             NEXT.map((n, i) => (
               <li>
                 <span class="next__n" aria-hidden="true">{i + 1}</span>
                 <div>
-                  <h2 class="next__t">{n.title}</h2>
+                  <h3 class="next__t">{n.title}</h3>
                   <p class="small muted">{n.body}</p>
                 </div>
               </li>
@@ -80,8 +81,8 @@ const FAQ = [
         </ol>
       </div>
       <div>
-        <QuoteForm />
-        <p class="fine muted top__note">We never share your info. Shop visits by appointment, {HOURS.summary}.</p>
+        <QuoteForm as="h2" />
+        <p class="fine muted top__note">We never sell your info. Shop visits by appointment, {HOURS.summary}.</p>
       </div>
     </div>
   </section>
@@ -143,11 +144,14 @@ const FAQ = [
     margin-top: 0.9rem;
   }
 
+  .next__h {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line-ink);
+  }
+
   .next {
     display: grid;
     gap: 1.1rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--line-ink);
   }
 
   .next li {

@@ -1,14 +1,18 @@
 {
   "city": "shelby-township",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Shelby Township, MI",
-    "description": "Ceramic coating, window tint, paint correction and detailing for Shelby Township drivers. Mobile detailing in your driveway, or our shop about 25 minutes away."
+    "title": "Shelby Township, MI: Detailing, Tint & Ceramic Coating",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Shelby Township. Mobile detailing in your driveway, or our shop 25 minutes away."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Shelby Township, MI",
+    "kicker": "Serving Shelby Township, MI: detailing, window tint and ceramic coating",
     "title": "Winter salt. **Summer trail mud.**",
     "lede": "Shelby Township runs from the Utica line north to Stony Creek Metropark, with the M-53 freeway running through it. Our shop is about 13 miles from central Shelby Township. Detailing can come to your driveway. Coatings, tint and paint correction are done at the shop, and valet pickup covers the trip.",
-    "chips": ["Roughly 25 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "chips": [
+      "Roughly 25 minutes away",
+      "Mobile detailing at home",
+      "Pick-up and drop-off valet"
+    ],
     "photo": "ford-super-duty-white"
   },
   "about": {
@@ -43,10 +47,22 @@
       "Interior, exterior and full details can be done at your home or workplace, and we bring our own power and water. The other three, ceramic coating, window tint and paint correction, need the enclosed bays and controlled lighting at the shop. If the drive does not fit your week, pick-up and drop-off valet collects the vehicle from your address, we do the work at the shop, and we bring it back."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 13 miles from central Shelby Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Distance",
+        "value": "About 13 miles from central Shelby Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "faq": [
@@ -71,6 +87,15 @@
       "a": "Published prices are for a coupe or sedan in average condition. Interior details start from $184.99, exterior details from $139.99 and full inside and out details from $249.99. A truck or SUV is quoted for its size, and you hear the number before we touch it. Financing is available through Affirm and Klarna."
     }
   ],
-  "reviews": ["sabrina-k", "john-b", "jake-m"],
-  "neighbors": ["sterling-heights", "macomb-township", "rochester-hills", "clinton-township"]
+  "reviews": [
+    "alexis-p",
+    "john-b",
+    "jake-m"
+  ],
+  "neighbors": [
+    "sterling-heights",
+    "macomb-township",
+    "rochester-hills",
+    "clinton-township"
+  ]
 }

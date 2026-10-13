@@ -9,7 +9,11 @@
     "kicker": "Paint correction in Royal Oak, MI",
     "title": "Ready for Woodward **in full sun.**",
     "lede": "Paint correction is machine polishing. It takes swirl marks, light scratches, oxidation and water spots out of the clear coat, where a street parked Royal Oak car collects them. It is done under shop lighting, about 25 minutes away. Polish & Protect, a one-step polish, is from $344.99 on a coupe or sedan in average condition.",
-    "chips": ["One-step or multi-stage", "Inspected under shop lighting", "Valet pickup available"],
+    "chips": [
+      "One-step or multi-stage",
+      "Inspected under shop lighting",
+      "Valet pickup available"
+    ],
     "photo": "josh-polishing-corvette"
   },
   "local": {
@@ -41,10 +45,22 @@
       "A one-step Polish & Protect takes about 4.5 to 5 hours. Multi-stage correction takes longer and is quoted once we have seen the paint. If you cannot be without a ride, ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the car in Royal Oak and return it finished."
     ],
     "facts": [
-      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "Polish & Protect", "value": "From $344.99, about 4.5 to 5 hours" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Where",
+        "value": "33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "Polish & Protect",
+        "value": "From $344.99, about 4.5 to 5 hours"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "photo": "team-polishing-mercury",
@@ -63,8 +79,12 @@
     },
     {
       "q": "Do I need paint correction, or just a good wash and sealant?",
-      "a": "A wash and sealant cleans and protects what is already there. It does not remove swirls. Swirls are fine scratches in the clear coat, and only machine polishing takes them out. If you see a spider web pattern around the sun's reflection on the hood, that is what you are looking at. Text a photo to (586) 400-1303 and we will tell you straight. The wash-only options are on the [Royal Oak detailing page](/car-detailing-royal-oak-mi/)."
+      "a": "A wash and sealant cleans and protects what is already there. It does not remove swirls. Swirls are fine scratches in the clear coat, and only machine polishing takes them out. If you see a spider web pattern around the sun's reflection on the hood, that is what you are looking at. Text a photo to [(586) 400-1303](sms:+15864001303) and we will tell you straight. The wash-only options are on the [Royal Oak detailing page](/car-detailing-royal-oak-mi/)."
     }
   ],
-  "reviews": ["norman-r", "jake-m", "karen-u"]
+  "reviews": [
+    "norman-r",
+    "jake-m",
+    "karen-u"
+  ]
 }

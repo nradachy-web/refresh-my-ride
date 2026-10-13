@@ -8,8 +8,12 @@
   "hero": {
     "kicker": "Paint correction in Birmingham, MI",
     "title": "Old Woodward shows **every swirl.**",
-    "lede": "On Dream Cruise Saturday the Birmingham Cruise Event puts classic cars along South Old Woodward, where people walk past the paint in daylight. Machine polishing takes swirl marks, light scratches, oxidation and water spots out of the clear coat first. It is shop work, about 17 miles from central Birmingham.",
-    "chips": ["Swirls and light scratches out", "Checked under shop lighting", "Valet pickup available"],
+    "lede": "On Dream Cruise Saturday the Birmingham Cruise Event puts classic cars along South Old Woodward, where people walk past the paint in daylight. Machine polishing takes swirls, light scratches and oxidation out of the clear coat first. A one-step polish is from $344.99 for a coupe or sedan. It is shop work, about 17 miles away.",
+    "chips": [
+      "One-step from $344.99",
+      "Checked under shop lighting",
+      "Valet pickup available"
+    ],
     "photo": "josh-polishing-corvette"
   },
   "local": {
@@ -43,10 +47,22 @@
       "If you cannot give up a weekday to bring it over, valet pickup collects the vehicle in Birmingham and returns it when the work is finished."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "One-step polish", "value": "From $344.99, about 4.5 to 5 hours" },
-      { "label": "Getting it here", "value": "Drive over, or valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "One-step polish",
+        "value": "From $344.99, about 4.5 to 5 hours"
+      },
+      {
+        "label": "Getting it here",
+        "value": "Drive over, or valet pickup"
+      }
     ]
   },
   "photo": "team-polishing-mercury",
@@ -68,5 +84,9 @@
       "a": "You do not need to book it separately. Every ceramic coating package already includes paint correction, done right before the coating goes on, because a coating locks in whatever is underneath it. If you want protection for years, look at [ceramic coating in Birmingham](/ceramic-coating-birmingham-mi/). If you only want the gloss back, Polish & Protect seals the paint for 6 months. More on [how paint correction works](/paint-correction/)."
     }
   ],
-  "reviews": ["don-p", "karen-u", "norman-r"]
+  "reviews": [
+    "don-p",
+    "karen-u",
+    "norman-r"
+  ]
 }

@@ -3,13 +3,17 @@
   "city": "rochester-hills",
   "meta": {
     "title": "Ceramic Coating in Rochester Hills, MI | Refresh My Ride",
-    "description": "Ceramic coating for Rochester Hills drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered. Free quote."
+    "description": "Ceramic coating for Rochester Hills: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered."
   },
   "hero": {
     "kicker": "Ceramic coating in Rochester Hills, MI",
     "title": "Salt on side streets too. **Coat it.**",
     "lede": "Rochester Hills salts its local streets as well as its main roads, so winter follows the car all the way into the driveway. A ceramic coating keeps that salt off bare clear coat. 1, 3 and 5 year packages with paint correction included, applied at our shop about 30 minutes away. Valet pickup if you would rather not drive.",
-    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered or valet pickup"],
+    "chips": [
+      "1, 3 or 5 years",
+      "Paint correction included",
+      "Uber covered or valet pickup"
+    ],
     "photo": "bmw-x6-blue"
   },
   "local": {
@@ -41,10 +45,22 @@
       "The vehicle stays with us for at least a full day, and longer when the paint needs more correction first. You get an exact window with your quote. From Rochester Hills there are two ways to handle that. Drop it off and we cover your Uber home and back. Or book [pick-up and drop-off valet](/mobile-detailing/): we collect it from your driveway or your office and return it coated."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "About 19 miles, roughly 30 minutes without traffic" },
-      { "label": "How long", "value": "At least a full day" },
-      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "About 19 miles, roughly 30 minutes without traffic"
+      },
+      {
+        "label": "How long",
+        "value": "At least a full day"
+      },
+      {
+        "label": "While it is with us",
+        "value": "Uber covered, or valet pickup"
+      }
     ]
   },
   "photo": "bmw-7-series",
@@ -66,5 +82,9 @@
       "a": "It is quoted per vehicle. Size, the condition of the paint and how much [paint correction](/paint-correction-rochester-hills-mi/) it needs before coating decide the work, so a price list would be a guess. Send us the year, make and model, plus a photo if the paint is rough, and we will reply with a real number. Financing is available through Affirm and Klarna. [Request a free quote](#quote)."
     }
   ],
-  "reviews": ["john-b", "scott-w", "tom-k"]
+  "reviews": [
+    "john-b",
+    "scott-w",
+    "tom-k"
+  ]
 }

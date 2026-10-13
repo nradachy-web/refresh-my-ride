@@ -108,22 +108,24 @@ const { items, group = 'faq' } = Astro.props;
     color: var(--on-ink-muted);
   }
 
-  /* a smooth open where the browser can animate to auto height */
-  @supports (interpolate-size: allow-keywords) {
-    details {
-      interpolate-size: allow-keywords;
-    }
+  /* a smooth open where the browser can animate to auto height, and the visitor has not asked for less motion */
+  @media (prefers-reduced-motion: no-preference) {
+    @supports (interpolate-size: allow-keywords) {
+      details {
+        interpolate-size: allow-keywords;
+      }
 
-    details::details-content {
-      block-size: 0;
-      overflow: clip;
-      transition:
-        block-size 0.3s var(--ease),
-        content-visibility 0.3s allow-discrete;
-    }
+      details::details-content {
+        block-size: 0;
+        overflow: clip;
+        transition:
+          block-size 0.3s var(--ease),
+          content-visibility 0.3s allow-discrete;
+      }
 
-    details[open]::details-content {
-      block-size: auto;
+      details[open]::details-content {
+        block-size: auto;
+      }
     }
   }
 </style>

@@ -3,13 +3,17 @@
   "city": "rochester-hills",
   "meta": {
     "title": "Paint Correction in Rochester Hills, MI | Refresh My Ride",
-    "description": "Paint correction for Rochester Hills: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 on a coupe or sedan. Free quote."
+    "description": "Paint correction for Rochester Hills: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 on a coupe or sedan."
   },
   "hero": {
     "kicker": "Paint correction in Rochester Hills, MI",
     "title": "Winter wash marks. **Polished out.**",
     "lede": "Salted streets mean a winter of quick washes, and brush tunnels leave their mark. Paint correction machine polishes swirl marks, light scratches, oxidation and water spots out of the clear coat. A one-step polish is from $344.99 for a coupe or sedan in average condition, done at the shop, with valet pickup from Rochester Hills.",
-    "chips": ["Swirls and oxidation out", "One-step from $344.99", "Valet pickup available"],
+    "chips": [
+      "Swirls and oxidation out",
+      "One-step from $344.99",
+      "Valet pickup available"
+    ],
     "photo": "team-polishing-mercury"
   },
   "local": {
@@ -41,10 +45,22 @@
       "Polish & Protect takes about 4.5 to 5 hours and the Luxury Refresh about 7, so plan to leave the vehicle for the day. A multi-stage job is quoted after we see the paint. From Rochester Hills, [pick-up and drop-off valet](/mobile-detailing/) saves both trips: we collect the vehicle from your home or work and bring it back when it is done."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "About 19 miles, roughly 30 minutes without traffic" },
-      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "About 19 miles, roughly 30 minutes without traffic"
+      },
+      {
+        "label": "One-step polish",
+        "value": "About 4.5 to 5 hours"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "photo": "josh-polishing-corvette",
@@ -66,5 +82,9 @@
       "a": "The published prices are for a coupe or sedan in average condition: Polish & Protect from $344.99, and the Luxury Refresh, a full detail with a one-step polish, from $439.99. SUVs and trucks are quoted for their size. A multi-stage correction is quoted per vehicle whatever you drive, because the condition of the paint decides the hours."
     }
   ],
-  "reviews": ["norman-r", "don-p", "karen-u"]
+  "reviews": [
+    "norman-r",
+    "don-p",
+    "karen-u"
+  ]
 }

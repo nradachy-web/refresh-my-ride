@@ -44,8 +44,17 @@ const path = townPath(svc, town);
 const hero = await heroImage(c.hero.photo as PhotoId);
 const others = TOWN_SERVICES.filter((s) => s.id !== svc.id);
 
+// What the closing line may promise: only detailing travels, and West
+// Bloomfield is past the published mobile range, so nothing is promised there.
+const farEdge = town.id === 'west-bloomfield';
+const how = farEdge
+  ? 'what can come to you'
+  : svc.where === 'shop'
+    ? 'how the drop-off or valet pickup would work'
+    : 'how the mobile visit, drop-off or valet pickup would work';
+
 const schema = [
-  serviceSchema({ name: `${svc.name} in ${town.name}, MI`, description: c.meta.description, url: `https://refreshmyrideauto.com${path}`, area: `${town.name}, MI` }),
+  serviceSchema({ name: `${svc.name} in ${town.name}, MI`, type: svc.name, description: c.meta.description, url: `https://refreshmyrideauto.com${path}`, area: `${town.name}, MI` }),
   faqSchema(c.faq),
   breadcrumbs([
     { name: 'Home', path: '/' },
@@ -164,16 +173,13 @@ const schema = [
         </ul>
       </div>
       <div>
-        <h2 class="h3">{svc.name} in nearby towns</h2>
+        <h2 class="h3">{svc.name} in other towns we serve</h2>
         <AreaChips service={svc} skip={town.id} />
       </div>
     </div>
   </section>
 
-  <QuoteBand
-    title={`Get your ${svc.noun} quote for ${town.name}.`}
-    lede={`Tell us what you drive and where in ${town.name} you are. We reply with a real price for your vehicle, and how the drop-off, mobile visit or valet pickup would work.`}
-  />
+  <QuoteBand title={`Get your ${svc.noun} quote for ${town.name}.`} lede={`Tell us what you drive and where in ${town.name} you are. We reply with a real price for your vehicle, and ${how}.`} />
 </Base>
 
 <style>

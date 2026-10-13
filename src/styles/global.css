@@ -61,6 +61,13 @@ html {
   }
 }
 
+/* on phones a bar is fixed to the bottom: keep focused things clear of it */
+@media (max-width: 47.99rem) {
+  html {
+    scroll-padding-bottom: 5.5rem;
+  }
+}
+
 body {
   margin: 0;
   font-family: var(--font);
@@ -145,6 +152,19 @@ button {
 
 .skip:focus {
   top: 1rem;
+}
+
+/* Links that leave for another tab say so to a screen reader. The words are
+   generated, so nothing in the markup has to remember to add them. */
+a[target='_blank']:not(.arrow)::after,
+a.arrow[target='_blank']::before {
+  content: ' (opens in a new tab)';
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 .sr {
@@ -499,6 +519,15 @@ a:hover > .arrow::after,
 .stars svg {
   width: 1.05em;
   height: 1.05em;
+}
+
+/* gold disappears on white: a deeper gold on light cards (3.6:1) */
+.card .stars {
+  color: #b87900;
+}
+
+.ink .card .stars {
+  color: var(--gold);
 }
 
 .rating {

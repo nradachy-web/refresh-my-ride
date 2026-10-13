@@ -3,7 +3,7 @@
    HOME
 
    Built for the paid click and for someone who has never heard of the shop:
-     1  hero       Josh at work, one promise, two actions, the rating
+     1  hero       the crew at work, one promise, two actions, the rating
      2  paper      the four services people search for, on their own photos
      3  white      shop, driveway or valet: the three ways to get it done
      4  ink        the rating, four facts, three reviews, finished work
@@ -33,7 +33,7 @@ import { heroImage } from '../lib/hero';
 import { href } from '../lib/paths';
 import { faqSchema } from '../lib/schema';
 
-const TITLE = `${BRAND.name} | Ceramic Coating & Detailing, ${BRAND.city} MI`;
+const TITLE = `Auto Detailing & Ceramic Coating in ${BRAND.city}, MI`;
 const DESCRIPTION = `Ceramic coating, window tint, paint correction and auto detailing in ${BRAND.city}, MI. Shop, mobile and valet service. ${RATING.value} on Google. Free quotes.`;
 
 const hero = await heroImage('josh-polishing-corvette');
@@ -70,7 +70,7 @@ const FAQ = [
   },
   {
     q: 'How much do your services cost?',
-    a: 'Pricing depends on the service and your vehicle. Interior details start at $184.99, exterior details at $139.99 and full interior and exterior details at $249.99, all priced for a coupe or sedan in average condition. Window tint starts at $99.99 for the front two windows.\n\nCeramic coating and paint correction are quoted for your vehicle, because its size and the condition of the paint decide the work. We confirm exact pricing when you request your quote.',
+    a: 'Pricing depends on the service and your vehicle. For a coupe or sedan in average condition, interior details are from $184.99, exterior details from $139.99 and full interior and exterior details from $249.99. Window tint is from $99.99 for the front two windows in C2 Carbon film. A one-step paint correction is from $344.99.\n\nCeramic coating and heavier paint correction are quoted for your vehicle, because its size and the condition of the paint decide the work. We confirm exact pricing when you request your quote.',
   },
   {
     q: 'Do you offer financing?',
@@ -184,7 +184,7 @@ const FAQ = [
           }
         </ul>
         <p class="small muted work__note">
-          Every photo on this site is a customer vehicle from our shop or a mobile appointment.{' '}
+          Every vehicle pictured here is a customer vehicle from our shop or a mobile appointment.{' '}
           <a class="link" href={href('/reviews/')}>See more of our work</a>.
         </p>
       </div>
@@ -201,11 +201,12 @@ const FAQ = [
           title="Drag the slider. That is paint correction under the coating."
           intro="The gloss in an after shot comes from correcting the paint first. A coating locks in whatever is underneath it, so we polish the swirls, scratches and oxidation out before it goes on."
         />
+        <p class="incl-h">Every ceramic coating package includes:</p>
         <ul class="checks">
-          <li><span><strong>Paint correction included</strong> with every ceramic coating package, done before the coating, not after.</span></li>
-          <li><span><strong>Written warranty</strong> in your hand at pickup.</span></li>
-          <li><span><strong>Free follow-up wash</strong> with an inspection.</span></li>
-          <li><span><strong>Uber covered</strong> while your car is with us.</span></li>
+          <li><span><strong>Paint correction,</strong> done before the coating, not after.</span></li>
+          <li><span><strong>A written warranty</strong> in your hand at pickup.</span></li>
+          <li><span><strong>A free follow-up wash</strong> with an inspection.</span></li>
+          <li><span><strong>Uber covered</strong> for drop-off and pickup while your car is with us.</span></li>
         </ul>
         <p><a class="arrow" href={href(service('ceramic-coating').path)}>See the ceramic coating packages</a></p>
       </div>
@@ -388,6 +389,12 @@ const FAQ = [
   }
 
   /* before and after */
+  .incl-h {
+    font-family: var(--font-display);
+    font-weight: 680;
+    font-stretch: 106%;
+  }
+
   .pairs {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

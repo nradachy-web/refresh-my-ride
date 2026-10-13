@@ -3,13 +3,17 @@
   "city": "macomb-township",
   "meta": {
     "title": "Paint Correction in Macomb Township, MI | Refresh My Ride",
-    "description": "Paint correction for Macomb Township drivers. Swirls, light scratches and oxidation machine polished out at our shop. Polish & Protect from $344.99. Free quote."
+    "description": "Paint correction for Macomb Township drivers. Swirls, light scratches and oxidation machine polished out at our shop. Polish & Protect from $344.99."
   },
   "hero": {
     "kicker": "Paint correction in Macomb Township, MI",
     "title": "Dust did that. **We polish it out.**",
     "lede": "Swirl marks, light scratches, oxidation and water spots sit in the clear coat, and machine polishing removes them. Polish & Protect is from $344.99 for a coupe or sedan in average condition. Heavier correction is quoted after we see the paint under shop lighting, about 15 miles from central Macomb Township.",
-    "chips": ["Swirls and light scratches", "From $344.99", "Valet pickup available"],
+    "chips": [
+      "Swirls and light scratches",
+      "From $344.99",
+      "Valet pickup available"
+    ],
     "photo": "team-polishing-mercury"
   },
   "local": {
@@ -42,10 +46,22 @@
       "A one-step polish like Polish & Protect takes about 4.5 to 5 hours. A multi-stage correction is quoted per vehicle once we have seen the paint."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "Starting point", "value": "Polish & Protect, from $344.99" },
-      { "label": "Getting it there", "value": "Drop off, or valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "Starting point",
+        "value": "Polish & Protect, from $344.99"
+      },
+      {
+        "label": "Getting it there",
+        "value": "Drop off, or valet pickup"
+      }
     ]
   },
   "photo": "tech-polishing-mustang",
@@ -71,5 +87,9 @@
       "a": "Wash dust off instead of wiping it off. Skip brush-style automatic washes and use touchless when you are short on time. Polish & Protect leaves the paint sealed for 6 months. For protection that lasts years, a ceramic coating is what makes the car easier to wash clean."
     }
   ],
-  "reviews": ["norman-r", "karen-u", "don-p"]
+  "reviews": [
+    "norman-r",
+    "karen-u",
+    "don-p"
+  ]
 }

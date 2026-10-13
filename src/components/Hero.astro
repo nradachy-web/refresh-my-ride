@@ -70,6 +70,7 @@ const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.h
 
     <h1 class="hero__h">
       {kicker && <span class="eyebrow hero__kicker rise">{kicker}</span>}
+      {kicker && <span class="sr">: </span>}
       <span class:list={['h1', size === 'page' && 'h1--page', 'rise', 'd1']} set:html={titleHtml} />
     </h1>
 
@@ -148,7 +149,7 @@ const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.h
   }
 
   .hero__crumbs li + li::before {
-    content: '/';
+    content: '/' / '';
     margin-right: 0.5rem;
     opacity: 0.5;
   }
@@ -242,7 +243,8 @@ const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.h
     }
 
     .hero__h,
-    .hero__lede {
+    .hero__lede,
+    .hero__chips {
       max-width: min(58%, 44rem);
     }
 

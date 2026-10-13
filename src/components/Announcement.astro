@@ -21,7 +21,7 @@ const show = Date.now() < endsAt;
           <span class="go__long">{GO.dateLabel}, {GO.hours}. Specials through October 30.</span>
           <span class="go__short">October 19. Specials through October 30.</span>
         </span>
-        <span class="go__more" aria-hidden="true">See the details</span>
+        <span class="go__more">See the details</span>
       </a>
       <script is:inline define:vars={{ endsAt, eventEnds }}>
         (function () {
@@ -50,6 +50,11 @@ const show = Date.now() < endsAt;
     line-height: 1.35;
     text-align: center;
     text-decoration: none;
+  }
+
+  .go:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: -4px;
   }
 
   .go__tag {

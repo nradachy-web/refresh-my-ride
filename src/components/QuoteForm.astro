@@ -13,23 +13,40 @@ interface Props {
   title?: string;
   note?: string;
   height?: number;
+  /** The id that "Get a free quote" buttons jump to. The card itself is the
+      target, so on a phone the visitor lands on the form, not on the words above it. */
+  anchor?: string;
+  /** Accessible name of the frame, and the words on the no-script link. */
+  frameTitle?: string;
+  fallback?: string;
+  /** Heading level of the card title: h2 where the card is the page's main section. */
+  as?: 'h2' | 'h3';
 }
-const { formId = FORM.id, title = 'Request a free quote', note = 'Takes about a minute. We reach out by call or text.', height = FORM.height } = Astro.props;
+const {
+  formId = FORM.id,
+  title = 'Request a free quote',
+  note = 'Takes about a minute. We reach out by call or text.',
+  height = FORM.height,
+  anchor = 'quote',
+  frameTitle = 'Quote request form',
+  fallback = 'Open the quote form',
+  as: Tag = 'h3',
+} = Astro.props;
 const src = `${FORM.origin}/widget/form/${formId}`;
 ---
 
-<div class="qf">
+<div class="qf" id={anchor}>
   <div class="qf__head">
-    <h3 class="h3">{title}</h3>
+    <Tag class="h3">{title}</Tag>
     <p class="small muted">{note}</p>
   </div>
-  <div class="qf__frame" data-ghl data-src={src} data-form-id={formId} data-form-name={FORM.name} data-height={height} style={`min-height:${height}px`}>
+  <div class="qf__frame" data-ghl data-src={src} data-form-id={formId} data-form-name={FORM.name} data-title={frameTitle} data-height={height} style={`min-height:${height}px`}>
     <div class="qf__wait" aria-hidden="true">
       <span></span><span></span><span></span><span></span><span class="qf__btn"></span>
     </div>
     <noscript>
       <p class="qf__nojs">
-        <a class="btn primary" href={src} target="_blank" rel="noopener">Open the quote form</a>
+        <a class="btn primary" href={src} target="_blank" rel="noopener">{fallback}</a>
         or call <a href={BRAND.phoneHref}>{BRAND.phone}</a>.
       </p>
     </noscript>
@@ -44,15 +61,18 @@ const src = `${FORM.origin}/widget/form/${formId}`;
       b.setAttribute('data-armed', '');
     });
 
+    // The click ID and campaign tags, from this page's address or from the
+    // cookie Tracking.astro keeps, so a visitor who browsed first still carries them.
     function params() {
       var out = [];
       try {
         var q = new URLSearchParams(location.search);
-        var m = document.cookie.match(/(?:^|;\s*)rmr_gclid=([^;]+)/);
-        var gclid = q.get('gclid') || (m ? decodeURIComponent(m[1]) : '');
-        if (gclid) out.push('gclid=' + encodeURIComponent(gclid));
-        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
-          if (q.get(k)) out.push(k + '=' + encodeURIComponent(q.get(k)));
+        var kept = {};
+        var m = document.cookie.match(/(?:^|;\s*)rmr_src=([^;]+)/);
+        if (m) kept = JSON.parse(decodeURIComponent(m[1])) || {};
+        ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
+          var v = q.get(k) || kept[k];
+          if (v) out.push(k + '=' + encodeURIComponent(v));
         });
       } catch (e) {}
       return out.join('&');
@@ -67,7 +87,7 @@ const src = `${FORM.origin}/widget/form/${formId}`;
       var f = document.createElement('iframe');
       f.src = box.getAttribute('data-src') + (extra ? '?' + extra : '');
       f.id = 'inline-' + id;
-      f.title = 'Quote request form';
+      f.title = box.getAttribute('data-title') || 'Quote request form';
       f.setAttribute('data-layout', "{'id':'INLINE'}");
       f.setAttribute('data-trigger-type', 'alwaysShow');
       f.setAttribute('data-activation-type', 'alwaysActivated');
@@ -117,10 +137,8 @@ const src = `${FORM.origin}/widget/form/${formId}`;
     wake.forEach(function (e) {
       addEventListener(e, arm, { passive: true });
     });
-    if (location.hash === '#quote') arm();
-    addEventListener('hashchange', function () {
-      if (location.hash === '#quote') arm();
-    });
+    if (location.hash === '#quote' || location.hash === '#rsvp') arm();
+    addEventListener('hashchange', arm);
   })();
 </script>
 
@@ -128,6 +146,9 @@ const src = `${FORM.origin}/widget/form/${formId}`;
   /* Their form is dark, with grey fields and a violet button. The card takes
      the form's own background so the frame and the form read as one piece. */
   .qf {
+    /* the page already keeps jump targets clear of the sticky header
+       (scroll-padding-top on html); this adds a little air above the card */
+    scroll-margin-top: 0.5rem;
     overflow: hidden;
     border: 1px solid var(--line-ink);
     border-radius: var(--r);

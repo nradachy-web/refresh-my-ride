@@ -3,13 +3,17 @@
   "city": "rochester-hills",
   "meta": {
     "title": "Car Detailing in Rochester Hills, MI | Refresh My Ride",
-    "description": "Auto detailing in Rochester Hills, at your home or our shop: interior from $184.99, full details from $249.99 for a coupe or sedan. We come to you. Free quote."
+    "description": "Car detailing in Rochester Hills, at your home or our shop: interior from $184.99, full details from $249.99 for a coupe or sedan. Free quote."
   },
   "hero": {
-    "kicker": "Auto detailing in Rochester Hills, MI",
+    "kicker": "Car detailing in Rochester Hills, MI",
     "title": "Trail dust, salt, dog hair. **Gone.**",
     "lede": "Limestone off the Paint Creek Trail, salt from streets the city treats all winter, and whatever the kids and the dog brought back from the park. We detail it out at your home in Rochester Hills, at our shop, or by valet, with interior details from $184.99 and full details from $249.99 for a coupe or sedan in average condition.",
-    "chips": ["We come to you", "Interior from $184.99", "Shop, mobile or valet"],
+    "chips": [
+      "We come to you",
+      "Interior from $184.99",
+      "Shop, mobile or valet"
+    ],
     "photo": "interior-bmw"
   },
   "local": {
@@ -41,10 +45,22 @@
       "A mobile visit suits interior details and the Wash & Seal. When the parking does not work, or you would rather hand over the keys, valet pickup collects the vehicle, we detail it at the shop and bring it back. You can also drop it off: the shop is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic. See [how mobile and valet work](/mobile-detailing/)."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "What we need", "value": "Room to walk the full perimeter of the vehicle" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." },
-      { "label": "Drop off", "value": "About 19 miles, roughly 30 minutes without traffic" }
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "What we need",
+        "value": "Room to walk the full perimeter of the vehicle"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      },
+      {
+        "label": "Drop off",
+        "value": "About 19 miles, roughly 30 minutes without traffic"
+      }
     ]
   },
   "photo": "mobile-van",
@@ -66,5 +82,9 @@
       "a": "A full detail once or twice a year covers most drivers. Time it for the end of winter, when the salt is done, and the end of summer. With kids, pets or a long commute, a maintenance detail every one to three months keeps the car from getting bad enough to need the full job again. If that sounds like your car, ask about our maintenance plans: regular service at a lower per-visit price."
     }
   ],
-  "reviews": ["sydney-k", "alexis-p", "caitlin-d"]
+  "reviews": [
+    "sydney-k",
+    "alexis-p",
+    "caitlin-d"
+  ]
 }

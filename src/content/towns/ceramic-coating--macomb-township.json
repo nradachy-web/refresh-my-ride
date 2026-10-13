@@ -3,13 +3,17 @@
   "city": "macomb-township",
   "meta": {
     "title": "Ceramic Coating in Macomb Township, MI | Refresh My Ride",
-    "description": "Ceramic coating for Macomb Township drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered. Free quote."
+    "description": "Ceramic coating for Macomb Township: 1, 3 and 5 year packages with paint correction and a written warranty. About 30 minutes south. Free quote."
   },
   "hero": {
     "kicker": "Ceramic coating in Macomb Township, MI",
     "title": "Hall Road salt. **It rinses off.**",
     "lede": "A ceramic coating bonds a hard layer over your clear coat, so road salt and construction dust sit on the coating, not the paint. All three packages, 1, 3 and 5 years, come with paint correction first and a written warranty. Our shop is about 15 miles from central Macomb Township, and we can pick the vehicle up.",
-    "chips": ["1, 3 or 5 years", "Paint correction included", "Valet pickup or Uber covered"],
+    "chips": [
+      "1, 3 or 5 years",
+      "Paint correction included",
+      "Valet pickup or Uber covered"
+    ],
     "photo": "porsche-suv-blue"
   },
   "local": {
@@ -41,10 +45,22 @@
       "The vehicle stays with us for at least a full day, longer if the paint needs more correction, and you get an exact window with your quote. Coating customers who cannot spare that day usually choose [valet pickup](/mobile-detailing/): we collect the vehicle from your home or work in Macomb Township and bring it back coated. If you drop it off yourself, Uber is covered for the drop-off and the pickup."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Distance", "value": "About 15 miles from central Macomb Township" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "While it is with us", "value": "Valet pickup, or Uber covered" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Distance",
+        "value": "About 15 miles from central Macomb Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "While it is with us",
+        "value": "Valet pickup, or Uber covered"
+      }
     ]
   },
   "photo": "bmw-x6-blue",
@@ -70,5 +86,9 @@
       "a": "No. A coating is a thin, hard chemical layer, not armor. It will not stop a rock chip or a key scratch. What it does is keep salt, dust, bugs and bird droppings from bonding to the paint, and it makes the car far easier to wash clean."
     }
   ],
-  "reviews": ["john-b", "norman-r", "scott-w"]
+  "reviews": [
+    "john-b",
+    "norman-r",
+    "scott-w"
+  ]
 }

@@ -8,7 +8,9 @@
      - cookies the old WordPress site set and this one does not were removed;
      - Calendly (their consultation calendar) and GitHub (hosts the site) were
        added to the providers list;
-     - dashes became commas and colons.
+     - dashes became commas and colons;
+     - a dated note of those changes was added under "Changes to this policy".
+   Otherwise the wording is his, including words the rest of the site avoids.
    ========================================================================== */
 import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
@@ -53,7 +55,7 @@ const SECTIONS: Section[] = [
   {
     h: 'How we use your information',
     list: [
-      'Answer your quote request and prepare an accurate quote for your vehicle',
+      'Answer your quote request and prepare an accurate estimate for your vehicle',
       'Schedule, perform and follow up on your service',
       'Take payment, issue receipts and register warranties',
       'Send appointment confirmations, reminders and updates while your vehicle is with us',
@@ -123,7 +125,7 @@ const SECTIONS: Section[] = [
   },
   {
     h: 'Security',
-    p: ['We use reasonable safeguards to protect the information we hold, and we work with established providers who do the same. No website or system is completely secure, and we cannot promise absolute security.'],
+    p: ['We use reasonable safeguards to protect the information we hold, and we work with established providers who do the same. No website or system is completely secure, and we cannot guarantee absolute security.'],
   },
   {
     h: 'Other sites',
@@ -131,7 +133,10 @@ const SECTIONS: Section[] = [
   },
   {
     h: 'Changes to this policy',
-    p: ['If we change how we handle your information, we will update this page and change the effective date at the top. Material changes will be called out here.'],
+    p: [
+      'If we change how we handle your information, we will update this page and change the effective date at the top. Material changes will be called out here.',
+      'October 2026: updated for our rebuilt website. Calendly and GitHub were added to the providers we use, and cookies that only our previous website set were removed from the list.',
+    ],
   },
 ];
 ---

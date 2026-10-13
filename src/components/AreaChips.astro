@@ -1,5 +1,7 @@
 ---
-/* The towns, as links to their pages. */
+/* The towns, as links to their pages. On a service page each chip goes to that
+   service's page for the town, and its link text says so for search and screen
+   readers ("Ceramic coating in Troy") while the eye sees the town. */
 import { CITIES, hubPath, townPath, type City } from '../data/cities';
 import type { Service } from '../data/services';
 import { href } from '../lib/paths';
@@ -11,15 +13,19 @@ interface Props {
   skip?: string;
 }
 const { service, skip } = Astro.props;
-const target = (c: City) => (service && service.townSlug ? townPath(service, c) : hubPath(c));
-const label = (c: City) => (service && service.townSlug ? `${service.name} in ${c.name}` : c.name);
+const perService = Boolean(service && service.townSlug);
+// The home town has no page of its own per service (the service page is it), so its chip goes to the town hub.
+const target = (c: City) => (perService && !c.home ? townPath(service!, c) : hubPath(c));
 ---
 
 <ul class="chips">
   {
     CITIES.filter((c) => c.id !== skip).map((c) => (
       <li>
-        <a class="chip" href={href(target(c))} aria-label={label(c)}>{c.name}</a>
+        <a class="chip" href={href(target(c))}>
+          {perService && !c.home && <span class="sr">{service!.name} in </span>}
+          {c.name}
+        </a>
       </li>
     ))
   }

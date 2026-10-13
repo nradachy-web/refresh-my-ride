@@ -16,7 +16,8 @@ export interface HeroImage {
   preload: { srcset: string; sizes: string; type: string };
 }
 
-const WIDTHS = [420, 640, 828, 1080, 1440];
+// 1320 is enough for a 3x phone (the hero is at most 440 CSS pixels wide there) and for the desktop hero.
+const WIDTHS = [420, 640, 828, 1080, 1320];
 
 export async function heroImage(id: PhotoId, opts: { ratio?: number; focus?: string; sizes?: string } = {}): Promise<HeroImage> {
   const p = photo(id);
@@ -35,7 +36,7 @@ export async function heroImage(id: PhotoId, opts: { ratio?: number; focus?: str
     return out.join(', ');
   };
 
-  const [avif, webp] = await Promise.all([build('avif', 46), build('webp', 62)]);
+  const [avif, webp] = await Promise.all([build('avif', 44), build('webp', 58)]);
   const last = widths[widths.length - 1];
   const mid = widths[Math.min(2, widths.length - 1)];
   const fb = await getImage({ src: p.src, width: mid, height: Math.round(mid / ratio), format: 'jpeg', quality: 70, fit: 'cover', position: opts.focus ?? 'center' });

@@ -2,6 +2,11 @@
 /* ============================================================================
    GRAND OPENING
 
+   The special prices are his. His page also showed struck "regular" prices and
+   a dollar value on the prize, but three of those were higher than the regular
+   prices his own service pages publish, so they are left off until he settles
+   which is right (docs/OPEN-QUESTIONS.md, item 4).
+
    Their event page, at its old address. The event is Monday October 19, 2026
    and the specials run through October 30. The page knows what day it is:
    a few lines of script (run before first paint) switch it from "coming up" to
@@ -33,17 +38,17 @@ const state = now < start ? 'before' : now < end ? 'today' : now < specialsEnd ?
 const gcal = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Refresh My Ride grand opening')}&dates=20261019T140000Z/20261019T220000Z&location=${encodeURIComponent(`${BRAND.street}, ${BRAND.city}, ${BRAND.state} ${BRAND.zip}`)}`;
 
 const HAPPENING = [
-  { title: 'Enter to win a $349 Signature Refresh detail', body: 'A complete interior and exterior detail with a 3 month ceramic sealant.' },
+  { title: 'Enter to win a Signature Refresh detail', body: 'A complete interior and exterior detail with a 3 month ceramic sealant.' },
   { title: 'Showcase vehicles on display', body: 'See finished coatings and paint correction up close, in person.' },
   { title: 'Refreshments provided', body: 'Grab something to eat and drink while you look around.' },
   { title: 'Free car care detailing kit', body: 'Take home what you need to keep your car clean between details. While supplies last.' },
 ];
 
 const SPECIALS = [
-  { name: 'Signature Refresh', price: '$255', was: '$319', points: ['Complete interior and exterior detail', 'Deep clean of mats, crevices, vents and high-touch areas', '3 month ceramic sealant included'] },
-  { name: 'Polish & Protect', price: '$319', was: '$399', points: ['Exterior wash and detail, clay and decontamination', '1-step machine polish to enhance gloss and clarity', '6 month paint protection included'] },
-  { name: '3 Year Ceramic Coating', price: '$599', was: '$749', flag: 'Biggest savings', points: ['Full exterior detail and paint decontamination', '1-step paint enhancement', '3 year ceramic coating', 'Free windshield, glass, rims and trim coating'] },
-  { name: 'Ceramic Window Tint Package', price: '$359', was: '$449', points: ['Full sides and rear glass', 'Superior heat and UV rejection with ceramic film', 'Available shades from 5% to 75%', 'Lifetime manufacturer warranty'] },
+  { name: 'Signature Refresh', price: '$255', points: ['Complete interior and exterior detail', 'Deep clean of mats, crevices, vents and high-touch areas', '3 month ceramic sealant included'] },
+  { name: 'Polish & Protect', price: '$319', points: ['Exterior wash and detail, clay and decontamination', '1-step machine polish to enhance gloss and clarity', '6 month paint protection included'] },
+  { name: '3 Year Ceramic Coating', price: '$599', flag: 'Biggest savings', points: ['Full exterior detail and paint decontamination', '1-step paint enhancement', '3 year ceramic coating', 'Free windshield, glass, rims and trim coating'] },
+  { name: 'Ceramic Window Tint Package', price: '$359', points: ['Full sides and rear glass', 'Superior heat and UV rejection with ceramic film', 'Available shades from 5% to 75%', 'Lifetime manufacturer warranty'] },
 ];
 
 const STORY = [
@@ -143,7 +148,7 @@ const FAQ = [
               <li class:list={['card', 'sp__card', s.flag && 'sp__card--on']}>
                 {s.flag && <p class="sp__flag fine">{s.flag}</p>}
                 <h3 class="h3">{s.name}</h3>
-                <p class="sp__price"><span class="sr">Now </span>{s.price} <s><span class="sr">was </span>{s.was}</s></p>
+                <p class="sp__price">{s.price}</p>
                 <ul class="checks small">{s.points.map((p) => <li><span>{p}</span></li>)}</ul>
               </li>
             ))
@@ -175,7 +180,7 @@ const FAQ = [
       </div>
     </section>
 
-    <section class="band" id="rsvp" aria-labelledby="rsvp-h">
+    <section class="band" aria-labelledby="rsvp-h">
       <div class="wrap two wide-left find">
         <div class="stack" style="--gap:1.4rem">
           <Head id="rsvp-h" layout="left" eyebrow="Finding us" title={BRAND.street} intro={`${BRAND.city}, ${BRAND.state} ${BRAND.zip}. ${BRAND.crossStreets}.`} />
@@ -185,12 +190,12 @@ const FAQ = [
           </div>
           <ul class="checks" data-on="before today">
             <li><span>{GO.dateLabel}, 10am to 6pm</span></li>
-            <li><span>Enter to win a $349 Signature Refresh detail</span></li>
+            <li><span>Enter to win a Signature Refresh detail</span></li>
             <li><span>Free car care kit while supplies last</span></li>
           </ul>
         </div>
         <div data-on="before today">
-          <QuoteForm formId={FORM.rsvpId} title="RSVP now" note="It is free and open to everyone. Letting us know you are coming helps us plan refreshments and car care kits." height={830} />
+          <QuoteForm anchor="rsvp" frameTitle="RSVP form" fallback="Open the RSVP form" as="h3" formId={FORM.rsvpId} title="RSVP now" note="It is free and open to everyone. Letting us know you are coming helps us plan refreshments and car care kits." height={830} />
         </div>
         <div data-on="after past">
           <QuoteForm />
@@ -338,12 +343,6 @@ const FAQ = [
     line-height: 1;
     letter-spacing: -0.02em;
     color: var(--violet-ink);
-  }
-
-  .sp__price s {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--muted);
   }
 
   .note {

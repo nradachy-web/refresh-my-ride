@@ -52,6 +52,9 @@ for (const [page, src] of Object.entries(html)) {
     const m = text.match(re);
     if (m) flag(page, `${what}: "…${text.slice(Math.max(0, m.index - 40), m.index + 40).replace(/\s+/g, ' ')}…"`);
   }
+  // the phone number is always something a thumb can tap
+  const unlinked = body.replace(/<a\b[\s\S]*?<\/a>/g, ' ').replace(/<[^>]+>/g, ' ');
+  if (/\(586\) 400-1303/.test(unlinked)) flag(page, `the phone number appears as plain text, not a link: "…${unlinked.slice(Math.max(0, unlinked.search(/\(586\) 400-1303/) - 50), unlinked.search(/\(586\) 400-1303/) + 20).replace(/\s+/g, ' ')}"`);
   const h1 = body.match(/<h1[\s>]/g) || [];
   if (h1.length !== 1) flag(page, `${h1.length} h1 elements`);
   const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"');

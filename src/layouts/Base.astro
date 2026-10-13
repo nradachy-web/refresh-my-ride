@@ -50,7 +50,7 @@ const fontCss = `
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="canonical" href={canonical} />
+    {path !== '/404/' && <link rel="canonical" href={canonical} />}
     {(isPreview || noindex) && <meta name="robots" content="noindex, nofollow" />}
     <meta name="theme-color" content="#07060b" />
     <meta name="format-detection" content="telephone=no" />
@@ -58,6 +58,12 @@ const fontCss = `
     <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
     {preload && <link rel="preload" as="image" imagesrcset={preload.srcset} imagesizes={preload.sizes} type={preload.type} fetchpriority="high" />}
     <style set:html={fontCss}></style>
+    <noscript>
+      <style is:inline>
+        .qf__wait, .lf__wait, .ba__range, .ba__line { display: none }
+        .qf__frame, .lf { min-height: 0 !important }
+      </style>
+    </noscript>
 
     <link rel="icon" href={href('/favicon.ico')} sizes="48x48" />
     <link rel="icon" href={href('/favicon-32.png')} type="image/png" sizes="32x32" />

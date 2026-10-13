@@ -1,14 +1,18 @@
 {
   "city": "clinton-township",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Clinton Township, MI",
+    "title": "Our Clinton Township Shop: 14 Mile and Kelly | Refresh My Ride",
     "description": "Ceramic coating, window tint, paint correction and detailing at our Clinton Township shop, 14 Mile Road near Kelly. Mobile and valet available. Free quote."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Clinton Township, MI",
+    "kicker": "The Refresh My Ride shop in Clinton Township, MI",
     "title": "Home is **14 Mile and Kelly.**",
     "lede": "Refresh My Ride is a Clinton Township shop: 33115 Louise Ave, on the north side of 14 Mile Road just east of Kelly Road. Ceramic coating, window tint and paint correction are done here, indoors. Detailing can be done here, in your driveway or by valet. Appointment only, Monday to Friday.",
-    "chips": ["14 Mile Road, east of Kelly", "Appointment only", "Mobile and valet available"],
+    "chips": [
+      "14 Mile Road, east of Kelly",
+      "Appointment only",
+      "Mobile and valet available"
+    ],
     "photo": "shop-interior"
   },
   "about": {
@@ -40,14 +44,26 @@
     "title": "The shop is in town. Mobile and valet still come to you.",
     "body": [
       "We are at 33115 Louise Ave, on the north side of 14 Mile Road just east of Kelly Road. That corner is the south edge of the township: Fraser is across Kelly Road and Roseville is across 14 Mile. From the north end, take Garfield Road south to 14 Mile Road and turn east. Louise Ave is on the left after Kelly Road. From Gratiot, turn west on 14 Mile and Louise Ave is on the right, before Kelly Road. From the Civic Center on Romeo Plank Road it is about 6 miles, roughly 15 minutes without traffic.",
-      "The shop is appointment only, Monday to Friday, 9am to 5pm, and closed on weekends. We are often out on mobile and valet jobs, so call or text (586) 400-1303 or book online before you head over. Online booking is open 24/7, and with an appointment we will have a bay ready for you.",
+      "The shop is appointment only, Monday to Friday, 9am to 5pm, and closed on weekends. We are often out on mobile and valet jobs, so call or text [(586) 400-1303](tel:+15864001303) or book online before you head over. Online booking is open 24/7, and with an appointment we will have a bay ready for you.",
       "Living close does not mean you have to make the trip. A detail, inside, outside or both, can be done in your driveway or at your workplace, since we bring our own power and water. Coating, tint and paint correction stay in our enclosed bays, under controlled lighting, even if you live around the corner. For those, valet picks the vehicle up, we do the work at the shop, and we bring it back. On coating jobs your Uber is covered for the drop-off and pickup."
     ],
     "facts": [
-      { "label": "Address", "value": "33115 Louise Ave, Clinton Township, MI 48035" },
-      { "label": "Cross streets", "value": "North side of 14 Mile Road, just east of Kelly Road" },
-      { "label": "Hours", "value": "Monday to Friday, 9am to 5pm. Appointment only." },
-      { "label": "Mobile and valet", "value": "Available across the township. Ask when you book." }
+      {
+        "label": "Address",
+        "value": "33115 Louise Ave, Clinton Township, MI 48035"
+      },
+      {
+        "label": "Cross streets",
+        "value": "North side of 14 Mile Road, just east of Kelly Road"
+      },
+      {
+        "label": "Hours",
+        "value": "Monday to Friday, 9am to 5pm. Appointment only."
+      },
+      {
+        "label": "Mobile and valet",
+        "value": "Available across the township. Ask when you book."
+      }
     ]
   },
   "faq": [
@@ -57,7 +73,7 @@
     },
     {
       "q": "Can I stop in without an appointment?",
-      "a": "Please book first. We are appointment only, and the crew is often out on mobile and valet jobs. Call or text (586) 400-1303 Monday to Friday, 9am to 5pm, or book online at any hour. With an appointment, a bay is ready for your vehicle when you pull in."
+      "a": "Please book first. We are appointment only, and the crew is often out on mobile and valet jobs. Call or text [(586) 400-1303](tel:+15864001303) Monday to Friday, 9am to 5pm, or book online at any hour. With an appointment, a bay is ready for your vehicle when you pull in."
     },
     {
       "q": "I live a few minutes away. Do you still offer mobile detailing and valet here?",
@@ -72,6 +88,14 @@
       "a": "Prices are listed for a coupe or sedan in average condition. [Detailing](/car-detailing-services-clinton-township-mi/) is from $139.99 for a Wash & Seal, from $184.99 for a Premium Interior Detail and from $249.99 for an Essential Refresh, inside and out. [Window tint](/window-tint-clinton-township-mi/) is from $99.99 for the front two windows in Geoshield C2 Carbon film. SUVs and trucks are quoted for their size. Ceramic coating is quoted per vehicle, so request a free quote and tell us what you drive."
     }
   ],
-  "reviews": ["chris-d", "john-b", "jake-m"],
-  "neighbors": ["sterling-heights", "macomb-township", "shelby-township"]
+  "reviews": [
+    "chris-d",
+    "john-b",
+    "jake-m"
+  ],
+  "neighbors": [
+    "sterling-heights",
+    "macomb-township",
+    "shelby-township"
+  ]
 }

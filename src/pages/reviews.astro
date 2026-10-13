@@ -53,13 +53,13 @@ const WORK: PhotoId[] = [
 
   <section class="band" aria-labelledby="rev-h">
     <div class="wrap">
-      <Head id="rev-h" eyebrow="Google reviews" title="What customers say." intro="Typos and all. A long review may be cut at a sentence end, and nothing else is changed." />
+      <Head id="rev-h" eyebrow="Google reviews" title="What customers say." intro="Typos and all. A long review may be shortened at a sentence end. No words are changed." />
       <ul class="wall">
         {
           REVIEWS.map((r) => (
             <li class="card pad wall__card">
               <Stars />
-              <blockquote><p>{r.text}{r.excerpt ? ' …' : ''}</p></blockquote>
+              <blockquote><p>{r.excerptStart ? '… ' : ''}{r.text}{r.excerpt ? ' …' : ''}</p></blockquote>
               <p class="wall__who">
                 <strong>{r.name}</strong>
                 <span class="fine muted">{[r.job, r.town].filter(Boolean).join(' · ') || 'Google review'}</span>

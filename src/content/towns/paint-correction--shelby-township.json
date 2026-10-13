@@ -3,13 +3,17 @@
   "city": "shelby-township",
   "meta": {
     "title": "Paint Correction in Shelby Township, MI | Refresh My Ride",
-    "description": "Paint correction in Shelby Township: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 for a coupe or sedan. Free quote."
+    "description": "Paint correction in Shelby Township: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 for a coupe or sedan."
   },
   "hero": {
     "kicker": "Paint correction in Shelby Township, MI",
     "title": "Show car paint. **Daily driver too.**",
     "lede": "Swirl marks, light scratches, oxidation and water spots sit in the clear coat, and machine polishing is how they come out. We do it under shop lighting, about 13 miles from central Shelby Township. The starting point is Polish & Protect, from $344.99 for a coupe or sedan in average condition.",
-    "chips": ["One-step or multi-stage", "Inspected under shop lighting", "Valet pickup available"],
+    "chips": [
+      "One-step or multi-stage",
+      "Inspected under shop lighting",
+      "Valet pickup available"
+    ],
     "photo": "team-polishing-mercury"
   },
   "local": {
@@ -41,10 +45,22 @@
       "Allow about 4.5 to 5 hours for Polish & Protect and about 7 for the Luxury Refresh. A multi-stage correction is quoted after we see the paint. If you cannot spare the trip, pick-up and drop-off valet collects the vehicle from your home or work in Shelby Township and brings it back."
     ],
     "facts": [
-      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
-      { "label": "Valet", "value": "Pick-up and drop-off available" }
+      {
+        "label": "Where",
+        "value": "33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "One-step polish",
+        "value": "About 4.5 to 5 hours"
+      },
+      {
+        "label": "Valet",
+        "value": "Pick-up and drop-off available"
+      }
     ]
   },
   "photo": "josh-polishing-corvette",
@@ -66,5 +82,9 @@
       "a": "You do not book it separately. Every ceramic coating package already includes paint correction before the coating goes on, because a coating locks in whatever is underneath it. If you want the finish protected for years and not months, see [ceramic coating in Shelby Township](/ceramic-coating-shelby-township-mi/)."
     }
   ],
-  "reviews": ["norman-r", "don-p", "jake-m"]
+  "reviews": [
+    "norman-r",
+    "don-p",
+    "jake-m"
+  ]
 }

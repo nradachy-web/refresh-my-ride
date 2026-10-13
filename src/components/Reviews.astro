@@ -13,13 +13,13 @@ interface Props {
 const { reviews, more = true } = Astro.props;
 ---
 
-<ul class="rv" tabindex="0" aria-label="Customer reviews">
+<ul class="rv" aria-label="Customer reviews">
   {
     reviews.map((r) => (
       <li class="rv__card card pad">
         <Stars />
         <blockquote class="rv__text">
-          <p>{r.text}{r.excerpt ? ' …' : ''}</p>
+          <p>{r.excerptStart ? '… ' : ''}{r.text}{r.excerpt ? ' …' : ''}</p>
         </blockquote>
         <p class="rv__who">
           <strong>{r.name}</strong>
@@ -38,6 +38,16 @@ const { reviews, more = true } = Astro.props;
     </p>
   )
 }
+
+<script is:inline>
+  // On a phone the reviews are a row you swipe: make it reachable by keyboard there, and only there.
+  (function () {
+    document.querySelectorAll('.rv:not([data-on])').forEach(function (el) {
+      el.setAttribute('data-on', '');
+      if (el.scrollWidth > el.clientWidth + 1) el.tabIndex = 0;
+    });
+  })();
+</script>
 
 <style>
   .rv {

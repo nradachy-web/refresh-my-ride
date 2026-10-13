@@ -9,7 +9,12 @@
     "kicker": "Window tint in Royal Oak, MI",
     "title": "Shade for **Woodward in August.**",
     "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle and installed indoors at our shop. Both block 99% of UV and carry a lifetime warranty. Front two windows from $99.99 on a standard coupe or sedan. About 25 minutes from central Royal Oak, and most installs are done the same day.",
-    "chips": ["Most installs same day", "Lifetime film warranty", "Blocks 99% of UV", "Valet pickup available"],
+    "chips": [
+      "Most installs same day",
+      "Lifetime film warranty",
+      "Blocks 99% of UV",
+      "Valet pickup available"
+    ],
     "photo": "bmw-7-series"
   },
   "local": {
@@ -42,13 +47,25 @@
       "Before you choose a shade, we show you real Geoshield samples on glass in the shop. Shades on a screen are an approximation."
     ],
     "facts": [
-      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Where",
+        "value": "33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "Install time",
+        "value": "About 1.5 to 3.5 hours"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
-  "photo": "escalade-black",
+  "photo": "cadillac-sedan-black",
   "faq": [
     {
       "q": "How long will my car be at the shop for tint?",
@@ -67,5 +84,8 @@
       "a": "Leave the windows up for 3 to 4 days. The city structures have pay stations on the first floor, so you can pay there on foot instead of by card at the exit. If a gate or a drive-through still needs a hand out the window, open the door for those few days. Small water pockets or a light haze in the first week are normal."
     }
   ],
-  "reviews": ["jake-m", "john-b"]
+  "reviews": [
+    "jake-m",
+    "john-b"
+  ]
 }

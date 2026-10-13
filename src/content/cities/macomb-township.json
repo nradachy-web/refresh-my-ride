@@ -1,14 +1,18 @@
 {
   "city": "macomb-township",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Macomb Township, MI",
+    "title": "Macomb Township, MI: Detailing, Tint & Ceramic Coating",
     "description": "Ceramic coating, window tint, paint correction and detailing for Macomb Township. Mobile detailing in your driveway, or our shop roughly 30 minutes south."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Macomb Township, MI",
+    "kicker": "Serving Macomb Township, MI: detailing, window tint and ceramic coating",
     "title": "North of M-59. **We come to you.**",
     "lede": "Our shop on Louise Ave in Clinton Township is about 15 miles from central Macomb Township, roughly 30 minutes without traffic. Detailing can be done in your driveway. Coatings, tint and paint correction happen at the shop, and valet pickup can make the drive for you.",
-    "chips": ["Mobile detailing at home", "Pick-up and drop-off valet", "Roughly 30 minutes away"],
+    "chips": [
+      "Mobile detailing at home",
+      "Pick-up and drop-off valet",
+      "Roughly 30 minutes away"
+    ],
     "photo": "chevy-suv-black"
   },
   "about": {
@@ -43,10 +47,22 @@
       "Detailing is the part that comes up to you: interior, exterior or the whole vehicle, in your driveway or where you work. Coatings, window film and machine polishing are done indoors at the shop, because they need steady light, clean air and time to cure. If the drive does not fit your day, valet pickup collects the vehicle and brings it back."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 15 miles from central Macomb Township" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Distance",
+        "value": "About 15 miles from central Macomb Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "faq": [
@@ -71,6 +87,14 @@
       "a": "Yes, at the shop. We install Geoshield C2 Carbon and C2 Ceramic film, computer cut for your vehicle. Front two windows are from $99.99 in carbon on a standard coupe or sedan and take about 1.5 hours. Most installs are finished the day you drop off. See [window tint for Macomb Township](/window-tint-macomb-township-mi/)."
     }
   ],
-  "reviews": ["alexis-p", "john-b", "jake-m"],
-  "neighbors": ["shelby-township", "clinton-township", "sterling-heights"]
+  "reviews": [
+    "alexis-p",
+    "john-b",
+    "jake-m"
+  ],
+  "neighbors": [
+    "shelby-township",
+    "clinton-township",
+    "sterling-heights"
+  ]
 }

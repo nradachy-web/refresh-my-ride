@@ -8,7 +8,12 @@
     "kicker": "Window tint in Clinton Township, MI",
     "title": "Cooler cabin. **Cleaner look.**",
     "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle and installed indoors at our Clinton Township shop. It blocks 99% of UV and carries a lifetime warranty. Front 2 windows from $99.99 on a standard coupe or sedan, and most installs are done the same day.",
-    "chips": ["Geoshield C2 Carbon and Ceramic", "Lifetime film warranty", "Heat and 99% UV rejection", "Computer cut precision"],
+    "chips": [
+      "Geoshield C2 Carbon and Ceramic",
+      "Lifetime film warranty",
+      "Heat and 99% UV rejection",
+      "Computer cut precision"
+    ],
     "photo": "corvette-gray"
   },
   "blocks": [
@@ -28,7 +33,10 @@
         "**Old tint removal.** Purple, bubbling film stripped safely, with your defroster lines protected."
       ],
       "photo": "shop-interior",
-      "cta": { "label": "Get my free tint quote", "href": "#quote" }
+      "cta": {
+        "label": "Get my free tint quote",
+        "href": "#quote"
+      }
     },
     {
       "type": "prices",
@@ -49,10 +57,26 @@
             "Best for drivers focused on style and value"
           ],
           "rows": [
-            { "name": "Front 2 windows", "price": "From $99.99", "time": "About 1.5 hours" },
-            { "name": "Full sides", "price": "From $199.99", "time": "About 2.5 hours" },
-            { "name": "Full sides + rear glass", "price": "From $299.99", "time": "About 3.5 hours" },
-            { "name": "Front windshield", "price": "Ceramic only", "body": "Windshields are tinted in C2 Ceramic film only, from $175.00." }
+            {
+              "name": "Front 2 windows",
+              "price": "From $99.99",
+              "time": "About 1.5 hours"
+            },
+            {
+              "name": "Full sides",
+              "price": "From $199.99",
+              "time": "About 2.5 hours"
+            },
+            {
+              "name": "Full sides + rear glass",
+              "price": "From $299.99",
+              "time": "About 3.5 hours"
+            },
+            {
+              "name": "Front windshield",
+              "price": "Ceramic only",
+              "body": "Windshields are tinted in C2 Ceramic film only, from $175.00."
+            }
           ]
         },
         {
@@ -68,15 +92,34 @@
             "Best for drivers who want privacy, comfort and performance"
           ],
           "rows": [
-            { "name": "Front 2 windows", "price": "From $149.99", "time": "About 1.5 hours" },
-            { "name": "Full sides", "price": "From $299.99", "time": "About 2.5 hours" },
-            { "name": "Full sides + rear glass", "price": "From $399.99", "time": "About 3.5 hours" },
-            { "name": "Front windshield", "price": "From $175.00", "time": "About 1.5 hours" }
+            {
+              "name": "Front 2 windows",
+              "price": "From $149.99",
+              "time": "About 1.5 hours"
+            },
+            {
+              "name": "Full sides",
+              "price": "From $299.99",
+              "time": "About 2.5 hours"
+            },
+            {
+              "name": "Full sides + rear glass",
+              "price": "From $399.99",
+              "time": "About 3.5 hours"
+            },
+            {
+              "name": "Front windshield",
+              "price": "From $175.00",
+              "time": "About 1.5 hours"
+            }
           ]
         }
       ],
       "footnote": "**\"From\" prices** are for a standard coupe or sedan. SUVs and trucks are quoted by vehicle. Final pricing can vary with window count, glass condition and film selection, and every adjustment is approved before work begins. Old tint removal is from $50 per area, and 50% off when a full-vehicle tint is installed the same day. Every install is backed by the Geoshield lifetime warranty covering bubbling, peeling and fading.",
-      "cta": { "label": "Call (586) 400-1303", "href": "tel:+15864001303" }
+      "cta": {
+        "label": "Call (586) 400-1303",
+        "href": "tel:+15864001303"
+      }
     },
     {
       "type": "shades",
@@ -85,11 +128,46 @@
       "title": "See the shade before you book.",
       "intro": "Tap a percentage to preview it. The number is how much light the film lets through, so the lower the number, the darker the tint.",
       "shades": [
-        { "pct": "05", "label": "Darkest", "name": "Limo", "body": "The darkest we offer. Maximum privacy and the sleekest look. From outside, the glass reads black.", "privacy": "Max", "seeingOut": "Minimal" },
-        { "pct": "20", "label": "Most popular", "name": "The Classic", "body": "Our most-requested shade. Dark, clean, and uniform without going full limo.", "privacy": "High", "seeingOut": "Low" },
-        { "pct": "35", "label": "Balanced", "name": "Balanced", "body": "Clearly tinted but easy to see out of, day or night. The all-rounder.", "privacy": "Medium", "seeingOut": "Medium" },
-        { "pct": "50", "label": "Subtle", "name": "Subtle", "body": "A light smoke that takes the edge off glare and heat while staying understated.", "privacy": "Low", "seeingOut": "High" },
-        { "pct": "75", "label": "Lightest", "name": "Near-clear", "body": "Almost invisible on the car. Heat and UV protection with a near-factory look. A popular pick for front windshields.", "privacy": "Minimal", "seeingOut": "Max" }
+        {
+          "pct": "05",
+          "label": "Darkest",
+          "name": "Limo",
+          "body": "The darkest we offer. Maximum privacy and the sleekest look. From outside, the glass reads black.",
+          "privacy": "Max",
+          "seeingOut": "Minimal"
+        },
+        {
+          "pct": "20",
+          "label": "Most popular",
+          "name": "The Classic",
+          "body": "Our most-requested shade. Dark, clean, and uniform without going full limo.",
+          "privacy": "High",
+          "seeingOut": "Low"
+        },
+        {
+          "pct": "35",
+          "label": "Balanced",
+          "name": "Balanced",
+          "body": "Clearly tinted but easy to see out of, day or night. The all-rounder.",
+          "privacy": "Medium",
+          "seeingOut": "Medium"
+        },
+        {
+          "pct": "50",
+          "label": "Subtle",
+          "name": "Subtle",
+          "body": "A light smoke that takes the edge off glare and heat while staying understated.",
+          "privacy": "Low",
+          "seeingOut": "High"
+        },
+        {
+          "pct": "75",
+          "label": "Lightest",
+          "name": "Near-clear",
+          "body": "Almost invisible on the car. Heat and UV protection with a near-factory look. A popular pick for front windshields.",
+          "privacy": "Minimal",
+          "seeingOut": "Max"
+        }
       ],
       "note": "On-screen shades are an approximation, and every screen renders differently. The car shown is an illustration. You will see real Geoshield film samples on actual glass in our shop, and we will help you choose the right shade for each window during your consultation."
     },
@@ -120,9 +198,21 @@
       "eyebrow": "What happens next",
       "title": "Three steps from quote to tinted glass.",
       "steps": [
-        { "title": "Get your quote", "body": "Call, book online or send the form. Tell us your vehicle and which windows.", "note": "About two minutes" },
-        { "title": "Pick your film and shade", "body": "See real Geoshield samples on actual glass with a specialist who helps you choose the right shade for each window.", "note": "In our shop" },
-        { "title": "Drop off, drive away tinted", "body": "Most installs take 1.5 to 3.5 hours. Leave the windows up for 3 to 4 days while the film cures, then enjoy the cooler cabin.", "note": "Most done the same day" }
+        {
+          "title": "Get your quote",
+          "body": "Call, book online or send the form. Tell us your vehicle and which windows.",
+          "note": "About a minute"
+        },
+        {
+          "title": "Pick your film and shade",
+          "body": "See real Geoshield samples on actual glass with a specialist who helps you choose the right shade for each window.",
+          "note": "In our shop"
+        },
+        {
+          "title": "Drop off, drive away tinted",
+          "body": "Most installs take 1.5 to 3.5 hours. Leave the windows up for 3 to 4 days while the film cures, then enjoy the cooler cabin.",
+          "note": "Most done the same day"
+        }
       ],
       "footnote": "Tint is shop only. Film needs a clean indoor space to bond, so every install happens at 33115 Louise Ave in Clinton Township, by appointment."
     },
@@ -131,8 +221,17 @@
       "plane": "ink",
       "eyebrow": "Our work",
       "title": "1,000+ vehicles serviced since 2023. Here are a few.",
-      "intro": "Vehicles from across our work: window tint, auto detailing and [ceramic coating](/ceramic-coating/). Not every one pictured came in for film. We are licensed and insured, with [5.0 from 270+ reviews on Google](/reviews/).",
-      "photos": ["tesla-model-y", "bmw-7-series", "escalade-black", "cadillac-sedan-black", "cybertruck", "chevy-suv-black", "bmw-x6-blue", "jeep-grand-cherokee"]
+      "intro": "Vehicles from across our work: window tint, auto detailing and [ceramic coating](/ceramic-coating/). Not every one pictured came in for film. We are licensed and insured, with 5.0 from 270+ reviews on Google. [Read some of them](/reviews/).",
+      "photos": [
+        "tesla-model-y",
+        "bmw-7-series",
+        "escalade-black",
+        "cadillac-sedan-black",
+        "cybertruck",
+        "chevy-suv-black",
+        "bmw-x6-blue",
+        "jeep-grand-cherokee"
+      ]
     },
     {
       "type": "areas",
@@ -178,17 +277,36 @@
   ],
   "quote": {
     "title": "Tell us your vehicle and which windows.",
-    "lede": "It takes about two minutes. We come back with a free quote built around your vehicle: the film, the windows and the price. No pressure and no obligation."
+    "lede": "We come back with a free quote built around your vehicle: the film, the windows and the price. No pressure and no obligation."
   },
   "summary": {
     "title": "Two Geoshield films. One lifetime warranty.",
     "intro": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle so no blade touches the glass. Both block 99% of UV. Prices are for a standard coupe or sedan. SUVs and trucks are quoted by vehicle.",
     "items": [
-      { "name": "C2 Carbon", "price": "From $99.99", "detail": "For style and value. Front 2 windows from $99.99, full sides from $199.99, full sides + rear glass from $299.99." },
-      { "name": "C2 Ceramic", "price": "From $149.99", "detail": "Blocks far more infrared heat. Front 2 windows from $149.99, full sides from $299.99, full sides + rear glass from $399.99." },
-      { "name": "Front windshield", "price": "From $175.00", "detail": "C2 Ceramic film only. About 1.5 hours." },
-      { "name": "Old tint removal", "price": "From $50", "detail": "Per area. 50% off when a full-vehicle tint is installed the same day." },
-      { "name": "Shades", "detail": "5%, 20%, 35%, 50% and 75%, with 20% the most popular. You choose from real Geoshield samples on glass at the shop." }
+      {
+        "name": "C2 Carbon",
+        "price": "From $99.99",
+        "detail": "For style and value. Front 2 windows from $99.99, full sides from $199.99, full sides + rear glass from $299.99."
+      },
+      {
+        "name": "C2 Ceramic",
+        "price": "From $149.99",
+        "detail": "Blocks far more infrared heat. Front 2 windows from $149.99, full sides from $299.99, full sides + rear glass from $399.99."
+      },
+      {
+        "name": "Front windshield",
+        "price": "From $175.00",
+        "detail": "C2 Ceramic film only. About 1.5 hours."
+      },
+      {
+        "name": "Old tint removal",
+        "price": "From $50",
+        "detail": "Per area. 50% off when a full-vehicle tint is installed the same day."
+      },
+      {
+        "name": "Shades",
+        "detail": "5%, 20%, 35%, 50% and 75%, with 20% the most popular. You choose from real Geoshield samples on glass at the shop."
+      }
     ],
     "footnote": "Installed indoors at our Clinton Township shop. Most installs take 1.5 to 3.5 hours and are done the same day. Every film carries a lifetime warranty covering bubbling, peeling and fading."
   }

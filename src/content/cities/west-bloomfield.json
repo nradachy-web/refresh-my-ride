@@ -1,14 +1,18 @@
 {
   "city": "west-bloomfield",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in West Bloomfield, MI",
+    "title": "West Bloomfield, MI: Detailing, Tint & Ceramic Coating",
     "description": "Ceramic coating, window tint, paint correction and detailing for West Bloomfield drivers. Indoor shop about 25 miles away, by appointment. Free quote."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in West Bloomfield, MI",
+    "kicker": "Serving West Bloomfield, MI: detailing, window tint and ceramic coating",
     "title": "Lake township cars. **Done indoors.**",
     "lede": "Residents sometimes call West Bloomfield the lake township of Oakland County. Salt, sap and lake days all end up on the car. Our indoor shop on Louise Ave is about 25 miles from central West Bloomfield, roughly 45 minutes without traffic. Coatings, tint and paint correction are done there, by appointment.",
-    "chips": ["Roughly 45 minutes away", "Appointment only", "Uber covered on coatings"],
+    "chips": [
+      "Roughly 45 minutes away",
+      "Appointment only",
+      "Uber covered on coatings"
+    ],
     "photo": "shop-interior"
   },
   "about": {
@@ -43,10 +47,22 @@
       "Coatings, window film and machine polishing all need the bays: steady light, no dust, no wind and time to cure. Detailing is the one service that can travel, but we do not promise a mobile visit this far out. Tell us where you are and we will confirm what can come to you."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 25 miles from central West Bloomfield" },
-      { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Tell us where you are and we will confirm" },
-      { "label": "Shop hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+      {
+        "label": "Distance",
+        "value": "About 25 miles from central West Bloomfield"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 45 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Tell us where you are and we will confirm"
+      },
+      {
+        "label": "Shop hours",
+        "value": "Monday to Friday, 9am to 5pm, by appointment"
+      }
     ]
   },
   "faq": [
@@ -64,13 +80,21 @@
     },
     {
       "q": "Are you open on weekends?",
-      "a": "No. The shop is open Monday to Friday, 9am to 5pm, by appointment, and closed on weekends. Online booking is open 24/7, and you can call or text (586) 400-1303."
+      "a": "No. The shop is open Monday to Friday, 9am to 5pm, by appointment, and closed on weekends. Online booking is open 24/7, and you can call or text [(586) 400-1303](tel:+15864001303)."
     },
     {
       "q": "What does a detail cost for an SUV?",
       "a": "Our listed prices start from $184.99 for an interior detail, from $139.99 for an exterior detail and from $249.99 for a full detail, on a coupe or sedan in average condition. Anything bigger, an SUV or a truck, gets its own quote for its size before we touch it. See [detailing in West Bloomfield](/car-detailing-west-bloomfield-mi/)."
     }
   ],
-  "reviews": ["norman-r", "jake-m", "caitlin-d"],
-  "neighbors": ["birmingham", "troy", "royal-oak"]
+  "reviews": [
+    "norman-r",
+    "jake-m",
+    "caitlin-d"
+  ],
+  "neighbors": [
+    "birmingham",
+    "troy",
+    "royal-oak"
+  ]
 }

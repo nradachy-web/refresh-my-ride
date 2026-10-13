@@ -17,6 +17,7 @@ import Faq from '../components/Faq.astro';
 import QuoteBand from '../components/QuoteBand.astro';
 import { BRAND } from '../data/site';
 import { service as getService } from '../data/services';
+import { CITIES } from '../data/cities';
 import type { PhotoId } from '../data/photos';
 import { heroImage } from '../lib/hero';
 import { breadcrumbs, faqSchema, serviceSchema } from '../lib/schema';
@@ -29,9 +30,10 @@ const c = entry.data;
 const svc = getService(c.service as any);
 const hero = await heroImage(c.hero.photo as PhotoId);
 
-const offers = c.summary.items.filter((i) => i.price && /\$\d/.test(i.price)).map((i) => ({ name: i.name, price: i.price!.replace(/[^0-9.]/g, '') }));
+// Mobile detailing does not list West Bloomfield: it is past the published mobile range.
+const areas = svc.id === 'mobile-detailing' ? CITIES.filter((t) => t.id !== 'west-bloomfield').map((t) => `${t.name}, MI`) : undefined;
 const schema = [
-  serviceSchema({ name: svc.name, description: c.meta.description, url: `https://refreshmyrideauto.com${svc.path}`, offers }),
+  serviceSchema({ name: svc.name, type: svc.name, description: c.meta.description, url: `https://refreshmyrideauto.com${svc.path}`, areas }),
   faqSchema(c.faq),
   breadcrumbs([
     { name: 'Home', path: '/' },

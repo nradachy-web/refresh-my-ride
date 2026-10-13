@@ -1,14 +1,18 @@
 {
   "city": "birmingham",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Birmingham, MI",
+    "title": "Birmingham, MI: Detailing, Tint & Ceramic Coating",
     "description": "Ceramic coating, window tint, paint correction and detailing in Birmingham. Mobile detailing at home, or valet pickup to our shop about 30 minutes east."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Birmingham, MI",
+    "kicker": "Serving Birmingham, MI: detailing, window tint and ceramic coating",
     "title": "Your 14 Mile is **our 14 Mile.**",
     "lede": "Our shop sits just off the same 14 Mile Road that runs along the south end of the city, about 17 miles from central Birmingham. Coatings, tint and paint correction happen there. Detailing can come to your driveway or your office, and valet pickup covers the cars that live in a downtown parking structure.",
-    "chips": ["Roughly 30 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "chips": [
+      "Roughly 30 minutes away",
+      "Mobile detailing at home",
+      "Pick-up and drop-off valet"
+    ],
     "photo": "cadillac-sedan-black"
   },
   "about": {
@@ -47,10 +51,22 @@
       "Interior, exterior and full details can be done at your home or workplace in Birmingham, and we bring our own power and water. Ceramic coating, window tint and paint correction are shop only, because that work needs controlled light, no dust and time to cure. If a weekday trip east does not fit, valet pickup collects the vehicle and brings it back."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 17 miles from central Birmingham" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, with room to walk around the vehicle" },
-      { "label": "Shop hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+      {
+        "label": "Distance",
+        "value": "About 17 miles from central Birmingham"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, with room to walk around the vehicle"
+      },
+      {
+        "label": "Shop hours",
+        "value": "Monday to Friday, 9am to 5pm, by appointment"
+      }
     ]
   },
   "faq": [
@@ -75,6 +91,14 @@
       "a": "Detailing has package prices, listed for a coupe or sedan in average condition: interior details from $184.99, exterior details from $139.99 and full details from $249.99. Window tint is from $99.99 for the front two windows on a standard coupe or sedan. Ceramic coating and multi-stage paint correction are quoted per vehicle, once we know its size and the condition of the paint. SUVs and trucks are always quoted for their size."
     }
   ],
-  "reviews": ["alexis-p", "jake-m", "norman-r"],
-  "neighbors": ["troy", "royal-oak", "west-bloomfield"]
+  "reviews": [
+    "alexis-p",
+    "jake-m",
+    "norman-r"
+  ],
+  "neighbors": [
+    "troy",
+    "royal-oak",
+    "west-bloomfield"
+  ]
 }

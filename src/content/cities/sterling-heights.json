@@ -1,15 +1,19 @@
 {
   "city": "sterling-heights",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Sterling Heights, MI",
+    "title": "Sterling Heights, MI: Detailing, Tint & Ceramic Coating",
     "description": "Ceramic coating, window tint and paint correction at our shop, roughly 15 minutes from Sterling Heights. Mobile detailing in your driveway. Free quote."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Sterling Heights, MI",
+    "kicker": "Serving Sterling Heights, MI: detailing, window tint and ceramic coating",
     "title": "Next door. **Or in your driveway.**",
     "lede": "Our shop on Louise Ave is about 7 miles from central Sterling Heights: Utica Road southeast to 14 Mile Road, then east. Coatings, tint and paint correction happen there. Detailing can come to your home or workplace, and valet pickup covers the rest.",
-    "chips": ["About 7 miles to the shop", "Mobile detailing at home", "Pick-up and drop-off valet"],
-    "photo": "escalade-black"
+    "chips": [
+      "About 7 miles to the shop",
+      "Mobile detailing at home",
+      "Pick-up and drop-off valet"
+    ],
+    "photo": "bentley-flying-spur"
   },
   "about": {
     "title": "What Sterling Heights does to a car.",
@@ -47,10 +51,22 @@
       "Interior, exterior and full details can all be done in your driveway. Ceramic coating, window tint and paint correction need the shop, where we control light, dust and cure time. If you cannot spare the trip, valet pickup collects the vehicle and brings it back."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 7 miles from central Sterling Heights" },
-      { "label": "Drive", "value": "Roughly 15 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Distance",
+        "value": "About 7 miles from central Sterling Heights"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 15 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "faq": [
@@ -71,6 +87,14 @@
       "a": "Package prices are listed for a coupe or sedan in average condition: interior details from $184.99, exterior details from $139.99 and full details from $249.99. Trucks and SUVs are quoted for their size, and we give you the number before any work starts. See [detailing in Sterling Heights](/car-detailing-sterling-heights-mi/)."
     }
   ],
-  "reviews": ["april-g", "tom-k", "john-b"],
-  "neighbors": ["clinton-township", "shelby-township", "troy"]
+  "reviews": [
+    "april-g",
+    "tom-k",
+    "john-b"
+  ],
+  "neighbors": [
+    "clinton-township",
+    "shelby-township",
+    "troy"
+  ]
 }

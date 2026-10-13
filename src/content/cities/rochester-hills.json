@@ -1,14 +1,18 @@
 {
   "city": "rochester-hills",
   "meta": {
-    "title": "Ceramic Coating, Tint & Detailing in Rochester Hills, MI",
-    "description": "Ceramic coating, window tint, paint correction and detailing for Rochester Hills. Mobile detailing at home, valet pickup, or our shop about 30 minutes away."
+    "title": "Rochester Hills, MI: Detailing, Tint & Ceramic Coating",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Rochester Hills. Mobile detailing at home, valet pickup, or our shop 30 minutes away."
   },
   "hero": {
-    "kicker": "Ceramic coating, window tint and detailing in Rochester Hills, MI",
+    "kicker": "Serving Rochester Hills, MI: detailing, window tint and ceramic coating",
     "title": "Half an hour away. **Or we drive.**",
     "lede": "Our Clinton Township shop is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic. Detailing can come to your driveway. Ceramic coating, window tint and paint correction are done at the shop, and valet pickup means you never have to make the trip yourself.",
-    "chips": ["Roughly 30 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "chips": [
+      "Roughly 30 minutes away",
+      "Mobile detailing at home",
+      "Pick-up and drop-off valet"
+    ],
     "photo": "porsche-suv-blue"
   },
   "about": {
@@ -47,10 +51,22 @@
       "Interior, exterior and full details can be done at your home or workplace in Rochester Hills, and we bring our own power and water. Coatings, tint and paint correction need the shop, where we control the light and the dust. If the trip is the problem, valet pickup collects the vehicle from you and returns it when the work is done. On ceramic coating jobs, Uber is covered if you drop it off yourself."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 19 miles from central Rochester Hills" },
-      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available for any service. Ask when you book." }
+      {
+        "label": "Distance",
+        "value": "About 19 miles from central Rochester Hills"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 30 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available for any service. Ask when you book."
+      }
     ]
   },
   "faq": [
@@ -71,6 +87,14 @@
       "a": "For the inside, an Executive Interior Detail. Steam and hot water extraction lift what is in the carpet and mats, where a vacuum only takes the loose layer. It is from $239.99 for a coupe or sedan in average condition. For the outside, a Wash & Seal is a full decontamination wash with a 6 month ceramic sealant, from $139.99. SUVs and trucks are quoted for their size. See [detailing in Rochester Hills](/car-detailing-rochester-hills-mi/)."
     }
   ],
-  "reviews": ["sydney-k", "john-b", "jake-m"],
-  "neighbors": ["troy", "shelby-township", "sterling-heights"]
+  "reviews": [
+    "sydney-k",
+    "john-b",
+    "jake-m"
+  ],
+  "neighbors": [
+    "troy",
+    "shelby-township",
+    "sterling-heights"
+  ]
 }

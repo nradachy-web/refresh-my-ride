@@ -149,7 +149,7 @@ const schema = [
     </div>
   </section>
 
-  <QuoteBand title={`Get your free quote in ${town.name}.`} lede={`Tell us what you drive and what you want done. We reply with a real price for your vehicle, and how the drop-off, mobile visit or valet pickup would work from ${town.name}.`} />
+  <QuoteBand title={`Get your free quote in ${town.name}.`} lede={town.id === 'west-bloomfield' ? `Tell us what you drive, what you want done and where in ${town.name} you are. We reply with a real price for your vehicle, and what can come to you.` : `Tell us what you drive and what you want done. We reply with a real price for your vehicle, and how the drop-off, mobile visit or valet pickup would work from ${town.name}.`} />
 </Base>
 
 <style>

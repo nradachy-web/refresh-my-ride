@@ -33,6 +33,7 @@ const titleHtml = title
     }
     <h1 class="ph__h">
       {eyebrow && <span class="eyebrow">{eyebrow}</span>}
+      {eyebrow && <span class="sr">: </span>}
       <span class="h1 h1--page" set:html={titleHtml} />
     </h1>
     {lede && <p class="lede ph__lede" set:html={rich(lede)} />}
@@ -56,7 +57,7 @@ const titleHtml = title
   }
 
   .ph__crumbs li + li::before {
-    content: '/';
+    content: '/' / '';
     margin-right: 0.5rem;
     opacity: 0.5;
   }

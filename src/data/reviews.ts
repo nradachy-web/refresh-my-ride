@@ -1,7 +1,8 @@
 /* Google reviews, as Refresh My Ride quotes them on its own site or as the
    Google Business Profile returned them on 2026-10-13. Text is the customer's
-   own, typos included. Two edits only: a long review may be cut at a sentence
-   end (marked excerpt), and one dash was swapped for a comma.
+   own, typos included. A long review may be shortened at a sentence end, at
+   either side, and is marked so the page shows an ellipsis there. One dash was
+   swapped for a comma (Sydney K.). No words are changed.
 
    Names are first name and last initial, the way their site shows them.
    `job` and `town` are the labels their site put on the review. */
@@ -12,7 +13,10 @@ export interface Review {
   id: string;
   name: string;
   text: string;
+  /** The review runs on past this text. */
   excerpt?: boolean;
+  /** The review starts before this text. */
+  excerptStart?: boolean;
   job?: string;
   town?: string;
   services: Service['id'][];
@@ -73,7 +77,7 @@ export const REVIEWS: Review[] = [
     name: 'Karen U.',
     text: 'I had the exterior of my car detailed yesterday and I needed special attention done to the wax left behind from having the car undercoated 2 years ago. Let me tell you, Josh and Matt did not disappoint! I was elated when they showed me my car upon completion!',
     excerpt: true,
-    services: ['car-detailing', 'paint-correction'],
+    services: ['car-detailing'],
   },
   {
     id: 'caitlin-d',
@@ -101,7 +105,7 @@ export const REVIEWS: Review[] = [
     id: 'alexis-p',
     name: 'Alexis P.',
     text: 'This is my second time returning to them for a detail of my very toddler + dog friendly suv - it came back looking brand new both times. Very happy & will continue to use their services!! They even came and picked my car up/dropped it back off to my house. Top notch service! Very happy with service',
-    job: 'Full detail, Chevrolet Equinox',
+    job: 'Full Refresh, Equinox',
     town: 'Macomb Township',
     services: ['car-detailing', 'mobile-detailing'],
   },
@@ -118,6 +122,7 @@ export const REVIEWS: Review[] = [
     name: 'April G.',
     text: 'Ashton was great! He was able to remove the smell in my car he was very detailed with cleaning too and the carpet was great even if i have a lighter carpet he was able to make them very clean! Please please book them! They do great with their business!!',
     excerpt: true,
+    excerptStart: true,
     job: 'Executive Interior Detail',
     town: 'Sterling Heights',
     services: ['car-detailing'],
