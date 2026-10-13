@@ -141,7 +141,7 @@ const TEAM = [
 
   <section class="band white" aria-labelledby="story-h">
     <div class="wrap story">
-      <Head id="story-h" layout="left" eyebrow="Our story" title={`From headlight restorations to a ${BRAND.city} auto detailing shop.`} />
+      <Head id="story-h" layout="left" eyebrow="Our story" title="How we got here." />
       <ol class="tl">
         {
           STORY.map((s) => (
@@ -171,8 +171,7 @@ const TEAM = [
         {
           TEAM.map((p) => (
             <li class="card pad person">
-              <span class="person__mark" aria-hidden="true">{p.name[0]}</span>
-              <h3 class="h3">{p.name}</h3>
+              <h3 class="h3 person__name">{p.name}</h3>
               <p class="person__role small">{p.role}</p>
               <p class="small muted">{p.body}</p>
               <p class="person__tag fine">{p.tag}</p>
@@ -215,7 +214,7 @@ const TEAM = [
         <p><a class="arrow" href={href('/service-areas/')}>See every town we serve</a></p>
       </div>
       <figure>
-        <div class="frame shop__frame">
+        <div class="frame tall">
           <Photo id="shop-grand-opening" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
         </div>
         <figcaption class="cap">The shop front on Louise Ave.</figcaption>
@@ -310,7 +309,7 @@ const TEAM = [
     }
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .story {
       grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
       gap: clamp(2rem, 6vw, 6rem);
@@ -325,24 +324,15 @@ const TEAM = [
 
   /* the team */
   .person {
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 0.5rem;
+    border-top: 2px solid var(--violet);
+    border-radius: 0 0 var(--r) var(--r);
   }
 
-  .person__mark {
-    display: grid;
-    place-items: center;
-    width: 3.25rem;
-    height: 3.25rem;
-    margin-bottom: 0.5rem;
-    border-radius: 50%;
-    background: var(--violet-btn);
-    color: #fff;
-    font-family: var(--font-display);
-    font-size: 1.35rem;
-    font-weight: 760;
-    font-stretch: 114%;
+  .person__name {
+    font-size: clamp(1.5rem, 1vw + 1.2rem, 1.9rem);
   }
 
   .person__role {
@@ -351,7 +341,7 @@ const TEAM = [
   }
 
   .person__tag {
-    margin-top: 0.4rem;
+    margin-top: auto;
     padding-top: 0.75rem;
     border-top: 1px solid var(--line-ink);
     font-weight: 620;
@@ -393,8 +383,4 @@ const TEAM = [
     }
   }
 
-  .shop__frame {
-    aspect-ratio: 4 / 5;
-    max-height: 38rem;
-  }
 </style>

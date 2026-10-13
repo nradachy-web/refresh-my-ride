@@ -1,6 +1,11 @@
 ---
 /* The closing band on every selling page: the form beside the phone, with the
-   address and hours where a visitor checks them last. */
+   address and hours where a visitor checks them last.
+
+   Three pieces: the words, the form, and the other ways to reach the shop. On a
+   wide screen the form sits to the right of both. On a phone the form comes
+   straight after the words, because that is what the button the visitor just
+   tapped promised; the phone number and the rest follow it. */
 import Icon from './Icon.astro';
 import QuoteForm from './QuoteForm.astro';
 import { BRAND, FINANCING, HOURS, LINKS } from '../data/site';
@@ -19,14 +24,20 @@ const {
 ---
 
 <section class="band ink quote" aria-labelledby="quote-h">
-  <div class="wrap two wide-left quote__grid">
-    <div class="stack" style="--gap:1.5rem">
+  <div class="wrap quote__grid">
+    <div class="quote__head stack" style="--gap:1.25rem">
       <p class="eyebrow">{eyebrow}</p>
       <h2 class="h2" id="quote-h">{title}</h2>
       <p class="lede" set:html={rich(lede)} />
+    </div>
 
+    <div class="quote__form">
+      <QuoteForm />
+    </div>
+
+    <div class="quote__rest stack" style="--gap:1.5rem">
       <a class="quote__phone" href={BRAND.phoneHref} data-loc="quote-band">
-        <span class="fine muted">Rather talk now? Call or text</span>
+        <span class="fine muted">To talk now, call or text</span>
         <span class="quote__num">{BRAND.phone}</span>
       </a>
 
@@ -50,14 +61,46 @@ const {
         </li>
       </ul>
     </div>
-
-    <QuoteForm />
   </div>
 </section>
 
 <style>
   .quote__grid {
-    align-items: start;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      'head'
+      'form'
+      'rest';
+  }
+
+  .quote__grid > * {
+    min-width: 0;
+  }
+
+  .quote__head {
+    grid-area: head;
+  }
+
+  .quote__form {
+    grid-area: form;
+  }
+
+  .quote__rest {
+    grid-area: rest;
+  }
+
+  @media (min-width: 60rem) {
+    .quote__grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        'head form'
+        'rest form';
+      column-gap: clamp(2rem, 5vw, 4.5rem);
+      row-gap: 1.75rem;
+      align-items: start;
+    }
   }
 
   .quote__phone {

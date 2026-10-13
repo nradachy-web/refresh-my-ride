@@ -49,13 +49,22 @@ const FAQ = [
 
 <Base title={TITLE} description={DESCRIPTION} path="/get-a-quote/" schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Get a quote', path: '/get-a-quote/' }])]}>
   <section class="band ink top" aria-labelledby="q-h">
-    <div class="wrap two wide-left top__grid">
-      <div class="stack" style="--gap:1.4rem">
+    <div class="wrap top__grid">
+      <div class="top__head stack" style="--gap:1.25rem">
         <h1 class="top__h">
           <span class="eyebrow">Free quote</span>
+          <span class="sr">: </span>
           <span class="h1 h1--page" id="q-h">Get your quote <span class="accent">in minutes.</span></span>
         </h1>
         <p class="lede">Tell us about your vehicle and what you want done. We put together an exact price for your car, with no guessing from a menu.</p>
+      </div>
+
+      <div class="top__form">
+        <QuoteForm as="h2" />
+        <p class="fine muted top__note">We never sell your info. Shop visits by appointment, {HOURS.summary}.</p>
+      </div>
+
+      <div class="top__more stack" style="--gap:1.4rem">
         <ul class="checks">
           <li><span>Ceramic coating, paint correction, detailing and window tint</span></li>
           <li><span>Serving Macomb and Oakland counties</span></li>
@@ -79,10 +88,6 @@ const FAQ = [
             ))
           }
         </ol>
-      </div>
-      <div>
-        <QuoteForm as="h2" />
-        <p class="fine muted top__note">We never sell your info. Shop visits by appointment, {HOURS.summary}.</p>
       </div>
     </div>
   </section>
@@ -127,8 +132,44 @@ const FAQ = [
     padding-block: clamp(2.5rem, 6vw, 5rem);
   }
 
+  /* words, then the form, then everything else: on a phone the form is the
+     second thing on the page; on a wide screen it sits beside both */
   .top__grid {
-    align-items: start;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      'head'
+      'form'
+      'more';
+  }
+
+  .top__grid > * {
+    min-width: 0;
+  }
+
+  .top__head {
+    grid-area: head;
+  }
+
+  .top__form {
+    grid-area: form;
+  }
+
+  .top__more {
+    grid-area: more;
+  }
+
+  @media (min-width: 60rem) {
+    .top__grid {
+      grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+      grid-template-rows: auto 1fr;
+      grid-template-areas:
+        'head form'
+        'more form';
+      column-gap: clamp(2rem, 5vw, 4.5rem);
+      row-gap: 1.5rem;
+      align-items: start;
+    }
   }
 
   .top__h {
@@ -200,7 +241,7 @@ const FAQ = [
     margin-top: clamp(2rem, 4vw, 3rem);
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);

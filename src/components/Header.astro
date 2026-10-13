@@ -72,21 +72,27 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
     </button>
   </div>
   <nav class="menu__nav" aria-label="Menu">
-    <p class="eyebrow">Services</p>
-    <ul>
-      {SERVICES.map((s) => <li><a href={href(s.path)}>{s.name}</a></li>)}
-    </ul>
-    <p class="eyebrow">Service areas</p>
-    <ul class="menu__areas">
-      {CITIES.map((c) => <li><a href={href(hubPath(c))}>{c.name}</a></li>)}
-    </ul>
-    <p class="eyebrow">The shop</p>
-    <ul>
-      <li><a href={href('/about-us/')}>About</a></li>
-      <li><a href={href('/reviews/')}>Reviews and work</a></li>
-      <li><a href={href('/gift-cards/')}>Gift cards</a></li>
-      <li><a href={href('/contact-us/')}>Contact</a></li>
-    </ul>
+    <div>
+      <p class="eyebrow">Services</p>
+      <ul>
+        {SERVICES.map((s) => <li><a href={href(s.path)}>{s.name}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">Service areas</p>
+      <ul class="menu__areas">
+        {CITIES.map((c) => <li><a href={href(hubPath(c))}>{c.name}</a></li>)}
+      </ul>
+    </div>
+    <div>
+      <p class="eyebrow">The shop</p>
+      <ul>
+        <li><a href={href('/about-us/')}>About</a></li>
+        <li><a href={href('/reviews/')}>Reviews and work</a></li>
+        <li><a href={href('/gift-cards/')}>Gift cards</a></li>
+        <li><a href={href('/contact-us/')}>Contact</a></li>
+      </ul>
+    </div>
   </nav>
   <div class="menu__actions">
     <a class="btn primary" href={href('/get-a-quote/')} data-cta="menu-quote">Get a free quote</a>
@@ -314,12 +320,16 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
   }
 
   .menu__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: var(--header);
     margin-bottom: 1rem;
     border-bottom: 1px solid var(--line-ink);
+    background: var(--ink);
   }
 
   .menu__top img {
@@ -347,8 +357,12 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
     column-gap: 1rem;
   }
 
+  .menu__areas {
+    column-gap: 0.5rem;
+  }
+
   .menu__areas a {
-    font-size: 1.0625rem;
+    font-size: 1rem;
     font-weight: 600;
     padding: 0.5rem 0;
   }
@@ -357,5 +371,22 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
     display: grid;
     gap: 0.6rem;
     margin-top: 2rem;
+  }
+
+  /* a tablet or small laptop: three columns, actions in a row */
+  @media (min-width: 48rem) {
+    .menu__nav {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .menu__areas {
+      grid-template-columns: 1fr;
+    }
+
+    .menu__actions {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
   }
 </style>

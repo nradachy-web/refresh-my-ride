@@ -73,8 +73,8 @@ const cols = services.length === 4 ? 'c4' : 'c3';
   }
 
   .svc__body {
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 0.55rem;
     padding: 1.25rem 1.25rem 1.4rem;
   }
@@ -89,7 +89,8 @@ const cols = services.length === 4 ? 'c4' : 'c3';
   }
 
   .svc__body .arrow {
-    margin-top: 0.35rem;
+    margin-top: auto;
+    padding-top: 0.35rem;
   }
 
   /* on a phone the cards lie on their side so four fit without a long scroll */

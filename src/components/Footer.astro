@@ -149,7 +149,7 @@ const social = [
   .ftr__list a,
   .ftr__social a {
     display: inline-block;
-    padding-block: 0.4rem;
+    padding-block: 0.6rem;
     font-size: 0.9375rem;
   }
 
@@ -201,12 +201,12 @@ const social = [
 
   .ftr__base a {
     display: inline-block;
-    padding-block: 0.35rem;
+    padding-block: 0.6rem;
   }
 
-  /* room for the sticky call bar on phones */
+  /* room for the sticky call bar on phones, on pages that have one */
   @media (max-width: 47.99rem) {
-    .ftr__base {
+    :global(body:has(.bar)) .ftr__base {
       padding-bottom: 6rem;
     }
   }

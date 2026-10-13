@@ -1,21 +1,48 @@
 ---
 /* Phones only: the two actions stay within thumb reach on every screen of the
-   page, including the first, where the hero's own buttons sit below the fold. */
+   page. While the quote form itself is on screen the bar slides away, so its
+   violet button is never sitting under the form's own submit button. A page
+   can swap the second action (the gift card page sells gift cards). */
 import Icon from './Icon.astro';
 import { BRAND } from '../data/site';
-import { href } from '../lib/paths';
+import { href, isExternal } from '../lib/paths';
 
 interface Props {
   quoteHref: string;
+  action?: { label: string; href: string; cta: string };
 }
-const { quoteHref } = Astro.props;
+const { quoteHref, action } = Astro.props;
 const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
+const main = action ?? { label: 'Get a free quote', href: quote, cta: 'sticky-quote' };
+const out = isExternal(main.href);
 ---
 
-<div class="bar ink">
+<div class="bar ink" id="bar">
   <a class="btn ghost" href={BRAND.phoneHref} data-loc="sticky"><Icon name="phone" />Call</a>
-  <a class="btn primary" href={quote} data-cta="sticky-quote">Get a free quote</a>
+  <a class="btn primary" href={main.href} target={out ? '_blank' : undefined} rel={out ? 'noopener' : undefined} data-cta={main.cta}>{main.label}</a>
 </div>
+
+<script is:inline>
+  (function () {
+    var bar = document.getElementById('bar');
+    var forms = document.querySelectorAll('[data-ghl]');
+    if (!bar || !forms.length || !('IntersectionObserver' in window)) return;
+    var showing = 0;
+    var io = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (e) {
+          showing += e.isIntersecting ? 1 : e.target.__seen ? -1 : 0;
+          e.target.__seen = e.isIntersecting;
+        });
+        bar.classList.toggle('is-away', showing > 0);
+      },
+      { rootMargin: '-25% 0px -25% 0px' }
+    );
+    forms.forEach(function (f) {
+      io.observe(f);
+    });
+  })();
+</script>
 
 <style>
   .bar {
@@ -27,6 +54,14 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
     gap: 0.6rem;
     padding: 0.6rem var(--gutter) calc(0.6rem + env(safe-area-inset-bottom));
     border-top: 1px solid var(--line-ink);
+    transition:
+      translate 0.25s var(--ease),
+      visibility 0.25s;
+  }
+
+  .bar.is-away {
+    translate: 0 110%;
+    visibility: hidden;
   }
 
   .bar .btn {

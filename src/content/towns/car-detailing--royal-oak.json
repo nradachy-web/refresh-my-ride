@@ -9,7 +9,12 @@
     "kicker": "Car detailing in Royal Oak, MI",
     "title": "The park comes home **in your car.**",
     "lede": "Interior, exterior and full details for Royal Oak drivers, at your home, your workplace or our shop. We bring our own power and water. For a coupe or sedan in average condition, interior details start from $184.99 and the Wash & Seal from $139.99.",
-    "chips": ["Mobile, shop or valet", "Interior from $184.99", "Wash & Seal from $139.99", "We bring power and water"],
+    "chips": [
+      "Mobile, shop or valet",
+      "Interior from $184.99",
+      "Wash & Seal from $139.99",
+      "We bring power and water"
+    ],
     "photo": "interior-shelby"
   },
   "local": {
@@ -42,13 +47,25 @@
       "**Shop drop-off.** The shop is about 14 miles from central Royal Oak, roughly 25 minutes without traffic: I-696 east from I-75, north on Groesbeck Highway (M-97), then east on 14 Mile Road. We are appointment only."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." },
-      { "label": "Shop distance", "value": "About 14 miles from central Royal Oak" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" }
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      },
+      {
+        "label": "Shop distance",
+        "value": "About 14 miles from central Royal Oak"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      }
     ]
   },
-  "photo": "mobile-van",
+  "photo": "mobile-bmw-driveway",
   "faq": [
     {
       "q": "Can you detail my car at my house in Royal Oak?",
@@ -67,5 +84,9 @@
       "a": "Salt residue and stains are treated with hot water extraction and steam. Some stains are permanent, such as dye transfer and old bleach marks. If yours is one of those, we tell you at the walkaround before we start, not after you have paid."
     }
   ],
-  "reviews": ["alexis-p", "sydney-k", "caitlin-d"]
+  "reviews": [
+    "alexis-p",
+    "sydney-k",
+    "caitlin-d"
+  ]
 }

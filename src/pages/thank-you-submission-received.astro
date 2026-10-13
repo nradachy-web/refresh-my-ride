@@ -10,7 +10,11 @@ import LazyFrame from '../components/LazyFrame.astro';
 import { BRAND } from '../data/site';
 import { href } from '../lib/paths';
 
-const CAL = 'https://calendly.com/refreshmyrideauto/15min?background_color=000000&text_color=ffffff&primary_color=9b30ff';
+// Their consultation calendar. In embed mode Calendly drops its cookie panel and
+// opens on the month grid. Their plan does not apply colour settings, so the
+// calendar is white: the band around it is a light one. LazyFrame adds the
+// embed_domain Calendly needs, from the host the page is served on.
+const CAL = 'https://calendly.com/refreshmyrideauto/15min?embed_type=Inline&hide_event_type_details=1&primary_color=8a2ef0';
 
 const COVERS = [
   { title: 'Your vehicle', body: 'Year, make, size and the condition it is in right now. That is what drives the price.' },
@@ -30,7 +34,7 @@ const COVERS = [
 >
   <PageHead eyebrow="Request received" title="Got it. **Now pick your time.**" lede="Your request is in front of us. The fastest way to get a price is a quick call. Grab a slot below and we will be ready for you." />
 
-  <section class="band ink cal" aria-labelledby="cal-h">
+  <section class="band white cal" aria-labelledby="cal-h">
     <div class="wrap">
       <div class="cal__head">
         <h2 class="h3" id="cal-h">Book your consultation</h2>
@@ -71,7 +75,7 @@ const COVERS = [
 
 <style>
   .cal {
-    padding-top: 0;
+    padding-block: clamp(2.5rem, 5vw, 4rem);
   }
 
   .cal__head {
@@ -84,10 +88,10 @@ const COVERS = [
   }
 
   .cal__frame {
-    border: 1px solid var(--line-ink);
+    border: 1px solid var(--line);
     border-radius: var(--r);
     overflow: hidden;
-    background: #000;
+    background: #fff;
   }
 
   .cov {

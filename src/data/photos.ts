@@ -45,8 +45,8 @@ export const PHOTOS = {
   cybertruck: { alt: 'Black Tesla Cybertruck parked outside', caption: 'Tesla Cybertruck' },
   'porsche-wheel': { alt: 'Clean Porsche wheel and tire', caption: 'Wheels and tires' },
   // mobile and valet
-  'mobile-van': { alt: 'The white Refresh My Ride mobile detailing van parked at a customer’s home', caption: 'The mobile van' },
-  'mobile-bmw-driveway': { alt: 'BMW X6 being detailed in a customer’s driveway', caption: 'A mobile detail at a customer’s home' },
+  'mobile-van': { alt: 'The white Refresh My Ride mobile detailing van at a customer’s home, beside a sign reading Auto detailing in progress', caption: 'The mobile van' },
+  'mobile-bmw-driveway': { alt: 'BMW being detailed in a customer’s driveway, doors open', caption: 'A mobile detail at a customer’s home' },
   'accord-trunk-kit': { alt: 'The trunk of a Honda Accord packed with detailing equipment', caption: 'Where it started: a full kit in one trunk' },
   // interiors
   'interior-alfa-red': { alt: 'Detailed Alfa Romeo interior with red leather seats', caption: 'Alfa Romeo interior' },

@@ -18,6 +18,7 @@ import { BRAND, FINANCING, HOURS, LINKS } from '../data/site';
 import { service } from '../data/services';
 import { href } from '../lib/paths';
 import { rich } from '../lib/rich';
+import { heroImage } from '../lib/hero';
 import { breadcrumbs } from '../lib/schema';
 
 const TITLE = `Contact ${BRAND.name} | ${BRAND.city}, MI`;
@@ -40,10 +41,12 @@ const START = [
     body: `Best if you already know what you want: a [detail package](${service('car-detailing').path}) or [window tint](${service('window-tint').path}). Pick your service and time slot yourself, any hour of the day.`,
   },
 ];
+const head = await heroImage('shop-interior', { sizes: '(min-width: 60rem) 48vw, 1px' });
 ---
 
-<Base title={TITLE} description={DESCRIPTION} path="/contact-us/" schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }])]}>
+<Base title={TITLE} description={DESCRIPTION} path="/contact-us/" preload={{ ...head.preload, media: '(min-width: 60rem)' }} schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }])]}>
   <PageHead
+    image={head}
     eyebrow="Contact us"
     title="Call, text, book or **send us the details.**"
     lede={`We are an auto detailing and ceramic coating shop in ${BRAND.city}, MI, serving Macomb and Oakland counties at our shop or wherever your vehicle is parked.`}
@@ -116,7 +119,7 @@ const START = [
         </div>
       </div>
       <figure>
-        <div class="frame visit__frame">
+        <div class="frame tall">
           <Photo id="shop-grand-opening" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
         </div>
         <figcaption class="cap">The shop front on Louise Ave.</figcaption>
@@ -239,17 +242,12 @@ const START = [
     }
   }
 
-  .visit__frame {
-    aspect-ratio: 4 / 5;
-    max-height: 38rem;
-  }
-
   .area {
     display: grid;
     gap: 1.25rem;
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .area {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);

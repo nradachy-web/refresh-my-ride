@@ -96,8 +96,8 @@ const schema = [
 
   <section class="band white" aria-labelledby="what-h">
     <div class="wrap two flip">
-      <figure>
-        <div class="frame what__frame">
+      <figure class="stick">
+        <div class="frame tall">
           <Photo id={c.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
         </div>
         <figcaption class="cap">{photo(c.photo as PhotoId).caption}</figcaption>
@@ -189,11 +189,6 @@ const schema = [
     gap: 0.55rem;
     border-top: 2px solid var(--violet-btn);
     border-radius: 0 0 var(--r) var(--r);
-  }
-
-  .what__frame {
-    aspect-ratio: 4 / 5;
-    max-height: 38rem;
   }
 
   .sum {
@@ -293,7 +288,7 @@ const schema = [
     align-content: start;
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);

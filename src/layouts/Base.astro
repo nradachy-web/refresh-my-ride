@@ -20,7 +20,7 @@ interface Props {
   /** Extra JSON-LD nodes for this page. */
   schema?: object[];
   /** The hero image, so the browser can start on it before it parses the body. */
-  preload?: { srcset: string; sizes: string; type: string };
+  preload?: { srcset: string; sizes: string; type: string; media?: string };
   /** Where the header and sticky bar "quote" actions go. Pages with a quote band use #quote. */
   quoteHref?: string;
   noindex?: boolean;
@@ -28,9 +28,11 @@ interface Props {
   bare?: boolean;
   /** This page is where a submitted quote form lands: count it as a lead. */
   lead?: boolean;
+  /** Replace the sticky bar's second button on phones (the gift card page sells gift cards). */
+  barAction?: { label: string; href: string; cta: string };
 }
 
-const { title, description, path, schema = [], preload, quoteHref = '#quote', noindex = false, bare = false, lead = false } = Astro.props;
+const { title, description, path, schema = [], preload, quoteHref = '#quote', noindex = false, bare = false, lead = false, barAction } = Astro.props;
 
 // A preview build (any base path) must never be indexed.
 const isPreview = import.meta.env.BASE_URL !== '/';
@@ -56,7 +58,7 @@ const fontCss = `
     <meta name="format-detection" content="telephone=no" />
 
     <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
-    {preload && <link rel="preload" as="image" imagesrcset={preload.srcset} imagesizes={preload.sizes} type={preload.type} fetchpriority="high" />}
+    {preload && <link rel="preload" as="image" imagesrcset={preload.srcset} imagesizes={preload.sizes} type={preload.type} media={preload.media} fetchpriority="high" />}
     <style set:html={fontCss}></style>
     <noscript>
       <style is:inline>
@@ -90,7 +92,7 @@ const fontCss = `
       <slot />
     </main>
     <Footer />
-    {!bare && <StickyBar quoteHref={quoteHref} />}
+    {!bare && <StickyBar quoteHref={quoteHref} action={barAction} />}
     <Tracking />
   </body>
 </html>

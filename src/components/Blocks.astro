@@ -16,7 +16,7 @@ import { photo } from '../data/photos';
 import { review } from '../data/reviews';
 import type { Service } from '../data/services';
 import { href } from '../lib/paths';
-import { rich } from '../lib/rich';
+import { heading, rich } from '../lib/rich';
 
 interface Props {
   blocks: Block[];
@@ -33,7 +33,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
   blocks.map((b, i) => {
     const hid = `b${i}-h`;
     return (
-      <section class:list={planeClass(b.plane)} aria-labelledby={hid}>
+      <section class:list={[...planeClass(b.plane), b.type === 'areas' && 'tight']} aria-labelledby={hid}>
         <div class="wrap">
           {b.type === 'intro' && (
             <div class:list={['two', b.flip && 'flip', !b.photo && 'solo']}>
@@ -53,7 +53,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               </div>
               {b.photo && (
                 <figure>
-                  <div class="frame intro__frame">
+                  <div class="frame tall">
                     <Photo id={b.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
                   </div>
                   <figcaption class="cap">{photo(b.photo as PhotoId).caption}</figcaption>
@@ -139,7 +139,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
                         <li>
                           <div class="pg__line">
                             <span class="pg__name">
-                              {r.name}
+                              <span set:html={heading(r.name)} />
                               {r.tag && <span class="pg__tag fine">{r.tag}</span>}
                             </span>
                             <span class="pg__price">{r.price}</span>
@@ -166,8 +166,8 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <ul class:list={['grid', b.columns.length === 2 ? 'c2' : b.columns.length === 4 ? 'c4' : 'c3']}>
                 {b.columns.map((col, c) => (
                   <li class:list={['card', 'pad', 'cmp', b.highlight === c && 'cmp--on']}>
+                    {b.highlight === c && <p class="tier__flag fine">What we do</p>}
                     <h3 class="h3">{col}</h3>
-                    {b.highlight === c && <p class="tile__tag fine">What we do</p>}
                     <dl>
                       {b.rows.map((r) => (
                         <div>
@@ -191,9 +191,9 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
           )}
 
           {b.type === 'beforeAfter' && (
-            <div class="two">
+            <div class={b.pairs.length === 1 ? 'two' : 'bawide'}>
               <div class="stack" style="--gap:1.4rem">
-                <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+                <Head id={hid} layout={b.pairs.length === 1 ? 'left' : 'split'} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
                 {b.checks.length > 0 && (
                   <ul class="checks">
                     {b.checks.map((c) => <li><span set:html={rich(c)} /></li>)}
@@ -201,7 +201,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
                 )}
               </div>
               <div class:list={['bas', `bas--${b.pairs.length}`]}>
-                {b.pairs.map((p) => <BeforeAfter pair={p as PairId} sizes={b.pairs.length > 1 ? '(min-width: 60rem) 22vw, 46vw' : '(min-width: 60rem) 40vw, 92vw'} />)}
+                {b.pairs.map((p) => <BeforeAfter pair={p as PairId} sizes={b.pairs.length > 1 ? '(min-width: 60rem) 30vw, (min-width: 30rem) 46vw, 92vw' : '(min-width: 60rem) 40vw, 92vw'} />)}
               </div>
             </div>
           )}
@@ -247,7 +247,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
 
           {b.type === 'areas' && (
             <div class="areas">
-              <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Head id={hid} layout="left" small eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <AreaChips service={service} />
             </div>
           )}
@@ -272,11 +272,6 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
 
   .solo {
     grid-template-columns: minmax(0, 48rem);
-  }
-
-  .intro__frame {
-    aspect-ratio: 4 / 5;
-    max-height: 38rem;
   }
 
   /* cards */
@@ -417,6 +412,10 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
   }
 
   .pg__name {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.3rem 0.5rem;
     font-family: var(--font-display);
     font-weight: 660;
     font-stretch: 106%;
@@ -424,7 +423,6 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
 
   .pg__tag {
     display: inline-block;
-    margin-left: 0.5rem;
     padding: 0.05rem 0.45rem;
     border-radius: var(--r-sm);
     background: #f0e7fe;
@@ -451,6 +449,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
 
   /* compare */
   .cmp {
+    position: relative;
     display: grid;
     align-content: start;
     gap: 0.75rem;
@@ -477,16 +476,27 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
     color: var(--on-ink-muted);
   }
 
-  /* before and after */
+  /* before and after: big enough to see the paint. One per row on a phone. */
+  .bawide {
+    display: grid;
+    gap: clamp(1.75rem, 3vw, 2.5rem);
+  }
+
+  .bawide :global(.head) {
+    margin-bottom: 0;
+  }
+
   .bas {
     display: grid;
-    gap: 1rem;
+    gap: 1.25rem 1rem;
     align-items: start;
   }
 
-  .bas--2,
-  .bas--3 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  @media (min-width: 30rem) {
+    .bas--2,
+    .bas--3 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   .bas--1 {
@@ -533,7 +543,15 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
     gap: 1.25rem;
   }
 
-  @media (min-width: 60rem) {
+  .areas :global(.head) {
+    margin-bottom: 0;
+  }
+
+  .areas :global(.lede) {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 72rem) {
     .areas,
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);

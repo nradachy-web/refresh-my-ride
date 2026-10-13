@@ -32,7 +32,10 @@ const { src, title, height, fallback } = Astro.props;
       });
       boxes.forEach(function (b) {
         var f = document.createElement('iframe');
-        f.src = b.getAttribute('data-src');
+        var src = b.getAttribute('data-src');
+        // Calendly's embed mode needs to know which site it is embedded on.
+        if (src.indexOf('calendly.com') > -1) src += '&embed_domain=' + encodeURIComponent(location.hostname);
+        f.src = src;
         f.title = b.getAttribute('data-title');
         f.addEventListener('load', function () {
           b.classList.add('is-ready');
@@ -49,7 +52,8 @@ const { src, title, height, fallback } = Astro.props;
 <style>
   .lf {
     position: relative;
-    background: #000;
+    background: #fff;
+    color: var(--muted);
   }
 
   .lf :global(iframe) {
@@ -66,7 +70,6 @@ const { src, title, height, fallback } = Astro.props;
     inset: 0;
     display: grid;
     place-items: center;
-    color: var(--on-ink-muted);
   }
 
   .lf.is-ready .lf__wait {

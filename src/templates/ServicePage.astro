@@ -29,6 +29,10 @@ const { entry } = Astro.props;
 const c = entry.data;
 const svc = getService(c.service as any);
 const hero = await heroImage(c.hero.photo as PhotoId);
+const lastPlane = c.blocks[c.blocks.length - 1].plane;
+// TEMPORARY perf experiment (see src/pages/perf-test)
+const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
+const pvPreload = pv === 'a' ? { srcset: hero.webp, sizes: hero.sizes, type: 'image/webp' } : pv === 'b' || pv === 'c' ? undefined : hero.preload;
 
 // Mobile detailing does not list West Bloomfield: it is past the published mobile range.
 const areas = svc.id === 'mobile-detailing' ? CITIES.filter((t) => t.id !== 'west-bloomfield').map((t) => `${t.name}, MI`) : undefined;
@@ -42,18 +46,18 @@ const schema = [
 ];
 ---
 
-<Base title={c.meta.title} description={c.meta.description} path={svc.path} preload={hero.preload} schema={schema}>
+<Base title={c.meta.title} description={c.meta.description} path={svc.path} preload={pvPreload} schema={schema}>
   <Hero image={hero} kicker={c.hero.kicker} title={c.hero.title} lede={c.hero.lede} chips={c.hero.chips} crumbs={[{ name: svc.name, path: svc.path }]} />
 
   <Blocks blocks={c.blocks} service={svc} />
 
-  <section class="band" aria-labelledby="faq-h">
+  <section class:list={['band', lastPlane === 'paper' && 'white']} aria-labelledby="faq-h">
     <div class="wrap faqs">
       <Head
         id="faq-h"
         layout="left"
         eyebrow="Questions"
-        title={`${svc.name} questions, answered straight.`}
+        title={`${svc.name} questions.`}
         intro={c.faqIntro ?? `The things people ask us most before booking. If yours is not here, call or text [${BRAND.phone}](${BRAND.phoneHref}).`}
       />
       <Faq items={c.faq} />
@@ -69,7 +73,7 @@ const schema = [
     gap: 1rem;
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);

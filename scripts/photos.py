@@ -40,16 +40,17 @@ PHOTOS = {
     "cadillac-sedan-black": ("2026_08_IMG_7617-scaled.jpg", (0, 0.3, 1, 0.77)),
     "chevy-suv-black": ("2026_08_IMG_7644-scaled.jpg", (0, 0.335, 1, 0.76)),
     "bmw-sedan-white": ("2026_08_IMG_7762-scaled.jpg", (0, 0.18, 1, 0.74)),
-    "bmw-7-series": ("2026_08_IMG_8050-scaled.jpg", (0, 0.36, 1, 0.81)),
+    "bmw-7-series": ("2026_08_IMG_8050-scaled.jpg", (0, 0.3, 1, 0.7)),
     "ram-truck-white": ("2026_08_IMG_8142-scaled.jpg", (0, 0.32, 1, 0.88)),
     "escalade-black": ("2026_08_IMG_8252-scaled.jpg", (0, 0.405, 1, 0.765)),
     "jeep-grand-cherokee": ("2026_08_IMG_8295-scaled.jpg", (0, 0.34, 1, 0.8)),
     "ford-super-duty-white": ("2026_08_IMG_6823-scaled.jpg", (0.09, 0.1, 1, 0.92)),
     "cybertruck": ("2026_08_IMG_4709-scaled.jpg", (0, 0.3, 1, 0.86)),
     "porsche-wheel": ("2026_08_IMG_4562-scaled.jpg", (0, 0.1, 1, 0.9)),
-    # mobile and valet (crops keep an old phone number on the yard sign out of frame)
-    "mobile-van": ("2026_09_IMG_1045-scaled.jpg", (0, 0.2, 0.74, 0.62)),
-    "mobile-bmw-driveway": ("2026_08_bmw-x6-mobile-detailing.jpg", (0, 0.12, 0.62, 0.9)),
+    # mobile and valet. The yard sign carries an old phone number: the van crop keeps
+    # only the sign's heading ("Auto detailing in progress"), the BMW crop loses the sign.
+    "mobile-van": ("2026_09_IMG_1045-scaled.jpg", (0.02, 0.22, 0.98, 0.562)),
+    "mobile-bmw-driveway": ("2026_08_bmw-x6-mobile-detailing.jpg", (0, 0.22, 0.555, 0.86)),
     "accord-trunk-kit": ("2026_09_IMG_7071-scaled.jpg", None),
     # interiors
     "interior-alfa-red": ("2026_08_IMG_3880-scaled.jpg", (0, 0, 1, 0.86)),

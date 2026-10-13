@@ -14,7 +14,7 @@ import Icon from './Icon.astro';
 import Stars from './Stars.astro';
 import { BRAND, LINKS, RATING } from '../data/site';
 import { href } from '../lib/paths';
-import { rich } from '../lib/rich';
+import { heading, rich } from '../lib/rich';
 import type { HeroImage } from '../lib/hero';
 
 interface Crumb {
@@ -38,23 +38,20 @@ interface Props {
 
 const { image, kicker, title, lede, chips = [], primary = { label: 'Get my free quote', href: '#quote' }, size = 'page', crumbs = [] } = Astro.props;
 
-const titleHtml = title
-  .replace(/&/g, '&amp;')
-  .replace(/</g, '&lt;')
-  .replace(/\*\*([^*]+)\*\*/g, '<span class="hero__accent">$1</span>');
+const titleHtml = heading(title, 'hero__accent');
 const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.href);
 // TEMPORARY perf experiment (see src/pages/perf-test)
 const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
-const decodeMode = pv === 'a' || pv === 'c' ? 'async' : 'sync';
-const still = pv === 'b' || pv === 'c';
+const decodeMode = 'sync';
+const still = false;
 ---
 
-<section class:list={['hero', 'ink', `hero--${size}`, still && 'hero--still']}>
-  <div class="hero__media">
+<section class:list={['hero', 'ink', `hero--${size}`, image.width < 1000 && 'hero--narrow', still && 'hero--still']}>
+  <div class="hero__media" style={pv === 'c' ? 'visibility:hidden' : undefined}>
     <picture>
-      <source type="image/avif" srcset={image.avif} sizes={image.sizes} />
-      <source type="image/webp" srcset={image.webp} sizes={image.sizes} />
-      <img src={image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding={decodeMode} fetchpriority="high" />
+      {!pv || pv === 'd' ? <source type="image/avif" srcset={image.avif} sizes={image.sizes} /> : null}
+      {!pv || pv === 'd' || pv === 'a' ? <source type="image/webp" srcset={image.webp} sizes={image.sizes} /> : null}
+      <img src={pv === 'c' ? 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' : image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding={decodeMode} fetchpriority="high" />
     </picture>
   </div>
 
@@ -148,7 +145,8 @@ const still = pv === 'b' || pv === 'c';
   .hero__crumbs ol {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.25rem 0.5rem;
+    align-items: center;
+    gap: 0 0.5rem;
     color: var(--on-ink-muted);
   }
 
@@ -159,6 +157,8 @@ const still = pv === 'b' || pv === 'c';
   }
 
   .hero__crumbs a {
+    display: inline-block;
+    padding-block: 0.6rem;
     text-decoration: none;
   }
 
@@ -178,8 +178,33 @@ const still = pv === 'b' || pv === 'c';
     max-width: 34rem;
   }
 
+  /* the accent phrase moves to the next line as one piece */
   .hero__h :global(.hero__accent) {
+    display: inline-block;
     color: var(--violet);
+  }
+
+  /* home: one sentence per line */
+  .hero--home .hero__h :global(.hero__accent) {
+    display: block;
+  }
+
+  @media (max-width: 29.99rem) {
+    .hero--home .hero__h :global(.h1) {
+      font-size: clamp(2.125rem, 9.6vw, 2.6rem);
+    }
+
+    .hero__chips {
+      display: grid;
+      gap: 0.35rem;
+    }
+  }
+
+  /* phones: the bar fixed to the bottom carries the same two actions */
+  @media (max-width: 47.99rem) {
+    .hero .actions {
+      display: none;
+    }
   }
 
   .hero__lede {
@@ -243,7 +268,16 @@ const still = pv === 'b' || pv === 'c';
     }
 
     .hero--home .hero__inner {
-      min-height: clamp(34rem, 78svh, 47rem);
+      min-height: clamp(30rem, 70svh, 47rem);
+    }
+
+    .hero--home .hero__h :global(.h1) {
+      font-size: clamp(2.5rem, 5.4vw + 0.4rem, 5.25rem);
+    }
+
+    /* a small photo (the van) is not stretched across the hero */
+    .hero--narrow .hero__media {
+      width: min(46%, 52rem);
     }
 
     .hero__h,
@@ -264,6 +298,14 @@ const still = pv === 'b' || pv === 'c';
 
   .hero--still .hero__media::before {
     display: none;
+  }
+
+  /* short laptop screens: keep both buttons in the first screen */
+  @media (min-width: 56rem) and (max-height: 50rem) {
+    .hero__inner {
+      gap: 1.1rem;
+      padding-block: 2.5rem;
+    }
   }
 
   /* ----- the page-load moment ----- */

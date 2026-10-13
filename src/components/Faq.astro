@@ -1,19 +1,20 @@
 ---
 /* Questions as native disclosures: they open, close and are findable in page
-   search without script. One open at a time within a group. */
+   search without script. Each opens on its own: closing one above the finger
+   when another opens made the page jump on a phone. */
 import { rich } from '../lib/rich';
 
 interface Props {
   items: { q: string; a: string }[];
   group?: string;
 }
-const { items, group = 'faq' } = Astro.props;
+const { items } = Astro.props;
 ---
 
 <div class="faq">
   {
     items.map((item) => (
-      <details name={group}>
+      <details>
         <summary>
           <h3 class="faq__q">{item.q}</h3>
           <span class="faq__mark" aria-hidden="true" />
@@ -100,7 +101,7 @@ const { items, group = 'faq' } = Astro.props;
 
   .faq__a {
     max-width: 46rem;
-    padding: 0 3rem 1.5rem 0;
+    padding: 0 0 1.5rem 0;
     color: var(--muted);
   }
 

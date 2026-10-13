@@ -23,3 +23,11 @@ export function rich(text: string): string {
 export function plain(text: string): string {
   return text.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\*\*([^*]+)\*\*/g, '$1');
 }
+
+/** A heading as HTML: escaped, a ** phrase set as the accent, and hyphenated
+    words wrapped so they never break at the hyphen. */
+export function heading(text: string, accentClass = ''): string {
+  let out = escape(text).replace(/([A-Za-z0-9]+(?:-[A-Za-z0-9]+)+)/g, '<span class="nw">$1</span>');
+  if (accentClass) out = out.replace(/\*\*([^*]+)\*\*/g, `<span class="${accentClass}">$1</span>`);
+  return out;
+}

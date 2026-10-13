@@ -13,6 +13,7 @@ import Faq from '../components/Faq.astro';
 import Icon from '../components/Icon.astro';
 import { BRAND, HOURS, LINKS } from '../data/site';
 import { href } from '../lib/paths';
+import { heroImage } from '../lib/hero';
 import { breadcrumbs, faqSchema } from '../lib/schema';
 
 const TITLE = `Gift Cards | ${BRAND.name} Auto Detailing`;
@@ -48,10 +49,12 @@ const FAQ = [
   { q: 'What if I do not know what their car needs?', a: 'That is the main reason to give a card instead of a package. They call us, we look at the vehicle, and we quote before anything starts. SUVs and trucks are quoted for their size.' },
   { q: 'How do they book once they have it?', a: `Online 24/7 through our booking shop, or by calling or texting [${BRAND.phone}](${BRAND.phoneHref}). We are appointment only, ${HOURS.summary}, at ${BRAND.street}, ${BRAND.city}.` },
 ];
+const head = await heroImage('corvette-purple-shop', { sizes: '(min-width: 60rem) 48vw, 1px' });
 ---
 
-<Base title={TITLE} description={DESCRIPTION} path="/gift-cards/" quoteHref="/get-a-quote/" schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Gift cards', path: '/gift-cards/' }])]}>
+<Base title={TITLE} description={DESCRIPTION} path="/gift-cards/" preload={{ ...head.preload, media: '(min-width: 60rem)' }} quoteHref="/get-a-quote/" barAction={{ label: 'Buy a gift card', href: LINKS.giftCards, cta: 'sticky-gift' }} schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Gift cards', path: '/gift-cards/' }])]}>
   <PageHead
+    image={head}
     eyebrow={`${BRAND.name} gift cards`}
     title="Give the gift of **a showroom finish.**"
     lede={`Choose an amount, buy it online in about a minute, and they redeem it on any service we offer, at our ${BRAND.city} shop or in their driveway.`}
@@ -134,8 +137,8 @@ const FAQ = [
 
   .amt {
     position: relative;
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 0.4rem;
     height: 100%;
     padding: 1.5rem 1.4rem;
@@ -184,7 +187,8 @@ const FAQ = [
   }
 
   .amt .arrow {
-    margin-top: 0.5rem;
+    margin-top: auto;
+    padding-top: 0.5rem;
   }
 
   @media (min-width: 40rem) {
@@ -205,8 +209,8 @@ const FAQ = [
   }
 
   .idea {
-    display: grid;
-    align-content: start;
+    display: flex;
+    flex-direction: column;
     gap: 0.45rem;
   }
 
@@ -225,7 +229,7 @@ const FAQ = [
   }
 
   .idea__pair {
-    margin-top: 0.35rem;
+    margin-top: auto;
     padding-top: 0.7rem;
     border-top: 1px solid var(--line);
     font-weight: 620;
@@ -248,7 +252,7 @@ const FAQ = [
     margin-top: clamp(2rem, 4vw, 3rem);
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);

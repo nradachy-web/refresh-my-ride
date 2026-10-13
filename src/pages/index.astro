@@ -129,7 +129,7 @@ const FAQ = [
 
   <section class="band white" aria-labelledby="ways-h">
     <div class="wrap two flip">
-      <div class="frame ways__photo">
+      <div class="frame tall">
         <Photo id="shop-interior" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
       </div>
       <div>
@@ -211,8 +211,8 @@ const FAQ = [
         <p><a class="arrow" href={href(service('ceramic-coating').path)}>See the ceramic coating packages</a></p>
       </div>
       <div class="pairs">
-        <BeforeAfter pair="silverado" sizes="(min-width: 60rem) 20vw, 46vw" />
-        <BeforeAfter pair="corvette" sizes="(min-width: 60rem) 20vw, 46vw" />
+        <BeforeAfter pair="silverado" sizes="(min-width: 60rem) 22vw, (min-width: 30rem) 46vw, 92vw" />
+        <BeforeAfter pair="miata" sizes="(min-width: 60rem) 22vw, (min-width: 30rem) 46vw, 92vw" />
       </div>
     </div>
   </section>
@@ -319,11 +319,6 @@ const FAQ = [
   }
 
   /* three ways */
-  .ways__photo {
-    aspect-ratio: 4 / 5;
-    max-height: 38rem;
-  }
-
   .ways__more {
     margin-top: 2rem;
   }
@@ -397,9 +392,14 @@ const FAQ = [
 
   .pairs {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.25rem 1rem;
     align-items: start;
+  }
+
+  @media (min-width: 30rem) {
+    .pairs {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
   }
 
   /* how it works */
@@ -430,7 +430,7 @@ const FAQ = [
     gap: 1rem;
   }
 
-  @media (min-width: 60rem) {
+  @media (min-width: 72rem) {
     .faqs {
       grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
       gap: clamp(2rem, 6vw, 6rem);
