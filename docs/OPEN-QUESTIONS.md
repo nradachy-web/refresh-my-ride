@@ -45,6 +45,50 @@ made that is his to make.
 12. **The yard sign in two mobile photos** shows a different phone number
     ((586) 298-...). Those photos are cropped so the number is out of frame.
 
+## Raised by the fact check of the town and service pages
+
+13. **Window tint reviews.** Only one review on file mentions tint (Jake M.), so
+    the tint pages show a second review about other work, with its real label.
+    Two or three Google reviews that mention tint would fix every tint page.
+14. **Is valet pickup offered for tint and paint correction,** or only for
+    coatings and detailing? The pages offer it for all shop work.
+15. **What goes mobile.** The pages say interior details, Wash & Seal and full
+    details can be done in a driveway, and that anything with machine polishing
+    (Polish & Protect, Luxury Refresh) is shop work. Is that right? One review
+    (Sabrina K.) describes scratch buffing on a call-out.
+16. **Travel and valet fees.** His old Shelby Township page said there is no
+    separate travel charge for Shelby addresses, and that page still says so.
+    Is there a charge anywhere else? Customers will ask.
+17. **Uber on coating jobs** has no stated distance limit. From West Bloomfield
+    it is about 25 miles each way.
+18. **Windshield film.** The tint pages mention ceramic film on the front
+    windshield from $175.00 and that 75% is a popular pick, exactly as his page
+    did, with no statement of what Michigan allows. Is he comfortable with that
+    on an ad landing page?
+19. **Old tint removal** is "from $50 per area" on one part of his page and
+    "quoted separately" on another. The site uses the $50 version. What is an area?
+20. **Does the Essential Refresh include steam and extraction?** His page is
+    ambiguous. The site credits steam and extraction to the Executive Interior
+    and the Signature and Luxury Refresh only.
+21. **Staff named in reviews** (Ashton, Anthony, Matt Bodo) are not on the team
+    list he published. If any have left, those reviews can be swapped.
+22. **Mobile at an office lot, a condo or a parking deck.** The pages say it
+    depends on the parking and offer valet when no spot works.
+23. **Mobile and valet hours, and bad weather.** Nothing is published. The
+    pages give shop hours only.
+
+## Things on the town pages that will age
+
+Each town page is grounded in `docs/research/<town>.md`, with a source for
+every local statement. A few of those statements are about things that change:
+
+- Annual car events (Woodward Dream Cruise, the Birmingham Cruise Event, the
+  Gratiot Cruise, Troy Traffic Jam, Cars R Stars in Shelby Township). Recheck
+  each summer.
+- Road work (I-696 through Royal Oak, road projects in Macomb Township) and one
+  city's winter salting policy (Sterling Heights). Recheck each autumn.
+- The Ram 1500 being built at Sterling Heights Assembly.
+
 ## Found on the old site, fixed on the new one
 
 - The phone-tap conversion script was pasted into the home page ten times, so

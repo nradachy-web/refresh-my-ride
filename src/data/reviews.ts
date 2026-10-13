@@ -128,7 +128,9 @@ export const REVIEWS: Review[] = [
     text: 'Had them come out to do a full clean inside and outside ceramic coating and buff a couple scratches. My car looks beautiful! Anthony worked so hard on my car and she just looks so pretty! Appreciate it so much!',
     job: 'Luxury Refresh',
     town: 'Shelby Township',
-    services: ['car-detailing', 'mobile-detailing', 'paint-correction'],
+    // Describes a call-out that included coating and scratch buffing, which is shop work today.
+    // Keep it to detailing pages so it never sits beside a "shop only" line.
+    services: ['car-detailing'],
   },
   {
     id: 'fahad-a',

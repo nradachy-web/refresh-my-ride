@@ -8,7 +8,7 @@ committed (see .gitignore); rerun this script after adding one to _source/media.
 Crops are fractions (left, top, right, bottom) of the rotated original.
 """
 from pathlib import Path
-from PIL import Image, ImageOps
+from PIL import Image, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "_source" / "media"
@@ -38,13 +38,13 @@ PHOTOS = {
     "tesla-model-y": ("2026_09_IMG_8666-scaled.jpg", (0, 0.18, 1, 1)),
     "gmc-truck-white": ("2026_09_IMG_8751-scaled.jpg", (0, 0.3, 1, 0.86)),
     "cadillac-sedan-black": ("2026_08_IMG_7617-scaled.jpg", (0, 0.3, 1, 0.86)),
-    "chevy-suv-black": ("2026_08_IMG_7644-scaled.jpg", (0, 0.3, 1, 0.86)),
+    "chevy-suv-black": ("2026_08_IMG_7644-scaled.jpg", (0, 0.335, 1, 0.86)),
     "bmw-sedan-white": ("2026_08_IMG_7762-scaled.jpg", (0, 0.18, 1, 0.74)),
     "bmw-7-series": ("2026_08_IMG_8050-scaled.jpg", (0, 0.36, 1, 0.92)),
     "ram-truck-white": ("2026_08_IMG_8142-scaled.jpg", (0, 0.32, 1, 0.88)),
-    "escalade-black": ("2026_08_IMG_8252-scaled.jpg", (0, 0.36, 1, 0.92)),
+    "escalade-black": ("2026_08_IMG_8252-scaled.jpg", (0, 0.405, 1, 0.92)),
     "jeep-grand-cherokee": ("2026_08_IMG_8295-scaled.jpg", (0, 0.34, 1, 0.9)),
-    "ford-super-duty-white": ("2026_08_IMG_6823-scaled.jpg", (0, 0.1, 1, 0.92)),
+    "ford-super-duty-white": ("2026_08_IMG_6823-scaled.jpg", (0.09, 0.1, 1, 0.92)),
     "cybertruck": ("2026_08_IMG_4709-scaled.jpg", (0, 0.3, 1, 0.86)),
     "porsche-wheel": ("2026_08_IMG_4562-scaled.jpg", (0, 0.1, 1, 0.9)),
     # mobile and valet (crops keep an old phone number on the yard sign out of frame)
@@ -54,9 +54,17 @@ PHOTOS = {
     # interiors
     "interior-alfa-red": ("2026_08_IMG_3880-scaled.jpg", (0, 0, 1, 0.86)),
     "interior-shelby": ("2026_08_shelby-cobra-interior-detailing.jpg", None),
-    "interior-convertible": ("2026_09_IMG_8363-scaled.jpg", (0, 0.28, 1, 1)),
+    "interior-convertible": ("2026_09_IMG_8363-scaled.jpg", (0, 0.43, 1, 1)),
     "interior-bmw": ("2026_08_IMG_8478-scaled.jpg", (0, 0.18, 1, 0.92)),
     "interior-ford": ("2026_08_IMG_4032-scaled-e1787845836726.jpeg", None),
+}
+
+# Regions blurred after cropping, as fractions of the cropped photo. The BMW's
+# navigation screen shows a street name and coordinates that may be a customer's.
+# (Crops above also keep other businesses' signs and a bystander's licence plate
+# out of frame: escalade-black, chevy-suv-black, ford-super-duty-white, interior-convertible.)
+BLUR = {
+    "interior-bmw": [(0.60, 0.215, 0.92, 0.335)],
 }
 
 # before/after pairs, both cropped to the same 4:5 frame so the slider lines up
@@ -124,6 +132,10 @@ def main():
         im = load(name)
         if box:
             im = crop_frac(im, box)
+        for l, t, r, b in BLUR.get(pid, []):
+            w, h = im.size
+            region = (round(l * w), round(t * h), round(r * w), round(b * h))
+            im.paste(im.crop(region).filter(ImageFilter.GaussianBlur(radius=max(w, h) / 70)), region)
         cap(im).save(OUT / f"{pid}.jpg", quality=90, optimize=True, progressive=True)
         print(f"{pid:28s} {im.size}")
     for pid, (before, after) in PAIRS.items():

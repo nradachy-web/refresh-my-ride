@@ -7,7 +7,7 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
 1. Troy is a city in Oakland County, a northern suburb of Detroit. Its neighbors include Sterling Heights, Rochester Hills, Birmingham, Bloomfield Township, Clawson, Royal Oak, Madison Heights, Auburn Hills, Shelby Township and Warren.
    https://en.wikipedia.org/wiki/Troy,_Michigan
 
-2. The city's own table of major roads, listed north to south and then west to east: South Boulevard, Square Lake Road, Long Lake Road, Wattles Road, Big Beaver Road, Maple Road, 14 Mile Road. Then Adams Road, Coolidge Highway, Crooks Road, Livernois Road, Rochester Road, Stephenson Highway, John R Road, Dequindre Road. Interstate 75 belongs to the State of Michigan. Rochester Road, Coolidge, Wattles, Square Lake and Stephenson are City of Troy roads. Big Beaver, Long Lake, South Boulevard, 14 Mile, Adams, Crooks, John R and Dequindre are Road Commission for Oakland County roads. (Master Plan 2040, Table 5.1, Roadway Jurisdiction.)
+2. The city's own table of major roads, listed north to south and then west to east: South Boulevard, Square Lake Road, Long Lake Road, Wattles Road, Big Beaver Road, Maple Road, 14 Mile Road. Then Adams Road, Coolidge Highway, Crooks Road, Livernois Road, Rochester Road, Stephenson Highway, John R Road, Dequindre Road. Interstate 75 belongs to the State of Michigan. Rochester Road, Coolidge, Wattles, Square Lake and Stephenson are City of Troy roads. Big Beaver, Long Lake, South Boulevard, 14 Mile, Adams, Crooks, John R and Dequindre are Road Commission for Oakland County roads. Maple Road and Livernois Road are listed as shared: "City of Troy and Road Commission of Oakland County". (Master Plan 2040, Table 5.1, Roadway Jurisdiction. Re-read by the fact checker on 2026-10-13.)
    https://troymi.gov/Departments/Planning/Master%20Plan/CityOfTroy_MasterPlan2040_FINAL%20WITH%20RESOLUTION.pdf
 
 3. Master Plan 2040: "The primary method of transportation as it stands today in Troy is the private automobile." The complete road network is 364 miles when all local and county roads are included.
@@ -20,14 +20,15 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
    https://en.wikipedia.org/wiki/Metropolitan_Parkway_(Detroit_area)
    https://en.wikipedia.org/wiki/Mile_Road_System_(Detroit)
 
-6. The stretch of Big Beaver between Rochester Road and Coolidge Highway "forms Troy's central business district, and is one of the busiest corridors in Oakland County". High-rise office buildings, including the PNC Center, dominate by Livernois Road.
+6. The three mile stretch of Big Beaver between Rochester Road and Coolidge Highway "forms Troy's central business district, and is one of the busiest corridors in Oakland County". High-rise office buildings, including the PNC Center, dominate by Livernois Road.
    https://en.wikipedia.org/wiki/Metropolitan_Parkway_(Detroit_area)
 
 7. Master Plan 2040 on Big Beaver: "The high-rise buildings, Somerset Collection, and its immediate proximity to I-75 are frequently the main elements visitors remember about the Corridor and the City." The same plan says Troy "may not have a traditional, small-scale downtown".
    https://troymi.gov/Departments/Planning/Master%20Plan/CityOfTroy_MasterPlan2040_FINAL%20WITH%20RESOLUTION.pdf
 
-8. Interstate 75 passes through Troy. Exits in or at Troy: 65 (14 Mile Road), 67 (Rochester Road), 69 (Big Beaver Road). Crooks Road (72) and Adams Road (74) are the next exits north.
+8. Interstate 75 passes through Troy. Exits in or at Troy: 65 (14 Mile Road, on the Madison Heights and Troy city line), 67 (Rochester Road), 69 (Big Beaver Road) and 72 (Crooks Road). Adams Road (74) is the next exit north and is listed in Bloomfield Township. CORRECTED by the fact checker on 2026-10-13: the first version of this line put Crooks Road outside Troy. The Wikipedia exit list gives the location "Troy" for exits 67, 69 and 72 together (in the page source the Troy location cell spans three rows starting at exit 67), and the master plan describes North Troy, at Crooks Road, as having "a direct access ramp to I-75".
    https://en.wikipedia.org/wiki/Interstate_75_in_Michigan
+   https://en.wikipedia.org/w/index.php?title=Interstate_75_in_Michigan&action=raw&section=15
 
 9. MDOT's I-75 Modernization Project began in 2016. It widened I-75, added High Occupancy Vehicle lanes and rebuilt interchanges. Diverging diamond interchanges opened in Troy at Big Beaver (spring 2021) and at 14 Mile (fall 2021). (Master Plan 2040.) The HOV lanes run between 12 Mile Road and South Boulevard and opened October 24, 2023.
    https://troymi.gov/Departments/Planning/Master%20Plan/CityOfTroy_MasterPlan2040_FINAL%20WITH%20RESOLUTION.pdf
@@ -44,9 +45,10 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
 12. A snow emergency is issued when snowfall exceeds four inches. Parking on the street during a snow emergency is prohibited and fineable up to $75.
     https://troymi.gov/departments/public_works/streets_and_drains/snow_and_ice_procedures/index.php
 
-13. "Since 2001, the City of Troy has serviced all county roads in Troy for snow and ice control" under an annual winter maintenance agreement with the Road Commission for Oakland County. The stated reason is to let the county concentrate on its highest priority roads, I-75 and M-59. (Council agenda item dated October 11, 2021. A 2016 Patch report says the same arrangement had been renewed each year since 2001.)
+13. "Since 2001, the City of Troy has serviced all county roads in Troy for snow and ice control" under an annual winter maintenance agreement with the Road Commission for Oakland County. The stated reason is to let the county concentrate on its highest priority roads, I-75 and M-59. (Council agenda item dated October 11, 2021. A 2016 Patch report says the same arrangement had been renewed each year since 2001.) ADDED by the fact checker on 2026-10-13: the arrangement is confirmed for the most recent season. The Troy City Council regular meeting agenda for October 6, 2025 carries item J-5, "2025-2026 Winter Maintenance Agreement, Road Commission for Oakland County", with a staff memo dated October 1, 2025 that repeats "Since 2001, the City of Troy has serviced all county roads in Troy for snow and ice control." Exhibit A lists the county roads the city plows and salts: Long Lake Road (Adams to Dequindre), John R Road (Fourteen Mile to South Boulevard), Big Beaver (Adams to Dequindre), Crooks Road and Livernois Road (Maple to South Boulevard), Maple Road (Dequindre to Coolidge), South Boulevard, Dequindre Road and Adams Road. The agreement took effect October 1, 2025 and stays in force until the next annual agreement is signed or it is terminated.
     https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/5390508
     https://patch.com/michigan/troy/county-roads-good-go-winter
+    https://apps.troymi.gov/Meetings/Meetings/DownloadPDF/6942790
 
 14. The Road Commission for Oakland County (RCOC) is the county road agency. It maintains 230 miles of state highway for MDOT, including I-75. It uses an average of 64,000 tons of salt per winter. Its salt spreaders have pre-wetting devices "that spray salt brine on the salt as it is being spread to prevent the salt from being scattered off the road and to activate the melting process more quickly". (RCOC Winter Maintenance Fact Sheet 2025-2026.)
     https://rcocweb.org/DocumentCenter/View/10065/Winter-maintenance-preparations-fact-sheet?bidId=
@@ -59,7 +61,7 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
 16. Oakland County's composite master plan table for the City of Troy lists single family residential as the largest land use category (9,706 acres, 45.1 percent of the city). Map dated January 9, 2023.
     https://www.oaklandcountymi.gov/home/showpublisheddocument/14180/638100729313570000
 
-17. Master Plan 2040 refers to "the over 100,000 commuters who enter and leave Troy everyday" and to a workforce of over 129,000 and a daytime population of over 170,000. It describes North Troy as "dominated by single-use office buildings" with a direct access ramp to I-75.
+17. Master Plan 2040 refers to "the over 100,000 commuters who enter and leave Troy everyday" and to a workforce of over 129,000 and a daytime population of over 170,000. It describes North Troy as "dominated by single-use office buildings" with a direct access ramp to I-75. ADDED by the fact checker on 2026-10-13: the same North Troy section says the area "consists primarily of office use with excellent freeway access to I-75", maps its opportunity sites at the corners of Crooks Road with Long Lake Road and with Square Lake Road, and lists as a challenge "Large surface parking lots surrounding Tower Drive properties".
     https://troymi.gov/Departments/Planning/Master%20Plan/CityOfTroy_MasterPlan2040_FINAL%20WITH%20RESOLUTION.pdf
 
 18. Troy still has some unpaved residential streets. In January 2023 and February 2024 the council discussed paving them through special assessment districts and asked for an ordinance requiring 75 percent support "from the residents on the unpaved road". No count of streets or miles was found.
@@ -98,7 +100,7 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
 27. Firefighters Park (1300 W. Square Lake, 96 acres): open space and wooded areas, a section of the Rouge River, nine soccer fields, an 18 hole disc golf course, sand volleyball, shore fishing. Boulan Park (3671 Crooks Road, 63 acres): three ball diamonds, five soccer fields, two sand volleyball courts, a 1.25 mile paved walking path. Jaycee Park (1755 E. Long Lake, 45 acres): two ball diamonds, two full size and six small soccer fields, a sand volleyball court. Raintree Park (3775 John R, 41 acres): half wooded, disc golf, a paved path through the woods.
     https://troymi.gov/residents/parks/community_parks.php
 
-28. Daisy Knight Dog Park is inside P. Terry and Barbara Knight Park. The Troy Trail runs from the Troy Town Center through P. Terry and Barbara Knight Park, past Wattles Road, to the Troy Historic Village. A later phase of the trail circles the 16 acre lake at Sylvan Glen Lake Park, which has shore fishing and no swimming or boating.
+28. Daisy Knight Dog Park is inside P. Terry and Barbara Knight Park (3410 Livernois, between Wattles and Big Beaver). The parks page says the park "contains Daisy Knight Dog Park, and the entrance to Phase One of the Troy Trail system". The master plan says the 1.3 mile asphalt Troy Trail "runs from the Troy Town Center, through P. Terry & Barbara Knight Park, past Wattles Road" and "finishes at Troy Historic Village". A later phase of the trail circles the 16 acre lake at Sylvan Glen Lake Park, which has shore fishing and no swimming or boating.
     https://rec.troymi.gov/parks/index.php
     https://troymi.gov/Departments/Planning/Master%20Plan/CityOfTroy_MasterPlan2040_FINAL%20WITH%20RESOLUTION.pdf
 
@@ -118,7 +120,7 @@ Researched 2026-10-13 for the Refresh My Ride town pages. Every local statement 
 
 ## Car culture
 
-33. The Troy Traffic Jam is an annual summer car show at the Columbia Center, 201 W. Big Beaver Road. The organizer calls it "Troy's biggest car show and community fundraiser", with 300+ show cars, and it supports the education programs at the Troy Historic Village. When checked, the page listed the next show for August 1, 2027, 9am to 3pm, rain or shine, and a sponsor note on it referred to the 18th annual show.
+33. The Troy Traffic Jam is an annual summer car show at the Columbia Center, 201 W. Big Beaver Road. The organizer calls it "Troy's biggest car show and community fundraiser", with 300+ show cars (a second counter on the same page reads "360+ Show Cars", so the pages say "more than 300"), and it supports the education programs at the Troy Historic Village. When checked, the page listed the next show for August 1, 2027, 9am to 3pm, rain or shine, and a sponsor note on it referred to the 18th annual show.
     https://www.troyhistoricvillage.org/troy-traffic-jam/
 
 ## Drive
@@ -148,7 +150,7 @@ Route wording used on the pages: Big Beaver Road east, which becomes Metropolita
 - The Woodward Dream Cruise in Troy. Woodward Avenue is not in the city's road table (fact 2). No source places the cruise in Troy.
 - Parking decks at the Big Beaver office towers. The only sources were commercial leasing listings. Confirmed parking facts are limited to Somerset Collection (surface, covered and valet, fact 19) and the hospital (a deck and surface lots, fact 23). The pages talk about open lots and deck stalls as conditions ("if your car sits in an open lot"), not as counts or descriptions of named buildings.
 - That the City of Troy uses liquid brine. The city page mentions salt only. The brine fact (14) is about the county road commission, which clears I-75.
-- That the city still clears the county roads this winter. Confirmed in the city's own document through the 2021-2022 season (fact 13). A third party procurement blog reports a 2025-2026 agreement, but the city record for it was not found. The pages rely only on the live city page (fact 11): major city and county roads are first priority.
+- That a 2026-2027 winter agreement has been signed. The city record now confirms the arrangement through the 2025-2026 agreement, which stays in force until it is replaced (fact 13), and the live city page still lists major city and county roads as first priority (fact 11). The council record for the 2026-2027 renewal was not found. The pages say the city salts Big Beaver and the other main roads first, and say nothing about a contract or a season.
 - How many Troy streets are unpaved, or where. Fact 18 confirms some exist, nothing more. No gravel dust claims on the pages.
 - A year round or overnight ban on street parking. Only the snow emergency rule (fact 12) was confirmed.
 - A beach, a swimming lake or a Huron-Clinton Metropark in Troy. None found. The lakes that turned up are shore fishing only.
@@ -156,3 +158,20 @@ Route wording used on the pages: Big Beaver Road east, which becomes Metropolita
 - What Troy residents drive, lease or earn, how long their commutes are, or how many Troy customers the shop has.
 - A drive time for the 14 Mile Road route from south Troy. It is not in drive-times.json.
 - That the Automall is on a particular block. The master plan maps place the Troy Motor Mall in the Maple Road area, which is as specific as the pages get.
+- That the Miata or the Corvette on the paint correction page were Troy cars or Troy Traffic Jam entries. They are the shop's own examples from docs/FACTS.md, and the page now says so.
+
+## Fact check, 2026-10-13
+
+An independent pass re-opened the sources below and compared them with the five Troy pages. One error was found in this file (fact 8, the Crooks Road exit) and it is corrected above.
+
+- City snow and ice page (facts 11, 12): re-read. The four priorities, "more than 4 inches" for subdivision plowing and "we salt and treat the hills, intersections and curves as needed" are verbatim. The page names no roads and mentions salt only.
+- County roads serviced by the city (fact 13): confirmed for 2025-2026 from the October 6, 2025 council agenda, with the road list in Exhibit A.
+- RCOC fact sheet 2025-2026 (fact 14): re-read as a PDF. I-75 is named among the 230 miles of state highway RCOC maintains for MDOT, and the pre-wetting brine sentence is verbatim.
+- Master Plan 2040 (facts 2, 3, 7, 15, 17, 24, 28): the PDF text was extracted again and searched. "The primary method of transportation as it stands today in Troy is the private automobile", "housing in Troy is overwhelmingly single-family detached", "While Troy may not have a traditional, small-scale downtown", the Automall wording and Table 5.1 all match.
+- Parks (facts 27, 28): Firefighters Park nine soccer fields, Boulan Park five, Jaycee Park two full size and six small. All match the city parks pages.
+- Troy Traffic Jam (fact 33): venue, date, "300+ show cars" and the Troy Historic Village all match the organizer's page.
+- Big Beaver business district and the name change at Dequindre (facts 5, 6): match the Wikipedia article on Metropolitan Parkway.
+- Somerset Collection parking (fact 19) and Oakland Mall location (fact 20): match.
+- Route: both OSRM requests were run again and returned the same steps. Central Troy: Big Beaver Road, Metropolitan Parkway, right on Utica Road, left on East 14 Mile Road, left on Louise Avenue, 21,982 meters and 1,485 seconds. Oakland Mall: 14 Mile Road to a left on Louise Avenue, 16,016 meters and 1,189 seconds.
+
+Not re-verified, and not used on the pages: facts 9 (HOV dates), 16, 18, 21, 22, 23, 25, 29, 30, 31 and 32.

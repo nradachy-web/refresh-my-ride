@@ -8,7 +8,12 @@
     "kicker": "Auto detailing in Clinton Township, MI",
     "title": "Clean up close. **Priced up front.**",
     "lede": "Interior deep cleans, exterior decontamination and full details by trained, quality-checked technicians. Exterior details from $139.99, interior details from $184.99 and full details from $249.99, for a coupe or sedan in average condition. At our shop, in your driveway or by valet.",
-    "chips": ["Interior, exterior or both", "Shop, mobile or valet", "1,000+ vehicles serviced", "Licensed and insured"],
+    "chips": [
+      "Interior, exterior or both",
+      "Shop, mobile or valet",
+      "1,000+ vehicles serviced",
+      "Licensed and insured"
+    ],
     "photo": "interior-alfa-red"
   },
   "blocks": [
@@ -58,7 +63,7 @@
         {
           "label": "Interior and exterior",
           "name": "The whole car",
-          "featured": true,
+          "featured": false,
           "blurb": "One appointment, inside and out. Our most-booked category.",
           "rows": [
             {
@@ -104,7 +109,10 @@
         }
       ],
       "footnote": "SUVs and trucks are quoted for their size. If your vehicle needs more than the package covers, such as heavy pet hair, stains or biohazards, we explain the adjustment and you approve it before work begins, never at pickup. Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.",
-      "cta": { "label": "Years, not months: ceramic coating", "href": "/ceramic-coating/" }
+      "cta": {
+        "label": "Years, not months: ceramic coating",
+        "href": "/ceramic-coating/"
+      }
     },
     {
       "type": "beforeAfter",
@@ -112,7 +120,9 @@
       "eyebrow": "Before and after",
       "title": "See the difference a real detail makes.",
       "intro": "Drag the handle across a cloth seat that went years without a deep clean. The Executive Interior Detail, Signature Refresh and Luxury Refresh include this level of work, not a vacuum and a wipe-down.",
-      "pairs": ["seat"],
+      "pairs": [
+        "seat"
+      ],
       "checks": [
         "**Hot water extraction** pulls road salt out of the carpet fibers. A vacuum alone leaves it behind.",
         "**On the Executive Interior Detail,** intensive steam goes through the whole cabin, and cracks, vents and pedals are detailed.",
@@ -133,14 +143,28 @@
       "eyebrow": "Recent work",
       "title": "Real vehicles, not stock photos.",
       "intro": "Every photo here is our own work, taken at the shop or on a mobile appointment.",
-      "photos": ["gmc-truck-white", "interior-convertible", "porsche-wheel", "chevy-suv-black", "interior-ford", "jeep-grand-cherokee", "bmw-sedan-white", "silverado-black"]
+      "photos": [
+        "gmc-truck-white",
+        "interior-convertible",
+        "porsche-wheel",
+        "chevy-suv-black",
+        "interior-ford",
+        "jeep-grand-cherokee",
+        "bmw-sedan-white",
+        "silverado-black"
+      ]
     },
     {
       "type": "reviews",
       "plane": "ink",
       "eyebrow": "What customers say",
       "title": "Rated 5.0 from 270+ reviews on Google by drivers across Macomb and Oakland.",
-      "ids": ["chris-d", "april-g", "alexis-p", "sydney-k"]
+      "ids": [
+        "chris-d",
+        "april-g",
+        "alexis-p",
+        "sydney-k"
+      ]
     },
     {
       "type": "areas",
@@ -201,11 +225,31 @@
     "title": "Detailing packages with the price up front.",
     "intro": "A detail is hands-on cleaning of every surface, not a car wash with extra steps. Each price is a starting price for a coupe or sedan in average condition, and we quote your exact vehicle before any work starts.",
     "items": [
-      { "name": "Wash & Seal", "price": "from $139.99", "detail": "Exterior. Full decontamination wash, wheel and tire deep clean and a 6 month ceramic sealant. About 1.5 hours." },
-      { "name": "Premium Interior Detail", "price": "from $184.99", "detail": "Full vacuum including trunk, main surfaces and touchpoints cleaned, floor mats washed, interior glass. About 2 hours." },
-      { "name": "Executive Interior Detail", "price": "from $239.99", "detail": "Premium plus intensive steam, seat and carpet extraction, UV protectant, conditioning and fabric guard. About 3 hours." },
-      { "name": "Essential Refresh", "price": "from $249.99", "detail": "Inside and out. Premium interior clean plus a full exterior hand wash with wheels and tires. About 2.5 to 3 hours." },
-      { "name": "Signature Refresh", "price": "from $319.99", "detail": "Inside and out, our most popular full detail. Steam and conditioning inside, decontamination wash and sealant outside. About 5 hours." }
+      {
+        "name": "Wash & Seal",
+        "price": "from $139.99",
+        "detail": "Exterior. Full decontamination wash, wheel and tire deep clean and a 6 month ceramic sealant. About 1.5 hours."
+      },
+      {
+        "name": "Premium Interior Detail",
+        "price": "from $184.99",
+        "detail": "Full vacuum including trunk, main surfaces and touchpoints cleaned, floor mats washed, interior glass. About 2 hours."
+      },
+      {
+        "name": "Executive Interior Detail",
+        "price": "from $239.99",
+        "detail": "Premium plus intensive steam, seat and carpet extraction, UV protectant, conditioning and fabric guard. About 3 hours."
+      },
+      {
+        "name": "Essential Refresh",
+        "price": "from $249.99",
+        "detail": "Inside and out. Premium interior clean plus a full exterior hand wash with wheels and tires. About 2.5 to 3 hours."
+      },
+      {
+        "name": "Signature Refresh",
+        "price": "from $319.99",
+        "detail": "Inside and out, our most popular full detail. Steam and conditioning inside, decontamination wash and sealant outside. About 5 hours."
+      }
     ],
     "footnote": "Polish & Protect (exterior, from $344.99) and Luxury Refresh (inside and out, from $439.99) add a one-step machine polish. SUVs and trucks are quoted for their size. Extra charges for heavy pet hair, stains or biohazards are always approved before work begins."
   }
