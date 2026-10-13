@@ -88,6 +88,12 @@ screen; reduced motion gets a still result; with script off the controls that
 need script are hidden. New content blocks: `swirl` and `water` (heading
 fields only) beside the existing `shades`.
 
+Measured on the preview after they shipped (2026-10-13, real PageSpeed runs):
+blocking time 0 ms and layout shift 0 on every phone run of the six pages that
+gained a panel, and the phone performance spread (98 to 100) matched two pages
+that did not change, run in the same batch. `docs/preview-panels.jpg` shows
+all three.
+
 ## Photos
 
 Their own work only. Phone photos, so they are cropped tight and set on ink
