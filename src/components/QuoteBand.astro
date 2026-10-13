@@ -1,0 +1,114 @@
+---
+/* The closing band on every selling page: the form beside the phone, with the
+   address and hours where a visitor checks them last. */
+import Icon from './Icon.astro';
+import QuoteForm from './QuoteForm.astro';
+import { BRAND, FINANCING, HOURS, LINKS } from '../data/site';
+import { rich } from '../lib/rich';
+
+interface Props {
+  title?: string;
+  lede?: string;
+  eyebrow?: string;
+}
+const {
+  eyebrow = 'Free quote',
+  title = 'Tell us what you drive. We will tell you what it needs.',
+  lede = 'No pressure and no guessing off a price list. We look at your vehicle, its condition and how long you plan to keep it, then give you a real number.',
+} = Astro.props;
+---
+
+<section class="band ink quote" id="quote" aria-labelledby="quote-h">
+  <div class="wrap two wide-left quote__grid">
+    <div class="stack" style="--gap:1.5rem">
+      <p class="eyebrow">{eyebrow}</p>
+      <h2 class="h2" id="quote-h">{title}</h2>
+      <p class="lede" set:html={rich(lede)} />
+
+      <a class="quote__phone" href={BRAND.phoneHref} data-loc="quote-band">
+        <span class="fine muted">Rather talk now? Call or text</span>
+        <span class="quote__num">{BRAND.phone}</span>
+      </a>
+
+      <div class="actions">
+        <a class="btn ghost" href={LINKS.book} target="_blank" rel="noopener" data-cta="quote-band-book"><Icon name="calendar" />Book online</a>
+        <a class="btn ghost" href={BRAND.smsHref} data-loc="quote-band-text"><Icon name="text" />Text us a photo</a>
+      </div>
+
+      <ul class="quote__facts small">
+        <li>
+          <Icon name="pin" />
+          <a href={LINKS.directions} target="_blank" rel="noopener">{BRAND.street}, {BRAND.city}, {BRAND.state} {BRAND.zip}</a>
+        </li>
+        <li>
+          <Icon name="clock" />
+          <span>{HOURS.summary}. {HOURS.note}</span>
+        </li>
+        <li>
+          <Icon name="wallet" />
+          <span>{FINANCING}</span>
+        </li>
+      </ul>
+    </div>
+
+    <QuoteForm />
+  </div>
+</section>
+
+<style>
+  .quote__grid {
+    align-items: start;
+  }
+
+  .quote__phone {
+    display: grid;
+    gap: 0.15rem;
+    width: fit-content;
+    text-decoration: none;
+  }
+
+  .quote__num {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 3.4vw + 1rem, 3.5rem);
+    font-weight: 780;
+    font-stretch: 116%;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    transition: color 0.18s var(--ease);
+  }
+
+  .quote__phone:hover .quote__num {
+    color: var(--violet-soft);
+  }
+
+  .quote__facts {
+    display: grid;
+    gap: 0.8rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line-ink);
+    color: var(--on-ink-muted);
+  }
+
+  .quote__facts li {
+    display: grid;
+    grid-template-columns: 1.25rem 1fr;
+    gap: 0.75rem;
+    align-items: start;
+  }
+
+  .quote__facts :global(svg) {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-top: 0.12rem;
+    color: var(--violet-soft);
+  }
+
+  .quote__facts a {
+    text-decoration: none;
+  }
+
+  .quote__facts a:hover {
+    color: var(--on-ink);
+    text-decoration: underline;
+  }
+</style>

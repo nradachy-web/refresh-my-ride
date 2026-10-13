@@ -1,0 +1,252 @@
+---
+/* ============================================================================
+   A TOWN HUB
+
+     1  hero       the town in the h1, two actions, the rating
+     2  paper      the four services, each linking to its page for this town
+     3  white      what driving here does to a car: local points, grounded in
+                   docs/research/<city>.md
+     4  ink        getting it done from this town: shop, mobile, valet, reviews
+     5  paper      the questions, then nearby towns
+     6  ink        the quote form beside the phone
+   Copy comes from src/content/cities/<city>.json.
+   ========================================================================== */
+import type { CollectionEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Head from '../components/Head.astro';
+import Photo from '../components/Photo.astro';
+import ServiceCards from '../components/ServiceCards.astro';
+import Faq from '../components/Faq.astro';
+import Reviews from '../components/Reviews.astro';
+import QuoteBand from '../components/QuoteBand.astro';
+import { BRAND } from '../data/site';
+import { TOWN_SERVICES, service } from '../data/services';
+import { city as getCity, hubPath, townPath } from '../data/cities';
+import { review } from '../data/reviews';
+import { photo, type PhotoId } from '../data/photos';
+import { heroImage } from '../lib/hero';
+import { href } from '../lib/paths';
+import { rich } from '../lib/rich';
+import { breadcrumbs, faqSchema } from '../lib/schema';
+
+interface Props {
+  entry: CollectionEntry<'cities'>;
+}
+const { entry } = Astro.props;
+const c = entry.data;
+const town = getCity(c.city);
+const path = hubPath(town);
+const hero = await heroImage(c.hero.photo as PhotoId);
+const paths = Object.fromEntries(TOWN_SERVICES.map((s) => [s.id, townPath(s, town)]));
+
+const schema = [
+  faqSchema(c.faq),
+  breadcrumbs([
+    { name: 'Home', path: '/' },
+    { name: 'Service areas', path: '/service-areas/' },
+    { name: town.name, path },
+  ]),
+];
+---
+
+<Base title={c.meta.title} description={c.meta.description} path={path} preload={hero.preload} schema={schema}>
+  <Hero
+    image={hero}
+    kicker={c.hero.kicker}
+    title={c.hero.title}
+    lede={c.hero.lede}
+    chips={c.hero.chips}
+    primary={{ label: `Get my ${town.name} quote`, href: '#quote' }}
+    crumbs={[
+      { name: 'Service areas', path: '/service-areas/' },
+      { name: town.name, path },
+    ]}
+  />
+
+  <section class="band" aria-labelledby="svc-h">
+    <div class="wrap">
+      <Head
+        id="svc-h"
+        eyebrow={`Services in ${town.name}`}
+        title={`What we do for ${town.name} drivers.`}
+        intro={town.home ? 'Our shop is here, on Louise Ave. Every service starts with a free quote for your vehicle.' : 'Each service has its own page for your town, with how it works from where you live.'}
+      />
+      <ServiceCards services={TOWN_SERVICES} paths={paths} suffix={`in ${town.name}`} />
+      <p class="also small muted">
+        Also: <a class="link" href={href(service('mobile-detailing').path)}>mobile detailing and valet pickup</a>, and{' '}
+        <a class="link" href={href('/gift-cards/')}>gift cards</a> good toward any service.
+      </p>
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="two flip about">
+        <figure class="reveal">
+          <div class="frame about__frame">
+            <Photo id={c.about.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
+          </div>
+          <figcaption class="cap">{photo(c.about.photo as PhotoId).caption}</figcaption>
+        </figure>
+        <div class="stack" style="--gap:1.4rem">
+          <Head id="about-h" layout="left" eyebrow={c.about.eyebrow ?? `Driving in ${town.name}`} title={c.about.title} />
+          <div class="prose muted">
+            {c.about.body.map((p) => <p set:html={rich(p)} />)}
+          </div>
+          <ul class="points">
+            {
+              c.about.points.map((p) => (
+                <li>
+                  <h3 class="points__t">{p.title}</h3>
+                  <p class="small muted" set:html={rich(p.body)} />
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band ink" aria-labelledby="how-h">
+    <div class="wrap">
+      <div class="two wide-left how">
+        <div class="stack" style="--gap:1.25rem">
+          <Head id="how-h" layout="left" eyebrow={`From ${town.name}`} title={c.logistics.title} />
+          <div class="prose muted">
+            {c.logistics.body.map((p) => <p set:html={rich(p)} />)}
+          </div>
+        </div>
+        <dl class="facts">
+          {
+            c.logistics.facts.map((f) => (
+              <div>
+                <dt class="fine">{f.label}</dt>
+                <dd>{f.value}</dd>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+      <div class="rev">
+        <Reviews reviews={c.reviews.map((id) => review(id)!)} />
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="faq-h">
+    <div class="wrap faqs">
+      <Head id="faq-h" layout="left" eyebrow="Questions" title={`${town.name} questions.`} intro={`If yours is not here, call or text [${BRAND.phone}](${BRAND.phoneHref}).`} />
+      <Faq items={c.faq} />
+    </div>
+    <div class="wrap more">
+      <h2 class="h3">Nearby towns we serve</h2>
+      <ul class="chips">
+        {c.neighbors.map((id) => <li><a class="chip" href={href(hubPath(getCity(id)))}>{getCity(id).name}</a></li>)}
+        <li><a class="chip" href={href('/service-areas/')}>All service areas</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <QuoteBand title={`Get your free quote in ${town.name}.`} lede={`Tell us what you drive and what you want done. We reply with a real price for your vehicle, and how the drop-off, mobile visit or valet pickup would work from ${town.name}.`} />
+</Base>
+
+<style>
+  .also {
+    margin-top: 1.5rem;
+  }
+
+  .about__frame {
+    aspect-ratio: 4 / 5;
+    max-height: 38rem;
+  }
+
+  .points {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .points li {
+    display: grid;
+    gap: 0.25rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .points__t {
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    font-weight: 670;
+    font-stretch: 106%;
+  }
+
+  .how {
+    align-items: start;
+  }
+
+  .facts {
+    display: grid;
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r);
+    background: var(--ink-2);
+  }
+
+  .facts div {
+    display: grid;
+    gap: 0.2rem;
+    padding: 1.1rem 1.4rem;
+    border-bottom: 1px solid var(--line-ink);
+  }
+
+  .facts div:last-child {
+    border-bottom: 0;
+  }
+
+  .facts dt {
+    color: var(--violet-soft);
+    font-weight: 620;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  .facts dd {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 660;
+    font-stretch: 106%;
+    line-height: 1.3;
+  }
+
+  .rev {
+    margin-top: clamp(2.5rem, 5vw, 4rem);
+    padding-top: clamp(2.5rem, 5vw, 4rem);
+    border-top: 1px solid var(--line-ink);
+  }
+
+  .faqs {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .more {
+    display: grid;
+    gap: 0.9rem;
+    margin-top: clamp(3rem, 6vw, 5rem);
+    padding-top: clamp(2rem, 4vw, 3rem);
+    border-top: 1px solid var(--line);
+  }
+
+  @media (min-width: 60rem) {
+    .faqs {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .faqs :global(.head) {
+      position: sticky;
+      top: calc(var(--header) + 2rem);
+    }
+  }
+</style>

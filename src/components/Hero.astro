@@ -1,0 +1,313 @@
+---
+/* The first screen. Ink ground, the photo bleeding in from the right and
+   melting into the black, one heading, one paragraph, two actions and the
+   Google rating. On a phone the photo sits on top and the words follow.
+
+   The heading can carry a plain keyword line above the display line. Both are
+   inside the h1, so the page says what it is about in words a search can read
+   while the big line stays short.
+
+   The page-load moment lives here: the photo settles, a band of light passes
+   over the paint once, and the words rise into place. Transform only, so the
+   photo and heading are painted from the first frame. */
+import Icon from './Icon.astro';
+import Stars from './Stars.astro';
+import { BRAND, LINKS, RATING } from '../data/site';
+import { href } from '../lib/paths';
+import { rich } from '../lib/rich';
+import type { HeroImage } from '../lib/hero';
+
+interface Crumb {
+  name: string;
+  path: string;
+}
+
+interface Props {
+  image: HeroImage;
+  /** Keyword line, set small above the display line, inside the h1. */
+  kicker?: string;
+  /** Display line. Wrap a phrase in ** to set it in the logo violet. */
+  title: string;
+  lede: string;
+  chips?: string[];
+  primary?: { label: string; href: string };
+  /** Home uses the tall, loud version. */
+  size?: 'home' | 'page';
+  crumbs?: Crumb[];
+}
+
+const { image, kicker, title, lede, chips = [], primary = { label: 'Get my free quote', href: '#quote' }, size = 'page', crumbs = [] } = Astro.props;
+
+const titleHtml = title
+  .replace(/&/g, '&amp;')
+  .replace(/</g, '&lt;')
+  .replace(/\*\*([^*]+)\*\*/g, '<span class="hero__accent">$1</span>');
+const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.href);
+---
+
+<section class:list={['hero', 'ink', `hero--${size}`]}>
+  <div class="hero__media">
+    <picture>
+      <source type="image/avif" srcset={image.avif} sizes={image.sizes} />
+      <source type="image/webp" srcset={image.webp} sizes={image.sizes} />
+      <img src={image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding="sync" fetchpriority="high" />
+    </picture>
+  </div>
+
+  <div class="wrap hero__inner">
+    {
+      crumbs.length > 0 && (
+        <nav class="hero__crumbs fine" aria-label="Breadcrumb">
+          <ol>
+            <li><a href={href('/')}>Home</a></li>
+            {crumbs.map((c, i) => (
+              <li>{i === crumbs.length - 1 ? <span aria-current="page">{c.name}</span> : <a href={href(c.path)}>{c.name}</a>}</li>
+            ))}
+          </ol>
+        </nav>
+      )
+    }
+
+    <h1 class="hero__h">
+      {kicker && <span class="eyebrow hero__kicker rise">{kicker}</span>}
+      <span class:list={['h1', size === 'page' && 'h1--page', 'rise', 'd1']} set:html={titleHtml} />
+    </h1>
+
+    <p class="lede hero__lede rise d2" set:html={rich(lede)} />
+
+    {
+      chips.length > 0 && (
+        <ul class="hero__chips rise d2">
+          {chips.map((c) => <li>{c}</li>)}
+        </ul>
+      )
+    }
+
+    <div class="actions rise d3">
+      <a class="btn primary" href={primaryHref} data-cta="hero-quote">{primary.label}</a>
+      <a class="btn ghost" href={BRAND.phoneHref} data-loc="hero"><Icon name="phone" />Call {BRAND.phone}</a>
+    </div>
+
+    <a class="rating hero__rating small rise d4" href={LINKS.googleReviews} target="_blank" rel="noopener">
+      <Stars />
+      <span>{RATING.value} from {RATING.countLabel} Google reviews</span>
+    </a>
+  </div>
+
+  <slot />
+</section>
+
+<style>
+  .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: clip;
+  }
+
+  .hero__media {
+    position: relative;
+    z-index: -1;
+    height: min(38svh, 21rem);
+    min-height: 13.5rem;
+    overflow: hidden;
+  }
+
+  .hero__media picture {
+    height: 100%;
+  }
+
+  .hero__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 62% 32%;
+  }
+
+  /* the photo melts into the ink */
+  .hero__media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgb(7 6 11 / 0.25) 0%, rgb(7 6 11 / 0) 30%, rgb(7 6 11 / 0.55) 72%, var(--ink) 100%);
+  }
+
+  .hero__inner {
+    position: relative;
+    display: grid;
+    justify-items: start;
+    gap: 1.25rem;
+    margin-top: -3.25rem;
+    padding-bottom: clamp(2.75rem, 7vw, 4rem);
+  }
+
+  .hero__crumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 0.5rem;
+    color: var(--on-ink-muted);
+  }
+
+  .hero__crumbs li + li::before {
+    content: '/';
+    margin-right: 0.5rem;
+    opacity: 0.5;
+  }
+
+  .hero__crumbs a {
+    text-decoration: none;
+  }
+
+  .hero__crumbs a:hover {
+    color: var(--on-ink);
+    text-decoration: underline;
+  }
+
+  .hero__h {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .hero__kicker {
+    font-family: var(--font);
+    line-height: 1.4;
+    max-width: 34rem;
+  }
+
+  .hero__h :global(.hero__accent) {
+    color: var(--violet);
+  }
+
+  .hero__lede {
+    max-width: 36rem;
+    color: #d6d3e2;
+  }
+
+  .hero__chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.25rem;
+    font-size: 0.9375rem;
+    font-weight: 540;
+  }
+
+  .hero__chips li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .hero__chips li::before {
+    content: '';
+    flex: none;
+    width: 0.45rem;
+    height: 0.45rem;
+    border-radius: 50%;
+    background: var(--violet);
+  }
+
+  .hero__rating {
+    margin-top: 0.25rem;
+  }
+
+  @media (min-width: 56rem) {
+    .hero__media {
+      position: absolute;
+      inset: 0 0 0 auto;
+      width: min(62%, 64rem);
+      height: auto;
+      min-height: 0;
+    }
+
+    .hero__media img {
+      object-position: 55% 30%;
+    }
+
+    .hero__media::after {
+      background:
+        linear-gradient(to right, var(--ink) 0%, rgb(7 6 11 / 0.86) 16%, rgb(7 6 11 / 0.3) 46%, rgb(7 6 11 / 0) 70%),
+        linear-gradient(to top, var(--ink) 0%, rgb(7 6 11 / 0) 26%),
+        linear-gradient(to bottom, rgb(7 6 11 / 0.5) 0%, rgb(7 6 11 / 0) 20%);
+    }
+
+    .hero__inner {
+      align-content: center;
+      gap: 1.5rem;
+      margin-top: 0;
+      min-height: clamp(30rem, 66svh, 40rem);
+      padding-block: clamp(3.5rem, 7vw, 5.5rem);
+    }
+
+    .hero--home .hero__inner {
+      min-height: clamp(34rem, 78svh, 47rem);
+    }
+
+    .hero__h,
+    .hero__lede {
+      max-width: min(58%, 44rem);
+    }
+
+    .hero--home .hero__h {
+      max-width: min(66%, 52rem);
+    }
+  }
+
+  /* ----- the page-load moment ----- */
+
+  @media (prefers-reduced-motion: no-preference) {
+    .hero__media img {
+      animation: settle 2.4s var(--ease) both;
+    }
+
+    .hero__media::before {
+      content: '';
+      position: absolute;
+      inset: -10% -60%;
+      z-index: 1;
+      background: linear-gradient(104deg, rgb(255 255 255 / 0) 42%, rgb(255 255 255 / 0.2) 50%, rgb(201 164 255 / 0.1) 54%, rgb(255 255 255 / 0) 62%);
+      mix-blend-mode: screen;
+      animation: sweep 1.9s 0.35s var(--ease) both;
+      pointer-events: none;
+    }
+
+    .hero :global(.rise) {
+      animation: rise 0.9s var(--ease) both;
+    }
+
+    .hero :global(.d1) {
+      animation-delay: 0.06s;
+    }
+
+    .hero :global(.d2) {
+      animation-delay: 0.14s;
+    }
+
+    .hero :global(.d3) {
+      animation-delay: 0.22s;
+    }
+
+    .hero :global(.d4) {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes settle {
+      from {
+        scale: 1.07;
+      }
+    }
+
+    @keyframes sweep {
+      from {
+        translate: -70% 0;
+      }
+      to {
+        translate: 70% 0;
+      }
+    }
+
+    @keyframes rise {
+      from {
+        translate: 0 1.4rem;
+      }
+    }
+  }
+</style>

@@ -1,0 +1,548 @@
+---
+/* Renders a page's blocks in order. One look per block type, so every service
+   page is built from the same parts. Shapes are in src/content.config.ts. */
+import Head from './Head.astro';
+import Photo from './Photo.astro';
+import Steps from './Steps.astro';
+import Faq from './Faq.astro';
+import Reviews from './Reviews.astro';
+import BeforeAfter from './BeforeAfter.astro';
+import Shades from './Shades.astro';
+import Ways from './Ways.astro';
+import AreaChips from './AreaChips.astro';
+import type { Block } from '../content.config';
+import type { PhotoId, PairId } from '../data/photos';
+import { photo } from '../data/photos';
+import { review } from '../data/reviews';
+import type { Service } from '../data/services';
+import { href } from '../lib/paths';
+import { rich } from '../lib/rich';
+
+interface Props {
+  blocks: Block[];
+  /** The service this page is about, so the town chips link to its town pages. */
+  service?: Service;
+}
+const { blocks, service } = Astro.props;
+
+const planeClass = (p: string) => ['band', p === 'ink' && 'ink', p === 'white' && 'white'];
+const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h) ? h : href(h));
+---
+
+{
+  blocks.map((b, i) => {
+    const hid = `b${i}-h`;
+    return (
+      <section class:list={planeClass(b.plane)} aria-labelledby={hid}>
+        <div class="wrap">
+          {b.type === 'intro' && (
+            <div class:list={['two', b.flip && 'flip', !b.photo && 'solo']}>
+              <div class="stack" style="--gap:1.4rem">
+                <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+                {b.body.length > 0 && (
+                  <div class="prose">
+                    {b.body.map((p) => <p set:html={rich(p)} />)}
+                  </div>
+                )}
+                {b.checks.length > 0 && (
+                  <ul class="checks">
+                    {b.checks.map((c) => <li><span set:html={rich(c)} /></li>)}
+                  </ul>
+                )}
+                {b.cta && <p><a class="arrow" href={link(b.cta.href)}>{b.cta.label}</a></p>}
+              </div>
+              {b.photo && (
+                <figure class="reveal">
+                  <div class="frame intro__frame">
+                    <Photo id={b.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
+                  </div>
+                  <figcaption class="cap">{photo(b.photo as PhotoId).caption}</figcaption>
+                </figure>
+              )}
+            </div>
+          )}
+
+          {b.type === 'cards' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <ul class:list={['grid', `c${b.columns}`]}>
+                {b.items.map((it) => (
+                  <li class="card pad tile reveal">
+                    {it.tag && <p class="tile__tag fine">{it.tag}</p>}
+                    <h3 class="h3">{it.title}</h3>
+                    <p class="small muted" set:html={rich(it.body)} />
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {b.type === 'tiers' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <ul class:list={['grid', b.tiers.length === 2 ? 'c2' : b.tiers.length === 4 ? 'c4' : 'c3', 'tiers']}>
+                {b.tiers.map((t) => (
+                  <li class:list={['card', 'tier', 'reveal', t.featured && 'tier--on']}>
+                    {t.featured && <p class="tier__flag fine">Most popular</p>}
+                    <div class="tier__top">
+                      {t.label && <p class="tile__tag fine">{t.label}</p>}
+                      <h3 class="h3 tier__name">{t.name}</h3>
+                      {t.price && (
+                        <p class="tier__price">
+                          {t.price}
+                          {t.priceNote && <span class="fine muted"> {t.priceNote}</span>}
+                        </p>
+                      )}
+                      {t.bestFor && <p class="small muted" set:html={rich(t.bestFor)} />}
+                    </div>
+                    <ul class="checks small">
+                      {t.features.map((f) => <li><span set:html={rich(f)} /></li>)}
+                    </ul>
+                    <a class:list={['btn', 'small', t.featured ? 'primary' : 'ghost']} href="#quote" data-cta={`tier-${t.name}`}>Get a quote</a>
+                  </li>
+                ))}
+              </ul>
+              {b.included.length > 0 && (
+                <dl class="incl">
+                  {b.included.map((it) => (
+                    <div>
+                      <dt>{it.title}</dt>
+                      <dd class="small muted">{it.body}</dd>
+                    </div>
+                  ))}
+                </dl>
+              )}
+              {b.footnote && <p class="small muted note" set:html={rich(b.footnote)} />}
+              {b.cta && <p class="note"><a class="arrow" href={link(b.cta.href)}>{b.cta.label}</a></p>}
+            </>
+          )}
+
+          {b.type === 'prices' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <div class:list={['grid', b.groups.length === 2 ? 'c2' : b.groups.length >= 3 ? 'c3' : '', 'prices']}>
+                {b.groups.map((g) => (
+                  <div class:list={['card', 'pg', 'reveal', g.featured && 'tier--on']}>
+                    {g.featured && <p class="tier__flag fine">Most popular</p>}
+                    <div class="pg__top">
+                      {g.label && <p class="tile__tag fine">{g.label}</p>}
+                      <h3 class="h3">{g.name}</h3>
+                      {g.blurb && <p class="small muted">{g.blurb}</p>}
+                    </div>
+                    {g.points.length > 0 && (
+                      <ul class="checks small">
+                        {g.points.map((p) => <li><span set:html={rich(p)} /></li>)}
+                      </ul>
+                    )}
+                    <ul class="pg__rows">
+                      {g.rows.map((r) => (
+                        <li>
+                          <div class="pg__line">
+                            <span class="pg__name">
+                              {r.name}
+                              {r.tag && <span class="pg__tag fine">{r.tag}</span>}
+                            </span>
+                            <span class="pg__price">{r.price}</span>
+                          </div>
+                          {r.body && <p class="small muted">{r.body}</p>}
+                          {r.time && <p class="fine muted pg__time">{r.time}</p>}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+              {b.footnote && <p class="small muted note" set:html={rich(b.footnote)} />}
+              <div class="actions note">
+                <a class="btn primary" href="#quote" data-cta="prices-quote">Get my exact price</a>
+                {b.cta && <a class="btn ghost" href={link(b.cta.href)}>{b.cta.label}</a>}
+              </div>
+            </>
+          )}
+
+          {b.type === 'compare' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <ul class:list={['grid', b.columns.length === 2 ? 'c2' : b.columns.length === 4 ? 'c4' : 'c3']}>
+                {b.columns.map((col, c) => (
+                  <li class:list={['card', 'pad', 'cmp', 'reveal', b.highlight === c && 'cmp--on']}>
+                    <h3 class="h3">{col}</h3>
+                    {b.highlight === c && <p class="tile__tag fine">What we do</p>}
+                    <dl>
+                      {b.rows.map((r) => (
+                        <div>
+                          <dt class="fine">{r.label}</dt>
+                          <dd class="small">{r.values[c]}</dd>
+                        </div>
+                      ))}
+                    </dl>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {b.type === 'steps' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Steps steps={b.steps} />
+              {b.footnote && <p class="small muted note" set:html={rich(b.footnote)} />}
+            </>
+          )}
+
+          {b.type === 'beforeAfter' && (
+            <div class="two">
+              <div class="stack" style="--gap:1.4rem">
+                <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+                {b.checks.length > 0 && (
+                  <ul class="checks">
+                    {b.checks.map((c) => <li><span set:html={rich(c)} /></li>)}
+                  </ul>
+                )}
+              </div>
+              <div class:list={['bas', `bas--${b.pairs.length}`]}>
+                {b.pairs.map((p) => <BeforeAfter pair={p as PairId} sizes={b.pairs.length > 1 ? '(min-width: 60rem) 22vw, 46vw' : '(min-width: 60rem) 40vw, 92vw'} />)}
+              </div>
+            </div>
+          )}
+
+          {b.type === 'gallery' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <ul class="gal">
+                {b.photos.map((id) => (
+                  <li class="reveal">
+                    <figure>
+                      <div class="frame gal__frame">
+                        <Photo id={id as PhotoId} ratio={1} widths={[300, 480, 640]} sizes="(min-width: 60rem) 24vw, 46vw" />
+                      </div>
+                      <figcaption class="cap">{photo(id as PhotoId).caption}</figcaption>
+                    </figure>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
+
+          {b.type === 'reviews' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Reviews reviews={b.ids.map((id) => review(id)!)} />
+            </>
+          )}
+
+          {b.type === 'shades' && (
+            <div class="two shades">
+              <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Shades shades={b.shades} note={b.note} />
+            </div>
+          )}
+
+          {b.type === 'ways' && (
+            <>
+              <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Ways row />
+            </>
+          )}
+
+          {b.type === 'areas' && (
+            <div class="areas">
+              <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <AreaChips service={service} />
+            </div>
+          )}
+
+          {b.type === 'faq' && (
+            <div class="faqs">
+              <Head id={hid} layout="left" eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
+              <Faq items={b.items} group={`faq-${i}`} />
+            </div>
+          )}
+        </div>
+      </section>
+    );
+  })
+}
+
+<style>
+  .note {
+    margin-top: clamp(1.5rem, 3vw, 2.25rem);
+    max-width: 52rem;
+  }
+
+  .solo {
+    grid-template-columns: minmax(0, 48rem);
+  }
+
+  .intro__frame {
+    aspect-ratio: 4 / 5;
+    max-height: 38rem;
+  }
+
+  /* cards */
+  .tile {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+  }
+
+  .tile__tag {
+    font-family: var(--font-display);
+    font-weight: 640;
+    font-stretch: 106%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--violet-ink);
+  }
+
+  :global(.ink) .tile__tag {
+    color: var(--violet-soft);
+  }
+
+  /* tiers and price groups */
+  .tiers,
+  .prices {
+    align-items: stretch;
+  }
+
+  .tier,
+  .pg {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1.4rem;
+    padding: clamp(1.4rem, 2.4vw, 2rem);
+  }
+
+  .pg {
+    grid-template-rows: auto;
+    align-content: start;
+  }
+
+  .tier--on {
+    border: 2px solid var(--violet-btn);
+  }
+
+  .tier__flag {
+    position: absolute;
+    top: 0;
+    right: 1.25rem;
+    translate: 0 -50%;
+    padding: 0.2rem 0.65rem;
+    border-radius: var(--r-sm);
+    background: var(--violet-btn);
+    color: #fff;
+    font-weight: 660;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .tier :global(.checks) {
+    align-content: start;
+  }
+
+  .tier__top,
+  .pg__top {
+    display: grid;
+    gap: 0.5rem;
+    align-content: start;
+  }
+
+  .tier__name {
+    font-size: clamp(1.35rem, 0.8vw + 1.15rem, 1.7rem);
+  }
+
+  .tier__price {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 740;
+    font-stretch: 112%;
+  }
+
+  .incl {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-top: clamp(1.5rem, 3vw, 2.25rem);
+    padding: clamp(1.25rem, 2.4vw, 1.75rem);
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--white);
+  }
+
+  :global(.ink) .incl {
+    border-color: var(--line-ink);
+    background: var(--ink-2);
+  }
+
+  .incl dt {
+    font-family: var(--font-display);
+    font-weight: 680;
+    font-stretch: 106%;
+  }
+
+  @media (min-width: 56rem) {
+    .incl {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .pg__rows {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  :global(.ink) .pg__rows,
+  :global(.ink) .pg__rows li {
+    border-color: var(--line-ink);
+  }
+
+  .pg__rows li {
+    display: grid;
+    gap: 0.3rem;
+    padding-block: 1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .pg__rows li:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .pg__line {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .pg__name {
+    font-family: var(--font-display);
+    font-weight: 660;
+    font-stretch: 106%;
+  }
+
+  .pg__tag {
+    display: inline-block;
+    margin-left: 0.5rem;
+    padding: 0.05rem 0.45rem;
+    border-radius: var(--r-sm);
+    background: #f0e7fe;
+    color: var(--violet-ink);
+    font-family: var(--font);
+    font-weight: 640;
+    vertical-align: 0.1em;
+    white-space: nowrap;
+  }
+
+  .pg__price {
+    flex: none;
+    font-family: var(--font-display);
+    font-weight: 720;
+    font-stretch: 108%;
+    white-space: nowrap;
+  }
+
+  .pg__time {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  /* compare */
+  .cmp {
+    display: grid;
+    align-content: start;
+    gap: 0.75rem;
+  }
+
+  .cmp--on {
+    border: 2px solid var(--violet-btn);
+  }
+
+  .cmp dl {
+    display: grid;
+    gap: 0.85rem;
+    margin-top: 0.25rem;
+  }
+
+  .cmp dt {
+    color: var(--muted);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  :global(.ink) .cmp dt {
+    color: var(--on-ink-muted);
+  }
+
+  /* before and after */
+  .bas {
+    display: grid;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .bas--2,
+  .bas--3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .bas--1 {
+    max-width: 30rem;
+    width: 100%;
+    justify-self: center;
+  }
+
+  @media (min-width: 60rem) {
+    .bas--3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  /* gallery */
+  .gal {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gal__frame {
+    aspect-ratio: 1;
+  }
+
+  @media (min-width: 56rem) {
+    .gal {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  /* shades */
+  @media (min-width: 60rem) {
+    .shades {
+      grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+      align-items: start;
+    }
+  }
+
+  /* areas and questions share the home page layout */
+  .areas,
+  .faqs {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 60rem) {
+    .areas,
+    .faqs {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .areas {
+      align-items: center;
+    }
+  }
+</style>

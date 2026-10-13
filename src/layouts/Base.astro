@@ -1,0 +1,88 @@
+---
+/* The page shell. Everything a page needs to score: one inlined stylesheet,
+   one preloaded font, an optional preloaded hero image, no blocking script. */
+import '../styles/global.css';
+import fontUrl from '../assets/fonts/MonaSans-rmr.woff2?url';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import StickyBar from '../components/StickyBar.astro';
+import Announcement from '../components/Announcement.astro';
+import Tracking from '../components/Tracking.astro';
+import { BRAND } from '../data/site';
+import { href } from '../lib/paths';
+import { business, graph } from '../lib/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  /** Site-relative path of this page, with slashes: "/ceramic-coating/". */
+  path: string;
+  /** Extra JSON-LD nodes for this page. */
+  schema?: object[];
+  /** The hero image, so the browser can start on it before it parses the body. */
+  preload?: { srcset: string; sizes: string; type: string };
+  /** Where the header and sticky bar "quote" actions go. Pages with a quote band use #quote. */
+  quoteHref?: string;
+  noindex?: boolean;
+  /** Hide the sticky bar and announcement (thank-you, legal). */
+  bare?: boolean;
+}
+
+const { title, description, path, schema = [], preload, quoteHref = '#quote', noindex = false, bare = false } = Astro.props;
+
+// A preview build (any base path) must never be indexed.
+const isPreview = import.meta.env.BASE_URL !== '/';
+const canonical = `https://refreshmyrideauto.com${path}`;
+const og = 'https://refreshmyrideauto.com/og-image.jpg';
+
+const fontCss = `
+@font-face{font-family:"Mona Sans";src:url(${fontUrl}) format("woff2");font-weight:400 800;font-stretch:100% 125%;font-style:normal;font-display:swap}
+@font-face{font-family:"Mona Fallback";src:local("Arial"),local("Liberation Sans"),local("Helvetica Neue"),local("Roboto");size-adjust:104.3%;ascent-override:104.5%;descent-override:30.7%;line-gap-override:0%}
+@font-face{font-family:"Mona Display Fallback";src:local("Arial Bold"),local("Arial"),local("Liberation Sans Bold"),local("Helvetica Neue Bold"),local("Roboto Bold");size-adjust:110%;ascent-override:99.1%;descent-override:29.1%;line-gap-override:0%}`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    {(isPreview || noindex) && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="theme-color" content="#07060b" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <link rel="preload" href={fontUrl} as="font" type="font/woff2" crossorigin />
+    {preload && <link rel="preload" as="image" imagesrcset={preload.srcset} imagesizes={preload.sizes} type={preload.type} fetchpriority="high" />}
+    <style set:html={fontCss}></style>
+
+    <link rel="icon" href={href('/favicon.ico')} sizes="48x48" />
+    <link rel="icon" href={href('/favicon-32.png')} type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href={href('/apple-touch-icon.png')} />
+    <link rel="manifest" href={href('/site.webmanifest')} />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={BRAND.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={og} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <script type="application/ld+json" set:html={graph([business(), ...schema])} />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to main content</a>
+    {!bare && <Announcement />}
+    <Header quoteHref={quoteHref} current={path} />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+    {!bare && <StickyBar quoteHref={quoteHref} />}
+    <Tracking />
+  </body>
+</html>

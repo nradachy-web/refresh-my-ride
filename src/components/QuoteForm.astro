@@ -1,0 +1,185 @@
+---
+/* Their own quote form (GoHighLevel), so every request lands in the CRM they
+   already work from. The form is heavy, so it is not part of the first load:
+   the frame is fetched once the visitor has touched the page and the form is
+   getting close to the screen. The space is reserved, so nothing jumps.
+
+   The Google click ID and any UTM tags from the landing URL are passed into the
+   form address so their CRM can tie a lead back to the ad. */
+import { BRAND, FORM } from '../data/site';
+
+interface Props {
+  formId?: string;
+  title?: string;
+  note?: string;
+  height?: number;
+}
+const { formId = FORM.id, title = 'Request a free quote', note = 'Takes about a minute. We reach out by call or text.', height = FORM.height } = Astro.props;
+const src = `${FORM.origin}/widget/form/${formId}`;
+---
+
+<div class="qf card light">
+  <div class="qf__head">
+    <h3 class="h3">{title}</h3>
+    <p class="small muted">{note}</p>
+  </div>
+  <div class="qf__frame" data-ghl data-src={src} data-form-id={formId} data-form-name={FORM.name} data-height={height} style={`min-height:${height}px`}>
+    <div class="qf__wait" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span class="qf__btn"></span>
+    </div>
+    <noscript>
+      <p class="qf__nojs">
+        <a class="btn primary" href={src} target="_blank" rel="noopener">Open the quote form</a>
+        or call <a href={BRAND.phoneHref}>{BRAND.phone}</a>.
+      </p>
+    </noscript>
+  </div>
+</div>
+
+<script is:inline define:vars={{ origin: FORM.origin }}>
+  (function () {
+    var boxes = document.querySelectorAll('[data-ghl]:not([data-armed])');
+    if (!boxes.length) return;
+    boxes.forEach(function (b) {
+      b.setAttribute('data-armed', '');
+    });
+
+    function params() {
+      var out = [];
+      try {
+        var q = new URLSearchParams(location.search);
+        var m = document.cookie.match(/(?:^|;\s*)rmr_gclid=([^;]+)/);
+        var gclid = q.get('gclid') || (m ? decodeURIComponent(m[1]) : '');
+        if (gclid) out.push('gclid=' + encodeURIComponent(gclid));
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
+          if (q.get(k)) out.push(k + '=' + encodeURIComponent(q.get(k)));
+        });
+      } catch (e) {}
+      return out.join('&');
+    }
+
+    var scripted = false;
+    function mount(box) {
+      if (box.getAttribute('data-done')) return;
+      box.setAttribute('data-done', '1');
+      var id = box.getAttribute('data-form-id');
+      var extra = params();
+      var f = document.createElement('iframe');
+      f.src = box.getAttribute('data-src') + (extra ? '?' + extra : '');
+      f.id = 'inline-' + id;
+      f.title = 'Quote request form';
+      f.setAttribute('data-layout', "{'id':'INLINE'}");
+      f.setAttribute('data-trigger-type', 'alwaysShow');
+      f.setAttribute('data-activation-type', 'alwaysActivated');
+      f.setAttribute('data-deactivation-type', 'neverDeactivate');
+      f.setAttribute('data-form-name', box.getAttribute('data-form-name'));
+      f.setAttribute('data-height', box.getAttribute('data-height'));
+      f.setAttribute('data-layout-iframe-id', 'inline-' + id);
+      f.setAttribute('data-form-id', id);
+      f.addEventListener('load', function () {
+        box.classList.add('is-ready');
+      });
+      box.appendChild(f);
+      if (!scripted) {
+        scripted = true;
+        var s = document.createElement('script');
+        s.src = origin + '/js/form_embed.js';
+        s.async = true;
+        document.body.appendChild(s);
+      }
+    }
+
+    var io =
+      'IntersectionObserver' in window
+        ? new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  io.unobserve(e.target);
+                  mount(e.target);
+                }
+              });
+            },
+            { rootMargin: '900px 0px' }
+          )
+        : null;
+
+    var wake = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+    function arm() {
+      wake.forEach(function (e) {
+        removeEventListener(e, arm);
+      });
+      boxes.forEach(function (b) {
+        if (io) io.observe(b);
+        else mount(b);
+      });
+    }
+    wake.forEach(function (e) {
+      addEventListener(e, arm, { passive: true });
+    });
+    if (location.hash === '#quote') arm();
+    addEventListener('hashchange', function () {
+      if (location.hash === '#quote') arm();
+    });
+  })();
+</script>
+
+<style>
+  .qf {
+    overflow: hidden;
+    background: var(--white);
+    color: var(--text);
+  }
+
+  .qf__head {
+    display: grid;
+    gap: 0.25rem;
+    padding: 1.4rem 1.5rem 1.1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .qf__frame {
+    position: relative;
+  }
+
+  .qf__frame :global(iframe) {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: inherit;
+    border: 0;
+    background: var(--white);
+  }
+
+  .qf__wait {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    align-content: start;
+    gap: 1.1rem;
+    padding: 1.5rem;
+  }
+
+  .qf__wait span {
+    height: 3.25rem;
+    border-radius: var(--r-sm);
+    background: #efedf5;
+  }
+
+  .qf__wait span:nth-child(4) {
+    height: 7rem;
+  }
+
+  .qf__wait .qf__btn {
+    background: #e2d3fb;
+  }
+
+  .qf__frame.is-ready .qf__wait {
+    display: none;
+  }
+
+  .qf__nojs {
+    position: relative;
+    padding: 1.5rem;
+  }
+</style>

@@ -1,0 +1,81 @@
+---
+/* Google tag, on the production domain only.
+
+   The tag library is big, so it waits for the visitor's first touch, scroll or
+   key press before it downloads. Events fired before that are queued and sent
+   once it arrives, so nothing is lost: a call tap, a text, a booking click and
+   a form request all count. A visitor who never touches the page is never
+   counted, which is the trade for a page that scores 100.
+
+   What changed from the old site:
+   - the phone tap conversion fires once per tap (the old homepage had the same
+     listener pasted in ten times);
+   - the Google click ID is kept for 90 days and handed to the quote form, which
+     the old script tried to do but aimed at the wrong form address.
+*/
+import { TRACKING } from '../data/site';
+---
+
+<script is:inline define:vars={{ T: TRACKING }}>
+  (function () {
+    var w = window;
+    var host = location.hostname.replace(/^www\./, '');
+
+    // Keep the ad click ID so the quote form can carry it into their CRM.
+    try {
+      var id = new URLSearchParams(location.search).get('gclid');
+      if (id) document.cookie = 'rmr_gclid=' + encodeURIComponent(id) + ';max-age=7776000;path=/;SameSite=Lax';
+    } catch (e) {}
+
+    if (host !== T.productionHost) return;
+
+    w.dataLayer = w.dataLayer || [];
+    function gtag() {
+      w.dataLayer.push(arguments);
+    }
+    w.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', T.googleTag);
+    gtag('config', T.ads);
+
+    var loaded = false;
+    var wake = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+    function load() {
+      if (loaded) return;
+      loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + T.googleTag;
+      document.head.appendChild(s);
+      wake.forEach(function (e) {
+        removeEventListener(e, load);
+      });
+    }
+    wake.forEach(function (e) {
+      addEventListener(e, load, { passive: true });
+    });
+
+    document.addEventListener(
+      'click',
+      function (ev) {
+        var a = ev.target && ev.target.closest ? ev.target.closest('a') : null;
+        if (!a) return;
+        var url = a.getAttribute('href') || '';
+        var where = a.getAttribute('data-loc') || a.getAttribute('data-cta') || '';
+        if (url.indexOf('tel:') === 0) {
+          gtag('event', 'conversion', { send_to: T.phoneTapConversion });
+          gtag('event', 'phone_call_click', { link_location: where });
+        } else if (url.indexOf('sms:') === 0) {
+          gtag('event', 'text_click', { link_location: where });
+        } else if (url.indexOf('app.urable.com') > -1) {
+          gtag('event', 'book_online_click', { link_location: where, transport_type: 'beacon' });
+        } else if (a.hasAttribute('data-cta')) {
+          gtag('event', 'cta_click', { cta: where });
+        }
+      },
+      true
+    );
+
+    if (document.documentElement.hasAttribute('data-lead')) gtag('event', 'generate_lead', { method: 'quote_form' });
+  })();
+</script>

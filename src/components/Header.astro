@@ -1,0 +1,310 @@
+---
+/* Sticky header: their logo, the four services by name, the phone number and
+   one action. Below 68rem the links fold into a full screen menu built on the
+   native popover, so it opens, closes and traps Escape without any script. */
+import { getImage } from 'astro:assets';
+import logo from '../assets/brand/logo-wordmark.png';
+import Icon from './Icon.astro';
+import { BRAND, LINKS } from '../data/site';
+import { SERVICES } from '../data/services';
+import { CITIES, hubPath } from '../data/cities';
+import { href } from '../lib/paths';
+
+interface Props {
+  quoteHref: string;
+  current: string;
+}
+const { quoteHref, current } = Astro.props;
+
+const main = SERVICES.filter((s) => s.id !== 'mobile-detailing');
+const links = [
+  ...main.map((s) => ({ label: s.nav, path: s.path })),
+  { label: 'Service areas', path: '/service-areas/' },
+  { label: 'About', path: '/about-us/' },
+];
+
+// 2x of the largest size it is ever shown at (132 by 66).
+const img = await getImage({ src: logo, width: 264, format: 'webp', quality: 90 });
+const img1x = await getImage({ src: logo, width: 132, format: 'webp', quality: 90 });
+const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
+---
+
+<header class="hdr ink">
+  <div class="wrap hdr__row">
+    <a class="hdr__logo" href={href('/')} aria-label={`${BRAND.name} home`}>
+      <img src={img1x.src} srcset={`${img1x.src} 1x, ${img.src} 2x`} width="132" height="66" alt={`${BRAND.name} logo`} decoding="async" />
+    </a>
+
+    <nav class="hdr__nav" aria-label="Main">
+      <ul>
+        {
+          links.map((l) => (
+            <li>
+              <a href={href(l.path)} aria-current={current === l.path ? 'page' : undefined}>
+                {l.label}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+
+    <div class="hdr__end">
+      <a class="hdr__phone" href={BRAND.phoneHref} data-loc="header">
+        <Icon name="phone" />
+        <span>{BRAND.phone}</span>
+      </a>
+      <a class="btn primary small hdr__cta" href={quote} data-cta="header-quote">Get a free quote</a>
+      <button class="hdr__menu" type="button" popovertarget="menu" aria-label="Open menu">
+        <Icon name="menu" />
+      </button>
+    </div>
+  </div>
+</header>
+
+<div id="menu" class="menu ink" popover>
+  <div class="menu__top">
+    <a href={href('/')} aria-label={`${BRAND.name} home`}>
+      <img src={img1x.src} srcset={`${img1x.src} 1x, ${img.src} 2x`} width="132" height="66" alt="" loading="lazy" decoding="async" />
+    </a>
+    <button class="hdr__menu" type="button" popovertarget="menu" popovertargetaction="hide" aria-label="Close menu">
+      <Icon name="close" />
+    </button>
+  </div>
+  <nav class="menu__nav" aria-label="Menu">
+    <p class="eyebrow">Services</p>
+    <ul>
+      {SERVICES.map((s) => <li><a href={href(s.path)}>{s.name}</a></li>)}
+    </ul>
+    <p class="eyebrow">Service areas</p>
+    <ul class="menu__areas">
+      {CITIES.map((c) => <li><a href={href(hubPath(c))}>{c.name}</a></li>)}
+    </ul>
+    <p class="eyebrow">The shop</p>
+    <ul>
+      <li><a href={href('/about-us/')}>About</a></li>
+      <li><a href={href('/reviews/')}>Reviews and work</a></li>
+      <li><a href={href('/gift-cards/')}>Gift cards</a></li>
+      <li><a href={href('/contact-us/')}>Contact</a></li>
+    </ul>
+  </nav>
+  <div class="menu__actions">
+    <a class="btn primary" href={href('/get-a-quote/')} data-cta="menu-quote">Get a free quote</a>
+    <a class="btn ghost" href={BRAND.phoneHref} data-loc="menu"><Icon name="phone" />Call {BRAND.phone}</a>
+    <a class="btn ghost" href={LINKS.book} target="_blank" rel="noopener" data-cta="menu-book"><Icon name="calendar" />Book online</a>
+  </div>
+</div>
+
+<style>
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 1px solid var(--line-ink);
+  }
+
+  .hdr__row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    min-height: var(--header);
+  }
+
+  .hdr__logo {
+    flex: none;
+    display: block;
+    margin-block: -0.25rem;
+  }
+
+  .hdr__logo img {
+    width: clamp(6.6rem, 9vw, 8.25rem);
+  }
+
+  .hdr__nav {
+    display: none;
+    margin-inline: auto;
+  }
+
+  .hdr__nav ul {
+    display: flex;
+    gap: clamp(0rem, 0.7vw, 0.75rem);
+  }
+
+  .hdr__nav a {
+    display: block;
+    padding: 0.65rem 0.6rem;
+    font-size: 0.9375rem;
+    font-weight: 560;
+    text-decoration: none;
+    white-space: nowrap;
+    color: var(--on-ink);
+    border-radius: var(--r-sm);
+    transition: color 0.16s var(--ease);
+  }
+
+  .hdr__nav a:hover,
+  .hdr__nav a[aria-current='page'] {
+    color: var(--violet-soft);
+  }
+
+  .hdr__end {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-left: auto;
+  }
+
+  .hdr__phone {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-height: 2.875rem;
+    padding-inline: 0.4rem;
+    font-family: var(--font-display);
+    font-weight: 660;
+    font-stretch: 106%;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .hdr__phone:hover {
+    color: var(--violet-soft);
+  }
+
+  .hdr__phone :global(svg) {
+    width: 1.15rem;
+    height: 1.15rem;
+    color: var(--violet-soft);
+  }
+
+  .hdr__cta {
+    display: none;
+    white-space: nowrap;
+  }
+
+  .hdr__menu {
+    display: grid;
+    place-items: center;
+    width: 2.875rem;
+    height: 2.875rem;
+    margin-right: -0.5rem;
+    border: 0;
+    border-radius: var(--r-sm);
+    background: none;
+    cursor: pointer;
+  }
+
+  @media (min-width: 30rem) {
+    .hdr__cta {
+      display: inline-flex;
+    }
+  }
+
+  @media (max-width: 29.99rem) {
+    .hdr__phone span {
+      font-size: 0.9375rem;
+    }
+  }
+
+  @media (min-width: 68rem) {
+    .hdr__nav {
+      display: block;
+    }
+
+    .hdr__end {
+      margin-left: 0;
+    }
+
+    .hdr__menu {
+      display: none;
+    }
+  }
+
+  /* ----- the menu ----- */
+
+  .menu {
+    display: none;
+  }
+
+  @supports selector(:popover-open) {
+    .menu {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      max-height: none;
+      margin: 0;
+      padding: 0 var(--gutter) 2rem;
+      border: 0;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      opacity: 0;
+      translate: 0 -0.75rem;
+      transition:
+        opacity 0.22s var(--ease),
+        translate 0.22s var(--ease),
+        overlay 0.22s allow-discrete,
+        display 0.22s allow-discrete;
+    }
+
+    .menu:popover-open {
+      display: block;
+      opacity: 1;
+      translate: 0 0;
+    }
+
+    @starting-style {
+      .menu:popover-open {
+        opacity: 0;
+        translate: 0 -0.75rem;
+      }
+    }
+  }
+
+  .menu__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: var(--header);
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--line-ink);
+  }
+
+  .menu__top img {
+    width: 6.6rem;
+  }
+
+  .menu__nav .eyebrow {
+    margin: 1.5rem 0 0.35rem;
+  }
+
+  .menu__nav a {
+    display: block;
+    padding: 0.55rem 0;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 680;
+    font-stretch: 110%;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+  }
+
+  .menu__areas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 1rem;
+  }
+
+  .menu__areas a {
+    font-size: 1.0625rem;
+    font-weight: 600;
+    padding: 0.5rem 0;
+  }
+
+  .menu__actions {
+    display: grid;
+    gap: 0.6rem;
+    margin-top: 2rem;
+  }
+</style>

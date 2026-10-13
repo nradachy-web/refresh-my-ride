@@ -1,0 +1,20 @@
+---
+/* A band's heading: small label, h2, and an optional line beside it. */
+import { rich } from '../lib/rich';
+
+interface Props {
+  eyebrow?: string;
+  title: string;
+  intro?: string;
+  layout?: 'split' | 'center' | 'left';
+  as?: 'h2' | 'h3';
+  id?: string;
+}
+const { eyebrow, title, intro, layout = 'split', as: Tag = 'h2', id } = Astro.props;
+---
+
+<div class:list={['head', layout !== 'left' && layout]}>
+  {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+  <Tag class="h2" id={id}>{title}</Tag>
+  {intro && <p class="lede" set:html={rich(intro)} />}
+</div>

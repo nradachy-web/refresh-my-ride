@@ -1,0 +1,97 @@
+---
+/* Shop, driveway or valet. The wording is theirs, so it lives in one place. */
+import Icon from './Icon.astro';
+import { BRAND } from '../data/site';
+
+interface Props {
+  /** Stack the three in a row instead of a column. */
+  row?: boolean;
+}
+const { row = false } = Astro.props;
+
+const WAYS = [
+  {
+    icon: 'shop',
+    title: 'Drop it off',
+    body: 'Bring it to the shop on Louise Ave. Enclosed bays, controlled lighting and indoor storage. Required for ceramic coating, window tint and paint correction.',
+  },
+  {
+    icon: 'van',
+    title: 'We come to you',
+    body: `Mobile detailing at your home or workplace, anywhere within ${BRAND.mobileRadius} of ${BRAND.city}. Same products, same process, your driveway.`,
+  },
+  {
+    icon: 'key',
+    title: 'Valet pickup',
+    body: 'We pick the vehicle up, service it at the shop and bring it back. The option most of our coating customers choose when they cannot spare the day.',
+  },
+] as const;
+---
+
+<ul class:list={['ways', row && 'ways--row']}>
+  {
+    WAYS.map((w) => (
+      <li class="reveal">
+        <span class="ways__icon"><Icon name={w.icon} /></span>
+        <div>
+          <h3 class="h3">{w.title}</h3>
+          <p class="small muted">{w.body}</p>
+        </div>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .ways {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .ways li {
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1.1rem;
+    align-items: start;
+  }
+
+  .ways__icon {
+    display: grid;
+    place-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--r);
+    background: #f0e7fe;
+    color: var(--violet-ink);
+  }
+
+  :global(.ink) .ways__icon {
+    background: rgb(160 68 252 / 0.18);
+    color: var(--violet-soft);
+  }
+
+  .ways li div {
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  @media (min-width: 60rem) {
+    .ways--row {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .ways--row li {
+      grid-template-columns: 1fr;
+      padding: 1.5rem;
+      border: 1px solid var(--line);
+      border-radius: var(--r);
+      background: var(--white);
+    }
+
+    :global(.ink) .ways--row li {
+      border-color: var(--line-ink);
+      background: var(--ink-2);
+    }
+  }
+</style>

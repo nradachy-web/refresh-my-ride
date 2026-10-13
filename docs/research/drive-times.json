@@ -1,0 +1,65 @@
+{
+ "sterling-heights": {
+  "measured_from": "40555 Utica Rd, Sterling Heights, MI",
+  "lat": 42.5916003,
+  "lon": -83.0113585,
+  "miles": 6.6,
+  "minutes_no_traffic": 13
+ },
+ "shelby-township": {
+  "measured_from": "52700 Van Dyke Ave, Shelby Township, MI",
+  "lat": 42.6821032,
+  "lon": -83.0308223,
+  "miles": 13.1,
+  "minutes_no_traffic": 25
+ },
+ "macomb-township": {
+  "measured_from": "54111 Broughton Rd, Macomb, MI",
+  "lat": 42.6957208,
+  "lon": -82.9232204,
+  "miles": 15.5,
+  "minutes_no_traffic": 30
+ },
+ "rochester-hills": {
+  "measured_from": "1000 Rochester Hills Dr, Rochester Hills, MI",
+  "lat": 42.6633666,
+  "lon": -83.1582745,
+  "miles": 18.7,
+  "minutes_no_traffic": 31
+ },
+ "troy": {
+  "measured_from": "500 W Big Beaver Rd, Troy, MI",
+  "lat": 42.5637835,
+  "lon": -83.1553356,
+  "miles": 13.6,
+  "minutes_no_traffic": 25
+ },
+ "birmingham": {
+  "measured_from": "151 Martin St, Birmingham, MI",
+  "lat": 42.5455782,
+  "lon": -83.2155271,
+  "miles": 17.2,
+  "minutes_no_traffic": 32
+ },
+ "royal-oak": {
+  "measured_from": "203 S Troy St, Royal Oak, MI",
+  "lat": 42.48876,
+  "lon": -83.1415096,
+  "miles": 14.4,
+  "minutes_no_traffic": 23
+ },
+ "west-bloomfield": {
+  "measured_from": "4550 Walnut Lake Rd, West Bloomfield, MI",
+  "lat": 42.5572448,
+  "lon": -83.3735062,
+  "miles": 25.1,
+  "minutes_no_traffic": 45
+ },
+ "clinton-township": {
+  "measured_from": "40700 Romeo Plank Rd, Clinton Township, MI",
+  "lat": 42.5960358,
+  "lon": -82.9302914,
+  "miles": 6.3,
+  "minutes_no_traffic": 14
+ }
+}

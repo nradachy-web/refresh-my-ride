@@ -1,0 +1,208 @@
+---
+/* Tint shade preview: five radio buttons and five pictures of the same car.
+   Pure CSS, so it works with script off. The pictures are their illustration,
+   and the note under it says so. */
+import Photo from './Photo.astro';
+import type { PhotoId } from '../data/photos';
+
+interface Shade {
+  pct: '05' | '20' | '35' | '50' | '75';
+  label: string;
+  name: string;
+  body: string;
+  privacy: string;
+  seeingOut: string;
+}
+interface Props {
+  shades: Shade[];
+  note: string;
+}
+const { shades, note } = Astro.props;
+const start = shades.findIndex((s) => s.pct === '20');
+---
+
+<div class="sh">
+  <fieldset class="sh__picker">
+    <legend class="sr">Choose a tint shade to preview</legend>
+    {
+      shades.map((s, i) => (
+        <label class="sh__opt">
+          <input type="radio" name="shade" value={s.pct} checked={i === (start < 0 ? 0 : start)} />
+          <span class="sh__pct">{Number(s.pct)}%</span>
+          <span class="sh__lab fine">{s.label}</span>
+        </label>
+      ))
+    }
+  </fieldset>
+
+  <div class="sh__stage frame">
+    {
+      shades.map((s) => (
+        <div class="sh__car" data-pct={s.pct}>
+          <Photo id={`tint-${s.pct}` as PhotoId} widths={[480, 800, 1200]} sizes="(min-width: 60rem) 60vw, 100vw" quality={66} />
+        </div>
+      ))
+    }
+  </div>
+
+  <div class="sh__info">
+    {
+      shades.map((s) => (
+        <div class="sh__card" data-pct={s.pct}>
+          <h3 class="h3">{Number(s.pct)}%: {s.name}</h3>
+          <p class="small muted">{s.body}</p>
+          <dl class="sh__meta small">
+            <div><dt>Privacy</dt><dd>{s.privacy}</dd></div>
+            <div><dt>Seeing out</dt><dd>{s.seeingOut}</dd></div>
+          </dl>
+        </div>
+      ))
+    }
+  </div>
+  <p class="fine muted sh__note">{note}</p>
+</div>
+
+<style>
+  .sh {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  .sh__picker {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  .sh__opt {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: 0.1rem;
+    padding: 0.7rem 0.25rem;
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+    background: var(--white);
+    cursor: pointer;
+    transition:
+      border-color 0.18s var(--ease),
+      background-color 0.18s var(--ease);
+  }
+
+  :global(.ink) .sh__opt {
+    border-color: var(--line-ink);
+    background: var(--ink-2);
+  }
+
+  .sh__opt input {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .sh__pct {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw + 0.6rem, 1.6rem);
+    font-weight: 760;
+    font-stretch: 114%;
+    line-height: 1.1;
+  }
+
+  .sh__lab {
+    color: var(--muted);
+    text-align: center;
+  }
+
+  :global(.ink) .sh__lab {
+    color: var(--on-ink-muted);
+  }
+
+  .sh__opt:has(input:checked) {
+    border-color: var(--violet-btn);
+    background: var(--violet-btn);
+    color: #fff;
+  }
+
+  .sh__opt:has(input:checked) .sh__lab {
+    color: #fff;
+  }
+
+  .sh__opt:has(input:focus-visible) {
+    outline: 2px solid var(--violet-soft);
+    outline-offset: 3px;
+  }
+
+  .sh__stage {
+    display: grid;
+    aspect-ratio: 1200 / 461;
+    background: #5e5e5e;
+  }
+
+  .sh__car,
+  .sh__card {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      opacity 0.35s var(--ease),
+      visibility 0.35s;
+  }
+
+  .sh__info {
+    display: grid;
+  }
+
+  .sh__card {
+    display: grid;
+    gap: 0.5rem;
+  }
+
+  .sh__meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 2rem;
+  }
+
+  .sh__meta div {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .sh__meta dt {
+    color: var(--muted);
+  }
+
+  :global(.ink) .sh__meta dt {
+    color: var(--on-ink-muted);
+  }
+
+  .sh__meta dd {
+    font-weight: 640;
+  }
+
+  .sh:has(input[value='05']:checked) [data-pct='05'],
+  .sh:has(input[value='20']:checked) [data-pct='20'],
+  .sh:has(input[value='35']:checked) [data-pct='35'],
+  .sh:has(input[value='50']:checked) [data-pct='50'],
+  .sh:has(input[value='75']:checked) [data-pct='75'] {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .sh__note {
+    max-width: 46rem;
+  }
+
+  @media (max-width: 39.99rem) {
+    .sh__lab {
+      display: none;
+    }
+  }
+</style>

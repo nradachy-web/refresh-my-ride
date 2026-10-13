@@ -1,0 +1,660 @@
+/* ============================================================================
+   REFRESH MY RIDE: THE SYSTEM
+
+   Two planes. "Ink" is the shop at night: near black with a trace of violet.
+   "Paper" is daylight: a cool off white. Bands alternate between them.
+   One accent, the violet from their logo, spent on actions and small marks.
+   One family, Mona Sans: wide and heavy for display, normal width for reading.
+   Sentence case everywhere. Radii stay small. No gradients as decoration.
+   See docs/DESIGN.md.
+   ========================================================================== */
+
+:root {
+  --ink: #07060b;
+  --ink-2: #100f17;
+  --ink-3: #1a1824;
+  --line-ink: rgb(255 255 255 / 0.13);
+  --on-ink: #f5f4f9;
+  --on-ink-muted: #b7b4c6;
+
+  --paper: #f6f5fa;
+  --white: #fff;
+  --line: #dfdce9;
+  --text: #14121c;
+  --muted: #55526a;
+
+  --violet: #a044fc; /* the logo */
+  --violet-btn: #8a2ef0; /* white text sits on this at 5.6:1 */
+  --violet-btn-hover: #7a1fe0;
+  --violet-ink: #6a1dcc; /* violet text on paper */
+  --violet-soft: #c9a4ff; /* violet text on ink */
+  --gold: #f7b500;
+
+  --font: 'Mona Sans', 'Mona Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  --font-display: 'Mona Sans', 'Mona Display Fallback', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+
+  --wrap: 77rem;
+  --gutter: clamp(1.25rem, 4.2vw, 2.75rem);
+  --band: clamp(4rem, 8.5vw, 7.5rem);
+  --r: 6px;
+  --r-sm: 4px;
+  --header: 4.5rem;
+  --ease: cubic-bezier(0.22, 0.8, 0.26, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  scroll-padding-top: calc(var(--header) + 1rem);
+  background: var(--ink);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--paper);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+dl,
+dd,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--violet);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.ink :focus-visible,
+.ink:focus-visible {
+  outline-color: var(--violet-soft);
+}
+
+::selection {
+  background: var(--violet-btn);
+  color: #fff;
+}
+
+.skip {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.75rem 1rem;
+  background: var(--white);
+  color: var(--text);
+  border-radius: var(--r-sm);
+  font-weight: 650;
+}
+
+.skip:focus {
+  top: 1rem;
+}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ---------- type ---------- */
+
+.display,
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+}
+
+.h1 {
+  font-size: clamp(2.5rem, 6.4vw + 0.6rem, 5.75rem);
+  font-weight: 780;
+  font-stretch: 118%;
+  line-height: 0.98;
+  letter-spacing: -0.022em;
+}
+
+.h1--page {
+  font-size: clamp(2.25rem, 4.6vw + 0.7rem, 4.5rem);
+  line-height: 1.02;
+}
+
+.h2 {
+  font-size: clamp(1.85rem, 2.9vw + 0.95rem, 3.25rem);
+  font-weight: 740;
+  font-stretch: 114%;
+  line-height: 1.04;
+  letter-spacing: -0.018em;
+}
+
+.h3 {
+  font-size: clamp(1.2rem, 0.5vw + 1.05rem, 1.4rem);
+  font-weight: 680;
+  font-stretch: 108%;
+  line-height: 1.2;
+  letter-spacing: -0.008em;
+}
+
+.eyebrow {
+  font-size: 0.8125rem;
+  font-weight: 620;
+  font-stretch: 106%;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--violet-ink);
+}
+
+.ink .eyebrow {
+  color: var(--violet-soft);
+}
+
+.lede {
+  font-size: clamp(1.0625rem, 0.45vw + 1rem, 1.25rem);
+  line-height: 1.55;
+  color: var(--muted);
+  text-wrap: pretty;
+}
+
+.ink .lede {
+  color: var(--on-ink-muted);
+}
+
+.prose p + p {
+  margin-top: 1em;
+}
+
+.prose a,
+.link {
+  color: var(--violet-ink);
+  font-weight: 560;
+}
+
+.ink .prose a,
+.ink .link {
+  color: var(--violet-soft);
+}
+
+.muted,
+.ink .light .muted {
+  color: var(--muted);
+}
+
+.ink .muted {
+  color: var(--on-ink-muted);
+}
+
+/* a light island inside an ink band (the quote form card) */
+.light {
+  background: var(--white);
+  color: var(--text);
+}
+
+.small {
+  font-size: 0.9375rem;
+}
+
+.fine {
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+/* ---------- layout ---------- */
+
+.wrap {
+  width: min(100% - 2 * var(--gutter), var(--wrap));
+  margin-inline: auto;
+}
+
+.band {
+  padding-block: var(--band);
+  background: var(--paper);
+  color: var(--text);
+}
+
+.band.white {
+  background: var(--white);
+}
+
+.ink {
+  background: var(--ink);
+  color: var(--on-ink);
+}
+
+.band.tight {
+  padding-block: clamp(2.75rem, 5vw, 4.5rem);
+}
+
+.band + .band:not(.ink):not(.white) {
+  border-top: 1px solid var(--line);
+}
+
+.head {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+
+.head .eyebrow {
+  margin-bottom: 0.15rem;
+}
+
+@media (min-width: 60rem) {
+  .head.split {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+    column-gap: clamp(2rem, 6vw, 6rem);
+    align-items: end;
+  }
+
+  .head.split .eyebrow {
+    grid-column: 1 / -1;
+  }
+}
+
+.head.center {
+  justify-items: center;
+  text-align: center;
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.grid {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.grid > * {
+  min-width: 0;
+}
+
+@media (min-width: 40rem) {
+  .grid.c2,
+  .grid.c4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 60rem) {
+  .grid.c3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .grid.c4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.two {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.two > * {
+  min-width: 0;
+}
+
+@media (min-width: 60rem) {
+  .two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .two.wide-left {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  }
+
+  .two.flip > :first-child {
+    order: 2;
+  }
+}
+
+.stack > * + * {
+  margin-top: var(--gap, 1.25rem);
+}
+
+/* ---------- buttons ---------- */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  min-height: 3.375rem;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid transparent;
+  border-radius: var(--r);
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 660;
+  font-stretch: 106%;
+  line-height: 1.2;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.18s var(--ease),
+    border-color 0.18s var(--ease),
+    color 0.18s var(--ease),
+    transform 0.18s var(--ease);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn.primary {
+  background: var(--violet-btn);
+  color: #fff;
+}
+
+.btn.primary:hover {
+  background: var(--violet-btn-hover);
+}
+
+.btn.ghost {
+  border-color: rgb(20 18 28 / 0.28);
+  color: var(--text);
+}
+
+.btn.ghost:hover {
+  border-color: var(--text);
+  background: rgb(20 18 28 / 0.04);
+}
+
+.ink .btn.ghost {
+  border-color: rgb(255 255 255 / 0.34);
+  color: var(--on-ink);
+}
+
+.ink .btn.ghost:hover {
+  border-color: #fff;
+  background: rgb(255 255 255 / 0.07);
+}
+
+.btn.small {
+  min-height: 2.875rem;
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9375rem;
+}
+
+.btn svg {
+  flex: none;
+  width: 1.1em;
+  height: 1.1em;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+@media (max-width: 29.99rem) {
+  .actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
+.arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-display);
+  font-weight: 640;
+  font-stretch: 106%;
+  text-decoration: none;
+  color: var(--violet-ink);
+}
+
+.ink .arrow {
+  color: var(--violet-soft);
+}
+
+.arrow::after {
+  content: '';
+  width: 0.55em;
+  height: 0.55em;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+  transition: translate 0.2s var(--ease);
+}
+
+a:hover > .arrow::after,
+.arrow:hover::after {
+  translate: 0.25em 0;
+}
+
+/* ---------- small parts ---------- */
+
+.stars {
+  display: inline-flex;
+  gap: 0.14em;
+  color: var(--gold);
+  vertical-align: -0.12em;
+}
+
+.stars svg {
+  width: 1.05em;
+  height: 1.05em;
+}
+
+.rating {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.65rem;
+  font-weight: 560;
+  text-decoration: none;
+}
+
+.rating:hover span:last-child {
+  text-decoration: underline;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2.25rem;
+  padding: 0.3rem 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--white);
+  font-size: 0.9375rem;
+  font-weight: 540;
+  text-decoration: none;
+}
+
+a.chip {
+  min-height: 2.75rem;
+  transition:
+    border-color 0.18s var(--ease),
+    color 0.18s var(--ease);
+}
+
+a.chip:hover {
+  border-color: var(--violet-ink);
+  color: var(--violet-ink);
+}
+
+.ink .chip {
+  border-color: var(--line-ink);
+  background: rgb(255 255 255 / 0.04);
+}
+
+.ink a.chip:hover {
+  border-color: var(--violet-soft);
+  color: var(--violet-soft);
+}
+
+.checks {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.checks li {
+  display: grid;
+  grid-template-columns: 1.5rem 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.checks li::before {
+  content: '';
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: 0.08rem;
+  border-radius: 50%;
+  background: var(--violet-btn)
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6.5 12.5 3.6 3.6 7.4-8'/%3E%3C/svg%3E")
+    center / 0.95rem no-repeat;
+}
+
+.card {
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  background: var(--white);
+}
+
+.ink .card {
+  border-color: var(--line-ink);
+  background: var(--ink-2);
+}
+
+.pad {
+  padding: clamp(1.25rem, 2.4vw, 2rem);
+}
+
+.frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--r);
+  background: var(--ink-3);
+}
+
+.frame picture {
+  height: 100%;
+}
+
+.frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cap {
+  margin-top: 0.6rem;
+  font-size: 0.8125rem;
+  color: var(--muted);
+}
+
+.ink .cap {
+  color: var(--on-ink-muted);
+}
+
+.rule {
+  height: 1px;
+  border: 0;
+  background: var(--line);
+}
+
+.ink .rule {
+  background: var(--line-ink);
+}
+
+/* ---------- motion ----------
+   Nothing is ever hidden waiting for script or scroll. The page-load moment
+   belongs to the hero. Everything below only slides a little as it enters,
+   where the browser supports scroll timelines; otherwise it simply sits there. */
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: reveal linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 55%;
+    }
+
+    @keyframes reveal {
+      from {
+        translate: 0 1.75rem;
+      }
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

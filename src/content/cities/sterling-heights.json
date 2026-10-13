@@ -1,0 +1,72 @@
+{
+  "city": "sterling-heights",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Sterling Heights, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Sterling Heights drivers. Mobile service at your home, or our shop about 15 minutes away."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Sterling Heights, MI",
+    "title": "Next door. **Or in your driveway.**",
+    "lede": "Our shop on Louise Ave is about 7 miles from the middle of Sterling Heights, a straight run east on 14 Mile Road. Coatings, tint and paint correction happen there. Detailing can come to your home or workplace, and valet pickup covers the rest.",
+    "chips": ["About 15 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "silverado-black"
+  },
+  "about": {
+    "title": "What Sterling Heights does to a car.",
+    "body": [
+      "Sterling Heights is the second largest city in Macomb County, laid out on the mile road grid with Hall Road across the top and 14 Mile along the bottom. Most people here drive every day, on wide, fast arterials that get salted hard. That shows up on a vehicle in specific ways."
+    ],
+    "points": [
+      {
+        "title": "Winter brine on the mile roads",
+        "body": "Van Dyke, Mound, Schoenherr and Hall Road are salted and brined from the first freeze. The residue dries white on rocker panels and floor mats and keeps working on the finish until it is washed out, not just rinsed."
+      },
+      {
+        "title": "Brake dust from Hall Road traffic",
+        "body": "Stop and go driving along M-59 means brake dust. The iron particles bond to wheels and lower panels, and they need a chemical decontamination to come off. A wash mitt slides right over them."
+      },
+      {
+        "title": "Trucks and three row SUVs",
+        "body": "The Ram 1500 is built here, at Sterling Heights Assembly on Van Dyke. Full size trucks and family SUVs are a big share of what we see from Sterling Heights, and they are quoted for their size."
+      },
+      {
+        "title": "Driveways that suit mobile work",
+        "body": "Most of the city is single family subdivisions with a driveway, which is all a mobile detail needs: room to walk the full perimeter of the vehicle."
+      }
+    ],
+    "photo": "ram-truck-white"
+  },
+  "logistics": {
+    "title": "Fifteen minutes to the shop, or we come to you.",
+    "body": [
+      "From Sterling Heights the shop is a straight run east on 14 Mile Road: about 7 miles from the middle of the city, roughly 15 minutes without traffic. We are on the north side of 14 Mile, just east of Kelly Road.",
+      "Interior, exterior and full details can all be done in your driveway. Ceramic coating, window tint and paint correction need the shop, where we control light, dust and cure time. If you cannot spare the trip, valet pickup collects the vehicle and brings it back."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 7 miles from central Sterling Heights" },
+      { "label": "Drive", "value": "Roughly 15 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to Sterling Heights for mobile detailing?",
+      "a": "Yes. Sterling Heights is one of the closest towns to our shop and well inside our mobile service area. We bring our own power and water. All we need is a driveway or parking spot with room to walk around the whole vehicle. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "How far is your shop from Sterling Heights?",
+      "a": "About 7 miles from the middle of the city, roughly 15 minutes without traffic. Take 14 Mile Road east. The shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile just east of Kelly Road. We are appointment only, so please book before you head over."
+    },
+    {
+      "q": "Can you ceramic coat or tint my vehicle at my house?",
+      "a": "No. Coatings and window film need a controlled space: steady temperature, no dust and no wind. That work is done at the shop. If getting there is the problem, ask about valet pickup. For [ceramic coating](/ceramic-coating-sterling-heights-mi/) we also cover your Uber while the vehicle is with us."
+    },
+    {
+      "q": "What does a detail cost for a truck or SUV?",
+      "a": "Package prices are listed for a coupe or sedan in average condition: interior details from $184.99, exterior details from $139.99 and full details from $249.99. Trucks and SUVs are quoted for their size, and we give you the number before any work starts. See [detailing in Sterling Heights](/car-detailing-sterling-heights-mi/)."
+    }
+  ],
+  "reviews": ["april-g", "tom-k", "john-b"],
+  "neighbors": ["clinton-township", "shelby-township", "troy"]
+}
