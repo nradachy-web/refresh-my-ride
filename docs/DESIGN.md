@@ -54,10 +54,12 @@ are a slashed-zero set that reads like code.
 ## Motion
 
 One page-load moment, in the hero: the photo settles, a band of light passes
-over the paint once, the words rise into place. Below that, blocks slide up a
-little as they enter, only where the browser supports scroll timelines.
-Nothing is ever hidden waiting for script or scroll, so a page with script off
-or motion reduced is complete. Hover: cards lift, photos ease in, arrows nudge.
+over the paint once, the words rise into place. About a second, transform
+only. Below that, motion answers the visitor: cards lift, photos ease in,
+arrows nudge, the menu and the accordions open. Nothing slides in on scroll.
+(Scroll-linked motion was tried and removed: it put every sliding block on its
+own compositor layer, which slowed the first paint.) A page with script off or
+motion reduced is complete.
 
 ## Photos
 
@@ -77,4 +79,15 @@ These are why the pages score 100. Do not break them.
 - Third parties wait for the visitor: the Google tag loads on first touch,
   scroll or key press, and the quote form loads when the visitor has touched
   the page and the form is near the screen.
-- No web fonts for icons, no carousels, no video on load.
+- No web fonts for icons, no carousels, no video on load, no scroll-linked animation.
+
+Measured on the preview on 2026-10-13 with Google PageSpeed Insights
+(Lighthouse 13.5), more than 250 runs: Accessibility 100 and Best Practices 100
+on every run, phone and desktop. Performance 100 on every desktop run. On
+phone, pages without a hero photo score 100 every run; pages with one score 100
+on most runs and 98 or 99 on the rest. The difference is one metric, Speed
+Index, and it comes from the test machine: on some runs its first paint of a
+page with a large photo arrives one or two seconds late, whatever the image
+format. The studio's own fastest page scored 92 to 99 in the same hour. SEO
+reads 66 on the preview only because the preview is noindex; the production
+build scores 100.

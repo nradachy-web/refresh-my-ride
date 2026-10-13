@@ -40,18 +40,14 @@ const { image, kicker, title, lede, chips = [], primary = { label: 'Get my free 
 
 const titleHtml = heading(title, 'hero__accent');
 const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.href);
-// TEMPORARY perf experiment (see src/pages/perf-test)
-const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
-const decodeMode = 'sync';
-const still = false;
 ---
 
-<section class:list={['hero', 'ink', `hero--${size}`, image.width < 1000 && 'hero--narrow', still && 'hero--still']}>
-  <div class:list={['hero__media', pv === 'a' && 'hero__media--late', pv === 'b' && 'hero__media--fade']} style={pv === 'c' ? 'visibility:hidden' : undefined}>
+<section class:list={['hero', 'ink', `hero--${size}`, image.width < 1000 && 'hero--narrow']}>
+  <div class="hero__media">
     <picture>
       <source type="image/avif" srcset={image.avif} sizes={image.sizes} />
       <source type="image/webp" srcset={image.webp} sizes={image.sizes} />
-      <img src={pv === 'c' ? 'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==' : image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding={decodeMode} fetchpriority="high" />
+      <img src={image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding="sync" fetchpriority="high" />
     </picture>
   </div>
 
@@ -288,34 +284,6 @@ const still = false;
 
     .hero--home .hero__h {
       max-width: min(66%, 52rem);
-    }
-  }
-
-  .hero__media--late picture {
-    animation: late 0.01s linear 0.06s both;
-  }
-
-  .hero__media--fade picture {
-    animation: latefade 0.35s ease 0.15s both;
-  }
-
-  @keyframes late {
-    from {
-      visibility: hidden;
-    }
-    to {
-      visibility: visible;
-    }
-  }
-
-  @keyframes latefade {
-    from {
-      visibility: hidden;
-      opacity: 0;
-    }
-    to {
-      visibility: visible;
-      opacity: 1;
     }
   }
 

@@ -30,9 +30,6 @@ const c = entry.data;
 const svc = getService(c.service as any);
 const hero = await heroImage(c.hero.photo as PhotoId);
 const lastPlane = c.blocks[c.blocks.length - 1].plane;
-// TEMPORARY perf experiment (see src/pages/perf-test)
-const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
-const pvPreload = pv === 'c' ? undefined : hero.preload;
 
 // Mobile detailing does not list West Bloomfield: it is past the published mobile range.
 const areas = svc.id === 'mobile-detailing' ? CITIES.filter((t) => t.id !== 'west-bloomfield').map((t) => `${t.name}, MI`) : undefined;
@@ -46,7 +43,7 @@ const schema = [
 ];
 ---
 
-<Base title={c.meta.title} description={c.meta.description} path={svc.path} preload={pvPreload} schema={schema}>
+<Base title={c.meta.title} description={c.meta.description} path={svc.path} preload={hero.preload} schema={schema}>
   <Hero image={hero} kicker={c.hero.kicker} title={c.hero.title} lede={c.hero.lede} chips={c.hero.chips} crumbs={[{ name: svc.name, path: svc.path }]} />
 
   <Blocks blocks={c.blocks} service={svc} />

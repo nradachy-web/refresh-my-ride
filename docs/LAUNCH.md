@@ -60,6 +60,8 @@ below has been done. Do it in this order.
     phone number, open the form, check the menu.
 14. Run PageSpeed Insights on the real domain for the home page, a service
     page and a town page, phone and desktop. Record the scores with the date.
+    Run each a few times: phone Performance moves between 98 and 100 from run
+    to run on pages with a hero photo (see the end of `docs/DESIGN.md`).
 15. In Google Ads, confirm the tag is firing (Tag Assistant) and that final
     URLs resolve. The addresses his ads use today all still exist.
 16. Submit `https://refreshmyrideauto.com/sitemap.xml` in Search Console.
