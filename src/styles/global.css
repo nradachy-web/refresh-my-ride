@@ -163,6 +163,10 @@ h1,
 h2,
 h3 {
   font-family: var(--font-display);
+}
+
+h1,
+h2 {
   text-wrap: balance;
 }
 
@@ -212,7 +216,6 @@ h3 {
   font-size: clamp(1.0625rem, 0.45vw + 1rem, 1.25rem);
   line-height: 1.55;
   color: var(--muted);
-  text-wrap: pretty;
 }
 
 .ink .lede {
@@ -628,25 +631,11 @@ a.chip:hover {
 }
 
 /* ---------- motion ----------
-   Nothing is ever hidden waiting for script or scroll. The page-load moment
-   belongs to the hero. Everything below only slides a little as it enters,
-   where the browser supports scroll timelines; otherwise it simply sits there. */
-
-@media (prefers-reduced-motion: no-preference) {
-  @supports (animation-timeline: view()) {
-    .reveal {
-      animation: reveal linear both;
-      animation-timeline: view();
-      animation-range: entry 0% entry 55%;
-    }
-
-    @keyframes reveal {
-      from {
-        translate: 0 1.75rem;
-      }
-    }
-  }
-}
+   The page-load moment belongs to the hero (see Hero.astro). Below it, motion
+   answers the visitor: hovers, the menu, the accordions. Nothing slides in on
+   scroll. Scroll-linked motion put every sliding block on its own compositor
+   layer, which slowed the first paint on weak devices and made lab scores
+   swing. Nothing is ever hidden waiting for script or scroll. */
 
 @media (prefers-reduced-motion: reduce) {
   *,

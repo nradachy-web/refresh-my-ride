@@ -14,7 +14,7 @@
   "about": {
     "title": "What a week in Troy does to a car.",
     "body": [
-      "Troy is built around the car. The city's own master plan calls the private automobile the primary way people get around, and there is no small traditional downtown where you park once and walk. The mile roads run from 14 Mile at the south edge to South Boulevard at the north, I-75 cuts through the middle, and Big Beaver carries the high-rise offices and Somerset Collection. Nearly every trip is a drive and a parking space. That shows up on a vehicle in specific ways."
+      "Troy is built around the car. The city's own master plan calls the private automobile the primary way people get around, and there is no small traditional downtown where you park once and walk. The mile roads run from 14 Mile at the south to South Boulevard at the north, I-75 cuts through the middle, and Big Beaver carries the high-rise offices and Somerset Collection. Nearly every trip is a drive and a parking space. That shows up on a vehicle in specific ways."
     ],
     "points": [
       {
@@ -23,7 +23,7 @@
       },
       {
         "title": "I-75 through the middle",
-        "body": "I-75 has Troy interchanges at 14 Mile, Rochester Road and Big Beaver, and the county road commission salts it for the state. Highway miles mean salt mist in winter, bugs in summer and brake dust all year. Brake dust is iron. It bonds to wheels and lower panels, and it takes a chemical decontamination to release it."
+        "body": "I-75 has Troy interchanges at 14 Mile, Rochester Road and Big Beaver, and the county road commission salts it for the state. Freeway miles mean salt mist in winter and bugs in summer, and the stop and go at each end adds brake dust. Brake dust is iron. It bonds to wheels and lower panels, and it takes a chemical decontamination to release it."
       },
       {
         "title": "Parked all day on Big Beaver",
@@ -43,15 +43,27 @@
   "logistics": {
     "title": "Roughly 25 minutes to the shop, or we come to you.",
     "body": [
-      "The shop is in Clinton Township, about 14 miles from central Troy and roughly 25 minutes without traffic. Take Big Beaver Road east. It becomes Metropolitan Parkway when you cross Dequindre into Macomb County. Turn right on Utica Road, then left on 14 Mile Road. We are on the north side of 14 Mile, just east of Kelly Road. From the south end of town, 14 Mile Road at Oakland Mall runs east to us without a turn.",
+      "The shop is in Clinton Township, about 14 miles from central Troy and roughly 25 minutes without traffic. Take Big Beaver Road east. It becomes Metropolitan Parkway when you cross Dequindre into Macomb County. Turn right on Utica Road, then left on 14 Mile Road. We are on the north side of 14 Mile, just east of Kelly Road. From the south end of town, 14 Mile Road at Oakland Mall runs straight east to our street.",
       "Interior, exterior and full details can be done in your driveway or at your workplace. Ceramic coating, window tint and paint correction are shop work, because they need an enclosed bay and controlled lighting. If the trip does not fit your week, valet covers it: we pick the vehicle up, do the work at the shop and bring it back.",
       "We are appointment only, Monday to Friday, 9am to 5pm. Online booking is open around the clock."
     ],
     "facts": [
-      { "label": "Distance", "value": "About 14 miles from central Troy" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+      {
+        "label": "Distance",
+        "value": "About 14 miles from central Troy"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      }
     ]
   },
   "faq": [

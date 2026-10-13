@@ -75,7 +75,7 @@ const schema = [
       <ul class:list={['grid', c.local.points.length === 4 ? 'c2' : 'c3']}>
         {
           c.local.points.map((p) => (
-            <li class="card pad point reveal">
+            <li class="card pad point">
               <h3 class="h3">{p.title}</h3>
               <p class="small muted" set:html={rich(p.body)} />
             </li>
@@ -87,7 +87,7 @@ const schema = [
 
   <section class="band white" aria-labelledby="what-h">
     <div class="wrap two flip">
-      <figure class="reveal">
+      <figure>
         <div class="frame what__frame">
           <Photo id={c.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
         </div>

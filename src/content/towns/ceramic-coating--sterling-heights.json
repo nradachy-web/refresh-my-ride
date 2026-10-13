@@ -3,30 +3,30 @@
   "city": "sterling-heights",
   "meta": {
     "title": "Ceramic Coating in Sterling Heights, MI | Refresh My Ride",
-    "description": "Ceramic coating for Sterling Heights drivers: 1, 3 and 5 year packages with paint correction included and a written warranty. Shop about 15 minutes away."
+    "description": "Ceramic coating for Sterling Heights drivers: 1, 3 and 5 year packages with paint correction included and a written warranty. Shop about 7 miles away."
   },
   "hero": {
     "kicker": "Ceramic coating in Sterling Heights, MI",
     "title": "Salt season is long. **Coat it once.**",
-    "lede": "A ceramic coating puts a hard, bonded layer between your paint and a Michigan winter of road salt and brine. Our 1, 3 and 5 year packages include paint correction and a written warranty, and the shop is about 15 minutes from central Sterling Heights.",
+    "lede": "A ceramic coating puts a hard, bonded layer between your paint and a Michigan winter of road salt and brine. Our 1, 3 and 5 year packages include paint correction and a written warranty, and the shop is about 7 miles from central Sterling Heights.",
     "chips": ["1, 3 or 5 years", "Paint correction included", "Valet pickup available"],
     "photo": "silverado-black"
   },
   "local": {
     "title": "Why Sterling Heights paint needs more than wax.",
-    "intro": "Daily miles on salted mile roads, automatic washes in between, and summer sun in open parking lots. That combination dulls clear coat faster than most owners expect. A coating changes how all of it sticks.",
+    "intro": "Salt on the state routes and on your own street, sap from the street trees, and one automatic wash after another to keep up with both. That combination dulls clear coat faster than most owners expect. A coating changes how all of it sticks.",
     "points": [
       {
-        "title": "Brine does not get a grip",
-        "body": "Liquid de-icer on Van Dyke, Mound and M-59 dries into a film that works on bare clear coat all winter. On a coated panel it rinses off, because the salt is sitting on the coating and not on the paint."
+        "title": "Salt does not get a grip",
+        "body": "State and primary roads get plowed and salted first, which here includes Van Dyke (M-53) and Hall Road (M-59). The city salts its own streets too. On bare clear coat that film works on the paint all winter. On a coated panel it comes off with a rinse and a gentle hand wash, so you can skip the brush tunnels that put swirl marks in the finish."
       },
       {
-        "title": "Fewer trips through the tunnel",
-        "body": "A coated car comes clean with a rinse and a gentle hand wash. That lets you skip the brush tunnels that put swirl marks into the finish in the first place."
+        "title": "Street trees over the driveway",
+        "body": "Sterling Heights has been a Tree City USA for decades, and the city says its goal is a street tree in front of every home. That means sap and bird droppings on whatever is parked underneath. On a coated panel they wipe off before they etch the paint."
       },
       {
         "title": "For trucks you plan to keep",
-        "body": "The Ram 1500 is built in Sterling Heights, and plenty of the trucks we coat from here were bought to keep. The 3 and 5 year packages are meant for exactly that owner."
+        "body": "The Ram 1500 is built in Sterling Heights, at the assembly plant on Van Dyke. If yours was bought to keep, look at The Revival and The Renewal, our 3 and 5 year packages. They are meant for exactly that owner."
       },
       {
         "title": "Glass in the same visit",
@@ -37,8 +37,8 @@
   "logistics": {
     "title": "Coating happens at the shop. Getting there is easy.",
     "body": [
-      "Ceramic coating is done indoors at our Clinton Township shop, where the lighting, temperature and cure time are under our control. From Sterling Heights that is a straight run east on 14 Mile Road, about 7 miles from the middle of the city.",
-      "Plan on leaving the vehicle with us for at least a full day. Uber is covered for the drop-off and pickup, or ask about valet: we collect the vehicle from your home or work in Sterling Heights and bring it back coated."
+      "Ceramic coating is done indoors at our Clinton Township shop, where the lighting, temperature and cure time are under our control. From central Sterling Heights the shop is about 7 miles, roughly 15 minutes without traffic, and the simple way over is Utica Road southeast to 14 Mile Road, then east to just past Kelly Road.",
+      "Plan on leaving the vehicle with us for at least a full day. Uber is covered for the drop-off and pickup, or ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the vehicle from your home or work in Sterling Heights and bring it back coated."
     ],
     "facts": [
       { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
@@ -62,7 +62,7 @@
     },
     {
       "q": "Is a coating worth it on a leased vehicle?",
-      "a": "Often, yes. The Refresh, our 1 year package, is built for leased vehicles and cars you will trade in soon. It keeps the paint easy to wash and protected through the lease without paying for years you will not use."
+      "a": "Often, yes. The Refresh, our 1 year package, is built for leased vehicles and cars you will trade in soon. It gives you a year of protection and easier washing without paying for years you will not use. See [all three coating packages](/ceramic-coating/)."
     }
   ],
   "reviews": ["tom-k", "scott-w", "judy-j"]

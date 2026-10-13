@@ -52,7 +52,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
                 {b.cta && <p><a class="arrow" href={link(b.cta.href)}>{b.cta.label}</a></p>}
               </div>
               {b.photo && (
-                <figure class="reveal">
+                <figure>
                   <div class="frame intro__frame">
                     <Photo id={b.photo as PhotoId} ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
                   </div>
@@ -67,7 +67,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <ul class:list={['grid', `c${b.columns}`]}>
                 {b.items.map((it) => (
-                  <li class="card pad tile reveal">
+                  <li class="card pad tile">
                     {it.tag && <p class="tile__tag fine">{it.tag}</p>}
                     <h3 class="h3">{it.title}</h3>
                     <p class="small muted" set:html={rich(it.body)} />
@@ -82,7 +82,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <ul class:list={['grid', b.tiers.length === 2 ? 'c2' : b.tiers.length === 4 ? 'c4' : 'c3', 'tiers']}>
                 {b.tiers.map((t) => (
-                  <li class:list={['card', 'tier', 'reveal', t.featured && 'tier--on']}>
+                  <li class:list={['card', 'tier', t.featured && 'tier--on']}>
                     {t.featured && <p class="tier__flag fine">Most popular</p>}
                     <div class="tier__top">
                       {t.label && <p class="tile__tag fine">{t.label}</p>}
@@ -122,7 +122,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <div class:list={['grid', b.groups.length === 2 ? 'c2' : b.groups.length >= 3 ? 'c3' : '', 'prices']}>
                 {b.groups.map((g) => (
-                  <div class:list={['card', 'pg', 'reveal', g.featured && 'tier--on']}>
+                  <div class:list={['card', 'pg', g.featured && 'tier--on']}>
                     {g.featured && <p class="tier__flag fine">Most popular</p>}
                     <div class="pg__top">
                       {g.label && <p class="tile__tag fine">{g.label}</p>}
@@ -165,7 +165,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <ul class:list={['grid', b.columns.length === 2 ? 'c2' : b.columns.length === 4 ? 'c4' : 'c3']}>
                 {b.columns.map((col, c) => (
-                  <li class:list={['card', 'pad', 'cmp', 'reveal', b.highlight === c && 'cmp--on']}>
+                  <li class:list={['card', 'pad', 'cmp', b.highlight === c && 'cmp--on']}>
                     <h3 class="h3">{col}</h3>
                     {b.highlight === c && <p class="tile__tag fine">What we do</p>}
                     <dl>
@@ -211,7 +211,7 @@ const link = (h: string) => (h.startsWith('#') || /^(https?:|tel:|sms:)/.test(h)
               <Head id={hid} eyebrow={b.eyebrow} title={b.title} intro={b.intro} />
               <ul class="gal">
                 {b.photos.map((id) => (
-                  <li class="reveal">
+                  <li>
                     <figure>
                       <div class="frame gal__frame">
                         <Photo id={id as PhotoId} ratio={1} widths={[300, 480, 640]} sizes="(min-width: 60rem) 24vw, 46vw" />

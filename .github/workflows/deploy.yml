@@ -33,6 +33,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: astro-images-${{ hashFiles('src/assets/photos/**', 'src/assets/brand/**') }}
+          restore-keys: astro-images-
       - run: npm ci
       - run: npx astro build
       - run: node scripts/postbuild.mjs

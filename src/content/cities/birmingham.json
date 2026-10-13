@@ -2,12 +2,12 @@
   "city": "birmingham",
   "meta": {
     "title": "Ceramic Coating, Tint & Detailing in Birmingham, MI",
-    "description": "Ceramic coating, window tint, paint correction and detailing for Birmingham drivers. Mobile detailing at home, or valet pickup to our shop 30 minutes east."
+    "description": "Ceramic coating, window tint, paint correction and detailing in Birmingham. Mobile detailing at home, or valet pickup to our shop about 30 minutes east."
   },
   "hero": {
     "kicker": "Ceramic coating, window tint and detailing in Birmingham, MI",
     "title": "Your 14 Mile is **our 14 Mile.**",
-    "lede": "Our shop is on the same 14 Mile Road that runs along the south end of the city, about 17 miles from central Birmingham. Coatings, tint and paint correction happen there. Detailing can come to your driveway or your office, and valet pickup covers the cars that live in a downtown parking structure.",
+    "lede": "Our shop sits just off the same 14 Mile Road that runs along the south end of the city, about 17 miles from central Birmingham. Coatings, tint and paint correction happen there. Detailing can come to your driveway or your office, and valet pickup covers the cars that live in a downtown parking structure.",
     "chips": ["Roughly 30 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
     "photo": "cadillac-sedan-black"
   },
@@ -23,7 +23,7 @@
       },
       {
         "title": "Gravel under the seal",
-        "body": "Nearly 26 miles of streets here are what the city calls unimproved: gravel roads kept drivable with a thin seal of stone chips and asphalt. The city says they were built with little provision for drainage and that the seal cannot fix standing water. Where water stands at the road edge, it ends up as road film on the lower doors."
+        "body": "Nearly 26 miles of streets here are what the city calls unimproved: gravel roads kept drivable with a thin seal of stone chips and asphalt. The city says they were built with little provision for drainage and that the seal cannot fix standing water. Where water does stand, the tires throw it up and it dries as road film on the lower doors."
       },
       {
         "title": "Public trees over the curb",
@@ -35,7 +35,7 @@
       },
       {
         "title": "Five parking structures and 1,200 meters",
-        "body": "Downtown parking is five city structures and about 1,200 parking meters. Neither usually gives us what a mobile detail needs, which is room to walk the full perimeter of the vehicle. For a car that lives downtown, valet pickup is the way to do it."
+        "body": "The city runs five parking structures downtown and has about 1,200 parking meters. A stall or a metered space rarely gives us what a mobile detail needs, which is room to walk the full perimeter of the vehicle. For a car that lives downtown, valet pickup is the way to do it."
       }
     ],
     "photo": "mobile-van"

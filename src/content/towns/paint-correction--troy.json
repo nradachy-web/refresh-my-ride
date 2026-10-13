@@ -21,8 +21,8 @@
         "body": "Troy salts its major roads first and does not plow subdivision streets until more than 4 inches falls, so between washes a car here wears a film of salt and grit. Brushing or wiping that film off dry drags it across the clear coat. A lot of swirl marks start exactly there."
       },
       {
-        "title": "Brush washes, week after week",
-        "body": "Brush-style automatic washes put swirls in any finish, and a daily commuter gets washed often in a salt winter. Each pass adds a little. Correction takes those marks out. Touchless washes and a gentle hand wash are how you keep it that way."
+        "title": "A wash after every salting",
+        "body": "The county salts I-75 and the city salts Big Beaver and the other main roads first, so a commuter car needs washing often all winter. Brush-style automatic washes put swirls in any finish, and each pass adds a little. Touchless washes are fine."
       },
       {
         "title": "Open lots show everything",
@@ -41,10 +41,22 @@
       "A one-step polish with Polish & Protect takes about 4.5 to 5 hours. A multi-stage correction takes longer and is quoted per vehicle once we have seen the paint. If you cannot get away to drop it off, valet pickup collects the vehicle in Troy and brings it back when the work is done."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
-      { "label": "Cannot make the drive", "value": "Ask about valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "One-step polish",
+        "value": "About 4.5 to 5 hours"
+      },
+      {
+        "label": "Cannot make the drive",
+        "value": "Ask about valet pickup"
+      }
     ]
   },
   "photo": "josh-polishing-corvette",

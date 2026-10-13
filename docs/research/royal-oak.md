@@ -23,7 +23,7 @@ read as "true in 2012 and structural enough not to have changed".
 
 ## The roads people drive
 
-- I-75 runs north and south along the city's east side. I-696 runs east and west along the city's south side. Woodward Avenue (M-1) runs southeast to northwest along the west side. Five numbered east and west mile roads run through the city.
+- I-75 runs north and south along the city's east side. I-696 runs east and west along the city's south side. Woodward Avenue (M-1) runs southeast to northwest along the west side. Five numbered east and west mile roads run through the city. Plain reading used on the tint page: on a road that runs southeast to northwest, someone who drives southeast in the morning and northwest in the evening has the low sun ahead or on the driver's side both ways. That is geometry worked out from the road's direction, not a sourced statement.
   https://en.wikipedia.org/wiki/Royal_Oak,_Michigan
 - 11 Mile Road "serves as main east-west thoroughfare through downtown Royal Oak". Livernois is known as Main Street in Royal Oak and Clawson. 14 Mile Road runs from Harper to Walled Lake with one brief interruption in Beverly Hills, which is west of Royal Oak, so it is continuous from Royal Oak east into Macomb County.
   https://en.wikipedia.org/wiki/Roads_and_freeways_in_metropolitan_Detroit

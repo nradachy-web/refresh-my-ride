@@ -33,3 +33,6 @@ _source/fonts/mona-inst.ttf
 _source/fonts/MonaSans-latin-var.woff2
 _source/*.json
 _source/drive.py
+
+# generated image cache
+.cache/

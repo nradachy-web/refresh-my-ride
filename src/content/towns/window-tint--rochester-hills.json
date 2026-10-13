@@ -8,7 +8,7 @@
   "hero": {
     "kicker": "Window tint in Rochester Hills, MI",
     "title": "Low sun on M-59. **Cut the glare.**",
-    "lede": "M-59 runs east and west across Rochester Hills, so the freeway lines up with the rising and the setting sun. Rochester Road runs north and south, so the same sun comes in through the side glass. Geoshield C2 film blocks 99% of UV and carries a lifetime warranty. Front 2 windows from $99.99 on a standard coupe or sedan.",
+    "lede": "M-59 runs east and west across Rochester Hills, so the morning sun meets you eastbound and the evening sun westbound. Rochester Road runs north and south, so the same sun comes in through the side glass. Geoshield C2 film blocks 99% of UV and carries a lifetime warranty. Front 2 windows from $99.99 on a standard coupe or sedan.",
     "chips": ["Geoshield C2 film", "Lifetime warranty", "Front 2 windows from $99.99"],
     "photo": "tesla-model-y"
   },
@@ -26,7 +26,7 @@
       },
       {
         "title": "Parked in the open all day",
-        "body": "Most of Oakland University's campus land is in Rochester Hills, and The Village of Rochester Hills is an open-air center, not an enclosed mall. If your car spends hours in an open lot, the cabin soaks up heat. C2 Ceramic rejects far more infrared heat than carbon. It is the film to pick when a hot cabin is the complaint."
+        "body": "Oakland University's campus spans Rochester Hills and Auburn Hills, and The Village of Rochester Hills is an open-air center, not an enclosed mall. If your car spends hours in an open lot at either one, the cabin soaks up heat. C2 Ceramic rejects far more infrared heat than carbon. It is the film to pick when a hot cabin is the complaint."
       }
     ]
   },
@@ -62,5 +62,5 @@
       "a": "Yes. Drive it normally. The one rule is to leave the tinted windows up for 3 to 4 days so the film bonds to the glass. Small water pockets or a light haze can show up in the first week. That is normal, and it clears as the film cures."
     }
   ],
-  "reviews": ["jake-m", "matt-h"]
+  "reviews": ["jake-m", "sydney-k"]
 }

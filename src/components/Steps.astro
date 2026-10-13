@@ -12,7 +12,7 @@ const cols = steps.length <= 3 ? 'c3' : 'c3 many';
 <ol class:list={['grid', cols, 'steps']}>
   {
     steps.map((s, i) => (
-      <li class="steps__item reveal">
+      <li class="steps__item">
         <span class="steps__n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
         <h3 class="h3">{s.title}</h3>
         <p class="small muted" set:html={rich(s.body)} />

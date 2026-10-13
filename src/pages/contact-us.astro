@@ -83,7 +83,7 @@ const START = [
       <ul class="grid c3">
         {
           START.map((s) => (
-            <li class="card pad tile reveal">
+            <li class="card pad tile">
               <p class="tile__tag fine">{s.tag}</p>
               <h3 class="h3">{s.title}</h3>
               <p class="small muted prose" set:html={rich(s.body)} />
@@ -115,7 +115,7 @@ const START = [
           <a class="btn ghost" href={BRAND.phoneHref} data-loc="contact-visit"><Icon name="phone" />Call or text us</a>
         </div>
       </div>
-      <figure class="reveal">
+      <figure>
         <div class="frame visit__frame">
           <Photo id="shop-grand-opening" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
         </div>

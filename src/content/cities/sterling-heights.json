@@ -2,36 +2,40 @@
   "city": "sterling-heights",
   "meta": {
     "title": "Ceramic Coating, Tint & Detailing in Sterling Heights, MI",
-    "description": "Ceramic coating, window tint, paint correction and detailing for Sterling Heights drivers. Mobile service at your home, or our shop about 15 minutes away."
+    "description": "Ceramic coating, window tint and paint correction at our shop, roughly 15 minutes from Sterling Heights. Mobile detailing in your driveway. Free quote."
   },
   "hero": {
     "kicker": "Ceramic coating, window tint and detailing in Sterling Heights, MI",
     "title": "Next door. **Or in your driveway.**",
-    "lede": "Our shop on Louise Ave is about 7 miles from the middle of Sterling Heights, a straight run east on 14 Mile Road. Coatings, tint and paint correction happen there. Detailing can come to your home or workplace, and valet pickup covers the rest.",
-    "chips": ["About 15 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
-    "photo": "silverado-black"
+    "lede": "Our shop on Louise Ave is about 7 miles from central Sterling Heights: Utica Road southeast to 14 Mile Road, then east. Coatings, tint and paint correction happen there. Detailing can come to your home or workplace, and valet pickup covers the rest.",
+    "chips": ["About 7 miles to the shop", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "escalade-black"
   },
   "about": {
     "title": "What Sterling Heights does to a car.",
     "body": [
-      "Sterling Heights is the second largest city in Macomb County, laid out on the mile road grid with Hall Road across the top and 14 Mile along the bottom. Most people here drive every day, on wide, fast arterials that get salted hard. That shows up on a vehicle in specific ways."
+      "Sterling Heights is laid out on the mile road grid, from 14 Mile Road at the south edge to Hall Road (M-59) at the north, with Mound and Van Dyke running north and south and Utica Road cutting across on the diagonal. It is a city of subdivisions, street trees and auto plants, with the Clinton River crossing its northeast side. Each of those shows up on a vehicle in a specific way."
     ],
     "points": [
       {
-        "title": "Winter brine on the mile roads",
-        "body": "Van Dyke, Mound, Schoenherr and Hall Road are salted and brined from the first freeze. The residue dries white on rocker panels and floor mats and keeps working on the finish until it is washed out, not just rinsed."
+        "title": "Salt on the main roads, then your street",
+        "body": "County plows and salt trucks start on the state and primary roads, and Van Dyke and Hall Road are both state routes. The city works its own streets the same way: major roads, then neighborhoods. The residue dries white on rocker panels and floor mats and keeps working on the finish until it is washed out, not just rinsed."
       },
       {
-        "title": "Brake dust from Hall Road traffic",
-        "body": "Stop and go driving along M-59 means brake dust. The iron particles bond to wheels and lower panels, and they need a chemical decontamination to come off. A wash mitt slides right over them."
+        "title": "Street trees and overnight sprinklers",
+        "body": "The city has been a Tree City USA for decades, and its stated goal is a street tree in front of every home. In summer it also asks homeowners to water lawns between 11pm and 5am. Park under the tree and the paint collects sap. Park in reach of the sprinklers and the water dries into spots by morning."
+      },
+      {
+        "title": "Parks and the Clinton River",
+        "body": "Dodge Park has sports fields, a splash pad in summer and an ice rink in winter, and the Clinton River has public kayak and canoe launches at Rotary Park and North Clinton River Park. What rides home is grass, mud and wet gear. Getting it back out of the carpet takes steam and hot water extraction, which is interior detail work."
       },
       {
         "title": "Trucks and three row SUVs",
-        "body": "The Ram 1500 is built here, at Sterling Heights Assembly on Van Dyke. Full size trucks and family SUVs are a big share of what we see from Sterling Heights, and they are quoted for their size."
+        "body": "The Ram 1500 is built here, at Sterling Heights Assembly on Van Dyke. We work on full size trucks and three row SUVs as well as sedans, and the larger vehicles are quoted for their size."
       },
       {
         "title": "Driveways that suit mobile work",
-        "body": "Most of the city is single family subdivisions with a driveway, which is all a mobile detail needs: room to walk the full perimeter of the vehicle."
+        "body": "Sterling Heights is mostly single family homes, and a house with a driveway is all a mobile detail needs: room to walk the full perimeter of the vehicle. We bring our own power and water. At an apartment or condo it comes down to the parking spot, and valet pickup covers it when there is no room."
       }
     ],
     "photo": "ram-truck-white"
@@ -39,7 +43,7 @@
   "logistics": {
     "title": "Fifteen minutes to the shop, or we come to you.",
     "body": [
-      "From Sterling Heights the shop is a straight run east on 14 Mile Road: about 7 miles from the middle of the city, roughly 15 minutes without traffic. We are on the north side of 14 Mile, just east of Kelly Road.",
+      "The shop is about 7 miles from central Sterling Heights, roughly 15 minutes without traffic. From the middle and north of the city, take Utica Road southeast to 14 Mile Road and turn east. From the south end, 14 Mile Road east takes you the whole way. We are on the north side of 14 Mile, just east of Kelly Road.",
       "Interior, exterior and full details can all be done in your driveway. Ceramic coating, window tint and paint correction need the shop, where we control light, dust and cure time. If you cannot spare the trip, valet pickup collects the vehicle and brings it back."
     ],
     "facts": [
@@ -56,11 +60,11 @@
     },
     {
       "q": "How far is your shop from Sterling Heights?",
-      "a": "About 7 miles from the middle of the city, roughly 15 minutes without traffic. Take 14 Mile Road east. The shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile just east of Kelly Road. We are appointment only, so please book before you head over."
+      "a": "About 7 miles from central Sterling Heights, roughly 15 minutes without traffic. From most of the city the simple way is Utica Road southeast to 14 Mile Road, then east. The shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile just east of Kelly Road. We are appointment only, so please book before you head over."
     },
     {
       "q": "Can you ceramic coat or tint my vehicle at my house?",
-      "a": "No. Coatings and window film need a controlled space: steady temperature, no dust and no wind. That work is done at the shop. If getting there is the problem, ask about valet pickup. For [ceramic coating](/ceramic-coating-sterling-heights-mi/) we also cover your Uber while the vehicle is with us."
+      "a": "No. Coatings and window film need a controlled space: steady temperature, no dust and no wind. That work is done at the shop. If getting there is the problem, ask about valet pickup. On [ceramic coating](/ceramic-coating-sterling-heights-mi/) jobs, Uber is also covered for the drop-off and pickup."
     },
     {
       "q": "What does a detail cost for a truck or SUV?",

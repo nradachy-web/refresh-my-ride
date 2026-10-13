@@ -10,6 +10,8 @@ export default defineConfig({
   site,
   base,
   trailingSlash: 'always',
+  // Generated image sizes are kept here between builds (and cached in CI).
+  cacheDir: './.cache',
   build: {
     format: 'directory',
     // All CSS ships inside the HTML: no render-blocking stylesheet request.

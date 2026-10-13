@@ -7,12 +7,12 @@ Fact sheet for the Refresh My Ride pages. Checked 2026-10-13. Every bullet is a 
 - Birmingham is a city in Oakland County with a total area of 4.80 square miles. Source: https://en.wikipedia.org/wiki/Birmingham,_Michigan
 - It is bordered by Bloomfield Hills on the northwest, Bloomfield Township on the west and north, Troy on the northeast, Royal Oak on the southeast and Southfield Township on the south. Source: https://en.wikipedia.org/wiki/Birmingham,_Michigan
 - The city describes itself as "approximately 20 miles north of downtown Detroit" and "in the southeastern portion of Oakland County". Source: https://bhamgov.org/about_birmingham/stats___facts.php
-- The city's motto is "A Walkable Community". Source: https://en.wikipedia.org/wiki/Birmingham,_Michigan
-- The city describes "a pedestrian-friendly downtown with 1,500,000 square feet of retail space". Source: https://bhamgov.org/about_birmingham/stats___facts.php
+- The city's motto is "A Walkable Community", and the city describes "a pedestrian-friendly downtown with 1,500,000 square feet of retail space". Sources: https://en.wikipedia.org/wiki/Birmingham,_Michigan and https://bhamgov.org/about_birmingham/stats___facts.php
 
 ## Roads
 
 - Woodward Avenue is state highway M-1 and is maintained by MDOT. North of 14 Mile Road in Birmingham, M-1 leaves the original route, which is now named Old Woodward Avenue, and runs east of it to bypass downtown. It returns to the original routing north of Maple (15 Mile) Road. The bypass opened in 1939 as Hunter Boulevard and was renamed Woodward Avenue in 1997. Source: https://en.wikipedia.org/wiki/M-1_(Michigan_highway)
+- The 1939 bypass was built for "drawing through traffic away from the busy Woodward Avenue-Maple Road intersection", so the original Woodward (now Old Woodward) and Maple Road cross in downtown. Source: https://en.wikipedia.org/wiki/M-1_(Michigan_highway)
 - All of M-1 is a Pure Michigan Byway and an All-American Road (the Automotive Heritage Trail). Source: https://en.wikipedia.org/wiki/M-1_(Michigan_highway)
 - Maple Road is 15 Mile Road and "forms main east-west thoroughfare through downtown Birmingham". 16 Mile Road is Big Beaver Road through Troy, Quarton Road west of Woodward ("minor local road west of Woodward") and Metropolitan Parkway through Macomb County. Source: https://en.wikipedia.org/wiki/Mile_Road_System_(Detroit)
 - 14 Mile Road "runs from Harper to Walled Lake, with brief interruption in Beverly Hills". Source: https://en.wikipedia.org/wiki/Mile_Road_System_(Detroit)
@@ -53,17 +53,14 @@ Fact sheet for the Refresh My Ride pages. Checked 2026-10-13. Every bullet is a 
 - Linden Park has "access to the Rouge River Trail Corridor from Shirley and Hawthorne". Manor Park is undeveloped open space with a wood chip trail. Springdale Park and Golf Course sits "along the Rouge River". Source: https://www.bhamgov.org/about_birmingham/city_departments/public_services/parks___recreation/parks___facilities/neighborhood_parks.php
 - The city's off-leash dog area is at Lincoln Hills Golf Course, off 14 Mile Road: "In the fall of 2010, an off-leash dog area was re-establish at Lincoln Hills Golf Course." Source: https://www.bhamgov.org/about_birmingham/city_departments/public_services/parks___recreation/parks___facilities/neighborhood_parks.php
 - The Birmingham Ice Sports Arena is at 2300 East Lincoln on the Kenning Park property. It has a regulation-sized rink, is home to the Birmingham Unified hockey team (Seaholm and Groves high schools) and the Birmingham Hockey Association youth program, and high school home games "are played from November through February". Source: https://www.bhamgov.org/government/departments/dps/ice_sports_arena.php
-- The Birmingham Farmers Market runs "every Sunday May 3 - October 25, 2026 from 9 a.m. - 2 p.m." in Public Parking Lot 6 at 660 N. Old Woodward. Source: https://downtownbirmingham.com/farmersmarket
 
 ## Landmarks and schools
 
-- Shain Park is the city's main commons, downtown. The Birmingham Museum is at Maple and Southfield Roads. Sources: https://en.wikipedia.org/wiki/Birmingham,_Michigan and https://www.bhamgov.org/about_birmingham/city_departments/public_services/parks___recreation/parks___facilities/neighborhood_parks.php
-- The Birmingham City School District includes Seaholm High School. Source: https://en.wikipedia.org/wiki/Birmingham,_Michigan
+- Shain Park is the city's main commons, the Birmingham Museum is at Maple and Southfield Roads, and the Birmingham City School District includes Seaholm High School. Sources: https://en.wikipedia.org/wiki/Birmingham,_Michigan and https://www.bhamgov.org/about_birmingham/city_departments/public_services/parks___recreation/parks___facilities/neighborhood_parks.php
 
 ## Car culture
 
-- The Woodward Dream Cruise is held on the third Saturday in August and "runs along Woodward Avenue ... from Ferndale to Pontiac". Birmingham is one of the sponsoring communities and was on the first route in 1995. Dates: August 15, 2026 and August 21, 2027. Source: https://en.wikipedia.org/wiki/Woodward_Dream_Cruise
-- The 2026 cruise ran through "nine participating Oakland County communities: Ferndale, Pleasant Ridge, Huntington Woods, Royal Oak, Berkley, Birmingham, Bloomfield Hills, Bloomfield Township and Pontiac". Source: https://oaklandcountyblog.com/2026/08/12/the-2026-woodward-dream-cruise/
+- The Woodward Dream Cruise is held on the third Saturday in August and "runs along Woodward Avenue ... from Ferndale to Pontiac". Birmingham is one of the sponsoring communities, was on the first route in 1995, and was one of the nine participating Oakland County communities in 2026. Dates: August 15, 2026 and August 21, 2027. Sources: https://en.wikipedia.org/wiki/Woodward_Dream_Cruise and https://oaklandcountyblog.com/2026/08/12/the-2026-woodward-dream-cruise/
 - The Birmingham Cruise Event is held "along South Old Woodward Avenue" on Dream Cruise Saturday (August 15, 2026, 9am to 5pm) and shows classic cars. It returns Saturday, August 21, 2027. Sources: https://downtownbirmingham.com/do/birmingham-cruise-event-1 and https://downtownbirmingham.com/cruiseevent
 
 ## Drive

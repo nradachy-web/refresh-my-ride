@@ -8,7 +8,7 @@
   "hero": {
     "kicker": "Ceramic coating in West Bloomfield, MI",
     "title": "Salt out front. **Sap overhead.**",
-    "lede": "West Bloomfield paint takes brine off Orchard Lake Road all winter and sap from protected woodlands the rest of the year. Our 1, 3 and 5 year ceramic coating packages include paint correction and a written warranty. The shop is roughly 45 minutes away, and Uber is covered while your vehicle is with us.",
+    "lede": "West Bloomfield paint takes salt and brine off Orchard Lake Road in winter, then sap if it parks under the woodland trees the township protects. Our 1, 3 and 5 year ceramic coating packages include paint correction and a written warranty. The shop is roughly 45 minutes away, and Uber is covered while your vehicle is with us.",
     "chips": ["1, 3 or 5 years", "Paint correction included", "Written warranty", "Uber covered"],
     "photo": "porsche-suv-blue"
   },
@@ -19,19 +19,19 @@
     "points": [
       {
         "title": "Brine first, slush after",
-        "body": "The Road Commission for Oakland County often sprays main roads with liquid brine ahead of a storm, and Orchard Lake Road and Middlebelt are cleared before the subdivisions. So the car collects salt on the way home and then parks in slush. Salt does not bond to a coated panel the way it does to bare clear coat, so it washes off instead of hanging on."
+        "body": "The Road Commission for Oakland County often sprays main roads with liquid brine ahead of a storm, and Orchard Lake Road and Middlebelt are cleared before the subdivisions. So the car collects salt on the way home and then parks in slush. On a coated panel that salt does not get to sit against bare clear coat, and a rinse and a gentle hand wash takes it off."
       },
       {
-        "title": "Oak and hickory overhead",
-        "body": "The township regulates cutting in designated woodlands, and the 162 acre West Bloomfield Woods Nature Preserve is mature oak and hickory. For anything parked outside, that means sap and bird droppings. On a coated car they wipe off before they etch the paint."
+        "title": "Protected trees overhead",
+        "body": "Trees inside the township's designated woodlands cannot be cut without going through the township first, and the 162 acre West Bloomfield Woods Nature Preserve has mature oak and hickory. For a car parked under branches, that means sap and bird droppings. On a coated car they wipe off before they etch the paint."
       },
       {
         "title": "Gravel dust that rinses off",
         "body": "Some residents here live on gravel roads. The county sands them in winter and, where a road is signed up for dust control, sprays calcium chloride brine in summer. On bare paint that film gets rubbed in at the next wash. On a coating it comes off with a rinse and a gentle hand wash."
       },
       {
-        "title": "Freeway miles, and one honest limit",
-        "body": "Northwestern Highway ends at Orchard Lake Road and M-5 passes just west of the township line, so freeway miles are easy to rack up from here. Bugs wipe off a coated bumper before they etch. Rock chips are a different matter: a coating is not armor and will not stop them."
+        "title": "Highway miles, and one honest limit",
+        "body": "Northwestern Highway ends at Orchard Lake Road and M-5 passes just west of the township line. Both lead to I-696, and highway miles are where a front end collects bugs and stone chips. Bugs wipe off a coated bumper before they etch. Rock chips are a different matter: a coating is not armor and will not stop them."
       }
     ]
   },
@@ -53,7 +53,7 @@
   "faq": [
     {
       "q": "Can you apply a ceramic coating at my home in West Bloomfield?",
-      "a": "No. A coating has to go on indoors, away from wind, dust and direct sun, and it cures in the shop before you get the vehicle back. Detailing is the only work we take on the road. For a coating the choice is the drive, the covered Uber, or asking us whether valet pickup reaches your address."
+      "a": "No. A coating has to go on indoors, away from wind, dust and direct sun, and it cures in the shop before you get the vehicle back. Detailing is the only work we take on the road, and this far out we confirm even that by address. For a coating the choice is the drive, the covered Uber, or asking us whether valet pickup reaches your address."
     },
     {
       "q": "How many trips to the shop does a coating take?",

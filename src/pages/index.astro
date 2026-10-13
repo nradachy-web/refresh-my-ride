@@ -129,7 +129,7 @@ const FAQ = [
 
   <section class="band white" aria-labelledby="ways-h">
     <div class="wrap two flip">
-      <div class="frame ways__photo reveal">
+      <div class="frame ways__photo">
         <Photo id="shop-interior" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" />
       </div>
       <div>
@@ -172,7 +172,7 @@ const FAQ = [
         <ul class="work__row">
           {
             WORK.map((id) => (
-              <li class="reveal">
+              <li>
                 <figure>
                   <div class="frame work__frame">
                     <Photo id={id} ratio={1} widths={[300, 480, 640]} sizes="(min-width: 60rem) 24vw, 46vw" />

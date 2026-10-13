@@ -31,11 +31,15 @@ Checked 2026-10-13. Every bullet is a plain fact followed by the page it was con
   https://sterlingheights.gov/198/Snow-Ice-Removal-Program
 - During a declared snow emergency all vehicles must be parked off city streets, and vehicles left on the street may be ticketed and towed. Snow emergencies are declared only when heavy snowfall impedes traffic on subdivision streets.
   https://sterlingheights.gov/198/Snow-Ice-Removal-Program
-- The city's public works director is quoted saying a snow emergency does not end until every street in the city has been plowed curb to curb and salted.
+- The city's public works director, Michael Moore, is quoted saying a snow emergency does not end until every street in the city has been plowed curb to curb and salted. The article carries no visible date. An image file name in it points to December 2022, so this quote is older than the exception in the next bullet. Do not print "every street is salted" on a page: see the next bullet.
   https://www.wxyz.com/news/what-it-means-to-be-under-a-snow-emergency
-- One exception to the salting: roads completed during the 2022 to 2025 Local Road Program are plowed but not salted, to protect the new concrete from surface scaling or flaking.
+- One exception to the salting, announced by the city under the heading "Important Changes to Winter Street Salting on Local Roads (Dec. 2025)": roads completed during the 2022 to 2025 Local Road Program are plowed but not salted "this winter season", to protect the new concrete from scaling. WXYZ describes them as neighborhood roads reconstructed in the last three years. Residents on those streets were contacted directly, so they know. Safe page wording: the city salts its own streets, all but its newest concrete. Whether the exception continues for the winter of 2026 to 2027 is not stated anywhere yet.
   https://sterlingheights.gov/198/Snow-Ice-Removal-Program
   https://www.wxyz.com/news/no-salt-sterling-heights-using-new-method-to-preserve-newer-neighborhood-roads
+- The city page also gives the order: "Upon completion of snow removal from major roadways, staff will start plowing neighborhood roads."
+  https://sterlingheights.gov/198/Snow-Ice-Removal-Program
+- The county department's maintenance page says winter snow removal is done on a priority basis: state and primary roads must be clear and safe before the department begins snow removal on local and subdivision roads. M-53 (Van Dyke) and M-59 (Hall Road) are state routes, so "state and primary roads first, including Van Dyke and Hall Road" is supported. The page does not name any road.
+  https://www.macombgov.org/departments/department-roads/departments-list/maintenance
 - The county road agency is the Macomb County Department of Roads. It is responsible for more than 1,700 miles of county roads, uses more than 50,000 tons of salt in an average winter, and starts with main trunk line and primary road routes before working through local and residential roads. Its winter spending covers "primary, local and state roads".
   https://www.macombgov.org/news/salt-equipment-and-crews-ready-macomb-county-prepared-winter
 
@@ -43,6 +47,7 @@ Checked 2026-10-13. Every bullet is a plain fact followed by the page it was con
 
 - The city's housing study says Sterling Heights "has a very large proportion of single-family homes". By unit count, single family detached and attached housing is 76.3% of all housing units and buildings with five or more units are 16.7%. 76% of occupied units are owner occupied. 52.1% of housing units were built between 1960 and 1979. (Numbers are for our reference. The content guide does not allow statistics on the pages.)
   https://www.sterlingheights.gov/2341/Housing-Study
+  (Fact check, 2026-10-13: that address serves the study as a 23 page PDF. The quoted sentence is on pages 1 and 14, the 76.3% figure on page 14, the 76% owner occupied figure on page 7 and the 52.1% figure on page 15.)
 - The city regulates residential driveways. Rules adopted in 2023 allow up to 45% of a front yard to be paved, allow horseshoe driveways on busier roads, and allow turnaround pads up to 200 square feet.
   https://www.candgnews.com/news/city-adopts-front-yard-paving-driveway-regulations-3438
 
@@ -66,6 +71,8 @@ Checked 2026-10-13. Every bullet is a plain fact followed by the page it was con
   https://metromodemedia.com/sterling-heights-tree-canopy-22/
 - The city has committed to planting 3,000 trees a year, including right-of-way plantings along roads, and is working against decades of tree loss from emerald ash borer and Dutch elm disease. (Source is labeled sponsored content, April 2026.)
   https://www.clickondetroit.com/live-in-the-d/2026/04/23/sterling-heights-goes-green/
+- A news report (Sterling Heights Sentry, C and G Newspapers, May 6, 2026) backs up the sponsored piece: in 2026 the city is "eyeing 3,200 tree plantings for public right-of-ways and residential neighborhoods", funded by the Pathway to Play and Preservation millage voters passed in 2024. A city official is quoted: "Our goal is to have a street tree present in front of every home in the city." The same article says the city has been a Tree City USA community for 41 straight years, and that emerald ash borer and Dutch elm disease cost more than 15,000 residential lots their trees. (The counts are for our reference only. On the pages: "a Tree City USA for decades", "thousands of trees a year", "a street tree in front of every home" as the city's stated goal.)
+  https://www.candgnews.com/news/sterling-heights-forging-ahead-with-reforestation-10899
 - From Memorial Day through Labor Day the city has voluntary outdoor watering restrictions: odd and even days by address, and Public Works urges homeowners to water lawns between 11 p.m. and 5 a.m.
   https://sterlingheights.gov/207/Watering-Restrictions
 
@@ -92,6 +99,7 @@ Checked 2026-10-13. Every bullet is a plain fact followed by the page it was con
   https://candgnews.com/news/fun-time-cruzers-looking-for-a-new-location-6012
 - As of May 28, 2025 the Fun Time Cruzers meet Mondays, 4 to 8 p.m., at NAPA Auto Parts on Van Dyke Avenue north of 21 Mile Road in Shelby Township. The same article lists weekly cruise nights on every day of the week across Macomb County (Warren, Center Line, Roseville, St. Clair Shores, Chesterfield Township and others). None of the listed events is in Sterling Heights.
   https://www.candgnews.com/news/retro-rides-rev-up-local-car-shows--8436
+- Fact check, 2026-10-13: no 2026 listing for the Fun Time Cruzers was found. The Shelby Township location is confirmed for the 2025 season only. On the pages, keep it in the past tense ("the cruise moved up Van Dyke to Shelby Township") and do not say where it meets now.
 
 ## Drive
 
@@ -113,12 +121,22 @@ The same router from other points in the city:
 
 So two simple descriptions are safe on the pages: "14 Mile Road east" for the south end of the city, and "Utica Road southeast to 14 Mile Road, then east" for the middle and north. The shop is on the north side of 14 Mile Road, just east of Kelly Road. The extra mileages the router gave for those other start points are not in drive-times.json and must not be printed on the pages.
 
-Note for the orchestrator: the existing hub and ceramic coating pages call the trip "a straight run east on 14 Mile Road". That is exact for the south edge of the city. From the measured central point the router spends most of the trip on Utica Road and only the last stretch on 14 Mile.
+Fact check, 2026-10-13: the route was run again independently on the same router, with the shop geocoded by OpenStreetMap Nominatim to 42.5403101, -82.9260345 (33115 Louise Avenue, Clinton Township). Result from 40555 Utica Rd: 6.58 miles, 13.0 minutes. Utica Road 4.57 miles, left on East 14 Mile Road 1.38 miles, left on Louise Avenue. From 14 Mile Road at Van Dyke the router stays on East 14 Mile Road for 5.2 miles and turns left on Louise Avenue. Both descriptions hold.
+
+The hub and the ceramic coating page used to call the trip "a straight run east on 14 Mile Road" from the middle of the city. That was wrong for the measured central point and has been corrected on both pages to the Utica Road route.
 
 ## Do not claim
 
-- Brine on any named road. The county press releases mention salt only. A 2021 Macomb Daily article that reportedly says the county uses "a saltwater brine in its mix" appeared only as a search snippet, and the page itself returned an error. Keep to "road salt" for local statements.
-- Which agency salts M-53 and M-59. They are state routes. The county says only that its winter spending covers "primary, local and state roads". Not confirmed beyond that.
+- Brine or "liquid de-icer" on any named road. The county press releases mention salt only. A 2021 Macomb Daily article that reportedly says the county uses "a saltwater brine in its mix" appeared only as a search snippet, and the page itself returned an error (again on the fact check: HTTP 403). The one page that did load is a 2007 trade article saying the county road agency, then the Road Commission of Macomb County, began using an automated brine maker "to produce brine mixtures for pre-wetting during snow and ice events". That is old, and it names no road. Keep to "road salt" for local statements. The generic "Michigan winter of road salt and brine" from the shop's own copy is fine.
+  https://www.roadsbridges.com/home/article/10583866/automatic-control
+- That any named road is salted "from the first freeze", or how early in the season salting starts. No source.
+- Which agency salts M-53 and M-59 by name. They are state routes. The county says its winter spending covers "primary, local and state roads" and that state and primary roads are cleared first. Say that much and no more.
+- Who has jurisdiction over Mound Road or Schoenherr Road. Innovate Mound was a partnership of the county Department of Roads, Warren and Sterling Heights, and no page found says who maintains it in winter. Do not call either one a county or a city road.
+- "Stop and go" traffic, traffic signals or congestion on Hall Road. Wikipedia calls it a boulevard and says nothing about signals or congestion. A 2017 TV report says the stretch from Van Dyke east "sees 90,000 drivers per day", which is a statistic and stays off the pages.
+  https://clickondetroit.com/news/2017/02/21/major-60m-reconstruction-project-planned-for-hall-road-in-macomb-county
+- Hall Road as Macomb County's "main strip". Wikipedia's words are "somewhat of a main street in Macomb County", home to "a wide variety of shopping and dining". On the pages: Hall Road is lined with shopping and dining.
+- That every city street is salted. See the December 2025 exception under Winter.
+- Sand on the unsalted streets. One TV station reportedly said crews would lay sand. Seen only in a search summary, and the city page does not say it.
 - Gravel or unpaved public roads. Searched, found nothing. Do not mention gravel or dust from unpaved roads.
 - Parking decks or parking structures. Found no source for any in the city.
 - Street parking habits, or any overnight street parking rule other than the snow emergency rule. Only a third-party site, not the city code.

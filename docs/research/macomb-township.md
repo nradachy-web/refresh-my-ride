@@ -13,8 +13,9 @@ print statistics or rankings (see docs/CONTENT-GUIDE.md).
    https://www.macombgov.org/departments/department-roads/news/macomb-county-department-roads-projects-starting-summer
 3. Hayes Road is the west line, shared with Shelby Township. WDIV reported work "on the border of Shelby Township and Macomb Township" on Hayes Road from 21 Mile to 23 Mile Road.
    https://www.clickondetroit.com/news/2015/01/23/road-closures-in-macomb-county
-4. 26 Mile Road is the north line. The county lists the 26 Mile Road and Hayes Road intersection as a Macomb Township project shared with Ray, Shelby and Washington townships.
+4. 26 Mile Road is the north line. The county lists the 26 Mile Road and Hayes Road intersection as a Macomb Township project shared with Ray, Shelby and Washington townships. Wikipedia places Meade "in the northeast portion of the township at 26 Mile Road and North Avenue, on the boundary with Ray Township".
    https://www.macombgov.org/departments/department-roads/macomb-work-zone
+   https://en.wikipedia.org/wiki/Macomb_Township,_Michigan
 5. Chesterfield Township is the neighbor to the east (it is bordered "on the west by Macomb Township").
    https://en.wikipedia.org/wiki/Chesterfield_Township,_Michigan
 
@@ -31,9 +32,11 @@ print statistics or rankings (see docs/CONTENT-GUIDE.md).
    https://router.project-osrm.org/route/v1/driving/-82.9562,42.6590;-82.9260345,42.5403101?overview=false&steps=true&alternatives=true
 10. East of Van Dyke Avenue in Utica, M-59 "becomes a boulevard called Hall Road". Wikipedia describes the stretch as "somewhat of a main street in Macomb County" with "a wide variety of shopping and dining", naming Lakeside Mall in Sterling Heights and The Mall at Partridge Creek in Clinton Township.
     https://en.wikipedia.org/wiki/M-59_(Michigan_highway)
+    Traffic on it: WDIV reported in February 2017 that the Hall Road stretch from Van Dyke to Romeo Plank "sees 90,000 drivers per day, which is more than some freeways get". An old count, and a statistic: do not print it. It is here only to back "slow" or "stop and go" for Hall Road.
+    https://clickondetroit.com/news/2017/02/21/major-60m-reconstruction-project-planned-for-hall-road-in-macomb-county
 11. Groesbeck Highway (M-97) ends at Hall Road and continues north into the township as North Avenue.
     https://en.wikipedia.org/wiki/M-97_(Michigan_highway)
-12. The township supervisor said of Romeo Plank Road that "on busy days it's backed up a mile heading south" (WXYZ, 2025). The same report says the township has "literally tripled in size" and that roads have lagged behind.
+12. The township supervisor, Frank Viviano, said of Romeo Plank Road that "on busy days it's backed up a mile heading south" (WXYZ, 2025). The same report says the township has "literally tripled in size" and that roads have lagged behind.
     https://www.wxyz.com/news/voices/macomb-twp-set-to-make-historic-investment-in-road-improvement
 13. Road work is ongoing. Romeo Plank Road between 21 1/2 Mile and 23 Mile Road is planned to go from two lanes to five, and as of August 2026 was waiting on a federal permit. The county's 2026 list for the township includes the Broughton Road reconstruction between 23 1/2 Mile and 24 1/2 Mile Road (July to November 2026), an overlay on 21 Mile Road from Garfield to Romeo Plank, and a 21 Mile Road bridge replacement. Time sensitive: the pages may say road projects are under way, not name a closure or a date.
     https://www.wxyz.com/news/voices/romeo-plank-road-widening-project-stalled-for-years-leaving-boarded-up-homes-and-closed-businesses-in-macomb-township
@@ -48,7 +51,7 @@ print statistics or rankings (see docs/CONTENT-GUIDE.md).
     https://www.macombgov.org/departments/department-roads/departments-list/maintenance
 16. Inside subdivisions the county salts very little: "MCDR only applies salt within subdivisions at entrances, exits, intersections and hills." Subdivision roads are plowed "when four inches or more of snow has fallen". (Do not print the four inch figure: the guide bars weather numbers.)
     https://www.macombgov.org/departments/department-roads/community-engagement/resources/frequently-asked-questions
-17. The county's Department of Roads says it uses more than 50,000 tons of salt in an average winter and runs a winter fleet of more than 100 snowplows, salt trucks and graders (November 2022 release. Earlier releases give 49,500 and 57,000 tons).
+17. The county's Department of Roads says it uses more than 50,000 tons of salt in an average winter and has "more than 100 light and heavy duty trucks, graders, and loaders outfitted with snowplows". The same release says "plows start with main trunk line and primary road routes" (November 17, 2022 release. Earlier releases give 49,500 and 57,000 tons).
     https://www.macombgov.org/news/salt-equipment-and-crews-ready-macomb-county-prepared-winter
 18. Brine: the county applies brine to gravel roads twice a year for maintenance. Winter brine on paved roads was confirmed only in a 2007 trade article about the Road Commission of Macomb County's brine maker for pre-wetting. Treat "salt" as confirmed for the county and "brine" as general Michigan wording only.
     https://www.roadsbridges.com/home/article/10583866/automatic-control
@@ -67,8 +70,9 @@ print statistics or rankings (see docs/CONTENT-GUIDE.md).
 
 ## Parks and what they put in a car
 
-23. Macomb Corners Park is a 94 acre (35 developed) sports complex on the north side of 25 Mile Road just east of Luchtman Road: 6 lighted ball diamonds, 8 soccer fields, 2 sand volleyball courts and a one mile walk and run trail. It hosts the Summer Concert Series and Movie Under the Stars.
+23. Macomb Corners Park is a 94 acre (35 developed) sports complex on the north side of 25 Mile Road just east of Luchtman Road: 6 lighted ball diamonds, 8 soccer fields, 2 sand volleyball courts and a one mile walk and run trail. It hosts the Summer Concert Series and Movie Under the Stars. A 2012 Patch report calls it "home to numerous youth and adult leagues, including the Macomb Township Little League and Clinton-Macomb Girls Fastpitch League". Neither page mentions a tournament, so the pages say "games", not "tournament".
     https://macomb-mi.gov/454/Macomb-Corners-Park
+    https://patch.com/michigan/macomb/macomb-corners-park-opens-today-for-summer-season
 24. Pitchford Park is 14.1 acres on Romeo Plank Road, a quarter mile north of 22 Mile Road. It opened in November 2023 and has a large dog park area and a small dog park area.
     https://www.macomb-mi.gov/771/Pitchford-Park
 25. Waldenburg Park is about 17 acres on 21 Mile Road, a quarter mile east of Romeo Plank Road, with a play area, picnic pavilions, a basketball court and a walking trail.
@@ -83,11 +87,14 @@ print statistics or rankings (see docs/CONTENT-GUIDE.md).
 28. Two high schools sit on 21 Mile Road in the township: Dakota High School (Chippewa Valley Schools) at 21051 21 Mile Road and L'Anse Creuse High School North at 23700 21 Mile Road.
     https://en.wikipedia.org/wiki/Dakota_High_School_(Michigan)
     https://en.wikipedia.org/wiki/L%27Anse_Creuse_High_School_-_North
-29. The Mall at Partridge Creek, on Hall Road, is an open-air shopping center in Clinton Township with 3,250 parking spaces.
+29. The Mall at Partridge Creek, on Hall Road, is an open-air shopping center in Clinton Township with 3,250 parking spaces. Still trading in October 2026: DBusiness reported on October 12, 2026 that a new anchor store "will open at Partridge Creek Mall in Clinton Township and anchor the west end of the open-air shopping center".
     https://en.wikipedia.org/wiki/The_Mall_at_Partridge_Creek
+    https://www.dbusiness.com/daily-news/dicks-house-of-sport-coming-to-partridge-creek-mall-in-clinton-township/
 30. The township's address is 54111 Broughton Road (Township Hall). This is the point the drive time was measured from.
     https://macomb-mi.gov/325/History-of-Macomb
-31. Car culture nearby, not in the township: the Clinton Township Gratiot Cruise runs along Gratiot Avenue between 14 Mile Road and Wellington Crescent. The 21st was August 4, 2024 and the 22nd was Sunday, August 3, 2025, with a car show, and a 23rd was being planned for 2026. It is in Clinton Township, the shop's home town. The township's own events (Tons O' Trucks, a Santa Cruise) are not car shows.
+31. Car culture nearby, not in the township: the Clinton Township Gratiot Cruise runs along Gratiot Avenue between 14 Mile Road and Wellington Crescent. The 21st was August 4, 2024, the 22nd was Sunday, August 3, 2025, and the 23rd was set for Sunday, August 2, 2026 (no report from after the day was found): the first Sunday of August each year. The organizer's own FAQ gives the route as "Gratiot Avenue from 14 Mile Road to Wellington Crescent (north of Metropolitan Parkway) and back" and says "Cruise Headquarters has a public Car Show". It is in Clinton Township, the shop's home town. The pages say "early August" and give no year. The township's own events (Tons O' Trucks, a Santa Cruise) are not car shows.
+    https://ctgratiotcruise.com/about-faq/
+    https://wcsx.com/2026/07/30/gratiot-cruise-returns-for-23rd-year-with-relocated-family-zone-and-new-grand-marshal/
     https://www.candgnews.com/news/cruising-the-avenue-8889
     https://candgnews.com/news/gratiot-cruise-returns-for-21st-year-6204
     https://macomb-mi.gov/507/About-Parks-and-Recreation
@@ -101,6 +108,8 @@ These connect a fact above to a car. They are reasoning, not sourced facts.
 - Dust. Facts 13, 19 and 21 confirm ongoing house building and road projects. The pages say that means dust on parked cars and mud tracked inside. That dry wiping causes swirl marks is the shop's own point (see _source/clean/car-detailing-shelby-township-mi.md).
 - Sun angle. Facts 7 and 9 give road directions. The pages say north and south roads put a low morning or evening sun in the side glass and east and west roads put it in the windshield.
 - Parked outside. Facts 23, 28 and 29 name places with parking. The pages say a car parked there sits in the sun. Nothing says how much shade any lot has.
+- Stop and go. Fact 12 confirms Romeo Plank backs up southbound, and fact 10 confirms Hall Road is lined with shopping and carries heavy traffic. The ceramic page says that means brake dust on the wheels.
+- Rock chips. Fact 13 confirms road projects. One ceramic FAQ asks about rock chips "from all the road work". That work zones throw stones is common sense, not a sourced fact, and the answer only says what a coating will not stop.
 
 ## Drive
 
@@ -119,6 +128,7 @@ https://router.project-osrm.org/route/v1/driving/-82.9232204,42.6957208;-82.9260
   https://router.project-osrm.org/route/v1/driving/-82.9562,42.6590;-82.9260345,42.5403101?overview=false&steps=true&alternatives=true
 - From the east side (checked from near North Avenue and 22 Mile): North Avenue south, which becomes Groesbeck Highway (M-97) at Hall Road, then Groesbeck south to Kelly Road and 14 Mile Road.
   https://router.project-osrm.org/route/v1/driving/-82.8850,42.6600;-82.9260345,42.5403101?overview=false&steps=true
+- Fact check, 2026-10-13: all three router links above were run again in the fact check pass. Same result each time. Township Hall: 25 Mile Road, Romeo Plank Road, Cass Avenue, South Groesbeck Highway (M 97), Kelly Road, a left onto East 14 Mile Road for about 300 meters, Louise Avenue on the left. Garfield near 22 Mile: Garfield Road for about 8 miles, a left onto East 14 Mile Road for about 1.2 miles, Louise Avenue on the left, so Louise is just east of Kelly Road. North Avenue near 22 Mile: North Avenue, which the router shows changing name to North Groesbeck Highway (M 97), then Kelly Road and East 14 Mile Road.
 - The router gives no-traffic times, and Romeo Plank is known to back up (fact 12). Road work (fact 13) can change the first few miles. The pages name the main roads and promise nothing beyond "roughly 30 minutes without traffic".
 
 ## Do not claim
@@ -131,7 +141,9 @@ Looked for and could not confirm. None of this goes on a page.
 - A lake, beach, boat launch or Metropark inside the township. None found.
 - Garages, parking decks or street parking as a pattern. The census confirms detached houses and nothing more.
 - Large employers, plants or office parks inside the township, where residents work, or how long they commute.
-- A car show, cruise or car meet held in Macomb Township. Only the Gratiot Cruise in Clinton Township was confirmed, and its 2026 date was not.
+- A car show, cruise or car meet held in Macomb Township. Only the Gratiot Cruise in Clinton Township was confirmed (fact 31). No date for 2027 is published yet, so no page names a date.
+- Tournaments at Macomb Corners Park. Leagues play there (fact 23). No source mentions a tournament.
+- That Hall Road is the busiest road in the county, or any traffic count on a page.
 - The east boundary road. Chesterfield Township is the neighbor, but no source names the line.
 - Current status of the Romeo Plank widening, or any road closure by name. It changes month to month.
 - Which named county roads are "primary". The county gives examples only.

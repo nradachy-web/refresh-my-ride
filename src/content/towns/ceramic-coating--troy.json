@@ -14,7 +14,7 @@
   },
   "local": {
     "title": "What Troy driving does to clear coat.",
-    "intro": "Troy runs on the car. The city's master plan calls the private automobile the primary way people get around, I-75 crosses the middle of town, and a working day here usually means a parking lot. Each of those is hard on bare clear coat. A coating changes what sticks.",
+    "intro": "Troy runs on the car. The city's master plan calls the private automobile the primary way people get around, I-75 crosses the middle of town, and a working day on Big Beaver usually means a parking lot. Each of those is hard on bare clear coat. A coating changes what sticks.",
     "points": [
       {
         "title": "Wet salt off the freeway",
@@ -41,10 +41,22 @@
       "Plan to be without the vehicle for at least a full day, and longer when the paint needs more correction. You get an exact window with your quote. If you drop it off, Uber is covered for the drop-off and the pickup. If you would rather not make the trip at all, use valet: we collect the vehicle from your home or workplace and bring it back coated. It is the option most of our coating customers choose when they cannot spare the day."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Distance", "value": "About 14 miles from central Troy" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Distance",
+        "value": "About 14 miles from central Troy"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "While it is with us",
+        "value": "Uber covered, or valet pickup"
+      }
     ]
   },
   "photo": "bmw-x6-blue",

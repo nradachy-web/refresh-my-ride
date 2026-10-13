@@ -36,7 +36,7 @@ const counties = ['Macomb', 'Oakland'] as const;
           <Head id={`${county}-h`} layout="left" eyebrow="Where we work" title={`${county} County`} />
           <ul class="grid c3">
             {CITIES.filter((c) => c.county === county).map((c) => (
-              <li class="card pad town reveal">
+              <li class="card pad town">
                 <h3 class="h3">
                   <a href={href(hubPath(c))}>{c.name}</a>
                 </h3>

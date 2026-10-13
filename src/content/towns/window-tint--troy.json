@@ -14,7 +14,7 @@
   },
   "local": {
     "title": "Why tint earns its keep in Troy.",
-    "intro": "Troy fills up on weekdays. It is a place people commute into, and Big Beaver between Rochester Road and Coolidge is its business district, lined with high-rise offices. A lot of glass sits in the sun from morning to evening. That is the job window film was made for.",
+    "intro": "Troy fills up on weekdays. It is a place people commute into, and Big Beaver between Rochester Road and Coolidge is its business district, lined with high-rise offices. A lot of glass sits in the sun from morning to evening. That is what window film is for.",
     "points": [
       {
         "title": "The car that sits outside all day",
@@ -22,15 +22,11 @@
       },
       {
         "title": "Low sun on the mile roads",
-        "body": "Big Beaver, Maple and Long Lake all run east and west. Drive them at commute hours and the sun is low in the windshield one way and in the mirrors the other. Film on the side and rear glass cuts that glare. A light film for the windshield is an option too, and we go through what Michigan allows on each set of windows first."
-      },
-      {
-        "title": "No signal trouble on the commute",
-        "body": "Both films are non-metalized. They do not interfere with GPS, radio or phone signal, which matters when your phone is doing the navigating down I-75 or reading you the traffic on Big Beaver."
+        "body": "Big Beaver, Maple and Long Lake all run east and west. Drive them at commute hours and the sun is low in the windshield one way and in the mirrors the other. Film on the rear glass takes the edge off what comes through the mirrors, and a light film for the windshield is an option for the rest. We go through what Michigan allows on each set of windows first."
       },
       {
         "title": "Privacy in a lot or a deck",
-        "body": "Somerset Collection alone has surface, covered and valet parking. Wherever you leave the car, darker film on the rear doors and back glass keeps a laptop bag or shopping bags out of easy view. The rules differ for each set of windows, so we show you what is legal for your vehicle before you pick a shade."
+        "body": "Somerset Collection alone has surface, covered and valet parking. Wherever you leave the car, darker film on the rear doors and back glass keeps a laptop bag or shopping bags out of easy view. Michigan's rules differ for each set of windows, so we show you what is legal for your vehicle before you pick a shade."
       }
     ]
   },
@@ -42,10 +38,22 @@
       "If you cannot leave work, ask about valet pickup: we collect the vehicle in Troy, tint it at the shop and bring it back. The covered Uber ride is for coating jobs only, so for tint it is the drive or the valet."
     ],
     "facts": [
-      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
-      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
-      { "label": "Install time", "value": "About 1.5 to 3.5 hours for most installs" },
-      { "label": "Cannot make the drive", "value": "Ask about valet pickup" }
+      {
+        "label": "Where",
+        "value": "Our shop, 33115 Louise Ave, Clinton Township"
+      },
+      {
+        "label": "Drive",
+        "value": "Roughly 25 minutes without traffic"
+      },
+      {
+        "label": "Install time",
+        "value": "About 1.5 to 3.5 hours for most installs"
+      },
+      {
+        "label": "Cannot make the drive",
+        "value": "Ask about valet pickup"
+      }
     ]
   },
   "photo": "tesla-model-y",

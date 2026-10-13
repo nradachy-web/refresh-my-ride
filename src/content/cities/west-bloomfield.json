@@ -7,14 +7,14 @@
   "hero": {
     "kicker": "Ceramic coating, window tint and detailing in West Bloomfield, MI",
     "title": "Lake township cars. **Done indoors.**",
-    "lede": "Residents call West Bloomfield the lake township of Oakland County. Salt, sap and lake days all end up on the car. Our indoor shop on Louise Ave is about 25 miles from central West Bloomfield, roughly 45 minutes without traffic. Coatings, tint and paint correction are done there, by appointment.",
+    "lede": "Residents sometimes call West Bloomfield the lake township of Oakland County. Salt, sap and lake days all end up on the car. Our indoor shop on Louise Ave is about 25 miles from central West Bloomfield, roughly 45 minutes without traffic. Coatings, tint and paint correction are done there, by appointment.",
     "chips": ["Roughly 45 minutes away", "Appointment only", "Uber covered on coatings"],
     "photo": "shop-interior"
   },
   "about": {
     "title": "Lakes, woods and county salt: what a car picks up here.",
     "body": [
-      "West Bloomfield sits between Bloomfield Township and Commerce Township, with Farmington Hills to the south and Cass Lake on the north side. Orchard Lake Road runs north to south through the middle, and it and West Maple Road are where the strip malls and shopping centers are. The township does not run its own road crews: the Road Commission for Oakland County looks after every public road, salt trucks included."
+      "West Bloomfield sits between Bloomfield Township and Commerce Township, with Farmington Hills to the south and Cass Lake on the north side. Orchard Lake Road runs north to south through the middle, flanked by strip malls and shopping centers, and West Maple Road is the township's other main business road. The township does not run its own road crews: the Road Commission for Oakland County looks after every public road, salt trucks included."
     ],
     "points": [
       {
@@ -26,8 +26,8 @@
         "body": "Cass Lake, the largest lake in the county, is partly in the township, and Pine Lake and Walnut Lake are inside it. Marshbank Park has a canoe and kayak launch and a fishing pier on Cass Lake. Wet gear and lake water soak into cargo areas and carpet, and getting them out is extraction work, not a vacuum."
       },
       {
-        "title": "Trees the township protects",
-        "body": "West Bloomfield regulates cutting in its designated woodlands, and the 162 acre West Bloomfield Woods Nature Preserve is mature oak and hickory. Good for the place, hard on a parked car: sap and bird droppings sit on the paint until they are properly washed off."
+        "title": "Woodlands that stay standing",
+        "body": "Inside West Bloomfield's designated woodlands, trees cannot be cut without going through the township first, and the 162 acre West Bloomfield Woods Nature Preserve has mature oak and hickory trees. Good for the place, hard on a car parked under branches: sap and bird droppings sit on the paint until they are properly washed off."
       },
       {
         "title": "Gravel roads and what goes on them",
@@ -56,7 +56,7 @@
     },
     {
       "q": "How far is your shop from West Bloomfield?",
-      "a": "About 25 miles from central West Bloomfield, roughly 45 minutes without traffic. We are in Clinton Township at 33115 Louise Ave, north of 14 Mile Road and just east of Kelly Road. The shop is appointment only, so please book before you set out."
+      "a": "About 25 miles from central West Bloomfield, roughly 45 minutes without traffic. We are in Clinton Township at 33115 Louise Ave, on the north side of 14 Mile Road, just east of Kelly Road. The shop is appointment only, so please book before you set out."
     },
     {
       "q": "I cannot give up a whole day. How do coating customers handle the distance?",

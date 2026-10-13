@@ -30,7 +30,7 @@
       },
       {
         "title": "The commuter interior",
-        "body": "Daily miles mean coffee in the console, dust in the vents and a film on the inside of the glass. For a long commute we suggest a maintenance detail every one to three months, with a full detail at the end of winter and the end of summer. Ask about our maintenance plans, which lock in a lower per-visit price."
+        "body": "The city's master plan calls the car the primary way people get around here, so most vehicles are in use every day. That means coffee in the console, dust in the vents and a film on the inside of the glass. For a long commute we suggest a maintenance detail every one to three months. Ask about our maintenance plans, which lock in a lower per-visit price."
       }
     ]
   },
@@ -42,10 +42,22 @@
       "You can also drive it over. The shop is about 14 miles from central Troy, roughly 25 minutes without traffic: east on Big Beaver Road and Metropolitan Parkway, right on Utica Road, left on 14 Mile Road."
     ],
     "facts": [
-      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
-      { "label": "What we need", "value": "Room to walk the full perimeter of the vehicle" },
-      { "label": "Valet pickup", "value": "Available. Ask when you book." },
-      { "label": "Shop drop-off", "value": "About 14 miles, roughly 25 minutes without traffic" }
+      {
+        "label": "Mobile detailing",
+        "value": "Yes, at your home or workplace"
+      },
+      {
+        "label": "What we need",
+        "value": "Room to walk the full perimeter of the vehicle"
+      },
+      {
+        "label": "Valet pickup",
+        "value": "Available. Ask when you book."
+      },
+      {
+        "label": "Shop drop-off",
+        "value": "About 14 miles, roughly 25 minutes without traffic"
+      }
     ]
   },
   "photo": "mobile-bmw-driveway",
