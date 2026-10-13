@@ -32,7 +32,7 @@ const hero = await heroImage(c.hero.photo as PhotoId);
 const lastPlane = c.blocks[c.blocks.length - 1].plane;
 // TEMPORARY perf experiment (see src/pages/perf-test)
 const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
-const pvPreload = pv === 'a' ? { srcset: hero.webp, sizes: hero.sizes, type: 'image/webp' } : pv === 'b' || pv === 'c' ? undefined : hero.preload;
+const pvPreload = pv === 'c' ? undefined : hero.preload;
 
 // Mobile detailing does not list West Bloomfield: it is past the published mobile range.
 const areas = svc.id === 'mobile-detailing' ? CITIES.filter((t) => t.id !== 'west-bloomfield').map((t) => `${t.name}, MI`) : undefined;
