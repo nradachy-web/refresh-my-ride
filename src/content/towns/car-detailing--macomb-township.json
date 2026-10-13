@@ -1,0 +1,71 @@
+{
+  "service": "car-detailing",
+  "city": "macomb-township",
+  "meta": {
+    "title": "Car Detailing in Macomb Township, MI | Refresh My Ride",
+    "description": "Mobile car detailing in Macomb Township, MI. Interior details from $184.99, full details from $249.99, in your driveway, at our shop or by valet. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in Macomb Township, MI",
+    "title": "Detailed in your **Macomb driveway.**",
+    "lede": "Interior, exterior and full details at your home or workplace in Macomb Township. We bring our own power and water. Interior details are from $184.99 and full details from $249.99 for a coupe or sedan in average condition. If a driveway visit does not suit, valet pickup takes the vehicle to the shop and brings it back.",
+    "chips": ["Mobile, shop or valet", "Interior from $184.99", "We bring power and water"],
+    "photo": "jeep-grand-cherokee"
+  },
+  "local": {
+    "title": "What ends up inside a Macomb Township car.",
+    "intro": "Ball fields, a dog park, salted main roads and a township that is still being built. None of it is exotic, and all of it ends up in the carpet. Here is what each one leaves behind and how we get it out.",
+    "points": [
+      {
+        "title": "Infield dirt, grass and volleyball sand",
+        "body": "Macomb Corners Park has six ball diamonds, eight soccer fields and two sand volleyball courts. Cleats and gear bags carry all three surfaces into the cargo area. Sand and fine dirt work down into the carpet, past where a vacuum reaches. Hot water extraction pulls them back out."
+      },
+      {
+        "title": "Dog hair from Pitchford Park",
+        "body": "Pitchford Park on Romeo Plank opened in 2023 with separate large and small dog areas. Hair weaves into seat fabric and cargo carpet, and a wet dog leaves its smell behind. Pet hair, stains and odors can all be treated. Heavy pet hair can add a charge, and you approve it before we start."
+      },
+      {
+        "title": "Road salt in the driver's footwell",
+        "body": "The main roads are salted through the winter, and the salt rides in on your boots. It dries as a white crust in the carpet. Floor mats are washed in every interior package, and the Executive Interior Detail adds seat and carpet extraction to lift what has soaked in."
+      },
+      {
+        "title": "Dust and mud from new construction",
+        "body": "New houses and road work mean open dirt close to home. It settles as dust in vents and seams when it is dry and comes in as mud on shoes after rain. The Executive Interior Detail covers cracks, vents and pedals, the places a quick clean skips."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Your driveway, our shop, or valet. You pick.",
+    "body": [
+      "Most homes in Macomb Township are detached houses, so a mobile visit usually needs nothing more than the driveway: enough room to walk the full perimeter of the vehicle. In a condo or attached home, a parking spot with the same clearance works. Mobile is a good fit for interior details and the Wash & Seal.",
+      "Anything with machine polishing, like the Luxury Refresh or Polish & Protect, is done at the shop under controlled lighting. The shop is about 15 miles from central Macomb Township, roughly 30 minutes without traffic, and [pick-up and drop-off valet](/mobile-detailing/) can make both trips for you.",
+      "Before we arrive, please take out personal items and car seats. A Premium Interior Detail takes about 2 hours and a Signature Refresh about 5, and we confirm the timing when you book."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "What we need", "value": "Room to walk around the whole vehicle" },
+      { "label": "Shop", "value": "About 15 miles from central Macomb Township" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "photo": "mobile-bmw-driveway",
+  "faq": [
+    {
+      "q": "Do you come to my house in Macomb Township, or do I drive to the shop?",
+      "a": "Either one. Macomb Township is in our mobile service area, so we can detail in your driveway or at your workplace. You can also drop the vehicle at the shop in Clinton Township, or use valet and let us make both trips. Tell us your nearest mile road when you book so we can plan the visit."
+    },
+    {
+      "q": "What does a detail cost for a family SUV?",
+      "a": "Published prices are for a coupe or sedan in average condition. The Premium Interior Detail is from $184.99, the Essential Refresh inside and out is from $249.99, and the Signature Refresh, our most popular full detail, is from $319.99. An SUV or truck is quoted for its size. See every package on the [detailing page](/car-detailing-services-clinton-township-mi/), or [get a free quote](#quote)."
+    },
+    {
+      "q": "Can you get out what a toddler and a dog leave behind?",
+      "a": "Usually, yes. Steam and hot water extraction lift ground-in food, spilled drinks, pet hair and the odors that come with them. A few things do not come out, dye transfer and old bleach marks among them, and we point those out at the walkaround before any work begins. Take the car seats out before we arrive so we can clean under them."
+    },
+    {
+      "q": "How often should a car out here be detailed?",
+      "a": "A full detail once or twice a year suits most vehicles: one at the end of winter to get the salt out, and one at the end of summer. With kids, a dog or a long daily drive, a maintenance detail every one to three months keeps it from building up. If that sounds like your household, ask about a maintenance plan: it locks in a lower per-visit price for regular service."
+    }
+  ],
+  "reviews": ["alexis-p", "sydney-k", "caitlin-d"]
+}

@@ -1,0 +1,70 @@
+{
+  "service": "paint-correction",
+  "city": "rochester-hills",
+  "meta": {
+    "title": "Paint Correction in Rochester Hills, MI | Refresh My Ride",
+    "description": "Paint correction for Rochester Hills: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 on a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Rochester Hills, MI",
+    "title": "Winter wash marks. **Polished out.**",
+    "lede": "Salted streets mean a winter of quick washes, and brush tunnels leave their mark. Paint correction machine polishes swirl marks, light scratches, oxidation and water spots out of the clear coat. A one-step polish is from $344.99 for a coupe or sedan in average condition, done at the shop, with valet pickup from Rochester Hills.",
+    "chips": ["Swirls and oxidation out", "One-step from $344.99", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "local": {
+    "title": "How Rochester Hills paint gets marked, and where polishing stops.",
+    "intro": "Clear coat does not go dull on its own. Something touches it, over and over. These are the usual causes in this town, what machine polishing does about each one, and the damage it cannot reach.",
+    "points": [
+      {
+        "title": "Salt season and the brush tunnel",
+        "body": "The city salts its local streets as well as its major roads, so from the first snow the car is rarely clean for long. The quick fix is a brush-style automatic wash, and those put fine swirls into any finish. A one-step polish takes out roughly 60 to 70% of those light swirls and scratches."
+      },
+      {
+        "title": "Sap, then scrubbing",
+        "body": "Street trees are protected in Rochester Hills: you need a city permit to remove one. What falls from them gets scrubbed off the hood with whatever is in the garage, and scrubbing is how wash marks start. We begin with a decontamination wash that takes off sap, tar and bug residue before a polisher touches the paint."
+      },
+      {
+        "title": "A town that looks at cars",
+        "body": "Meadow Brook Hall, built by the heiress to the Dodge fortune, is in Rochester Hills, and the Concours d'Elegance was held on its grounds every August from 1979 to 2010. Downtown Rochester still hosts the Lions Club's Rockin' Rods n' Rochester show each August. Sun on a show field finds every swirl. Our shop lighting finds them first."
+      },
+      {
+        "title": "Rock chips are a different repair",
+        "body": "M-59 is a freeway, and freeway miles put chips in the front of a car. Correction is not repainting, so it cannot fix those chips, scratches that go through the clear coat, or clear coat that has failed. Before any work starts you hear from us which marks will come out and which are staying."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction needs our lights. Valet can do the driving.",
+    "body": [
+      "Machine polishing is done in an enclosed bay under controlled lighting, so it happens at the shop: 33115 Louise Ave, Clinton Township, on the north side of 14 Mile Road just east of Kelly Road. That is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic.",
+      "Polish & Protect takes about 4.5 to 5 hours and the Luxury Refresh about 7, so plan to leave the vehicle for the day. A multi-stage job is quoted after we see the paint. From Rochester Hills, [pick-up and drop-off valet](/mobile-detailing/) saves both trips: we collect the vehicle from your home or work and bring it back when it is done."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "About 19 miles, roughly 30 minutes without traffic" },
+      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "photo": "josh-polishing-corvette",
+  "faq": [
+    {
+      "q": "Can you polish my car in my driveway in Rochester Hills?",
+      "a": "No. Paint correction is shop only. A polisher needs an enclosed bay and controlled lighting, and a driveway gives us wind, dust and changing light to fight. Valet pickup brings the vehicle to the shop and back. What can come to your home is [detailing](/car-detailing-rochester-hills-mi/): interior details and the Wash & Seal do not need the shop."
+    },
+    {
+      "q": "Will it take out the marks from automatic car washes?",
+      "a": "Light swirls from brush washes are what a one-step polish is for. It removes roughly 60 to 70% of light swirls and scratches. Heavier marring needs a multi-stage correction, which Matt, our lead technician, handles and which we quote after seeing the paint. To keep the marks from coming back, use a touchless wash or a gentle hand wash through the winter."
+    },
+    {
+      "q": "I am taking the car to a show this summer. What should I book?",
+      "a": "Text us photos of the paint in direct sun first: [(586) 400-1303](sms:+15864001303). If it only has light wash marks, Polish & Protect is a decontamination wash, a one-step polish and a 6 month sealant, from $344.99 for a coupe or sedan in average condition. Heavier swirls or oxidation need a 2 step correction before a show, and that is quoted per vehicle. If you want the finish protected for years, every [ceramic coating package](/ceramic-coating-rochester-hills-mi/) includes the correction."
+    },
+    {
+      "q": "How much does paint correction cost for a truck or SUV?",
+      "a": "The published prices are for a coupe or sedan in average condition: Polish & Protect from $344.99, and the Luxury Refresh, a full detail with a one-step polish, from $439.99. SUVs and trucks are quoted for their size. A multi-stage correction is quoted per vehicle whatever you drive, because the condition of the paint decides the hours."
+    }
+  ],
+  "reviews": ["norman-r", "don-p", "karen-u"]
+}

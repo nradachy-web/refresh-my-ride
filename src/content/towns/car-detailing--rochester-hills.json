@@ -1,0 +1,70 @@
+{
+  "service": "car-detailing",
+  "city": "rochester-hills",
+  "meta": {
+    "title": "Car Detailing in Rochester Hills, MI | Refresh My Ride",
+    "description": "Auto detailing in Rochester Hills, at your home or our shop: interior from $184.99, full details from $249.99 for a coupe or sedan. We come to you. Free quote."
+  },
+  "hero": {
+    "kicker": "Auto detailing in Rochester Hills, MI",
+    "title": "Trail dust, salt, dog hair. **Gone.**",
+    "lede": "Limestone off the Paint Creek Trail, salt from streets the city treats all winter, and whatever the kids and the dog brought back from the park. We detail it out at your home in Rochester Hills, at our shop, or by valet, with interior details from $184.99 and full details from $249.99 for a coupe or sedan in average condition.",
+    "chips": ["We come to you", "Interior from $184.99", "Shop, mobile or valet"],
+    "photo": "interior-bmw"
+  },
+  "local": {
+    "title": "What ends up inside a Rochester Hills car.",
+    "intro": "A detail is only worth paying for if it deals with what is actually in the vehicle. Around here that is mostly salt, trail dust and whatever came home from the park, and each comes out a different way. The last point is why most of this work can happen in your driveway.",
+    "points": [
+      {
+        "title": "Salt in the carpet",
+        "body": "The city plows and salts its local streets as well as its major roads, so your boots pick it up on your own street all winter and carry it into the footwell. It dries white in the carpet and the mats. The Executive Interior Detail goes after it with steam and seat and carpet extraction, and the mats get washed."
+      },
+      {
+        "title": "Limestone dust and trail mud",
+        "body": "The Paint Creek Trail has a fine limestone surface, and the Clinton River Trail runs 4.5 miles through the city. Bloomer Park adds mountain bike trails and a sledding hill. Bikes, boots and strollers carry it all into the cargo area, which is why our interior details include a full vacuum of the trunk as well as the cabin."
+      },
+      {
+        "title": "Field days and the dog",
+        "body": "Borden Park is soccer fields and ball diamonds, and leashed dogs are allowed there and at Innovation Hills. That means grass, cleat dirt and pet hair in the back rows. Pet hair, stains and odors can be treated. Heavy pet hair can add to the price, and you approve that before any work begins."
+      },
+      {
+        "title": "Driveways that fit a mobile visit",
+        "body": "Single family homes are the largest land use in Rochester Hills. A driveway with room to walk the full perimeter of the vehicle is all we need, because we bring our own power and water. Tight condo or apartment parking is a different story, and valet pickup covers it."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "We come to Rochester Hills. Or we come and get it.",
+    "body": [
+      "Detailing is the one service that does not need the shop. We bring our own power and water to your home or workplace in Rochester Hills. All we ask before we pull up is that personal items and car seats come out of the cabin and trunk. You do not need to clean anything.",
+      "A mobile visit suits interior details and the Wash & Seal. When the parking does not work, or you would rather hand over the keys, valet pickup collects the vehicle, we detail it at the shop and bring it back. You can also drop it off: the shop is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic. See [how mobile and valet work](/mobile-detailing/)."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "What we need", "value": "Room to walk the full perimeter of the vehicle" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." },
+      { "label": "Drop off", "value": "About 19 miles, roughly 30 minutes without traffic" }
+    ]
+  },
+  "photo": "mobile-van",
+  "faq": [
+    {
+      "q": "Do you do mobile detailing in Rochester Hills?",
+      "a": "Yes. Mobile and valet reach about 30 to 40 minutes from our Clinton Township shop, and Rochester Hills is inside that. We bring our own power and water. You provide a driveway or parking spot with room to walk around the whole vehicle. Tell us where in the city you are when you [request a free quote](#quote) and we will confirm the visit."
+    },
+    {
+      "q": "I live in a condo. Can you still detail my car at home?",
+      "a": "It depends on the parking, not the building. We need a spot with room to walk the full perimeter of the vehicle, and a space with a car tight on each side usually does not give us that. Describe the parking when you book and we will tell you straight. If it does not work, valet pickup does: we collect the vehicle, detail it at the shop and return it."
+    },
+    {
+      "q": "What does it cost to detail an SUV?",
+      "a": "Our prices are listed for a coupe or sedan in average condition: interior details from $184.99, exterior details from $139.99 and full interior and exterior packages from $249.99. An SUV or truck is quoted for its size, and you have that number in hand before we start. The Signature Refresh, our most popular full detail, is from $319.99. See [every package and price](/car-detailing-services-clinton-township-mi/)."
+    },
+    {
+      "q": "How often should I book with kids, a dog and a Michigan winter?",
+      "a": "A full detail once or twice a year covers most drivers. Time it for the end of winter, when the salt is done, and the end of summer. With kids, pets or a long commute, a maintenance detail every one to three months keeps the car from getting bad enough to need the full job again. If that sounds like your car, ask about our maintenance plans: regular service at a lower per-visit price."
+    }
+  ],
+  "reviews": ["sydney-k", "alexis-p", "caitlin-d"]
+}

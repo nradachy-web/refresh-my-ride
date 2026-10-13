@@ -1,0 +1,71 @@
+{
+  "service": "window-tint",
+  "city": "sterling-heights",
+  "meta": {
+    "title": "Window Tint in Sterling Heights, MI | Refresh My Ride",
+    "description": "Window tint for Sterling Heights drivers. Geoshield carbon and ceramic film, lifetime warranty, front 2 windows from $99.99 on a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Sterling Heights, MI",
+    "title": "Every mile road **faces the sun.**",
+    "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your vehicle and installed indoors at our shop, about 7 miles from central Sterling Heights. Front 2 windows are from $99.99 on a standard coupe or sedan, and every install carries a lifetime warranty covering bubbling, peeling and fading.",
+    "chips": ["Geoshield C2 film", "Lifetime warranty", "Blocks 99% of UV", "Valet pickup available"],
+    "photo": "corvette-gray"
+  },
+  "local": {
+    "title": "The grid decides which glass takes the sun.",
+    "intro": "Sterling Heights is laid out on a grid. The mile roads run east and west, Mound and Van Dyke run north and south, and that decides where the sun comes in on any drive. Add a workday parked outside and the film question gets specific. This is how we would think it through for this city.",
+    "points": [
+      {
+        "title": "East and west on the mile roads",
+        "body": "From 14 Mile at the south edge up to Hall Road, the mile roads run east and west. That puts a low morning or evening sun in the windshield, where side film does nothing. A front windshield is done in C2 Ceramic film only, from $175.00. 75% is a popular pick there: heat and UV protection with a near-factory look. Ask us what is legal for your vehicle."
+      },
+      {
+        "title": "North and south on Mound and Van Dyke",
+        "body": "Mound Road and Van Dyke run the length of the city, north to south, and on those the sun comes through the side glass. Drive south in the morning and north in the evening and it is on the driver's window both ways. Both of our films block 99% of UV, so your left arm and that door panel get the same protection with either one."
+      },
+      {
+        "title": "Parked outside through a shift",
+        "body": "Sterling Heights Assembly on Van Dyke, Ford's Van Dyke Electric Powertrain Center and General Dynamics Land Systems are all in the city. If your vehicle sits outside for a full shift, the cabin takes on heat the whole time. Either film gives you the shade and the privacy. C2 Ceramic is the one that rejects far more infrared heat."
+      },
+      {
+        "title": "Parked along Hall Road",
+        "body": "Hall Road is Macomb County's main strip for shopping and dining, and a car parked there sits in plain view. The shade people ask us for most is 20%, which reads dark and uniform without going all the way to limo. 5% reads black from outside. The choosing happens at the shop, from real Geoshield samples on glass and not from a screen."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint goes on indoors. The shop is a short drive.",
+    "body": [
+      "Window film needs a clean, still space to bond, so every install happens inside our Clinton Township shop, away from the wind, dust and pollen of a driveway. That is about 7 miles from central Sterling Heights, roughly 15 minutes without traffic. Utica Road runs southeast out of the city to 14 Mile Road, and we are a short way east of there, on the north side just past Kelly Road.",
+      "Count on about 1.5 hours for the front 2 windows, 2.5 for full sides and 3.5 for full sides plus rear glass, which is why most installs are finished the day you drop off. We are open Monday to Friday, 9am to 5pm, by appointment. If you cannot get away, ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the vehicle in Sterling Heights, tint it at the shop and bring it back.",
+      "Afterward, leave the windows up for 3 to 4 days. Expect small water pockets or a light haze during the first week: both are normal, and both clear on their own as the film cures."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Indoors at 33115 Louise Ave, Clinton Township" },
+      { "label": "From central Sterling Heights", "value": "About 7 miles, roughly 15 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "Cannot make the drive", "value": "Ask about valet pickup when you book" }
+    ]
+  },
+  "photo": "chevy-suv-black",
+  "faq": [
+    {
+      "q": "Can you tint my windows at my home or work in Sterling Heights?",
+      "a": "No. Window tint is shop only. Film has to go on in a clean, enclosed space, and a driveway or a parking lot gives us wind, dust and pollen to fight. If the trip is the problem, valet pickup takes care of it: we come get the vehicle, install the film at the shop and return it to you."
+    },
+    {
+      "q": "What does tint cost on a truck or a three row SUV?",
+      "a": "Our listed prices are for a standard coupe or sedan: front 2 windows from $99.99 in C2 Carbon or from $149.99 in C2 Ceramic, and full sides plus rear glass from $299.99 or from $399.99. Trucks and SUVs are quoted by vehicle, since a crew cab or a three row SUV does not have a sedan's glass. Whatever the number is, you approve it before work begins. [Request a free quote](#quote) with your year, make and model and we will send the number."
+    },
+    {
+      "q": "How dark can I go and stay legal in Michigan?",
+      "a": "Michigan sets its tint rules separately for each set of windows, and they are not the rules most other states use. Before you pick a shade, we walk you through what is legal for your particular vehicle, including the options for darker rear windows and how Michigan's medical exemption process works. The final shade choice is always yours. This is general information, not legal advice."
+    },
+    {
+      "q": "Carbon or ceramic for a vehicle that sits outside all day?",
+      "a": "Ceramic, if heat is what bothers you. Both Geoshield films block 99% of UV, both are non-metalized so they will not interfere with GPS, radio or phone signal, and both carry the lifetime warranty. The difference is infrared heat: C2 Ceramic rejects far more of it. If the look and the privacy are most of what you want, C2 Carbon gets you there for less. See [full window tint details](/window-tint-clinton-township-mi/)."
+    }
+  ],
+  "reviews": ["jake-m", "april-g"]
+}

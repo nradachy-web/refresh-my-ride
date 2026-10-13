@@ -36,8 +36,6 @@ jobs:
       - run: npm ci
       - run: npx astro build
       - run: node scripts/postbuild.mjs
-        env:
-          AUDIT_SOFT: '1'
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

@@ -1,0 +1,71 @@
+{
+  "service": "car-detailing",
+  "city": "sterling-heights",
+  "meta": {
+    "title": "Car Detailing in Sterling Heights, MI | Refresh My Ride",
+    "description": "Auto detailing for Sterling Heights, in your driveway or at our shop. Interior details from $184.99, exterior from $139.99 on a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in Sterling Heights, MI",
+    "title": "Dodge Park stays **at Dodge Park.**",
+    "lede": "Interior, exterior and full details in your driveway, at our shop about 7 miles from central Sterling Heights, or by pick-up and drop-off valet. Interior details are from $184.99 and exterior details from $139.99 for a coupe or sedan in average condition. We bring our own power and water.",
+    "chips": ["Mobile, shop or valet", "Interior from $184.99", "Exterior from $139.99", "We bring power and water"],
+    "photo": "jeep-grand-cherokee"
+  },
+  "local": {
+    "title": "Parks, river, dog park, salt: where the mess comes from.",
+    "intro": "An interior is a record of where the car has been. In Sterling Heights that can mean a park, the river, the dog run or a winter of salted streets. Each one leaves something different behind, and each one calls for a different part of the detail.",
+    "points": [
+      {
+        "title": "Dodge Park, summer and winter",
+        "body": "Dodge Park has sports fields, playgrounds, a splash pad in summer and an ice rink in winter. That is grass, wet towels and snack crumbs in July and slush on the mats in January. The Premium Interior Detail is the reset: a full vacuum including the trunk, every main surface and touchpoint cleaned, and the floor mats washed."
+      },
+      {
+        "title": "River mud from the Clinton",
+        "body": "The Clinton River crosses the northeast part of the city, with public kayak and canoe launches at Rotary Park and North Clinton River Park. Wet shoes, a muddy boat and damp gear in the cargo area leave more than dirt behind. Steam and hot water extraction pull it out of the carpet, and the smell goes with it."
+      },
+      {
+        "title": "The dog park on Ryan Road",
+        "body": "The city's off-leash dog park on Ryan Road gives a dog more than an acre to run. What rides home is hair worked into the cargo carpet and paw prints across the seats. Pet hair and odors can be treated. Heavy pet hair can add to the price, and you get that number from us before any work begins."
+      },
+      {
+        "title": "Salt, right up to the driveway",
+        "body": "In a snow emergency the city does not stop until every street has been plowed curb to curb and salted. That salt comes in on boots and dries white in the carpet. We suggest a full detail once or twice a year, and the one at the end of winter is the one that gets the salt out before it sits there all summer."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "A driveway is all we need. No driveway, we come get it.",
+    "body": [
+      "Detailing is the one service we bring to you. The city's own housing study describes Sterling Heights as having a very large proportion of single family homes, and a house with a driveway is the easy case for [mobile detailing](/mobile-detailing/): we need room to walk the full perimeter of the vehicle, and we bring our own power and water.",
+      "Apartments and condos come down to the parking spot. If there is no room to work around the vehicle, pick-up and drop-off valet covers it. We collect the vehicle, detail it at the shop and bring it back. Whichever way you book, please take personal items and car seats out of the vehicle before we start.",
+      "If you would rather drop it off, the shop is about 7 miles from central Sterling Heights, roughly 15 minutes without traffic. The last stretch is 14 Mile Road east to just past Kelly Road. We are open Monday to Friday, 9am to 5pm, by appointment."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "At your home or workplace in Sterling Heights" },
+      { "label": "What we need", "value": "Room to walk around the whole vehicle" },
+      { "label": "Shop drop-off", "value": "About 7 miles, roughly 15 minutes without traffic" },
+      { "label": "Valet", "value": "We pick up, detail at the shop and return" }
+    ]
+  },
+  "photo": "mobile-bmw-driveway",
+  "faq": [
+    {
+      "q": "Which package gets a kid and dog interior back in shape?",
+      "a": "Start with how deep the dirt goes. The Premium Interior Detail, from $184.99 for a coupe or sedan in average condition, is a full vacuum including the trunk, every main surface and touchpoint cleaned, floor mats washed and interior glass. It takes about 2 hours. The Executive Interior Detail, from $239.99 and about 3 hours, adds intensive steam, seat and carpet extraction, vents and pedals, UV protectant, conditioning and fabric guard. That is the one for ground-in dirt and smells. SUVs and trucks are quoted for their size. [Get a free quote](#quote)."
+    },
+    {
+      "q": "Can you get winter salt out of the carpet?",
+      "a": "Yes. That is the job seat and carpet extraction is for, and it is part of the Executive Interior Detail. Vacuuming lifts the loose grit. Hot water extraction goes after what has soaked into the carpet. Some stains are a different story: dye transfer and old bleach marks are permanent, and we tell you at the walkaround what will and will not come out."
+    },
+    {
+      "q": "Do you do mobile detailing at apartments and condos in Sterling Heights?",
+      "a": "Sometimes. The question is the parking spot. We bring our own power and water, so all we need from the complex is room to walk around the whole vehicle. Tell us what the parking is like when you book. If it will not work, valet pickup does: we detail the vehicle at the shop and bring it back to your door."
+    },
+    {
+      "q": "How long will you be in my driveway?",
+      "a": "It depends on the package. In a driveway, a Wash & Seal runs about 1.5 hours and a Premium Interior Detail about 2. Book the Signature Refresh, our most popular full detail, and we are there about 5 hours for the inside and the outside. Larger vehicles take longer. We give you the time when we quote your vehicle, and every package is laid out on the [detailing page](/car-detailing-services-clinton-township-mi/)."
+    }
+  ],
+  "reviews": ["april-g", "alexis-p", "caitlin-d"]
+}

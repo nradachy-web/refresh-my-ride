@@ -1,0 +1,75 @@
+{
+  "service": "window-tint",
+  "city": "macomb-township",
+  "meta": {
+    "title": "Window Tint in Macomb Township, MI | Refresh My Ride",
+    "description": "Window tint for Macomb Township drivers. Geoshield carbon and ceramic film, computer cut, lifetime warranty. Front two windows from $99.99. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Macomb Township, MI",
+    "title": "Low sun on Romeo Plank. **Tint it.**",
+    "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle and installed indoors at our Clinton Township shop. Front two windows are from $99.99 on a standard coupe or sedan and take about 1.5 hours. The shop is about 15 miles from central Macomb Township, or we can pick the vehicle up.",
+    "chips": ["From $99.99", "Lifetime film warranty", "Valet pickup available"],
+    "photo": "tesla-model-y"
+  },
+  "local": {
+    "title": "What Macomb Township asks of window film.",
+    "intro": "Flat former farmland on a square grid of roads, and a lot of hours parked outside at fields, schools and shopping centers. Film does three jobs here: it cuts glare, it rejects heat while the car sits, and it keeps the inside private.",
+    "points": [
+      {
+        "title": "Low sun through the side glass",
+        "body": "Romeo Plank, Garfield and North Avenue run north and south, so on the way out in the morning and back in the evening the low sun comes in through the side windows. Tinted side glass reduces that glare. On the east and west mile roads it is in the windshield, where a 75% ceramic film adds heat and UV protection with a near-factory look."
+      },
+      {
+        "title": "Hours closed up at the fields and the school lot",
+        "body": "A doubleheader at Macomb Corners Park, or a school day parked at Dakota or L'Anse Creuse North, leaves a car shut in the sun for hours. Both films block 99% of UV. C2 Ceramic rejects far more infrared heat than C2 Carbon, and that is the difference you feel when you open the door."
+      },
+      {
+        "title": "Parked along Hall Road",
+        "body": "Hall Road is a run of shopping center lots, and The Mall at Partridge Creek on the Clinton Township side is open air. Darker rear glass keeps bags and gear out of view while the car sits. 20% is our most requested shade: dark, clean and uniform without going full limo."
+      },
+      {
+        "title": "Why it is not done in your driveway",
+        "body": "Dust is the enemy of a tint install, and there is dust wherever ground is being broken for houses and roads. We cut each pattern on a plotter for your year, make and model, so no blade touches the glass, and we lay the film indoors at the shop."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint is a shop job. Drop it off, or book valet.",
+    "body": [
+      "Our shop is about 15 miles from central Macomb Township, roughly 30 minutes without traffic. From the west side of the township, Garfield Road runs straight south to 14 Mile Road. Turn east and we are on the north side, just past Kelly Road.",
+      "Front two windows or a windshield take about 1.5 hours. Full sides take about 2.5 hours, and full sides with the rear glass about 3.5. Most installs are finished the day you drop off. If two trips do not fit your day, ask about [valet pickup](/mobile-detailing/): we collect the vehicle in Macomb Township and bring it back tinted.",
+      "Afterward, leave the windows up for 3 to 4 days. If you see small water pockets or a light haze in the first week, that is normal while the film cures."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "Getting it there", "value": "Drop off, or valet pickup" }
+    ]
+  },
+  "photo": "corvette-gray",
+  "faq": [
+    {
+      "q": "Can you tint my windows at my home in Macomb Township?",
+      "a": "No. Window film is installed at the shop only. A speck of dust trapped under the film is there for good, and a driveway cannot be kept clean enough. Detailing is the service that comes to you. For tint, drop the vehicle off or ask about valet pickup."
+    },
+    {
+      "q": "How much does window tint cost?",
+      "a": "In Geoshield C2 Carbon, front two windows are from $99.99, full sides from $199.99, and full sides plus rear glass from $299.99. In C2 Ceramic the same three are from $149.99, $299.99 and $399.99. A front windshield is done in C2 Ceramic only, from $175.00. Those prices are for a standard coupe or sedan. SUVs and trucks are quoted by vehicle. [Get a free quote](#quote)."
+    },
+    {
+      "q": "Carbon or ceramic for a car that sits outside all day?",
+      "a": "Ceramic. Both films block 99% of UV, both are non-metalized so they do not interfere with GPS, radio or phone signal, and both carry a lifetime warranty covering bubbling, peeling and fading. The difference is heat. Ceramic rejects far more infrared, and a car parked in an open lot is where you notice it. Carbon is the value pick when looks and privacy are the goal."
+    },
+    {
+      "q": "What shade is legal in Michigan?",
+      "a": "Michigan's rules are specific to each set of windows, and they are not the same as most states. Before anything is cut, we walk you through what is legal for your vehicle, including your options for darker rear windows and the medical exemption process. The shade choice is yours. You will see real Geoshield samples on glass at the shop before you decide. This is general information, not legal advice. More on the [window tint page](/window-tint-clinton-township-mi/)."
+    },
+    {
+      "q": "Can you remove my old tint first?",
+      "a": "Yes. Old film removal is from $50 per area, and it is 50% off when a full-vehicle tint goes on in the same visit. The rear defroster lines are protected while the old film comes off."
+    }
+  ],
+  "reviews": ["jake-m", "alexis-p"]
+}

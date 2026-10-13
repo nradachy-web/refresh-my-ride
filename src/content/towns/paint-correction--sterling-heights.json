@@ -1,0 +1,70 @@
+{
+  "service": "paint-correction",
+  "city": "sterling-heights",
+  "meta": {
+    "title": "Paint Correction in Sterling Heights, MI | Refresh My Ride",
+    "description": "Paint correction for Sterling Heights drivers. Swirls, water spots and oxidation machine polished out, from $344.99 for a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Sterling Heights, MI",
+    "title": "Sprinkler spots. Wash swirls. **Out.**",
+    "lede": "Machine polishing that takes swirl marks, light scratches, oxidation and water spots out of the clear coat, done under shop lighting about 7 miles from central Sterling Heights. The one-step option, Polish & Protect, is from $344.99 on a coupe or sedan in average condition. Heavier work is quoted once we see the paint.",
+    "chips": ["One-step from $344.99", "2 step quoted per vehicle", "Inspected under shop lighting", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "local": {
+    "title": "Where paint in Sterling Heights picks up its marks.",
+    "intro": "Dull paint is rarely one event. It is years of small ones: a wash after every salted week, sprinkler water drying on the hood, whatever the street trees drop. Here is where the marks tend to come from in this city, and what correction does about each.",
+    "points": [
+      {
+        "title": "Salted streets, then the wash",
+        "body": "The county salts the main routes and the city salts its own streets, subdivisions included. By midwinter nearly every road you drive has salt on it. Getting that off the car means a lot of winter washes, and the brush-style automatic kind put swirls in any finish. They show as a haze of fine circles when the sun hits the panel. Touchless is fine."
+      },
+      {
+        "title": "Sprinklers that run overnight",
+        "body": "From Memorial Day to Labor Day the city asks residents to water lawns between 11pm and 5am. If the spray reaches a car in the driveway, it dries on the paint by morning and leaves water spots. Once they have set, a wash will not move them. Machine polishing takes water spots out of the clear coat."
+      },
+      {
+        "title": "Trees along the street",
+        "body": "Sterling Heights has been a Tree City USA for decades and has committed to planting thousands more trees a year, many of them along its roads. Good for the street. Less good for the car parked under one, which collects the sap. Polish & Protect starts with a full decontamination wash that takes off sap, bug and tar, so the machine works on clean clear coat."
+      },
+      {
+        "title": "Cruise night is a close inspection",
+        "body": "For 20 years there was a Monday cruise-in at Lakeside Mall on Hall Road, and about 500 classic cars came out for the last one in 2024. The mall closed and the cruise moved up Van Dyke to Shelby Township. A car that gets looked at from a foot away is the case for a 2 step correction, and Matt handles our heaviest correction work."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction is shop work, and the shop is close.",
+    "body": [
+      "A polisher needs enclosed bays and controlled lighting to do its work, so paint correction stays at our Clinton Township shop and never happens in a driveway. From central Sterling Heights that is about 7 miles, roughly 15 minutes without traffic. From the south end of the city it is 14 Mile Road east the whole way. From farther north, Utica Road cuts southeast to 14 Mile. We are on the north side, just east of Kelly Road.",
+      "Plan to leave the vehicle for most of a working day. A one-step polish is about 4.5 to 5 hours as Polish & Protect, or about 7 inside the Luxury Refresh, which adds a full interior detail. A 2 step correction runs longer than either, and you get the time window with the quote. If two trips in one day will not work, ask about pick-up and drop-off valet: we collect the vehicle from your home or work in Sterling Heights and bring it back corrected."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Shop only: 33115 Louise Ave, Clinton Township" },
+      { "label": "From central Sterling Heights", "value": "About 7 miles, roughly 15 minutes without traffic" },
+      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
+      { "label": "Valet", "value": "Pickup from your home or work, on request" }
+    ]
+  },
+  "photo": "josh-polishing-corvette",
+  "faq": [
+    {
+      "q": "Can you polish out water spots from my sprinklers?",
+      "a": "In most cases, yes. Water spots are one of the four things machine polishing removes from clear coat, along with swirl marks, light scratches and oxidation. How much polishing it takes depends on how long the spots have been there, so we look at the paint under shop lighting before we quote. One 2021 Chevy Silverado 2500HD arrived here with heavy oxidation and water spots across the hood, and both polished out. [Text us a photo](sms:+15864001303) of the worst panel and we will tell you straight."
+    },
+    {
+      "q": "Do I need a full correction or just a one-step polish?",
+      "a": "Often the one-step is enough, and when it is we will say so. Polish & Protect, from $344.99 for a coupe or sedan in average condition, takes out roughly 60 to 70% of light swirls and scratches and leaves the paint sealed for 6 months. Deeper swirls and real oxidation call for a 2 step correction, and that one is quoted per vehicle once we have seen the paint. If a [ceramic coating](/ceramic-coating-sterling-heights-mi/) is where you are headed, paint correction is already included in every package."
+    },
+    {
+      "q": "Will paint correction fix the rock chips on my hood?",
+      "a": "No. Correction is not repainting. Polishing works on marks that sit in the clear coat, and a chip has no clear coat left to polish. A scratch that has gone through the clear coat is the same story, and so is clear coat that has started to fail. We point those out at the inspection, before any work starts."
+    },
+    {
+      "q": "Can you do paint correction at my home in Sterling Heights?",
+      "a": "No. It is shop only, because a driveway gives us wind, dust and changing light to work against. Valet pickup is the way around the drive. What we can bring to your driveway is a detail: interior work and the Wash & Seal are both mobile. See [detailing in Sterling Heights](/car-detailing-sterling-heights-mi/)."
+    }
+  ],
+  "reviews": ["norman-r", "don-p", "karen-u"]
+}

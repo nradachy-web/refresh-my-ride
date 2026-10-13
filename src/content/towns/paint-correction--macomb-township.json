@@ -1,0 +1,75 @@
+{
+  "service": "paint-correction",
+  "city": "macomb-township",
+  "meta": {
+    "title": "Paint Correction in Macomb Township, MI | Refresh My Ride",
+    "description": "Paint correction for Macomb Township drivers. Swirls, light scratches and oxidation machine polished out at our shop. Polish & Protect from $344.99. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Macomb Township, MI",
+    "title": "Dust did that. **We polish it out.**",
+    "lede": "Swirl marks, light scratches, oxidation and water spots sit in the clear coat, and machine polishing removes them. Polish & Protect is from $344.99 for a coupe or sedan in average condition. Heavier correction is quoted after we see the paint under shop lighting, about 15 miles from central Macomb Township.",
+    "chips": ["Swirls and light scratches", "From $344.99", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "local": {
+    "title": "Where the swirls on a Macomb Township car come from.",
+    "intro": "Swirl marks are fine scratches in the clear coat, and they come from grit being dragged across paint. A township with this much building and this much salted road supplies the grit. Here is how it gets dragged, and what polishing can and cannot do about it.",
+    "points": [
+      {
+        "title": "Dust wiped off dry",
+        "body": "With houses and roads still going in, a parked car collects a film of fine dust. A dry towel or a quick swipe with a sleeve pulls that dust across the paint. On dark colors it shows up as a haze of fine circles in direct sun. That haze is what a machine polish removes."
+      },
+      {
+        "title": "A winter of salt and quick washes",
+        "body": "Hall Road, Romeo Plank and the mile roads are salted, so the car is dirty again the day after it is washed. A brush-style automatic wash is the fast answer, and those brushes put swirls into any finish. Touchless is fine."
+      },
+      {
+        "title": "What polishing will not fix",
+        "body": "Not every mark is a swirl. Polishing works inside the clear coat, so it is not a repaint: rock chips, scratches that go through the clear coat and clear coat that has failed all stay. We look at the paint under shop lighting and tell you which marks will come out before you spend anything."
+      },
+      {
+        "title": "Cruise season is close by",
+        "body": "The Clinton Township Gratiot Cruise runs in early August on Gratiot Avenue between 14 Mile Road and Wellington Crescent, with a car show attached. If yours is going, book the polish well ahead. We have taken a 1990 Mazda Miata through a 2 step correction and polished a 2019 Corvette Z06."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction is done under shop lights.",
+    "body": [
+      "Paint correction is shop only. Defects have to be found under controlled lighting before they can be polished out, and Matt, our lead technician, handles the heaviest correction work. The shop is about 15 miles from central Macomb Township, roughly 30 minutes without traffic.",
+      "From the east side of the township, North Avenue becomes Groesbeck Highway (M-97) at Hall Road and runs south to Kelly Road and 14 Mile Road. If you would rather not make the trip twice, [valet pickup](/mobile-detailing/) collects the vehicle and returns it finished.",
+      "A one-step polish like Polish & Protect takes about 4.5 to 5 hours. A multi-stage correction is quoted per vehicle once we have seen the paint."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "Starting point", "value": "Polish & Protect, from $344.99" },
+      { "label": "Getting it there", "value": "Drop off, or valet pickup" }
+    ]
+  },
+  "photo": "tech-polishing-mustang",
+  "faq": [
+    {
+      "q": "Can you do paint correction in my driveway in Macomb Township?",
+      "a": "No. Polishing outdoors means dust landing on the panel while the machine is running, and daylight that changes by the minute. Correction is done at the shop, where the lighting is controlled and nothing is blowing onto the paint. Valet pickup can bring the vehicle down and take it home."
+    },
+    {
+      "q": "How much does paint correction cost?",
+      "a": "Two packages carry a published price, each for a coupe or sedan in average condition. Polish & Protect, from $344.99, is an exterior one-step polish that removes roughly 60 to 70% of light swirls and scratches and leaves the paint sealed for 6 months. The Luxury Refresh, from $439.99, is a full detail inside and out with a one-step polish. A 2 step correction for heavier defects gets its own quote once we have seen your paint under shop lighting. [Request a free quote](#quote)."
+    },
+    {
+      "q": "Will one polish make the paint perfect?",
+      "a": "Not always, and we will not tell you it will. Our one-step machine polish takes out roughly 60 to 70% of light swirls and scratches, not all of them. Deeper defects need a 2 step correction. Rock chips and scratches through the clear coat are beyond polishing altogether. We show you under the lights what to expect before you commit. More on the [paint correction page](/paint-correction/)."
+    },
+    {
+      "q": "Do I need paint correction before a ceramic coating?",
+      "a": "It is already included. Every ceramic coating package has paint correction done before the coating goes on, because a coating is clear and seals in whatever is under it. If you plan to coat, you do not book correction separately. See [ceramic coating for Macomb Township](/ceramic-coating-macomb-township-mi/)."
+    },
+    {
+      "q": "How do I keep the swirls from coming back?",
+      "a": "Wash dust off instead of wiping it off. Skip brush-style automatic washes and use touchless when you are short on time. Polish & Protect leaves the paint sealed for 6 months. For protection that lasts years, a ceramic coating is what makes the car easier to wash clean."
+    }
+  ],
+  "reviews": ["norman-r", "karen-u", "don-p"]
+}

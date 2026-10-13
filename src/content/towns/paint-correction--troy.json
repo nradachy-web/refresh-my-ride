@@ -1,0 +1,70 @@
+{
+  "service": "paint-correction",
+  "city": "troy",
+  "meta": {
+    "title": "Paint Correction in Troy, MI | Refresh My Ride",
+    "description": "Paint correction for Troy drivers: swirl marks, light scratches and oxidation machine polished out at our shop. One-step polish from $344.99. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Troy, MI",
+    "title": "Sun finds every swirl. **So do we.**",
+    "lede": "A machine polish lifts swirl marks, light scratches, oxidation and water spots out of the clear coat. We put your paint under shop lighting first and tell you straight what will come out. A one-step polish starts from $344.99 for a coupe or sedan in average condition. The shop is roughly 25 minutes from central Troy.",
+    "chips": ["Swirls and light scratches", "Inspected under shop lighting", "Polish & Protect from $344.99", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "local": {
+    "title": "Where Troy paint picks up its marks.",
+    "intro": "Swirl marks are fine scratches in the clear coat. You see them as a haze, or as a spider web around the reflection of the sun. They are not unique to Troy, but the way cars are used here makes them easy to collect and hard to ignore.",
+    "points": [
+      {
+        "title": "Winter film, wiped off dry",
+        "body": "Troy salts its major roads first and does not plow subdivision streets until more than 4 inches falls, so between washes a car here wears a film of salt and grit. Brushing or wiping that film off dry drags it across the clear coat. A lot of swirl marks start exactly there."
+      },
+      {
+        "title": "Brush washes, week after week",
+        "body": "Brush-style automatic washes put swirls in any finish, and a daily commuter gets washed often in a salt winter. Each pass adds a little. Correction takes those marks out. Touchless washes and a gentle hand wash are how you keep it that way."
+      },
+      {
+        "title": "Open lots show everything",
+        "body": "Direct sun is a hard inspection light. Park a dark car in an open lot on Big Beaver at noon and every wash mark shows. We look at the same paint under shop lighting, then tell you whether a one-step polish will do it or the paint needs a multi-stage correction."
+      },
+      {
+        "title": "Getting ready for the Troy Traffic Jam",
+        "body": "Every summer the Troy Traffic Jam brings more than 300 show cars to the Columbia Center on Big Beaver, in support of the Troy Historic Village. Show paint gets looked at from a foot away. We have done a 2 step correction on a 1990 Mazda Miata and corrected a 2019 Corvette Z06, and Matt handles our heaviest work."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction happens under our lights, not in a driveway.",
+    "body": [
+      "Machine polishing needs an enclosed bay and controlled lighting, so paint correction is done at our Clinton Township shop. From central Troy that is about 14 miles: east on Big Beaver Road, which becomes Metropolitan Parkway past Dequindre, then right on Utica Road and left on 14 Mile Road. Roughly 25 minutes without traffic.",
+      "A one-step polish with Polish & Protect takes about 4.5 to 5 hours. A multi-stage correction takes longer and is quoted per vehicle once we have seen the paint. If you cannot get away to drop it off, valet pickup collects the vehicle in Troy and brings it back when the work is done."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
+      { "label": "Cannot make the drive", "value": "Ask about valet pickup" }
+    ]
+  },
+  "photo": "josh-polishing-corvette",
+  "faq": [
+    {
+      "q": "My dark car looks hazy in the sun. Can that be fixed?",
+      "a": "Usually, yes. That haze is swirl marks and light scratches in the clear coat, and machine polishing removes them. Polish & Protect is a one-step polish that removes roughly 60 to 70% of light swirls and scratches and is sealed for 6 months, from $344.99 for a coupe or sedan in average condition. Heavier marks need a multi-stage correction, sometimes called a 2 step, which we quote per vehicle after we see the paint. [Text us a photo](sms:+15864001303) and we will tell you straight."
+    },
+    {
+      "q": "What will paint correction not fix?",
+      "a": "Rock chips, deep scratches that go through the clear coat, and clear coat that has failed. Correction is not repainting. It works on the clear coat that is there: swirl marks, light scratches, oxidation and water spots. We go over the paint with you under shop lighting and say what will come out and what will not before any work starts."
+    },
+    {
+      "q": "Can you have my car ready for a show?",
+      "a": "Yes, with notice. A one-step polish is most of a working day and a multi-stage correction takes longer, and we work Monday to Friday by appointment. Give us the date when you ask for a quote and we will tell you what fits. If you want the result protected, correction is included in every [ceramic coating package](/ceramic-coating-troy-mi/), done right before the coating goes on."
+    },
+    {
+      "q": "Do I need a full detail as well, or only the polish?",
+      "a": "That depends on the inside. Polish & Protect is exterior only: a full decontamination wash, a wheel and tire deep clean, the one-step polish and a 6 month sealant. The Luxury Refresh adds an interior deep clean to the same one-step polish, from $439.99 for a coupe or sedan in average condition. See [detailing in Troy](/car-detailing-troy-mi/) for the rest of the packages."
+    }
+  ],
+  "reviews": ["norman-r", "don-p", "jake-m"]
+}

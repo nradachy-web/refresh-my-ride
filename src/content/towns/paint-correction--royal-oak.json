@@ -1,0 +1,70 @@
+{
+  "service": "paint-correction",
+  "city": "royal-oak",
+  "meta": {
+    "title": "Paint Correction in Royal Oak, MI | Refresh My Ride",
+    "description": "Paint correction for Royal Oak drivers: machine polishing that removes swirls and light scratches. Polish & Protect from $344.99 for a coupe or sedan."
+  },
+  "hero": {
+    "kicker": "Paint correction in Royal Oak, MI",
+    "title": "Ready for Woodward **in full sun.**",
+    "lede": "Paint correction is machine polishing. It takes swirl marks, light scratches, oxidation and water spots out of the clear coat, where a street parked Royal Oak car collects them. It is done under shop lighting, about 25 minutes away. Polish & Protect, a one-step polish, is from $344.99 on a coupe or sedan in average condition.",
+    "chips": ["One-step or multi-stage", "Inspected under shop lighting", "Valet pickup available"],
+    "photo": "josh-polishing-corvette"
+  },
+  "local": {
+    "title": "Curb parking in the City of Trees: where the marks come from.",
+    "intro": "Swirls and dull spots build up slowly, then show all at once the first time the car sits in direct sun. On Woodward in August that is every panel. These are the likely sources for a car that lives in this city.",
+    "points": [
+      {
+        "title": "Parked under the City of Trees",
+        "body": "Royal Oak has planted street trees since the 1930s, and they stand between the sidewalk and the curb, right over the parking. Sap and bird droppings that bake on leave marks, and scrubbing them off dry adds scratches. Polishing removes water spots and light marks in the surface of the clear coat. Damage through the clear coat stays, and we will tell you which you have."
+      },
+      {
+        "title": "Snow emergencies and the snow brush",
+        "body": "In a snow emergency every vehicle has to come off the residential streets until the plows have been through, so a street parked car gets brushed off and moved all winter. A stiff brush dragged across salty paint leaves fine scratches. Brush-style automatic washes put in swirls of their own. A one-step polish is the fix for both."
+      },
+      {
+        "title": "The Car Show in the Park",
+        "body": "The Woodward Dream Cruise is the third Saturday of August, and the city's Car Show in the Park runs at Memorial Park, at Woodward and 13 Mile, that weekend. A car parked in open sun gets looked at from a foot away. A 2019 Corvette Z06 carrying years of wash marks is one of the cars we have corrected."
+      },
+      {
+        "title": "Old paint on cruise cars",
+        "body": "Woodward was used for unofficial street racing by 1958, and plenty of what cruises it now is decades old. Old paint oxidizes and goes flat. Correction removes oxidation: a 1990 Mazda Miata with a severely oxidized bumper and hood took a 2 step correction from us. Failed clear coat is different. Correction is not repainting, and we say so before any work starts."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "An afternoon under the shop lights, or longer for heavy work.",
+    "body": [
+      "Paint correction is shop only. The paint is inspected under shop lighting, and Matt, our lead technician, handles the heaviest correction work. The shop is about 14 miles from central Royal Oak. Go east on I-696, north on Groesbeck Highway (M-97) and east again on 14 Mile Road.",
+      "A one-step Polish & Protect takes about 4.5 to 5 hours. Multi-stage correction takes longer and is quoted once we have seen the paint. If you cannot be without a ride, ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the car in Royal Oak and return it finished."
+    ],
+    "facts": [
+      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Polish & Protect", "value": "From $344.99, about 4.5 to 5 hours" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "photo": "team-polishing-mercury",
+  "faq": [
+    {
+      "q": "How much does paint correction cost?",
+      "a": "Two prices are published, and both are for a coupe or sedan in average condition. Polish & Protect is a decontamination wash and a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, sealed for 6 months, from $344.99. Luxury Refresh is a full inside and out detail with a one-step polish, from $439.99. Anything heavier is a multi-stage correction, and we quote that once the car is under our lights. [Request a free quote](#quote)."
+    },
+    {
+      "q": "Is a one-step polish enough for a car going to the Car Show in the Park?",
+      "a": "It depends on the paint and how closely it will be looked at. A one-step polish removes roughly 60 to 70% of light swirls and scratches, which is a big change on a daily driver. On black or dark paint parked in open sun all day, what is left can still show, and that is when a multi-stage correction is worth a quote. We inspect the paint under shop lighting and tell you which one it needs. If you want the finish to last past August, every [ceramic coating package](/ceramic-coating-royal-oak-mi/) includes correction first."
+    },
+    {
+      "q": "Will polishing remove the spots left by tree sap and bird droppings?",
+      "a": "It depends how deep they went. Polishing removes water spots, light scratches and marks in the surface of the clear coat. If a spot has gone through the clear coat, polishing cannot bring it back, because correction is not repainting. We look at it under shop lighting and tell you which you have before any work starts."
+    },
+    {
+      "q": "Do I need paint correction, or just a good wash and sealant?",
+      "a": "A wash and sealant cleans and protects what is already there. It does not remove swirls. Swirls are fine scratches in the clear coat, and only machine polishing takes them out. If you see a spider web pattern around the sun's reflection on the hood, that is what you are looking at. Text a photo to (586) 400-1303 and we will tell you straight. The wash-only options are on the [Royal Oak detailing page](/car-detailing-royal-oak-mi/)."
+    }
+  ],
+  "reviews": ["norman-r", "jake-m", "karen-u"]
+}

@@ -1,0 +1,71 @@
+{
+  "service": "window-tint",
+  "city": "royal-oak",
+  "meta": {
+    "title": "Window Tint in Royal Oak, MI | Refresh My Ride",
+    "description": "Window tint for Royal Oak drivers: Geoshield carbon and ceramic film, lifetime warranty. Front two windows from $99.99 on a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Royal Oak, MI",
+    "title": "Shade for **Woodward in August.**",
+    "lede": "Geoshield C2 Carbon and C2 Ceramic film, computer cut for your exact vehicle and installed indoors at our shop. Both block 99% of UV and carry a lifetime warranty. Front two windows from $99.99 on a standard coupe or sedan. About 25 minutes from central Royal Oak, and most installs are done the same day.",
+    "chips": ["Most installs same day", "Lifetime film warranty", "Blocks 99% of UV", "Valet pickup available"],
+    "photo": "bmw-7-series"
+  },
+  "local": {
+    "title": "What tint is for in Royal Oak: low sun, slow laps, street parking.",
+    "intro": "Tint cuts heat, takes the edge off glare and gives you privacy. Which of the three matters most depends on where the car spends its day. In Royal Oak these are the situations we would plan the film around.",
+    "points": [
+      {
+        "title": "Woodward runs on a diagonal",
+        "body": "Woodward runs southeast to northwest. Drive toward Detroit in the morning and back in the evening and the low sun is ahead of you or in the driver's side glass both ways. I-696 and the mile roads run east and west, so there it depends which way you commute. Tint takes the edge off the glare, and C2 Ceramic rejects far more of the heat that comes with it."
+      },
+      {
+        "title": "Cruise day, windows up",
+        "body": "A long stretch of the Woodward Dream Cruise route runs through Royal Oak on the third Saturday of August. Cruising means slow laps in open sun. Both of our films block 99% of UV. If the goal is a cooler cabin, ceramic is the film to pick, because it rejects far more infrared heat than carbon."
+      },
+      {
+        "title": "Evenings parked downtown",
+        "body": "Downtown has four city parking structures, but the metered street spaces and surface lots are open to everyone walking past. It is a restaurant and nightlife district, so cars sit there into the evening. Darker rear glass keeps the back seat out of view. We go over what Michigan allows on each set of windows before you choose (general information, not legal advice)."
+      },
+      {
+        "title": "The windshield takes it head on",
+        "body": "The windshield is the largest piece of glass pointed at that low sun. Our 75% film is near-clear: heat and UV protection with a near-factory look, and a popular pick for front windshields. Windshields are done in ceramic film only, from $175.00."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "One visit to the shop. About 1.5 to 3.5 hours of install time.",
+    "body": [
+      "Film is installed indoors at our Clinton Township shop. Patterns are cut on a plotter for your exact year, make and model, so no blade touches the glass. From central Royal Oak it is about 14 miles, by I-696 east and Groesbeck Highway (M-97) north to 14 Mile Road.",
+      "Install time runs from about 1.5 hours for the front two windows to about 3.5 hours for full sides and rear glass. If the drive does not fit your day, ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the car in Royal Oak, tint it at the shop and bring it back.",
+      "Before you choose a shade, we show you real Geoshield samples on glass in the shop. Shades on a screen are an approximation."
+    ],
+    "facts": [
+      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "photo": "escalade-black",
+  "faq": [
+    {
+      "q": "How long will my car be at the shop for tint?",
+      "a": "Most installs are done the same day. The front two windows take about 1.5 hours, full sides about 2.5 hours, and full sides with the rear glass about 3.5 hours. Add the drive from Royal Oak, roughly 25 minutes each way without traffic, and it is a morning or an afternoon. We are open Monday to Friday, 9am to 5pm, by appointment."
+    },
+    {
+      "q": "What does window tint cost?",
+      "a": "Prices are from, for a standard coupe or sedan. Front two windows: from $99.99 in C2 Carbon, from $149.99 in C2 Ceramic. Full sides: from $199.99 or from $299.99. Full sides plus rear glass: from $299.99 or from $399.99. SUVs and trucks are quoted by vehicle, so [request a free quote](#quote). Old tint removal is from $50 per area, and 50% off when a full-vehicle tint goes on the same day. See [tint prices and the shade preview](/window-tint-clinton-township-mi/)."
+    },
+    {
+      "q": "How dark can I go on my windows in Michigan?",
+      "a": "Michigan writes its tint rules for each set of windows separately, and they differ from most other states. We walk you through what is legal for your vehicle before you pick a shade, including darker rear windows and the medical exemption process. The shade choice is yours. This is general information, not legal advice."
+    },
+    {
+      "q": "I park in one of the downtown structures. Anything to know after the install?",
+      "a": "Leave the windows up for 3 to 4 days. In the city structures you can pay at the first floor pay station before you walk to the car, which leaves less to do at the exit. If a gate or a drive-through still needs a hand out the window, open the door for those few days. Small water pockets or a light haze in the first week are normal."
+    }
+  ],
+  "reviews": ["jake-m", "john-b"]
+}

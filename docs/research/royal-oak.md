@@ -132,5 +132,5 @@ Looked for and could not confirm. None of this goes on a page.
 - Dream Cruise car and crowd counts, zoo attendance, housing percentages and any snowfall or temperature number. They are in this file for checking only.
 - The 2025 master plan's wording on housing and parking. The PDF could not be opened, so every master plan fact here is from the 2012 text.
 - Traffic or travel time at rush hour on I-696, I-75 or 14 Mile Road.
-- Royal Oak Township. It is a separate municipality south of the city and is not what these pages are about.
+- Royal Oak Township. The master plan lists it as a separate municipality from the City of Royal Oak. It is not what these pages are about.
 - How many customers the shop has in Royal Oak, or any job done there.

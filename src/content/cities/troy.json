@@ -1,0 +1,81 @@
+{
+  "city": "troy",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Troy, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Troy drivers. Mobile detailing at home or work, or our shop roughly 25 minutes away."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Troy, MI",
+    "title": "Out Big Beaver. **Or we come to you.**",
+    "lede": "Our shop on Louise Ave is about 14 miles from central Troy: Big Beaver Road east until it becomes Metropolitan Parkway, then down to 14 Mile Road. Coatings, tint and paint correction happen there. Detailing can come to your driveway or your office lot, and valet pickup covers the rest.",
+    "chips": ["About 25 minutes away", "Mobile detailing at home or work", "Pick-up and drop-off valet"],
+    "photo": "cadillac-sedan-black"
+  },
+  "about": {
+    "title": "What a week in Troy does to a car.",
+    "body": [
+      "Troy is built around the car. The city's own master plan calls the private automobile the primary way people get around, and there is no small traditional downtown where you park once and walk. The mile roads run from 14 Mile at the south edge to South Boulevard at the north, I-75 cuts through the middle, and Big Beaver carries the high-rise offices and Somerset Collection. Nearly every trip is a drive and a parking space. That shows up on a vehicle in specific ways."
+    ],
+    "points": [
+      {
+        "title": "Salt on the big roads, slush on your street",
+        "body": "Troy treats major city and county roads first: Big Beaver, Maple, Long Lake, Rochester Road. Subdivision streets are not plowed until more than 4 inches falls. Below that the city salts hills, intersections and curves, and the rest gets packed down and carried home in your wheel wells and on your floor mats."
+      },
+      {
+        "title": "I-75 through the middle",
+        "body": "I-75 has Troy interchanges at 14 Mile, Rochester Road and Big Beaver, and the county road commission salts it for the state. Highway miles mean salt mist in winter, bugs in summer and brake dust all year. Brake dust is iron. It bonds to wheels and lower panels, and it takes a chemical decontamination to release it."
+      },
+      {
+        "title": "Parked all day on Big Beaver",
+        "body": "The stretch of Big Beaver between Rochester Road and Coolidge is the business district. A car that spends the working day in an open lot there takes sun on the paint, the dash and the seats five days a week. That is the case for a coating on the outside and window film on the glass."
+      },
+      {
+        "title": "Driveways that suit mobile work",
+        "body": "The master plan describes housing here as overwhelmingly single family detached. A house with a driveway is all a mobile detail needs: room to walk the full perimeter of the vehicle. We bring our own power and water."
+      },
+      {
+        "title": "Soccer fields, a trail and a dog park",
+        "body": "Firefighters Park has nine soccer fields and Boulan Park has five more. Daisy Knight Dog Park sits in the park the Troy Trail runs through. Mud, grass, cleats and dog hair end up in the back seat and the cargo area, and getting them out is steam and extraction work, not a vacuum job."
+      }
+    ],
+    "photo": "mobile-van"
+  },
+  "logistics": {
+    "title": "Roughly 25 minutes to the shop, or we come to you.",
+    "body": [
+      "The shop is in Clinton Township, about 14 miles from central Troy and roughly 25 minutes without traffic. Take Big Beaver Road east. It becomes Metropolitan Parkway when you cross Dequindre into Macomb County. Turn right on Utica Road, then left on 14 Mile Road. We are on the north side of 14 Mile, just east of Kelly Road. From the south end of town, 14 Mile Road at Oakland Mall runs east to us without a turn.",
+      "Interior, exterior and full details can be done in your driveway or at your workplace. Ceramic coating, window tint and paint correction are shop work, because they need an enclosed bay and controlled lighting. If the trip does not fit your week, valet covers it: we pick the vehicle up, do the work at the shop and bring it back.",
+      "We are appointment only, Monday to Friday, 9am to 5pm. Online booking is open around the clock."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 14 miles from central Troy" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to Troy for mobile detailing?",
+      "a": "Yes. Troy is inside our mobile and valet area. We bring our own power and water, so all we need is a driveway or parking spot with room to walk the full perimeter of the vehicle. At an office, an open surface lot usually works. A deck stall with a car parked on each side does not leave that room, so tell us where the vehicle will be when you book. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "How do I get to your shop from Troy?",
+      "a": "Take Big Beaver Road east. Past Dequindre it becomes Metropolitan Parkway. Turn right on Utica Road, then left on 14 Mile Road. You will find us at 33115 Louise Ave, Clinton Township, on the north side of 14 Mile and just east of Kelly Road. That is about 14 miles from central Troy, roughly 25 minutes without traffic. If you live near Oakland Mall, 14 Mile Road itself runs straight east to us. We are appointment only, so please book before you head over."
+    },
+    {
+      "q": "Can you ceramic coat or tint my car at my house or office?",
+      "a": "No. Coatings and window film go on in an enclosed bay, out of the wind and dust, and paint correction needs controlled lighting. All three are done at the shop. If getting there is the problem, ask about valet pickup. For [ceramic coating](/ceramic-coating-troy-mi/) we also cover your Uber for the drop-off and the pickup."
+    },
+    {
+      "q": "I work on Big Beaver. Can you detail my car while I am at work?",
+      "a": "Often, yes. A Wash & Seal takes about 1.5 hours and a Premium Interior Detail about 2 hours, and both suit a mobile visit if your building has an open lot with room around the car. If it does not, valet works: we collect the vehicle from your office, detail it at the shop and return it. See [detailing in Troy](/car-detailing-troy-mi/)."
+    },
+    {
+      "q": "What does a detail cost?",
+      "a": "For a coupe or sedan in average condition, interior details start from $184.99, exterior details from $139.99 and full inside and out details from $249.99. SUVs and trucks are quoted for their size, and you get the number before any work starts. If you want it kept up, ask about our maintenance plans, which lock in a lower per-visit price for regular service."
+    }
+  ],
+  "reviews": ["fahad-a", "john-b", "jake-m"],
+  "neighbors": ["sterling-heights", "rochester-hills", "birmingham", "royal-oak"]
+}

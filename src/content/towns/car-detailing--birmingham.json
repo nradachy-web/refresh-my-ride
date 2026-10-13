@@ -1,0 +1,76 @@
+{
+  "service": "car-detailing",
+  "city": "birmingham",
+  "meta": {
+    "title": "Car Detailing in Birmingham, MI | Mobile, Shop or Valet",
+    "description": "Auto detailing for Birmingham drivers at home, at the office or at our shop. Interior details from $184.99 on a coupe or sedan in average condition."
+  },
+  "hero": {
+    "kicker": "Car detailing in Birmingham, MI",
+    "title": "Trail mud. Dog hair. **Hockey bags.**",
+    "lede": "Birmingham has two miles of trail along the Rouge River, an off-leash dog area and an ice arena, and all three ride home in the back of the car. We extract it, steam it and take the smell out, in your driveway, at your office or at our shop. Interior details from $184.99 for a coupe or sedan in average condition.",
+    "chips": ["Interior from $184.99", "Mobile, shop or valet", "We bring power and water"],
+    "photo": "interior-alfa-red"
+  },
+  "local": {
+    "eyebrow": "What we are cleaning out",
+    "title": "Where the mess in a Birmingham car comes from.",
+    "intro": "A wash moves dirt around. A detail removes it. Here is where it comes from in this town and which package deals with it. Prices are from, for a coupe or sedan in average condition, and SUVs and trucks are quoted for their size.",
+    "points": [
+      {
+        "title": "The Rouge River trails, on the floor mats",
+        "body": "The city keeps two miles of trails along the Rouge River, with a trailhead at Booth Park downtown and a wood chip trail at Manor Park. What comes back on shoes and paws is mud and wood chip. The Executive Interior Detail, from $239.99, adds steam and seat and carpet extraction to pull it out of the fibers."
+      },
+      {
+        "title": "The off-leash area at Lincoln Hills",
+        "body": "The city's off-leash dog area is at Lincoln Hills Golf Course, off 14 Mile Road. Dog hair works into carpet and seat seams, and we get it out. Heavy pet hair can carry an extra charge. You approve that before any work begins."
+      },
+      {
+        "title": "Rink season, November through February",
+        "body": "High school home games at the Birmingham Ice Sports Arena on East Lincoln run November through February, and youth hockey skates there too. A gear bag that rides in the cargo area all season leaves its smell in the carpet. Hot water extraction, steam and odor removal are part of our interior work."
+      },
+      {
+        "title": "Road salt, then leaves",
+        "body": "The city salts its major streets first, and what is on the road comes in on your boots and dries white in the carpet. In October and November the leaves are raked into the street by the curb for pickup, and they come in the same way. We suggest a full detail at the end of winter and another at the end of summer."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Your driveway, your office lot or our shop.",
+    "body": [
+      "Birmingham is inside our mobile area. We bring our own power and water, and we need a driveway or parking spot with room to walk the full perimeter of the vehicle. A house with a driveway works. So does an office with an open lot. A stall in one of the five downtown parking structures, or a space at a meter, usually does not.",
+      "For those cars, and for anyone who would rather hand over the keys, there is valet: we pick the vehicle up, detail it at the shop and bring it back. You can also drive it to us. The shop is about 17 miles from central Birmingham, south on Woodward to 14 Mile Road and then east, and we work Monday to Friday, 9am to 5pm, by appointment.",
+      "Before the appointment, please take out personal items and car seats. You do not need to clean anything first."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet", "value": "We pick it up and bring it back" },
+      { "label": "Shop", "value": "About 17 miles from central Birmingham" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" }
+    ]
+  },
+  "photo": "mobile-bmw-driveway",
+  "faq": [
+    {
+      "q": "Can you detail my car in a downtown Birmingham parking structure?",
+      "a": "Usually not. Mobile work needs room to walk all the way around the vehicle, and a stall in a structure rarely leaves it. The fix is valet: we collect the vehicle from you, do the work at the shop and return it. If your building has open space around the car, text a photo to [(586) 400-1303](sms:+15864001303) and we will tell you whether it works."
+    },
+    {
+      "q": "What does a detail cost?",
+      "a": "All prices are from, for a coupe or sedan in average condition. Interior only: Premium Interior Detail from $184.99, Executive Interior Detail from $239.99. Inside and out: Essential Refresh from $249.99, Signature Refresh from $319.99, Luxury Refresh from $439.99. Exterior only: Wash & Seal from $139.99, Polish & Protect from $344.99. SUVs and trucks are quoted for their size. See [what is in each package](/car-detailing-services-clinton-township-mi/)."
+    },
+    {
+      "q": "How long does a mobile detail take at my house?",
+      "a": "About 2 hours for a Premium Interior Detail and about 3 for the Executive. Wash & Seal, the exterior package, takes about 1.5 hours. Signature Refresh, our most popular full detail, runs about 5 hours. We bring everything, so all you do is leave us room around the vehicle. More on [mobile and valet service](/mobile-detailing/)."
+    },
+    {
+      "q": "Can you get dog hair and a hockey bag smell out?",
+      "a": "In most cases, yes. Pet hair, stains and odors are treated with extraction, steam and odor removal. Some stains are permanent, such as dye transfer and old bleach marks, and we say so at the walkaround before we start. Heavy pet hair, stains or biohazards may cost extra, and we get your approval first."
+    },
+    {
+      "q": "How often should I book a detail?",
+      "a": "For most cars, a full detail once or twice a year: at the end of winter, to get the salt out, and at the end of summer. With kids, pets or a long commute, a maintenance detail every one to three months stops it building up. If that is your car, ask about a maintenance plan: regular visits lock in a lower price per visit."
+    }
+  ],
+  "reviews": ["sydney-k", "april-g", "caitlin-d"]
+}

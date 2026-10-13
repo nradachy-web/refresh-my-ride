@@ -1,0 +1,76 @@
+{
+  "city": "shelby-township",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Shelby Township, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Shelby Township drivers. Mobile detailing in your driveway, or our shop about 25 minutes away."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Shelby Township, MI",
+    "title": "Winter salt. **Summer trail mud.**",
+    "lede": "Shelby Township runs from the Utica line north to Stony Creek Metropark, with the M-53 freeway running through it. Our shop is about 13 miles from central Shelby Township. Detailing can come to your driveway. Coatings, tint and paint correction are done at the shop, and valet pickup covers the trip.",
+    "chips": ["Roughly 25 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "ford-super-duty-white"
+  },
+  "about": {
+    "title": "Four things Shelby Township puts on a car.",
+    "body": [
+      "Along the M-53 freeway, Shelby Township is mostly subdivisions, parks and golf courses. Two state highways carry the through traffic: M-53 north and south, and M-59, which stops being a freeway at Van Dyke Avenue in Utica and becomes Hall Road. Macomb County's Department of Roads plows and salts the mile roads and the subdivision streets. All of it shows up on a vehicle in ways we can point to."
+    ],
+    "points": [
+      {
+        "title": "Salt, on the county's schedule",
+        "body": "The Macomb County Department of Roads runs one of its four service centers out of Shelby Township. State and primary roads get cleared and salted first, then the crews work into the subdivisions. Either way the salt ends up on your rocker panels and in your floor mats, and it stays there until it is washed and extracted out."
+      },
+      {
+        "title": "Stony Creek and River Bends, in the cargo area",
+        "body": "Stony Creek Metropark has two beaches, a boat launch and more than 14 miles of dirt mountain bike trail. River Bends Park has the Clinton River running through it. Sand, mud, wet dog and fishing gear all ride home in the back."
+      },
+      {
+        "title": "Trees the township protects",
+        "body": "Shelby Township is a Tree City USA community with a tree and woodland preservation ordinance, so shade is easy to find. So are sap, pollen and bird droppings. Left on a hood in summer heat they mark the clear coat. On a coated car they wipe off before they get the chance."
+      },
+      {
+        "title": "Driveways, condo lots and apartment spaces",
+        "body": "Detached houses are the most common home here, and a driveway is all a mobile detail needs. Attached condos, apartments and manufactured home communities make up the rest. There we need one parking spot with room to walk the full perimeter of the vehicle."
+      }
+    ],
+    "photo": "mobile-bmw-driveway"
+  },
+  "logistics": {
+    "title": "Three ways to get it done from Shelby Township.",
+    "body": [
+      "Our shop is at 33115 Louise Ave in Clinton Township, about 13 miles from central Shelby Township and roughly 25 minutes without traffic. A simple route from the township offices on Van Dyke: Van Dyke Avenue south, Utica Road southeast to 14 Mile Road, then east on 14 Mile. We are on the north side of 14 Mile, just east of Kelly Road.",
+      "Interior, exterior and full details can be done at your home or workplace, and we bring our own power and water. The other three, ceramic coating, window tint and paint correction, need the enclosed bays and controlled lighting at the shop. If the drive does not fit your week, pick-up and drop-off valet collects the vehicle from your address, we do the work at the shop, and we bring it back."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 13 miles from central Shelby Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come out to Shelby Township for mobile detailing?",
+      "a": "Yes. Shelby Township is inside our mobile and valet area. We bring our own power and water, so you do not need to run a cord or a hose. What we need is a driveway or parking spot with room to walk the full perimeter of the vehicle. See [how mobile and valet work](/mobile-detailing/), or go straight to [detailing in Shelby Township](/car-detailing-shelby-township-mi/)."
+    },
+    {
+      "q": "How far is your shop from Shelby Township?",
+      "a": "About 13 miles from central Shelby Township, roughly 25 minutes without traffic. You will find us at 33115 Louise Ave in Clinton Township: north side of 14 Mile Road, just east of Kelly Road. We are open Monday to Friday, 9am to 5pm, by appointment only, so book before you head down."
+    },
+    {
+      "q": "My address says Utica. Is that still your area?",
+      "a": "Yes. Shelby Township and the city of Utica share ZIP codes 48315 and 48317, so an address here can read either way. Both are in Macomb County and inside the area our mobile and valet service covers. Give us your cross streets when you ask for a quote and we will tell you how we would get the vehicle done."
+    },
+    {
+      "q": "Can you ceramic coat, tint or polish my vehicle at my house?",
+      "a": "No. Those three are shop only. Coatings and film need a closed bay with no wind or dust, and paint correction is inspected under shop lighting. If getting to us is the problem, ask about valet pickup. On [ceramic coating](/ceramic-coating-shelby-township-mi/) jobs your Uber is covered both ways as well."
+    },
+    {
+      "q": "What does a detail cost?",
+      "a": "Published prices are for a coupe or sedan in average condition. Interior details start from $184.99, exterior details from $139.99 and full inside and out details from $249.99. A truck or SUV is quoted for its size, and you hear the number before we touch it. Financing is available through Affirm and Klarna."
+    }
+  ],
+  "reviews": ["sabrina-k", "john-b", "jake-m"],
+  "neighbors": ["sterling-heights", "macomb-township", "rochester-hills", "clinton-township"]
+}

@@ -1,0 +1,74 @@
+{
+  "service": "ceramic-coating",
+  "city": "royal-oak",
+  "meta": {
+    "title": "Ceramic Coating in Royal Oak, MI | Refresh My Ride",
+    "description": "Ceramic coating for Royal Oak drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Shop about 25 minutes away. Uber covered."
+  },
+  "hero": {
+    "kicker": "Ceramic coating in Royal Oak, MI",
+    "title": "City of Trees. **Hard on paint.**",
+    "lede": "Sap and bird droppings from the street trees all summer, salt off I-696 and Woodward all winter. A ceramic coating puts a hard, bonded layer between that and your clear coat. Our 1, 3 and 5 year packages include paint correction and a written warranty, about 25 minutes from central Royal Oak.",
+    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered", "Valet pickup available"],
+    "photo": "cadillac-sedan-black"
+  },
+  "local": {
+    "title": "Street trees, curb parking and salt on three sides.",
+    "intro": "Royal Oak is hard on bare clear coat in ways that belong to the place: what falls from the trees, what comes off the freeways, and how long a car sits at the curb wearing both. Here is where a coating does real work.",
+    "points": [
+      {
+        "title": "Sap and droppings under the street trees",
+        "body": "The city has planted street trees since the 1930s and calls itself the City of Trees. Park under one and the car collects sap and bird droppings. On bare clear coat they etch if they sit. On a coated panel they wipe off before that happens, which matters most for a car that lives at the curb."
+      },
+      {
+        "title": "Salt from three directions",
+        "body": "I-696, I-75 and Woodward are salted by the county road commission, with brine sprayed on the salt as it is spread. The city salts its own main roads, such as 12 Mile, day and night when a storm calls for it. On a coated car that film sits on the coating and not on the paint, so it rinses away."
+      },
+      {
+        "title": "Leaf season at the curb",
+        "body": "Each fall residents rake leaves into rows at the curb and city crews vacuum them up street by street. For those weeks a car parked on the street sits beside wet leaf piles and under whatever is still coming down. Grime does not grip coated paint the same way, so a rinse and a gentle wash gets it clean."
+      },
+      {
+        "title": "Cruise cars and keepers",
+        "body": "Royal Oak takes in a long stretch of the Woodward Dream Cruise route, and the city runs its own car show at Memorial Park that weekend. For a car you plan to own for years and show in full sun, The Renewal, our 5 year package, is the one built for it. See [all three packages](/ceramic-coating/)."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Drop it off and take the Uber home. We cover it.",
+    "body": [
+      "A coating goes on indoors at our Clinton Township shop and cures there before the vehicle sees weather again. From central Royal Oak that is about 14 miles: I-696 east to Groesbeck Highway (M-97), north to 14 Mile Road, then east to Louise Ave.",
+      "Expect to leave the vehicle for at least a full day, and longer when the paint needs more correction. You do not need a second driver. Uber is covered for the drop-off and the pickup. Or ask about [pick-up and drop-off valet](/mobile-detailing/): we collect the vehicle from your home or work in Royal Oak and bring it back coated."
+    ],
+    "facts": [
+      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Distance", "value": "About 14 miles from central Royal Oak" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+    ]
+  },
+  "photo": "bentley-flying-spur",
+  "faq": [
+    {
+      "q": "Can you ceramic coat my car at my home in Royal Oak?",
+      "a": "No. A coating has to go on in a closed bay, away from wind, dust and whatever the trees are dropping that week, and then cure before it goes back outside. A driveway cannot give us that. The work is done at our shop, and valet pickup or a covered Uber takes care of the trip."
+    },
+    {
+      "q": "I have no driveway to wash the car in. Does a coating still make sense?",
+      "a": "Yes, and it makes the washing you can do go further. Dirt and salt do not bond to a coated panel the way they do to bare clear coat, so a touchless automatic wash gets more of it off. Touchless is fine for a coating. Brush-style automatic washes are the ones to skip: they put swirls in any finish. Every package also includes a free follow-up wash with an inspection at our shop. One limit to know: a coating is not armor. It does not stop rock chips, key scratches or a bumper scuffed in a tight parallel park."
+    },
+    {
+      "q": "How long will you have my vehicle?",
+      "a": "At least a full day, and longer when the paint needs more correction. Decontamination, correction and cure time take the hours. We give you an exact window when we quote your vehicle, so you can plan the Uber or the valet pickup around it."
+    },
+    {
+      "q": "What does a ceramic coating cost for my car?",
+      "a": "It is quoted per vehicle. Size, the condition of the paint and how much correction it needs decide the work. Paint that has spent years under street trees and going through brush washes generally needs more polishing than a car fresh off the lot. Tell us the year, make and model, send a couple of photos, and we will give you a real number. [Request a free quote](#quote)."
+    },
+    {
+      "q": "I want the car ready for the Dream Cruise. How far ahead should I book?",
+      "a": "Give it room. The cruise is the third Saturday in August, and a coating needs at least a full day in the shop, more when the paint needs heavier work first. Every package includes [paint correction](/paint-correction-royal-oak-mi/) before the coating goes on, so the car reaches Woodward corrected and protected. Glass, wheels and trim can be coated in the same visit."
+    }
+  ],
+  "reviews": ["john-b", "norman-r", "judy-j"]
+}

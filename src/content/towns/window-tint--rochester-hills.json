@@ -1,0 +1,66 @@
+{
+  "service": "window-tint",
+  "city": "rochester-hills",
+  "meta": {
+    "title": "Window Tint in Rochester Hills, MI | Refresh My Ride",
+    "description": "Window tint for Rochester Hills. Geoshield C2 film, lifetime warranty, front 2 windows from $99.99 on a coupe or sedan. About 30 minutes away. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Rochester Hills, MI",
+    "title": "Low sun on M-59. **Cut the glare.**",
+    "lede": "M-59 runs east and west across Rochester Hills, so the freeway lines up with the rising and the setting sun. Rochester Road runs north and south, so the same sun comes in through the side glass. Geoshield C2 film blocks 99% of UV and carries a lifetime warranty. Front 2 windows from $99.99 on a standard coupe or sedan.",
+    "chips": ["Geoshield C2 film", "Lifetime warranty", "Front 2 windows from $99.99"],
+    "photo": "tesla-model-y"
+  },
+  "local": {
+    "title": "Where the sun gets into a car in Rochester Hills.",
+    "intro": "Tint is about heat, glare and what years of sun do to an interior. Here that comes down to which way your commute points and where the car sits while you are at work, on campus or at the shops.",
+    "points": [
+      {
+        "title": "East and west on M-59",
+        "body": "On the freeway the low sun is in the windshield one way and in the mirrors the other. Tinted side and rear glass cuts the glare that comes from beside and behind you. For the windshield itself, our lightest shade, 75%, is a popular pick: heat and UV protection with a near-factory look, in C2 Ceramic only, from $175.00."
+      },
+      {
+        "title": "North and south on Rochester Road",
+        "body": "Rochester Road runs north from M-59 toward downtown Rochester, which puts the morning and evening sun on the side glass and on whoever is sitting next to it. Both films block 99% of UV, and the front 2 windows are from $99.99 in C2 Carbon on a standard coupe or sedan."
+      },
+      {
+        "title": "Parked in the open all day",
+        "body": "Most of Oakland University's campus land is in Rochester Hills, and The Village of Rochester Hills is an open-air center, not an enclosed mall. If your car spends hours in an open lot, the cabin soaks up heat. C2 Ceramic rejects far more infrared heat than carbon. It is the film to pick when a hot cabin is the complaint."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint is installed at the shop. Most jobs are one visit.",
+    "body": [
+      "Film goes on indoors at 33115 Louise Ave in Clinton Township, away from the wind, dust and pollen that cause peeling and bubbling. That is about 19 miles from central Rochester Hills, roughly 30 minutes without traffic, on the north side of 14 Mile Road just east of Kelly Road.",
+      "Most installs are finished the day you drop off: about 1.5 hours for the front 2 windows, about 2.5 for full sides and about 3.5 with the rear glass. The shop is appointment only, so you have a set time before you leave Rochester Hills. If the round trip does not fit your day, ask about [pick-up and drop-off valet](/mobile-detailing/). We collect the vehicle, tint it and bring it back."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "About 19 miles, roughly 30 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "No time for the drive", "value": "Valet pickup. Ask when you book." }
+    ]
+  },
+  "photo": "corvette-gray",
+  "faq": [
+    {
+      "q": "Will you come to Rochester Hills to tint my windows?",
+      "a": "Not to install it. Film has to go on in a clean, closed space, and a driveway or an office lot gives us wind, dust and pollen instead. What we will do is come and get the vehicle. Valet pickup collects it from your home or work in Rochester Hills, we tint it at the shop and bring it back."
+    },
+    {
+      "q": "How dark can I go?",
+      "a": "Tint law in Michigan is written for each set of windows separately, and it does not match most other states. Before anything is cut we walk you through what is legal for your vehicle, including your options for darker rear windows and the medical exemption process. The shade is your choice. You pick it from real Geoshield samples on glass at the shop, because a shade on a screen is only an approximation. You can [preview the five shades](/window-tint-clinton-township-mi/) first. This is general information, not legal advice."
+    },
+    {
+      "q": "Carbon or ceramic for a car that sits outside at work?",
+      "a": "Ceramic, if heat is what bothers you. Both films block 99% of UV, and neither is metalized, so neither interferes with GPS, radio or phone signal. The difference is infrared heat. C2 Ceramic rejects far more of it. On a standard coupe or sedan, full sides are from $199.99 in carbon and from $299.99 in ceramic. If the car is garaged at both ends of your commute, carbon may be all you need, and we will tell you so. SUVs and trucks are quoted by vehicle: [request a free quote](#quote)."
+    },
+    {
+      "q": "Can I drive home on the freeway right after the install?",
+      "a": "Yes. Drive it normally. The one rule is to leave the tinted windows up for 3 to 4 days so the film bonds to the glass. Small water pockets or a light haze can show up in the first week. That is normal, and it clears as the film cures."
+    }
+  ],
+  "reviews": ["jake-m", "matt-h"]
+}

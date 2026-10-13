@@ -29,7 +29,7 @@ rankings on pages, so use the plain fact and leave the figure out.
   https://www.clintontownship.com/DocumentCenter/View/368/Clinton-Township-Master-Plan-PDF
 - "Clinton Township is often identified by its 3 main corridors: Groesbeck Highway, Gratiot Avenue, and Hall Road." It "is not characterized by a traditional downtown". (Master Plan 2019, pp. 42 to 43)
   https://www.clintontownship.com/DocumentCenter/View/368/Clinton-Township-Master-Plan-PDF
-- Groesbeck Highway was built in the early 1900s to connect Mount Clemens to Detroit. "Historically, Groesbeck has been a center for automobile-related manufacturing and tooling establishments." (Master Plan 2019, p. 43) It passes through the southeast corner of Fraser, enters Clinton Township, crosses Metropolitan Parkway and the Clinton River, and ends at Hall Road.
+- Groesbeck Highway was built in the early 1900s to connect Mount Clemens to Detroit. "Historically, Groesbeck has been a center for automobile-related manufacturing and tooling establishments." (Master Plan 2019, p. 43) It passes through the southeast corner of Fraser, enters Clinton Township, crosses Metropolitan Parkway (16 Mile Road, "a limited access county primary road") and the Clinton River, and ends at Hall Road.
   https://www.clintontownship.com/DocumentCenter/View/368/Clinton-Township-Master-Plan-PDF
   https://en.wikipedia.org/wiki/M-97_(Michigan_highway)
 - Garfield Road runs "From Utica Road in Fraser to 23 Mile Road in Macomb Township". An office corridor sits around Garfield Road and 19 Mile Road, near Henry Ford Macomb Hospital. (Master Plan 2019, p. 31)
@@ -125,8 +125,10 @@ route: Romeo Plank Road south, Clinton River Road, Garfield Road south, east on
 14 Mile Road, then left (north) onto Louise Avenue.
 https://router.project-osrm.org/route/v1/driving/-82.9302914,42.5960358;-82.9260345,42.5403101?steps=true&overview=false
 
-Two more approaches checked the same way:
+Three more approaches checked the same way:
 
+- From Macomb Community College's Center Campus at Garfield and Hall: Garfield Road south all the way to 14 Mile Road, east on 14 Mile Road, then left (north) onto Louise Avenue. So Garfield Road is a straight run from the north end of the township to 14 Mile Road.
+  https://router.project-osrm.org/route/v1/driving/-82.9546094,42.6246599;-82.9260345,42.5403101?steps=true&overview=false
 - From Gratiot Avenue: west on 14 Mile Road, then right (north) onto Louise Avenue.
   https://router.project-osrm.org/route/v1/driving/-82.9029530,42.5413559;-82.9260345,42.5403101?steps=true&overview=false
 - From Groesbeck Highway southbound: Kelly Road south to 14 Mile Road, east on 14 Mile Road, then left (north) onto Louise Avenue.
@@ -141,7 +143,7 @@ drive-times.json figure goes on a page.
 
 - Winter brine or liquid de-icer on Clinton Township roads. The county's own pages confirm salt. They mention brine only for treating gravel roads in spring. Write "salt" when describing what the county does.
 - Gravel or unpaved roads in Clinton Township. The county maintains about 335 miles of gravel roads countywide, but no source places any of them in this township.
-- Who plows and salts the state trunklines (M-3, M-59, M-97, I-94). The county says state and primary roads come first, but not whose trucks do the state roads.
+- An MDOT contract or any other detail of who does what on the state trunklines (M-3, M-59, M-97, I-94). The county says its plows start on main trunk line and primary routes and that state and primary roads come first. Say that and no more.
 - Parking decks, open lots or valet parking at Partridge Creek, the college or the hospital. No source describes the type of parking, so no "parked in an open lot all day" claims.
 - Street parking rules or a snow emergency parking ban. Nothing found for this township.
 - Tree canopy figures, street tree species, or sap on any particular street. Only the wooded river corridors and the arboretum are sourced.

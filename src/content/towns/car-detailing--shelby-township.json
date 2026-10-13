@@ -1,0 +1,74 @@
+{
+  "service": "car-detailing",
+  "city": "shelby-township",
+  "meta": {
+    "title": "Car Detailing in Shelby Township, MI | Refresh My Ride",
+    "description": "Mobile car detailing in Shelby Township. Interior details from $184.99 for a coupe or sedan, in your driveway, at our shop or by valet pickup. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in Shelby Township, MI",
+    "title": "Leave the beach **at Stony Creek.**",
+    "lede": "Beach sand, trail mud, wet dog and a winter of road salt: we get it out of the carpet instead of vacuuming over it. Detailing in Shelby Township can happen in your driveway, at our shop or by valet. Interior details are from $184.99 for a coupe or sedan in average condition.",
+    "chips": ["Mobile, shop or valet", "Interior from $184.99", "We bring power and water"],
+    "photo": "chevy-suv-black"
+  },
+  "local": {
+    "title": "What ends up inside a Shelby Township vehicle.",
+    "intro": "A vehicle here does park duty in summer and salt duty in winter. Each one leaves something different in the carpet, and each comes out a different way.",
+    "points": [
+      {
+        "title": "Sand from Baypoint and Eastwood",
+        "body": "Stony Creek Metropark has two swimming beaches on its 500 acre lake. Sand works down into the carpet and the seat tracks, past what a quick vacuum reaches. Both interior packages include a full vacuum, trunk included, and the Executive Interior Detail adds seat and carpet extraction."
+      },
+      {
+        "title": "Mud and wet dog off the trails",
+        "body": "Dogs are allowed on Stony Creek's trails on a leash, and the park's mountain bike loops are more than 14 miles of dirt. River Bends adds natural surface trails and the Clinton River. Mud, pet hair and that damp smell are what steam, hot water extraction and odor removal are for."
+      },
+      {
+        "title": "Road salt in the mats",
+        "body": "The county salts Shelby Township's roads through the winter, and it rides in on your boots. A white crust on the mats means salt is down in the carpet too. Hot water extraction pulls it out of the fibers. A vacuum leaves it there."
+      },
+      {
+        "title": "A driveway, or one good parking spot",
+        "body": "Detached houses are the most common home in Shelby Township, and a driveway is all a mobile detail needs. In an attached condo or an apartment community we need one spot with room to walk the full perimeter of the vehicle, plus a heads up on any rules about service vehicles."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Your driveway, our shop or valet. The same detail.",
+    "body": [
+      "Mobile is the simple answer for most details. We come to your home or workplace anywhere in Shelby Township with our own power and water, and you get on with your day. Mobile works well for interior details and the Wash & Seal. Please take personal items and car seats out before we arrive.",
+      "Machine polishing is shop work, so Polish & Protect and the Luxury Refresh are done at the shop: see [paint correction in Shelby Township](/paint-correction-shelby-township-mi/). The shop is about 13 miles from central Shelby Township, roughly 25 minutes without traffic. Or use pick-up and drop-off valet and we handle both trips."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, anywhere in Shelby Township" },
+      { "label": "What we need", "value": "Room to walk around the whole vehicle" },
+      { "label": "Shop", "value": "About 13 miles from central Shelby Township" },
+      { "label": "Valet", "value": "We pick up and bring it back" }
+    ]
+  },
+  "photo": "mobile-van",
+  "faq": [
+    {
+      "q": "Do you come to Shelby Township, or do I have to drive to Clinton Township?",
+      "a": "We come to you. Mobile detailing covers all of Shelby Township, and there is no separate travel charge for Shelby Township addresses. You can also drop the vehicle at the shop, or use valet and never leave the house. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "What do you need from me for a mobile appointment?",
+      "a": "Mostly this: a driveway or parking spot where we can walk the full perimeter of the vehicle. Power and water come with us, so there is no cord or hose to run. If you can, pull the vehicle out of the garage: daylight helps the technician see the work. Take out personal items and car seats first. If your condo association or apartment community has rules about service vehicles, tell us when you book and we will work around them."
+    },
+    {
+      "q": "Can you get beach sand, dog hair and salt stains out?",
+      "a": "Yes, and they come out different ways. Sand comes out with a thorough vacuum. Pet hair and odors are treated with steam and extraction. Salt has to be pulled out of the carpet with hot water extraction, which is part of the Executive Interior Detail, from $239.99 for a coupe or sedan in average condition. Some stains are permanent, like dye transfer and old bleach marks, and we tell you so at the walkaround. Heavy pet hair, deep stains or biohazard cleanup can add to the price, and we get your approval before any of it starts."
+    },
+    {
+      "q": "What does a full detail cost for an SUV or truck?",
+      "a": "Listed prices are for a coupe or sedan in average condition. The Essential Refresh is from $249.99, the Signature Refresh, our most popular, is from $319.99, and the Luxury Refresh is from $439.99. A truck or SUV gets its own quote for its size, and you have that number before we start. Financing is available through Affirm and Klarna. See [every package](/car-detailing-services-clinton-township-mi/) or [get a free quote](#quote)."
+    },
+    {
+      "q": "How often should I have it detailed?",
+      "a": "A full detail once or twice a year covers most vehicles: one at the end of winter to get the salt out, one at the end of summer. With kids, pets or a long commute, a maintenance detail every one to three months keeps it from building up. Regular visits are what our maintenance plans are for: they lock in a lower per-visit price."
+    }
+  ],
+  "reviews": ["sabrina-k", "alexis-p", "caitlin-d"]
+}

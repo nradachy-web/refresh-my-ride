@@ -7,7 +7,7 @@
   "hero": {
     "kicker": "Mobile detailing in Clinton Township, MI",
     "title": "The detail **comes to you.**",
-    "lede": "Mobile detailing at your home or workplace, anywhere within about 30 to 40 minutes of Clinton Township. Our fully equipped mobile unit brings its own power and water. For work that has to happen in the shop, our pick-up and drop-off valet collects your vehicle and brings it back.",
+    "lede": "Mobile detailing at your home or workplace, anywhere within about 30 to 40 minutes of Clinton Township. Interior details from $184.99 and Wash & Seal from $139.99, for a coupe or sedan in average condition. For shop work, our pick-up and drop-off valet collects your vehicle and brings it back.",
     "chips": ["We bring power and water", "Your home or workplace", "Pick-up and drop-off valet", "Licensed and insured"],
     "photo": "mobile-van"
   },
@@ -18,16 +18,14 @@
       "eyebrow": "We come to you",
       "title": "We bring the power, the water and the tools. You keep your day.",
       "body": [
-        "Mobile auto detailing means our fully equipped mobile unit comes to your home or workplace and does the job where the car is parked. **We bring our own power and water**, so you do not need to run a cord or a hose. You keep working. We handle the car.",
-        "It is the same products and the same process we use at the shop, in your driveway. The van is a Chevy Express that Josh built out for this work, and Ben does most of our mobile and valet appointments.",
-        "Mobile is a good fit for interior details and Wash & Seal. Ceramic coating, window tint and paint correction are shop work, and our pick-up and drop-off valet covers those. A mobile visit needs very little from you:"
+        "Mobile detailing means our fully equipped mobile unit comes to your home or workplace and does the job where the vehicle is parked. **We bring our own power and water**, so you do not need to run a cord or a hose. You keep working. We handle the car.",
+        "It is the same products and the same process we use at the shop, in your driveway. The van is a Chevy Express that Josh built out for this work, and Ben does most of our mobile and valet appointments. A mobile visit needs very little from you:"
       ],
       "checks": [
-        "**Room to walk the full perimeter.** A driveway or parking spot where we can get all the way around the vehicle.",
-        "**The vehicle out of the garage, if you can.** Natural light helps our technician see the work.",
-        "**Personal items and car seats out.** Clear the cabin and trunk so we can reach every surface. Anything you forget, we set aside for you.",
-        "**A heads-up on any rules.** If your subdivision has rules about service vehicles, tell us when you book and we will work around them.",
-        "**That is the whole list.** No outlet, no spigot and no cleaning beforehand. The cleaning is our job."
+        "**Room to walk the full perimeter** of the vehicle, in a driveway or parking spot.",
+        "**The vehicle out of the garage,** if you can.",
+        "**Personal items and car seats** out of the cabin and trunk.",
+        "**A heads-up when you book** if your subdivision has rules about service vehicles."
       ],
       "photo": "mobile-bmw-driveway",
       "cta": { "label": "Check my address", "href": "#quote" }
@@ -37,13 +35,13 @@
       "plane": "white",
       "eyebrow": "Three ways to get it done",
       "title": "Mobile, valet or drop-off. Pick whichever fits your week.",
-      "intro": "Coatings and tint happen in the shop, where we can control temperature, dust and cure time. Everything else can come to you. Here is when each one is the right call.",
+      "intro": "Coatings and tint happen in the shop, where we can control temperature, dust and cure time. Paint correction is shop work too. Detailing can come to you. Here is when each one is the right call.",
       "columns": 3,
       "items": [
         {
           "tag": "In your driveway",
           "title": "Mobile",
-          "body": "Our mobile unit comes to your home or workplace with its own power and water. You need a driveway or parking spot with room to walk the full perimeter of the vehicle. Great for interior details and Wash & Seal. You keep working while we handle the car."
+          "body": "Great for interior details and Wash & Seal. Our mobile unit works where the vehicle is parked, at your home or workplace, and you keep working while we handle the car."
         },
         {
           "tag": "Zero effort",
@@ -140,17 +138,17 @@
       "steps": [
         {
           "title": "Tell us what you drive",
-          "body": "Request a free quote, call or text, or book online any hour of the day. Tell us the vehicle, what is bugging you about it and where it is parked. We confirm what can be done on site and give you a firm time estimate.",
+          "body": "Request a free quote, call or text, or book online any hour of the day. Tell us the vehicle, what is bugging you about it and where it is parked. We reply with a firm price, confirm what can be done on site and give you a time estimate.",
           "note": "Free quote"
         },
         {
           "title": "We arrive, or we collect",
-          "body": "On a mobile visit our unit pulls up at your home or workplace with its own power and water. With valet, we come get the vehicle from your address. We walk the vehicle with you first, and anything beyond the package is approved before work begins.",
+          "body": "On a mobile visit our unit pulls up at your home or workplace. With valet, we come get the vehicle from your address. We walk the vehicle with you first, and anything beyond the package is approved before work begins.",
           "note": "Home or workplace"
         },
         {
           "title": "You get the car back",
-          "body": "With mobile you keep working while we are in the driveway. With valet we handle both trips and bring the vehicle back to you. A detail comes back the same day when the package allows.",
+          "body": "With mobile you keep working while we are in the driveway. With valet we handle both trips, and a detail comes back the same day when the package allows.",
           "note": "No trip to the shop"
         }
       ],
@@ -160,12 +158,11 @@
       "type": "beforeAfter",
       "plane": "white",
       "eyebrow": "The result",
-      "title": "What an interior detail pulls out of a seat.",
-      "intro": "Hot water extraction and steam, not a vacuum and a wipe-down. Same products and same process in your driveway as at the shop.",
+      "title": "An interior detail, not a vacuum and a wipe-down.",
+      "intro": "Drag the handle across a seat that went years without a deep clean. The Executive Interior Detail adds intensive steam and seat and carpet extraction to the Premium clean, and interior details are a good fit for a mobile visit.",
       "pairs": ["seat"],
       "checks": [
-        "**Executive Interior Detail** adds intensive steam and seat and carpet extraction to the Premium clean.",
-        "**Pet hair, stains and odors.** Steam and extraction lift embedded pet hair, food and drink stains and the sources of most odors. Nothing is covered with fragrance.",
+        "**Pet hair, stains and odors.** On the Executive Interior Detail, steam and a two step shampoo process lift embedded pet hair, food and drink stains and the sources of most odors.",
         "**Some stains are permanent,** like dye transfer or old bleach marks. We tell you at the walkaround what will and will not come out."
       ]
     },
@@ -173,9 +170,9 @@
       "type": "reviews",
       "plane": "paper",
       "eyebrow": "What customers say",
-      "title": "5.0 from 270+ reviews on Google. These four had us come to them.",
+      "title": "5.0 from 270+ reviews on Google. These three had us come to them.",
       "intro": "Mobile visits and valet pickups, in the customers' own words.",
-      "ids": ["john-b", "alexis-p", "sydney-k", "sabrina-k"]
+      "ids": ["john-b", "alexis-p", "sydney-k"]
     },
     {
       "type": "areas",
@@ -187,24 +184,24 @@
   ],
   "faq": [
     {
-      "q": "Do I need to be home for a mobile detail?",
-      "a": "You do not need to stand in the driveway. We walk the vehicle with you before we start, so you know what will and will not come out and you approve anything beyond the package. After that you keep working and we handle the car.\n\nIf you cannot be there when we arrive, say so when you book and we will confirm the details with you. With valet, we handle both trips."
+      "q": "How long does a mobile detail take, and do I have to wait with the car?",
+      "a": "A Wash & Seal takes about 1.5 hours, a Premium Interior Detail about 2 hours and a full Signature Refresh about 5 hours. Larger vehicles take longer, and we give you a firm time estimate when you book.\n\nWe walk the vehicle with you before we start, so you know what will and will not come out and you approve anything beyond the package. After that you keep working while we are in the driveway. With valet we handle both trips, so you do not have to wait at all."
     },
     {
       "q": "What do you need from me for a mobile appointment?",
-      "a": "A driveway or parking spot with enough room to walk the full perimeter of the vehicle. We bring our own power and water, so you do not need to run a cord or a hose. Please pull the vehicle out of the garage if you can: natural light helps our technician see the work.\n\nBefore we arrive, take personal items, valuables and car seats out of the cabin and trunk. You do not need to clean anything. That is the job. Anything you forget, we set aside for you."
+      "a": "A driveway or parking spot with enough room to walk the full perimeter of the vehicle. We bring our own power and water, so you do not need to run a cord or a hose. Please pull the vehicle out of the garage if you can: natural light helps our technician see the work. If your subdivision has rules about service vehicles, let us know when you book and we will work around them.\n\nBefore we arrive, take personal items, valuables and car seats out of the cabin and trunk. You do not need to clean anything. That is the job. Anything you forget, we set aside for you."
     },
     {
       "q": "Can you detail my car at an apartment or condo?",
-      "a": "It depends on the parking, not the building. We need a spot with room to walk the full perimeter of the vehicle, and a tight space with a car on each side usually does not give us that.\n\nTell us about the parking when you book. If your building or association has rules about service vehicles, let us know and we will work around them. If there is no spot that works, valet pickup solves it: we collect the vehicle, detail it at the shop and bring it back."
+      "a": "It depends on the parking, not the building. We need a spot with room to walk the full perimeter of the vehicle, and a tight space with a car on each side usually does not give us that. Tell us about the parking when you book, along with any building or association rules about service vehicles.\n\nIf there is no spot that works, valet pickup solves it: we collect the vehicle, detail it at the shop and bring it back."
     },
     {
       "q": "What happens if the weather is bad on the day of my mobile detail?",
-      "a": "A mobile detail happens outdoors, so the weather has a say in a way it does not at the shop. Our bays are enclosed and there are no weather delays indoors.\n\nIf the forecast looks rough for your date, call or text [(586) 400-1303](tel:+15864001303) and we will tell you straight what makes sense. Valet pickup is the option that does not depend on the forecast: we collect the vehicle, detail it indoors and bring it back."
+      "a": "A mobile detail happens outdoors, so the weather has a say in a way it does not at the shop, where the bays are enclosed and there are no weather delays.\n\nIf the forecast looks rough for your date, call or text [(586) 400-1303](tel:+15864001303) and we will tell you straight what makes sense. Valet pickup moves the job indoors to our shop."
     },
     {
       "q": "How far do you travel for mobile detailing and valet?",
-      "a": "About 30 to 40 minutes from our shop in Clinton Township. That takes in Macomb and Oakland counties, including Sterling Heights, Shelby Township, Macomb Township, Chesterfield, Mount Clemens, Roseville, St. Clair Shores, Rochester Hills, Troy, Birmingham and Royal Oak. See [all service areas](/service-areas/).\n\nIf you are near the edge of that range or just outside it, tell us where you are and we will confirm what can come to you."
+      "a": "About 30 to 40 minutes from our shop in Clinton Township. We work across Macomb and Oakland counties, including Sterling Heights, Shelby Township, Macomb Township, Chesterfield, Mount Clemens, Roseville, St. Clair Shores, Rochester Hills, Troy, Birmingham and Royal Oak. See [all service areas](/service-areas/).\n\nIf you are near the edge of that range or just outside it, tell us where you are and we will confirm what can come to you."
     },
     {
       "q": "Can you ceramic coat or tint my car at my home?",
@@ -217,7 +214,7 @@
   ],
   "quote": {
     "title": "Tell us where the car is. We will tell you what can come to you.",
-    "lede": "Send us the vehicle, its condition and your address. We text or call back with a price for your exact vehicle and which fits: a mobile visit, a valet pickup or a shop appointment. No obligation, no upsell at pickup."
+    "lede": "Tell us what you drive, what shape it is in and where it is parked. We text or call back with a price for your exact vehicle and which fits: a mobile visit, a valet pickup or a shop appointment. No obligation, no upsell at pickup."
   },
   "summary": {
     "title": "We come to you, or we come and get it.",

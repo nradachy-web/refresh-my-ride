@@ -67,6 +67,8 @@ How to read the sources:
 
 - M-53 runs north and south (see above). A southbound morning drive therefore has the rising sun to the east, which is the driver's left. A northbound evening drive has the setting sun to the west, which is again the driver's left.
 - M-59 and Hall Road run east and west (see above). Eastbound in the morning and westbound in the evening both face a low sun.
+- Utica borders the township on the south, 26 Mile Road is the line with Washington Township, and Stony Creek Metropark is mostly in Washington Township with a small part in Shelby Township (all above). So the township runs from the Utica line at the south end to Stony Creek at the north end. That is how the hub page describes it.
+- Old site statements reused on the detailing page are business statements, not local facts: mobile units cover all of Shelby Township, there is no separate travel charge for Shelby Township addresses, pull the vehicle out of the garage if you can, and tell us about any rules on service vehicles. Source: _source/clean/car-detailing-shelby-township-mi.md. The travel charge line is not in docs/FACTS.md and needs the owner's confirmation.
 
 ## Drive
 

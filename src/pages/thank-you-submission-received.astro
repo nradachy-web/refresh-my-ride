@@ -6,6 +6,7 @@ import Base from '../layouts/Base.astro';
 import PageHead from '../components/PageHead.astro';
 import Head from '../components/Head.astro';
 import Icon from '../components/Icon.astro';
+import LazyFrame from '../components/LazyFrame.astro';
 import { BRAND } from '../data/site';
 import { href } from '../lib/paths';
 
@@ -36,7 +37,7 @@ const COVERS = [
         <p class="small muted">Takes about 10 minutes</p>
       </div>
       <div class="cal__frame">
-        <iframe src={CAL} title="Book a consultation call" loading="lazy"></iframe>
+        <LazyFrame src={CAL} title="Book a consultation call" height={700} fallback="Open the booking calendar" />
       </div>
     </div>
   </section>
@@ -87,14 +88,6 @@ const COVERS = [
     border-radius: var(--r);
     overflow: hidden;
     background: #000;
-  }
-
-  .cal__frame iframe {
-    display: block;
-    width: 100%;
-    height: 700px;
-    min-width: 320px;
-    border: 0;
   }
 
   .cov {

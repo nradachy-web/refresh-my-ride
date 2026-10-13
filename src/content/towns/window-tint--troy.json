@@ -1,0 +1,75 @@
+{
+  "service": "window-tint",
+  "city": "troy",
+  "meta": {
+    "title": "Window Tint in Troy, MI: Carbon & Ceramic | Refresh My Ride",
+    "description": "Window tint for Troy drivers. Geoshield C2 carbon and ceramic film, computer cut, lifetime warranty. From $99.99, most installs done in a day. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Troy, MI",
+    "title": "Parked all day. **Cooler at five.**",
+    "lede": "Geoshield C2 carbon and ceramic film, computer cut for your exact vehicle and installed indoors at our shop, roughly 25 minutes from central Troy. Ceramic rejects far more infrared heat, which matters when a car spends the working day in an open lot. From $99.99 for the front two windows on a coupe or sedan.",
+    "chips": ["Geoshield C2 film", "Lifetime warranty", "From $99.99", "Valet pickup available"],
+    "photo": "bmw-7-series"
+  },
+  "local": {
+    "title": "Why tint earns its keep in Troy.",
+    "intro": "Troy fills up on weekdays. It is a place people commute into, and Big Beaver between Rochester Road and Coolidge is its business district, lined with high-rise offices. A lot of glass sits in the sun from morning to evening. That is the job window film was made for.",
+    "points": [
+      {
+        "title": "The car that sits outside all day",
+        "body": "A cabin parked in an open lot takes sun for hours. Both Geoshield films block 99% of UV, the part of sunlight that fades an interior. The C2 Ceramic film also rejects far more infrared heat, so the cabin is noticeably cooler when you get back in at the end of the day."
+      },
+      {
+        "title": "Low sun on the mile roads",
+        "body": "Big Beaver, Maple and Long Lake all run east and west. Drive them at commute hours and the sun is low in the windshield one way and in the mirrors the other. Film on the side and rear glass cuts that glare. A light film for the windshield is an option too, and we go through what Michigan allows on each set of windows first."
+      },
+      {
+        "title": "No signal trouble on the commute",
+        "body": "Both films are non-metalized. They do not interfere with GPS, radio or phone signal, which matters when your phone is doing the navigating down I-75 or reading you the traffic on Big Beaver."
+      },
+      {
+        "title": "Privacy in a lot or a deck",
+        "body": "Somerset Collection alone has surface, covered and valet parking. Wherever you leave the car, darker film on the rear doors and back glass keeps a laptop bag or shopping bags out of easy view. The rules differ for each set of windows, so we show you what is legal for your vehicle before you pick a shade."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint goes on at the shop, and most installs take a few hours.",
+    "body": [
+      "Film is installed indoors at our Clinton Township shop, away from the wind, dust and pollen that get under film outdoors. Each pattern is cut on a plotter for your exact year, make and model, so no blade touches the glass.",
+      "From central Troy the shop is about 14 miles, roughly 25 minutes without traffic: Big Beaver Road east, which becomes Metropolitan Parkway, then right on Utica Road and left on 14 Mile. The front two windows take about 1.5 hours, full sides about 2.5 hours and full sides with rear glass about 3.5 hours, so most installs are finished the day you drop off.",
+      "If you cannot leave work, ask about valet pickup: we collect the vehicle in Troy, tint it at the shop and bring it back. The covered Uber ride is for coating jobs only, so for tint it is the drive or the valet."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours for most installs" },
+      { "label": "Cannot make the drive", "value": "Ask about valet pickup" }
+    ]
+  },
+  "photo": "tesla-model-y",
+  "faq": [
+    {
+      "q": "Can I drop my car off in the morning and have it back that afternoon?",
+      "a": "Most of the time, yes. Most installs are done the day you drop off: about 1.5 hours for the front two windows, 2.5 for full sides, 3.5 for full sides with rear glass and 1.5 for a front windshield. We are open Monday to Friday, 9am to 5pm, by appointment. If roughly 25 minutes each way does not fit your day, ask about [valet pickup](/mobile-detailing/)."
+    },
+    {
+      "q": "My car sits in an open lot all day. Carbon or ceramic?",
+      "a": "Ceramic, if heat is the complaint. Both films are Geoshield C2, both block 99% of UV, both are non-metalized and both carry a lifetime warranty against bubbling, peeling and fading. The difference is infrared heat, and the ceramic film rejects far more of it. On a coupe or sedan, full sides with rear glass run from $299.99 in carbon and from $399.99 in ceramic. SUVs and trucks are quoted by vehicle. If looks and privacy are the goal, carbon does that for less, and we will tell you so. [Request a free quote](#quote)."
+    },
+    {
+      "q": "How dark can I go in Michigan?",
+      "a": "Michigan's tint rules are specific to each set of windows, and they differ from most other states. We walk you through what is legal for your vehicle, including the options for darker rear windows and the medical exemption process, and we show you real Geoshield samples on glass at the shop. The shade choice is yours. This is general information, not legal advice. You can [preview the shades](/window-tint-clinton-township-mi/) before you come in."
+    },
+    {
+      "q": "How soon can I roll the windows down?",
+      "a": "Leave them up for 3 to 4 days so the film bonds to the glass. That includes parking gates and drive-through windows, so plan on opening the door for a few days. Small water pockets or a light haze in the first week are normal and clear as the film cures."
+    },
+    {
+      "q": "Can you remove old tint that has bubbled or turned purple?",
+      "a": "Yes. Old tint removal starts from $50 per area, and it is 50% off when a full-vehicle tint goes on in the same visit. The rear defroster lines are protected while the old film comes off."
+    }
+  ],
+  "reviews": ["jake-m", "fahad-a"]
+}

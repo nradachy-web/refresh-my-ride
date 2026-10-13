@@ -1,0 +1,80 @@
+{
+  "city": "birmingham",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Birmingham, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Birmingham drivers. Mobile detailing at home, or valet pickup to our shop 30 minutes east."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Birmingham, MI",
+    "title": "Your 14 Mile is **our 14 Mile.**",
+    "lede": "Our shop is on the same 14 Mile Road that runs along the south end of the city, about 17 miles from central Birmingham. Coatings, tint and paint correction happen there. Detailing can come to your driveway or your office, and valet pickup covers the cars that live in a downtown parking structure.",
+    "chips": ["Roughly 30 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "cadillac-sedan-black"
+  },
+  "about": {
+    "title": "What a car in Birmingham actually deals with.",
+    "body": [
+      "Birmingham is a small city, under five square miles, with a downtown built for walking and many neighborhoods that were laid out before 1930. Woodward Avenue passes through on a bypass, Old Woodward and Maple Road cross in the middle of downtown, and the Rouge River feeds Quarton Lake on the west side. Each of those shows up on a vehicle, outside or in."
+    ],
+    "points": [
+      {
+        "title": "Woodward: salt in winter, a car show in August",
+        "body": "Woodward is state highway M-1, and the county road commission that maintains it mixes liquid brine into its salt. The city salts its own major streets first. In August the same road carries the Dream Cruise, and the Birmingham Cruise Event puts classic cars along South Old Woodward. For that day, see [paint correction in Birmingham](/paint-correction-birmingham-mi/)."
+      },
+      {
+        "title": "Gravel under the seal",
+        "body": "Nearly 26 miles of streets here are what the city calls unimproved: gravel roads kept drivable with a thin seal of stone chips and asphalt. The city says they were built with little provision for drainage and that the seal cannot fix standing water. Where water stands at the road edge, it ends up as road film on the lower doors."
+      },
+      {
+        "title": "Public trees over the curb",
+        "body": "Trees in the street right-of-way are public trees, pruned by the city on a block cycle. A car parked at the curb sits under them, and in October and November the leaves are raked into the street beside that same curb for pickup. Sap, bird droppings and wet leaves are easier to deal with the sooner they come off the paint."
+      },
+      {
+        "title": "Trails, a dog area and an ice arena",
+        "body": "The city keeps two miles of trail along the Rouge River, an off-leash dog area at Lincoln Hills and an ice arena at Kenning Park. Mud, wood chips, dog hair and hockey gear all travel in the cabin. That is interior work, and it can be done at your home: see [detailing in Birmingham](/car-detailing-birmingham-mi/)."
+      },
+      {
+        "title": "Five parking structures and 1,200 meters",
+        "body": "Downtown parking is five city structures and about 1,200 parking meters. Neither usually gives us what a mobile detail needs, which is room to walk the full perimeter of the vehicle. For a car that lives downtown, valet pickup is the way to do it."
+      }
+    ],
+    "photo": "mobile-van"
+  },
+  "logistics": {
+    "title": "Thirty minutes to the shop, or we come to Birmingham.",
+    "body": [
+      "The shop is about 17 miles from central Birmingham, roughly 30 minutes without traffic. There are two simple ways over and they take about the same time. One is Woodward south to 14 Mile Road, then east on 14 Mile the whole way. The other is Big Beaver east, which turns into Metropolitan Parkway, then Utica Road down to 14 Mile. Coming from Birmingham we are on your left, on the north side of 14 Mile just east of Kelly Road.",
+      "Interior, exterior and full details can be done at your home or workplace in Birmingham, and we bring our own power and water. Ceramic coating, window tint and paint correction are shop only, because that work needs controlled light, no dust and time to cure. If a weekday trip east does not fit, valet pickup collects the vehicle and brings it back."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 17 miles from central Birmingham" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, with room to walk around the vehicle" },
+      { "label": "Shop hours", "value": "Monday to Friday, 9am to 5pm, by appointment" }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to Birmingham for mobile detailing?",
+      "a": "Yes. Birmingham is inside our mobile and valet area, which reaches about 30 to 40 minutes from our Clinton Township shop. We bring our own power and water. What we need on your end is a driveway, or a parking spot at your office, with room to walk around the whole vehicle. See [how mobile and valet work](/mobile-detailing/)."
+    },
+    {
+      "q": "I park in a downtown structure. Can you detail the car there?",
+      "a": "Usually not. A mobile detail needs room to walk the full perimeter of the vehicle, and a stall in one of the five city structures or a space at a meter rarely gives us that. Book valet instead: we pick the vehicle up, detail it at the shop and bring it back. If your building has a private garage or a lot with open space around the car, tell us and we will say straight whether it works."
+    },
+    {
+      "q": "How far is your shop from Birmingham?",
+      "a": "About 17 miles from central Birmingham, roughly 30 minutes without traffic. The easy route is Woodward south to 14 Mile Road, then east. The address is 33115 Louise Ave, Clinton Township, on the north side of 14 Mile just past Kelly Road. We are appointment only, Monday to Friday, so book before you drive over."
+    },
+    {
+      "q": "Can you ceramic coat or tint my car at my house in Birmingham?",
+      "a": "No. Coatings, window film and machine polishing all need a controlled space: steady light, no wind and no dust. That work is done at the shop. If the drive is the problem, ask about valet pickup. On [ceramic coating](/ceramic-coating-birmingham-mi/) jobs only, the Uber home after you drop off and the Uber back to collect the car are covered."
+    },
+    {
+      "q": "What do your services cost?",
+      "a": "Detailing has package prices, listed for a coupe or sedan in average condition: interior details from $184.99, exterior details from $139.99 and full details from $249.99. Window tint is from $99.99 for the front two windows on a standard coupe or sedan. Ceramic coating and multi-stage paint correction are quoted per vehicle, once we know its size and the condition of the paint. SUVs and trucks are always quoted for their size."
+    }
+  ],
+  "reviews": ["alexis-p", "jake-m", "norman-r"],
+  "neighbors": ["troy", "royal-oak", "west-bloomfield"]
+}

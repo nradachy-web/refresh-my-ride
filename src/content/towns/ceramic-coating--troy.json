@@ -1,0 +1,74 @@
+{
+  "service": "ceramic-coating",
+  "city": "troy",
+  "meta": {
+    "title": "Ceramic Coating in Troy, MI | Refresh My Ride",
+    "description": "Ceramic coating for Troy drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Uber covered or valet pickup. Free quote."
+  },
+  "hero": {
+    "kicker": "Ceramic coating in Troy, MI",
+    "title": "I-75 salt lands **on the coating.**",
+    "lede": "A ceramic coating puts a hard, bonded layer between your paint and a Troy commute: salt off I-75 and Big Beaver in winter, sun in an open lot the rest of the year. Our 1, 3 and 5 year packages include paint correction and a written warranty. The shop is roughly 25 minutes from central Troy, and we can pick the vehicle up.",
+    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered", "Valet pickup available"],
+    "photo": "porsche-suv-blue"
+  },
+  "local": {
+    "title": "What Troy driving does to clear coat.",
+    "intro": "Troy runs on the car. The city's master plan calls the private automobile the primary way people get around, I-75 crosses the middle of town, and a working day here usually means a parking lot. Each of those is hard on bare clear coat. A coating changes what sticks.",
+    "points": [
+      {
+        "title": "Wet salt off the freeway",
+        "body": "The Road Commission for Oakland County clears I-75 for the state. Its trucks spray brine onto the salt as it spreads, so it sticks to the pavement and starts working sooner. It sticks to doors and rocker panels the same way. On a coated panel that film sits on the coating, not on the paint, and it rinses off."
+      },
+      {
+        "title": "Main roads first, your street last",
+        "body": "Troy salts and plows major city and county roads first: Big Beaver, Maple, Long Lake, Rochester Road. Subdivision streets wait until more than 4 inches has fallen. In winter you drive through both every day. A coated car comes clean with a rinse and a gentle hand wash, so the salt does not get weeks to sit."
+      },
+      {
+        "title": "Parked outside from nine to five",
+        "body": "Big Beaver between Rochester Road and Coolidge is the business district. If your car sits in an open lot there all day, that is hours of UV, plus whatever the birds and trees drop. A coating resists UV fade, and bird droppings, bugs and tree sap wipe off before they etch the paint."
+      },
+      {
+        "title": "New from the Automall",
+        "body": "Troy's master plan sets aside an Automall district: a planned cluster of dealerships selling nearly every make. A new vehicle is the ideal one to coat. The paint is in its best condition, so it needs less correction, and it is protected before its first winter. New cars still get decontaminated and prepped first."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Coating is shop work. Three ways to get it there from Troy.",
+    "body": [
+      "Every coating is applied indoors at our Clinton Township shop and cures there before the vehicle goes back outside. From central Troy the shop is about 14 miles, roughly 25 minutes without traffic: Big Beaver Road east, which becomes Metropolitan Parkway at the county line, then right on Utica Road and left on 14 Mile.",
+      "Plan to be without the vehicle for at least a full day, and longer when the paint needs more correction. You get an exact window with your quote. If you drop it off, Uber is covered for the drop-off and the pickup. If you would rather not make the trip at all, use valet: we collect the vehicle from your home or workplace and bring it back coated. It is the option most of our coating customers choose when they cannot spare the day."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Distance", "value": "About 14 miles from central Troy" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+    ]
+  },
+  "photo": "bmw-x6-blue",
+  "faq": [
+    {
+      "q": "Can you pick my car up at my office in Troy and bring it back coated?",
+      "a": "Yes. That is our pick-up and drop-off valet. We collect the vehicle from your workplace or your home, do the full job at the shop and return it. A coating takes at least a full day, and longer when the paint needs more correction, so plan to be without the vehicle for that stretch. We confirm the exact window when we quote. More on [how valet works](/mobile-detailing/)."
+    },
+    {
+      "q": "I just bought a new car. Should I coat it right away?",
+      "a": "Yes. New is the ideal time, because the paint is in its best condition and there is less correction to do. New cars still get decontaminated and prepped, since factory paint is rarely as clean as it looks. The Renewal, our 5 year package, suits a vehicle you intend to own for years. The Refresh, at 1 year, suits a lease or a car you will trade in soon."
+    },
+    {
+      "q": "Will a coating stop rock chips on I-75?",
+      "a": "No. A ceramic coating is not armor. It will not stop a rock chip or a key scratch. What it does is resist salt, UV fade and chemical etching, and make the vehicle far easier to wash. If highway chips are your main worry, tell us and we will be straight about what a coating will and will not do for them."
+    },
+    {
+      "q": "How much does ceramic coating cost for my vehicle?",
+      "a": "Coating is quoted per vehicle. Size, the condition of the paint and how much correction it needs all change the job, so a price list would only be a guess. Tell us what you drive and we will give you a real number. [Request a free quote](#quote) or call [(586) 400-1303](tel:+15864001303)."
+    },
+    {
+      "q": "I run my car through an automatic wash near work. Is that a problem?",
+      "a": "It depends on the wash. Brush-style automatic washes put swirls in any finish, coated or not, so we ask you to skip those. Touchless is fine. A coated vehicle does not need much anyway: salt and dirt do not bond to it the way they do to bare clear coat, so a rinse and a gentle hand wash does the job."
+    }
+  ],
+  "reviews": ["john-b", "norman-r", "scott-w"]
+}

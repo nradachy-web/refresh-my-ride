@@ -1,0 +1,71 @@
+{
+  "service": "car-detailing",
+  "city": "troy",
+  "meta": {
+    "title": "Car Detailing in Troy, MI: Mobile or Shop | Refresh My Ride",
+    "description": "Car detailing in Troy, MI at your home, your office or our shop. Interior details from $184.99, exterior from $139.99. Valet pickup available. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in Troy, MI",
+    "title": "Your driveway. **Or your office lot.**",
+    "lede": "Interior, exterior and full details for Troy drivers, done at your home, at your workplace or at our shop. We bring our own power and water. For a coupe or sedan in average condition, interior details start from $184.99 and exterior details from $139.99.",
+    "chips": ["Mobile detailing in Troy", "Interior from $184.99", "Pick-up and drop-off valet", "Maintenance plans"],
+    "photo": "interior-bmw"
+  },
+  "local": {
+    "title": "What ends up in a Troy car, and how we get it out.",
+    "intro": "A vehicle here works two shifts. On weekdays it is a commuter: I-75, Big Beaver, coffee in the cup holder. On evenings and weekends it hauls kids, dogs and gear to the parks. Each shift leaves something different behind.",
+    "points": [
+      {
+        "title": "Salt in the carpet",
+        "body": "Troy does not plow subdivision streets until more than 4 inches has fallen, so on an ordinary snow day the street outside your door stays white and rides in on your boots. The salt dries into the mats and carpet. A vacuum leaves it there. Hot water extraction pulls it out of the fibers."
+      },
+      {
+        "title": "A season of soccer",
+        "body": "Firefighters Park has nine soccer fields, Boulan Park has five and Jaycee Park has eight more, counting the small ones. A season of cleats, grass and wet gear gets ground into the back seat and the cargo mat. Steam and extraction lift it out of the fabric. Fragrance only covers it."
+      },
+      {
+        "title": "Dog park days",
+        "body": "Daisy Knight Dog Park sits in the same park the Troy Trail runs through. Dog hair weaves into carpet and seat fabric, and it takes time to pull. We treat pet hair and odors, and if the hair is heavy enough to change the price we tell you before work begins, never after."
+      },
+      {
+        "title": "The commuter interior",
+        "body": "Daily miles mean coffee in the console, dust in the vents and a film on the inside of the glass. For a long commute we suggest a maintenance detail every one to three months, with a full detail at the end of winter and the end of summer. Ask about our maintenance plans, which lock in a lower per-visit price."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Mobile suits Troy. Here is what we need from you.",
+    "body": [
+      "The city's master plan describes Troy housing as overwhelmingly single family detached, and a driveway is the easiest place there is to detail a vehicle. We bring our own power and water. We need room to walk the full perimeter of the vehicle, and that is all. Mobile is a good fit for interior details and the Wash & Seal. Please take out personal items and car seats before we arrive.",
+      "We come to workplaces too. An open lot with space around the vehicle works. A deck stall with a car parked on each side does not, so tell us where it will be and we will say straight whether mobile fits or valet is the better call. With valet we pick the vehicle up, detail it at the shop and bring it back.",
+      "You can also drive it over. The shop is about 14 miles from central Troy, roughly 25 minutes without traffic: east on Big Beaver Road and Metropolitan Parkway, right on Utica Road, left on 14 Mile Road."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "What we need", "value": "Room to walk the full perimeter of the vehicle" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." },
+      { "label": "Shop drop-off", "value": "About 14 miles, roughly 25 minutes without traffic" }
+    ]
+  },
+  "photo": "mobile-bmw-driveway",
+  "faq": [
+    {
+      "q": "Can you detail my car in the parking lot at my office in Troy?",
+      "a": "Yes, if there is room. We bring our own power and water, so we do not need anything from the building. We do need to walk the full perimeter of the vehicle, which an open surface lot allows and a tight deck stall usually does not. If your building has rules about service vehicles, let us know when you book and we will work around them. See [how mobile detailing works](/mobile-detailing/)."
+    },
+    {
+      "q": "How much does a detail cost for a sedan? And for an SUV?",
+      "a": "For a coupe or sedan in average condition: Premium Interior Detail from $184.99, Executive Interior Detail from $239.99, Wash & Seal from $139.99, Essential Refresh from $249.99 and Signature Refresh, the most popular full detail, from $319.99. SUVs and trucks are quoted for their size. Heavy pet hair, stains or biohazards can add to the price, and that is always approved before work begins. The [full package list](/car-detailing-services-clinton-township-mi/) has what each one includes."
+    },
+    {
+      "q": "How long does it take? Will it fit inside a workday?",
+      "a": "A Wash & Seal takes about 1.5 hours and a Premium Interior Detail about 2 hours. An Executive Interior Detail runs about 3 hours and a Signature Refresh about 5. The Luxury Refresh, which adds a one-step machine polish, takes about 7 hours. Larger vehicles take longer. We give you a time when you book."
+    },
+    {
+      "q": "Do you offer a regular plan to keep the car clean?",
+      "a": "Yes. Ask us about our maintenance plans, which lock in a lower per-visit price for regular service. For a daily commuter, or a vehicle that carries kids and pets, a maintenance detail every one to three months keeps it from needing a full reset. [Request a free quote](#quote) and tell us how many vehicles you have."
+    }
+  ],
+  "reviews": ["fahad-a", "alexis-p", "sydney-k"]
+}

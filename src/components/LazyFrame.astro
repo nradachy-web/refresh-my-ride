@@ -1,0 +1,82 @@
+---
+/* A third-party frame (a booking calendar, a map) that waits for the visitor.
+   It is fetched on their first touch, scroll, key press or mouse move, so it
+   costs the first load nothing. The space is reserved, and with script off
+   there is a plain link instead. */
+interface Props {
+  src: string;
+  title: string;
+  height: number;
+  /** Link text for the no-script fallback. */
+  fallback: string;
+}
+const { src, title, height, fallback } = Astro.props;
+---
+
+<div class="lf" data-lazy-frame data-src={src} data-title={title} style={`min-height:${height}px`}>
+  <p class="lf__wait small" aria-hidden="true">Loading…</p>
+  <noscript><p class="lf__nojs"><a class="btn primary" href={src} target="_blank" rel="noopener">{fallback}</a></p></noscript>
+</div>
+
+<script is:inline>
+  (function () {
+    var boxes = document.querySelectorAll('[data-lazy-frame]:not([data-armed])');
+    if (!boxes.length) return;
+    boxes.forEach(function (b) {
+      b.setAttribute('data-armed', '');
+    });
+    var wake = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
+    function load() {
+      wake.forEach(function (e) {
+        removeEventListener(e, load);
+      });
+      boxes.forEach(function (b) {
+        var f = document.createElement('iframe');
+        f.src = b.getAttribute('data-src');
+        f.title = b.getAttribute('data-title');
+        f.addEventListener('load', function () {
+          b.classList.add('is-ready');
+        });
+        b.appendChild(f);
+      });
+    }
+    wake.forEach(function (e) {
+      addEventListener(e, load, { passive: true });
+    });
+  })();
+</script>
+
+<style>
+  .lf {
+    position: relative;
+    background: #000;
+  }
+
+  .lf :global(iframe) {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-width: 320px;
+    min-height: inherit;
+    border: 0;
+  }
+
+  .lf__wait {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    color: var(--on-ink-muted);
+  }
+
+  .lf.is-ready .lf__wait {
+    display: none;
+  }
+
+  .lf__nojs {
+    position: relative;
+    display: grid;
+    place-items: center;
+    min-height: inherit;
+  }
+</style>

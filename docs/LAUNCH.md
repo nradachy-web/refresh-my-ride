@@ -25,8 +25,7 @@ below has been done. Do it in this order.
 
 ## The switch
 
-6. In `.github/workflows/deploy.yml`: delete the `BASE_PATH` line and the
-   `AUDIT_SOFT` lines.
+6. In `.github/workflows/deploy.yml`: delete the `env:` and `BASE_PATH` lines.
 7. Add `public/CNAME` containing `refreshmyrideauto.com`. Commit and push.
 8. DNS, web records only: apex `A` records to 185.199.108.153,
    185.199.109.153, 185.199.110.153 and 185.199.111.153, and `www` as a `CNAME`

@@ -1,0 +1,74 @@
+{
+  "service": "ceramic-coating",
+  "city": "macomb-township",
+  "meta": {
+    "title": "Ceramic Coating in Macomb Township, MI | Refresh My Ride",
+    "description": "Ceramic coating for Macomb Township drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup or Uber covered. Free quote."
+  },
+  "hero": {
+    "kicker": "Ceramic coating in Macomb Township, MI",
+    "title": "Hall Road salt. **It rinses off.**",
+    "lede": "A ceramic coating bonds a hard layer over your clear coat, so road salt and construction dust sit on the coating, not the paint. All three packages, 1, 3 and 5 years, come with paint correction first and a written warranty. Our shop is about 15 miles from central Macomb Township, and we can pick the vehicle up.",
+    "chips": ["1, 3 or 5 years", "Paint correction included", "Valet pickup or Uber covered"],
+    "photo": "porsche-suv-blue"
+  },
+  "local": {
+    "title": "What a coating is up against in Macomb Township.",
+    "intro": "You leave a subdivision street that sees very little salt, drive main roads that see a lot, and park back in the driveway with the film still on the car. In summer the film is dust from whatever is being built nearby. A coating does not stop either one from landing. It changes how hard they hold on.",
+    "points": [
+      {
+        "title": "Salt picked up at the end of your street",
+        "body": "State and primary roads are cleared first here, and the county salts subdivision streets only at entrances, exits, intersections and hills. Every trip out to Romeo Plank, 23 Mile or Hall Road puts fresh salt on the lower panels. On a coated panel it sits on the coating and rinses away instead of working on the clear coat."
+      },
+      {
+        "title": "Dust from the next phase going in",
+        "body": "Houses are still being built here, and road projects keep opening new dirt. That dust lands on every car parked nearby. Coated paint lets it float off with a rinse and a gentle hand wash, so you are not rubbing grit into the finish to get it clean."
+      },
+      {
+        "title": "Slow traffic on Romeo Plank and Hall Road",
+        "body": "Romeo Plank backs up southbound on busy days, and Hall Road is one shopping center after another. Stop and go driving means brake dust on the wheels. Wheels can be coated in the same visit as the paint, along with the glass and trim."
+      },
+      {
+        "title": "Long afternoons parked at the fields",
+        "body": "Macomb Corners Park has six ball diamonds and eight soccer fields, and a tournament weekend is hours parked outside. Bird droppings and bugs wipe off a coated panel before they etch the paint, and the coating guards against UV while the car sits."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Coating is done at the shop. We can come and get the car.",
+    "body": [
+      "Ceramic coating needs our indoor bays in Clinton Township, where light, temperature and cure time are controlled. That is about 15 miles from central Macomb Township. The usual way down is Romeo Plank Road to Cass Avenue, then Groesbeck Highway (M-97) south to Kelly Road and 14 Mile Road.",
+      "The vehicle stays with us for at least a full day, longer if the paint needs more correction, and you get an exact window with your quote. Coating customers who cannot spare that day usually choose [valet pickup](/mobile-detailing/): we collect the vehicle from your home or work in Macomb Township and bring it back coated. If you drop it off yourself, Uber is covered for the drop-off and the pickup."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Distance", "value": "About 15 miles from central Macomb Township" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "While it is with us", "value": "Valet pickup, or Uber covered" }
+    ]
+  },
+  "photo": "bmw-x6-blue",
+  "faq": [
+    {
+      "q": "Can you ceramic coat my vehicle at my house in Macomb Township?",
+      "a": "No. A coating has to go on and cure indoors, away from wind, sun and airborne dust, and there is plenty of dust around a township that is still building. Our mobile van handles detailing. Coating is done at the shop, and valet pickup gets the vehicle there and back without you making the trip."
+    },
+    {
+      "q": "How long will my vehicle be gone?",
+      "a": "At least a full day. Decontamination, paint correction and curing are what take the hours, and paint that needs more correction takes longer. We tell you the exact window when we quote your vehicle, so you can book valet or plan your ride around it."
+    },
+    {
+      "q": "What does a coating cost for an SUV or a truck?",
+      "a": "Coating has no price list, because the size of the vehicle and the state of the paint decide the work. A three row SUV has more surface than a sedan, and a daily driver that has been through a few winters of brush washes needs more correction first. Tell us the year, make and model and we will quote it. [Request a free quote](#quote)."
+    },
+    {
+      "q": "My vehicle is new. Should I wait to coat it?",
+      "a": "No. New is the easiest time, because the paint needs the least correction and it is protected before its first winter on salted roads. We still decontaminate and prep new paint. If it is a lease, The Refresh, our 1 year package, is built for that. All three packages are on the [ceramic coating page](/ceramic-coating/)."
+    },
+    {
+      "q": "Will a coating stop rock chips from all the road work?",
+      "a": "No. A coating is a thin, hard chemical layer, not armor. It will not stop a rock chip or a key scratch. What it does is keep salt, dust, bugs and bird droppings from bonding to the paint, and it makes the car far easier to wash clean."
+    }
+  ],
+  "reviews": ["john-b", "norman-r", "scott-w"]
+}

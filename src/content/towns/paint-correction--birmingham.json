@@ -1,0 +1,72 @@
+{
+  "service": "paint-correction",
+  "city": "birmingham",
+  "meta": {
+    "title": "Paint Correction in Birmingham, MI | Refresh My Ride",
+    "description": "Paint correction for Birmingham drivers: swirls, light scratches and oxidation polished out at our shop. One-step polish from $344.99 on a coupe or sedan."
+  },
+  "hero": {
+    "kicker": "Paint correction in Birmingham, MI",
+    "title": "Old Woodward shows **every swirl.**",
+    "lede": "On Dream Cruise Saturday the Birmingham Cruise Event puts classic cars along South Old Woodward, where people walk past the paint in open sun. Machine polishing takes swirl marks, light scratches, oxidation and water spots out of the clear coat first. It is shop work, about 17 miles from central Birmingham.",
+    "chips": ["Swirls and light scratches out", "Checked under shop lighting", "Valet pickup available"],
+    "photo": "josh-polishing-corvette"
+  },
+  "local": {
+    "eyebrow": "Where the marks come from",
+    "title": "What puts swirls in Birmingham paint, and when it gets noticed.",
+    "intro": "Swirls and light scratches are not random. They come from how a car is washed, what is on the paint when it gets wiped, and what lands on it while it is parked. In Birmingham the sources are easy to name, and so is the day everyone looks.",
+    "points": [
+      {
+        "title": "A car show on South Old Woodward",
+        "body": "The Woodward Dream Cruise is the third Saturday in August, and the Birmingham Cruise Event puts classic cars along South Old Woodward that day. The crowd is on foot, a few feet from the paint. Our own corrections include a 1990 Mazda Miata that took a 2 step and a 2019 Corvette Z06, and Matt handles our heaviest work."
+      },
+      {
+        "title": "Salt means washing, and washing is where swirls start",
+        "body": "The city salts its major streets first, and Woodward gets salt mixed with liquid brine from the county road commission. A car here gets washed often between the first snow and spring. If those washes are brush-style tunnels, each pass adds fine swirls to the clear coat. Touchless washes are fine."
+      },
+      {
+        "title": "Gritty film from streets that hold water",
+        "body": "Nearly 26 miles of streets here are gravel roads under a thin seal, and the city says the seal cannot fix standing water. What splashes up dries on the lower doors as a gritty film. Wipe that off dry and the grit is what scratches. It is why we decontaminate the paint before a machine touches it."
+      },
+      {
+        "title": "Leaves raked into the street",
+        "body": "Public trees line the street right-of-way, and in October and November residents rake the leaves into the street next to the curb for pickup. Brushing dry leaves and grit off a parked car drags them across the clear coat. Those light scratches are the kind a one-step polish is meant for."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction needs our lights, so it happens at the shop.",
+    "body": [
+      "Machine polishing is shop only. We inspect the paint under controlled lighting, which is how we find the swirls that otherwise only show in direct sun, and that cannot be set up in a driveway. The shop is in Clinton Township, about 17 miles from central Birmingham: Woodward south to 14 Mile Road, then east to Louise Ave, just past Kelly Road.",
+      "There are two published starting points. Polish & Protect is an exterior detail with a one-step polish, from $344.99 for a coupe or sedan in average condition, and takes about 4.5 to 5 hours. Luxury Refresh is a full detail with the same one-step polish, from $439.99, about 7 hours. Heavier multi-stage work is quoted per vehicle after we see the paint.",
+      "If you cannot give up a weekday to bring it over, valet pickup collects the vehicle in Birmingham and returns it when the work is finished."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "One-step polish", "value": "From $344.99, about 4.5 to 5 hours" },
+      { "label": "Getting it here", "value": "Drive over, or valet pickup" }
+    ]
+  },
+  "photo": "team-polishing-mercury",
+  "faq": [
+    {
+      "q": "How far ahead of the Dream Cruise should I book?",
+      "a": "As early as you can. We are appointment only, Monday to Friday, and a multi-stage correction is quoted only after we have seen the paint, so the first step is a quote and not a date. Text photos to [(586) 400-1303](sms:+15864001303) or [request a free quote](#quote), and tell us the car needs to be ready for the third Saturday in August."
+    },
+    {
+      "q": "Will a one-step polish take out everything?",
+      "a": "No, and we will not tell you it does. A one-step machine polish removes roughly 60 to 70% of light swirls and scratches and brings the gloss back. Paint that needs more gets a multi-stage correction, often called a 2 step, quoted per vehicle once we have looked at it under shop lighting. Correction is not repainting. Rock chips, deep scratches through the clear coat and failed clear coat cannot be polished out, and we point those out before any work starts."
+    },
+    {
+      "q": "Can you do paint correction at my home in Birmingham?",
+      "a": "No. Correction needs controlled lighting and an enclosed space, so it is done at the shop. A mobile visit is good for an interior detail or a Wash & Seal, but not for machine polishing. If getting it across the county is the hard part, valet pickup handles the trip in both directions."
+    },
+    {
+      "q": "Should I correct the paint before a ceramic coating?",
+      "a": "You do not need to book it separately. Every ceramic coating package already includes paint correction, done right before the coating goes on, because a coating locks in whatever is underneath it. If you want protection for years, look at [ceramic coating in Birmingham](/ceramic-coating-birmingham-mi/). If you only want the gloss back, Polish & Protect seals the paint for 6 months. More on [how paint correction works](/paint-correction/)."
+    }
+  ],
+  "reviews": ["don-p", "karen-u", "norman-r"]
+}

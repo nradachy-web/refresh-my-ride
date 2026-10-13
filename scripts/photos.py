@@ -131,8 +131,12 @@ def main():
             im = cap(center_ratio(load(name), 4 / 5), 1600)
             im.save(OUT / f"{pid}-{label}.jpg", quality=88, optimize=True, progressive=True)
         print(f"{pid:28s} pair {im.size}")
+    # the shade illustrations are cut-outs on a transparent ground: set them on ink
     for t in TINT:
-        im = Image.open(SRC / f"2026_09_tint-{t}.webp").convert("RGB")
+        car = Image.open(SRC / f"2026_09_tint-{t}.webp").convert("RGBA")
+        ground = Image.new("RGBA", car.size, (26, 24, 36, 255))
+        ground.alpha_composite(car)
+        im = ground.convert("RGB")
         im.save(OUT / f"tint-{t}.png")
     print("tint shades", im.size)
 

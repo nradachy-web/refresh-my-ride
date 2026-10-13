@@ -1,0 +1,80 @@
+{
+  "city": "royal-oak",
+  "meta": {
+    "title": "Ceramic Coating, Tint & Detailing in Royal Oak, MI",
+    "description": "Ceramic coating, window tint, paint correction and detailing for Royal Oak drivers. Mobile detailing at your home, or our shop about 25 minutes away."
+  },
+  "hero": {
+    "kicker": "Ceramic coating, window tint and detailing in Royal Oak, MI",
+    "title": "Sap, salt and **Woodward sun.**",
+    "lede": "A Royal Oak car lives under street trees, between two salted freeways and Woodward. Our shop is about 14 miles from central Royal Oak, roughly 25 minutes without traffic. Coatings, tint and paint correction happen there. Detailing can come to your driveway, and pick-up and drop-off valet covers the rest.",
+    "chips": ["About 25 minutes away", "Mobile detailing at home", "Pick-up and drop-off valet"],
+    "photo": "corvette-gray"
+  },
+  "about": {
+    "title": "Trees overhead, salt on three sides, Woodward in August.",
+    "body": [
+      "Royal Oak is an older city on a street grid, with I-696 along its south edge, I-75 down the east side and Woodward Avenue on the west. Much of the housing is prewar or from the 1950s, and the city has been planting street trees since the 1930s. The roads, the trees and the parking each leave their own mark on a vehicle."
+    ],
+    "points": [
+      {
+        "title": "Salt on three sides",
+        "body": "I-696, I-75 and Woodward are state highways. The county road commission salts them, with brine sprayed onto the salt as it goes down. The city salts its own main roads, 12 Mile among them, around the clock when a storm calls for it. What dries white on your rocker panels and floor mats came from one of those."
+      },
+      {
+        "title": "The City of Trees, parked under",
+        "body": "Royal Oak has been a Tree City USA every year since 1976, and its street trees stand in the strip between the sidewalk and the curb. A car parked at that curb collects sap, bird droppings and, in fall, wet leaves. Left to sit, sap and droppings etch clear coat."
+      },
+      {
+        "title": "Woodward and the Dream Cruise",
+        "body": "A long stretch of the Woodward Dream Cruise route runs through Royal Oak on the third Saturday of August, and the city holds its own car show at Memorial Park, at Woodward and 13 Mile, that weekend. If the car is going out in that sun, [paint correction](/paint-correction-royal-oak-mi/) is the job to book first."
+      },
+      {
+        "title": "Driveways in the neighborhoods",
+        "body": "Away from downtown, single family houses on their own lots are the largest land use in the city. A driveway with room to walk the full perimeter of the vehicle is all a mobile detail needs. We bring our own power and water."
+      },
+      {
+        "title": "Decks, lots and meters downtown",
+        "body": "Downtown parking is four city structures, surface lots and metered street spaces, with condos and lofts built around them. A deck space may not leave room to work around a vehicle, so if that is where yours lives, ask about valet pickup."
+      }
+    ],
+    "photo": "shop-interior"
+  },
+  "logistics": {
+    "title": "Detailing comes to you. The rest is a freeway run east.",
+    "body": [
+      "From central Royal Oak the shop is about 14 miles, roughly 25 minutes without traffic. Take I-696 east to Groesbeck Highway (M-97), go north to 14 Mile Road and turn east. From the north end of town you can stay on 14 Mile Road the whole way. We are on the north side of 14 Mile, just east of Kelly Road.",
+      "Any detail package, interior, exterior or both, can be done in your driveway or at your office in Royal Oak. Ceramic coating, window tint and paint correction are done in our bays, where light, dust and cure time are under our control. When the trip does not fit your day, valet pickup collects the vehicle and returns it finished."
+    ],
+    "facts": [
+      { "label": "Distance", "value": "About 14 miles from central Royal Oak" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Do you come to Royal Oak for mobile detailing?",
+      "a": "Yes. Royal Oak is inside our mobile and valet area. We bring our own power and water, and what we need from you is a driveway or parking spot with room to walk the full perimeter of the vehicle. If the car lives in a downtown deck or at the curb, tell us what the parking looks like and we will say straight away whether mobile fits or valet is the better call. Prices and packages are on the [Royal Oak detailing page](/car-detailing-royal-oak-mi/)."
+    },
+    {
+      "q": "How do I get to your shop from Royal Oak?",
+      "a": "Take I-696 east to Groesbeck Highway (M-97), go north to 14 Mile Road and turn right. Louise Ave is on the left just after Kelly Road. If you are starting near the north end of town, 14 Mile Road runs straight across. It is about 14 miles from central Royal Oak, roughly 25 minutes without traffic. The address is 33115 Louise Ave, Clinton Township. We are appointment only, so book before you drive over."
+    },
+    {
+      "q": "Can you tint or ceramic coat my car in my driveway?",
+      "a": "No. Film and coatings need a closed bay with steady light and no wind, dust or falling leaves. That work is done at the shop, along with paint correction. If the drive is the obstacle, ask about valet pickup. On [ceramic coating](/ceramic-coating-royal-oak-mi/) jobs your Uber is covered both ways. Most [window tint](/window-tint-royal-oak-mi/) installs are done the same day."
+    },
+    {
+      "q": "I only have street parking. Can you still help?",
+      "a": "Yes. Valet is built for that. We pick the vehicle up, do the work at the shop and bring it back, so it does not matter whether you have a driveway. It is the option most of our coating customers choose when they cannot spare the day."
+    },
+    {
+      "q": "What does a detail cost?",
+      "a": "Our package prices are for a coupe or sedan in average condition. Interior details start from $184.99, exterior details from $139.99 and inside and out packages from $249.99. SUVs and trucks are quoted for their size, and you hear the number before any work begins."
+    }
+  ],
+  "reviews": ["john-b", "caitlin-d", "jake-m"],
+  "neighbors": ["birmingham", "troy", "clinton-township"]
+}

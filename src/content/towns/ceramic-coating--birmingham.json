@@ -1,0 +1,75 @@
+{
+  "service": "ceramic-coating",
+  "city": "birmingham",
+  "meta": {
+    "title": "Ceramic Coating in Birmingham, MI | Refresh My Ride",
+    "description": "Ceramic coating for Birmingham drivers: 1, 3 and 5 year packages, paint correction included, written warranty. Valet pickup, or Uber covered to our shop."
+  },
+  "hero": {
+    "kicker": "Ceramic coating in Birmingham, MI",
+    "title": "Under trees, on salt. **Still glossy.**",
+    "lede": "Birmingham salts its major streets first, parks under public trees and keeps nearly 26 miles of gravel streets under a thin seal. A ceramic coating stops what those leave behind from gripping the paint. 1, 3 and 5 year packages with paint correction included, done at our shop with valet pickup or a covered Uber.",
+    "chips": ["1, 3 or 5 years", "Paint correction included", "Uber covered", "Valet pickup available"],
+    "photo": "bentley-flying-spur"
+  },
+  "local": {
+    "eyebrow": "Why coat it here",
+    "title": "Where a coating earns its keep in Birmingham.",
+    "intro": "A ceramic coating is a hard layer bonded to the clear coat. It is not armor and it does not replace washing. What it changes is how salt, road film and tree fallout stick to the paint, and this town supplies all three.",
+    "points": [
+      {
+        "title": "Gravel under 26 miles of streets",
+        "body": "Nearly 26 miles of Birmingham streets are unimproved: gravel roads under a seal of stone chips and asphalt, built with little provision for drainage. Where water stands at the road edge, it dries on the lower doors as road film. Grime does not grip a coated panel the same way, so that film rinses off."
+      },
+      {
+        "title": "Salt from the city and the county",
+        "body": "The city salts its major streets first, then the intersections where residential streets meet them. Woodward is state highway M-1, and the county road commission that maintains it mixes liquid brine into its salt. A coating keeps that residue sitting on the coating, where a rinse removes it, and not on bare clear coat."
+      },
+      {
+        "title": "Parked under the public trees",
+        "body": "Trees in the street right-of-way are public trees, and the city plants about 200 more public trees a year. Park at the curb and you are likely under one. On a coated panel, sap and bird droppings wipe off before they etch the paint, which matters most on a car you cannot move every day."
+      },
+      {
+        "title": "Shown on South Old Woodward",
+        "body": "On Dream Cruise Saturday, the third Saturday in August, the Birmingham Cruise Event puts classic cars along South Old Woodward. The Renewal, our 5 year package, is the one for a weekend or show car, a new vehicle, or anything you plan to keep for years. Glass, wheels and trim can be coated in the same visit."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "It is done at our shop. You do not have to drive it there.",
+    "body": [
+      "Coating goes on indoors at our Clinton Township shop, where light, temperature and cure time are ours to control. That is about 17 miles from central Birmingham: Woodward south to 14 Mile Road, then east on 14 Mile until you reach us on the north side, just past Kelly Road.",
+      "We keep the vehicle for at least a full day, longer if the paint needs more correction first, so nobody waits around. Drive it over and we cover your Uber home and your Uber back. Or book valet: we collect the vehicle from your home or office in Birmingham and return it coated, with the written warranty and the aftercare guide."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Distance", "value": "About 17 miles from central Birmingham" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "While it is with us", "value": "Uber covered, or valet pickup" }
+    ]
+  },
+  "photo": "ferrari-roma",
+  "faq": [
+    {
+      "q": "Can you ceramic coat my car at my home in Birmingham?",
+      "a": "No. A coating has to be applied out of the wind, dust and sun, then cure before the vehicle goes back outside. A driveway cannot give us that and neither can a parking structure, so it is done at the shop. Valet pickup covers the trip if you would rather not make it, and if you do drive over, Uber is covered for the drop-off and the pickup."
+    },
+    {
+      "q": "I live on one of the unimproved streets. Will a coating help?",
+      "a": "Yes, within limits. Those streets are gravel under a thin seal, and the city says the seal cannot fix standing water, so the lower panels pick up road film. A coated panel lets go of that film with a rinse and a gentle hand wash. What a coating will not do is stop a stone chip or a scratch. It is a hard chemical barrier, not armor, and we would rather you hear that from us before you buy one."
+    },
+    {
+      "q": "How long will you have my vehicle?",
+      "a": "At least a full day, and longer when the paint needs more correction first. The decontamination, the polishing and the cure are what take the hours. The exact window comes with your quote, which lets you line up the Uber or the valet pickup in Birmingham ahead of time."
+    },
+    {
+      "q": "Which package should I pick?",
+      "a": "We will tell you straight, and sometimes the answer is the shorter one. The Refresh, 1 year, suits a leased vehicle or a first coating. The Revival, 3 years, is where most daily drivers land. The Renewal, 5 years, is for a new vehicle or one you plan to keep. All three include paint correction before the coating, a written warranty and a free follow-up wash. Compare [the three packages](/ceramic-coating/)."
+    },
+    {
+      "q": "What does ceramic coating cost?",
+      "a": "It is quoted per vehicle, because size, paint condition and how much correction it needs decide the work. A garaged coupe and a three row SUV that lives at the curb are different jobs. Tell us what you drive and where it is parked and we will give you a real number. [Request a free quote](#quote) or text [(586) 400-1303](sms:+15864001303). Affirm and Klarna financing is available."
+    }
+  ],
+  "reviews": ["judy-j", "john-b", "tom-k"]
+}

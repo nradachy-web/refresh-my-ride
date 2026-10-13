@@ -1,0 +1,70 @@
+{
+  "service": "paint-correction",
+  "city": "shelby-township",
+  "meta": {
+    "title": "Paint Correction in Shelby Township, MI | Refresh My Ride",
+    "description": "Paint correction in Shelby Township: swirls, light scratches and oxidation machine polished out. One-step polish from $344.99 for a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Shelby Township, MI",
+    "title": "Show car paint. **Daily driver too.**",
+    "lede": "Swirl marks, light scratches, oxidation and water spots sit in the clear coat, and machine polishing is how they come out. We do it under shop lighting, about 13 miles from central Shelby Township. The starting point is Polish & Protect, from $344.99 for a coupe or sedan in average condition.",
+    "chips": ["One-step or multi-stage", "Inspected under shop lighting", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "local": {
+    "title": "What marks paint in Shelby Township.",
+    "intro": "Swirls and haze build up from how a car is washed, where it is parked and what gets wiped off it. Around here the usual causes are easy to name, and so is one good reason to fix them.",
+    "points": [
+      {
+        "title": "Salt season means wash after wash",
+        "body": "The county salts Shelby Township's roads all winter, and getting it off means washing the car again and again. Brush-style automatic washes put swirls in any finish. Touchless is fine. By spring the marks show up as fine circles in direct sun."
+      },
+      {
+        "title": "Trail dirt wiped off dry",
+        "body": "Stony Creek has more than 14 miles of dirt mountain bike trail and River Bends has natural surface trails. Dirt that rides home on the paint and gets wiped off with a towel drags grit across the clear coat. Those light scratches are what a machine polish is for."
+      },
+      {
+        "title": "What the trees leave behind",
+        "body": "Shelby Township is a Tree City USA community and protects its woodlands by ordinance. Park under those trees and the hood collects sap and bird droppings, and what they leave dulls the finish. Machine polishing takes oxidation, water spots and light marks out of the clear coat. It cannot fix damage that has gone through it."
+      },
+      {
+        "title": "A show field on Van Dyke",
+        "body": "The Packard Proving Grounds at 49965 Van Dyke Avenue was Packard's test track, and it still hosts car events. At the Cars 'R' Stars show, all makes, models and years are welcome on the general show field. Paint that is going to sit in the sun in front of other car people is worth correcting first."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Correction is shop work. Valet covers the trip.",
+    "body": [
+      "We inspect and polish paint under shop lighting at 33115 Louise Ave in Clinton Township. Matt, our lead technician, handles the heaviest correction work. From central Shelby Township the shop is about 13 miles: Van Dyke Avenue south, Utica Road southeast to 14 Mile Road, then east on 14 Mile. We are on the north side, just east of Kelly Road.",
+      "Allow about 4.5 to 5 hours for Polish & Protect and about 7 for the Luxury Refresh. A multi-stage correction is quoted after we see the paint. If you cannot spare the trip, pick-up and drop-off valet collects the vehicle from your home or work in Shelby Township and brings it back."
+    ],
+    "facts": [
+      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "One-step polish", "value": "About 4.5 to 5 hours" },
+      { "label": "Valet", "value": "Pick-up and drop-off available" }
+    ]
+  },
+  "photo": "josh-polishing-corvette",
+  "faq": [
+    {
+      "q": "Can you do paint correction in my driveway in Shelby Township?",
+      "a": "No. Paint correction is shop only. We inspect the paint and check our work under controlled lighting in an enclosed bay, which a driveway cannot give us. What can come to you is [detailing](/car-detailing-shelby-township-mi/). For correction, drop the vehicle off or ask for valet pickup."
+    },
+    {
+      "q": "Will polishing take out every scratch?",
+      "a": "No, and we will tell you straight before we start. Expect a one-step polish to clear roughly 60 to 70% of light swirls and scratches, not all of them. Heavier defects need a multi-stage correction, which we quote after seeing the paint. Polishing is not repainting. Rock chips, deep scratches that go through the clear coat and failed clear coat are beyond it."
+    },
+    {
+      "q": "What does paint correction cost?",
+      "a": "We publish two ways in, each priced for a coupe or sedan in average condition. Polish & Protect is an exterior decontamination wash and one-step polish, sealed for 6 months, from $344.99. The Luxury Refresh, from $439.99, adds that same one-step polish to a full interior and exterior detail. Trucks and SUVs are priced for their size, and anything multi-stage is quoted once we have seen the paint. [Request a free quote](#quote) or read [how paint correction works](/paint-correction/)."
+    },
+    {
+      "q": "Should I get paint correction before a ceramic coating?",
+      "a": "You do not book it separately. Every ceramic coating package already includes paint correction before the coating goes on, because a coating locks in whatever is underneath it. If you want the finish protected for years and not months, see [ceramic coating in Shelby Township](/ceramic-coating-shelby-township-mi/)."
+    }
+  ],
+  "reviews": ["sabrina-k", "norman-r", "jake-m"]
+}

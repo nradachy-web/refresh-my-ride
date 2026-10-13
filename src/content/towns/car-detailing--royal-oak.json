@@ -1,0 +1,71 @@
+{
+  "service": "car-detailing",
+  "city": "royal-oak",
+  "meta": {
+    "title": "Car Detailing in Royal Oak, MI | Refresh My Ride",
+    "description": "Mobile and in-shop car detailing for Royal Oak. Interior details from $184.99 for a coupe or sedan, in your driveway or at our shop. Free quote."
+  },
+  "hero": {
+    "kicker": "Car detailing in Royal Oak, MI",
+    "title": "The park comes home **in your car.**",
+    "lede": "Interior, exterior and full details for Royal Oak drivers, at your home, your workplace or our shop. We bring our own power and water. For a coupe or sedan in average condition, interior details start from $184.99 and the Wash & Seal from $139.99.",
+    "chips": ["Mobile, shop or valet", "Interior from $184.99", "Wash & Seal from $139.99", "We bring power and water"],
+    "photo": "interior-shelby"
+  },
+  "local": {
+    "title": "Splash pads, ball fields, dogs and leaves. Then winter.",
+    "intro": "The city lists more than 50 parks, shares the Detroit Zoo with Huntington Woods and calls itself the City of Trees. A good part of that comes home in the cabin. Here is what it does to an interior, and how your parking decides whether we come to you.",
+    "points": [
+      {
+        "title": "Splash pad, ball field, back seat",
+        "body": "Normandy Oaks Park has a splash pad, a soccer field and a playground. Memorial Park has ball diamonds and a football field. Wet towels, grass, infield dirt and snack crumbs ride home in the seats and the carpet. Hot water extraction and steam lift that out of the fabric instead of pushing it around."
+      },
+      {
+        "title": "Dogs are welcome in most city parks",
+        "body": "Leashed dogs are allowed in city parks unless a sign says otherwise, and the city runs a members' dog park on Campbell Road. Pet hair works its way into carpet and cargo areas. We treat pet hair and odors. Heavy pet hair can mean an extra charge, and we always clear that with you before work begins."
+      },
+      {
+        "title": "Leaves in fall, salt in winter",
+        "body": "Street trees drop leaves and seeds that get walked onto the mats, and once the snow starts the main roads are salted. Salt dries white in the carpet. The rhythm we suggest is a full detail at the end of winter and another at the end of summer, with a maintenance detail every one to three months if you carry kids or pets."
+      },
+      {
+        "title": "Driveway, deck or curb",
+        "body": "Single family houses on their own lots are the largest land use in the city, and in the older neighborhoods the garage typically sits at the side or the back. A driveway with room to walk all the way around the vehicle is enough for a mobile detail. A downtown deck may not be, and that is what valet pickup is for."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "House, condo or curb: how the detail gets done.",
+    "body": [
+      "**Mobile.** We come to your home or workplace with our own power and water. We need a driveway or parking spot with room to walk the full perimeter of the vehicle. Mobile suits interior details and the Wash & Seal especially well. See [how mobile detailing works](/mobile-detailing/).",
+      "**Valet.** We pick the vehicle up, detail it at the shop and bring it back. It is the answer for a downtown deck, an address with street parking only, or a day when you need the driveway clear.",
+      "**Shop drop-off.** The shop is about 14 miles from central Royal Oak, roughly 25 minutes without traffic: east on I-696, north on Groesbeck Highway (M-97), then east on 14 Mile Road. We are appointment only."
+    ],
+    "facts": [
+      { "label": "Mobile detailing", "value": "Yes, at your home or workplace" },
+      { "label": "Valet pickup", "value": "Available. Ask when you book." },
+      { "label": "Shop distance", "value": "About 14 miles from central Royal Oak" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" }
+    ]
+  },
+  "photo": "mobile-van",
+  "faq": [
+    {
+      "q": "Can you detail my car at my house in Royal Oak?",
+      "a": "Yes. Royal Oak is inside our mobile area, and we bring our own power and water. The one thing we need is room to walk around the whole vehicle. If your driveway runs tight alongside the house, [text us a photo](sms:+15864001303) of where the car parks and we will tell you straight whether mobile works. Please take personal items and car seats out before we arrive."
+    },
+    {
+      "q": "I live downtown and park in a deck. What are my options?",
+      "a": "A deck space may not leave us room to work around the vehicle, so tell us what the parking looks like when you book. If mobile does not fit, valet does: we pick the car up, detail it at our shop and bring it back to you. You can also drop it off yourself. The shop is roughly 25 minutes from central Royal Oak without traffic."
+    },
+    {
+      "q": "What does a detail cost, and how long does it take?",
+      "a": "Prices are from, for a coupe or sedan in average condition. Premium Interior Detail: from $184.99, about 2 hours. Wash & Seal: from $139.99, about 1.5 hours. Signature Refresh, our most popular inside and out package: from $319.99, about 5 hours. SUVs and trucks are quoted for their size. The full list is on the [detailing packages](/car-detailing-services-clinton-township-mi/) page, or [request a free quote](#quote)."
+    },
+    {
+      "q": "There is salt in my carpet and a stain on the seat. Will it come out?",
+      "a": "Salt residue and stains are treated with hot water extraction and steam. Some stains are permanent, such as dye transfer and old bleach marks. If yours is one of those, we tell you at the walkaround before we start, not after you have paid."
+    }
+  ],
+  "reviews": ["alexis-p", "sydney-k", "caitlin-d"]
+}

@@ -1,0 +1,71 @@
+{
+  "service": "window-tint",
+  "city": "birmingham",
+  "meta": {
+    "title": "Window Tint in Birmingham, MI | Refresh My Ride",
+    "description": "Window tint for Birmingham drivers. Geoshield C2 film, computer cut, lifetime warranty. Front two windows from $99.99 on a standard coupe or sedan."
+  },
+  "hero": {
+    "kicker": "Window tint in Birmingham, MI",
+    "title": "Walkable town. **Private cabin.**",
+    "lede": "Birmingham parks at the curb and walks, so people pass right by your glass. Geoshield C2 carbon or ceramic film adds privacy, blocks 99% of UV and takes heat out of a car left at a meter. Front two windows from $99.99 on a standard coupe or sedan, cut by computer and installed indoors at our shop.",
+    "chips": ["From $99.99", "Lifetime warranty", "Blocks 99% of UV", "Valet pickup available"],
+    "photo": "bmw-7-series"
+  },
+  "local": {
+    "eyebrow": "Why tint here",
+    "title": "What tint changes on a car that parks in Birmingham.",
+    "intro": "Tint comes down to who can see in, how hot the cabin gets and how much glare you drive into. All three come up in a town where you park on the street and walk to where you are going.",
+    "points": [
+      {
+        "title": "Curb parking puts people at your window",
+        "body": "Downtown has about 1,200 parking meters, and the city's motto is A Walkable Community. A car at the curb has foot traffic passing its side glass. Tinted rear windows keep what is on the back seat out of plain view. The shade is your choice, and we go over Michigan's rules for each set of windows with you first (general information, not legal advice)."
+      },
+      {
+        "title": "A meter is not a parking structure",
+        "body": "Inside one of the five city structures a car is mostly out of the sun. At a meter it sits in the open and takes the heat through the glass. Both of our films block 99% of UV. C2 Ceramic rejects far more infrared heat than C2 Carbon, so the cabin is noticeably cooler when you get back in."
+      },
+      {
+        "title": "Maple Road at either end of the day",
+        "body": "Maple Road is the main east and west road through downtown, and 14 Mile and Big Beaver run the same way. Early or late, the sun on those roads is low, ahead of you or in the mirrors. Film on the side and rear glass cuts the glare that comes in from beside and behind."
+      },
+      {
+        "title": "Three or four days with the windows up",
+        "body": "New film needs 3 to 4 days before the windows go down. If your daily parking has a gate or a card reader, plan on opening the door to reach it that week. A light haze or a small water pocket in the first week is normal and clears as the film cures."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Installed at the shop, usually in one visit.",
+    "body": [
+      "Every pattern is cut on a plotter for your exact year, make and model, so no blade touches the glass, and the film goes on indoors at our Clinton Township shop. From downtown, take Woodward south to 14 Mile Road and follow 14 Mile east. We are about 17 miles from central Birmingham, on the north side of the road just east of Kelly Road.",
+      "The front two windows take about 1.5 hours. Full sides and rear glass take about 3.5. Most installs are finished the day you drop off. If a weekday run across the county does not fit, ask about valet pickup: we collect the vehicle in Birmingham, install the film and bring it back."
+    ],
+    "facts": [
+      { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 30 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "If you cannot get away", "value": "Valet pickup. Ask when you book." }
+    ]
+  },
+  "photo": "corvette-gray",
+  "faq": [
+    {
+      "q": "What tint is legal on my car in Michigan?",
+      "a": "Michigan's rules are specific to each set of windows and differ from most states, so there is no single number to give you. Before you choose, we walk you through what is legal for your vehicle, including the options for darker rear windows and the medical exemption process. The shade choice is yours. This is general information, not legal advice. You can try each shade in the [shade preview](/window-tint-clinton-township-mi/)."
+    },
+    {
+      "q": "Can you tint my car in my driveway or at my office in Birmingham?",
+      "a": "No. Film has to go on indoors, away from the wind, dust and pollen that get trapped under it and cause peeling and bubbling. Every install is done at the shop. If you would rather not make the drive, valet pickup brings the vehicle to us and returns it tinted."
+    },
+    {
+      "q": "What does window tint cost?",
+      "a": "These are from prices for a standard coupe or sedan. In Geoshield C2 Carbon: front two windows from $99.99, full sides from $199.99, full sides and rear glass from $299.99. In C2 Ceramic the same three sets are from $149.99, from $299.99 and from $399.99, and a front windshield is from $175.00. SUVs and trucks are quoted by vehicle. Both films carry a lifetime warranty covering bubbling, peeling and fading. [Request a free quote](#quote)."
+    },
+    {
+      "q": "I work downtown. How do I fit an install into a weekday?",
+      "a": "Two ways. Drive over in the morning: we are open Monday to Friday, 9am to 5pm, by appointment, and a full vehicle takes about 3.5 hours. Or stay at your desk and use valet pickup. We collect the vehicle, tint it and return it. Either way, the windows stay up for 3 to 4 days afterward."
+    }
+  ],
+  "reviews": ["jake-m", "john-b"]
+}

@@ -2,7 +2,7 @@
   "city": "clinton-township",
   "meta": {
     "title": "Ceramic Coating, Tint & Detailing in Clinton Township, MI",
-    "description": "Ceramic coating, window tint, paint correction and detailing at our Clinton Township shop on 14 Mile Road near Kelly. Appointment only. Mobile and valet too."
+    "description": "Ceramic coating, window tint, paint correction and detailing at our Clinton Township shop, 14 Mile Road near Kelly. Mobile and valet available. Free quote."
   },
   "hero": {
     "kicker": "Ceramic coating, window tint and detailing in Clinton Township, MI",
@@ -14,35 +14,34 @@
   "about": {
     "title": "Three corridors, one river, no downtown.",
     "body": [
-      "Clinton Township runs from 14 Mile Road at its south edge to Hall Road at the north, with Fraser and Mount Clemens carved out of what began as a standard six mile square. It has no traditional downtown. The township is known by three corridors, Groesbeck Highway, Gratiot Avenue and Hall Road, and the three branches of the Clinton River come together inside its borders.",
-      "Most trips here end up on one of the township's heaviest traveled roads: I-94, Hall Road, Gratiot, Groesbeck, Metropolitan Parkway, Hayes or Garfield. Here is what that does to a vehicle, and what we do about it."
+      "Clinton Township runs from 14 Mile Road at its south edge to Hall Road at the north, with Fraser and Mount Clemens carved out of what began as a standard six mile square. It has no traditional downtown. The township is known by three corridors, Groesbeck Highway, Gratiot Avenue and Hall Road, and the three branches of the Clinton River come together inside its borders. Here is what that does to a vehicle, and what we do about it."
     ],
     "points": [
       {
-        "title": "Salt on the main roads, snow on your street",
-        "body": "The county road department clears state and primary roads first. Inside subdivisions it salts only at entrances, exits, intersections and hills. So the salt on your rocker panels and floor mats came off Gratiot, Groesbeck, Hall Road or Metropolitan Parkway. It stays there until it is washed off the paint and extracted from the carpet."
+        "title": "Three state highways and I-94",
+        "body": "Hall Road (M-59), Gratiot (M-3) and Groesbeck (M-97) are state highways. With I-94, they are among the heaviest traveled roads in the township. State and primary roads are where county plows and salt trucks start after a storm. The salt rides home on rocker panels and floor mats, and stays until it is washed off the paint and extracted from the carpet."
       },
       {
-        "title": "Driveways across most of the township",
-        "body": "Single-family homes take up the largest share of the township's land, mostly in platted subdivisions and site condominium developments. A driveway with room to walk the full perimeter of the vehicle is all a mobile detail needs. Apartment and condo complexes cluster along Hayes Road, Garfield Road and 19 Mile Road. There, tell us about the parking first."
+        "title": "Where a mobile detail fits",
+        "body": "Single-family subdivisions take up the largest share of the township's land, and a driveway with room to walk the full perimeter of the vehicle is the easy case. Apartment and condo complexes cluster along Hayes Road, Garfield Road and 19 Mile Road. There, tell us about the parking first. With the shop in the same township, a drop-off or valet pickup is an easy second choice."
       },
       {
-        "title": "Dogs, parks and the Clinton River",
-        "body": "The township runs a 1.5 acre fenced dog park, The Mall at Partridge Creek welcomes dogs, and George George Memorial Park has a kayak and canoe launch on the Clinton River. Dog hair, river mud and wet gear end up in the back of the car. Steam and hot water extraction are how they come back out."
+        "title": "Dogs at the mall, kayaks on the river",
+        "body": "The Mall at Partridge Creek is open-air and welcomes dogs. George George Memorial Park has a kayak and canoe launch on the Clinton River. So the back of the car gets dog hair one weekend and river mud and wet gear the next. Steam and hot water extraction are how it all comes back out."
       },
       {
         "title": "A cruise on Gratiot every August",
-        "body": "The Clinton Township Gratiot Cruise runs Gratiot Avenue between 14 Mile Road and Wellington Crescent on the first Sunday in August. Parked in full sun with people walking past, paint shows every swirl mark. Paint correction machine polishes them out of the clear coat, and it is done before any ceramic coating goes on."
+        "body": "The Clinton Township Gratiot Cruise runs Gratiot Avenue between 14 Mile Road and Wellington Crescent on the first Sunday in August. Our shop is on 14 Mile too, west of Gratiot. Parked in full sun with people walking past, paint shows every swirl mark. Paint correction machine polishes them out of the clear coat, and it is done before any ceramic coating goes on."
       }
     ],
-    "photo": "mobile-bmw-driveway"
+    "photo": "josh-portrait"
   },
   "logistics": {
     "title": "The shop is in town. Mobile and valet still come to you.",
     "body": [
       "We are at 33115 Louise Ave, on the north side of 14 Mile Road just east of Kelly Road. That corner is the south edge of the township: Fraser is across Kelly Road and Roseville is across 14 Mile. From the north end, take Garfield Road south to 14 Mile Road and turn east. Louise Ave is on the left after Kelly Road. From Gratiot, turn west on 14 Mile. From the Civic Center on Romeo Plank Road it is about 6 miles, roughly 15 minutes without traffic.",
       "The shop is appointment only, Monday to Friday, 9am to 5pm, and closed on weekends. We are often out on mobile and valet jobs, so call or text (586) 400-1303 or book online before you head over. Online booking is open 24/7, and with an appointment we will have a bay ready for you.",
-      "Living close does not mean you have to make the trip. Interior, exterior and full details can be done at your home or workplace, and we bring our own power and water. Ceramic coating, window tint and paint correction need the shop's enclosed bays and controlled lighting. For those, valet picks the vehicle up, we do the work at the shop, and we bring it back. On coating jobs your Uber is covered for the drop-off and pickup."
+      "Living close does not mean you have to make the trip. A detail, inside, outside or both, can be done in your driveway or at your workplace, since we bring our own power and water. Coating, tint and paint correction stay in our enclosed bays, under controlled lighting, even if you live around the corner. For those, valet picks the vehicle up, we do the work at the shop, and we bring it back. On coating jobs your Uber is covered for the drop-off and pickup."
     ],
     "facts": [
       { "label": "Address", "value": "33115 Louise Ave, Clinton Township, MI 48035" },

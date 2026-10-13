@@ -1,0 +1,70 @@
+{
+  "service": "window-tint",
+  "city": "shelby-township",
+  "meta": {
+    "title": "Window Tint in Shelby Township, MI | Refresh My Ride",
+    "description": "Window tint for Shelby Township drivers. Geoshield carbon and ceramic film from $99.99 for two front windows on a coupe or sedan. Lifetime warranty. Free quote."
+  },
+  "hero": {
+    "kicker": "Window tint in Shelby Township, MI",
+    "title": "M-53 sun on your left. **Both ways.**",
+    "lede": "M-53 runs north and south, so the drive down in the morning and the drive home in the evening both put the sun on the driver's side glass. Geoshield C2 film blocks 99% of UV, and the ceramic film rejects far more heat. Two front windows on a standard coupe or sedan are from $99.99, installed indoors at our shop.",
+    "chips": ["From $99.99", "Lifetime warranty", "Carbon or ceramic film", "Installed indoors"],
+    "photo": "tesla-model-y"
+  },
+  "local": {
+    "title": "Where the sun gets you in Shelby Township.",
+    "intro": "Window film does four jobs: it blocks UV, rejects heat, takes the edge off glare and adds privacy. Which one you care about depends on where you drive and where the car sits. Around here it tends to come down to these.",
+    "points": [
+      {
+        "title": "The M-53 run, morning and evening",
+        "body": "M-53 runs north and south through the township. Head south in the morning and the sun is on the driver's side. Come back north in the evening and it is on the driver's side again. Film on the front side windows blocks 99% of the UV coming through that glass."
+      },
+      {
+        "title": "Hall Road, straight into it",
+        "body": "M-59 becomes Hall Road at Van Dyke Avenue and runs east and west. Eastbound in the morning and westbound in the evening, you are driving at a low sun. A 75% ceramic film on the front windshield is almost invisible and is there for heat and UV. Ask us what Michigan allows on a windshield before you decide."
+      },
+      {
+        "title": "A lake day means hours parked",
+        "body": "Stony Creek Metropark has two beaches, a boat launch and a paved loop around the lake. The car sits while you are out there. Of our two films, ceramic rejects far more infrared heat, and that is the difference you notice when you get back in."
+      },
+      {
+        "title": "Gear in the back",
+        "body": "Bikes, golf bags, fishing gear, a cooler. A darker shade on the rear glass keeps what is in the cargo area out of plain view at a trailhead or the boat launch. Michigan treats each set of windows differently, and we walk you through what is legal for your vehicle before you pick."
+      }
+    ]
+  },
+  "logistics": {
+    "title": "Tint is installed indoors at our shop.",
+    "body": [
+      "Film is cut on a plotter for your exact year, make and model and installed indoors at 33115 Louise Ave in Clinton Township. That is about 13 miles from central Shelby Township, roughly 25 minutes without traffic. A simple route: Van Dyke Avenue south, Utica Road southeast to 14 Mile Road, then east on 14 Mile to just past Kelly Road.",
+      "Two front windows take about 1.5 hours. Full sides and rear glass take about 3.5. Most installs are done the same day, and we are open Monday to Friday, 9am to 5pm, by appointment. If you cannot get away, pick-up and drop-off valet collects the vehicle from your home or work and brings it back tinted. Leave the windows up for 3 to 4 days afterward."
+    ],
+    "facts": [
+      { "label": "Where", "value": "33115 Louise Ave, Clinton Township" },
+      { "label": "Drive", "value": "Roughly 25 minutes without traffic" },
+      { "label": "Install time", "value": "About 1.5 to 3.5 hours" },
+      { "label": "Valet", "value": "Pick-up and drop-off available" }
+    ]
+  },
+  "photo": "corvette-gray",
+  "faq": [
+    {
+      "q": "Can you tint my windows at my home in Shelby Township?",
+      "a": "No. Window tint is a shop service. Film has to go on indoors, where there is no wind or dust to get trapped under it, and our patterns are cut on a plotter at the shop. If the trip is the problem, valet pickup collects the vehicle and returns it finished. Mobile visits are for [detailing](/car-detailing-shelby-township-mi/)."
+    },
+    {
+      "q": "How dark can I legally go in Michigan?",
+      "a": "Michigan's rules are specific to each set of windows and are different from most states, so the answer depends on which glass you mean. At the shop we go through what is legal on your vehicle, darker rear windows and the medical exemption process included. The shade is your choice. This is general information, not legal advice. The shades on our [window tint page](/window-tint-clinton-township-mi/) are an on-screen approximation: at the shop we show you real Geoshield samples on glass."
+    },
+    {
+      "q": "Carbon or ceramic film: which should I pick?",
+      "a": "Geoshield C2 Carbon and C2 Ceramic are both non-metalized, which is why neither gets in the way of GPS, radio or phone signal. Each one blocks 99% of UV, and each carries the lifetime warranty against bubbling, peeling and fading. The difference is heat: ceramic rejects far more infrared. If the car spends long days parked outside or long stretches on M-53, ceramic is the one you will feel. If you mostly want the look and the privacy, carbon does that for less. Full sides on a standard coupe or sedan are from $199.99 in carbon and from $299.99 in ceramic."
+    },
+    {
+      "q": "What does tint cost on an SUV or truck?",
+      "a": "Published prices are for a standard coupe or sedan: two front windows from $99.99, full sides from $199.99, and full sides with rear glass from $299.99, all in C2 Carbon. SUVs and trucks are quoted by vehicle. Removing old tint is from $50 per area, and it is 50% off when a full-vehicle tint is installed the same day. [Request a free quote](#quote)."
+    }
+  ],
+  "reviews": ["jake-m", "sabrina-k"]
+}
