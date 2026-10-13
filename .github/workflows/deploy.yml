@@ -1,0 +1,53 @@
+# Builds the site and publishes it to GitHub Pages on every push to main.
+#
+# PREVIEW (now): served at https://nradachy-web.github.io/refresh-my-ride/ with
+# BASE_PATH set, which also makes every page noindex and robots.txt disallow all.
+#
+# PRODUCTION (at cutover): delete the BASE_PATH line below, add public/CNAME with
+# the domain, and set the custom domain in the repository's Pages settings.
+# See docs/LAUNCH.md.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      BASE_PATH: /refresh-my-ride/
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npx astro build
+      - run: node scripts/postbuild.mjs
+        env:
+          AUDIT_SOFT: '1'
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

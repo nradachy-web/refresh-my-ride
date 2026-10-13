@@ -1,0 +1,243 @@
+{
+  "service": "paint-correction",
+  "meta": {
+    "title": "Paint Correction in Clinton Township, MI | Refresh My Ride",
+    "description": "Paint correction in Clinton Township, MI. Swirls, light scratches and oxidation polished out. One-step polish from $344.99 for a coupe or sedan. Free quote."
+  },
+  "hero": {
+    "kicker": "Paint correction in Clinton Township, MI",
+    "title": "Swirls out. **Gloss back.**",
+    "lede": "Paint correction is machine polishing that removes swirl marks, light scratches, oxidation and water spots from your clear coat. We do it indoors at our Clinton Township shop, under controlled lighting. A one-step polish is from $344.99 for a coupe or sedan in average condition. Heavier paint is quoted after we see it.",
+    "chips": ["Swirls and oxidation polished out","One-step or multi-stage", "Indoors, under shop lighting", "Valet pickup available"],
+    "photo": "team-polishing-mercury"
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "plane": "paper",
+      "eyebrow": "Paint correction, explained",
+      "title": "What paint correction is, and what it takes out of your paint.",
+      "body": [
+        "Paint correction is **machine polishing**. Your color sits under a layer of clear coat, and that clear coat is where swirl marks, light scratches, oxidation and water spots live. We polish it by machine until the marks are out and the paint reflects cleanly again.",
+        "Wax sits on top of the paint and washes off in weeks, and the marks under it are still there when it does. Correction does not cover anything up. The marks are **polished out of the clear coat**. Here is what it removes:"
+      ],
+      "checks": [
+        "**Swirl marks.** The fine, circular scratches you see in direct sun. Brush-style automatic washes put them into any finish.",
+        "**Light scratches.** Marks that sit in the clear coat and have not gone through it.",
+        "**Oxidation.** The dull, faded look that builds up on paint left unprotected.",
+        "**Water spots.** The marks left behind where water dried on the panel.",
+        "**Dullness.** With the marks gone, the gloss comes back. The shine in our after photos comes from correcting the paint first."
+      ],
+      "photo": "josh-polishing-corvette"
+    },
+    {
+      "type": "cards",
+      "plane": "white",
+      "columns": 2,
+      "eyebrow": "The straight version",
+      "title": "What correction fixes, and what it cannot.",
+      "intro": "Polishing works on the clear coat that is there. It is not repainting. Here is where the line sits, so you know what to expect before you book.",
+      "items": [
+        {
+          "tag": "Polishes out",
+          "title": "Swirl marks and wash marks",
+          "body": "The fine scratches that years of washing leave behind, easiest to see on dark paint in direct sun. They sit in the clear coat, which is the layer a machine polish works on."
+        },
+        {
+          "tag": "Will not polish out",
+          "title": "Rock chips",
+          "body": "A chip is a spot where the paint is gone. Polishing cannot put paint back, so a chip will still be there after correction."
+        },
+        {
+          "tag": "Polishes out",
+          "title": "Light scratches",
+          "body": "Scratches that are in the clear coat and have not gone through it. A one-step polish removes roughly 60 to 70% of light swirls and scratches. A multi-stage correction goes further."
+        },
+        {
+          "tag": "Will not polish out",
+          "title": "Scratches through the clear coat",
+          "body": "A scratch that has cut through the clear coat is deeper than polishing reaches. We point these out when we inspect the paint, before any work starts."
+        },
+        {
+          "tag": "Polishes out",
+          "title": "Oxidation and water spots",
+          "body": "Dull, faded paint and the marks water leaves when it dries on a panel. The 2021 Chevy Silverado 2500HD in our photos came in with heavy oxidation and water spots. Both polished out."
+        },
+        {
+          "tag": "Will not polish out",
+          "title": "Failed clear coat",
+          "body": "When the clear coat itself has failed, there is nothing sound left to polish. **Correction is not repainting**, and we will say so plainly if that is what we find on your vehicle."
+        }
+      ]
+    },
+    {
+      "type": "prices",
+      "plane": "paper",
+      "eyebrow": "Correction pricing",
+      "title": "A one-step polish has a price. Heavier correction gets a quote.",
+      "intro": "A one-step polish is sold as a package with a set starting price. A multi-stage correction is quoted after we see the paint, because its condition decides the work and a price list would be a guess.",
+      "groups": [
+        {
+          "label": "Light swirls and dull paint",
+          "name": "One-step polish",
+          "blurb": "A single polishing stage that removes light swirls and brings the gloss back. Book it as an exterior package or as part of a full detail.",
+          "rows": [
+            {
+              "name": "Polish & Protect",
+              "price": "from $344.99",
+              "time": "About 4.5 to 5 hours",
+              "tag": "Exterior",
+              "body": "A full decontamination wash, a wheel and tire deep clean, then a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches. Sealed for 6 months."
+            },
+            {
+              "name": "Luxury Refresh",
+              "price": "from $439.99",
+              "time": "About 7 hours",
+              "tag": "Inside and out",
+              "body": "A full interior and exterior detail, everything in our Signature Refresh, plus a one-step machine polish to remove light swirls."
+            }
+          ]
+        },
+        {
+          "label": "Heavy swirls and oxidation",
+          "name": "When one step is not enough",
+          "blurb": "More than one polishing stage, for paint a single stage will not clear. You may hear us call it a 2 step correction.",
+          "points": [
+            "Matt, our lead technician, handles the heaviest correction work",
+            "Quoted after we see your paint, not off a list"
+          ],
+          "rows": [
+            {
+              "name": "Multi-stage correction",
+              "price": "Quoted per vehicle",
+              "body": "Priced on the size of the vehicle and the condition of the paint. Send us photos and we will give you a real number."
+            }
+          ]
+        }
+      ],
+      "footnote": "Prices shown are starting prices for a coupe or sedan in average condition. SUVs and trucks are quoted for their size. Polish & Protect and the Luxury Refresh are two of our [auto detailing packages](/car-detailing-services-clinton-township-mi/). If you are planning a ceramic coating, you do not need to book correction separately: it is included in every coating package and done right before the coating goes on.",
+      "cta": { "label": "See ceramic coating packages", "href": "/ceramic-coating/" }
+    },
+    {
+      "type": "steps",
+      "plane": "ink",
+      "eyebrow": "The process",
+      "title": "Five steps from dull paint to corrected and protected.",
+      "intro": "The polisher is only one part of the job. Here is what your vehicle goes through at our shop, in order.",
+      "steps": [
+        {
+          "title": "Inspection under shop lighting",
+          "body": "We look over your paint under shop lighting and note the swirls, scratches and any existing damage. You hear which marks will polish out and which will not before we touch the car.",
+          "note": "At drop-off"
+        },
+        {
+          "title": "Wash and decontamination",
+          "body": "A full decontamination wash: iron and tar removal, then a clay treatment to pull out the embedded grit a normal wash leaves behind. Paint has to be clean before a polisher touches it.",
+          "note": "Clean paint first"
+        },
+        {
+          "title": "Machine polish",
+          "body": "Swirls, light scratches and oxidation are machine polished out of the clear coat. Light defects get a one-step polish. Heavier paint gets a multi-stage correction, and Matt, our lead technician, handles the heaviest of it.",
+          "note": "One-step or multi-stage"
+        },
+        {
+          "title": "Panel wipe",
+          "body": "Every panel is wiped down to strip the polishing oils, so whatever goes on next bonds to clean clear coat and not to residue.",
+          "note": "Bare clear coat"
+        },
+        {
+          "title": "Protection",
+          "body": "Corrected paint gets protected before it leaves. Polish & Protect is sealed for 6 months, and the Luxury Refresh gets a sealant too. With a ceramic coating package, this is where the coating goes on.",
+          "note": "Sealant or coating"
+        }
+      ],
+      "footnote": "Paint correction is done at the shop only. If you cannot get the vehicle to us, ask about our [pick-up and drop-off valet service](/mobile-detailing/): we collect it, do the work at the shop and bring it back."
+    },
+    {
+      "type": "beforeAfter",
+      "plane": "paper",
+      "eyebrow": "Our work",
+      "title": "Drag the slider. Same paint, corrected.",
+      "intro": "Three real vehicles from our Clinton Township shop. Each one was corrected and then ceramic coated. The difference you see in the after shot comes from correcting the paint first.",
+      "pairs": ["silverado", "miata", "corvette"],
+      "checks": [
+        "For a straight read on your own paint, [text us a photo](sms:+15864001303) taken in the sun. We will tell you whether a one-step polish will do it."
+      ]
+    },
+    {
+      "type": "reviews",
+      "plane": "white",
+      "eyebrow": "What customers say",
+      "title": "5.0 from 270+ reviews on Google. These four are about paint.",
+      "ids": ["norman-r", "don-p", "karen-u", "jake-m"]
+    },
+    {
+      "type": "areas",
+      "plane": "paper",
+      "eyebrow": "Service area",
+      "title": "Paint correction for drivers across Macomb and Oakland counties.",
+      "intro": "Correction is done at our Clinton Township shop, in enclosed bays with controlled lighting. Valet pickup is available if you would rather not make the drive."
+    }
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between a one-step polish and a multi-stage correction?",
+      "a": "A one-step polish is a single polishing stage. It removes roughly 60 to 70% of light swirls and scratches and brings the gloss back. It is what you get in Polish & Protect and in the Luxury Refresh.\n\nA multi-stage correction, which you may hear us call a 2 step, is for heavier defects: heavy swirls, oxidation and paint that one stage will not clear. It takes more time, so it is quoted per vehicle after we see the paint. We will tell you which one your paint needs, and we will not sell you the longer job if the shorter one will do it."
+    },
+    {
+      "q": "How long does paint correction take?",
+      "a": "Polish & Protect takes about 4.5 to 5 hours. The Luxury Refresh, which includes a full interior detail too, takes about 7 hours. Larger vehicles take longer.\n\nA multi-stage correction takes longer again, and how much longer depends on the paint. We give you a time window when we quote your vehicle. If you would rather not arrange a ride, our pick-up and drop-off valet collects the vehicle and brings it back when the work is done."
+    },
+    {
+      "q": "Will paint correction remove every scratch?",
+      "a": "No, and we would rather say so now than at pickup. A one-step polish removes roughly 60 to 70% of light swirls and scratches. A multi-stage correction takes out more.\n\nSome damage is outside what polishing can do: rock chips, scratches that have gone through the clear coat, and clear coat that has failed. Correction is not repainting. We look over the paint under shop lighting before any work starts and tell you which marks will come out and which will stay."
+    },
+    {
+      "q": "Do I need a ceramic coating after paint correction?",
+      "a": "You do not need one. Polish & Protect is sealed for 6 months, and the Luxury Refresh includes a sealant on the paint too.\n\nA coating is for when you want the corrected finish protected for years and not months. Our [ceramic coating packages](/ceramic-coating/) run 1, 3 and 5 years, and paint correction is already included in every one, done right before the coating goes on. If you know you want a coating, book the coating and the correction comes with it."
+    },
+    {
+      "q": "Can you do paint correction at my home?",
+      "a": "No. Paint correction is done at our shop only. Machine polishing needs enclosed bays and controlled lighting, and a driveway gives us wind, dust and weather to work against.\n\nIf getting to Clinton Township is the obstacle, use our pick-up and drop-off valet. We collect the vehicle from your home or workplace, correct it at the shop and bring it back. Mobile detailing is still available for interior details and Wash & Seal, which do not need the shop."
+    },
+    {
+      "q": "How much does paint correction cost?",
+      "a": "A one-step polish has set starting prices. Polish & Protect, an exterior package, is from $344.99. The Luxury Refresh, a full interior and exterior detail with a one-step polish, is from $439.99. Both are for a coupe or sedan in average condition, and SUVs and trucks are quoted for their size.\n\nA multi-stage correction is quoted per vehicle after we see the paint. Text us photos or use the quote form on this page and we will give you a real number. Financing is available through Affirm and Klarna."
+    },
+    {
+      "q": "How do I keep swirl marks from coming back?",
+      "a": "Mostly by changing how the car gets washed. Brush-style automatic washes put swirls into any finish, corrected or not, and wiping dust off dry paint drags grit across the clear coat. Touchless washes are fine, and so is a gentle hand wash.\n\nA ceramic coating helps as well. Grime does not grip a coated surface, so a rinse and a gentle wash does the job."
+    }
+  ],
+  "quote": {
+    "title": "Show us the paint. We will tell you what it needs.",
+    "lede": "No pressure and no guessing off a price list. Tell us what you drive and send a photo of the paint in the sun. We will tell you what will polish out, what will not, and how much correction it takes. Sometimes that is the one-step polish."
+  },
+  "summary": {
+    "title": "One-step polish or multi-stage correction.",
+    "intro": "Paint correction is machine polishing that removes swirl marks, light scratches, oxidation and water spots from the clear coat. It is done at our Clinton Township shop, and how far we take it depends on your paint.",
+    "items": [
+      {
+        "name": "Polish & Protect",
+        "price": "from $344.99",
+        "detail": "Exterior decontamination wash, then a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches. Sealed for 6 months. About 4.5 to 5 hours."
+      },
+      {
+        "name": "Luxury Refresh",
+        "price": "from $439.99",
+        "detail": "A full interior and exterior detail with a one-step machine polish to remove light swirls. About 7 hours."
+      },
+      {
+        "name": "Multi-stage correction",
+        "price": "Quoted per vehicle",
+        "detail": "A 2 step correction for heavier swirls and oxidation. Quoted after we see the paint."
+      },
+      {
+        "name": "With a ceramic coating",
+        "price": "Included",
+        "detail": "Paint correction is part of every ceramic coating package, done right before the coating goes on."
+      }
+    ],
+    "footnote": "Prices shown are starting prices for a coupe or sedan in average condition. SUVs and trucks are quoted for their size. Correction is not repainting: it cannot fix rock chips, scratches through the clear coat or failed clear coat."
+  }
+}

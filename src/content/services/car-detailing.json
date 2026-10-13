@@ -1,0 +1,214 @@
+{
+  "service": "car-detailing",
+  "meta": {
+    "title": "Car Detailing in Clinton Township, MI | Refresh My Ride",
+    "description": "Auto detailing in Clinton Township, MI. Exterior from $139.99, interior from $184.99, full details from $249.99. At our shop, mobile or valet. Free quote."
+  },
+  "hero": {
+    "kicker": "Auto detailing in Clinton Township, MI",
+    "title": "Clean up close. **Priced up front.**",
+    "lede": "Interior deep cleans, exterior decontamination and full details by trained, quality-checked technicians. Exterior details from $139.99, interior details from $184.99 and full details from $249.99, for a coupe or sedan in average condition. At our shop, in your driveway or by valet.",
+    "chips": ["Interior, exterior or both", "Shop, mobile or valet", "1,000+ vehicles serviced", "Licensed and insured"],
+    "photo": "interior-alfa-red"
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "plane": "paper",
+      "eyebrow": "Detailing done right",
+      "title": "A real detail, not a car wash with extra steps.",
+      "body": [
+        "Michigan is hard on a car. Road salt ends up in the floor mats, pollen in the vents and iron fallout bonded to the paint. A drive-through wash moves dirt around. **A Refresh My Ride detail removes it.**",
+        "Our trained, quality-checked technicians work a step-by-step process on every package. On our deeper packages, interiors are extracted, steamed and deodorized, not just vacuumed. Exteriors get a full decontamination before any protection goes on.",
+        "Book it however it fits your week: at our Clinton Township shop, in your driveway with mobile service, or hand us the keys with pick-up and drop-off valet."
+      ],
+      "checks": [
+        "**Interior deep clean.** Hot water extraction, steam and odor removal for seats, carpet and trim.",
+        "**Exterior decontamination.** Iron, clay bar, bug, tar and sap removed, not buried under wax.",
+        "**Paint polishing and scratch removal.** Light scratches, swirls and oxidation taken out with a machine polisher. Heavier work is [paint correction](/paint-correction/).",
+        "**Priced before we start.** If your vehicle needs more than the package covers, we tell you up front, never at pickup."
+      ],
+      "photo": "interior-shelby"
+    },
+    {
+      "type": "prices",
+      "plane": "white",
+      "eyebrow": "Packages and pricing",
+      "title": "Pick the detail that matches your car's condition.",
+      "intro": "Seven packages, each with a starting price and a realistic time. Prices are for a coupe or sedan in average condition. If you are not sure which one fits, tell us what you drive and what shape it is in. We will point you to the right one, not the longest one.",
+      "groups": [
+        {
+          "label": "Interior only",
+          "name": "Inside the cabin",
+          "blurb": "For the car that is clean outside but rough inside: kids, pets, winter salt, or a commute's worth of coffee.",
+          "rows": [
+            {
+              "name": "Premium Interior Detail",
+              "price": "from $184.99",
+              "time": "About 2 hours",
+              "body": "Full vacuum including the trunk, all main surfaces and touchpoints cleaned, floor mats washed and interior glass. The reset."
+            },
+            {
+              "name": "Executive Interior Detail",
+              "price": "from $239.99",
+              "time": "About 3 hours",
+              "body": "Everything in Premium plus intensive steam throughout, seat and carpet extraction, cracks, vents and pedals detailed, then UV protectant, conditioning and fabric guard. The restoration."
+            }
+          ]
+        },
+        {
+          "label": "Interior and exterior",
+          "name": "The whole car",
+          "featured": true,
+          "blurb": "One appointment, inside and out. Our most-booked category.",
+          "rows": [
+            {
+              "name": "Essential Refresh",
+              "price": "from $249.99",
+              "time": "About 2.5 to 3 hours",
+              "body": "Premium interior clean plus a full exterior hand wash with wheels and tires. The seasonal reset."
+            },
+            {
+              "name": "Signature Refresh",
+              "tag": "Most popular",
+              "price": "from $319.99",
+              "time": "About 5 hours",
+              "body": "Full interior deep clean with steam and conditioning, exterior decontamination wash, wheel and tire deep clean, sealant on the paint and interior protection."
+            },
+            {
+              "name": "Luxury Refresh",
+              "price": "from $439.99",
+              "time": "About 7 hours",
+              "body": "Everything in Signature plus a one-step machine polish to remove light swirls and bring the gloss back."
+            }
+          ]
+        },
+        {
+          "label": "Exterior only",
+          "name": "Paint, wheels and glass",
+          "blurb": "For paint that is dull, gritty or covered in road film, and an owner who wants it to shine and stay protected.",
+          "rows": [
+            {
+              "name": "Wash & Seal",
+              "tag": "Most popular",
+              "price": "from $139.99",
+              "time": "About 1.5 hours",
+              "body": "Full decontamination wash (iron, clay, bug, tar, sap), wheel and tire deep clean, and a 6 month ceramic sealant. Clean, glossy, protected."
+            },
+            {
+              "name": "Polish & Protect",
+              "price": "from $344.99",
+              "time": "About 4.5 to 5 hours",
+              "body": "Everything in Wash & Seal plus a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, then sealed for 6 months."
+            }
+          ]
+        }
+      ],
+      "footnote": "**From** prices are for a coupe or sedan in average condition. SUVs and trucks are quoted for their size. Heavy pet hair, stains or biohazards may add to the price, and any adjustment is explained and approved by you before work begins. Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest. Ask us about our maintenance plans, which lock in a lower per-visit price for regular service.",
+      "cta": { "label": "Years, not months: ceramic coating", "href": "/ceramic-coating/" }
+    },
+    {
+      "type": "beforeAfter",
+      "plane": "ink",
+      "eyebrow": "Before and after",
+      "title": "See the difference a real detail makes.",
+      "intro": "Drag the handle across a cloth seat that went years without a deep clean. The Executive Interior Detail and our deeper full-vehicle packages include this level of work, not a vacuum and a wipe-down.",
+      "pairs": ["seat"],
+      "checks": [
+        "**Hot water extraction** pulls salt, spills and ground-in dirt out of the fibers. A vacuum alone leaves them behind.",
+        "**Intensive steam** goes through the whole cabin, with cracks, vents and pedals detailed.",
+        "**Odors are removed at the source**, not covered with fragrance.",
+        "**Straight answers at the walkaround.** Some stains are permanent, such as dye transfer or old bleach marks, and we tell you what will and will not come out.",
+        "If you are not sure what your interior needs, [text us a photo of the mess](sms:+15864001303) and we will tell you straight."
+      ]
+    },
+    {
+      "type": "ways",
+      "plane": "paper",
+      "eyebrow": "Three ways to book",
+      "title": "Our shop, your driveway, or we pick it up.",
+      "intro": "Detailing is the service we can bring to you. Mobile suits interior details and a Wash & Seal: we bring our own power and water, and need a driveway or parking spot with room to walk the full perimeter of the vehicle. Packages with machine polishing are done at the shop, and valet covers that trip for you."
+    },
+    {
+      "type": "gallery",
+      "plane": "white",
+      "eyebrow": "Recent work",
+      "title": "Customer vehicles, not showroom cars.",
+      "intro": "Every photo here is a customer vehicle from our Clinton Township shop or a mobile appointment in Macomb or Oakland County. No stock images.",
+      "photos": ["ford-super-duty-white", "interior-convertible", "porsche-wheel", "interior-bmw", "jeep-grand-cherokee", "escalade-black", "interior-ford", "gmc-truck-white"]
+    },
+    {
+      "type": "reviews",
+      "plane": "ink",
+      "eyebrow": "What customers say",
+      "title": "Rated 5.0 from 270+ reviews by drivers across Macomb and Oakland.",
+      "ids": ["chris-d", "april-g", "alexis-p", "sydney-k"]
+    },
+    {
+      "type": "areas",
+      "plane": "paper",
+      "eyebrow": "Service area",
+      "title": "Auto detailing for drivers across Macomb and Oakland counties.",
+      "intro": "Drop off at our Clinton Township shop, or let us come to you. Mobile detailing and pick-up and drop-off valet reach about 30 to 40 minutes from Clinton Township. Pick your town to see how it works from there."
+    }
+  ],
+  "faqIntro": "Straight answers about what a detail includes, what it costs and how long it takes. If yours is not here, call or text [(586) 400-1303](tel:+15864001303).",
+  "faq": [
+    {
+      "q": "What is the difference between a car detail and a car wash?",
+      "a": "A car wash removes loose dirt from the outside of the car in a few minutes. A detail is hours of hands-on cleaning that covers every surface.\n\nOn the exterior, that means a full decontamination (iron removal, clay bar, bug, tar and sap) before any sealant goes on. On the interior, it means vacuuming every crevice, cleaning all the surfaces and touchpoints and, on our deeper packages, steam cleaning, conditioning and extracting the seats and carpet. A wash makes a car look clean from ten feet. A detail makes it clean up close."
+    },
+    {
+      "q": "How much does car detailing cost in Clinton Township?",
+      "a": "Interior details are from $184.99, exterior details from $139.99 and full interior and exterior packages from $249.99, all priced for a coupe or sedan in average condition. SUVs and trucks are quoted for their size.\n\nIf your vehicle needs more than the package covers, such as heavy pet hair or set-in stains, we explain the adjustment and get your approval before work begins. Financing is available through Affirm and Klarna, 3 to 24 months, as low as 0% interest."
+    },
+    {
+      "q": "How long does a detail take?",
+      "a": "It depends on the package and the vehicle. An exterior Wash & Seal takes about 1.5 hours, a Premium Interior Detail about 2 hours and a full Signature Refresh about 5 hours. Larger vehicles and packages with machine polishing take longer.\n\nWe give you a time estimate when you book. If you use our pick-up and drop-off valet service, you do not have to wait at all."
+    },
+    {
+      "q": "Do you offer mobile detailing, or do I have to come to the shop?",
+      "a": "Both, plus a third option. You can drop your vehicle at our Clinton Township shop. We can come to your home or workplace with [mobile detailing](/mobile-detailing/). Or we can pick your vehicle up, detail it at the shop and bring it back with our valet service.\n\nMobile appointments need a driveway or parking spot with room to walk the full perimeter of the vehicle, and we bring our own power and water. Mobile and valet reach about 30 to 40 minutes from Clinton Township. We confirm the details when you book."
+    },
+    {
+      "q": "Can you remove pet hair, stains and odors?",
+      "a": "Yes. The Executive Interior Detail, Signature Refresh and Luxury Refresh include steam cleaning and a two step shampoo process. That lifts embedded pet hair, food and drink stains, and the sources of most odors out of the seats and carpet, instead of covering them with fragrance.\n\nSome stains are permanent, such as dye transfer or old bleach marks, and we tell you honestly during the walkaround what will and will not come out. Heavy pet hair or biohazard cleanup may add time and cost, which we always confirm with you before work begins."
+    },
+    {
+      "q": "How often should I get my car detailed?",
+      "a": "For most drivers in Michigan, a full detail once or twice a year keeps road salt, pollen and UV damage from building up. Time it around the end of winter and the end of summer.\n\nIf you have kids, pets or a long commute, a maintenance detail every one to three months keeps the car from ever getting bad enough to need a full restoration again. Ask us about our maintenance plans, which lock in a lower per-visit price for regular service."
+    },
+    {
+      "q": "Do I need to clean out my car before the appointment?",
+      "a": "Please remove personal items, valuables, car seats and anything you want to keep from the cabin and trunk before we start. You do not need to clean anything. That is our job.\n\nClearing out loose belongings lets our technicians get to every surface and protects your things. If you forget something, we set it aside for you."
+    },
+    {
+      "q": "Do you detail trucks, SUVs and high-end vehicles?",
+      "a": "Yes. We work on everything from daily driver sedans to full-size trucks, three-row SUVs, and high-end and exotic vehicles. Larger vehicles are quoted at a higher tier because there is simply more surface to clean.\n\nOur technicians are trained on the leather, wood and delicate trim found in higher-end interiors."
+    },
+    {
+      "q": "Should I get a detail before a ceramic coating?",
+      "a": "No. Every [ceramic coating](/ceramic-coating/) we install already includes the decontamination and paint prep the coating needs, so you do not need to book a separate detail first.\n\nIf you want the interior handled at the same time, our Signature Refresh or Luxury Refresh pairs well with a coating appointment. Mention it when you ask for your quote."
+    },
+    {
+      "q": "What areas do you serve?",
+      "a": "Our shop is at 33115 Louise Ave in Clinton Township, on the north side of 14 Mile Road, just east of Kelly Road. Our mobile and valet services cover Macomb and Oakland counties, including Sterling Heights, Shelby Township, Macomb Township, Chesterfield, Mount Clemens, Roseville, St. Clair Shores, Rochester Hills, Troy and Birmingham. See [all service areas](/service-areas/).\n\nIf you are just outside that area, call [(586) 400-1303](tel:+15864001303) and we will let you know."
+    }
+  ],
+  "quote": {
+    "title": "Tell us what you drive and what is bugging you about it.",
+    "lede": "We reply with a firm price for your exact vehicle. No obligation and no upsell at pickup. If the mess is easier to show than describe, text us a photo."
+  },
+  "summary": {
+    "title": "Detailing packages with the price up front.",
+    "intro": "A detail is hands-on cleaning of every surface by trained, quality-checked technicians, not a car wash with extra steps. Each price is a starting price for a coupe or sedan in average condition, and we quote your exact vehicle before any work starts.",
+    "items": [
+      { "name": "Wash & Seal", "price": "from $139.99", "detail": "Exterior. Full decontamination wash (iron, clay, bug, tar, sap), wheel and tire deep clean and a 6 month ceramic sealant. About 1.5 hours." },
+      { "name": "Premium Interior Detail", "price": "from $184.99", "detail": "Full vacuum including trunk, all main surfaces and touchpoints cleaned, floor mats washed, interior glass. About 2 hours." },
+      { "name": "Executive Interior Detail", "price": "from $239.99", "detail": "Premium plus intensive steam, seat and carpet extraction, cracks, vents and pedals detailed, UV protectant, conditioning and fabric guard. About 3 hours." },
+      { "name": "Essential Refresh", "price": "from $249.99", "detail": "Inside and out. Premium interior clean plus a full exterior hand wash with wheels and tires. About 2.5 to 3 hours." },
+      { "name": "Signature Refresh", "price": "from $319.99", "detail": "Inside and out, and our most popular. Interior deep clean with steam and conditioning, exterior decontamination wash, wheel and tire deep clean, sealant on the paint. About 5 hours." }
+    ],
+    "footnote": "Two more packages add a one-step machine polish: Polish & Protect (exterior, from $344.99) and Luxury Refresh (inside and out, from $439.99). SUVs and trucks are quoted for their size. Extra charges for heavy pet hair, stains or biohazards are always approved before work begins."
+  }
+}

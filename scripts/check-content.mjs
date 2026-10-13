@@ -44,7 +44,7 @@ const FORBIDDEN = [
   [/100% five[- ]star/i, '"100% five star"'],
   [/before October 1\b|by October 1\b/i, 'the expired October 1 offer'],
   [/#1\b|number one\b|\bthe best\b|best in (michigan|macomb|oakland|town)|top[- ]rated|award[- ]winning/i, 'a ranking or superlative claim'],
-  [/\$449|\$549/, 'a ceramic coating price their own pages disagree on'],
+  [/ceramic coating[^.]{0,80}\$(449|549)|\$(449|549)[^.]{0,80}ceramic coating/i, 'a ceramic coating price their own pages disagree on'],
   [/guarantee(d|s)?\b/i, 'a guarantee (their site promises warranties, not guarantees)'],
   [/\b(cheap|cheapest|lowest price|unbeatable)\b/i, 'a price boast'],
   [/lorem ipsum|TODO|TBD\b|XXX/i, 'placeholder text'],

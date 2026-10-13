@@ -1,0 +1,240 @@
+---
+/* ============================================================================
+   PRIVACY POLICY
+
+   Their own policy (effective September 19, 2026), carried over section by
+   section. Three things were changed to keep it true on the rebuilt site, and
+   all three are listed in docs/OPEN-QUESTIONS.md for Josh to approve:
+     - cookies the old WordPress site set and this one does not were removed;
+     - Calendly (their consultation calendar) and GitHub (hosts the site) were
+       added to the providers list;
+     - dashes became commas and colons.
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import { BRAND, HOURS } from '../data/site';
+import { rich } from '../lib/rich';
+import { breadcrumbs } from '../lib/schema';
+
+const TITLE = `Privacy Policy | ${BRAND.legalName}`;
+const DESCRIPTION = `What ${BRAND.name} collects when you request a quote, book a service or browse this site, why we collect it, who we share it with, and how to tell us to stop.`;
+
+type Section = { h: string; p?: string[]; list?: string[]; after?: string[]; rows?: [string, string][] };
+
+const SECTIONS: Section[] = [
+  {
+    h: 'Who we are',
+    p: [
+      `${BRAND.legalName} ("${BRAND.name}", "we", "us" or "our") operates refreshmyrideauto.com and provides auto detailing, ceramic coating, paint correction and window tinting from our shop at ${BRAND.street}, ${BRAND.city}, ${BRAND.state} ${BRAND.zip}, and through mobile service across Macomb and Oakland Counties, Michigan.`,
+    ],
+  },
+  {
+    h: 'Information you give us',
+    list: [
+      '**Quote requests.** Your name, phone number, email address, the year, make and model of your vehicle, which services you are interested in, and anything you write in the comments box.',
+      '**Bookings and purchases.** When you book an appointment or buy through our online shop or gift cards, our scheduling provider collects your name, service address, phone, email, vehicle details and payment information.',
+      '**Gift cards.** The purchaser’s contact and payment details, and the recipient’s delivery details.',
+      '**Talking to us.** Whatever you share by phone, text, email or in person at the shop, including notes about your vehicle’s condition and service history.',
+    ],
+  },
+  {
+    h: 'Information collected automatically',
+    p: [
+      'When you visit this site we collect standard web analytics: pages viewed, time on page, the site or ad that referred you, approximate city-level location, and your device and browser type. If you arrive from one of our Google ads, we record the click identifier so we can tell which ads bring in real customers.',
+    ],
+    rows: [
+      ['_ga, _ga_*', 'Google Analytics. Tells us how many people visit and which pages they read.'],
+      ['_gcl_au, _gcl_aw, rmr_gclid', 'Google Ads. Connects a click on one of our ads to a quote request, so we know what our advertising is actually doing.'],
+    ],
+    after: [
+      'You can block or delete cookies in your browser settings. Google also offers a Google Analytics Opt-out Browser Add-on and ad personalization controls in your Google account. Blocking cookies will not stop you from using this site or booking with us.',
+    ],
+  },
+  {
+    h: 'How we use your information',
+    list: [
+      'Answer your quote request and prepare an accurate quote for your vehicle',
+      'Schedule, perform and follow up on your service',
+      'Take payment, issue receipts and register warranties',
+      'Send appointment confirmations, reminders and updates while your vehicle is with us',
+      'Send offers and promotions, if you have opted in to receive them',
+      'Understand which ads, pages and service areas bring in customers',
+      'Keep business records, prevent fraud, and meet our legal and tax obligations',
+    ],
+  },
+  {
+    h: 'Text messages and calls',
+    p: [`Our business line, [${BRAND.phone}](${BRAND.phoneHref}), receives both calls and texts.`],
+    list: [
+      '**Informational messages.** When you give us your phone number, you consent to informational texts from us: quote replies, appointment confirmations and reminders, and updates such as letting you know your vehicle is ready.',
+      '**Promotional messages.** Separately, you may opt in to promotional texts and emails, such as seasonal offers. You will never be enrolled in promotional messaging just for requesting a quote.',
+      '**Frequency and cost.** Message frequency varies. Message and data rates may apply. Carriers are not liable for delayed or undelivered messages.',
+      `**Stopping messages.** Reply STOP to any text to opt out, or HELP for assistance. You can also call us or email ${BRAND.email}.`,
+      'Opting out of promotional texts does not stop messages about a job you have already booked.',
+    ],
+    after: ['We do not sell, rent or share your phone number or your SMS consent with third parties for their own marketing.'],
+  },
+  {
+    h: 'Who we share information with',
+    p: ['We share information only with the providers that run parts of our business, and only so they can do that work for us:'],
+    list: [
+      '**GoHighLevel.** Our customer relationship system. Hosts our quote forms and sends our texts and emails.',
+      '**Urable.** Scheduling, orders, gift cards and invoicing.',
+      '**Calendly.** The calendar for booking a consultation call after a quote request.',
+      '**Google.** Analytics, Ads and our Business Profile, for measurement and advertising.',
+      '**Cloudflare.** Bot protection on our forms, so real customers get through and spam does not.',
+      '**GitHub.** Hosts this website. Like any web host, it receives the technical details of each page request.',
+      '**Affirm and Klarna.** If you choose financing, you apply with them directly and their own privacy policies govern that application.',
+    ],
+    after: [
+      'We may also disclose information when the law requires it, to protect our rights or someone’s safety, or to a buyer if the business is ever sold or merged.',
+      '**We do not sell your personal information.**',
+    ],
+  },
+  {
+    h: 'Payment information',
+    p: [
+      'Card payments are processed by our scheduling provider and its payment processor. We do not store full card numbers on our own systems. If you pay in the shop, the same applies: your card details stay with the processor.',
+    ],
+  },
+  {
+    h: 'How long we keep it',
+    p: [
+      'We keep customer and vehicle records as long as you are a customer and afterwards as long as we need them for warranty, tax and legal purposes. Ceramic coating work carries a written warranty, so we retain the vehicle and service record for at least the length of that warranty. Quote requests that never become jobs are kept for a reasonable period and then removed.',
+    ],
+  },
+  {
+    h: 'Your choices',
+    list: [
+      '**See what we have.** Ask us for a copy of the information we hold about you.',
+      '**Fix it.** Tell us to correct anything inaccurate.',
+      '**Delete it.** Ask us to delete your information, subject to records we are required to keep.',
+      '**Stop messages.** Reply STOP to a text, use the unsubscribe link in any marketing email, or just tell us.',
+      '**Limit tracking.** Use your browser’s cookie controls and Google’s ad settings.',
+    ],
+    after: [
+      `Email ${BRAND.email} or call [${BRAND.phone}](${BRAND.phoneHref}) and we will respond within 30 days.`,
+      'One caveat worth knowing: if you ask us to delete your service records, we may lose the documentation that supports an active coating warranty.',
+    ],
+  },
+  {
+    h: 'Children',
+    p: ['This site and our services are meant for adults. We do not knowingly collect personal information from children under 13. If you believe a child has given us information, contact us and we will remove it.'],
+  },
+  {
+    h: 'Security',
+    p: ['We use reasonable safeguards to protect the information we hold, and we work with established providers who do the same. No website or system is completely secure, and we cannot promise absolute security.'],
+  },
+  {
+    h: 'Other sites',
+    p: ['This site links to services we use, including our online shop, our booking system and financing partners. Once you are on their site, their privacy policy governs, not ours.'],
+  },
+  {
+    h: 'Changes to this policy',
+    p: ['If we change how we handle your information, we will update this page and change the effective date at the top. Material changes will be called out here.'],
+  },
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/privacy-policy/" quoteHref="/get-a-quote/" bare schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Privacy policy', path: '/privacy-policy/' }])]}>
+  <PageHead
+    eyebrow={BRAND.legalName}
+    title="Privacy policy"
+    lede="Effective September 19, 2026. This policy explains what information we collect when you request a quote, book a service or browse this site, why we collect it, who we share it with, and how to tell us to stop."
+    crumbs={[{ name: 'Privacy policy', path: '/privacy-policy/' }]}
+  />
+
+  <section class="band white">
+    <div class="wrap legal prose">
+      {
+        SECTIONS.map((s) => (
+          <section>
+            <h2 class="h3">{s.h}</h2>
+            {s.p?.map((t) => <p set:html={rich(t)} />)}
+            {s.rows && (
+              <dl class="cookies">
+                {s.rows.map(([k, v]) => (
+                  <div>
+                    <dt>{k}</dt>
+                    <dd>{v}</dd>
+                  </div>
+                ))}
+              </dl>
+            )}
+            {s.list && <ul class="bul">{s.list.map((t) => <li set:html={rich(t)} />)}</ul>}
+            {s.after?.map((t) => <p set:html={rich(t)} />)}
+          </section>
+        ))
+      }
+      <section>
+        <h2 class="h3">Contact us</h2>
+        <p>
+          {BRAND.legalName}<br />
+          {BRAND.street}<br />
+          {BRAND.city}, {BRAND.state} {BRAND.zip}<br />
+          <a href={BRAND.phoneHref} data-loc="privacy">{BRAND.phone}</a><br />
+          <a href={`mailto:${BRAND.email}`}>{BRAND.email}</a>
+        </p>
+        <p>{HOURS.summary}. Appointment only.</p>
+      </section>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .legal {
+    display: grid;
+    gap: 2.25rem;
+    max-width: 46rem;
+  }
+
+  .legal section {
+    display: grid;
+    gap: 0.9rem;
+  }
+
+  .legal :global(p + p) {
+    margin-top: 0;
+  }
+
+  .bul {
+    display: grid;
+    gap: 0.6rem;
+    padding-left: 1.2rem;
+    list-style: disc;
+  }
+
+  .bul li::marker {
+    color: var(--violet-btn);
+  }
+
+  .cookies {
+    display: grid;
+    border: 1px solid var(--line);
+    border-radius: var(--r);
+  }
+
+  .cookies div {
+    display: grid;
+    gap: 0.2rem 1.5rem;
+    padding: 0.9rem 1.1rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .cookies div:last-child {
+    border-bottom: 0;
+  }
+
+  .cookies dt {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.875rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+  }
+
+  @media (min-width: 44rem) {
+    .cookies div {
+      grid-template-columns: 14rem 1fr;
+    }
+  }
+</style>

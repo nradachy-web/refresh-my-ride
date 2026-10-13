@@ -1,0 +1,192 @@
+---
+/* ============================================================================
+   REVIEWS AND WORK
+
+     1  head       the rating, with the link to read them all on Google
+     2  paper      every review we quote, in the customer's own words
+     3  ink        before and after sliders
+     4  white      finished vehicles, captioned
+     5  ink        the quote form
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Head from '../components/Head.astro';
+import Stars from '../components/Stars.astro';
+import Photo from '../components/Photo.astro';
+import BeforeAfter from '../components/BeforeAfter.astro';
+import QuoteBand from '../components/QuoteBand.astro';
+import { BRAND, LINKS, RATING } from '../data/site';
+import { REVIEWS } from '../data/reviews';
+import { photo, type PhotoId } from '../data/photos';
+import { breadcrumbs } from '../lib/schema';
+
+const TITLE = `Reviews & Our Work | ${BRAND.name}, ${BRAND.city} MI`;
+const DESCRIPTION = `${RATING.value} on Google from ${RATING.countLabel} reviews. Read what Macomb and Oakland County drivers say about ${BRAND.name}, and see finished ceramic coating and detailing work.`;
+
+const WORK: PhotoId[] = [
+  'corvette-purple-shop', 'bentley-flying-spur', 'ferrari-roma', 'bmw-x6-blue',
+  'silverado-black', 'porsche-suv-blue', 'corvette-gray', 'tesla-model-y',
+  'interior-alfa-red', 'interior-shelby', 'cybertruck', 'cadillac-sedan-black',
+  'ford-super-duty-white', 'interior-convertible', 'jeep-grand-cherokee', 'porsche-wheel',
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/reviews/" schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Reviews and work', path: '/reviews/' }])]}>
+  <PageHead
+    eyebrow="Reviews and work"
+    title="Do not take our word for it. **Read theirs.**"
+    lede={`${BRAND.vehiclesServiced} vehicles serviced since ${BRAND.established}. These are Google reviews in the customer's own words, and photos of customer vehicles from our shop and mobile appointments.`}
+    crumbs={[{ name: 'Reviews and work', path: '/reviews/' }]}
+  >
+    <div class="score">
+      <p class="score__v">{RATING.value}</p>
+      <div>
+        <Stars />
+        <p class="small">on Google, from {RATING.countLabel} reviews</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn primary" href={LINKS.googleReviews} target="_blank" rel="noopener" data-cta="reviews-read">Read every review on Google</a>
+      <a class="btn ghost" href="#quote" data-cta="reviews-quote">Get my free quote</a>
+    </div>
+  </PageHead>
+
+  <section class="band" aria-labelledby="rev-h">
+    <div class="wrap">
+      <Head id="rev-h" eyebrow="Google reviews" title="What customers say." intro="Typos and all. A long review may be cut at a sentence end, and nothing else is changed." />
+      <ul class="wall">
+        {
+          REVIEWS.map((r) => (
+            <li class="card pad wall__card">
+              <Stars />
+              <blockquote><p>{r.text}{r.excerpt ? ' …' : ''}</p></blockquote>
+              <p class="wall__who">
+                <strong>{r.name}</strong>
+                <span class="fine muted">{[r.job, r.town].filter(Boolean).join(' · ') || 'Google review'}</span>
+              </p>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="more"><a class="arrow" href={LINKS.googleReviews} target="_blank" rel="noopener" data-cta="reviews-google">Read all of them on Google</a></p>
+    </div>
+  </section>
+
+  <section class="band ink" aria-labelledby="ba-h">
+    <div class="wrap">
+      <Head id="ba-h" eyebrow="Before and after" title="Drag the slider." intro="Real vehicles, one appointment each. The paint shots are correction and ceramic coating. The seat is extraction and steam." />
+      <div class="pairs">
+        <BeforeAfter pair="silverado" sizes="(min-width: 60rem) 23vw, 46vw" />
+        <BeforeAfter pair="miata" sizes="(min-width: 60rem) 23vw, 46vw" />
+        <BeforeAfter pair="corvette" sizes="(min-width: 60rem) 23vw, 46vw" />
+        <BeforeAfter pair="seat" sizes="(min-width: 60rem) 23vw, 46vw" />
+      </div>
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="work-h">
+    <div class="wrap">
+      <Head id="work-h" eyebrow="Our work" title="What comes out of the shop." intro="Every photo is a customer vehicle. No stock images, no showroom cars." />
+      <ul class="work">
+        {
+          WORK.map((id) => (
+            <li class="reveal">
+              <figure>
+                <div class="frame work__frame">
+                  <Photo id={id} ratio={1} widths={[300, 480, 640]} sizes="(min-width: 60rem) 24vw, 46vw" />
+                </div>
+                <figcaption class="cap">{photo(id).caption}</figcaption>
+              </figure>
+            </li>
+          ))
+        }
+      </ul>
+      <p class="more small muted">More on <a class="link" href={LINKS.instagram} target="_blank" rel="noopener">Instagram</a>.</p>
+    </div>
+  </section>
+
+  <QuoteBand />
+</Base>
+
+<style>
+  .score {
+    display: flex;
+    align-items: center;
+    gap: 1.1rem;
+  }
+
+  .score__v {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 5vw + 1.5rem, 5rem);
+    font-weight: 780;
+    font-stretch: 118%;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--violet);
+  }
+
+  .score div {
+    display: grid;
+    gap: 0.25rem;
+    font-size: 1.25rem;
+  }
+
+  .wall {
+    columns: 1;
+    column-gap: 1.25rem;
+  }
+
+  .wall__card {
+    display: grid;
+    gap: 0.9rem;
+    margin-bottom: 1.25rem;
+    break-inside: avoid;
+  }
+
+  .wall__who {
+    display: grid;
+    gap: 0.1rem;
+    padding-top: 0.9rem;
+    border-top: 1px solid var(--line);
+  }
+
+  @media (min-width: 44rem) {
+    .wall {
+      columns: 2;
+    }
+  }
+
+  @media (min-width: 68rem) {
+    .wall {
+      columns: 3;
+    }
+  }
+
+  .more {
+    margin-top: 1.5rem;
+  }
+
+  .pairs {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem 1rem;
+    align-items: start;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .work__frame {
+    aspect-ratio: 1;
+  }
+
+  @media (min-width: 60rem) {
+    .pairs,
+    .work {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+</style>

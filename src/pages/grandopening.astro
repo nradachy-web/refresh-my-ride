@@ -1,0 +1,395 @@
+---
+/* ============================================================================
+   GRAND OPENING
+
+   Their event page, at its old address. The event is Monday October 19, 2026
+   and the specials run through October 30. The page knows what day it is:
+   a few lines of script (run before first paint) switch it from "coming up" to
+   "today" to "specials still on" to "it happened", and the build bakes in the
+   right starting state so it also reads correctly with script off.
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import Head from '../components/Head.astro';
+import Icon from '../components/Icon.astro';
+import Photo from '../components/Photo.astro';
+import Faq from '../components/Faq.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Stars from '../components/Stars.astro';
+import { BRAND, FORM, GRAND_OPENING as GO, LINKS, RATING } from '../data/site';
+import { heroImage } from '../lib/hero';
+import { href } from '../lib/paths';
+import { breadcrumbs, faqSchema } from '../lib/schema';
+
+const TITLE = `Grand Opening Event | ${BRAND.name} Auto Detailing`;
+const DESCRIPTION = `Celebrate the grand opening of ${BRAND.name} in ${BRAND.city} on ${GO.dateLabel}. Specials, giveaways, refreshments and detailed cars on display.`;
+const hero = await heroImage('shop-grand-opening', { ratio: 4 / 5, focus: 'top', sizes: '(min-width: 56rem) 44vw, 100vw' });
+
+const start = Date.parse(`${GO.date}T10:00:00-04:00`);
+const end = Date.parse(`${GO.date}T18:00:00-04:00`);
+const specialsEnd = Date.parse(`${GO.specialsEnd}T23:59:59-04:00`);
+const now = Date.now();
+const state = now < start ? 'before' : now < end ? 'today' : now < specialsEnd ? 'after' : 'past';
+
+const gcal = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent('Refresh My Ride grand opening')}&dates=20261019T140000Z/20261019T220000Z&location=${encodeURIComponent(`${BRAND.street}, ${BRAND.city}, ${BRAND.state} ${BRAND.zip}`)}`;
+
+const HAPPENING = [
+  { title: 'Enter to win a $349 Signature Refresh detail', body: 'A complete interior and exterior detail with a 3 month ceramic sealant.' },
+  { title: 'Showcase vehicles on display', body: 'See finished coatings and paint correction up close, in person.' },
+  { title: 'Refreshments provided', body: 'Grab something to eat and drink while you look around.' },
+  { title: 'Free car care detailing kit', body: 'Take home what you need to keep your car clean between details. While supplies last.' },
+];
+
+const SPECIALS = [
+  { name: 'Signature Refresh', price: '$255', was: '$319', points: ['Complete interior and exterior detail', 'Deep clean of mats, crevices, vents and high-touch areas', '3 month ceramic sealant included'] },
+  { name: 'Polish & Protect', price: '$319', was: '$399', points: ['Exterior wash and detail, clay and decontamination', '1-step machine polish to enhance gloss and clarity', '6 month paint protection included'] },
+  { name: '3 Year Ceramic Coating', price: '$599', was: '$749', flag: 'Biggest savings', points: ['Full exterior detail and paint decontamination', '1-step paint enhancement', '3 year ceramic coating', 'Free windshield, glass, rims and trim coating'] },
+  { name: 'Ceramic Window Tint Package', price: '$359', was: '$449', points: ['Full sides and rear glass', 'Superior heat and UV rejection with ceramic film', 'Available shades from 5% to 75%', 'Lifetime manufacturer warranty'] },
+];
+
+const STORY = [
+  ['2022', 'Started out doing headlight restorations'],
+  ['2023', 'Moved into full detailing, working out of a 2004 Honda Accord'],
+  ['2025', 'Built out a Chevy Express van and hired our first team'],
+  ['Nov 2025', `Opened our first ${BRAND.city} shop`],
+  ['2026', 'Moved into our 2,000 sq ft facility on Louise Ave'],
+];
+
+const FAQ = [
+  { q: 'Is the grand opening free?', a: 'Yes. The event is free and everyone is welcome.' },
+  { q: 'Do I need to RSVP?', a: 'Everyone is welcome, but an [RSVP](#rsvp) helps us plan refreshments and car care kits.' },
+  { q: 'What time should I come?', a: `Any time between 10am and 6pm on ${GO.dateLabel}, 2026.` },
+  { q: 'Where exactly is the shop?', a: `${BRAND.street}, ${BRAND.city}, ${BRAND.state} ${BRAND.zip}, on the north side of 14 Mile Road just east of Kelly Road.` },
+  { q: 'Can I get the specials if I cannot make it?', a: `Yes. Special pricing is valid through ${GO.specialsEndLabel}. Call or text [${BRAND.phone}](${BRAND.phoneHref}) to claim yours.` },
+  { q: 'Does the special pricing apply to SUVs and trucks?', a: 'Prices shown are for coupes and sedans. SUV and truck pricing varies, so reach out for an exact quote. Extra charges may apply for pet hair, stains or biohazards.' },
+  { q: 'How many free car care kits are there?', a: 'Kits are given out while supplies last, so earlier in the day is your best bet.' },
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/grandopening/" preload={hero.preload} quoteHref="/get-a-quote/" bare schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Grand opening', path: '/grandopening/' }])]}>
+  <div class="go" id="go-page" data-state={state}>
+    <script is:inline define:vars={{ start, end, specialsEnd }}>
+      (function () {
+        var n = Date.now();
+        document.getElementById('go-page').setAttribute('data-state', n < start ? 'before' : n < end ? 'today' : n < specialsEnd ? 'after' : 'past');
+      })();
+    </script>
+
+    <section class="top ink">
+      <div class="wrap two top__grid">
+        <div class="stack" style="--gap:1.4rem">
+          <h1 class="top__h">
+            <span class="eyebrow">
+              <span data-on="before today">Free event. All are welcome.</span>
+              <span data-on="after past">{GO.dateLabel}, 2026</span>
+            </span>
+            <span class="h1">Grand <span class="accent">opening.</span></span>
+          </h1>
+          <p class="lede" data-on="before today">Join us for the ribbon cutting at our new 2,000 sq ft detailing facility in {BRAND.city}.</p>
+          <p class="lede" data-on="after">Thanks for celebrating with us. Grand opening specials run through {GO.specialsEndLabel}.</p>
+          <p class="lede" data-on="past">We cut the ribbon on our 2,000 sq ft detailing facility in {BRAND.city} on {GO.dateLabel}, 2026. Thank you to everyone who came.</p>
+
+          <dl class="when" data-on="before today">
+            <div><dt><Icon name="calendar" />Date</dt><dd>{GO.dateLabel}, 2026</dd></div>
+            <div><dt><Icon name="clock" />Time</dt><dd><span data-on="before">10am to 6pm</span><span data-on="today">Happening now, until 6pm</span></dd></div>
+            <div><dt><Icon name="pin" />Place</dt><dd>{BRAND.street}, {BRAND.city}, {BRAND.state} {BRAND.zip}<br /><span class="small muted">{BRAND.crossStreets}</span></dd></div>
+          </dl>
+
+          <div class="actions" data-on="before today">
+            <a class="btn primary" href="#rsvp" data-cta="go-rsvp">RSVP now</a>
+            <a class="btn ghost" href="#specials">See the specials</a>
+          </div>
+          <div class="actions" data-on="after">
+            <a class="btn primary" href="#specials">See the specials</a>
+            <a class="btn ghost" href={BRAND.phoneHref} data-loc="go-head"><Icon name="phone" />Call {BRAND.phone}</a>
+          </div>
+          <div class="actions" data-on="past">
+            <a class="btn primary" href={href('/get-a-quote/')} data-cta="go-quote">Get my free quote</a>
+            <a class="btn ghost" href={href('/about-us/')}>Our story</a>
+          </div>
+
+          <p class="cal small" data-on="before">
+            <a class="link" href={gcal} target="_blank" rel="noopener">Add to Google Calendar</a>
+            <a class="link" href={href('/grandopening.ics')}>Apple or Outlook</a>
+          </p>
+          <a class="rating small" href={LINKS.googleReviews} target="_blank" rel="noopener"><Stars /><span>{RATING.value} from {RATING.countLabel} Google reviews</span></a>
+        </div>
+        <figure class="top__photo">
+          <div class="frame">
+            <picture>
+              <source type="image/avif" srcset={hero.avif} sizes={hero.sizes} />
+              <source type="image/webp" srcset={hero.webp} sizes={hero.sizes} />
+              <img src={hero.fallback} width={hero.width} height={hero.height} alt={hero.alt} loading="eager" decoding="sync" fetchpriority="high" />
+            </picture>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="hap-h" data-on="before today">
+      <div class="wrap">
+        <Head id="hap-h" eyebrow="The day" title="What is happening." intro="Stop by any time between 10 and 6. Tour the new shop, meet the team, and see what we have been building." />
+        <ul class="grid c4">
+          {HAPPENING.map((h) => <li class="card pad hap"><h3 class="h3">{h.title}</h3><p class="small muted">{h.body}</p></li>)}
+        </ul>
+      </div>
+    </section>
+
+    <section class="band white" id="specials" aria-labelledby="sp-h" data-on="before today after">
+      <div class="wrap">
+        <Head id="sp-h" eyebrow={`Valid through ${GO.specialsEndLabel}`} title="Grand opening specials." intro="You do not have to attend to claim them. Call or text to book." />
+        <ul class="grid c4 sp">
+          {
+            SPECIALS.map((s) => (
+              <li class:list={['card', 'sp__card', s.flag && 'sp__card--on']}>
+                {s.flag && <p class="sp__flag fine">{s.flag}</p>}
+                <h3 class="h3">{s.name}</h3>
+                <p class="sp__price"><span class="sr">Now </span>{s.price} <s><span class="sr">was </span>{s.was}</s></p>
+                <ul class="checks small">{s.points.map((p) => <li><span>{p}</span></li>)}</ul>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="fine muted note">Coupe and sedan pricing shown. SUV and truck pricing varies. Extra charges may apply for pet hair, stains or biohazards.</p>
+        <div class="actions note">
+          <a class="btn primary" href={BRAND.phoneHref} data-loc="go-specials"><Icon name="phone" />Call {BRAND.phone}</a>
+          <a class="btn ghost" href={BRAND.smsHref} data-loc="go-specials-text"><Icon name="text" />Text us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="band ink" aria-labelledby="own-h">
+      <div class="wrap two flip">
+        <figure>
+          <div class="frame own__frame">
+            <Photo id="josh-portrait" ratio={1} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
+          </div>
+          <figcaption class="cap">Josh Meller, owner</figcaption>
+        </figure>
+        <div class="stack" style="--gap:1.4rem">
+          <Head id="own-h" layout="left" eyebrow="Meet the owner" title={`Josh Meller, founder of ${BRAND.name}.`} intro="This shop started with headlight restorations and a Honda Accord. Come say hi, ask questions, and see how far it has come." />
+          <ol class="yrs">
+            {STORY.map(([y, t]) => <li><span class="yrs__y">{y}</span><span class="small">{t}</span></li>)}
+          </ol>
+          <p><a class="arrow" href={href('/about-us/')}>The whole story</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="rsvp" aria-labelledby="rsvp-h">
+      <div class="wrap two wide-left find">
+        <div class="stack" style="--gap:1.4rem">
+          <Head id="rsvp-h" layout="left" eyebrow="Finding us" title={BRAND.street} intro={`${BRAND.city}, ${BRAND.state} ${BRAND.zip}. ${BRAND.crossStreets}.`} />
+          <div class="actions">
+            <a class="btn primary" href={LINKS.directions} target="_blank" rel="noopener" data-cta="go-directions"><Icon name="pin" />Get directions</a>
+            <a class="btn ghost" href={BRAND.phoneHref} data-loc="go-find"><Icon name="phone" />Call {BRAND.phone}</a>
+          </div>
+          <ul class="checks" data-on="before today">
+            <li><span>{GO.dateLabel}, 10am to 6pm</span></li>
+            <li><span>Enter to win a $349 Signature Refresh detail</span></li>
+            <li><span>Free car care kit while supplies last</span></li>
+          </ul>
+        </div>
+        <div data-on="before today">
+          <QuoteForm formId={FORM.rsvpId} title="RSVP now" note="It is free and open to everyone. Letting us know you are coming helps us plan refreshments and car care kits." height={560} />
+        </div>
+        <div data-on="after past">
+          <QuoteForm />
+        </div>
+      </div>
+    </section>
+
+    <section class="band white" aria-labelledby="faq-h" data-on="before today after">
+      <div class="wrap faqs">
+        <Head id="faq-h" layout="left" eyebrow="Questions" title="Grand opening questions." />
+        <Faq items={FAQ} />
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  /* show each piece only in the states it is tagged for */
+  .go[data-state='before'] [data-on]:not([data-on~='before']),
+  .go[data-state='today'] [data-on]:not([data-on~='today']),
+  .go[data-state='after'] [data-on]:not([data-on~='after']),
+  .go[data-state='past'] [data-on]:not([data-on~='past']) {
+    display: none !important;
+  }
+
+  .top {
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+  }
+
+  .top__grid {
+    align-items: center;
+  }
+
+  .top__h {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .accent {
+    color: var(--violet);
+  }
+
+  .top__photo .frame {
+    aspect-ratio: 4 / 5;
+    max-height: 36rem;
+    margin-inline: auto;
+  }
+
+  .when {
+    display: grid;
+    border-top: 1px solid var(--line-ink);
+  }
+
+  .when div {
+    display: grid;
+    gap: 0.15rem 1.5rem;
+    padding-block: 0.9rem;
+    border-bottom: 1px solid var(--line-ink);
+  }
+
+  .when dt {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    font-weight: 640;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--violet-soft);
+  }
+
+  .when dt :global(svg) {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .when dd {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    font-weight: 660;
+    font-stretch: 106%;
+  }
+
+  .when dd .small {
+    font-family: var(--font);
+    font-weight: 400;
+  }
+
+  @media (min-width: 40rem) {
+    .when div {
+      grid-template-columns: 7rem 1fr;
+      align-items: baseline;
+    }
+  }
+
+  .cal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1.5rem;
+  }
+
+  .hap {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    border-top: 2px solid var(--violet-btn);
+    border-radius: 0 0 var(--r) var(--r);
+  }
+
+  .sp {
+    align-items: stretch;
+  }
+
+  .sp__card {
+    position: relative;
+    display: grid;
+    align-content: start;
+    gap: 0.9rem;
+    padding: 1.5rem 1.4rem;
+  }
+
+  .sp__card--on {
+    border: 2px solid var(--violet-btn);
+  }
+
+  .sp__flag {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    translate: 0 -50%;
+    padding: 0.2rem 0.6rem;
+    border-radius: var(--r-sm);
+    background: var(--violet-btn);
+    color: #fff;
+    font-weight: 660;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .sp__price {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 780;
+    font-stretch: 116%;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--violet-ink);
+  }
+
+  .sp__price s {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--muted);
+  }
+
+  .note {
+    margin-top: 1.5rem;
+  }
+
+  .own__frame {
+    aspect-ratio: 1;
+    max-height: 34rem;
+  }
+
+  .yrs {
+    display: grid;
+    border-top: 1px solid var(--line-ink);
+  }
+
+  .yrs li {
+    display: grid;
+    grid-template-columns: 6rem 1fr;
+    gap: 1rem;
+    align-items: baseline;
+    padding-block: 0.75rem;
+    border-bottom: 1px solid var(--line-ink);
+  }
+
+  .yrs__y {
+    font-family: var(--font-display);
+    font-weight: 720;
+    font-stretch: 110%;
+    color: var(--violet-soft);
+  }
+
+  .find {
+    align-items: start;
+  }
+
+  .faqs {
+    display: grid;
+    gap: 1rem;
+  }
+
+  @media (min-width: 60rem) {
+    .faqs {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+  }
+</style>

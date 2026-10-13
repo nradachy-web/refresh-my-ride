@@ -26,9 +26,11 @@ interface Props {
   noindex?: boolean;
   /** Hide the sticky bar and announcement (thank-you, legal). */
   bare?: boolean;
+  /** This page is where a submitted quote form lands: count it as a lead. */
+  lead?: boolean;
 }
 
-const { title, description, path, schema = [], preload, quoteHref = '#quote', noindex = false, bare = false } = Astro.props;
+const { title, description, path, schema = [], preload, quoteHref = '#quote', noindex = false, bare = false, lead = false } = Astro.props;
 
 // A preview build (any base path) must never be indexed.
 const isPreview = import.meta.env.BASE_URL !== '/';
@@ -42,7 +44,7 @@ const fontCss = `
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-lead={lead ? '' : undefined}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

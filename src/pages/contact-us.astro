@@ -1,0 +1,259 @@
+---
+/* ============================================================================
+   CONTACT
+
+     1  head       three ways to reach a person: call or text, email, book online
+     2  paper      which one to use, and the shop: address, hours, directions
+     3  white      the towns
+     4  ink        the quote form beside the phone
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Head from '../components/Head.astro';
+import Icon from '../components/Icon.astro';
+import Photo from '../components/Photo.astro';
+import AreaChips from '../components/AreaChips.astro';
+import QuoteBand from '../components/QuoteBand.astro';
+import { BRAND, FINANCING, HOURS, LINKS } from '../data/site';
+import { service } from '../data/services';
+import { href } from '../lib/paths';
+import { rich } from '../lib/rich';
+import { breadcrumbs } from '../lib/schema';
+
+const TITLE = `Contact ${BRAND.name} | ${BRAND.city}, MI`;
+const DESCRIPTION = `Contact ${BRAND.name} in ${BRAND.city}, MI. Call or text ${BRAND.phone}, request a free quote, or book online 24/7. Appointment only.`;
+
+const START = [
+  {
+    tag: 'Coating and correction',
+    title: 'Request a quote',
+    body: `Best for [ceramic coating](${service('ceramic-coating').path}) and [paint correction](${service('paint-correction').path}), where pricing depends on the condition of your paint. Send details and photos and we will build a real number.`,
+  },
+  {
+    tag: 'Questions and urgent jobs',
+    title: 'Call us',
+    body: 'Best if you have questions, need something scheduled soon, or want to talk through options for a specific vehicle. We answer Monday through Friday during shop hours.',
+  },
+  {
+    tag: 'Detailing and tint',
+    title: 'Book online',
+    body: `Best if you already know what you want: a [detail package](${service('car-detailing').path}) or [window tint](${service('window-tint').path}). Pick your service and time slot yourself, any hour of the day.`,
+  },
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/contact-us/" schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Contact', path: '/contact-us/' }])]}>
+  <PageHead
+    eyebrow="Contact us"
+    title="Call, text, book or **send us the details.**"
+    lede={`We are an auto detailing and ceramic coating shop in ${BRAND.city}, MI, serving Macomb and Oakland counties at our shop or wherever your vehicle is parked.`}
+    crumbs={[{ name: 'Contact', path: '/contact-us/' }]}
+  >
+    <ul class="reach">
+      <li>
+        <a href={BRAND.phoneHref} data-loc="contact-head">
+          <Icon name="phone" />
+          <span class="fine">Call or text</span>
+          <strong>{BRAND.phone}</strong>
+          <span class="small">Fastest way to reach a person</span>
+        </a>
+      </li>
+      <li>
+        <a href={`mailto:${BRAND.email}`}>
+          <Icon name="mail" />
+          <span class="fine">Email</span>
+          <strong>{BRAND.email}</strong>
+          <span class="small">Good for fleet and commercial inquiries</span>
+        </a>
+      </li>
+      <li>
+        <a href={LINKS.book} target="_blank" rel="noopener" data-cta="contact-book">
+          <Icon name="calendar" />
+          <span class="fine">Book online</span>
+          <strong>Self-serve scheduling</strong>
+          <span class="small">Open 24/7. Pick your own date and time.</span>
+        </a>
+      </li>
+    </ul>
+  </PageHead>
+
+  <section class="band" aria-labelledby="start-h">
+    <div class="wrap">
+      <Head id="start-h" eyebrow="Not sure which to use" title="Three ways to get started." intro="Any of these reach us. Which one is quickest depends on what you need." />
+      <ul class="grid c3">
+        {
+          START.map((s) => (
+            <li class="card pad tile reveal">
+              <p class="tile__tag fine">{s.tag}</p>
+              <h3 class="h3">{s.title}</h3>
+              <p class="small muted prose" set:html={rich(s.body)} />
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="visit-h">
+    <div class="wrap two">
+      <div class="stack" style="--gap:1.4rem">
+        <Head
+          id="visit-h"
+          layout="left"
+          eyebrow="Finding us"
+          title="Visit the shop."
+          intro={`Our shop is at ${BRAND.street} in ${BRAND.city}: ${BRAND.crossStreets.charAt(0).toLowerCase()}${BRAND.crossStreets.slice(1)}. We are appointment only. We are often out on mobile and valet jobs, so please call or book before stopping by and we will have a bay ready for you.`}
+        />
+        <dl class="info">
+          <div><dt>Address</dt><dd>{BRAND.street}<br />{BRAND.city}, {BRAND.state} {BRAND.zip}<br /><span class="muted small">2,000 square foot indoor facility</span></dd></div>
+          {HOURS.rows.map((r) => <div><dt>{r.days}</dt><dd>{r.hours}</dd></div>)}
+          <div><dt>Online booking</dt><dd>24/7</dd></div>
+          <div><dt>Payment</dt><dd>{FINANCING}</dd></div>
+        </dl>
+        <div class="actions">
+          <a class="btn primary" href={LINKS.directions} target="_blank" rel="noopener" data-cta="contact-directions"><Icon name="pin" />Get directions</a>
+          <a class="btn ghost" href={BRAND.phoneHref} data-loc="contact-visit"><Icon name="phone" />Call or text us</a>
+        </div>
+      </div>
+      <figure class="reveal">
+        <div class="frame visit__frame">
+          <Photo id="shop-grand-opening" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
+        </div>
+        <figcaption class="cap">The shop front on Louise Ave.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="area-h">
+    <div class="wrap area">
+      <Head
+        id="area-h"
+        layout="left"
+        eyebrow="Service area"
+        title="Serving Macomb and Oakland counties."
+        intro={`Coatings and tint happen at the shop, where we can control temperature and dust. Detailing can come to you. We cover roughly 30 to 40 minutes out from ${BRAND.city} with mobile and valet service.`}
+      />
+      <div class="stack">
+        <AreaChips />
+        <p><a class="arrow" href={href('/service-areas/')}>All service areas</a></p>
+      </div>
+    </div>
+  </section>
+
+  <QuoteBand eyebrow="Free quote" title="Tell us what you are driving." lede="Send us your vehicle and what you are after, and we will come back with real pricing built around it. Photos help if you have them. No obligation, no pressure." />
+</Base>
+
+<style>
+  .reach {
+    display: grid;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+
+  .reach a {
+    display: grid;
+    gap: 0.2rem;
+    height: 100%;
+    padding: 1.25rem 1.4rem;
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r);
+    background: var(--ink-2);
+    text-decoration: none;
+    transition: border-color 0.18s var(--ease);
+  }
+
+  .reach a:hover {
+    border-color: var(--violet-soft);
+  }
+
+  .reach :global(svg) {
+    margin-bottom: 0.4rem;
+    color: var(--violet-soft);
+  }
+
+  .reach .fine {
+    font-weight: 620;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--violet-soft);
+  }
+
+  .reach strong {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 1vw + 0.9rem, 1.4rem);
+    font-weight: 720;
+    font-stretch: 110%;
+    overflow-wrap: anywhere;
+  }
+
+  .reach .small {
+    color: var(--on-ink-muted);
+  }
+
+  @media (min-width: 52rem) {
+    .reach {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  .tile {
+    display: grid;
+    align-content: start;
+    gap: 0.55rem;
+  }
+
+  .tile__tag {
+    font-family: var(--font-display);
+    font-weight: 640;
+    font-stretch: 106%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--violet-ink);
+  }
+
+  .info {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .info div {
+    display: grid;
+    gap: 0.15rem 1.5rem;
+    padding-block: 0.85rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info dt {
+    font-size: 0.8125rem;
+    font-weight: 640;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (min-width: 40rem) {
+    .info div {
+      grid-template-columns: 10rem 1fr;
+      align-items: baseline;
+    }
+  }
+
+  .visit__frame {
+    aspect-ratio: 4 / 5;
+    max-height: 38rem;
+  }
+
+  .area {
+    display: grid;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 60rem) {
+    .area {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: center;
+    }
+  }
+</style>

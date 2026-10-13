@@ -1,0 +1,234 @@
+{
+  "service": "mobile-detailing",
+  "meta": {
+    "title": "Mobile Detailing in Clinton Township, MI | Refresh My Ride",
+    "description": "Mobile car detailing at your home or workplace in Clinton Township, MI. We bring our own power and water. Interior details from $184.99. Free quotes."
+  },
+  "hero": {
+    "kicker": "Mobile detailing in Clinton Township, MI",
+    "title": "The detail **comes to you.**",
+    "lede": "Mobile detailing at your home or workplace, anywhere within about 30 to 40 minutes of Clinton Township. Our fully equipped mobile unit brings its own power and water. For work that has to happen in the shop, our pick-up and drop-off valet collects your vehicle and brings it back.",
+    "chips": ["We bring power and water", "Your home or workplace", "Pick-up and drop-off valet", "Licensed and insured"],
+    "photo": "mobile-van"
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "plane": "paper",
+      "eyebrow": "We come to you",
+      "title": "We bring the power, the water and the tools. You keep your day.",
+      "body": [
+        "Mobile auto detailing means our fully equipped mobile unit comes to your home or workplace and does the job where the car is parked. **We bring our own power and water**, so you do not need to run a cord or a hose. You keep working. We handle the car.",
+        "It is the same products and the same process we use at the shop, in your driveway. The van is a Chevy Express that Josh built out for this work, and Ben does most of our mobile and valet appointments.",
+        "Mobile is a good fit for interior details and Wash & Seal. Ceramic coating, window tint and paint correction are shop work, and our pick-up and drop-off valet covers those. A mobile visit needs very little from you:"
+      ],
+      "checks": [
+        "**Room to walk the full perimeter.** A driveway or parking spot where we can get all the way around the vehicle.",
+        "**The vehicle out of the garage, if you can.** Natural light helps our technician see the work.",
+        "**Personal items and car seats out.** Clear the cabin and trunk so we can reach every surface. Anything you forget, we set aside for you.",
+        "**A heads-up on any rules.** If your subdivision has rules about service vehicles, tell us when you book and we will work around them.",
+        "**That is the whole list.** No outlet, no spigot and no cleaning beforehand. The cleaning is our job."
+      ],
+      "photo": "mobile-bmw-driveway",
+      "cta": { "label": "Check my address", "href": "#quote" }
+    },
+    {
+      "type": "cards",
+      "plane": "white",
+      "eyebrow": "Three ways to get it done",
+      "title": "Mobile, valet or drop-off. Pick whichever fits your week.",
+      "intro": "Coatings and tint happen in the shop, where we can control temperature, dust and cure time. Everything else can come to you. Here is when each one is the right call.",
+      "columns": 3,
+      "items": [
+        {
+          "tag": "In your driveway",
+          "title": "Mobile",
+          "body": "Our mobile unit comes to your home or workplace with its own power and water. You need a driveway or parking spot with room to walk the full perimeter of the vehicle. Great for interior details and Wash & Seal. You keep working while we handle the car."
+        },
+        {
+          "tag": "Zero effort",
+          "title": "Valet pickup",
+          "body": "We come get the vehicle from your address, service it at the shop and bring it back. Licensed and insured drivers. Ideal for coatings and polish work, popular with two-car households, and the option most of our coating customers choose when they cannot spare the day."
+        },
+        {
+          "tag": "Best for heavy work",
+          "title": "Shop drop-off",
+          "body": "Bring it to 33115 Louise Ave in Clinton Township. Enclosed bays, controlled lighting, indoor storage and no weather delays. Required for ceramic coating, window tint and paint correction. By appointment, Monday to Friday, 9am to 5pm."
+        }
+      ]
+    },
+    {
+      "type": "prices",
+      "plane": "ink",
+      "eyebrow": "Packages and pricing",
+      "title": "Detailing packages for a mobile visit or a valet pickup.",
+      "intro": "Every price below starts from the figure shown, for a coupe or sedan in average condition. SUVs and trucks are quoted for their size. If your vehicle needs more than the package covers, we tell you before we start, never at pickup.",
+      "groups": [
+        {
+          "label": "Interior only",
+          "name": "Inside the cabin",
+          "blurb": "For the car that looks fine outside and rough inside: kids, pets, winter salt or a commute's worth of coffee.",
+          "rows": [
+            {
+              "name": "Premium Interior Detail",
+              "price": "from $184.99",
+              "time": "About 2 hours",
+              "body": "Full vacuum including trunk, all main surfaces and touchpoints cleaned, floor mats washed, interior glass."
+            },
+            {
+              "name": "Executive Interior Detail",
+              "price": "from $239.99",
+              "time": "About 3 hours",
+              "body": "Premium plus intensive steam, seat and carpet extraction, cracks, vents and pedals detailed, UV protectant, conditioning and fabric guard."
+            }
+          ]
+        },
+        {
+          "label": "Interior and exterior",
+          "name": "The whole vehicle",
+          "blurb": "One appointment, inside and out. Our most booked category.",
+          "rows": [
+            {
+              "name": "Essential Refresh",
+              "price": "from $249.99",
+              "time": "About 2.5 to 3 hours",
+              "body": "Premium interior clean plus a full exterior hand wash with wheels and tires."
+            },
+            {
+              "name": "Signature Refresh",
+              "tag": "Most popular",
+              "price": "from $319.99",
+              "time": "About 5 hours",
+              "body": "Interior deep clean with steam and conditioning, exterior decontamination wash, wheel and tire deep clean, sealant on the paint and interior protection."
+            },
+            {
+              "name": "Luxury Refresh",
+              "price": "from $439.99",
+              "time": "About 7 hours",
+              "body": "Signature plus a one-step machine polish to remove light swirls. Machine polishing is shop work, so this one goes by valet pickup or drop-off."
+            }
+          ]
+        },
+        {
+          "label": "Exterior only",
+          "name": "Paint and wheels",
+          "blurb": "For paint that is dull, gritty or covered in road film, and for anyone who wants it to stay clean longer than a week.",
+          "points": [
+            "Our quickest detailing package",
+            "A good fit for a mobile visit, at home or at work"
+          ],
+          "rows": [
+            {
+              "name": "Wash & Seal",
+              "tag": "Most popular",
+              "price": "from $139.99",
+              "time": "About 1.5 hours",
+              "body": "Full decontamination wash (iron, clay, bug, tar, sap), wheel and tire deep clean, and a 6 month ceramic sealant."
+            }
+          ]
+        }
+      ],
+      "footnote": "Extra charges may apply for heavy pet hair, stains or biohazards, always approved by you before work begins. **We confirm what can be done on site when you book.** Machine polishing, ceramic coating, window tint and [paint correction](/paint-correction/) are shop work, and our pick-up and drop-off valet covers those.",
+      "cta": { "label": "See every detailing package", "href": "/car-detailing-services-clinton-township-mi/" }
+    },
+    {
+      "type": "steps",
+      "plane": "paper",
+      "eyebrow": "How it works",
+      "title": "Book it. We show up. You get the car back.",
+      "intro": "Mobile and valet start the same way. The only difference is where the work happens: in your driveway, or at our shop with us handling both trips.",
+      "steps": [
+        {
+          "title": "Tell us what you drive",
+          "body": "Request a free quote, call or text, or book online any hour of the day. Tell us the vehicle, what is bugging you about it and where it is parked. We confirm what can be done on site and give you a firm time estimate.",
+          "note": "Free quote"
+        },
+        {
+          "title": "We arrive, or we collect",
+          "body": "On a mobile visit our unit pulls up at your home or workplace with its own power and water. With valet, we come get the vehicle from your address. We walk the vehicle with you first, and anything beyond the package is approved before work begins.",
+          "note": "Home or workplace"
+        },
+        {
+          "title": "You get the car back",
+          "body": "With mobile you keep working while we are in the driveway. With valet we handle both trips and bring the vehicle back to you. A detail comes back the same day when the package allows.",
+          "note": "No trip to the shop"
+        }
+      ],
+      "footnote": "If you are not sure which one fits, [text us a photo](sms:+15864001303) of the vehicle and where it is parked. We will tell you straight."
+    },
+    {
+      "type": "beforeAfter",
+      "plane": "white",
+      "eyebrow": "The result",
+      "title": "What an interior detail pulls out of a seat.",
+      "intro": "Hot water extraction and steam, not a vacuum and a wipe-down. Same products and same process in your driveway as at the shop.",
+      "pairs": ["seat"],
+      "checks": [
+        "**Executive Interior Detail** adds intensive steam and seat and carpet extraction to the Premium clean.",
+        "**Pet hair, stains and odors.** Steam and extraction lift embedded pet hair, food and drink stains and the sources of most odors. Nothing is covered with fragrance.",
+        "**Some stains are permanent,** like dye transfer or old bleach marks. We tell you at the walkaround what will and will not come out."
+      ]
+    },
+    {
+      "type": "reviews",
+      "plane": "paper",
+      "eyebrow": "What customers say",
+      "title": "5.0 from 270+ reviews on Google. These four had us come to them.",
+      "intro": "Mobile visits and valet pickups, in the customers' own words.",
+      "ids": ["john-b", "alexis-p", "sydney-k", "sabrina-k"]
+    },
+    {
+      "type": "areas",
+      "plane": "white",
+      "eyebrow": "Service area",
+      "title": "Mobile detailing and valet within about 30 to 40 minutes of Clinton Township.",
+      "intro": "We work across Macomb and Oakland counties, Sterling Heights to Birmingham. If you are near the edge of that range, West Bloomfield for example, tell us where you are and we will confirm what can come to you."
+    }
+  ],
+  "faq": [
+    {
+      "q": "Do I need to be home for a mobile detail?",
+      "a": "You do not need to stand in the driveway. We walk the vehicle with you before we start, so you know what will and will not come out and you approve anything beyond the package. After that you keep working and we handle the car.\n\nIf you cannot be there when we arrive, say so when you book and we will confirm the details with you. With valet, we handle both trips."
+    },
+    {
+      "q": "What do you need from me for a mobile appointment?",
+      "a": "A driveway or parking spot with enough room to walk the full perimeter of the vehicle. We bring our own power and water, so you do not need to run a cord or a hose. Please pull the vehicle out of the garage if you can: natural light helps our technician see the work.\n\nBefore we arrive, take personal items, valuables and car seats out of the cabin and trunk. You do not need to clean anything. That is the job. Anything you forget, we set aside for you."
+    },
+    {
+      "q": "Can you detail my car at an apartment or condo?",
+      "a": "It depends on the parking, not the building. We need a spot with room to walk the full perimeter of the vehicle, and a tight space with a car on each side usually does not give us that.\n\nTell us about the parking when you book. If your building or association has rules about service vehicles, let us know and we will work around them. If there is no spot that works, valet pickup solves it: we collect the vehicle, detail it at the shop and bring it back."
+    },
+    {
+      "q": "What happens if the weather is bad on the day of my mobile detail?",
+      "a": "A mobile detail happens outdoors, so the weather has a say in a way it does not at the shop. Our bays are enclosed and there are no weather delays indoors.\n\nIf the forecast looks rough for your date, call or text [(586) 400-1303](tel:+15864001303) and we will tell you straight what makes sense. Valet pickup is the option that does not depend on the forecast: we collect the vehicle, detail it indoors and bring it back."
+    },
+    {
+      "q": "How far do you travel for mobile detailing and valet?",
+      "a": "About 30 to 40 minutes from our shop in Clinton Township. That takes in Macomb and Oakland counties, including Sterling Heights, Shelby Township, Macomb Township, Chesterfield, Mount Clemens, Roseville, St. Clair Shores, Rochester Hills, Troy, Birmingham and Royal Oak. See [all service areas](/service-areas/).\n\nIf you are near the edge of that range or just outside it, tell us where you are and we will confirm what can come to you."
+    },
+    {
+      "q": "Can you ceramic coat or tint my car at my home?",
+      "a": "No. Ceramic coating, window tint and paint correction are shop work. Coatings and tint happen indoors, where we can control temperature, dust and cure time. A coating cures properly in our Clinton Township facility, not in a driveway.\n\nYou still do not have to make the drive. With pick-up and drop-off valet we collect the vehicle, do the work at the shop and bring it back. On ceramic coating jobs, Uber is also covered for drop-off and pickup if you bring it in yourself. See [ceramic coating](/ceramic-coating/) or [window tint](/window-tint-clinton-township-mi/)."
+    },
+    {
+      "q": "How does pick-up and drop-off valet work?",
+      "a": "We come get the vehicle from your address, service it at the shop and bring it back. Our drivers are licensed and insured. You do not make either trip.\n\nFor a detail, the vehicle comes back the same day when the package allows. A coating takes at least a full day, longer when the paint needs more correction, and we give you an exact window when we quote your vehicle. Valet is the option most of our coating customers choose when they cannot spare the day."
+    }
+  ],
+  "quote": {
+    "title": "Tell us where the car is. We will tell you what can come to you.",
+    "lede": "Send us the vehicle, its condition and your address. We text or call back with a price for your exact vehicle and which fits: a mobile visit, a valet pickup or a shop appointment. No obligation, no upsell at pickup."
+  },
+  "summary": {
+    "title": "We come to you, or we come and get it.",
+    "intro": "Mobile detailing happens at your home or workplace, within about 30 to 40 minutes of Clinton Township. We bring our own power and water and need room to walk the full perimeter of the vehicle. Pick-up and drop-off valet covers the work that has to be done at the shop.",
+    "items": [
+      { "name": "Premium Interior Detail", "price": "from $184.99", "detail": "About 2 hours. Full vacuum including trunk, main surfaces and touchpoints cleaned, floor mats washed, interior glass." },
+      { "name": "Executive Interior Detail", "price": "from $239.99", "detail": "About 3 hours. Premium plus intensive steam, seat and carpet extraction, UV protectant, conditioning and fabric guard." },
+      { "name": "Wash & Seal", "price": "from $139.99", "detail": "About 1.5 hours. Full decontamination wash, wheel and tire deep clean, 6 month ceramic sealant." },
+      { "name": "Signature Refresh", "price": "from $319.99", "detail": "About 5 hours. Our most popular full detail, inside and out, with sealant on the paint and interior protection." },
+      { "name": "Pick-up and drop-off valet", "detail": "We pick the vehicle up, service it at the shop and bring it back. Covers ceramic coating, window tint and paint correction." }
+    ],
+    "footnote": "Prices start from the figures shown, for a coupe or sedan in average condition. SUVs and trucks are quoted for their size. We confirm what can be done on site when you book."
+  }
+}

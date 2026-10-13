@@ -1,0 +1,400 @@
+---
+/* ============================================================================
+   ABOUT
+
+   Josh's own story, in his own first person, carried over from his site.
+     1  hero       the Accord line, Josh beside a car
+     2  paper      then and now, with the four numbers
+     3  white      the timeline, 2022 to the Louise Ave shop
+     4  ink        the four people who touch the car
+     5  paper      shop, driveway or valet
+     6  white      the shop itself: address, hours, payment
+     7  ink        the quote form
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import Head from '../components/Head.astro';
+import Photo from '../components/Photo.astro';
+import Ways from '../components/Ways.astro';
+import QuoteBand from '../components/QuoteBand.astro';
+import { BRAND, FINANCING, HOURS, LINKS, RATING } from '../data/site';
+import { heroImage } from '../lib/hero';
+import { href } from '../lib/paths';
+import { breadcrumbs } from '../lib/schema';
+
+const TITLE = `About ${BRAND.name} | Auto Detailing, ${BRAND.city} MI`;
+const DESCRIPTION = `Meet the owner and technicians behind ${BRAND.name}, the ceramic coating and auto detailing shop in ${BRAND.city}. ${RATING.value} on Google from ${RATING.countLabel} reviews.`;
+const hero = await heroImage('josh-portrait');
+
+const FACTS = [
+  { value: BRAND.vehiclesServiced, label: 'vehicles serviced' },
+  { value: RATING.value, label: `on Google, ${RATING.countLabel} reviews` },
+  { value: String(BRAND.established), label: 'established' },
+  { value: '100%', label: 'licensed and insured' },
+];
+
+const STORY = [
+  {
+    when: '2022',
+    tag: 'Where it started',
+    title: 'Headlight restorations, one at a time',
+    body: 'Refresh My Ride began as a single service: bringing foggy, yellowed headlights back to clear. It is tedious work most shops will not bother with, and it taught me the thing this whole business runs on. People notice when someone actually takes their time.',
+  },
+  {
+    when: 'Summer 2023',
+    tag: 'Going all in',
+    title: 'Full details out of a 2004 Honda Accord',
+    body: 'Customers kept asking what else I could do, so I moved into full interior and exterior detailing. For nearly two years I ran the whole operation out of a 2004 Honda Accord. Polishers, extractor, chemicals and water, all packed into one sedan, driving to customers across Macomb and Oakland. If I wanted better tools, I had to earn them first.',
+  },
+  {
+    when: 'Spring 2025',
+    tag: 'Real equipment',
+    title: 'The Chevy Express build-out',
+    body: 'I bought a Chevy Express van and built it out specifically for this work. It was the setup that finally let me offer paint correction and ceramic coating properly instead of just detailing. That van is still on the road today handling our mobile and valet appointments.',
+  },
+  {
+    when: 'Summer 2025',
+    tag: 'Not a one-man shop anymore',
+    title: 'Hiring the first crew',
+    body: 'Handing your work to someone else is the hardest part of growing this kind of business. I hired slowly and trained in-house against the same standard I had used alone for three years: if it would not pass my inspection, it does not leave the shop.',
+  },
+  {
+    when: 'November 2025',
+    tag: 'Four walls',
+    title: 'Our first shop in Clinton Township',
+    body: 'Moving indoors changed what we could offer. Controlled conditions opened up window tint, longer-term coatings and multi-day correction work. No more racing the weather or fighting dust in someone’s driveway.',
+  },
+  {
+    when: 'September 2026',
+    tag: BRAND.street,
+    title: 'Our current 2,000 square foot facility',
+    body: 'We outgrew that first shop in under a year. Our new 2,000 square foot facility on Louise Ave gives us the space and lighting to do correction and coating work right, with room for multiple vehicles at once. More than 1,000 vehicles in, the standard has not moved.',
+  },
+];
+
+const TEAM = [
+  {
+    name: 'Josh',
+    role: 'Owner',
+    tag: 'Founder, since 2022',
+    body: 'Started the business doing headlight restorations in 2022 and ran it solo for three years before hiring anyone. Still inspects coating work, handles the tricky correction jobs, and answers the phone more often than an owner probably should.',
+  },
+  {
+    name: 'Matt',
+    role: 'Lead technician',
+    tag: '6+ years experience',
+    body: 'Roughly six years in detailing and ceramic coating, and part of the crew since 2025. Matt handles our heaviest paint correction work and sets the standard the rest of the team is trained to. The one you want on a black car in direct sun.',
+  },
+  {
+    name: 'Ben',
+    role: 'Detail and coating technician',
+    tag: 'Coating certified',
+    body: 'Trained in-house and now running full ceramic coating installs on his own. Ben is careful on interiors and does most of our mobile and valet appointments across Macomb and Oakland.',
+  },
+  {
+    name: 'April',
+    role: 'Client services',
+    tag: 'Quotes and scheduling',
+    body: 'The voice on the other end when you call or request a quote. April walks you through options for your specific vehicle, builds the quote, and gets you on the schedule. No pressure, no upsell scripts.',
+  },
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/about-us/" preload={hero.preload} schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'About', path: '/about-us/' }])]}>
+  <Hero
+    image={hero}
+    kicker={`About ${BRAND.name}`}
+    title="This whole business used to fit in a **2004 Honda Accord.**"
+    lede={`It started with headlight restorations in 2022. Today ${BRAND.name} is a full auto detailing and ceramic coating shop in ${BRAND.city}, MI: 2,000 square feet, a purpose-built coating van, and a crew I would hand my own keys to. **Josh, owner.**`}
+    crumbs={[{ name: 'About', path: '/about-us/' }]}
+  />
+
+  <section class="band" aria-labelledby="then-h">
+    <div class="wrap">
+      <Head id="then-h" eyebrow="Then and now" title="No investors, no franchise playbook." intro="Every piece of equipment in the building was paid for by the job before it." />
+      <div class="grid c2 then">
+        <figure class="reveal">
+          <div class="frame then__frame">
+            <Photo id="accord-trunk-kit" ratio={16 / 10} widths={[400, 640, 960]} sizes="(min-width: 40rem) 46vw, 100vw" />
+          </div>
+          <figcaption class="cap"><strong>Then.</strong> Every tool I owned, in one trunk.</figcaption>
+        </figure>
+        <figure class="reveal">
+          <div class="frame then__frame">
+            <Photo id="shop-interior" ratio={16 / 10} widths={[400, 640, 960]} sizes="(min-width: 40rem) 46vw, 100vw" focus="bottom" />
+          </div>
+          <figcaption class="cap"><strong>Now.</strong> 2,000 square feet on Louise Ave.</figcaption>
+        </figure>
+      </div>
+      <dl class="facts">
+        {
+          FACTS.map((f) => (
+            <div>
+              <dt class="facts__v">{f.value}</dt>
+              <dd class="small muted">{f.label}</dd>
+            </div>
+          ))
+        }
+      </dl>
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="story-h">
+    <div class="wrap story">
+      <Head id="story-h" layout="left" eyebrow="Our story" title={`From headlight restorations to a ${BRAND.city} auto detailing shop.`} />
+      <ol class="tl">
+        {
+          STORY.map((s) => (
+            <li class="reveal">
+              <p class="tl__when">{s.when}</p>
+              <div class="tl__body">
+                <p class="tl__tag fine">{s.tag}</p>
+                <h3 class="h3">{s.title}</h3>
+                <p class="small muted">{s.body}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ol>
+    </div>
+  </section>
+
+  <section class="band ink" aria-labelledby="team-h">
+    <div class="wrap">
+      <Head
+        id="team-h"
+        eyebrow="The team"
+        title="The people who will actually touch your car."
+        intro="Small crew on purpose. You will know who worked on your vehicle, and you can ask them about it. Our customers name them by name in the [reviews](/reviews/)."
+      />
+      <ul class="grid c4">
+        {
+          TEAM.map((p) => (
+            <li class="card pad person reveal">
+              <span class="person__mark" aria-hidden="true">{p.name[0]}</span>
+              <h3 class="h3">{p.name}</h3>
+              <p class="person__role small">{p.role}</p>
+              <p class="small muted">{p.body}</p>
+              <p class="person__tag fine">{p.tag}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="ways-h">
+    <div class="wrap">
+      <Head
+        id="ways-h"
+        eyebrow="How it works"
+        title="Three ways to get it done."
+        intro="Coatings and tint happen in the shop, where we can control temperature, dust and cure time. Everything else can come to you."
+      />
+      <Ways row />
+    </div>
+  </section>
+
+  <section class="band white" aria-labelledby="shop-h">
+    <div class="wrap two">
+      <div class="stack" style="--gap:1.4rem">
+        <Head
+          id="shop-h"
+          layout="left"
+          eyebrow="The shop"
+          title={`${BRAND.city}, and everywhere within 40 minutes of it.`}
+          intro={`We are based in a 2,000 square foot shop at ${BRAND.street} in ${BRAND.city} and work throughout Macomb and Oakland counties. Every ceramic coating package comes with a written warranty, aftercare instructions and a complimentary follow-up wash and inspection.`}
+        />
+        <dl class="info">
+          <div><dt>Address</dt><dd><a href={LINKS.directions} target="_blank" rel="noopener">{BRAND.street}, {BRAND.city}, {BRAND.state} {BRAND.zip}</a></dd></div>
+          <div><dt>Phone</dt><dd><a href={BRAND.phoneHref} data-loc="about-shop">{BRAND.phone}</a></dd></div>
+          <div><dt>Email</dt><dd><a href={`mailto:${BRAND.email}`}>{BRAND.email}</a></dd></div>
+          <div><dt>Hours</dt><dd>{HOURS.summary}. {HOURS.note}</dd></div>
+          <div><dt>Payment</dt><dd>{FINANCING}</dd></div>
+        </dl>
+        <p><a class="arrow" href={href('/service-areas/')}>See every town we serve</a></p>
+      </div>
+      <figure class="reveal">
+        <div class="frame shop__frame">
+          <Photo id="shop-grand-opening" ratio={4 / 5} widths={[400, 640, 880]} sizes="(min-width: 60rem) 44vw, 100vw" focus="top" />
+        </div>
+        <figcaption class="cap">The Louise Ave shop, dressed for the grand opening.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <QuoteBand title="Let us talk about your vehicle." lede="Tell us what you drive and what you want done. We will come back with real pricing built around it. No obligation, no pressure." />
+</Base>
+
+<style>
+  .then__frame {
+    aspect-ratio: 16 / 10;
+  }
+
+  .facts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem 1.25rem;
+    margin-top: clamp(2rem, 4vw, 3.25rem);
+    padding-top: clamp(1.5rem, 3vw, 2.25rem);
+    border-top: 1px solid var(--line);
+  }
+
+  .facts div {
+    display: grid;
+    gap: 0.3rem;
+    align-content: start;
+  }
+
+  .facts__v {
+    font-family: var(--font-display);
+    font-size: clamp(2.1rem, 3vw + 1.2rem, 3.75rem);
+    font-weight: 780;
+    font-stretch: 118%;
+    line-height: 1;
+    letter-spacing: -0.025em;
+  }
+
+  .facts div:first-child .facts__v {
+    color: var(--violet-ink);
+  }
+
+  @media (min-width: 56rem) {
+    .facts {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  /* the timeline */
+  .story {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .tl {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .tl li {
+    display: grid;
+    gap: 0.4rem 2rem;
+    padding-block: 1.5rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tl__when {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 760;
+    font-stretch: 114%;
+    letter-spacing: -0.01em;
+    color: var(--violet-ink);
+  }
+
+  .tl__body {
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .tl__tag {
+    font-weight: 640;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (min-width: 40rem) {
+    .tl li {
+      grid-template-columns: 11rem 1fr;
+    }
+  }
+
+  @media (min-width: 60rem) {
+    .story {
+      grid-template-columns: minmax(0, 0.7fr) minmax(0, 1.3fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+
+    .story :global(.head) {
+      position: sticky;
+      top: calc(var(--header) + 2rem);
+    }
+  }
+
+  /* the team */
+  .person {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+  }
+
+  .person__mark {
+    display: grid;
+    place-items: center;
+    width: 3.25rem;
+    height: 3.25rem;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+    background: var(--violet-btn);
+    color: #fff;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 760;
+    font-stretch: 114%;
+  }
+
+  .person__role {
+    font-weight: 620;
+    color: var(--violet-soft);
+  }
+
+  .person__tag {
+    margin-top: 0.4rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line-ink);
+    font-weight: 620;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--on-ink-muted);
+  }
+
+  /* the shop */
+  .info {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .info div {
+    display: grid;
+    gap: 0.15rem 1.5rem;
+    padding-block: 0.85rem;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .info dt {
+    font-size: 0.8125rem;
+    font-weight: 640;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .info a {
+    color: var(--violet-ink);
+    font-weight: 560;
+  }
+
+  @media (min-width: 40rem) {
+    .info div {
+      grid-template-columns: 7rem 1fr;
+      align-items: baseline;
+    }
+  }
+
+  .shop__frame {
+    aspect-ratio: 4 / 5;
+    max-height: 38rem;
+  }
+</style>

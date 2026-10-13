@@ -1,0 +1,117 @@
+---
+/* Every town, with a link to its hub and to each service's page for it. */
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import Head from '../../components/Head.astro';
+import Ways from '../../components/Ways.astro';
+import QuoteBand from '../../components/QuoteBand.astro';
+import { BRAND } from '../../data/site';
+import { CITIES, hubPath, townPath } from '../../data/cities';
+import { TOWN_SERVICES } from '../../data/services';
+import { href } from '../../lib/paths';
+import { breadcrumbs } from '../../lib/schema';
+
+const TITLE = `Service Areas in Macomb & Oakland County | ${BRAND.name}`;
+const DESCRIPTION = `Ceramic coating, window tint and detailing across Macomb and Oakland counties. Shop in ${BRAND.city}, with mobile detailing and valet pickup. Free quotes.`;
+const counties = ['Macomb', 'Oakland'] as const;
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/service-areas/" schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Service areas', path: '/service-areas/' }])]}>
+  <PageHead
+    eyebrow="Service areas"
+    title="Macomb and Oakland counties, **from one shop.**"
+    lede={`Our shop is at ${BRAND.street} in ${BRAND.city}. Coatings, tint and paint correction happen there. Detailing can come to you, anywhere within ${BRAND.mobileRadius} of the shop.`}
+    crumbs={[{ name: 'Service areas', path: '/service-areas/' }]}
+  >
+    <div class="actions">
+      <a class="btn primary" href="#quote" data-cta="areas-quote">Get my free quote</a>
+      <a class="btn ghost" href={BRAND.phoneHref} data-loc="areas-head">Call {BRAND.phone}</a>
+    </div>
+  </PageHead>
+
+  {
+    counties.map((county) => (
+      <section class="band" aria-labelledby={`${county}-h`}>
+        <div class="wrap">
+          <Head id={`${county}-h`} layout="left" eyebrow="Where we work" title={`${county} County`} />
+          <ul class="grid c3">
+            {CITIES.filter((c) => c.county === county).map((c) => (
+              <li class="card pad town reveal">
+                <h3 class="h3">
+                  <a href={href(hubPath(c))}>{c.name}</a>
+                </h3>
+                {c.home && <p class="fine town__home">Our shop is here</p>}
+                <ul class="town__links small">
+                  {TOWN_SERVICES.map((s) => (
+                    <li>
+                      <a href={href(townPath(s, c))}>{s.name}<span class="sr"> in {c.name}</span></a>
+                    </li>
+                  ))}
+                </ul>
+                <a class="arrow small" href={href(hubPath(c))}>All services in {c.name}</a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    ))
+  }
+
+  <section class="band white" aria-labelledby="ways-h">
+    <div class="wrap">
+      <Head
+        id="ways-h"
+        eyebrow="How we work"
+        title="Three ways to get it done, wherever you are."
+        intro="Not sure if you are in range? Call or text and tell us where you are. We will tell you what can come to you and what needs the shop."
+      />
+      <Ways row />
+    </div>
+  </section>
+
+  <QuoteBand />
+</Base>
+
+<style>
+  .town {
+    display: grid;
+    align-content: start;
+    gap: 0.85rem;
+  }
+
+  .town h3 a {
+    text-decoration: none;
+  }
+
+  .town h3 a:hover {
+    color: var(--violet-ink);
+  }
+
+  .town__home {
+    width: fit-content;
+    padding: 0.1rem 0.5rem;
+    border-radius: var(--r-sm);
+    background: #f0e7fe;
+    color: var(--violet-ink);
+    font-weight: 640;
+  }
+
+  .town__links {
+    display: grid;
+    border-top: 1px solid var(--line);
+  }
+
+  .town__links li {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .town__links a {
+    display: block;
+    padding-block: 0.6rem;
+    text-decoration: none;
+  }
+
+  .town__links a:hover {
+    color: var(--violet-ink);
+  }
+</style>

@@ -1,0 +1,120 @@
+---
+/* Where their quote form sends people after they submit. Same address as the
+   old site, because the form's redirect points at it. It counts the lead, then
+   offers the consultation calendar they already use. */
+import Base from '../layouts/Base.astro';
+import PageHead from '../components/PageHead.astro';
+import Head from '../components/Head.astro';
+import Icon from '../components/Icon.astro';
+import { BRAND } from '../data/site';
+import { href } from '../lib/paths';
+
+const CAL = 'https://calendly.com/refreshmyrideauto/15min?background_color=000000&text_color=ffffff&primary_color=9b30ff&hide_gdpr_banner=1';
+
+const COVERS = [
+  { title: 'Your vehicle', body: 'Year, make, size and the condition it is in right now. That is what drives the price.' },
+  { title: 'The right service', body: 'A straight answer on what your car actually needs, and what it does not.' },
+  { title: 'Price and timing', body: 'A real number and the next open date on the schedule. No pressure to book on the spot.' },
+];
+---
+
+<Base
+  title={`Request received | ${BRAND.name}`}
+  description="Your request is in. Pick a time for your free consultation call and we will get you an exact quote for your vehicle."
+  path="/thank-you-submission-received/"
+  quoteHref="/get-a-quote/"
+  noindex
+  bare
+  lead
+>
+  <PageHead eyebrow="Request received" title="Got it. **Now pick your time.**" lede="Your request is in front of us. The fastest way to get a price is a quick call. Grab a slot below and we will be ready for you." />
+
+  <section class="band ink cal" aria-labelledby="cal-h">
+    <div class="wrap">
+      <div class="cal__head">
+        <h2 class="h3" id="cal-h">Book your consultation</h2>
+        <p class="small muted">Takes about 10 minutes</p>
+      </div>
+      <div class="cal__frame">
+        <iframe src={CAL} title="Book a consultation call" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="cov-h">
+    <div class="wrap">
+      <Head id="cov-h" eyebrow="The call" title="What the call covers." />
+      <ul class="grid c3">
+        {
+          COVERS.map((c) => (
+            <li class="card pad cov">
+              <h3 class="h3">{c.title}</h3>
+              <p class="small muted">{c.body}</p>
+            </li>
+          ))
+        }
+      </ul>
+      <div class="now">
+        <div>
+          <h2 class="h3">Rather just talk now?</h2>
+          <p class="small muted">Call or text us and we will take care of it from there.</p>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href={BRAND.phoneHref} data-loc="thank-you"><Icon name="phone" />Call {BRAND.phone}</a>
+          <a class="btn ghost" href={href('/')}>Back to the home page</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .cal {
+    padding-top: 0;
+  }
+
+  .cal__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.5rem 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .cal__frame {
+    border: 1px solid var(--line-ink);
+    border-radius: var(--r);
+    overflow: hidden;
+    background: #000;
+  }
+
+  .cal__frame iframe {
+    display: block;
+    width: 100%;
+    height: 700px;
+    min-width: 320px;
+    border: 0;
+  }
+
+  .cov {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+  }
+
+  .now {
+    display: grid;
+    gap: 1.25rem;
+    align-items: center;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    padding-top: clamp(2rem, 4vw, 3rem);
+    border-top: 1px solid var(--line);
+  }
+
+  @media (min-width: 52rem) {
+    .now {
+      grid-template-columns: 1fr auto;
+    }
+  }
+</style>

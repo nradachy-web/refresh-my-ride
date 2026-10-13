@@ -1,0 +1,206 @@
+---
+/* ============================================================================
+   GET A QUOTE
+
+   The form comes first, because that is why the visitor is here.
+     1  head + form   the quote form beside what happens next
+     2  paper         six reasons, each one a fact from their own pages
+     3  ink           three Google reviews
+     4  paper         the quote questions
+   ========================================================================== */
+import Base from '../layouts/Base.astro';
+import Head from '../components/Head.astro';
+import Icon from '../components/Icon.astro';
+import QuoteForm from '../components/QuoteForm.astro';
+import Reviews from '../components/Reviews.astro';
+import Faq from '../components/Faq.astro';
+import { BRAND, HOURS, LINKS } from '../data/site';
+import { review } from '../data/reviews';
+import { href } from '../lib/paths';
+import { breadcrumbs, faqSchema } from '../lib/schema';
+
+const TITLE = `Get a Free Quote | ${BRAND.name}, ${BRAND.city} MI`;
+const DESCRIPTION = `Get a free quote from ${BRAND.name} for ceramic coating, paint correction, detailing and window tint in ${BRAND.city}, Macomb and Oakland counties.`;
+
+const NEXT = [
+  { title: 'We review your request', body: 'We go over the vehicle details and services you sent so we are ready when we reach out.' },
+  { title: 'We call or text you', body: 'A quick conversation to answer questions and give you an exact price for your car.' },
+  { title: 'Book your appointment', body: `Pick a time that works. Drop off at our ${BRAND.city} shop or ask about mobile service.` },
+];
+
+const WHY = [
+  { title: 'Written warranty', body: 'Every ceramic coating package comes with a written warranty and a free follow-up wash and inspection.' },
+  { title: 'Lifetime tint warranty', body: 'We install Geoshield C2 Carbon and C2 Ceramic film, both backed by Geoshield’s lifetime warranty.' },
+  { title: 'Rides covered', body: 'Leaving your car with us for a coating? We cover your Uber while we work.' },
+  { title: 'Dedicated shop', body: `Coatings cure properly in our indoor ${BRAND.city} facility, not in a driveway.` },
+  { title: 'Mobile service', body: 'Select services come to your home or office in Macomb and Oakland counties.' },
+  { title: 'Real people', body: 'Call or text the shop directly. You will talk to our team, not a call center.' },
+];
+
+const FAQ = [
+  { q: 'Why do you not list every price online?', a: 'Price depends on the size and condition of your vehicle. A lightly used sedan and a neglected full-size truck need very different amounts of work. Quoting your actual car means no surprises at drop-off. Detailing and window tint do have published starting prices: see [auto detailing](/car-detailing-services-clinton-township-mi/) and [window tint](/window-tint-clinton-township-mi/).' },
+  { q: 'How fast will I hear back?', a: `We respond to quote requests during business hours, ${HOURS.summary}. If you need an answer right away, call or text [${BRAND.phone}](${BRAND.phoneHref}).` },
+  { q: 'Is the quote really free?', a: 'Yes. No cost and no obligation to book.' },
+  { q: 'Where are you located?', a: `Our shop is at ${BRAND.street}, ${BRAND.city}, ${BRAND.state} ${BRAND.zip}. We are appointment only, so please book before stopping by.` },
+  { q: 'Do you come to me?', a: 'We offer mobile service for select services in Macomb and Oakland counties. Mention it in your request and we will let you know what can be done on site. See [how mobile and valet work](/mobile-detailing/).' },
+  { q: 'Can I bundle services?', a: 'Yes. Pick everything you are interested in on the form and we will quote it together.' },
+];
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/get-a-quote/" schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Get a quote', path: '/get-a-quote/' }])]}>
+  <section class="band ink top" id="quote" aria-labelledby="q-h">
+    <div class="wrap two wide-left top__grid">
+      <div class="stack" style="--gap:1.4rem">
+        <h1 class="top__h">
+          <span class="eyebrow">Free quote</span>
+          <span class="h1 h1--page">Get your quote <span class="accent">in minutes.</span></span>
+        </h1>
+        <p class="lede">Tell us about your vehicle and what you want done. We put together an exact price for your car, with no guessing from a menu.</p>
+        <ul class="checks">
+          <li><span>Ceramic coating, paint correction, detailing and window tint</span></li>
+          <li><span>Serving Macomb and Oakland counties</span></li>
+          <li><span>Free quote, no obligation</span></li>
+        </ul>
+        <div class="actions">
+          <a class="btn ghost" href={BRAND.phoneHref} data-loc="quote-page"><Icon name="phone" />Call {BRAND.phone}</a>
+          <a class="btn ghost" href={BRAND.smsHref} data-loc="quote-page-text"><Icon name="text" />Text us</a>
+        </div>
+        <ol class="next" aria-label="What happens next">
+          {
+            NEXT.map((n, i) => (
+              <li>
+                <span class="next__n" aria-hidden="true">{i + 1}</span>
+                <div>
+                  <h2 class="next__t">{n.title}</h2>
+                  <p class="small muted">{n.body}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </div>
+      <div>
+        <QuoteForm />
+        <p class="fine muted top__note">We never share your info. Shop visits by appointment, {HOURS.summary}.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="why-h">
+    <div class="wrap">
+      <Head id="why-h" eyebrow={`Why ${BRAND.name}`} title="What you get when you book with us." />
+      <ul class="grid c3">
+        {
+          WHY.map((w) => (
+            <li class="card pad why reveal">
+              <h3 class="h3">{w.title}</h3>
+              <p class="small muted">{w.body}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </section>
+
+  <section class="band ink" aria-labelledby="rev-h">
+    <div class="wrap">
+      <Head id="rev-h" eyebrow="What customers say" title="Straight from our Google reviews." />
+      <Reviews reviews={['jake-m', 'matt-h', 'scott-w'].map((id) => review(id)!)} />
+    </div>
+  </section>
+
+  <section class="band" aria-labelledby="faq-h">
+    <div class="wrap faqs">
+      <Head id="faq-h" layout="left" eyebrow="Questions" title="Quote questions." intro={`Rather just talk? Call or text [${BRAND.phone}](${BRAND.phoneHref}), or [book online](${LINKS.book}).`} />
+      <Faq items={FAQ} />
+    </div>
+    <div class="wrap end">
+      <a class="btn primary" href="#quote" data-cta="quote-page-bottom">Get my free quote</a>
+      <a class="btn ghost" href={href('/contact-us/')}>Other ways to reach us</a>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .top {
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+  }
+
+  .top__grid {
+    align-items: start;
+  }
+
+  .top__h {
+    display: grid;
+    gap: 0.85rem;
+  }
+
+  .accent {
+    color: var(--violet);
+  }
+
+  .top__note {
+    margin-top: 0.9rem;
+  }
+
+  .next {
+    display: grid;
+    gap: 1.1rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--line-ink);
+  }
+
+  .next li {
+    display: grid;
+    grid-template-columns: 2.25rem 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  .next__n {
+    display: grid;
+    place-items: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    border: 1px solid var(--violet-soft);
+    color: var(--violet-soft);
+    font-family: var(--font-display);
+    font-weight: 720;
+  }
+
+  .next__t {
+    font-family: var(--font-display);
+    font-size: 1.0625rem;
+    font-weight: 670;
+    font-stretch: 106%;
+  }
+
+  .why {
+    display: grid;
+    align-content: start;
+    gap: 0.5rem;
+    border-top: 2px solid var(--violet-btn);
+    border-radius: 0 0 var(--r) var(--r);
+  }
+
+  .faqs {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .end {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+  }
+
+  @media (min-width: 60rem) {
+    .faqs {
+      grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+      gap: clamp(2rem, 6vw, 6rem);
+      align-items: start;
+    }
+  }
+</style>
