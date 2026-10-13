@@ -55,17 +55,17 @@ PHOTOS = {
     "interior-alfa-red": ("2026_08_IMG_3880-scaled.jpg", (0, 0, 1, 0.86)),
     "interior-shelby": ("2026_08_shelby-cobra-interior-detailing.jpg", None),
     "interior-convertible": ("2026_09_IMG_8363-scaled.jpg", (0, 0.43, 1, 1)),
-    "interior-bmw": ("2026_08_IMG_8478-scaled.jpg", (0, 0.18, 1, 0.92)),
+    "interior-bmw": ("2026_08_IMG_8478-scaled.jpg", (0, 0.2, 0.6, 0.86)),
     "interior-ford": ("2026_08_IMG_4032-scaled-e1787845836726.jpeg", None),
 }
 
-# Regions blurred after cropping, as fractions of the cropped photo. The BMW's
-# navigation screen shows a street name and coordinates that may be a customer's.
-# (Crops above also keep other businesses' signs and a bystander's licence plate
-# out of frame: escalade-black, chevy-suv-black, ford-super-duty-white, interior-convertible.)
-BLUR = {
-    "interior-bmw": [(0.615, 0.222, 0.905, 0.33)],
-}
+# Regions darkened after cropping, as fractions of the cropped photo. None in use.
+# Several crops above exist to keep things out of frame: the BMW interior is cut
+# to the wheel and seat because its navigation screen shows a street name and
+# coordinates that may be a customer's; escalade-black, chevy-suv-black,
+# ford-super-duty-white, shop-grand-opening and interior-convertible lose other
+# businesses' signs and a bystander's licence plate.
+BLUR = {}
 
 # before/after pairs, both cropped to the same 4:5 frame so the slider lines up
 PAIRS = {

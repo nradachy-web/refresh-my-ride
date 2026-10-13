@@ -43,14 +43,18 @@ const titleHtml = title
   .replace(/</g, '&lt;')
   .replace(/\*\*([^*]+)\*\*/g, '<span class="hero__accent">$1</span>');
 const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.href);
+// TEMPORARY perf experiment (see src/pages/perf-test)
+const pv = (Astro.url.pathname.match(/perf-test\/([a-d])/) || [])[1];
+const decodeMode = pv === 'a' || pv === 'c' ? 'async' : 'sync';
+const still = pv === 'b' || pv === 'c';
 ---
 
-<section class:list={['hero', 'ink', `hero--${size}`]}>
+<section class:list={['hero', 'ink', `hero--${size}`, still && 'hero--still']}>
   <div class="hero__media">
     <picture>
       <source type="image/avif" srcset={image.avif} sizes={image.sizes} />
       <source type="image/webp" srcset={image.webp} sizes={image.sizes} />
-      <img src={image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding="sync" fetchpriority="high" />
+      <img src={image.fallback} width={image.width} height={image.height} alt={image.alt} loading="eager" decoding={decodeMode} fetchpriority="high" />
     </picture>
   </div>
 
@@ -251,6 +255,15 @@ const primaryHref = primary.href.startsWith('#') ? primary.href : href(primary.h
     .hero--home .hero__h {
       max-width: min(66%, 52rem);
     }
+  }
+
+  .hero--still :global(*),
+  .hero--still .hero__media::before {
+    animation: none !important;
+  }
+
+  .hero--still .hero__media::before {
+    display: none;
   }
 
   /* ----- the page-load moment ----- */

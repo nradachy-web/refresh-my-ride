@@ -142,7 +142,7 @@ rest are too small or the wrong shape for a hero):
   `josh-polishing-corvette`
 - Window tint: `corvette-gray`, `tesla-model-y`, `bmw-7-series`,
   `cadillac-sedan-black`, `chevy-suv-black`, `cybertruck`
-- Detailing: `interior-alfa-red`, `interior-shelby`, `interior-bmw`,
+- Detailing: `interior-alfa-red`, `interior-shelby`,
   `ford-super-duty-white`, `jeep-grand-cherokee`, `chevy-suv-black`,
   `porsche-wheel`
 - Paint correction: `team-polishing-mercury`, `josh-polishing-corvette`,

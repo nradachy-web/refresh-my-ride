@@ -9,8 +9,13 @@
     "kicker": "Car detailing in Troy, MI",
     "title": "Your driveway. **Or your office lot.**",
     "lede": "Interior, exterior and full details for Troy drivers, done at your home, at your workplace or at our shop. We bring our own power and water. For a coupe or sedan in average condition, interior details start from $184.99 and exterior details from $139.99.",
-    "chips": ["Mobile detailing in Troy", "Interior from $184.99", "Pick-up and drop-off valet", "Maintenance plans"],
-    "photo": "interior-bmw"
+    "chips": [
+      "Mobile detailing in Troy",
+      "Interior from $184.99",
+      "Pick-up and drop-off valet",
+      "Maintenance plans"
+    ],
+    "photo": "interior-shelby"
   },
   "local": {
     "title": "What ends up in a Troy car, and how we get it out.",
@@ -79,5 +84,9 @@
       "a": "Yes. Ask us about our maintenance plans, which lock in a lower per-visit price for regular service. For a daily commuter, or a vehicle that carries kids and pets, a maintenance detail every one to three months keeps it from needing a full reset. [Request a free quote](#quote) and tell us how many vehicles you have."
     }
   ],
-  "reviews": ["fahad-a", "alexis-p", "sydney-k"]
+  "reviews": [
+    "fahad-a",
+    "alexis-p",
+    "sydney-k"
+  ]
 }

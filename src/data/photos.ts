@@ -52,7 +52,7 @@ export const PHOTOS = {
   'interior-alfa-red': { alt: 'Detailed Alfa Romeo interior with red leather seats', caption: 'Alfa Romeo interior' },
   'interior-shelby': { alt: 'Detailed Shelby interior with a suede steering wheel', caption: 'Shelby interior' },
   'interior-convertible': { alt: 'Detailed convertible interior with black and red leather', caption: 'Convertible interior' },
-  'interior-bmw': { alt: 'Detailed BMW interior with protective covers on the wheel and floor', caption: 'BMW interior, finished and covered' },
+  'interior-bmw': { alt: 'Detailed BMW interior with a protective cover on the steering wheel', caption: 'BMW interior, finished and covered' },
   'interior-ford': { alt: 'Clean Ford interior after an interior detail', caption: 'Interior detail' },
   // before and after pairs
   'ba-silverado-before': { alt: 'Chevrolet Silverado hood before paint correction, dull with water spots', caption: 'Before' },
