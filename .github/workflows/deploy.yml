@@ -1,11 +1,8 @@
 # Builds the site and publishes it to GitHub Pages on every push to main.
 #
-# PREVIEW (now): served at https://nradachy-web.github.io/refresh-my-ride/ with
-# BASE_PATH set, which also makes every page noindex and robots.txt disallow all.
-#
-# PRODUCTION (at cutover): delete the BASE_PATH line below, add public/CNAME with
-# the domain, and set the custom domain in the repository's Pages settings.
-# See docs/LAUNCH.md.
+# PRODUCTION: served at https://refreshmyrideauto.com (custom domain set in the
+# repository's Pages settings, public/CNAME holds the domain). With no BASE_PATH
+# the pages are indexable and robots.txt allows crawling. See docs/LAUNCH.md.
 name: Deploy
 
 on:
@@ -25,8 +22,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      BASE_PATH: /refresh-my-ride/
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
