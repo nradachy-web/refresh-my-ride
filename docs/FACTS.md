@@ -136,8 +136,17 @@ or biohazards, always approved before work begins.
 - Offered. Nick asked for a PPF ad group on 2026-10-14 after meeting Josh, his
   quote form lists PPF, and his own ceramic page says "If rock chips on the
   front end are your main concern, that's what paint protection film is for."
-- Nothing else is known: not the film brand, the warranty, package names,
-  prices or install times. Quote it per vehicle and per panel. Open question 7.
+- Packages, set by Nick on 2026-10-14 (he asked to use the package layout of
+  Ascension Automotive in Milford; their coverage tiers are the industry's
+  usual three, the names are ours): **Full Front** (front bumper, full hood,
+  front fenders, headlights, side mirrors), **Track Pack** (Full Front plus
+  rocker panels, lower rear fenders, A pillars, front edge of the roof) and
+  **Full Body** (every painted panel, headlights, mirrors, a spoiler where
+  fitted). Door edges and handle cups can be added. No prices: each is quoted
+  per vehicle. Josh still confirms that this is what he installs.
+- Still unknown: the film brand, the warranty, prices and install times.
+  Ascension's 12 year warranty, self-healing film, wrapped edges and "paint
+  correction included" are their claims, not Josh's. Open question 7.
 - What the page says is general and true of any film: clear film over the
   paint that takes rock chips; it does not repair existing chips; swirls under
   it stay under it, so correction comes first if wanted; it is installed at the
@@ -170,8 +179,9 @@ Their site has no dedicated page, so stay inside these lines:
   ("best", "#1", "top rated", "premier", "award winning").
 - Vinyl wrap, headlight restoration, dent repair, wheel repair, engine bay or
   boat work as services. They do not list them.
-- For paint protection film: any film brand, warranty, "self-healing", package
-  name, price or install time. None of it is confirmed yet.
+- For paint protection film: any film brand, warranty, "self-healing", price,
+  install time, or a "most popular" package. None of it is confirmed yet. The
+  three package names above are the only ones.
 - Brand names other than Geoshield. No coating brand is named on their site.
 - "IDA certified" or any named certification. Their words are "certified
   technicians" and "ceramic coating certified". Use those and nothing more.

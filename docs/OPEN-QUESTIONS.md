@@ -34,9 +34,10 @@ made that is his to make.
    reviews".
 7. **Paint protection film.** Added 2026-10-14 as a page
    (`/paint-protection-film/`) because Nick is running a PPF ad group. The page
-   only says what is true of any film. Josh: which film brand, what warranty,
-   any packages (partial front, full front, track pack, full body) and their
-   starting prices, how long an install takes, whether it is always done at the
+   only says what is true of any film. Since 2026-10-14 it shows three packages
+   Nick chose (Full Front, Track Pack, Full Body; coverage in `docs/FACTS.md`).
+   Josh: do those match what you install, which film brand, what warranty,
+   starting prices for each, how long an install takes, whether it is always done at the
    shop, and whether you coat over film. Each answer makes the page and the ads
    stronger.
 8. **Mobile service in West Bloomfield.** It is about 45 minutes from the shop,

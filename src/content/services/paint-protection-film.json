@@ -48,19 +48,51 @@
       ]
     },
     {
-      "type": "cards",
+      "type": "tiers",
       "plane": "paper",
-      "columns": 3,
-      "eyebrow": "Where chips happen",
-      "title": "The panels most people cover first.",
-      "intro": "Rocks hit the front of a vehicle and the lower edges. These are the places people usually start. Tell us what you want covered and we quote exactly that.",
-      "items": [
-        { "tag": "Front", "title": "Front bumper", "body": "The lowest, most forward panel on the vehicle, and the one that meets most of the rocks on highway trips." },
-        { "tag": "Front", "title": "Hood and fenders", "body": "The leading edge of the hood and the front of the fenders collect chips fast, and they are the panels you see from the driver's seat." },
-        { "tag": "Front", "title": "Mirrors", "body": "Mirror caps stick out into the air and pick up chips and scuffs." },
-        { "tag": "Sides", "title": "Rocker panels and lower doors", "body": "Your own tires throw sand, salt and gravel at the lower sides, which is why they chip and pit over a few Michigan winters." },
-        { "tag": "Everyday", "title": "Door edges and handle cups", "body": "Small panels that take keys, rings and fingernails every day. Ask about them when you ask about the front end." }
-      ]
+      "eyebrow": "PPF packages",
+      "title": "Three ways to cover it. Each one quoted for your vehicle.",
+      "intro": "The packages differ in how much of the car the film covers. Rocks hit the front first, then the lower sides, so that is how the coverage grows. Pick one, or tell us exactly which panels you want and we will quote that instead.",
+      "tiers": [
+        {
+          "label": "Front end",
+          "name": "Full Front",
+          "bestFor": "Best for a daily driver: film on the panels that meet the most rocks on the highway, without covering the whole car.",
+          "features": [
+            "Front bumper",
+            "Full hood",
+            "Front fenders",
+            "Headlights",
+            "Side mirrors"
+          ]
+        },
+        {
+          "label": "Front end and sides",
+          "name": "Track Pack",
+          "bestFor": "Best for performance cars and spirited drivers. Everything in Full Front, plus the lower sides and edges that take the spray from your own tires.",
+          "features": [
+            "Everything in Full Front",
+            "Rocker panels",
+            "Lower rear fenders, behind the wheels",
+            "A pillars",
+            "Front edge of the roof"
+          ]
+        },
+        {
+          "label": "Every painted panel",
+          "name": "Full Body",
+          "bestFor": "Best for a new vehicle, a custom build or a car you plan to keep for years, protected from every angle.",
+          "features": [
+            "Front and rear bumpers",
+            "Hood, roof and trunk",
+            "All fenders and quarter panels",
+            "All doors and rocker panels",
+            "Headlights and mirrors",
+            "Spoiler, where the car has one"
+          ]
+        }
+      ],
+      "footnote": "Door edges and handle cups can be added to any package. The price depends on the vehicle, the package and whether the paint needs [polishing](/paint-correction/) first, so every quote is for your vehicle. Financing through Affirm and Klarna."
     },
     {
       "type": "steps",
@@ -94,7 +126,7 @@
   "faq": [
     {
       "q": "How much does paint protection film cost?",
-      "a": "It depends on the vehicle and how much of it you want covered, so we quote it per vehicle instead of publishing a price list. A front bumper and mirrors is a very different job from the whole front end.\n\nTell us what you drive and which panels you want covered, by text, by phone or with the quote form on this page, and we will give you a real number. Financing is available through Affirm and Klarna."
+      "a": "It depends on the vehicle and how much of it you want covered, so we quote it per vehicle instead of publishing a price list. The three packages above are the usual starting points. A front bumper and mirrors is a very different job from the whole front end.\n\nTell us what you drive and which panels you want covered, by text, by phone or with the quote form on this page, and we will give you a real number. Financing is available through Affirm and Klarna."
     },
     {
       "q": "Should I get paint protection film or a ceramic coating?",
