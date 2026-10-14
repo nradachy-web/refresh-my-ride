@@ -1,6 +1,7 @@
 """Build the site's photo sources from the originals in _source/media.
 
-Every photo is Refresh My Ride's own (their media library, pulled 2026-10-13).
+Every photo is Refresh My Ride's own: their media library, pulled 2026-10-13,
+and the photos Josh sent in a Drive folder on 2026-10-14 (files 2026_10_josh_*).
 Output: src/assets/photos/<id>.jpg, EXIF-rotated, cropped where noted, long side
 capped. Astro then makes the AVIF/WebP sizes at build time. Originals are not
 committed (see .gitignore); rerun this script after adding one to _source/media.
@@ -47,6 +48,19 @@ PHOTOS = {
     "ford-super-duty-white": ("2026_08_IMG_6823-scaled.jpg", (0.09, 0.1, 1, 0.92)),
     "cybertruck": ("2026_08_IMG_4709-scaled.jpg", (0, 0.3, 1, 0.86)),
     "porsche-wheel": ("2026_08_IMG_4562-scaled.jpg", (0, 0.1, 1, 0.9)),
+    # sent by Josh on 2026-10-14 (Drive folder). Framed so a square or 4:5 crop
+    # from the center keeps the whole vehicle.
+    "corvette-black-front": ("2026_10_josh_F5CAB4E0-ECEA-49C4-ACD4-2ED13558A7FC.JPG", (0, 0.2, 1, 0.98)),
+    "corvette-black-rear": ("2026_10_josh_IMG_2286.jpeg", (0, 0.2, 1, 0.95)),
+    "corvette-gray-garage": ("2026_10_josh_IMG_2109.jpg", (0, 0.15, 1, 0.9)),
+    "cadillac-sedan-orange": ("2026_10_josh_IMG_8948.jpg", (0, 0.2, 1, 0.75)),
+    "hummer-pickup": ("2026_10_josh_IMG_9184.jpg", (0, 0.2, 1, 0.75)),
+    "jeep-black": ("2026_10_josh_IMG_9303.jpg", (0, 0.25, 1, 0.8)),
+    "jeep-rubicon-white": ("2026_10_josh_IMG_4335.JPEG", (0.05, 0.22, 1, 0.88)),
+    "mustang-black-bay": ("2026_10_josh_IMG_9058.jpg", (0, 0.18, 1, 0.8)),
+    "mustang-foam-wash": ("2026_10_josh_IMG_9055.jpg", (0, 0.15, 1, 0.75)),
+    "interior-jeep-red": ("2026_10_josh_IMG_4337.JPG", (0, 0.25, 1, 0.95)),
+    "tech-polishing-white-car": ("2026_10_josh_e.jpg", (0, 0.06, 1, 0.9)),
     # mobile and valet. The yard sign carries an old phone number: the van crop keeps
     # only the sign's heading ("Auto detailing in progress"), the BMW crop loses the sign.
     "mobile-van": ("2026_09_IMG_1045-scaled.jpg", (0.02, 0.22, 0.98, 0.562)),

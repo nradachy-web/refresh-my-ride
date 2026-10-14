@@ -1,5 +1,5 @@
 /* The photo library. Every image is Refresh My Ride's own work, from their
-   media library. `alt` says what is in the frame; `caption` is what may be
+   media library or sent by Josh. `alt` says what is in the frame; `caption` is what may be
    printed under it. A vehicle is only named when their own site named it or the
    badge is plain in the photo.
 
@@ -44,6 +44,18 @@ export const PHOTOS = {
   'ford-super-duty-white': { alt: 'White Ford pickup with black wheels', caption: 'Ford pickup' },
   cybertruck: { alt: 'Black Tesla Cybertruck parked outside', caption: 'Tesla Cybertruck' },
   'porsche-wheel': { alt: 'Clean Porsche wheel and tire', caption: 'Wheels and tires' },
+  // sent by Josh on 2026-10-14
+  'corvette-black-front': { alt: 'Black mid-engine Corvette with black wheels parked outside', caption: 'Corvette' },
+  'corvette-black-rear': { alt: 'Rear three quarter view of a black mid-engine Corvette with yellow brake calipers', caption: 'Corvette' },
+  'corvette-gray-garage': { alt: 'Gray mid-engine Corvette parked on a speckled garage floor', caption: 'Corvette' },
+  'cadillac-sedan-orange': { alt: 'Orange Cadillac sedan with dark wheels parked in the sun', caption: 'Cadillac sedan' },
+  'hummer-pickup': { alt: 'Blue gray GMC Hummer pickup parked outside the shop', caption: 'GMC Hummer' },
+  'jeep-black': { alt: 'Black four door Jeep on all terrain tires under a blue sky', caption: 'Jeep' },
+  'jeep-rubicon-white': { alt: 'White four door Jeep Rubicon with a front winch, freshly washed', caption: 'Jeep Rubicon' },
+  'mustang-black-bay': { alt: 'Black Ford Mustang parked in a bright white bay inside the shop', caption: 'Mustang, inside the shop' },
+  'mustang-foam-wash': { alt: 'A Refresh My Ride technician foam washing a black Mustang', caption: 'Foam wash on a Mustang' },
+  'interior-jeep-red': { alt: 'Clean Jeep interior with red leather seats, seen through the open driver door', caption: 'Jeep interior' },
+  'tech-polishing-white-car': { alt: 'A Refresh My Ride technician in a branded shirt machine polishing a white car', caption: 'On the job' },
   // mobile and valet
   'mobile-van': { alt: 'The white Refresh My Ride mobile detailing van at a customer’s home, beside a sign reading Auto detailing in progress', caption: 'The mobile van' },
   'mobile-bmw-driveway': { alt: 'BMW being detailed in a customer’s driveway, doors open', caption: 'A mobile detail at a customer’s home' },

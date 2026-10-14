@@ -18,6 +18,7 @@ import Photo from '../components/Photo.astro';
 import Ways from '../components/Ways.astro';
 import QuoteBand from '../components/QuoteBand.astro';
 import { BRAND, FINANCING, HOURS, LINKS, RATING } from '../data/site';
+import { photo, type PhotoId } from '../data/photos';
 import { heroImage } from '../lib/hero';
 import { href } from '../lib/paths';
 import { breadcrumbs } from '../lib/schema';
@@ -71,6 +72,9 @@ const STORY = [
     body: 'We outgrew that first shop in under a year. Our new 2,000 square foot facility on Louise Ave gives us the space and lighting to do correction and coating work right, with room for multiple vehicles at once. More than 1,000 vehicles in, the standard has not moved.',
   },
 ];
+
+// The crew at work, above the team cards.
+const CREW: PhotoId[] = ['tech-polishing-white-car', 'mustang-foam-wash', 'team-polishing-mercury', 'tech-polishing-mustang'];
 
 const TEAM = [
   {
@@ -167,6 +171,20 @@ const TEAM = [
         title="The people who will actually touch your car."
         intro="Small crew on purpose. You will know who worked on your vehicle, and you can ask them about it. Customers name the crew in the [reviews](/reviews/)."
       />
+      <ul class="crew">
+        {
+          CREW.map((id) => (
+            <li>
+              <figure>
+                <div class="frame crew__frame">
+                  <Photo id={id} ratio={4 / 5} widths={[300, 480, 640]} sizes="(min-width: 60rem) 24vw, 46vw" focus="top" />
+                </div>
+                <figcaption class="cap">{photo(id).caption}</figcaption>
+              </figure>
+            </li>
+          ))
+        }
+      </ul>
       <ul class="grid c4">
         {
           TEAM.map((p) => (
@@ -226,6 +244,23 @@ const TEAM = [
 </Base>
 
 <style>
+  .crew {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-bottom: clamp(2rem, 4vw, 3rem);
+  }
+
+  .crew__frame {
+    aspect-ratio: 4 / 5;
+  }
+
+  @media (min-width: 60rem) {
+    .crew {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
   .then__frame {
     aspect-ratio: 16 / 10;
   }

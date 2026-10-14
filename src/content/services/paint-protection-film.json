@@ -14,7 +14,7 @@
       "Quoted for the panels you choose",
       "Valet pickup available"
     ],
-    "photo": "shop-interior"
+    "photo": "mustang-black-bay"
   },
   "blocks": [
     {
@@ -31,7 +31,7 @@
         "**Clear.** The film goes on clear, so your paint color is what people see.",
         "**Your coverage.** Tell us which panels you want covered and we quote exactly that."
       ],
-      "photo": "porsche-suv-blue"
+      "photo": "corvette-black-rear"
     },
     {
       "type": "compare",
