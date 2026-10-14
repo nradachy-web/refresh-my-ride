@@ -10,11 +10,12 @@ import LazyFrame from '../components/LazyFrame.astro';
 import { BRAND } from '../data/site';
 import { href } from '../lib/paths';
 
-// Their consultation calendar. In embed mode Calendly drops its cookie panel and
-// opens on the month grid. Their plan does not apply colour settings, so the
-// calendar is white: the band around it is a light one. LazyFrame adds the
-// embed_domain Calendly needs, from the host the page is served on.
-const CAL = 'https://calendly.com/refreshmyrideauto/15min?embed_type=Inline&hide_event_type_details=1&primary_color=8a2ef0';
+// Their consultation calendar, opening on the month grid. hide_gdpr_banner keeps
+// Calendly's cookie panel from covering half the calendar on a phone. Their plan
+// does not apply colour settings, so the calendar is white: the band around it
+// is a light one. LazyFrame adds the embed_domain Calendly needs, from the host
+// the page is served on.
+const CAL = 'https://calendly.com/refreshmyrideauto/15min?embed_type=Inline&hide_event_type_details=1&hide_gdpr_banner=1&primary_color=8a2ef0';
 
 const COVERS = [
   { title: 'Your vehicle', body: 'Year, make, size and the condition it is in right now. That is what drives the price.' },

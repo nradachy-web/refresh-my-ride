@@ -47,6 +47,8 @@ const FORBIDDEN = [
 
 for (const [page, src] of Object.entries(html)) {
   const body = src.replace(/<script[\s\S]*?<\/script>/g, ' ').replace(/<style[\s\S]*?<\/style>/g, ' ');
+  // a forwarding page (Forward.astro) has no content to judge, only a link that must resolve
+  const forward = /http-equiv="refresh"/.test(src) && !/<h1[\s>]/.test(body);
   const text = body.replace(/<[^>]+>/g, ' ');
   for (const [re, what] of FORBIDDEN) {
     const m = text.match(re);
@@ -56,12 +58,13 @@ for (const [page, src] of Object.entries(html)) {
   const unlinked = body.replace(/<a\b[\s\S]*?<\/a>/g, ' ').replace(/<[^>]+>/g, ' ');
   if (/\(586\) 400-1303/.test(unlinked)) flag(page, `the phone number appears as plain text, not a link: "…${unlinked.slice(Math.max(0, unlinked.search(/\(586\) 400-1303/) - 50), unlinked.search(/\(586\) 400-1303/) + 20).replace(/\s+/g, ' ')}"`);
   const h1 = body.match(/<h1[\s>]/g) || [];
-  if (h1.length !== 1) flag(page, `${h1.length} h1 elements`);
+  if (!forward && h1.length !== 1) flag(page, `${h1.length} h1 elements`);
+  if (forward && !/<meta name="robots" content="noindex"/.test(src)) flag(page, 'forwarding page without noindex');
   const decode = (s) => s.replace(/&amp;/g, '&').replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"');
   const title = decode((src.match(/<title>([^<]*)<\/title>/) || [])[1] || '');
-  if (title.length < 25 || title.length > 68) flag(page, `title is ${title.length} characters (want 25 to 68): ${title}`);
+  if (!forward && (title.length < 25 || title.length > 68)) flag(page, `title is ${title.length} characters (want 25 to 68): ${title}`);
   const desc = decode((src.match(/<meta name="description" content="([^"]*)"/) || [])[1] || '');
-  if (desc.length < 70 || desc.length > 165) flag(page, `description is ${desc.length} characters (want 70 to 165)`);
+  if (!forward && (desc.length < 70 || desc.length > 165)) flag(page, `description is ${desc.length} characters (want 70 to 165)`);
   for (const img of body.match(/<img\b[^>]*>/g) || []) {
     if (!/\salt[=\s>]/.test(img)) flag(page, `image without alt: ${img.slice(0, 80)}`);
     if (!/\bwidth=/.test(img) || !/\bheight=/.test(img)) flag(page, `image without width and height: ${img.slice(0, 80)}`);

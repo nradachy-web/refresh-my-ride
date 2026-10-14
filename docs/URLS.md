@@ -19,6 +19,18 @@ final URL, not the quote form's redirect.
 | `/privacy-policy/` | Privacy policy | |
 | `/thank-you-submission-received/` | Thank you | The quote form redirects here. Not indexed. |
 
+## Forwarding addresses
+
+GitHub Pages cannot send a server redirect, so these are pages that forward in
+the browser (`src/components/Forward.astro`), keeping the query string so an ad
+click ID arrives with the visitor. Not indexed, not in the sitemap.
+
+| Address | Goes to | Why |
+|---|---|---|
+| `/thank-you/` | `/thank-you-submission-received/` | The old site forwarded it, and it is the address Josh gives for the page |
+| `/our-work-refresh-my-ride/` | `/reviews/` | Already a 404 on the old site, but the "See Our Work" sitelink (account level and his old Search campaign) still points here |
+| `/contact/`, `/about/`, `/window-tint/` | `/contact-us/`, `/about-us/`, `/window-tint-clinton-township-mi/` | The old site forwarded them |
+
 The old menu linked to five town pages that did not exist (404): Sterling
 Heights, Rochester Hills, Troy, Birmingham and West Bloomfield under
 `/car-detailing-<town>-mi`. All five now exist at exactly those addresses.
