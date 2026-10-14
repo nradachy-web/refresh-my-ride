@@ -1,0 +1,130 @@
+{
+  "service": "paint-protection-film",
+  "meta": {
+    "title": "Paint Protection Film (PPF) in Clinton Twp | Refresh My Ride",
+    "description": "Paint protection film (PPF) in Clinton Township, MI. Clear film on the panels that take rock chips, quoted for exactly the coverage you want."
+  },
+  "hero": {
+    "kicker": "Paint protection film (PPF) in Clinton Township, MI",
+    "title": "Let the film take **the rock chips.**",
+    "lede": "Paint protection film, or PPF, is a clear film that goes over your paint and takes the rock chips and road debris instead of it. We install it at our Clinton Township shop and quote it per vehicle, for exactly the panels you want covered.",
+    "chips": [
+      "Clear film over your paint",
+      "Rock chip protection",
+      "Quoted for the panels you choose",
+      "Valet pickup available"
+    ],
+    "photo": "shop-interior"
+  },
+  "blocks": [
+    {
+      "type": "intro",
+      "plane": "paper",
+      "eyebrow": "PPF, explained",
+      "title": "What paint protection film is, and what it stops.",
+      "body": [
+        "Paint protection film is a **clear film** laid over the painted panels of your vehicle. When a rock comes off the truck ahead of you, the film takes the hit and the paint under it stays as it was.",
+        "It is a different job from a ceramic coating. A coating is a thin chemical layer for gloss and easy washing, and **it is not armor**: it will not stop a rock chip. Film is the physical layer. Plenty of people want both, film where the chips happen and a coating for the shine."
+      ],
+      "checks": [
+        "**Takes the chips.** Rock chips and road debris hit the film, not your paint.",
+        "**Clear.** The film goes on clear, so your paint color is what people see.",
+        "**Your coverage.** Tell us which panels you want covered and we quote exactly that."
+      ],
+      "photo": "porsche-suv-blue"
+    },
+    {
+      "type": "compare",
+      "plane": "white",
+      "eyebrow": "Film or coating",
+      "title": "Paint protection film and ceramic coating do different jobs.",
+      "intro": "If you are choosing between them, start with what worries you most. Chips point to film. Gloss and easy washing point to a coating.",
+      "columns": ["Paint protection film", "Ceramic coating"],
+      "rows": [
+        { "label": "Rock chips", "values": ["The film takes the hit", "Will not stop a chip"] },
+        { "label": "Gloss and easy washing", "values": ["Keeps the paint under it as it is", "Deep gloss, and grime lets go in a rinse"] },
+        { "label": "Where it goes", "values": ["The panels you choose", "Every painted panel, plus glass, wheels and trim"] },
+        { "label": "How it is priced", "values": ["Quoted per vehicle and coverage", "Quoted per vehicle: 1, 3 or 5 years"] }
+      ]
+    },
+    {
+      "type": "cards",
+      "plane": "paper",
+      "columns": 3,
+      "eyebrow": "Where chips happen",
+      "title": "The panels most people cover first.",
+      "intro": "Rocks hit the front of a vehicle and the lower edges. These are the places people usually start. Tell us what you want covered and we quote exactly that.",
+      "items": [
+        { "tag": "Front", "title": "Front bumper", "body": "The lowest, most forward panel on the vehicle, and the one that meets most of the rocks on highway trips." },
+        { "tag": "Front", "title": "Hood and fenders", "body": "The leading edge of the hood and the front of the fenders collect chips fast, and they are the panels you see from the driver's seat." },
+        { "tag": "Front", "title": "Mirrors", "body": "Mirror caps stick out into the air and pick up chips and scuffs." },
+        { "tag": "Sides", "title": "Rocker panels and lower doors", "body": "Your own tires throw sand, salt and gravel at the lower sides, which is why they chip and pit over a few Michigan winters." },
+        { "tag": "Everyday", "title": "Door edges and handle cups", "body": "Small panels that take keys, rings and fingernails every day. Ask about them when you ask about the front end." }
+      ]
+    },
+    {
+      "type": "steps",
+      "plane": "ink",
+      "eyebrow": "The process",
+      "title": "Five steps from free quote to film on the paint.",
+      "intro": "Film covers what is under it, good or bad, so the paint gets cleaned up before any film goes on.",
+      "steps": [
+        { "title": "Start with a free quote", "body": "Tell us what you drive and which panels you want covered. Photos of the paint help us tell you whether it needs any polishing first.", "note": "Photos help" },
+        { "title": "Drop-off or valet pickup", "body": "Film is installed at our Clinton Township shop, by appointment. Bring the vehicle to us, or ask about our [pick-up and drop-off valet service](/mobile-detailing/): we pick it up and bring it back.", "note": "Shop only" },
+        { "title": "Wash and decontamination", "body": "A full decontamination wash: iron and tar removal, then a clay treatment, so nothing is trapped between the film and the paint.", "note": "Clean paint first" },
+        { "title": "Polish if the paint needs it", "body": "Swirls under the film stay under the film. If your paint has them, [paint correction](/paint-correction/) can come first, quoted with the film so you see one number.", "note": "Only if needed" },
+        { "title": "Film goes on, indoors", "body": "The film is fitted panel by panel in our enclosed bays, out of the dust and weather that would otherwise end up under it.", "note": "Enclosed bays" }
+      ]
+    },
+    {
+      "type": "reviews",
+      "plane": "white",
+      "eyebrow": "What customers say",
+      "title": "5.0 from 270+ reviews on Google. These three are about shop work.",
+      "ids": ["scott-w", "judy-j", "jake-m"]
+    },
+    {
+      "type": "areas",
+      "plane": "paper",
+      "eyebrow": "Service area",
+      "title": "Paint protection film for drivers across Macomb and Oakland counties.",
+      "intro": "Film is installed at our Clinton Township shop, in enclosed bays. Valet pickup is available if you would rather not make the drive."
+    }
+  ],
+  "faq": [
+    {
+      "q": "How much does paint protection film cost?",
+      "a": "It depends on the vehicle and how much of it you want covered, so we quote it per vehicle instead of publishing a price list. A front bumper and mirrors is a very different job from the whole front end.\n\nTell us what you drive and which panels you want covered, by text, by phone or with the quote form on this page, and we will give you a real number. Financing is available through Affirm and Klarna."
+    },
+    {
+      "q": "Should I get paint protection film or a ceramic coating?",
+      "a": "Start with what worries you. If it is rock chips on the front end, that is what paint protection film is for: a coating will not stop a chip. If it is gloss, water spots and easier washing, that is what a [ceramic coating](/ceramic-coating/) is for.\n\nMany people do both, film on the panels that take the hits and a coating for the shine. Ask us and we will tell you honestly which one fits what you are worried about."
+    },
+    {
+      "q": "Will paint protection film fix the chips and swirls I already have?",
+      "a": "No. Film is clear, so what is under it stays visible under it. A chip is a spot where the paint is gone, and film will not put it back.\n\nSwirls and light scratches can be polished out before the film goes on. If your paint needs it, we quote [paint correction](/paint-correction/) together with the film."
+    },
+    {
+      "q": "Can you install paint protection film at my home?",
+      "a": "No. Film goes on at our Clinton Township shop, in enclosed bays, because dust and weather are the enemy of a clean install.\n\nIf getting to the shop is the obstacle, use our pick-up and drop-off valet: we pick the vehicle up, do the work at the shop and bring it back."
+    },
+    {
+      "q": "How long does a paint protection film install take?",
+      "a": "It depends on how many panels you cover and whether the paint needs polishing first. A few front panels is a much shorter job than a full front end with correction.\n\nWe give you an exact window when we quote your vehicle, so you can plan around it or book the valet."
+    }
+  ],
+  "quote": {
+    "title": "Tell us which panels. We will tell you the number.",
+    "lede": "Tell us what you drive and what you want covered, and send a photo of the paint if you can. We will tell you whether it needs polishing first and give you one number for the job."
+  },
+  "summary": {
+    "title": "Clear film where the chips happen.",
+    "intro": "Paint protection film is a clear film over your paint that takes rock chips and road debris. It is installed at our Clinton Township shop and quoted for exactly the panels you choose.",
+    "items": [
+      { "name": "Front end", "price": "Quoted per vehicle", "detail": "The bumper, hood, fenders and mirrors: the panels that meet most of the rocks." },
+      { "name": "The panels you choose", "price": "Quoted per vehicle", "detail": "Rocker panels, door edges, handle cups or anything else you want covered." },
+      { "name": "With paint correction", "price": "Quoted together", "detail": "Swirls polished out first, so the paint under the film is the paint you want to keep." }
+    ],
+    "footnote": "Film is quoted per vehicle and per panel. It protects against chips from here on: it does not repair chips or scratches that are already there."
+  }
+}

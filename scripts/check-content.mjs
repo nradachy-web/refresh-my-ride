@@ -48,7 +48,11 @@ const FORBIDDEN = [
   [/guarantee(d|s)?\b/i, 'a guarantee (their site promises warranties, not guarantees)'],
   [/\b(cheap|cheapest|lowest price|unbeatable)\b/i, 'a price boast'],
   [/lorem ipsum|TODO|TBD\b|XXX/i, 'placeholder text'],
-  [/\bPPF\b|paint protection film (install|package|service)/i, 'paint protection film as a service (they do not list it)'],
+  // PPF became a service on 2026-10-14 (Nick asked for a PPF ad group; Josh's quote form offers it).
+  // The film brand, its warranty and package prices are still unconfirmed, so none of them may appear.
+  [/\b(xpel|suntek|stek|llumar|3m)\b/i, 'a film brand Josh has not confirmed'],
+  [/self[- ]heal/i, 'a self-healing film claim (the film brand is not confirmed)'],
+  [/(protection film|\bPPF\b)[^.]{0,60}\b(\d+[- ]year|lifetime) warranty/i, 'a paint protection film warranty (not confirmed)'],
   [/same[- ]day ceramic|ceramic[^.]{0,40}same day/i, 'a same-day ceramic coating promise'],
   [/\bfree (estimate|inspection)s?\b/i, '"free estimate" (their wording is "free quote")'],
 ];

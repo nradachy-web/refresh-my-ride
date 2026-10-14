@@ -1,7 +1,10 @@
 ---
-/* Sticky header: their logo, the four services by name, the phone number and
-   one action. Below 68rem the links fold into a full screen menu built on the
-   native popover, so it opens, closes and traps Escape without any script. */
+/* Sticky header: their logo, the services by name, the phone number and one
+   action. Below 80rem the links fold into a full screen menu built on the
+   native popover, so it opens, closes and traps Escape without any script.
+   80rem is measured: the row needs about 1,180px once PPF joined the links,
+   and at 68rem it already ran wider than the screen. About lives in the menu
+   and the footer. */
 import { getImage } from 'astro:assets';
 import logo from '../assets/brand/logo-wordmark.png';
 import Icon from './Icon.astro';
@@ -20,7 +23,6 @@ const main = SERVICES.filter((s) => s.id !== 'mobile-detailing');
 const links = [
   ...main.map((s) => ({ label: s.nav, path: s.path })),
   { label: 'Service areas', path: '/service-areas/' },
-  { label: 'About', path: '/about-us/' },
 ];
 
 // 2x of the largest size it is ever shown at (132 by 66).
@@ -263,7 +265,7 @@ const quote = quoteHref.startsWith('#') ? quoteHref : href(quoteHref);
     }
   }
 
-  @media (min-width: 68rem) {
+  @media (min-width: 80rem) {
     .hdr__nav {
       display: block;
     }

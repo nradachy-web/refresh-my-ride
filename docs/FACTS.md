@@ -131,6 +131,18 @@ or biohazards, always approved before work begins.
   summer); a maintenance detail every one to three months for kids, pets or a
   long commute.
 
+## Paint protection film (added 2026-10-14)
+
+- Offered. Nick asked for a PPF ad group on 2026-10-14 after meeting Josh, his
+  quote form lists PPF, and his own ceramic page says "If rock chips on the
+  front end are your main concern, that's what paint protection film is for."
+- Nothing else is known: not the film brand, the warranty, package names,
+  prices or install times. Quote it per vehicle and per panel. Open question 7.
+- What the page says is general and true of any film: clear film over the
+  paint that takes rock chips; it does not repair existing chips; swirls under
+  it stay under it, so correction comes first if wanted; it is installed at the
+  shop in enclosed bays (confirm with Josh); it pairs with a coating.
+
 ## Paint correction (shop only)
 
 Their site has no dedicated page, so stay inside these lines:
@@ -156,8 +168,10 @@ Their site has no dedicated page, so stay inside these lines:
 - Any ceramic coating price, "from" or otherwise.
 - "Same day" for ceramic coating. Any guarantee. Any ranking or superlative
   ("best", "#1", "top rated", "premier", "award winning").
-- Paint protection film, vinyl wrap, headlight restoration, dent repair, wheel
-  repair, engine bay or boat work as services. They do not list them.
+- Vinyl wrap, headlight restoration, dent repair, wheel repair, engine bay or
+  boat work as services. They do not list them.
+- For paint protection film: any film brand, warranty, "self-healing", package
+  name, price or install time. None of it is confirmed yet.
 - Brand names other than Geoshield. No coating brand is named on their site.
 - "IDA certified" or any named certification. Their words are "certified
   technicians" and "ceramic coating certified". Use those and nothing more.

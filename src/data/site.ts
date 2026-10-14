@@ -89,11 +89,11 @@ export const TRACKING = {
   ads: 'AW-17086544723',
   // The one conversion action their site fires today: a tap on the phone number.
   phoneTapConversion: 'AW-17086544723/8kitCKryj_gcENP2v9M_',
-  // Empty until a "Quote form" conversion exists in the Ads account that runs the
-  // campaigns. Paste its send_to value ("AW-.../...") here and it fires on the
-  // thank-you page. See docs/LAUNCH.md: the Google tag above is linked to a
-  // second Ads account, so confirm which account first.
-  leadConversion: '',
+  // "Lead Form - Thank You Page" in his Ads account 9277490191, whose conversion
+  // tracking id is 17086544723 (read through the API on 2026-10-14). It is a
+  // primary conversion and the old WordPress thank-you page fires this exact
+  // send_to, so the count carries straight over at cutover.
+  leadConversion: 'AW-17086544723/dXDNCPyByuscENP2v9M_',
 } as const;
 
 export const FINANCING = 'Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.';

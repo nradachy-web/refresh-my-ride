@@ -25,7 +25,8 @@ Heights, Rochester Hills, Troy, Birmingham and West Bloomfield under
 
 ## New addresses
 
-- `/paint-correction/`, `/mobile-detailing/`, `/reviews/`, `/service-areas/`
+- `/paint-correction/`, `/paint-protection-film/` (added 2026-10-14), `/mobile-detailing/`,
+  `/reviews/`, `/service-areas/`
 - Town hubs: `/service-areas/<town>/` for the nine towns in `src/data/cities.ts`
 - One service in one town: `/<service>-<town>-mi/`, for ceramic coating, window
   tint, car detailing and paint correction in the eight towns other than

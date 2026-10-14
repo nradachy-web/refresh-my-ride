@@ -7,7 +7,7 @@
 import type { PhotoId } from './photos';
 
 export interface Service {
-  id: 'ceramic-coating' | 'window-tint' | 'car-detailing' | 'paint-correction' | 'mobile-detailing';
+  id: 'ceramic-coating' | 'window-tint' | 'car-detailing' | 'paint-correction' | 'paint-protection-film' | 'mobile-detailing';
   name: string;
   /** Lower case, for use mid sentence. */
   noun: string;
@@ -70,6 +70,18 @@ export const SERVICES: Service[] = [
     photo: 'team-polishing-mercury',
     teaser: 'Swirls, light scratches and oxidation machine polished out, on its own or before a coating.',
     fact: 'From $344.99',
+    where: 'shop',
+  },
+  {
+    id: 'paint-protection-film',
+    name: 'Paint protection film',
+    noun: 'paint protection film',
+    nav: 'PPF',
+    path: '/paint-protection-film/',
+    townSlug: '',
+    photo: 'porsche-suv-blue',
+    teaser: 'Clear film on the panels that take the rock chips, quoted for exactly the coverage you want.',
+    fact: 'Quoted per vehicle',
     where: 'shop',
   },
   {

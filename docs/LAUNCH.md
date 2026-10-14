@@ -2,7 +2,7 @@
 
 The preview at https://nradachy-web.github.io/refresh-my-ride/ is hidden from
 search (every page is noindex and robots.txt disallows everything). Nothing
-below has been done. Do it in this order.
+below has been done unless it says so. Do it in this order.
 
 ## Before the switch
 
@@ -16,18 +16,15 @@ below has been done. Do it in this order.
    wants them. The new site passes the Google click ID into the form address.
    The old site tried to and failed, because its script looked for the wrong
    form host. Without the hidden field the value is dropped on arrival.
-4. **Sort out which Google Ads account is which.** His old site's code names
-   two: `AW-17086544723` (written into the page, with the phone tap conversion
-   label) and `AW-17899745818`, which is what his Google tag `GT-TX96W5HG` is
-   actually linked to, along with Analytics property `G-LCQ74N2KFP`. Page views
-   and events go to the second; only the phone tap goes to the first. Find out
-   which account runs the campaigns and put its ID in `TRACKING` in
-   `src/data/site.ts`.
-5. **Add a "Quote form" conversion** in that account and paste its `send_to`
-   value into `TRACKING.leadConversion`. It then fires on the thank-you page
-   (`/thank-you-submission-received/`) beside the `generate_lead` Analytics
-   event. Today the only conversion his setup records is a tap on the phone
-   number, and the new site sends that on touch devices only, once per tap.
+4. **Done 2026-10-14: the Ads account is settled.** The account that runs his
+   campaigns is `9277490191` ("Refresh My Ride", under our manager account).
+   Its conversion tracking id is `17086544723`, the same `AW-17086544723` the
+   page code uses. `AW-17899745818`, which his Google tag `GT-TX96W5HG` is
+   linked to, is not the campaign account.
+5. **Done 2026-10-14: the form conversion is wired.** His account already has
+   "Lead Form - Thank You Page" (primary) and the old WordPress thank-you page
+   fires it. Its `send_to` is now `TRACKING.leadConversion`, so the new
+   thank-you page fires the same action, once per visit.
 6. **In his GoHighLevel form, fix the footer links.** "Privacy Policy" and
    "Terms Of Service" under the text-message consent point at
    `refreshmyride.xyz`, which redirects to the home page. Point Privacy Policy
@@ -64,9 +61,13 @@ below has been done. Do it in this order.
     to run on pages with a hero photo (see the end of `docs/DESIGN.md`).
 15. In Google Ads, confirm the tag is firing (Tag Assistant) and that final
     URLs resolve. The addresses his ads use today all still exist.
+    Then run the cutover step of the new Search campaign (see
+    `docs/ADS.md`): it points the paint correction and PPF ads at their new
+    pages, gives the town keywords their town pages and turns those two ad
+    groups on.
 16. Submit `https://refreshmyrideauto.com/sitemap.xml` in Search Console.
-17. Point new ad groups at the town pages: an ad for "ceramic coating troy mi"
-    lands on `/ceramic-coating-troy-mi/`.
+17. Town keywords land on town pages ("ceramic coating troy" lands on
+    `/ceramic-coating-troy-mi/`). The cutover step in item 15 does this.
 
 ## Worth knowing about measurement
 
