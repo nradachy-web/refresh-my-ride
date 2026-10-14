@@ -113,6 +113,13 @@ These are why the pages score 100. Do not break them.
   scroll or key press, and the quote form loads when the visitor has touched
   the page and the form is near the screen.
 - No web fonts for icons, no carousels, no video on load, no scroll-linked animation.
+- One exception, asked for by Josh on 2026-10-14: the home hero crossfades six
+  photos of finished cars (`HERO_SLIDES` in `src/pages/index.astro`). Only the
+  first is in the page load and preloaded. The other five sit in a
+  `<template>` and are fetched on the visitor's first touch, scroll or key
+  press, or four seconds after the page has loaded, so a speed test measures
+  the single photo. A pause button and dots appear once it starts. Reduced
+  motion or data saving: no slideshow.
 
 Measured on the preview on 2026-10-13 with Google PageSpeed Insights
 (Lighthouse 13.5), more than 250 runs: Accessibility 100 and Best Practices 100

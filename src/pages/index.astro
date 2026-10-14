@@ -36,7 +36,11 @@ import { faqSchema } from '../lib/schema';
 const TITLE = `Auto Detailing & Ceramic Coating in ${BRAND.city}, MI`;
 const DESCRIPTION = `Ceramic coating, window tint, paint correction and auto detailing in ${BRAND.city}, MI. Shop, mobile and valet service. ${RATING.value} on Google. Free quotes.`;
 
-const hero = await heroImage('josh-polishing-corvette');
+// The hero is a slideshow of their best finished cars (Josh asked, 2026-10-14).
+// The first one is preloaded and measured; the rest load after the page.
+const HERO_SLIDES: PhotoId[] = ['corvette-purple-shop', 'cadillac-sedan-orange', 'corvette-gray-garage', 'hummer-pickup', 'corvette-black-rear', 'porsche-suv-blue'];
+const hero = await heroImage(HERO_SLIDES[0]);
+const heroMore = await Promise.all(HERO_SLIDES.slice(1).map((id) => heroImage(id)));
 
 const FACTS = [
   { value: RATING.value, label: `on Google, from ${RATING.countLabel} reviews` },
@@ -91,6 +95,7 @@ const FAQ = [
   <Hero
     size="home"
     image={hero}
+    slides={heroMore}
     kicker={`Ceramic coating, window tint and auto detailing in ${BRAND.city}, MI`}
     title="Showroom finish. **Every single time.**"
     lede={`${BRAND.name} is a ceramic coating, window tint and detailing shop on Louise Ave, serving Macomb and Oakland counties at our shop, in your driveway, or with pick-up and drop-off valet.`}
