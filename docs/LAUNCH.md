@@ -46,10 +46,17 @@ below has been done unless it says so. Do it in this order.
 
 ## The switch
 
-8. and 9. **Staged 2026-10-14 on the `go-live` branch:** `deploy.yml` without
-   `BASE_PATH` and `public/CNAME` with `refreshmyrideauto.com`. Merge it into
-   main right after the DNS change in item 10, not before: until the domain is
-   set, a production build breaks the github.io preview.
+**Done 2026-10-14, about 5pm ET.** Josh changed the records at Porkbun (apex
+`A` to the four GitHub Pages addresses, `www` CNAME to
+`nradachy-web.github.io`; MX, TXT, `go` and `_dmarc` untouched, checked on
+Porkbun's servers, 1.1.1.1 and 8.8.8.8). The `go-live` branch was merged
+(`26da8ab`), the custom domain set in Pages, the certificate approved for the
+apex and `www` (expires 2027-01-12, GitHub renews it) and Enforce HTTPS turned
+on. `www` and plain http forward to `https://refreshmyrideauto.com/`.
+
+For the record, the steps were:
+
+8. and 9. `deploy.yml` without `BASE_PATH`, and `public/CNAME` with the domain.
 10. DNS, web records only: apex `A` records to 185.199.108.153,
    185.199.109.153, 185.199.110.153 and 185.199.111.153, and `www` as a `CNAME`
    to `nradachy-web.github.io`. Leave MX, TXT and the `go` record alone.
@@ -57,6 +64,15 @@ below has been done unless it says so. Do it in this order.
    settings (DNS first, then the domain: the other order stalls the
    certificate). Turn on Enforce HTTPS when it is offered.
 12. Take WordPress offline only after the new site answers on the domain.
+    The domain no longer reaches it (it was at 75.98.175.105). Keep his
+    hosting until he decides; nothing on the new site depends on it.
+
+**Note:** for about two minutes after the domain was set, before the
+production deploy finished, the domain served the preview build, whose logo
+and fonts live under `/refresh-my-ride/`. Pages cached in that window show a
+missing logo for up to 10 minutes (the Pages cache time). A hard refresh fixes
+it. Next time, push the production build first and set the domain after the
+deploy has finished.
 
 ## After the switch
 
@@ -66,9 +82,12 @@ below has been done unless it says so. Do it in this order.
     page and a town page, phone and desktop. Record the scores with the date.
     Run each a few times: phone Performance moves between 98 and 100 from run
     to run on pages with a hero photo (see the end of `docs/DESIGN.md`).
-15. In Google Ads, confirm the tag is firing (Tag Assistant) and that final
-    URLs resolve. The addresses his ads use today all still exist.
-    Then run the cutover step of the new Search campaign (see
+15. **Done 2026-10-14.** On the live domain the tag loads on first touch,
+    GA4 `G-LCQ74N2KFP` gets the page view, and the thank-you page, reached
+    through the form's own redirect address, sends "Lead Form - Thank You
+    Page" to 17086544723 (the Ads destination is fetched when the event is
+    sent; one library load is enough). The cutover step was applied the same
+    day. Original wording: confirm the tag is firing and run the cutover step of the new Search campaign (see
     `docs/ADS.md`): it points the paint correction and PPF ads at their new
     pages, gives the town keywords their town pages and turns those two ad
     groups on.

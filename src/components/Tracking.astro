@@ -69,6 +69,9 @@ import { TRACKING } from '../data/site';
     function load() {
       if (loaded) return;
       loaded = true;
+      // One library load is enough: the Ads account's destination is fetched
+      // the first time an event is sent to it (checked on the live site
+      // 2026-10-14, a conversion reached 17086544723 this way).
       var s = document.createElement('script');
       s.async = true;
       s.src = 'https://www.googletagmanager.com/gtag/js?id=' + T.googleTag;

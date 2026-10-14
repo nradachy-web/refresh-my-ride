@@ -49,7 +49,14 @@ the same $40 a day:
    Run it once the ads read APPROVED. They did on 2026-10-14 at 1:15pm ET (all
    four ads APPROVED, all 127 keywords approved, 16 of them rarely served for
    low volume).
-2. **Cutover:** after the new site answers on the domain (`docs/LAUNCH.md`),
+   On 2026-10-14 at 4:40pm ET Nick paused both old campaigns himself in the
+   Ads web interface; the new campaign was still PAUSED after that, so the
+   account was dark until it is enabled.
+2. **Cutover, applied 2026-10-14 about 5:20pm ET** (`cutover-applied.json`):
+   all four ad groups ENABLED, the paint correction and PPF ads re-entered
+   review with their new final URLs, 24 town keywords got town pages, and the
+   Paint Correction and Paint Protection Film sitelinks were added (8 in all).
+   Original step: after the new site answers on the domain (`docs/LAUNCH.md`),
    `cutover.py --apply` checks that every address it needs is the new site,
    then points the paint correction and PPF ads at their pages, gives the 24
    town keywords their town pages, adds two sitelinks and turns the two
