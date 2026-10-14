@@ -78,7 +78,12 @@ deploy has finished.
 
 13. Load the home page, one service page and one town page on a phone. Tap the
     phone number, open the form, check the menu.
-14. Run PageSpeed Insights on the real domain for the home page, a service
+14. **Done 2026-10-14 evening, PageSpeed Insights API on the live domain:** the
+    home page, `/ceramic-coating/`, `/ceramic-coating-troy-mi/` and
+    `/paint-protection-film/`, 3 phone and 2 desktop runs each. All 20 runs
+    scored 100 for Performance, Accessibility, Best Practices and SEO (phone
+    LCP at most 1.6 s, TBT 0, CLS 0). Quote it with that date and that set of
+    pages. Original step: run PageSpeed Insights on the real domain for the home page, a service
     page and a town page, phone and desktop. Record the scores with the date.
     Run each a few times: phone Performance moves between 98 and 100 from run
     to run on pages with a hero photo (see the end of `docs/DESIGN.md`).
