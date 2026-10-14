@@ -90,6 +90,9 @@ made that is his to make.
     depends on the parking and offer valet when no spot works.
 23. **Mobile and valet hours, and bad weather.** Nothing is published. The
     pages give shop hours only.
+24. **Motorcycles.** The photos he sent on 2026-10-14 include two motorcycles
+    in the shop bay. No page offers motorcycle detailing, so they are not on
+    the site. If he does bikes, what services and what prices?
 
 ## Things on the town pages that will age
 
