@@ -62,6 +62,7 @@ import { TRACKING } from '../data/site';
     gtag('js', new Date());
     gtag('config', T.googleTag);
     gtag('config', T.ads);
+    if (T.ga4) gtag('config', T.ga4);
 
     var loaded = false;
     var wake = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];

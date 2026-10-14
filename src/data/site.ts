@@ -94,6 +94,10 @@ export const TRACKING = {
   // primary conversion and the old WordPress thank-you page fires this exact
   // send_to, so the count carries straight over at cutover.
   leadConversion: 'AW-17086544723/dXDNCPyByuscENP2v9M_',
+  // googleTag above already sends to the GA4 property G-LCQ74N2KFP (read from
+  // the tag on 2026-10-14). A second GA4 property, if one is made for us,
+  // goes here as its G- measurement ID. Empty: nothing extra is sent.
+  ga4: '',
 } as const;
 
 export const FINANCING = 'Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.';
