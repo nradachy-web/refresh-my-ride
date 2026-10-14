@@ -21,7 +21,7 @@ const cols = services.length === 4 ? 'c4' : 'c3';
       <li>
         <a class="svc__card card" href={href(paths[s.id] ?? s.path)}>
           <div class="svc__photo">
-            <Photo id={s.photo} ratio={4 / 3} widths={[240, 360, 540, 720]} sizes="(min-width: 60rem) 25vw, (min-width: 40rem) 50vw, 120px" alt="" />
+            <Photo id={s.photo} ratio={4 / 3} widths={[240, 360, 540, 720]} sizes="(min-width: 60rem) 25vw, (min-width: 40rem) 50vw, 320px" alt="" />
           </div>
           <div class="svc__body">
             <p class="svc__fact fine">{s.fact}</p>
@@ -93,7 +93,9 @@ const cols = services.length === 4 ? 'c4' : 'c3';
     padding-top: 0.35rem;
   }
 
-  /* on a phone the cards lie on their side so four fit without a long scroll */
+  /* on a phone the cards lie on their side so four fit without a long scroll.
+     The photo is then a tall strip cut from the 4:3 image, which is why
+     `sizes` asks for a 320px file there: 120px left it blurry. */
   @media (max-width: 39.99rem) {
     .svc__card {
       grid-template-rows: none;
