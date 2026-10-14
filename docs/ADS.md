@@ -46,7 +46,9 @@ the same $40 a day:
 
 1. **Go:** `switch.py --apply` pauses both old campaigns and enables the new one
    in one request, so the account is never dark and never double-spending.
-   Run it once the ads read APPROVED.
+   Run it once the ads read APPROVED. They did on 2026-10-14 at 1:15pm ET (all
+   four ads APPROVED, all 127 keywords approved, 16 of them rarely served for
+   low volume).
 2. **Cutover:** after the new site answers on the domain (`docs/LAUNCH.md`),
    `cutover.py --apply` checks that every address it needs is the new site,
    then points the paint correction and PPF ads at their pages, gives the 24
