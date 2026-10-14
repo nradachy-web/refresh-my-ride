@@ -38,11 +38,18 @@ below has been done unless it says so. Do it in this order.
 7. Get access to wherever the domain's DNS is managed, and note every existing
    record first. Mail for `info@refreshmyrideauto.com` and the
    `go.refreshmyrideauto.com` subdomain (his forms) must not be touched.
+   Read from public DNS on 2026-10-14: registrar and DNS at **Porkbun**. Apex
+   `A` 75.98.175.105 (the WordPress host), `www` CNAME to the apex, `MX` 1
+   smtp.google.com (Google mail), `TXT` google-site-verification and an SPF
+   record, `go` CNAME brand.ludicrous.cloud (GoHighLevel), `_dmarc` TXT. Only
+   the apex `A` and the `www` record change.
 
 ## The switch
 
-8. In `.github/workflows/deploy.yml`: delete the `env:` and `BASE_PATH` lines.
-9. Add `public/CNAME` containing `refreshmyrideauto.com`. Commit and push.
+8. and 9. **Staged 2026-10-14 on the `go-live` branch:** `deploy.yml` without
+   `BASE_PATH` and `public/CNAME` with `refreshmyrideauto.com`. Merge it into
+   main right after the DNS change in item 10, not before: until the domain is
+   set, a production build breaks the github.io preview.
 10. DNS, web records only: apex `A` records to 185.199.108.153,
    185.199.109.153, 185.199.110.153 and 185.199.111.153, and `www` as a `CNAME`
    to `nradachy-web.github.io`. Leave MX, TXT and the `go` record alone.
