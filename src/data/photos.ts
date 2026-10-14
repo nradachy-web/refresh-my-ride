@@ -55,6 +55,7 @@ export const PHOTOS = {
   'mustang-black-bay': { alt: 'Black Ford Mustang parked in a bright white bay inside the shop', caption: 'Mustang, inside the shop' },
   'mustang-foam-wash': { alt: 'A Refresh My Ride technician foam washing a black Mustang', caption: 'Foam wash on a Mustang' },
   'interior-jeep-red': { alt: 'Clean Jeep interior with red leather seats, seen through the open driver door', caption: 'Jeep interior' },
+  'interior-bentley-red': { alt: 'Detailed Bentley interior with a suede steering wheel, red leather trim and a quilted floor mat, seen through the open door in the shop', caption: 'Bentley interior' },
   'tech-polishing-white-car': { alt: 'A Refresh My Ride technician in a branded shirt machine polishing a white car', caption: 'On the job' },
   // mobile and valet
   'mobile-van': { alt: 'The white Refresh My Ride mobile detailing van at a customer’s home, beside a sign reading Auto detailing in progress', caption: 'The mobile van' },

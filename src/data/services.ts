@@ -55,7 +55,7 @@ export const SERVICES: Service[] = [
     nav: 'Detailing',
     path: '/car-detailing-services-clinton-township-mi/',
     townSlug: 'car-detailing',
-    photo: 'mustang-foam-wash',
+    photo: 'interior-bentley-red',
     teaser: 'Interior, exterior and full details with clear package pricing, at the shop, in your driveway or by valet.',
     fact: 'From $139.99',
     where: 'shop or mobile',

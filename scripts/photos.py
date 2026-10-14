@@ -61,6 +61,8 @@ PHOTOS = {
     "mustang-foam-wash": ("2026_10_josh_IMG_9055.jpg", (0, 0.15, 1, 0.75)),
     "interior-jeep-red": ("2026_10_josh_IMG_4337.JPG", (0, 0.25, 1, 0.95)),
     "tech-polishing-white-car": ("2026_10_josh_e.jpg", (0, 0.06, 1, 0.9)),
+    # sent to Nick by text on 2026-10-14; framed on the wheel, dash and console
+    "interior-bentley-red": ("2026_10_josh_IMG_5983.jpeg", (0, 0.18, 1, 0.74)),
     # mobile and valet. The yard sign carries an old phone number: the van crop keeps
     # only the sign's heading ("Auto detailing in progress"), the BMW crop loses the sign.
     "mobile-van": ("2026_09_IMG_1045-scaled.jpg", (0.02, 0.22, 0.98, 0.562)),
