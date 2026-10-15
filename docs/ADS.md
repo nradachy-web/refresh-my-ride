@@ -85,6 +85,31 @@ and readback: `~/ads-fix-2026-10-15/refresh-my-ride/` (`change.py`, `readback.py
   Conversions will likely shift spend toward detailing, which is cheaper per
   click; watch whether ceramic and tint still get enough.
 
+## Tune-up after the first day (2026-10-15)
+
+`tune.py` and `route.py` in the same folder:
+
+- 8 phrase negatives from the first day's search terms: competitor names
+  (shaders, b4 tintz, spotlight tint), mobile tint (tint is shop work: mobile
+  tint, mobile tinting, mobile window tint), powder coating, car wrap. "mobile
+  window tinting" was left off because one of his past searches with it
+  converted.
+- The account's "RMR CLINTON TWP" location group (only the Clinton Township
+  listing) attached to the campaign, as his old Performance Max had it. Without
+  it the ads could show his other Business Profile, "Refresh My Ride Mobile
+  Detailing" at 145 S Livernois Rd, Rochester Hills.
+- Ad group negatives detailing, detailer, detailers, detail in Ceramic Coating,
+  Window Tinting and Paint Correction, so detailing searches reach the
+  detailing ad and page (on day one the ceramic broad keyword was catching them).
+- Checked and fine: Google search only, AI Max off, automatically created text
+  off, account and campaign goals match, call reporting and auto-tagging on,
+  enhanced conversions for leads on, the quote form forwards to
+  `/thank-you-submission-received` through GoHighLevel's embed script.
+- Open: about three quarters of eligible searches are lost to budget at $40 a
+  day; calls from the website (the phone number on the page, CallRail for ad
+  visitors) do not reach Google as conversions, so bidding learns only from
+  forms and the ads' own call button.
+
 ## Call tracking (CallRail, set up 2026-10-15)
 
 - CallRail company "Refresh My Ride" (`COM01a13dbbd4fb75558e6671d047c12374`),
