@@ -51,7 +51,8 @@ the same $40 a day:
    low volume).
    On 2026-10-14 at 4:40pm ET Nick paused both old campaigns himself in the
    Ads web interface; the new campaign was still PAUSED after that, so the
-   account was dark until it is enabled.
+   account was dark until it is enabled. **Done:** Nick enabled the new
+   campaign in the web interface at 6:16pm ET the same day (change history).
 2. **Cutover, applied 2026-10-14 about 5:20pm ET** (`cutover-applied.json`):
    all four ad groups ENABLED, the paint correction and PPF ads re-entered
    review with their new final URLs, 24 town keywords got town pages, and the
@@ -61,6 +62,22 @@ the same $40 a day:
    then points the paint correction and PPF ads at their pages, gives the 24
    town keywords their town pages, adds two sitelinks and turns the two
    ad groups on.
+
+## Call tracking (CallRail, set up 2026-10-15)
+
+- CallRail company "Refresh My Ride" (`COM01a13dbbd4fb75558e6671d047c12374`),
+  one source tracker "Website - calls only": (586) 225-8361, shown only to
+  visitors from Google paid search, rings (586) 400-1303. Recording off. Texts
+  to it forward to the shop line.
+- The site loads CallRail's swap script (`TRACKING.callRail`, see
+  `src/components/Tracking.astro`): at once on an ad visit, otherwise on first
+  touch, so speed tests never load it.
+- Calls reach our reporting portal through a CallRail webhook (integration
+  2714331) and the portal's CallRail sync.
+- Calls from the ads' own call button stay on Google's forwarding number to
+  the shop line, so Google counts those and CallRail counts website calls from
+  ad visitors. CallRail's own Google Ads integration stays off: it would send
+  the same calls to Google a second time.
 
 ## Quality Score, honestly
 

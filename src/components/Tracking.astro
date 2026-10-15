@@ -20,7 +20,15 @@
        for the wrong form address.
 
    The quote form lead is TRACKING.leadConversion in src/data/site.ts, his
-   "Lead Form - Thank You Page" action, and it fires on the thank-you page. */
+   "Lead Form - Thank You Page" action, and it fires on the thank-you page.
+
+   CallRail (TRACKING.callRail) swaps the shop number for a tracking number
+   that rings the same line, for visitors from a Google ad only. It follows the
+   same rule as the tag: an ad visit loads it at once, so the number is swapped
+   before anyone can tap it, and so does a return visit by someone CallRail
+   has seen before (its calltrk_landing cookie), or by someone who came from an
+   ad within 90 days (our own rmr_src cookie). Everyone else gets it on first
+   touch, scroll or key press. */
 import { TRACKING } from '../data/site';
 ---
 
@@ -64,9 +72,20 @@ import { TRACKING } from '../data/site';
     gtag('config', T.ads);
     if (T.ga4) gtag('config', T.ga4);
 
+    var swapping = false;
+    function swap() {
+      if (swapping || !T.callRail) return;
+      swapping = true;
+      var c = document.createElement('script');
+      c.async = true;
+      c.src = T.callRail;
+      document.head.appendChild(c);
+    }
+
     var loaded = false;
     var wake = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
     function load() {
+      swap();
       if (loaded) return;
       loaded = true;
       // One library load is enough: the Ads account's destination is fetched
@@ -86,6 +105,8 @@ import { TRACKING } from '../data/site';
 
     var isLead = document.documentElement.hasAttribute('data-lead');
     if (fromAd || isLead) load();
+    var cameFromAd = kept && (kept.gclid || kept.gbraid || kept.wbraid);
+    if (cameFromAd || /(?:^|;\s*)calltrk_landing=/.test(document.cookie)) swap();
 
     var touch = w.matchMedia && w.matchMedia('(pointer: coarse)').matches;
     document.addEventListener(

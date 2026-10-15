@@ -98,6 +98,10 @@ export const TRACKING = {
   // the tag on 2026-10-14). A second GA4 property, if one is made for us,
   // goes here as its G- measurement ID. Empty: nothing extra is sent.
   ga4: '',
+  // CallRail company "Refresh My Ride" (set up 2026-10-15). One tracking
+  // number, (586) 225-8361, shown only to visitors from Google paid search; it
+  // rings the shop line, (586) 400-1303. Everyone else sees the shop number.
+  callRail: 'https://cdn.callrail.com/companies/443790158/269d2dc6e115335c4099/12/swap.js',
 } as const;
 
 export const FINANCING = 'Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.';
