@@ -63,6 +63,28 @@ the same $40 a day:
    town keywords their town pages, adds two sitelinks and turns the two
    ad groups on.
 
+## Auto Detailing added, PPF paused (2026-10-15)
+
+Josh asked by text at 2:30pm for a car detailing ad group "mostly for volume",
+and to pause PPF "until we have the capacity and pricing for PPF fully". Script
+and readback: `~/ads-fix-2026-10-15/refresh-my-ride/` (`change.py`, `readback.py`).
+
+- New ad group **Auto Detailing**, ENABLED, landing on
+  `/car-detailing-services-clinton-township-mi/`: 55 keywords taken from his own
+  converting detailing searches (25 exact, 27 phrase, 3 broad "near me"); the
+  18 town keywords land on their `/car-detailing-<town>-mi/` pages and the 7
+  mobile keywords on `/mobile-detailing/`. One responsive search ad (15
+  headlines, 4 descriptions, from `docs/FACTS.md`) and a price list of five
+  packages, Wash & Seal $139.99 to Signature Refresh $319.99.
+- Auto Detailing and Mobile Detailing sitelinks added; the Services snippet now
+  lists Interior Detailing instead of Paint Protection Film.
+- **Paint Protection Film (PPF)** ad group and its sitelink PAUSED. To bring PPF
+  back, enable both and put Paint Protection Film back in the snippet.
+- Why it matters: from June 2025 his detailing searches carried about $5,300 of
+  $6,700 spend and about 177 of 210 conversions. At $40 a day, Maximize
+  Conversions will likely shift spend toward detailing, which is cheaper per
+  click; watch whether ceramic and tint still get enough.
+
 ## Call tracking (CallRail, set up 2026-10-15)
 
 - CallRail company "Refresh My Ride" (`COM01a13dbbd4fb75558e6671d047c12374`),
