@@ -53,7 +53,7 @@ const src = `${FORM.origin}/widget/form/${formId}`;
   </div>
 </div>
 
-<script is:inline define:vars={{ origin: FORM.origin }}>
+<script is:inline define:vars={{ origin: FORM.origin, rsvp: FORM.rsvpId }}>
   (function () {
     var boxes = document.querySelectorAll('[data-ghl]:not([data-armed])');
     if (!boxes.length) return;
@@ -83,6 +83,13 @@ const src = `${FORM.origin}/widget/form/${formId}`;
       if (box.getAttribute('data-done')) return;
       box.setAttribute('data-done', '1');
       var id = box.getAttribute('data-form-id');
+      // A quote form on screen clears an earlier RSVP mark (see note() below), so a
+      // quote sent after an RSVP still counts even if the focus was not caught.
+      if (id !== rsvp) {
+        try {
+          if (sessionStorage.getItem('rmr_form') === rsvp) sessionStorage.removeItem('rmr_form');
+        } catch (e) {}
+      }
       var extra = params();
       var f = document.createElement('iframe');
       f.src = box.getAttribute('data-src') + (extra ? '?' + extra : '');
@@ -139,6 +146,31 @@ const src = `${FORM.origin}/widget/form/${formId}`;
     });
     if (location.hash === '#quote' || location.hash === '#rsvp') arm();
     addEventListener('hashchange', arm);
+
+    // Which form the visitor last worked in. The quote form and the RSVP form
+    // both send people to the same thank-you page (the redirect is set in their
+    // GoHighLevel), which reads this so an RSVP is not counted as a quote lead.
+    // Focus moves into a form's frame without telling this page, so it is read
+    // from activeElement while the page is out of focus, which also catches a
+    // move straight from one form to the other.
+    var watching = 0;
+    function note() {
+      var a = document.activeElement;
+      var id = a && a.tagName === 'IFRAME' ? a.getAttribute('data-form-id') : null;
+      if (id) {
+        try {
+          sessionStorage.setItem('rmr_form', id);
+        } catch (e) {}
+      }
+    }
+    addEventListener('blur', function () {
+      setTimeout(note, 0);
+      clearInterval(watching);
+      watching = setInterval(note, 500);
+    });
+    addEventListener('focus', function () {
+      clearInterval(watching);
+    });
   })();
 </script>
 

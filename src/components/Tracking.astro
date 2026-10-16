@@ -29,10 +29,10 @@
    has seen before (its calltrk_landing cookie), or by someone who came from an
    ad within 90 days (our own rmr_src cookie). Everyone else gets it on first
    touch, scroll or key press. */
-import { TRACKING } from '../data/site';
+import { FORM, TRACKING } from '../data/site';
 ---
 
-<script is:inline define:vars={{ T: TRACKING }}>
+<script is:inline define:vars={{ T: TRACKING, RSVP: FORM.rsvpId }}>
   (function () {
     var w = window;
     var host = location.hostname.replace(/^www\./, '');
@@ -131,13 +131,22 @@ import { TRACKING } from '../data/site';
     );
 
     // The thank-you page: count the lead once per visit, even if the page is reloaded.
+    // Their grand opening RSVP form redirects here too; when the RSVP was the last
+    // form used (QuoteForm.astro notes it) it is not a quote lead, so it goes to
+    // analytics only. If the form is unknown, the lead is counted.
     if (isLead) {
       var seen = false;
+      var form = null;
       try {
         seen = sessionStorage.getItem('rmr_lead') === '1';
-        sessionStorage.setItem('rmr_lead', '1');
+        form = sessionStorage.getItem('rmr_form');
       } catch (e) {}
-      if (!seen) {
+      if (form && form === RSVP) {
+        gtag('event', 'rsvp', { method: 'grand_opening' });
+      } else if (!seen) {
+        try {
+          sessionStorage.setItem('rmr_lead', '1');
+        } catch (e) {}
         gtag('event', 'generate_lead', { method: 'quote_form' });
         if (T.leadConversion) gtag('event', 'conversion', { send_to: T.leadConversion });
       }
