@@ -46,7 +46,9 @@ made that is his to make.
 9. **Privacy policy.** Carried over word for word, with these edits: cookies
    only WordPress set were removed, Calendly and GitHub were added to the list
    of providers (and CallRail with its cookies on 2026-10-15, when call
-   tracking went on the site), dashes became commas, and a dated line under "Changes to this
+   tracking went on the site, and Modern Apex with the rmr_src cookie on
+   2026-10-17, when each quote request started being copied to his Apex
+   dashboard), dashes became commas, and a dated line under "Changes to this
    policy" records that. The effective date still reads September 19, 2026:
    he should set it to the launch date. He should read it once.
 10. **New pages he did not have:** Paint correction, Mobile detailing and valet,

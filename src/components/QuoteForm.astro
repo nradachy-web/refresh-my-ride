@@ -5,8 +5,9 @@
    getting close to the screen. The space is reserved, so nothing jumps.
 
    The Google click ID and any UTM tags from the landing URL are passed into the
-   form address so their CRM can tie a lead back to the ad. */
-import { BRAND, FORM } from '../data/site';
+   form address so their CRM can tie a lead back to the ad. A sent request is
+   also copied to Modern Apex's lead ledger (see the end of the script). */
+import { BRAND, FORM, INTAKE, TRACKING } from '../data/site';
 
 interface Props {
   formId?: string;
@@ -53,7 +54,7 @@ const src = `${FORM.origin}/widget/form/${formId}`;
   </div>
 </div>
 
-<script is:inline define:vars={{ origin: FORM.origin, rsvp: FORM.rsvpId }}>
+<script is:inline define:vars={{ origin: FORM.origin, rsvp: FORM.rsvpId, cf: FORM.fields, intake: INTAKE, host: TRACKING.productionHost }}>
   (function () {
     var boxes = document.querySelectorAll('[data-ghl]:not([data-armed])');
     if (!boxes.length) return;
@@ -61,21 +62,36 @@ const src = `${FORM.origin}/widget/form/${formId}`;
       b.setAttribute('data-armed', '');
     });
 
+    var KEYS = ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+
     // The click ID and campaign tags, from this page's address or from the
     // cookie Tracking.astro keeps, so a visitor who browsed first still carries them.
-    function params() {
-      var out = [];
+    function source() {
+      var out = {};
       try {
         var q = new URLSearchParams(location.search);
         var kept = {};
         var m = document.cookie.match(/(?:^|;\s*)rmr_src=([^;]+)/);
         if (m) kept = JSON.parse(decodeURIComponent(m[1])) || {};
-        ['gclid', 'gbraid', 'wbraid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'].forEach(function (k) {
+        KEYS.forEach(function (k) {
           var v = q.get(k) || kept[k];
-          if (v) out.push(k + '=' + encodeURIComponent(v));
+          if (v) out[k] = v;
         });
+        if (kept.lp) out.lp = kept.lp;
+        if (kept.ref) out.ref = kept.ref;
       } catch (e) {}
-      return out.join('&');
+      return out;
+    }
+
+    function params() {
+      var s = source();
+      return KEYS.filter(function (k) {
+        return s[k];
+      })
+        .map(function (k) {
+          return k + '=' + encodeURIComponent(s[k]);
+        })
+        .join('&');
     }
 
     var scripted = false;
@@ -171,6 +187,99 @@ const src = `${FORM.origin}/widget/form/${formId}`;
     addEventListener('focus', function () {
       clearInterval(watching);
     });
+
+    // A sent request. When a form goes through, GoHighLevel's form tells the
+    // page it sits on and hands over the contact it just saved (the
+    // "set-sticky-contacts" message its own embed script stores to prefill
+    // later forms; read from its form code on 2026-10-17). That says for
+    // certain which form was sent, which the thank-you page uses to keep RSVPs
+    // out of the quote count, and a quote request is copied to Modern Apex's
+    // lead ledger with the ad it came from. Nothing to set up in GoHighLevel.
+    // One lead per contact per day, the same key the ledger's GoHighLevel
+    // webhook uses, so the two can never count one request twice. Off the
+    // production domain the copy is marked a test and never counts.
+    function text(v) {
+      if (Array.isArray(v)) v = v.join(', ');
+      return typeof v === 'string' || typeof v === 'number' ? String(v).trim() : '';
+    }
+    function sent(ev) {
+      var d = ev.data;
+      if (ev.origin !== origin || !Array.isArray(d) || d[0] !== 'set-sticky-contacts' || d[1] !== '_ud') return;
+      var id = null;
+      document.querySelectorAll('iframe[data-form-id]').forEach(function (f) {
+        if (f.contentWindow === ev.source) id = f.getAttribute('data-form-id');
+      });
+      if (!id) return;
+      try {
+        sessionStorage.setItem('rmr_form', id);
+      } catch (e) {}
+      if (id === rsvp || !intake.token) return;
+
+      var c = {};
+      try {
+        c = JSON.parse(d[2]) || {};
+      } catch (e) {}
+      var phone = text(c.phone);
+      var email = text(c.email);
+      if (!phone && !email) return;
+      // Custom fields arrive keyed by id, or as {id, value} pairs, at the top
+      // level or under customFields.
+      var custom = {};
+      function read(o) {
+        Object.keys(o).forEach(function (k) {
+          var v = o[k];
+          if (v && typeof v === 'object' && !Array.isArray(v) && v.id) custom[v.id] = v.value != null ? v.value : v.field_value;
+          else custom[k] = v;
+        });
+      }
+      read(c);
+      if (c.customFields && typeof c.customFields === 'object') read(c.customFields);
+      var message = [
+        ['Vehicle', custom[cf.vehicle]],
+        ['Services', custom[cf.services]],
+        ['Notes', custom[cf.notes]],
+      ]
+        .filter(function (r) {
+          return text(r[1]);
+        })
+        .map(function (r) {
+          return r[0] + ': ' + text(r[1]);
+        })
+        .join('\n');
+
+      var who = text(c.customer_id || c.id).replace(/[^A-Za-z0-9]/g, '').slice(0, 40);
+      if (!who) who = 'x' + Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+      var s = source();
+      var gclid = s.gclid || '';
+      if (!gclid) {
+        var aw = document.cookie.match(/(?:^|;\s*)_gcl_aw=GCL\.\d+\.([^;]+)/);
+        if (aw) gclid = decodeURIComponent(aw[1]);
+      }
+      var attribution = { gclid: gclid, gbraid: s.gbraid || '', wbraid: s.wbraid || '', landingPage: s.lp || '', referrer: s.ref || '' };
+      KEYS.slice(3).forEach(function (k) {
+        attribution[k] = s[k] || '';
+      });
+      var body = {
+        token: intake.token,
+        kind: 'form',
+        submissionId: 'ghl:' + who + ':' + new Date().toISOString().slice(0, 10),
+        occurredAt: new Date().toISOString(),
+        page: location.href,
+        fields: { name: text(c.full_name) || text([c.first_name, c.last_name].filter(Boolean).join(' ')), email: email, phone: phone, message: message },
+        attribution: attribution,
+        company: '',
+      };
+      if (location.hostname.replace(/^www\./, '') !== host) body.isTest = true;
+      // Plain text keeps the post free of a CORS preflight, and keepalive lets
+      // it finish while the page moves on to the thank-you page.
+      try {
+        fetch(intake.endpoint, { method: 'POST', body: JSON.stringify(body), keepalive: true }).catch(function () {});
+      } catch (e) {}
+    }
+    if (!window.rmrSent) {
+      window.rmrSent = true;
+      addEventListener('message', sent);
+    }
   })();
 </script>
 

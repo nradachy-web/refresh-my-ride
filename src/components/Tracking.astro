@@ -17,7 +17,8 @@
        tap on the number is a call;
      - the click ID and any UTM tags are kept for 90 days and handed to the
        quote form (QuoteForm.astro). The old script tried to do that but looked
-       for the wrong form address.
+       for the wrong form address. The landing address is kept with them for
+       the copy of each request that goes to Modern Apex's lead ledger.
 
    The quote form lead is TRACKING.leadConversion in src/data/site.ts, his
    "Lead Form - Thank You Page" action, and it fires on the thank-you page.
@@ -54,6 +55,14 @@ import { FORM, TRACKING } from '../data/site';
           if (k === 'gclid' || k === 'gbraid' || k === 'wbraid') fromAd = true;
         }
       });
+      // Where the visit landed and from where, for the lead ledger copy
+      // (QuoteForm.astro). gad_source counts: Safari can strip the click ID
+      // from an ad link but leaves it, so the landing address still shows the ad.
+      if (fresh || q.get('gad_source')) {
+        kept.lp = location.href.split('#')[0].slice(0, 200);
+        kept.ref = (document.referrer || '').slice(0, 200);
+        fresh = true;
+      }
       if (fresh) {
         document.cookie = 'rmr_src=' + encodeURIComponent(JSON.stringify(kept)) + ';max-age=7776000;path=/;SameSite=Lax';
         if (kept.gclid) document.cookie = 'rmr_gclid=' + encodeURIComponent(kept.gclid) + ';max-age=7776000;path=/;SameSite=Lax';

@@ -79,6 +79,23 @@ export const FORM = {
   name: 'SL-Google Ads Form Submission',
   height: 820,
   rsvpId: 'GMaP1MsdGF8tgjpYzzYA',
+  // His custom fields on the quote form, by their GoHighLevel ids (read from
+  // the form on 2026-10-17). They name the parts of a request copied into the
+  // lead ledger below.
+  fields: {
+    vehicle: 'BcF8xXstTndVFdqb4ibj',
+    services: 'EpuUMCxvI4t4K3OswKvn',
+    notes: 'ZeWuZyaaO3Pu0r9gOPrH',
+  },
+} as const;
+
+/* Modern Apex's lead ledger. Every quote request sent on this site is copied
+   there (QuoteForm.astro), so it shows in his Apex dashboard with the ad it came
+   from and his Urable jobs can be matched back to it. The token only lets a
+   site add leads to his ledger; it is meant to sit in the page. */
+export const INTAKE = {
+  endpoint: 'https://app.modernapexstrategies.com/api/lead-intake',
+  token: 'e67e5aa59f709450de2e13e581b27344',
 } as const;
 
 /* Google tags copied from the live site. They only load on the production host
