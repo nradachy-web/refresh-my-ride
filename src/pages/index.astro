@@ -8,6 +8,7 @@
      3  white      shop, driveway or valet: the three ways to get it done
      4  ink        the rating, four facts, three reviews, finished work
      5  paper      before and after, with what every coating includes
+     5b ink        Clinton Township Community TV on the grand opening
      6  white      how it works, and the towns
      7  paper      the questions
      8  ink        the quote form beside the phone
@@ -25,13 +26,14 @@ import BeforeAfter from '../components/BeforeAfter.astro';
 import AreaChips from '../components/AreaChips.astro';
 import Photo from '../components/Photo.astro';
 import Ways from '../components/Ways.astro';
-import { BRAND, RATING } from '../data/site';
+import Video from '../components/Video.astro';
+import { BRAND, RATING, VIDEO } from '../data/site';
 import { SERVICES, TOWN_SERVICES, service } from '../data/services';
 import { review } from '../data/reviews';
 import { photo, type PhotoId } from '../data/photos';
 import { heroImage } from '../lib/hero';
 import { href } from '../lib/paths';
-import { faqSchema } from '../lib/schema';
+import { faqSchema, videoSchema } from '../lib/schema';
 
 const TITLE = `Auto Detailing & Ceramic Coating in ${BRAND.city}, MI`;
 const DESCRIPTION = `Ceramic coating, window tint, paint correction and auto detailing in ${BRAND.city}, MI. Shop, mobile and valet service. ${RATING.value} on Google. Free quotes.`;
@@ -75,7 +77,7 @@ const FAQ = [
   },
   {
     q: 'How much do your services cost?',
-    a: 'Pricing depends on the service and your vehicle. For a coupe or sedan in average condition, interior details are from $184.99, exterior details from $139.99 and full interior and exterior details from $249.99. Window tint is from $99.99 for the front two windows in C2 Carbon film. A one-step paint correction is from $344.99.\n\nCeramic coating and heavier paint correction are quoted for your vehicle, because its size and the condition of the paint decide the work. We confirm exact pricing when you request your quote.',
+    a: 'Pricing depends on the service and your vehicle. For a coupe or sedan in average condition, interior details are from $184.99, exterior details from $139.99 and full interior and exterior details from $249.99. Window tint is from $99.99 for the front two windows in C2 Carbon film. A one-step paint correction is from $389.99.\n\nCeramic coating and heavier paint correction are quoted for your vehicle, because its size and the condition of the paint decide the work. We confirm exact pricing when you request your quote.',
   },
   {
     q: 'Do you offer financing?',
@@ -92,7 +94,7 @@ const FAQ = [
 ];
 ---
 
-<Base title={TITLE} description={DESCRIPTION} path="/" preload={hero.preload} schema={[faqSchema(FAQ)]}>
+<Base title={TITLE} description={DESCRIPTION} path="/" preload={hero.preload} schema={[faqSchema(FAQ), videoSchema()]}>
   <Hero
     size="home"
     image={hero}
@@ -220,6 +222,25 @@ const FAQ = [
         <BeforeAfter pair="silverado" sizes="(min-width: 60rem) 22vw, (min-width: 30rem) 46vw, 92vw" />
         <BeforeAfter pair="miata" sizes="(min-width: 60rem) 22vw, (min-width: 30rem) 46vw, 92vw" />
       </div>
+    </div>
+  </section>
+
+  <section class="band ink" aria-labelledby="tv-h">
+    <div class="wrap two wide-left flip">
+      <div class="stack" style="--gap:1.4rem">
+        <Head
+          id="tv-h"
+          layout="left"
+          eyebrow="Clinton Currents"
+          title="Clinton Township came out for the ribbon cutting."
+          intro={`${VIDEO.channel} featured our October 19 grand opening on its show, Clinton Currents. Press play for the ribbon cutting at the new shop on Louise Ave.`}
+        />
+        <p><a class="arrow" href={href('/about-us/')}>How we got here</a></p>
+      </div>
+      <figure>
+        <Video loc="home" sizes="(min-width: 60rem) 52vw, 100vw" />
+        <figcaption class="cap">{VIDEO.title}. {VIDEO.channel}, October 2026.</figcaption>
+      </figure>
     </div>
   </section>
 

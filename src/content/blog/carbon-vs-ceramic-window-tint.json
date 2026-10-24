@@ -1,0 +1,77 @@
+{
+  "service": "window-tint",
+  "published": "2026-10-23",
+  "meta": {
+    "title": "Carbon vs. Ceramic Window Tint | Refresh My Ride",
+    "description": "Carbon or ceramic window tint: what both Geoshield films share, how they differ on heat, what each costs from $99.99, and which one fits how you drive."
+  },
+  "title": "Carbon or ceramic tint: **what the extra money buys.**",
+  "lede": "We install two films, Geoshield C2 Carbon and Geoshield C2 Ceramic. On the car they look the same. The difference is how much heat they keep out, and that is what the price gap pays for. Here is how to decide.",
+  "photo": "tesla-model-y",
+  "short": [
+    "Both films block 99% of UV, are non-metalized so they never interfere with your phone, GPS or radio, and carry a lifetime warranty against bubbling, peeling and fading.",
+    "C2 Ceramic rejects far more infrared heat, so the cabin stays noticeably cooler on a sunny day.",
+    "The front two windows on a standard coupe or sedan are from $99.99 in carbon and from $149.99 in ceramic."
+  ],
+  "sections": [
+    {
+      "h": "What both films have in common",
+      "list": [
+        "**Geoshield C2 film.** Carbon and ceramic are two films in the same Geoshield C2 line.",
+        "**99% UV blocked.** Your skin, your dashboard and your seats get the same UV protection either way.",
+        "**Non-metalized.** Older metal-based films could interfere with signals. Neither of these does.",
+        "**Lifetime warranty** covering bubbling, peeling and fading.",
+        "**Computer cut.** Patterns are cut on a plotter for your exact year, make and model, so no blade ever touches your glass.",
+        "**Installed indoors** at our shop, where dust and wind cannot get under the film."
+      ]
+    },
+    {
+      "h": "Where they differ: heat",
+      "p": [
+        "Sunlight carries heat as infrared light, which you cannot see. Any tint darkens the glass and cuts glare, but darkness alone is not what keeps a car cool. Rejecting infrared is.",
+        "That is the job ceramic film is built for. C2 Ceramic rejects far more infrared heat than C2 Carbon, so on a sunny day the cabin heats up less, the air conditioning has less to do, and the seats and steering wheel are not as hot when you get in. It is also why a front windshield is done in ceramic film only."
+      ]
+    },
+    {
+      "h": "What each one costs",
+      "table": {
+        "head": ["Windows", "C2 Carbon", "C2 Ceramic"],
+        "rows": [
+          ["Front 2 windows", "From $99.99", "From $149.99"],
+          ["Full sides", "From $199.99", "From $299.99"],
+          ["Full sides and rear glass", "From $299.99", "From $399.99"],
+          ["Front windshield", "Not offered", "From $175.00"]
+        ],
+        "note": "From prices for a standard coupe or sedan. SUVs and trucks are quoted by vehicle, and any adjustment is approved before work begins."
+      },
+      "after": [
+        "Removing old tint is from $50 per area, and it is 50% off when we install a full-vehicle tint on that visit. Rear defroster lines are protected during removal."
+      ]
+    },
+    {
+      "h": "Which one to pick",
+      "list": [
+        "**Pick carbon** if you want the look, the privacy and the UV protection at the lower price, and the car is not sitting in the sun all day.",
+        "**Pick ceramic** if the car is parked in an open lot through the workday, you have a long sunny commute, there are kids or dogs in the back seat, or the interior is dark leather that soaks up heat.",
+        "**Ceramic for the windshield.** It is the only film we put there, and we go over what is legal on your windshield before anything is installed.",
+        "**Still torn?** Tell us how you drive and we will tell you straight which one fits. You can also see both films on glass at the shop before you decide."
+      ]
+    },
+    {
+      "h": "Why we do not install dyed film",
+      "p": [
+        "That purple, bubbling tint on older cars is low-grade dyed film breaking down. The dye fades, the adhesive lets go, and the film has to be stripped. We do not install it. Both films we use are color-stable and backed by the lifetime warranty, and with plotter-cut patterns and an indoor install, the tint on your glass should outlast your ownership of the vehicle."
+      ]
+    },
+    {
+      "h": "How the install works",
+      "p": [
+        "Window tint is done at our shop on Louise Ave in Clinton Township, by appointment. The front 2 windows take about 1.5 hours, full sides about 2.5 hours, and full sides with the rear glass about 3.5 hours. Most installs are finished the day you drop off. If getting here is the hard part, ask about our [pick-up and drop-off valet](/mobile-detailing/).",
+        "Afterward, leave the windows up for 3 to 4 days so the film can bond. A little haze or a few small water pockets in the first week are normal and clear on their own."
+      ],
+      "after": [
+        "Choosing between shades is the other half of the decision. Read [how to choose a tint shade](/blog/choosing-a-window-tint-shade/), see the full [window tint page](/window-tint-clinton-township-mi/), or [request a free quote](#quote) for your exact vehicle."
+      ]
+    }
+  ]
+}

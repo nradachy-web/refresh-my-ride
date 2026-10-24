@@ -12,6 +12,7 @@
    services/<service-id>.json                 the five service pages
    towns/<service-id>--<city-id>.json         one service in one town
    cities/<city-id>.json                      the town hubs
+   blog/<slug>.json                           the blog posts, at /blog/<slug>/
    ========================================================================== */
 
 /**
@@ -232,5 +233,41 @@ export function makeSchemas(z, ids) {
       neighbors: z.array(cityId).min(2).max(4),
     });
 
-  return { block, services, towns, cities };
+  const day = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'a date as YYYY-MM-DD');
+
+  const blog = z.object({
+      /** The service the post is about. Its page is offered beside the post. */
+      service: serviceId,
+      published: day,
+      updated: day.optional(),
+      meta,
+      /** The h1. Wrap one phrase in ** for the violet accent. */
+      title: text(10, 90),
+      /** One paragraph under the h1. Also the text on the post's card. */
+      lede: text(80, 330),
+      photo: photoId,
+      /** The short version, as ticks, above the first section. */
+      short: z.array(text(10, 220)).min(2).max(5),
+      sections: z
+        .array(
+          z.object({
+            h: text(4, 90),
+            p: z.array(text(20, 1100)).max(4).default([]),
+            list: z.array(text(4, 360)).max(8).default([]),
+            /** A small table: a header row, then rows of the same length. */
+            table: z
+              .object({
+                head: z.array(text(1, 40)).min(2).max(4),
+                rows: z.array(z.array(text(1, 90)).min(2).max(4)).min(2).max(8),
+                note: text(10, 320).optional(),
+              })
+              .optional(),
+            after: z.array(text(20, 1100)).max(3).default([]),
+          }),
+        )
+        .min(3)
+        .max(9),
+    });
+
+  return { block, services, towns, cities, blog };
 }

@@ -109,7 +109,10 @@ Uber is covered for drop-off and pickup on ceramic coating jobs only.
 
 ## Auto detailing (shop, mobile or valet)
 
-Prices are "from", for a coupe or sedan in average condition. SUVs and trucks
+Prices are "from", for a coupe or sedan in average condition. Josh updated
+them by text on 2026-10-23 (Luxury Refresh $439.99 to $549.99, Polish &
+Protect $344.99 to $389.99, the rest unchanged); checked against his Urable
+shop the same day. SUVs and trucks
 are quoted for their size. Extra charges may apply for heavy pet hair, stains
 or biohazards, always approved before work begins.
 
@@ -119,9 +122,9 @@ or biohazards, always approved before work begins.
 | Executive Interior Detail | $239.99 | about 3 hours | Premium plus intensive steam, seat and carpet extraction, cracks, vents and pedals detailed, UV protectant, conditioning, fabric guard. |
 | Essential Refresh (in + out) | $249.99 | about 2.5 to 3 hours | Premium interior clean plus a full exterior hand wash with wheels and tires. |
 | Signature Refresh (in + out, most popular) | $319.99 | about 5 hours | Interior deep clean with steam and conditioning, exterior decontamination wash, wheel and tire deep clean, sealant on the paint, interior protection. |
-| Luxury Refresh (in + out) | $439.99 | about 7 hours | Signature plus a one-step machine polish to remove light swirls. |
+| Luxury Refresh (in + out) | $549.99 | about 7 hours | Signature plus a one-step machine polish to remove light swirls. |
 | Wash & Seal (exterior, most popular) | $139.99 | about 1.5 hours | Full decontamination wash (iron, clay, bug, tar, sap), wheel and tire deep clean, 6 month ceramic sealant. |
-| Polish & Protect (exterior) | $344.99 | about 4.5 to 5 hours | Wash & Seal plus a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, sealed for 6 months. |
+| Polish & Protect (exterior) | $389.99 | about 4.5 to 5 hours | Wash & Seal plus a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, sealed for 6 months. |
 
 - Interiors: hot water extraction, steam, odor removal. Pet hair, stains and
   odors can be treated; some stains (dye transfer, old bleach marks) are
@@ -160,9 +163,9 @@ Their site has no dedicated page, so stay inside these lines:
   water spots from the clear coat.
 - Included in every ceramic coating package (done before the coating).
 - Available on its own. The published entry points are **Polish & Protect**
-  (exterior, from $344.99, one-step polish removing roughly 60 to 70% of light
+  (exterior, from $389.99, one-step polish removing roughly 60 to 70% of light
   swirls, sealed 6 months) and **Luxury Refresh** (full detail with a one-step
-  polish, from $439.99).
+  polish, from $549.99).
 - Heavier work is a multi-stage ("2 step") correction, quoted per vehicle after
   they see the paint. Reviews mention 2 step corrections.
 - Matt handles the heaviest correction work. Paint is inspected under shop
@@ -193,6 +196,6 @@ Their site has no dedicated page, so stay inside these lines:
 ## Open questions for Josh (do not resolve these in copy)
 
 1. Hours: Google says open 24 hours, one old page says Saturdays. Site uses Mon to Fri 9 to 5.
-2. Ceramic starting price: one page said $449, another $549. Site publishes none.
+2. Ceramic starting price: settled 2026-10-23, Josh: "No price mention for ceramic". Site publishes none.
 3. How long a coating takes: "full day" on one page, "multi-day" on another.
 4. Whether mobile and valet reach West Bloomfield (about 45 minutes out).

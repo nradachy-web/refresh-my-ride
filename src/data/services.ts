@@ -69,7 +69,7 @@ export const SERVICES: Service[] = [
     townSlug: 'paint-correction',
     photo: 'team-polishing-mercury',
     teaser: 'Swirls, light scratches and oxidation machine polished out, on its own or before a coating.',
-    fact: 'From $344.99',
+    fact: 'From $389.99',
     where: 'shop',
   },
   {

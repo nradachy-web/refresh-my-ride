@@ -2,12 +2,12 @@
   "service": "paint-correction",
   "meta": {
     "title": "Paint Correction in Clinton Township, MI | Refresh My Ride",
-    "description": "Paint correction in Clinton Township, MI. Swirls, light scratches and oxidation polished out. One-step polish from $344.99 for a coupe or sedan."
+    "description": "Paint correction in Clinton Township, MI. Swirls, light scratches and oxidation polished out. One-step polish from $389.99 for a coupe or sedan."
   },
   "hero": {
     "kicker": "Paint correction in Clinton Township, MI",
     "title": "Swirls out. **Gloss back.**",
-    "lede": "Paint correction is machine polishing that removes swirl marks, light scratches, oxidation and water spots from your clear coat. We do it indoors at our Clinton Township shop, under controlled lighting. A one-step polish is from $344.99 for a coupe or sedan in average condition. Heavier paint is quoted after we see it.",
+    "lede": "Paint correction is machine polishing that removes swirl marks, light scratches, oxidation and water spots from your clear coat. We do it indoors at our Clinton Township shop, under controlled lighting. A one-step polish is from $389.99 for a coupe or sedan in average condition. Heavier paint is quoted after we see it.",
     "chips": [
       "Swirls and oxidation polished out",
       "One-step or multi-stage",
@@ -94,14 +94,14 @@
           "rows": [
             {
               "name": "Polish & Protect",
-              "price": "from $344.99",
+              "price": "from $389.99",
               "time": "About 4.5 to 5 hours",
               "tag": "Exterior",
               "body": "A full decontamination wash, a wheel and tire deep clean, then a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches. Sealed for 6 months."
             },
             {
               "name": "Luxury Refresh",
-              "price": "from $439.99",
+              "price": "from $549.99",
               "time": "About 7 hours",
               "tag": "Inside and out",
               "body": "A full interior and exterior detail, everything in our Signature Refresh, plus a one-step machine polish to remove light swirls."
@@ -207,7 +207,7 @@
   "faq": [
     {
       "q": "How much does paint correction cost?",
-      "a": "A one-step polish has set starting prices. Polish & Protect, an exterior package, is from $344.99. The Luxury Refresh, a full interior and exterior detail with a one-step polish, is from $439.99. Both are for a coupe or sedan in average condition, and SUVs and trucks are quoted for their size.\n\nA multi-stage correction is quoted per vehicle after we see the paint. Text us photos or use the quote form on this page and we will give you a real number. Financing is available through Affirm and Klarna."
+      "a": "A one-step polish has set starting prices. Polish & Protect, an exterior package, is from $389.99. The Luxury Refresh, a full interior and exterior detail with a one-step polish, is from $549.99. Both are for a coupe or sedan in average condition, and SUVs and trucks are quoted for their size.\n\nA multi-stage correction is quoted per vehicle after we see the paint. Text us photos or use the quote form on this page and we will give you a real number. Financing is available through Affirm and Klarna."
     },
     {
       "q": "How long does paint correction take?",
@@ -244,12 +244,12 @@
     "items": [
       {
         "name": "Polish & Protect",
-        "price": "from $344.99",
+        "price": "from $389.99",
         "detail": "Exterior decontamination wash, then a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches. Sealed for 6 months. About 4.5 to 5 hours."
       },
       {
         "name": "Luxury Refresh",
-        "price": "from $439.99",
+        "price": "from $549.99",
         "detail": "A full interior and exterior detail with a one-step machine polish to remove light swirls. About 7 hours."
       },
       {

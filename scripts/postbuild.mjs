@@ -40,7 +40,7 @@ const FORBIDDEN = [
   [/100% five[- ]star/i, '"100% five star" (the profile has a one-star review)'],
   [/before October 1|by October 1(?!\d)/i, 'the expired October 1 offer'],
   [/#1\b|number one\b|best in (michigan|macomb|oakland)/i, 'a ranking claim'],
-  [/ceramic coating[^.]{0,80}\$(449|549)|\$(449|549)[^.]{0,80}ceramic coating/i, 'a ceramic coating price their own pages disagree on'],
+  [/ceramic coating[^.]{0,80}\$(449|549)(?!\.\d)|\$(449|549)(?!\.\d)[^.]{0,80}ceramic coating/i, 'a ceramic coating price (Josh, 2026-10-23: no price mention for ceramic; $549.99 is the Luxury Refresh)'],
   [/lorem ipsum|TODO|TBD\b/i, 'placeholder text'],
   [/\b(586) ?298/, 'the old phone number'],
 ];

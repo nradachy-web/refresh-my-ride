@@ -2,7 +2,7 @@
    aggregateRating: Google does not accept a business marking up its own
    reviews on its own site, and the count would go stale. */
 
-import { BRAND, HOURS, LINKS } from '../data/site';
+import { BRAND, HOURS, LINKS, VIDEO } from '../data/site';
 import { CITIES } from '../data/cities';
 import { plain } from './rich';
 
@@ -77,6 +77,38 @@ export function breadcrumbs(trail: { name: string; path: string }[]) {
       name: t.name,
       item: `${ORIGIN}${t.path}`,
     })),
+  };
+}
+
+/** A blog post. The shop is author and publisher: the posts speak for the shop. */
+export function blogPosting(opts: { headline: string; description: string; path: string; image: string; published: string; updated?: string; about: string }) {
+  return {
+    '@type': 'BlogPosting',
+    headline: plain(opts.headline),
+    description: opts.description,
+    url: `${ORIGIN}${opts.path}`,
+    mainEntityOfPage: `${ORIGIN}${opts.path}`,
+    image: `${ORIGIN}${opts.image}`,
+    datePublished: opts.published,
+    dateModified: opts.updated ?? opts.published,
+    author: { '@id': BUSINESS_ID },
+    publisher: { '@id': BUSINESS_ID },
+    about: { '@type': 'Thing', name: opts.about },
+  };
+}
+
+/** The Clinton Currents feature, on any page that plays it. */
+export function videoSchema() {
+  return {
+    '@type': 'VideoObject',
+    name: VIDEO.title,
+    description: `${VIDEO.channel} features the grand opening of ${BRAND.name}'s shop in ${BRAND.city}, MI.`,
+    thumbnailUrl: `https://i.ytimg.com/vi/${VIDEO.id}/maxresdefault.jpg`,
+    uploadDate: VIDEO.uploaded,
+    duration: VIDEO.duration,
+    embedUrl: `https://www.youtube-nocookie.com/embed/${VIDEO.id}`,
+    url: VIDEO.url,
+    about: { '@id': BUSINESS_ID },
   };
 }
 

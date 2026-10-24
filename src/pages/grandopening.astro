@@ -20,10 +20,11 @@ import Photo from '../components/Photo.astro';
 import Faq from '../components/Faq.astro';
 import QuoteForm from '../components/QuoteForm.astro';
 import Stars from '../components/Stars.astro';
-import { BRAND, FORM, GRAND_OPENING as GO, LINKS, RATING } from '../data/site';
+import Video from '../components/Video.astro';
+import { BRAND, FORM, GRAND_OPENING as GO, LINKS, RATING, VIDEO } from '../data/site';
 import { heroImage } from '../lib/hero';
 import { href } from '../lib/paths';
-import { breadcrumbs, faqSchema } from '../lib/schema';
+import { breadcrumbs, faqSchema, videoSchema } from '../lib/schema';
 
 const TITLE = `Grand Opening Event | ${BRAND.name} Auto Detailing`;
 const DESCRIPTION = `Celebrate the grand opening of ${BRAND.name} in ${BRAND.city} on ${GO.dateLabel}. Specials, giveaways, refreshments and detailed cars on display.`;
@@ -70,7 +71,7 @@ const FAQ = [
 ];
 ---
 
-<Base title={TITLE} description={DESCRIPTION} path="/grandopening/" preload={hero.preload} quoteHref="/get-a-quote/" bare schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Grand opening', path: '/grandopening/' }])]}>
+<Base title={TITLE} description={DESCRIPTION} path="/grandopening/" preload={hero.preload} quoteHref="/get-a-quote/" bare schema={[faqSchema(FAQ), breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Grand opening', path: '/grandopening/' }]), videoSchema()]}>
   <div class="go" id="go-page" data-state={state}>
     <script is:inline define:vars={{ start, end, specialsEnd }}>
       (function () {
@@ -126,6 +127,18 @@ const FAQ = [
               <img src={hero.fallback} width={hero.width} height={hero.height} alt={hero.alt} loading="eager" decoding="sync" fetchpriority="high" />
             </picture>
           </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="band" aria-labelledby="tv-h" data-on="after past">
+      <div class="wrap two wide-left flip">
+        <div class="stack" style="--gap:1.4rem">
+          <Head id="tv-h" layout="left" eyebrow="Clinton Currents" title="Watch the ribbon cutting." intro={`${VIDEO.channel} came out on ${GO.dateLabel} and featured our grand opening on its show, Clinton Currents.`} />
+        </div>
+        <figure>
+          <Video loc="grandopening" sizes="(min-width: 60rem) 52vw, 100vw" />
+          <figcaption class="cap">{VIDEO.title}. {VIDEO.channel}, October 2026.</figcaption>
         </figure>
       </div>
     </section>

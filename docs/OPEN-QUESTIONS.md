@@ -12,13 +12,15 @@ made that is his to make.
    Friday 9 to 5. Which is right? (Google should match.)
 2. **Ceramic coating starting price.** The old home page said from $449, the
    gift card page said from $549, and the ceramic page said no price list. The
-   site publishes no ceramic price. Does he want one?
+   site publishes no ceramic price. Does he want one? **Answered 2026-10-23:**
+   Josh texted "No price mention for ceramic". Keep it that way.
 3. **How long a coating takes.** "Typically a full day" on one page, "most are
    a multi-day stay" on another, and a review says one day. The site says "at
    least a full day, longer when the paint needs more correction".
 4. **Grand opening "regular" prices.** His event page struck through regular
    prices that are higher than the ones his service pages publish: Polish &
-   Protect $399 (service page: from $344.99), ceramic tint on full sides and
+   Protect $399 (service page then: from $344.99; from $389.99 since his
+   2026-10-23 price update), ceramic tint on full sides and
    rear glass $449 (tint page: from $399.99), and a "$349" Signature Refresh
    prize (package: from $319.99). The new event page shows the special prices
    only, with no struck figures and no dollar value on the prize, until he says
@@ -48,7 +50,8 @@ made that is his to make.
    of providers (and CallRail with its cookies on 2026-10-15, when call
    tracking went on the site, and Modern Apex with the rmr_src cookie on
    2026-10-17, when each quote request started being copied to his Apex
-   dashboard), dashes became commas, and a dated line under "Changes to this
+   dashboard, and YouTube on 2026-10-23, when the Clinton Currents video went
+   on the site), dashes became commas, and a dated line under "Changes to this
    policy" records that. The effective date still reads September 19, 2026:
    he should set it to the launch date. He should read it once.
 10. **New pages he did not have:** Paint correction, Mobile detailing and valet,

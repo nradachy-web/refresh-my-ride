@@ -3,13 +3,13 @@
   "city": "west-bloomfield",
   "meta": {
     "title": "Paint Correction in West Bloomfield, MI | Refresh My Ride",
-    "description": "Paint correction for West Bloomfield drivers: swirl marks, light scratches and oxidation polished out under shop lighting. Polish & Protect from $344.99."
+    "description": "Paint correction for West Bloomfield drivers: swirl marks, light scratches and oxidation polished out under shop lighting. Polish & Protect from $389.99."
   },
   "hero": {
     "kicker": "Paint correction in West Bloomfield, MI",
     "title": "Photos first. **Polish second.**",
-    "lede": "Salt season means washing, and brush washes leave swirls. Correction is machine polishing that takes swirl marks, light scratches, oxidation and water spots out of the clear coat. From $344.99 for a one-step Polish & Protect on a coupe or sedan in average condition. The shop is roughly 45 minutes away, so send photos first.",
-    "chips": ["Polish & Protect from $344.99", "Inspected under shop lighting", "Shop only"],
+    "lede": "Salt season means washing, and brush washes leave swirls. Correction is machine polishing that takes swirl marks, light scratches, oxidation and water spots out of the clear coat. From $389.99 for a one-step Polish & Protect on a coupe or sedan in average condition. The shop is roughly 45 minutes away, so send photos first.",
+    "chips": ["Polish & Protect from $389.99", "Inspected under shop lighting", "Shop only"],
     "photo": "josh-polishing-corvette"
   },
   "local": {
@@ -45,7 +45,7 @@
     "facts": [
       { "label": "Where", "value": "Our shop, 33115 Louise Ave, Clinton Township" },
       { "label": "Drive", "value": "Roughly 45 minutes without traffic" },
-      { "label": "Polish & Protect", "value": "From $344.99, about 4.5 to 5 hours" },
+      { "label": "Polish & Protect", "value": "From $389.99, about 4.5 to 5 hours" },
       { "label": "Heavier correction", "value": "Multi-stage, quoted per vehicle" }
     ]
   },
@@ -57,7 +57,7 @@
     },
     {
       "q": "How do I know if I need a one-step polish or more?",
-      "a": "One pass with the machine takes out roughly 60 to 70% of light swirls and scratches. We sell it two ways: Polish & Protect, an exterior service from $344.99 with a 6 month sealant, and Luxury Refresh, a full detail with a one-step polish from $439.99. Both prices are for a coupe or sedan in average condition. Heavier defects need a multi-stage correction, quoted per vehicle after we see the paint. Two from our own files: a 1990 Mazda Miata that took a 2 step correction, and a 2021 Chevy Silverado 2500HD with heavy oxidation and water spots. More on the [paint correction page](/paint-correction/)."
+      "a": "One pass with the machine takes out roughly 60 to 70% of light swirls and scratches. We sell it two ways: Polish & Protect, an exterior service from $389.99 with a 6 month sealant, and Luxury Refresh, a full detail with a one-step polish from $549.99. Both prices are for a coupe or sedan in average condition. Heavier defects need a multi-stage correction, quoted per vehicle after we see the paint. Two from our own files: a 1990 Mazda Miata that took a 2 step correction, and a 2021 Chevy Silverado 2500HD with heavy oxidation and water spots. More on the [paint correction page](/paint-correction/)."
     },
     {
       "q": "Will paint correction fix rock chips or deep scratches?",

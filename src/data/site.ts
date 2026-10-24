@@ -132,3 +132,18 @@ export const GRAND_OPENING = {
   specialsEnd: '2026-10-30',
   specialsEndLabel: 'October 30, 2026',
 } as const;
+
+/* Clinton Township Community TV's Clinton Currents feature on the grand
+   opening, sent by Josh on 2026-10-23. Details read from YouTube that day. The
+   thumbnail is our own copy (src/assets/video) so nothing loads from YouTube
+   until a visitor presses play (components/Video.astro). */
+export const VIDEO = {
+  id: 'fsoZtf4MVD4',
+  title: 'Clinton Currents: Refresh My Ride Auto Detailing',
+  channel: 'Clinton Township Community TV',
+  url: 'https://www.youtube.com/watch?v=fsoZtf4MVD4',
+  uploaded: '2026-10-20T08:04:06-07:00',
+  duration: 'PT4M21S',
+  length: '4:21',
+  lengthLabel: '4 minutes 21 seconds',
+} as const;

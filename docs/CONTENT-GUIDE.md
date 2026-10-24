@@ -9,6 +9,13 @@ Read `docs/FACTS.md` first. This file is how to turn those facts into pages.
 | Service page | `src/content/services/<service-id>.json` | `services` in `src/content.schema.mjs` |
 | One service in one town | `src/content/towns/<service-id>--<city-id>.json` | `towns` |
 | Town hub | `src/content/cities/<city-id>.json` | `cities` |
+| Blog post (`/blog/<slug>/`) | `src/content/blog/<slug>.json` | `blog` |
+
+Blog posts (added 2026-10-23 at Josh's request) follow every rule below. The
+file name is the address, `service` picks the service page offered beside the
+post, and a post may link to other posts (`/blog/<slug>/`). They show on
+/blog/, in the "Keep reading" row of every other post, and on their service
+page above the quote band.
 
 Worked examples to match in depth and tone:
 

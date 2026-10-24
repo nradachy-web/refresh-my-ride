@@ -5,6 +5,7 @@
      1  hero       keyword line, display line, paragraph, ticks, two actions
      2  blocks     whatever the service needs, in the order its JSON lists them
      3  paper      the questions
+     3b           blog posts about this service, when there are any
      4  ink        the quote form beside the phone
    Copy comes from src/content/services/<id>.json.
    ========================================================================== */
@@ -15,11 +16,14 @@ import Head from '../components/Head.astro';
 import Blocks from '../components/Blocks.astro';
 import Faq from '../components/Faq.astro';
 import QuoteBand from '../components/QuoteBand.astro';
+import PostCard from '../components/PostCard.astro';
 import { BRAND } from '../data/site';
 import { service as getService } from '../data/services';
 import { CITIES } from '../data/cities';
 import type { PhotoId } from '../data/photos';
 import { heroImage } from '../lib/hero';
+import { posts } from '../lib/blog';
+import { href } from '../lib/paths';
 import { breadcrumbs, faqSchema, serviceSchema } from '../lib/schema';
 
 interface Props {
@@ -30,6 +34,8 @@ const c = entry.data;
 const svc = getService(c.service as any);
 const hero = await heroImage(c.hero.photo as PhotoId);
 const lastPlane = c.blocks[c.blocks.length - 1].plane;
+const faqPlane = lastPlane === 'paper' ? 'white' : 'paper';
+const reading = (await posts()).filter((p) => p.data.service === svc.id).slice(0, 3);
 
 // Mobile detailing does not list West Bloomfield: it is past the published mobile range.
 const areas = svc.id === 'mobile-detailing' ? CITIES.filter((t) => t.id !== 'west-bloomfield').map((t) => `${t.name}, MI`) : undefined;
@@ -48,7 +54,7 @@ const schema = [
 
   <Blocks blocks={c.blocks} service={svc} />
 
-  <section class:list={['band', lastPlane === 'paper' && 'white']} aria-labelledby="faq-h">
+  <section class:list={['band', faqPlane === 'white' && 'white']} aria-labelledby="faq-h">
     <div class="wrap faqs">
       <Head
         id="faq-h"
@@ -61,10 +67,26 @@ const schema = [
     </div>
   </section>
 
+  {
+    reading.length > 0 && (
+      <section class:list={['band', faqPlane === 'paper' && 'white']} aria-labelledby="read-h">
+        <div class="wrap">
+          <Head id="read-h" eyebrow="From the blog" title={`More about ${svc.noun}.`} />
+          <ul class:list={['grid', reading.length === 3 ? 'c3' : 'c2']}>{reading.map((p) => <PostCard post={p} />)}</ul>
+          <p class="all"><a class="arrow" href={href('/blog/')}>Every post</a></p>
+        </div>
+      </section>
+    )
+  }
+
   <QuoteBand title={c.quote?.title} lede={c.quote?.lede} />
 </Base>
 
 <style>
+  .all {
+    margin-top: 1.5rem;
+  }
+
   .faqs {
     display: grid;
     gap: 1rem;

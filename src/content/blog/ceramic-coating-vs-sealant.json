@@ -1,0 +1,70 @@
+{
+  "service": "ceramic-coating",
+  "published": "2026-10-23",
+  "meta": {
+    "title": "Ceramic Coating vs. Paint Sealant | Refresh My Ride",
+    "description": "Ceramic coating or a paint sealant: how long each lasts, the prep, the time at the shop and the cost, and which one fits how long you keep your car."
+  },
+  "title": "Ceramic coating or a sealant: **which one your car needs.**",
+  "lede": "Both make paint glossy and slick, and both get sold as protection. The difference is how long they last, how much prep goes in first, and what you pay. Here is the honest comparison, including when the simpler option is the right one.",
+  "photo": "silverado-black",
+  "short": [
+    "A sealant is a protective layer that goes on after a full decontamination wash. Ours is a 6 month ceramic sealant, part of our Wash & Seal.",
+    "A ceramic coating bonds to the clear coat and is rated for 1, 3 or 5 years, with paint correction first and a written warranty.",
+    "Selling or trading in within a year: a sealant. Keeping the car for years: a coating."
+  ],
+  "sections": [
+    {
+      "h": "Side by side",
+      "p": [
+        "Wax is the oldest of the three. It looks good for a few weeks and then it is gone, which is why most drivers who want real protection end up choosing between a sealant and a coating. Here is how those two compare at our shop."
+      ],
+      "table": {
+        "head": ["At our shop", "Sealant (Wash & Seal)", "Ceramic coating"],
+        "rows": [
+          ["How long it lasts", "About 6 months", "1, 3 or 5 years, by package"],
+          ["Prep first", "Full decontamination wash", "Decontamination and paint correction"],
+          ["Swirl removal", "Not included", "Included, before the coating"],
+          ["Time with us", "About 1.5 hours", "At least a full day"],
+          ["Where", "Shop or mobile", "Shop only"],
+          ["Price", "From $139.99", "Quoted per vehicle"]
+        ],
+        "note": "From prices for a coupe or sedan in average condition. SUVs and trucks are quoted for their size."
+      }
+    },
+    {
+      "h": "What a sealant gets you",
+      "p": [
+        "Our Wash & Seal is a full decontamination wash (iron, clay, bug, tar and sap removal), a wheel and tire deep clean and a 6 month ceramic sealant, in about 1.5 hours. It is from $139.99 for a coupe or sedan in average condition, and it is one of the services we can bring to your driveway with our [mobile detailing](/mobile-detailing/).",
+        "A sealant makes the paint slick and glossy and puts a layer between it and road grime for a season. What it does not do is remove swirls. It goes on top of the paint you have. If you want the swirls gone too, Polish & Protect adds a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, sealed for 6 months, from $389.99."
+      ]
+    },
+    {
+      "h": "What a coating gets you",
+      "p": [
+        "A ceramic coating bonds to the clear coat and hardens into a thin, clear layer that is rated in years. We offer three: **The Refresh** for 1 year, **The Revival** for 3 years and **The Renewal** for 5 years.",
+        "Every package includes decontamination, paint correction before the coating, application by certified technicians and a cure in the shop. You leave with a written warranty and an aftercare guide, and you get a free follow-up wash with an inspection. Glass, wheels and trim can be coated in the same visit. A coating is priced for your vehicle once we know its size and how much correction the paint needs. See the [ceramic coating packages](/ceramic-coating/) for the details."
+      ]
+    },
+    {
+      "h": "Which one fits",
+      "list": [
+        "**You are selling, trading in or turning in a lease within a year.** A sealant. There is no point paying for years of protection you will not use.",
+        "**You are keeping the car three years or more.** A coating. The prep and correction are done once, and the protection carries through every winter after.",
+        "**The car lives outside or racks up winter highway miles.** Salt and brine are where a coating earns its keep. It resists them for years instead of months.",
+        "**The paint is swirled or dull.** Either way it needs correction if you want the gloss back: Polish & Protect with its sealant, or a coating package, where correction is included.",
+        "**It is a new car.** New is the ideal time to coat, because the paint needs the least correction and it is protected from day one."
+      ]
+    },
+    {
+      "h": "A Michigan winter is the real test",
+      "p": [
+        "Road salt and brine sit on paint for months at a time here. A sealant put on in the fall is near the end of its 6 months by spring, so we suggest one at the end of winter and another at the end of summer. A coating keeps working through the whole season and the next one.",
+        "Whichever you choose, wash the salt off regularly through winter, and skip brush-style automatic washes: those spinning brushes put swirls in any finish, coated or sealed. Touchless washes are fine between hand washes."
+      ],
+      "after": [
+        "Not sure which way to go? Tell us what you drive, how long you plan to keep it and where it sleeps at night, and we will tell you straight which one makes sense. [Request a free quote](#quote) or read [what ceramic coating does and does not do](/blog/what-ceramic-coating-does/)."
+      ]
+    }
+  ]
+}

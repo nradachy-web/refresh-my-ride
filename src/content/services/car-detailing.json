@@ -81,7 +81,7 @@
             },
             {
               "name": "Luxury Refresh",
-              "price": "from $439.99",
+              "price": "from $549.99",
               "time": "About 7 hours",
               "body": "Everything in Signature plus a one-step machine polish to remove light swirls and bring the gloss back."
             }
@@ -101,7 +101,7 @@
             },
             {
               "name": "Polish & Protect",
-              "price": "from $344.99",
+              "price": "from $389.99",
               "time": "About 4.5 to 5 hours",
               "body": "Everything in Wash & Seal plus a one-step machine polish that removes roughly 60 to 70% of light swirls and scratches, then sealed for 6 months."
             }
@@ -182,7 +182,7 @@
     },
     {
       "q": "How much does car detailing cost in Clinton Township?",
-      "a": "Interior details are from $184.99, exterior details from $139.99 and full interior and exterior packages from $249.99, all priced for a coupe or sedan in average condition. Our longest package, the Luxury Refresh, is from $439.99. SUVs and trucks are quoted for their size.\n\nIf your vehicle needs more than the package covers, such as heavy pet hair or set-in stains, we explain the adjustment and get your approval before work begins. Financing is available through Affirm and Klarna."
+      "a": "Interior details are from $184.99, exterior details from $139.99 and full interior and exterior packages from $249.99, all priced for a coupe or sedan in average condition. Our longest package, the Luxury Refresh, is from $549.99. SUVs and trucks are quoted for their size.\n\nIf your vehicle needs more than the package covers, such as heavy pet hair or set-in stains, we explain the adjustment and get your approval before work begins. Financing is available through Affirm and Klarna."
     },
     {
       "q": "How long does a detail take?",
@@ -251,6 +251,6 @@
         "detail": "Inside and out, our most popular full detail. Steam and conditioning inside, decontamination wash and sealant outside. About 5 hours."
       }
     ],
-    "footnote": "Polish & Protect (exterior, from $344.99) and Luxury Refresh (inside and out, from $439.99) add a one-step machine polish. SUVs and trucks are quoted for their size. Extra charges for heavy pet hair, stains or biohazards are always approved before work begins."
+    "footnote": "Polish & Protect (exterior, from $389.99) and Luxury Refresh (inside and out, from $549.99) add a one-step machine polish. SUVs and trucks are quoted for their size. Extra charges for heavy pet hair, stains or biohazards are always approved before work begins."
   }
 }

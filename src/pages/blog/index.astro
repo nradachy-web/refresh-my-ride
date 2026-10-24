@@ -1,0 +1,44 @@
+---
+/* ============================================================================
+   BLOG
+
+     1  head       what the blog is for
+     2  paper      every post, newest first
+     3  ink        the quote form
+   Posts are JSON in src/content/blog (shape: `blog` in content.schema.mjs).
+   ========================================================================== */
+import Base from '../../layouts/Base.astro';
+import PageHead from '../../components/PageHead.astro';
+import PostCard from '../../components/PostCard.astro';
+import QuoteBand from '../../components/QuoteBand.astro';
+import { BRAND } from '../../data/site';
+import { posts } from '../../lib/blog';
+import { heroImage } from '../../lib/hero';
+import { breadcrumbs } from '../../lib/schema';
+
+const all = await posts();
+const TITLE = `Blog: Ceramic Coating and Window Tint | ${BRAND.name}`;
+const DESCRIPTION = `Straight answers about ceramic coating and window tint from ${BRAND.name} in ${BRAND.city}: what each one does, what it costs and how to choose.`;
+const head = await heroImage('mustang-black-bay', { sizes: '(min-width: 60rem) 48vw, 1px' });
+---
+
+<Base title={TITLE} description={DESCRIPTION} path="/blog/" preload={{ ...head.preload, media: '(min-width: 60rem)' }} schema={[breadcrumbs([{ name: 'Home', path: '/' }, { name: 'Blog', path: '/blog/' }])]}>
+  <PageHead
+    image={head}
+    eyebrow="Blog"
+    title="Straight answers about **coating and tint.**"
+    lede="What we tell people at the counter, written down. How ceramic coating and window tint work, what they cost at our shop, and how to pick the right one for the car you drive."
+    crumbs={[{ name: 'Blog', path: '/blog/' }]}
+  />
+
+  <section class="band" aria-labelledby="posts-h">
+    <div class="wrap">
+      <h2 class="sr" id="posts-h">Every post</h2>
+      <ul class="grid c2">
+        {all.map((post) => <PostCard post={post} sizes="(min-width: 80rem) 38rem, (min-width: 40rem) 46vw, 100vw" />)}
+      </ul>
+    </div>
+  </section>
+
+  <QuoteBand title="Rather just ask us?" lede="Tell us what you drive and what you are thinking about. We will tell you straight what it needs and give you a real number." />
+</Base>

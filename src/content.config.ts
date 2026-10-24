@@ -24,4 +24,5 @@ export const collections = {
   services: defineCollection({ loader: glob({ pattern: '*.json', base: './src/content/services' }), schema: schemas.services }),
   towns: defineCollection({ loader: glob({ pattern: '*.json', base: './src/content/towns' }), schema: schemas.towns }),
   cities: defineCollection({ loader: glob({ pattern: '*.json', base: './src/content/cities' }), schema: schemas.cities }),
+  blog: defineCollection({ loader: glob({ pattern: '*.json', base: './src/content/blog' }), schema: schemas.blog }),
 };

@@ -1,0 +1,138 @@
+---
+/* The Clinton Currents feature, as a picture of the video until the visitor
+   presses play. Nothing loads from YouTube before that: the thumbnail is our
+   own copy, and the press swaps in YouTube's privacy-enhanced player, already
+   playing. With script off (or a middle click) it is a plain link to the video
+   on YouTube. */
+import { getImage } from 'astro:assets';
+import thumb from '../assets/video/clinton-currents.jpg';
+import { VIDEO } from '../data/site';
+
+interface Props {
+  sizes?: string;
+  /** Where on the site it sits, for the click event. */
+  loc: string;
+}
+const { sizes = '(min-width: 60rem) 50vw, 100vw', loc } = Astro.props;
+
+const WIDTHS = [480, 800, 1280];
+const build = async (format: 'avif' | 'webp', quality: number) => {
+  const out = await Promise.all(
+    WIDTHS.map(async (w) => {
+      const img = await getImage({ src: thumb, width: w, height: Math.round((w * 9) / 16), format, quality });
+      return `${img.src} ${w}w`;
+    }),
+  );
+  return out.join(', ');
+};
+const [avif, webp] = await Promise.all([build('avif', 50), build('webp', 66)]);
+const fallback = await getImage({ src: thumb, width: 800, height: 450, format: 'jpeg', quality: 74 });
+---
+
+<div class="vid" data-video={VIDEO.id}>
+  <a class="vid__link" href={VIDEO.url} target="_blank" rel="noopener" data-cta={`video-${loc}`} aria-label={`Play video: ${VIDEO.title}, ${VIDEO.lengthLabel}`}>
+    <picture>
+      <source type="image/avif" srcset={avif} sizes={sizes} />
+      <source type="image/webp" srcset={webp} sizes={sizes} />
+      <img src={fallback.src} width="800" height="450" alt="" loading="lazy" decoding="async" />
+    </picture>
+    <span class="vid__btn" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5.2v13.6L19 12z" fill="currentColor"></path></svg>
+    </span>
+    <span class="vid__len" aria-hidden="true">{VIDEO.length}</span>
+  </a>
+</div>
+
+<script is:inline>
+  (function () {
+    if (window.__rmrVideo) return;
+    window.__rmrVideo = true;
+    document.addEventListener('click', function (ev) {
+      var a = ev.target && ev.target.closest ? ev.target.closest('.vid__link') : null;
+      if (!a || ev.button || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+      ev.preventDefault();
+      var box = a.parentNode;
+      var f = document.createElement('iframe');
+      f.src = 'https://www.youtube-nocookie.com/embed/' + box.getAttribute('data-video') + '?autoplay=1&rel=0&playsinline=1';
+      f.title = a.getAttribute('aria-label').replace(/^Play video: /, '');
+      f.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+      f.allowFullscreen = true;
+      f.referrerPolicy = 'strict-origin-when-cross-origin';
+      box.replaceChildren(f);
+      f.focus();
+    });
+  })();
+</script>
+
+<style>
+  .vid {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border-radius: var(--r);
+    background: var(--ink-3);
+  }
+
+  .vid__link,
+  .vid picture,
+  .vid img,
+  .vid :global(iframe) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .vid img {
+    object-fit: cover;
+  }
+
+  .vid :global(iframe) {
+    border: 0;
+  }
+
+  .vid__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: grid;
+    place-items: center;
+    width: 4.5rem;
+    height: 3.25rem;
+    border-radius: var(--r);
+    background: var(--violet-btn);
+    color: #fff;
+    transform: translate(-50%, -50%);
+    transition:
+      background-color 0.2s,
+      transform 0.25s var(--ease);
+  }
+
+  .vid__link:hover .vid__btn,
+  .vid__link:focus-visible .vid__btn {
+    background: var(--violet-btn-hover);
+    transform: translate(-50%, -50%) scale(1.06);
+  }
+
+  .vid__link:focus-visible {
+    outline: 3px solid var(--violet);
+    outline-offset: -3px;
+  }
+
+  .vid__len {
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    padding: 0.2rem 0.45rem;
+    border-radius: var(--r-sm);
+    background: rgb(7 6 11 / 0.82);
+    color: #fff;
+    font-size: 0.8125rem;
+    font-weight: 600;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .vid__btn {
+      transition: none;
+    }
+  }
+</style>

@@ -32,8 +32,12 @@ const townSlugs = [...servicesTs.matchAll(/townSlug: '([^']+)'/g)].map((m) => m[
 
 const schemas = makeSchemas(z, ids);
 
+const blogDir = join(ROOT, 'src/content/blog');
+const blogSlugs = existsSync(blogDir) ? readdirSync(blogDir).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, '')) : [];
+
 const validPaths = new Set([
-  '/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/gift-cards/', '/grandopening/', '/privacy-policy/', '/reviews/',
+  '/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/gift-cards/', '/grandopening/', '/privacy-policy/', '/reviews/', '/blog/',
+  ...blogSlugs.map((s) => `/blog/${s}/`),
   ...servicePaths,
   ...ids.cities.map((c) => `/service-areas/${c}/`),
   ...ids.cities.filter((c) => c !== homeCity).flatMap((c) => townSlugs.map((s) => `/${s}-${c}-mi/`)),
@@ -44,7 +48,7 @@ const FORBIDDEN = [
   [/100% five[- ]star/i, '"100% five star"'],
   [/before October 1\b|by October 1\b/i, 'the expired October 1 offer'],
   [/#1\b|number one\b|\bthe best\b|best in (michigan|macomb|oakland|town)|top[- ]rated|award[- ]winning/i, 'a ranking or superlative claim'],
-  [/ceramic coating[^.]{0,80}\$(449|549)|\$(449|549)[^.]{0,80}ceramic coating/i, 'a ceramic coating price their own pages disagree on'],
+  [/ceramic coating[^.]{0,80}\$(449|549)(?!\.\d)|\$(449|549)(?!\.\d)[^.]{0,80}ceramic coating/i, 'a ceramic coating price (Josh, 2026-10-23: no price mention for ceramic; $549.99 is the Luxury Refresh)'],
   [/guarantee(d|s)?\b/i, 'a guarantee (their site promises warranties, not guarantees)'],
   [/\b(cheap|cheapest|lowest price|unbeatable)\b/i, 'a price boast'],
   [/lorem ipsum|TODO|TBD\b|XXX/i, 'placeholder text'],
@@ -72,7 +76,7 @@ const sentences = (s) =>
     .filter((x) => x.length >= 70);
 
 const args = process.argv.slice(2);
-const kinds = ['services', 'towns', 'cities'];
+const kinds = ['services', 'towns', 'cities', 'blog'];
 const all = kinds.flatMap((k) => {
   const dir = join(ROOT, 'src/content', k);
   return existsSync(dir) ? readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => join(dir, f)) : [];
@@ -94,7 +98,7 @@ for (const file of targets) {
     continue;
   }
   if (!schemas[kind]) {
-    console.log(`FAIL ${file}\n  not inside src/content/{services,towns,cities}`);
+    console.log(`FAIL ${file}\n  not inside src/content/{services,towns,cities,blog}`);
     failed++;
     continue;
   }
@@ -105,6 +109,9 @@ for (const file of targets) {
   if (kind === 'services' && data.service !== name) problems.push(`file is ${name}.json but service is "${data.service}"`);
   if (kind === 'cities' && data.city !== name) problems.push(`file is ${name}.json but city is "${data.city}"`);
   if (kind === 'towns' && `${data.service}--${data.city}` !== name) problems.push(`file is ${name}.json but inside it says ${data.service}--${data.city}`);
+  // the file name is the post's address
+  if (kind === 'blog' && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(name)) problems.push(`file name ${name}.json is not a clean address (lower case words joined by single hyphens)`);
+  if (kind === 'blog' && data.title && !data.title.includes('**')) warn.push('title has no ** accent phrase');
 
   const texts = strings(data);
   const joined = texts.join('\n');
