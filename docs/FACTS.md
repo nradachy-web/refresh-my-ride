@@ -34,8 +34,9 @@ Township shop. September 2026 the current 2,000 square foot shop on Louise Ave.
 
 Josh (owner), Matt (lead technician, about six years in detailing and coating,
 handles the heaviest paint correction), Ben (detail and coating technician,
-does most mobile and valet appointments), April (client services: quotes and
-scheduling).
+does most mobile and valet appointments). April (client services) no longer
+works there; Josh asked 2026-10-24 to take her off the site. The "April G."
+customer review is a different person and stays.
 
 ## Three ways to get it done
 
