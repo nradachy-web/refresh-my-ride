@@ -15,7 +15,7 @@ final URL, not the quote form's redirect.
 | `/contact-us/` | Contact | |
 | `/get-a-quote/` | Get a quote | |
 | `/gift-cards/` | Gift cards | |
-| `/grandopening/` | Grand opening | Retires its own specials after October 30, 2026 |
+| `/grandopening/` | Forwards to home | The event page until 2026-10-29, when Josh said the grand opening and specials are done |
 | `/privacy-policy/` | Privacy policy | |
 | `/thank-you-submission-received/` | Thank you | The quote form redirects here. Not indexed. |
 

@@ -36,7 +36,7 @@ const blogDir = join(ROOT, 'src/content/blog');
 const blogSlugs = existsSync(blogDir) ? readdirSync(blogDir).filter((f) => f.endsWith('.json')).map((f) => f.replace(/\.json$/, '')) : [];
 
 const validPaths = new Set([
-  '/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/gift-cards/', '/grandopening/', '/privacy-policy/', '/reviews/', '/blog/',
+  '/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/gift-cards/', '/privacy-policy/', '/reviews/', '/blog/',
   ...blogSlugs.map((s) => `/blog/${s}/`),
   ...servicePaths,
   ...ids.cities.map((c) => `/service-areas/${c}/`),

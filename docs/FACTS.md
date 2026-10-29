@@ -191,8 +191,9 @@ Their site has no dedicated page, so stay inside these lines:
   technicians" and "ceramic coating certified". Use those and nothing more.
 - Customer counts for a town, customer stories, or anything about where staff live.
 - Saturday or evening hours. Walk-ins. A phone number other than (586) 400-1303.
-- The expired "book by October 1" offer. The grand opening specials belong on
-  the grand opening page only.
+- The expired "book by October 1" offer. The grand opening and its specials
+  (over; Josh asked on 2026-10-29 for every mention to come off the site). The
+  October 19 ribbon cutting and the Clinton Currents video stay as shop history.
 
 ## Open questions for Josh (do not resolve these in copy)
 

@@ -23,7 +23,7 @@ export const PHOTOS = {
   'josh-portrait': { alt: 'Josh Meller, owner of Refresh My Ride, standing beside a black coupe outside the shop', caption: 'Josh Meller, owner' },
   // the shop
   'shop-interior': { alt: 'Inside the Refresh My Ride shop with a gray Corvette parked in the bay', caption: 'Inside the Louise Ave shop' },
-  'shop-grand-opening': { alt: 'The Refresh My Ride shop front with a grand opening banner, purple balloons and a gray Corvette', caption: 'The Louise Ave shop front' },
+  'shop-front': { alt: 'The Refresh My Ride shop front with purple balloons and a gray Corvette', caption: 'The Louise Ave shop front' },
   'corvette-purple-shop': { alt: 'Purple Corvette parked in front of the shop bay doors', caption: 'Corvette' },
   // finished vehicles
   'bmw-x6-blue': { alt: 'Dark blue BMW SUV with a deep gloss finish', caption: 'BMW' },

@@ -6,7 +6,7 @@ import { posts, postPath } from '../lib/blog';
 
 /* Every indexable page, by its production address. Built from the same data
    that builds the pages, so it cannot list a page that does not exist. */
-const STATIC = ['/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/reviews/', '/gift-cards/', '/grandopening/', '/privacy-policy/', '/blog/'];
+const STATIC = ['/', '/service-areas/', '/about-us/', '/contact-us/', '/get-a-quote/', '/reviews/', '/gift-cards/', '/privacy-policy/', '/blog/'];
 
 export const GET: APIRoute = async () => {
   const [services, towns, cities, blog] = await Promise.all([getCollection('services'), getCollection('towns'), getCollection('cities'), posts()]);

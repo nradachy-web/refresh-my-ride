@@ -6,7 +6,6 @@ import fontUrl from '../assets/fonts/MonaSans-rmr.woff2?url';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import StickyBar from '../components/StickyBar.astro';
-import Announcement from '../components/Announcement.astro';
 import Tracking from '../components/Tracking.astro';
 import { BRAND } from '../data/site';
 import { href } from '../lib/paths';
@@ -24,7 +23,7 @@ interface Props {
   /** Where the header and sticky bar "quote" actions go. Pages with a quote band use #quote. */
   quoteHref?: string;
   noindex?: boolean;
-  /** Hide the sticky bar and announcement (thank-you, legal). */
+  /** Hide the sticky bar (thank-you, legal). */
   bare?: boolean;
   /** This page is where a submitted quote form lands: count it as a lead. */
   lead?: boolean;
@@ -88,7 +87,6 @@ const fontCss = `
   </head>
   <body>
     <a class="skip" href="#main">Skip to main content</a>
-    {!bare && <Announcement />}
     <Header quoteHref={quoteHref} current={path} />
     <main id="main">
       <slot />

@@ -140,7 +140,7 @@ import { FORM, TRACKING } from '../data/site';
     );
 
     // The thank-you page: count the lead once per visit, even if the page is reloaded.
-    // Their grand opening RSVP form redirects here too; when the RSVP was the last
+    // Their event RSVP form redirects here too; when the RSVP was the last
     // form used (QuoteForm.astro notes it) it is not a quote lead, so it goes to
     // analytics only. If the form is unknown, the lead is counted.
     if (isLead) {

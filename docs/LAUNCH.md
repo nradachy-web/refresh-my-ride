@@ -115,8 +115,7 @@ deploy has finished.
 
 ## Things that will age
 
-- The grand opening strip and specials retire themselves after October 30, 2026.
-  After that the page reads as a past event. Remove it from the sitemap when
-  it stops being useful.
+- The grand opening strip, page and specials came off the site on 2026-10-29 at
+  Josh's request; `/grandopening/` forwards to home.
 - The Google review count in `src/data/site.ts` is shown as "270+". Raise it
   when the real number passes the next round figure.

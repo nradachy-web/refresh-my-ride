@@ -102,7 +102,7 @@ export function videoSchema() {
   return {
     '@type': 'VideoObject',
     name: VIDEO.title,
-    description: `${VIDEO.channel} features the grand opening of ${BRAND.name}'s shop in ${BRAND.city}, MI.`,
+    description: `${VIDEO.channel} features ${BRAND.name}'s new shop in ${BRAND.city}, MI.`,
     thumbnailUrl: `https://i.ytimg.com/vi/${VIDEO.id}/maxresdefault.jpg`,
     uploadDate: VIDEO.uploaded,
     duration: VIDEO.duration,

@@ -23,7 +23,7 @@ export const BRAND = {
   state: 'MI',
   stateName: 'Michigan',
   zip: '48035',
-  // Their own wording on the grand opening page.
+  // Their own wording, from their old event page.
   crossStreets: 'North side of 14 Mile Road, just east of Kelly Road',
   geo: { lat: 42.539884, lng: -82.92629 }, // Google Business Profile
   shopSize: '2,000 square foot',
@@ -122,16 +122,6 @@ export const TRACKING = {
 } as const;
 
 export const FINANCING = 'Financing through Affirm and Klarna: 3 to 24 months, as low as 0% interest.';
-
-/* Grand opening of the Louise Ave shop. The banner and page retire themselves
-   after the specials end. */
-export const GRAND_OPENING = {
-  date: '2026-10-19',
-  dateLabel: 'Monday, October 19',
-  hours: '10am to 6pm',
-  specialsEnd: '2026-10-30',
-  specialsEndLabel: 'October 30, 2026',
-} as const;
 
 /* Clinton Township Community TV's Clinton Currents feature on the grand
    opening, sent by Josh on 2026-10-23. Details read from YouTube that day. The

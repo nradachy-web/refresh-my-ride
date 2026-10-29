@@ -27,7 +27,7 @@ PHOTOS = {
     "josh-portrait": ("2026_10_f.jpg", None),
     # the shop
     "shop-interior": ("2026_09_IMG_8464-scaled.jpg", (0, 0.08, 1, 0.78)),
-    "shop-grand-opening": ("2026_10_75AF774C-8B56-4885-BD37-B8916D3D56AD.png", (0, 0, 0.8, 1)),
+    "shop-front": ("2026_10_75AF774C-8B56-4885-BD37-B8916D3D56AD.png", (0, 0.22, 0.8, 1)),
     "corvette-purple-shop": ("2026_08_corvette-wide-website.png", None),
     # finished vehicles
     "bmw-x6-blue": ("2026_08_IMG_8026.jpg", None),
@@ -80,8 +80,9 @@ PHOTOS = {
 # Several crops above exist to keep things out of frame: the BMW interior is cut
 # to the wheel and seat because its navigation screen shows a street name and
 # coordinates that may be a customer's; escalade-black, chevy-suv-black,
-# ford-super-duty-white, shop-grand-opening and interior-convertible lose other
-# businesses' signs and a bystander's licence plate.
+# ford-super-duty-white, shop-front and interior-convertible lose other
+# businesses' signs and a bystander's licence plate. shop-front also loses the
+# grand opening banner over the bay door (Josh, 2026-10-29: the event is over).
 BLUR = {}
 
 # before/after pairs, both cropped to the same 4:5 frame so the slider lines up

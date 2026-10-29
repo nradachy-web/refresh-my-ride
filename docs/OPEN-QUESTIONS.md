@@ -17,7 +17,7 @@ made that is his to make.
 3. **How long a coating takes.** "Typically a full day" on one page, "most are
    a multi-day stay" on another, and a review says one day. The site says "at
    least a full day, longer when the paint needs more correction".
-4. **Grand opening "regular" prices.** His event page struck through regular
+4. **Grand opening "regular" prices.** Moot since 2026-10-29: the event page and specials are off the site. His event page struck through regular
    prices that are higher than the ones his service pages publish: Polish &
    Protect $399 (service page then: from $344.99; from $389.99 since his
    2026-10-23 price update), ceramic tint on full sides and
